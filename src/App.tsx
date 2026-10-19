@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { EquationRenderer } from './engine/EquationRenderer';
 
 export default function App() {
   const [docTitle, setDocTitle] = useState(() => {
@@ -761,10 +762,8 @@ export default function App() {
             <button onClick={() => setEqScript(p => p + ' int _{0} ^{1} ')} style={{ padding: '2px 8px', fontSize: '11px', cursor: 'pointer' }}>적분(int)</button>
             <button onClick={() => setEqScript(p => p + ' matrix { a & b # c & d } ')} style={{ padding: '2px 8px', fontSize: '11px', cursor: 'pointer' }}>행렬</button>
           </div>
-          <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px', backgroundColor: '#fafafa', borderBottom: '1px solid #ddd' }}>
-            <div style={{ fontSize: '26px', fontFamily: '"Times New Roman", "Batang", serif', fontStyle: 'italic', color: '#111' }}>
-              {eqScript}
-            </div>
+          <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px', backgroundColor: '#fafafa', borderBottom: '1px solid #ddd', overflow: 'auto' }}>
+            <EquationRenderer script={eqScript} fontSize={18} scale={1.5} color="#111111" showCursor={true} />
           </div>
           <div style={{ height: '110px', display: 'flex', flexDirection: 'column' }}>
             <textarea
