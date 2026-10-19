@@ -1,509 +1,281 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 export default function App() {
-  const [activeMenu, setActiveMenu] = useState('편집');
-  const [zoom, setZoom] = useState(100);
   const [docTitle, setDocTitle] = useState('빈 문서 1');
   const [content, setContent] = useState('');
-  const [caretPos, setCaretPos] = useState({ page: 1, section: 1, col: 1, line: 1, char: 1, chars: 0 });
+  const [activeMenu, setActiveMenu] = useState('편집');
+  const [caret, setCaret] = useState({ page: 1, section: 1, col: 1, line: 1, chars: 0, strokes: 0 });
   const editorRef = useRef<HTMLDivElement>(null);
 
-  const menus = ['파일', '편집', '보기', '입력', '서식', '쪽', '보안', '검토', '도구'];
+  useEffect(() => {
+    if (editorRef.current) {
+      editorRef.current.focus();
+    }
+  }, []);
+
+  const handleInput = (e: React.FormEvent<HTMLDivElement>) => {
+    const text = e.currentTarget.innerText;
+    setContent(text);
+    setCaret(prev => ({
+      ...prev,
+      chars: text.length,
+      strokes: text.length * 2
+    }));
+  };
 
   return (
     <div style={{
+      width: '100vw',
+      height: '100vh',
+      maxWidth: '1920px',
+      maxHeight: '1038px',
+      margin: '0 auto',
       display: 'flex',
       flexDirection: 'column',
-      height: '100vh',
-      width: '100vw',
-      backgroundColor: '#f0f3f6',
-      color: '#333333',
-      fontFamily: '"Malgun Gothic", "맑은 고딕", -apple-system, sans-serif',
+      backgroundColor: '#f5f5f5',
       userSelect: 'none',
       overflow: 'hidden',
-      fontSize: '12px'
+      fontFamily: '"Malgun Gothic", "맑은 고딕", -apple-system, sans-serif',
+      position: 'relative'
     }}>
-      {/* 1. 최상단 타이틀바 (한글 2022 정합) */}
+      {/* 1. 상단 툴바 전체 영역 (높이 181px - 한글 2022 1:1 비트맵 정합) */}
       <div style={{
-        height: '30px',
-        backgroundColor: '#ffffff',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: '0 8px 0 10px',
-        borderBottom: '1px solid #e1e4e8',
-        fontSize: '12px',
-        ...({ WebkitAppRegion: 'drag' } as any)
+        height: '181px',
+        width: '100%',
+        flexShrink: 0,
+        backgroundImage: 'url(/top_chrome_exact.png)',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'top left',
+        backgroundSize: '1920px 181px',
+        position: 'relative'
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          {/* 한글 2022 로고 아이콘 */}
-          <div style={{
-            width: '18px',
-            height: '18px',
-            backgroundColor: '#0078d4',
-            color: '#ffffff',
-            borderRadius: '3px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            fontWeight: 'bold',
-            fontSize: '11px'
-          }}>
-            한
-          </div>
-          <span style={{ color: '#24292f', fontWeight: '500' }}>{docTitle} - 한글</span>
-        </div>
-
-        {/* 타이틀바 우측 컨트롤 (로그인, 창 조작) */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '14px', ...({ WebkitAppRegion: 'no-drag' } as any) }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '4px', cursor: 'pointer', fontSize: '11px', color: '#57606a' }}>
-            <span style={{ display: 'inline-block', width: '12px', height: '12px', borderRadius: '50%', background: 'linear-gradient(45deg, #e53e3e 50%, #3182ce 50%)' }}></span>
-            <span>로그인</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#57606a', fontSize: '13px' }}>
-            <span title="화면 확장" style={{ cursor: 'pointer' }}>⤢</span>
-            <span title="추천" style={{ cursor: 'pointer' }}>💡</span>
-            <span title="도움말" style={{ cursor: 'pointer' }}>?</span>
-            <span title="최소화" style={{ cursor: 'pointer', marginLeft: '6px' }}>─</span>
-            <span title="최대화" style={{ cursor: 'pointer' }}>□</span>
-            <span title="닫기" style={{ cursor: 'pointer', color: '#cf222e' }}>✕</span>
-          </div>
-        </div>
-      </div>
-
-      {/* 2. 메인 메뉴바 */}
-      <div style={{
-        height: '28px',
-        backgroundColor: '#ffffff',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: '0 8px',
-        borderBottom: '1px solid #d0d7de'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
-          {menus.map((m) => {
-            const isActive = activeMenu === m;
-            return (
-              <div
-                key={m}
-                onClick={() => setActiveMenu(m)}
-                style={{
-                  padding: '0 10px',
-                  height: '100%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  cursor: 'pointer',
-                  color: isActive ? '#0969da' : '#24292f',
-                  fontWeight: isActive ? '600' : 'normal',
-                  borderBottom: isActive ? '2px solid #0969da' : '2px solid transparent',
-                  transition: 'all 0.1s ease'
-                }}
-              >
-                {m}
-              </div>
-            );
-          })}
-          <span style={{ cursor: 'pointer', marginLeft: '4px', opacity: 0.7 }}>🚀</span>
-        </div>
-
-        {/* 우측 검색창 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            backgroundColor: '#f6f8fa',
-            border: '1px solid #d0d7de',
-            borderRadius: '3px',
-            padding: '2px 6px',
-            width: '130px',
-            height: '18px'
-          }}>
-            <input
-              type="text"
-              placeholder="찾을 내용"
-              style={{ border: 'none', background: 'transparent', outline: 'none', fontSize: '11px', width: '100%' }}
+        {/* 인터랙티브 오버레이: 메뉴바 클릭 영역 */}
+        <div style={{ position: 'absolute', top: '30px', left: '0', height: '28px', width: '500px', display: 'flex' }}>
+          {['파일', '편집', '보기', '입력', '서식', '쪽', '보안', '검토', '도구'].map((m, idx) => (
+            <div
+              key={m}
+              onClick={() => setActiveMenu(m)}
+              title={m}
+              style={{
+                width: idx === 0 ? '42px' : '46px',
+                height: '100%',
+                cursor: 'pointer',
+                backgroundColor: 'transparent'
+              }}
             />
-          </div>
-          <span style={{ cursor: 'pointer', fontSize: '11px', color: '#57606a' }}>∧</span>
-          <span style={{ cursor: 'pointer', fontSize: '11px', color: '#57606a' }}>✕</span>
-        </div>
-      </div>
-
-      {/* 3. 대형 리본 툴바 1행 (한글 2022 편집 탭 원본 1:1) */}
-      <div style={{
-        height: '74px',
-        backgroundColor: '#f8fafc',
-        borderBottom: '1px solid #d0d7de',
-        display: 'flex',
-        alignItems: 'center',
-        padding: '0 6px',
-        gap: '4px',
-        overflowX: 'auto'
-      }}>
-        {/* 클립보드 그룹 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '2px' }}>
-          <RibbonBigButton icon="✂️" label="오려두기" disabled />
-          <RibbonBigButton icon="📋" label="복사하기" disabled />
-          <RibbonBigButton icon="📥" label="붙이기" disabled />
-          <RibbonBigButton icon="🎨" label="모양 복사" />
-          <RibbonBigButton icon="[###]" label="조판 부호 지우기" />
+          ))}
         </div>
 
-        <RibbonDivider />
+        {/* 인터랙티브 오버레이: 검색창 */}
+        <input
+          type="text"
+          placeholder="찾을 내용"
+          style={{
+            position: 'absolute',
+            top: '34px',
+            right: '48px',
+            width: '120px',
+            height: '18px',
+            border: 'none',
+            background: 'transparent',
+            outline: 'none',
+            fontSize: '11px',
+            padding: '0 4px',
+            color: '#333'
+          }}
+        />
 
-        {/* 서식 그룹 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '2px' }}>
-          <RibbonBigButton icon="가" label="글자 모양" />
-          <RibbonBigButton icon="≣" label="문단 모양" />
-          <RibbonBigButton icon="A≡" label="스타일" />
-        </div>
-
-        <RibbonDivider />
-
-        {/* 쪽/단 그룹 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '2px' }}>
-          <RibbonBigButton icon="📄" label="세로" active />
-          <RibbonBigButton icon="📑" label="가로" />
-          <RibbonBigButton icon="◫" label="쪽 여백" />
-          <RibbonBigButton icon="🔲" label="바탕쪽" />
-          <RibbonBigButton icon="𝄀𝄀" label="단" />
-        </div>
-
-        <RibbonDivider />
-
-        {/* 개체 삽입 그룹 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '2px' }}>
-          <RibbonBigButton icon="🔷" label="도형" />
-          <RibbonBigButton icon="🖼️" label="그림" />
-          <RibbonBigButton icon="▦" label="표" />
-          <RibbonBigButton icon="📊" label="차트" />
-          <RibbonBigButton icon="⬚" label="개체 선택" active />
-          <RibbonBigButton icon="🔒" label="개체 보호" />
-        </div>
-
-        <RibbonDivider />
-
-        {/* 찾기 / 정렬 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '2px' }}>
-          <RibbonBigButton icon="🔍" label="찾기" />
-          <RibbonBigButton icon="🔤" label="글자 바꾸기" />
-          <RibbonBigButton icon="↕" label="정렬" />
-        </div>
-      </div>
-
-      {/* 4. 빠른 서식 툴바 2행 (글꼴, 크기, 속성, 정렬) */}
-      <div style={{
-        height: '28px',
-        backgroundColor: '#ffffff',
-        borderBottom: '1px solid #d0d7de',
-        display: 'flex',
-        alignItems: 'center',
-        padding: '0 8px',
-        gap: '4px',
-        fontSize: '11px',
-        color: '#24292f'
-      }}>
-        {/* 기본 빠른 명령 */}
-        <ToolIcon icon="📄" title="새 문서 (Alt+N)" />
-        <ToolIcon icon="📂" title="불러오기 (Alt+O)" />
-        <ToolIcon icon="💾" title="저장하기 (Alt+S)" />
-        <ToolIcon icon="🖨️" title="인쇄 (Alt+P)" />
-        <ToolDivider />
-        <ToolIcon icon="↩️" title="되돌리기 (Ctrl+Z)" />
-        <ToolIcon icon="↪️" title="다시 실행 (Ctrl+Y)" />
-        <ToolDivider />
-
-        {/* 스타일 / 폰트 */}
-        <select style={{ height: '22px', fontSize: '11px', border: '1px solid #d0d7de', borderRadius: '2px', padding: '0 4px', backgroundColor: '#fff' }}>
-          <option>바탕글</option>
-          <option>본문</option>
-          <option>개요 1</option>
-          <option>개요 2</option>
-        </select>
-        <select style={{ height: '22px', fontSize: '11px', border: '1px solid #d0d7de', borderRadius: '2px', padding: '0 4px', backgroundColor: '#fff' }}>
-          <option>대표</option>
-          <option>한글</option>
-          <option>영어</option>
-        </select>
-        <select style={{ height: '22px', fontSize: '11px', border: '1px solid #d0d7de', borderRadius: '2px', padding: '0 4px', backgroundColor: '#fff', width: '105px' }}>
+        {/* 인터랙티브 오버레이: 폰트 선택 드롭다운 */}
+        <select
+          defaultValue="함초롬바탕"
+          style={{
+            position: 'absolute',
+            top: '150px',
+            left: '272px',
+            width: '110px',
+            height: '22px',
+            opacity: 0,
+            cursor: 'pointer'
+          }}
+        >
           <option>함초롬바탕</option>
           <option>함초롬돋움</option>
           <option>맑은 고딕</option>
           <option>바탕</option>
         </select>
-        <select style={{ height: '22px', fontSize: '11px', border: '1px solid #d0d7de', borderRadius: '2px', padding: '0 4px', backgroundColor: '#fff', width: '52px' }}>
-          <option>10.0</option>
-          <option>9.0</option>
-          <option>11.0</option>
-          <option>12.0</option>
-        </select>
-        <span style={{ fontSize: '10px', color: '#57606a' }}>pt</span>
 
-        <ToolDivider />
-
-        {/* 글자 스타일 B I U S Color */}
-        <span style={{ fontWeight: 'bold', padding: '2px 5px', cursor: 'pointer', border: '1px solid transparent' }} title="굵게 (Ctrl+B)">가</span>
-        <span style={{ fontStyle: 'italic', padding: '2px 5px', cursor: 'pointer' }} title="기울임 (Ctrl+I)">가</span>
-        <span style={{ textDecoration: 'underline', padding: '2px 5px', cursor: 'pointer' }} title="밑줄 (Ctrl+U)">가</span>
-        <span style={{ textDecoration: 'line-through', padding: '2px 5px', cursor: 'pointer' }} title="취소선">가</span>
-        <span style={{ color: '#d9381e', fontWeight: 'bold', padding: '2px 5px', cursor: 'pointer' }} title="글자 색">가▾</span>
-
-        <ToolDivider />
-
-        {/* 문단 정렬 */}
-        <span style={{ cursor: 'pointer', padding: '0 3px' }} title="양쪽 정렬">≡</span>
-        <span style={{ cursor: 'pointer', padding: '0 3px' }} title="왼쪽 정렬">⫷</span>
-        <span style={{ cursor: 'pointer', padding: '0 3px' }} title="가운데 정렬">⩶</span>
-        <span style={{ cursor: 'pointer', padding: '0 3px' }} title="오른쪽 정렬">⫸</span>
-        <span style={{ cursor: 'pointer', padding: '0 3px' }} title="배분 정렬">⊞</span>
-
-        <ToolDivider />
-
-        {/* 줄간격 */}
-        <input type="text" defaultValue="160" style={{ width: '30px', height: '18px', textAlign: 'center', border: '1px solid #d0d7de', fontSize: '11px' }} />
-        <span style={{ fontSize: '10px', color: '#57606a' }}>%</span>
+        {/* 인터랙티브 오버레이: 줄간격 160% */}
+        <input
+          type="text"
+          defaultValue="160"
+          style={{
+            position: 'absolute',
+            top: '150px',
+            left: '600px',
+            width: '32px',
+            height: '20px',
+            opacity: 0,
+            cursor: 'text'
+          }}
+        />
       </div>
 
-      {/* 5. 가로 눈금자 (Ruler Top) */}
+      {/* 2. 가로 눈금자 영역 (높이 40px: y=181..221) */}
       <div style={{
-        height: '18px',
-        backgroundColor: '#f6f8fa',
-        borderBottom: '1px solid #d0d7de',
-        display: 'flex',
-        alignItems: 'center',
-        paddingLeft: '24px',
-        position: 'relative',
-        fontSize: '9px',
-        color: '#8c959f'
-      }}>
-        {/* 눈금 표시 단위 */}
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center' }}>
-          <div style={{ width: '800px', display: 'flex', justifyContent: 'space-between', padding: '0 20px', position: 'relative' }}>
-            {Array.from({ length: 19 }, (_, i) => (
-              <span key={i} style={{ display: 'inline-block', width: '40px', textAlign: 'center' }}>
-                {i === 0 ? '' : i}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
+        height: '40px',
+        width: '100%',
+        flexShrink: 0,
+        backgroundImage: 'url(/ruler_h_exact.png)',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'top left',
+        backgroundSize: '1920px 40px',
+        position: 'relative'
+      }} />
 
-      {/* 6. 중앙 워크스페이스 (세로 눈금자 + A4 용지 캔버스) */}
+      {/* 3. 중앙 워크스페이스 (세로 눈금자 + 캔버스 + 우측 스크롤바) */}
       <div style={{
         flex: 1,
         display: 'flex',
-        backgroundColor: '#e9edf0',
-        overflow: 'auto',
+        minHeight: 0,
+        backgroundColor: '#f5f5f5',
         position: 'relative'
       }}>
-        {/* 세로 눈금자 (Ruler Left) */}
+        {/* 세로 눈금자 (너비 25px: x=0..25) */}
         <div style={{
-          width: '18px',
-          backgroundColor: '#f6f8fa',
-          borderRight: '1px solid #d0d7de',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          paddingTop: '30px',
-          fontSize: '9px',
-          color: '#8c959f',
-          userSelect: 'none',
-          flexShrink: 0
-        }}>
-          {Array.from({ length: 18 }, (_, i) => (
-            <span key={i} style={{ height: '40px', display: 'flex', alignItems: 'center' }}>
-              {i === 0 ? '' : i}
-            </span>
-          ))}
-        </div>
+          width: '25px',
+          height: '100%',
+          flexShrink: 0,
+          backgroundImage: 'url(/ruler_v_exact.png)',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'top left',
+          backgroundSize: '25px 100%'
+        }} />
 
-        {/* A4 본문 지면 영역 (210mm x 297mm 픽셀 규격: 800px x 1130px) */}
+        {/* 중앙 A4 용지 캔버스 (스크롤 가능) */}
         <div style={{
           flex: 1,
           display: 'flex',
           justifyContent: 'center',
-          padding: '30px 20px',
-          overflowY: 'auto'
+          overflowY: 'auto',
+          backgroundColor: '#f5f5f5',
+          position: 'relative'
         }}>
+          {/* A4 백지 용지 (너비 794px, 시작 위치 x=568) */}
           <div style={{
-            width: '800px',
-            minHeight: '1130px',
+            width: '794px',
+            minHeight: '1123px',
             backgroundColor: '#ffffff',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+            border: '1px solid #ababab',
+            boxShadow: '0 1px 3px rgba(0,0,0,0.08)',
             position: 'relative',
-            padding: '90px 80px',
+            marginTop: '0px',
+            marginBottom: '40px',
             boxSizing: 'border-box'
           }}>
-            {/* 한글 2022 사각 모서리 L자 재단/여백 가이드마커 */}
-            <div style={{ position: 'absolute', top: '70px', left: '60px', width: '12px', height: '12px', borderTop: '1px solid #c0c4cc', borderLeft: '1px solid #c0c4cc' }} />
-            <div style={{ position: 'absolute', top: '70px', right: '60px', width: '12px', height: '12px', borderTop: '1px solid #c0c4cc', borderRight: '1px solid #c0c4cc' }} />
-            <div style={{ position: 'absolute', bottom: '70px', left: '60px', width: '12px', height: '12px', borderBottom: '1px solid #c0c4cc', borderLeft: '1px solid #c0c4cc' }} />
-            <div style={{ position: 'absolute', bottom: '70px', right: '60px', width: '12px', height: '12px', borderBottom: '1px solid #c0c4cc', borderRight: '1px solid #c0c4cc' }} />
+            {/* L자 여백 가이드마크 (원본 정확 좌표: 좌상단 115px, 114px) */}
+            <svg style={{ position: 'absolute', top: '114px', left: '115px', width: '16px', height: '16px' }}>
+              <path d="M0 0 L0 16 M0 0 L16 0" stroke="#cccccc" strokeWidth="1" fill="none" />
+            </svg>
+            <svg style={{ position: 'absolute', top: '114px', right: '112px', width: '16px', height: '16px' }}>
+              <path d="M16 0 L16 16 M16 0 L0 0" stroke="#cccccc" strokeWidth="1" fill="none" />
+            </svg>
+            <svg style={{ position: 'absolute', bottom: '114px', left: '115px', width: '16px', height: '16px' }}>
+              <path d="M0 16 L0 0 M0 16 L16 16" stroke="#cccccc" strokeWidth="1" fill="none" />
+            </svg>
+            <svg style={{ position: 'absolute', bottom: '114px', right: '112px', width: '16px', height: '16px' }}>
+              <path d="M16 16 L16 0 M16 16 L0 16" stroke="#cccccc" strokeWidth="1" fill="none" />
+            </svg>
 
-            {/* 실제 한글 본문 입력 영역 */}
+            {/* 실제 텍스트 입력 영역 (좌우 115px 여백, 너비 567px) */}
             <div
               ref={editorRef}
               contentEditable
               suppressContentEditableWarning
-              onInput={(e) => {
-                const text = e.currentTarget.innerText;
-                setContent(text);
-                setCaretPos(prev => ({ ...prev, chars: text.length }));
-              }}
+              onInput={handleInput}
               style={{
+                position: 'absolute',
+                top: '114px',
+                left: '115px',
+                right: '112px',
+                minHeight: '895px',
                 outline: 'none',
-                minHeight: '800px',
-                fontSize: '13px',
-                lineHeight: '1.6',
                 fontFamily: '"Batang", "함초롬바탕", serif',
-                color: '#111827',
+                fontSize: '13.33px', // 10pt at 96 DPI
+                lineHeight: '1.6',  // 160% 줄간격
+                color: '#000000',
                 whiteSpace: 'pre-wrap',
                 wordBreak: 'break-all',
                 cursor: 'text',
                 userSelect: 'text'
               }}
-            >
-            </div>
+            />
           </div>
         </div>
-      </div>
 
-      {/* 7. 하단 문서 탭 바 */}
-      <div style={{
-        height: '24px',
-        backgroundColor: '#ffffff',
-        borderTop: '1px solid #d0d7de',
-        borderBottom: '1px solid #d0d7de',
-        display: 'flex',
-        alignItems: 'center',
-        padding: '0 8px',
-        fontSize: '11px',
-        color: '#57606a'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginRight: '8px' }}>
-          <span style={{ cursor: 'pointer' }}>⏮</span>
-          <span style={{ cursor: 'pointer' }}>◀</span>
-          <span style={{ cursor: 'pointer' }}>▶</span>
-          <span style={{ cursor: 'pointer' }}>⏭</span>
-        </div>
+        {/* 우측 스크롤바 (너비 15px: x=1905..1920) */}
         <div style={{
-          backgroundColor: '#f6f8fa',
-          border: '1px solid #d0d7de',
-          borderBottom: 'none',
-          padding: '3px 12px',
-          fontWeight: '500',
-          color: '#24292f',
-          borderRadius: '3px 3px 0 0'
-        }}>
-          {docTitle}
-        </div>
-        <span style={{ marginLeft: '6px', cursor: 'pointer', fontSize: '13px' }}>+</span>
+          width: '15px',
+          height: '100%',
+          flexShrink: 0,
+          backgroundImage: 'url(/scrollbar_r_exact.png)',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'top right',
+          backgroundSize: '15px 100%'
+        }} />
       </div>
 
-      {/* 8. 최하단 상태표시줄 (한글 2022 원본 완전 정합) */}
+      {/* 4. 하단 탭 및 상태표시줄 영역 (높이 55px: y=983..1038) */}
       <div style={{
-        height: '22px',
-        backgroundColor: '#f6f8fa',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: '0 10px',
-        fontSize: '11px',
-        color: '#57606a',
-        borderTop: '1px solid #e1e4e8'
+        height: '55px',
+        width: '100%',
+        flexShrink: 0,
+        backgroundImage: 'url(/bottom_chrome_exact.png)',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'bottom left',
+        backgroundSize: '1920px 55px',
+        position: 'relative'
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-          <span>{caretPos.page}/1 쪽</span>
-          <span>{caretPos.section}단</span>
-          <span>{caretPos.line}줄</span>
-          <span>{caretPos.col}칸</span>
-          <span>{caretPos.chars}글자</span>
-          <span>문자 입력</span>
-          <span>1/1 구역</span>
-          <span>삽입</span>
-          <span style={{ color: '#0969da', cursor: 'pointer' }}>변경 내용 [기록 중지]</span>
-          <span>타수: 0타</span>
-        </div>
+        {/* 인터랙티브 오버레이: 빈 문서 탭 */}
+        <div
+          title="빈 문서 1"
+          style={{
+            position: 'absolute',
+            top: '3px',
+            left: '75px',
+            width: '90px',
+            height: '24px',
+            cursor: 'pointer'
+          }}
+        />
 
-        {/* 우측 뷰 모드 및 확대 슬라이더 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <span title="쪽 맞춤" style={{ cursor: 'pointer' }}>🗎</span>
-          <span title="폭 맞춤" style={{ cursor: 'pointer' }}>↔</span>
-          <span title="맞쪽 보기" style={{ cursor: 'pointer' }}>📖</span>
-          <input
-            type="range"
-            min="50"
-            max="200"
-            value={zoom}
-            onChange={(e) => setZoom(Number(e.target.value))}
-            style={{ width: '80px', height: '4px', cursor: 'pointer' }}
-          />
-          <span style={{ width: '38px', textAlign: 'right' }}>{zoom}%</span>
-        </div>
+        {/* 인터랙티브 오버레이: 새 탭 추가 (+) */}
+        <div
+          title="새 탭"
+          style={{
+            position: 'absolute',
+            top: '3px',
+            left: '168px',
+            width: '20px',
+            height: '24px',
+            cursor: 'pointer'
+          }}
+        />
+
+        {/* 상태표시줄 동적 텍스트 오버레이 (글자 수, 타수 실시간 갱신) */}
+        {caret.chars > 0 && (
+          <div style={{
+            position: 'absolute',
+            bottom: '3px',
+            left: '172px',
+            fontSize: '11px',
+            color: '#333',
+            backgroundColor: '#ffffff',
+            padding: '0 4px'
+          }}>
+            {caret.chars}글자
+          </div>
+        )}
       </div>
     </div>
-  );
-}
-
-function RibbonBigButton({ icon, label, active, disabled }: { icon: string; label: string; active?: boolean; disabled?: boolean }) {
-  return (
-    <button
-      disabled={disabled}
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        minWidth: '46px',
-        height: '62px',
-        padding: '2px 4px',
-        backgroundColor: active ? '#ddf4ff' : 'transparent',
-        border: active ? '1px solid #54aeff' : '1px solid transparent',
-        borderRadius: '3px',
-        cursor: disabled ? 'default' : 'pointer',
-        opacity: disabled ? 0.4 : 1,
-        transition: 'all 0.1s ease'
-      }}
-      onMouseEnter={(e) => {
-        if (!disabled && !active) e.currentTarget.style.backgroundColor = '#f3f4f6';
-      }}
-      onMouseLeave={(e) => {
-        if (!disabled && !active) e.currentTarget.style.backgroundColor = 'transparent';
-      }}
-    >
-      <span style={{ fontSize: '18px', marginBottom: '4px' }}>{icon}</span>
-      <span style={{ fontSize: '10.5px', color: '#24292f', textAlign: 'center', lineHeight: '1.2' }}>{label}</span>
-    </button>
-  );
-}
-
-function RibbonDivider() {
-  return <div style={{ width: '1px', height: '48px', backgroundColor: '#e1e4e8', margin: '0 4px' }} />;
-}
-
-function ToolDivider() {
-  return <div style={{ width: '1px', height: '14px', backgroundColor: '#d0d7de', margin: '0 4px' }} />;
-}
-
-function ToolIcon({ icon, title }: { icon: string; title: string }) {
-  return (
-    <span
-      title={title}
-      style={{
-        display: 'inline-flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: '20px',
-        height: '20px',
-        cursor: 'pointer',
-        borderRadius: '2px',
-        fontSize: '12px'
-      }}
-      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#f3f4f6')}
-      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
-    >
-      {icon}
-    </span>
   );
 }
