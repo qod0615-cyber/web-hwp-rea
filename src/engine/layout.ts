@@ -163,6 +163,8 @@ export class Parser {
   private tokens: string[];
   private idx: number = 0;
 
+  private st: { rm: boolean } = { rm: false };
+
   constructor(tokens: string[]) {
     this.tokens = tokens;
   }
@@ -254,6 +256,20 @@ export class Parser {
           if (this.peek() === '}') this.next();
           nodes.push({ k: 'mat', m: tl, rows });
         }
+      } else if (['rm', 'RM'].includes(t)) {
+        this.st.rm = true;
+        nodes.push({ k: 'sty' });
+      } else if (['it', 'IT'].includes(t)) {
+        this.st.rm = false;
+        nodes.push({ k: 'sty' });
+      } else if (['sin', 'cos', 'tan', 'log', 'ln', 'exp', 'det', 'max', 'min', 'sec', 'csc', 'cot', 'sinh', 'cosh', 'tanh', 'arcsin', 'arccos', 'arctan', 'gcd', 'lcm'].includes(tl)) {
+        const prev = nodes.length > 0 ? nodes[nodes.length - 1] : undefined;
+        if (prev && prev.k === 'ch' && ((prev.code && prev.code >= 0xe000 && prev.code <= 0xe0fe) || (prev.code && prev.code < 0x80))) {
+          nodes.push({ k: 'sp', t: '`' });
+        }
+        for (const c of t) {
+          nodes.push({ k: 'ch', code: c.charCodeAt(0), cls: 1, rm: true });
+        }
       } else if (['sum', 'prod'].includes(tl)) {
         nodes.push({ k: 'sum', m: tl, lo: [], hi: [], body: [] });
       } else if (['int', 'dint', 'tint', 'oint'].includes(tl)) {
@@ -272,8 +288,12 @@ export class Parser {
         nodes.push({ k: 'ch', code, cls, rm: false, src: t });
       } else if (/^[A-Za-z]+$/.test(t)) {
         for (const c of t) {
-          const pua = PUA_ASCII_MAP[c];
-          nodes.push({ k: 'ch', code: pua || c.charCodeAt(0), cls: 1, rm: false });
+          if (this.st.rm) {
+            nodes.push({ k: 'ch', code: c.charCodeAt(0), cls: 1, rm: true });
+          } else {
+            const pua = PUA_ASCII_MAP[c];
+            nodes.push({ k: 'ch', code: pua || c.charCodeAt(0), cls: 1, rm: false });
+          }
         }
       } else if (/^[0-9]+$/.test(t)) {
         for (const c of t) {
@@ -443,7 +463,20 @@ export function measureNode(n: AstNode, s: number, next?: AstNode, prev?: AstNod
     n._osub = osub;
     n._osup = osup;
 
-    const w = Math.max(subW, supW);
+    let w = Math.max(subW, supW);
+    const isUcit = prev && prev.k === 'ch' && prev.code &&
+      ((prev.code >= 0xe000 && prev.code <= 0xe019) || (prev.code >= 0x41 && prev.code <= 0x5a));
+    if (n['^'] && isUcit) {
+      w += mulDiv(s, 15, 100);
+    }
+    if (next) {
+      const clsNext = getNodeCls(next);
+      const tVal = getSpacingT(1, clsNext);
+      if (tVal) {
+        w += mulDiv(s, tVal, 100) * 10;
+      }
+    }
+
     const top = n['^'] ? supT + osup : bt;
     const bot = n._ ? subB + osub : bb;
     return [w, top, bot];
