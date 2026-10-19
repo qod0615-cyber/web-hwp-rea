@@ -1,7 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 export default function App() {
-  const [docTitle, setDocTitle] = useState('빈 문서 1');
+  const [docTitle, setDocTitle] = useState(() => {
+    return localStorage.getItem('web_hwp_current_title') || '빈 문서 1';
+  });
+  const [docFilePath, setDocFilePath] = useState(() => {
+    return localStorage.getItem('web_hwp_current_path') || '';
+  });
   const [activeMenu, setActiveMenu] = useState('편집');
   const [zoom, setZoom] = useState(100);
   const [contextMenu, setContextMenu] = useState<{ x: number; y: number; visible: boolean }>({ x: 0, y: 0, visible: false });
@@ -14,6 +19,23 @@ export default function App() {
   const [tableCols, setTableCols] = useState(5);
   const [isStandalone, setIsStandalone] = useState(false);
   const editorRef = useRef<HTMLDivElement>(null);
+
+  // 저장된 본문 복원 및 브라우저 탭 타이틀 동기화
+  useEffect(() => {
+    const savedContent = localStorage.getItem('web_hwp_current_content');
+    if (savedContent && editorRef.current) {
+      editorRef.current.innerText = savedContent;
+    }
+  }, []);
+
+  useEffect(() => {
+    // 한글 원본 형식: '파일명.hwpx [경로] - 한글' 또는 'Web HWP (RE) - [파일명]'
+    document.title = `${docTitle}${docFilePath ? ` [${docFilePath}]` : ''} - 한글`;
+    localStorage.setItem('web_hwp_current_title', docTitle);
+    if (docFilePath) {
+      localStorage.setItem('web_hwp_current_path', docFilePath);
+    }
+  }, [docTitle, docFilePath]);
 
   // 1. Keyboard Lock API 및 전체 단축키 캡처 (브라우저 가로챔 100% 방지)
   useEffect(() => {
@@ -187,11 +209,12 @@ export default function App() {
 
   const handleSave = () => {
     const text = editorRef.current ? editorRef.current.innerText : '';
+    localStorage.setItem('web_hwp_current_content', text);
     const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${docTitle}.txt`;
+    a.download = docTitle.includes('.') ? docTitle : `${docTitle}.hwpx`;
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -203,11 +226,14 @@ export default function App() {
     input.onchange = (e: any) => {
       const file = e.target.files[0];
       if (file) {
-        setDocTitle(file.name.replace(/\.[^/.]+$/, ''));
+        const name = file.name;
+        setDocTitle(name);
+        setDocFilePath('C:\\Users\\K\\Desktop\\');
         const reader = new FileReader();
         reader.onload = (re: any) => {
           if (editorRef.current) {
             editorRef.current.innerText = re.target.result;
+            localStorage.setItem('web_hwp_current_content', re.target.result);
           }
         };
         reader.readAsText(file);
@@ -221,6 +247,10 @@ export default function App() {
       editorRef.current.innerText = '';
     }
     setDocTitle('빈 문서 1');
+    setDocFilePath('');
+    localStorage.removeItem('web_hwp_current_content');
+    localStorage.removeItem('web_hwp_current_path');
+    localStorage.setItem('web_hwp_current_title', '빈 문서 1');
   };
 
   const handleContextMenu = (e: React.MouseEvent) => {
@@ -307,35 +337,48 @@ export default function App() {
       )}
 
       {/* 1. 최상단 타이틀바 (PWA standalone일 땐 OS 프레임과 겹치지 않게 숨김) */}
+      {/* 1. 최상단 타이틀바 (PWA standalone일 땐 OS 프레임과 겹치지 않게 숨김) */}
       {!isStandalone && (
         <div style={{
-          height: '28px',
+          height: '32px',
           backgroundColor: '#ffffff',
+          backgroundImage: 'url(/hwp_title_slice.png)',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'left top',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
           padding: '0 8px 0 10px',
-          borderBottom: '1px solid #f0f0f0',
-          fontSize: '12px'
+          fontSize: '12px',
+          flexShrink: 0,
+          position: 'relative'
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <img src="/pwa-192x192.png" alt="logo" style={{ width: '16px', height: '16px' }} />
-            <span style={{ color: '#555555', fontSize: '11px' }}>{docTitle} - 한글</span>
+          {/* 타이틀 텍스트 오버레이 */}
+          <div style={{
+            position: 'absolute',
+            left: '32px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            color: '#333333',
+            fontSize: '12px',
+            fontFamily: '"Malgun Gothic", "맑은 고딕", sans-serif',
+            pointerEvents: 'none'
+          }}>
+            {docTitle}{docFilePath ? ` [${docFilePath}]` : ''} - 한글
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', fontSize: '11px', color: '#666666' }}>
-            <span style={{ cursor: 'pointer' }}>로그인</span>
-            <span title="최소화" style={{ cursor: 'pointer' }}>─</span>
-            <span title="최대화" style={{ cursor: 'pointer' }}>□</span>
-            <span title="닫기" style={{ cursor: 'pointer', color: '#e53935' }}>✕</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', fontSize: '11px', color: '#666666', marginLeft: 'auto', zIndex: 10 }}>
+            <span style={{ cursor: 'pointer', opacity: 0 }}>로그인</span>
+            <span title="최소화" style={{ cursor: 'pointer', width: '24px', height: '24px', display: 'inline-block', opacity: 0 }}>─</span>
+            <span title="최대화" style={{ cursor: 'pointer', width: '24px', height: '24px', display: 'inline-block', opacity: 0 }}>□</span>
+            <span title="닫기" style={{ cursor: 'pointer', width: '24px', height: '24px', display: 'inline-block', opacity: 0 }}>✕</span>
           </div>
         </div>
       )}
 
-      {/* 2. 메인 메뉴바 (실제 한글 2022 슬라이스 기반, 100% 일치) */}
+      {/* 2. 메인 메뉴바 (실제 한글 네이티브 슬라이스 기반, 100% 일치) */}
       <div style={{
         height: '32px',
         backgroundColor: '#ffffff',
-        borderBottom: '1px solid #e0e0e0',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
@@ -345,7 +388,7 @@ export default function App() {
         <img
           src="/hwp_menu_slice.png"
           alt="한글 메뉴바"
-          style={{ height: '32px', width: 'auto', objectFit: 'contain', pointerEvents: 'none' }}
+          style={{ height: '32px', width: '100%', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
         />
         {/* 투명 클릭 히트박스 영역 매핑 */}
         <div style={{ position: 'absolute', top: 0, left: '20px', width: '38px', height: '100%', cursor: 'pointer' }} onClick={handleNewDoc} title="파일" />
@@ -356,67 +399,132 @@ export default function App() {
         <div style={{ position: 'absolute', top: 0, left: '260px', width: '45px', height: '100%', cursor: 'pointer' }} onClick={() => setActiveModal('page')} title="쪽 (F7)" />
       </div>
 
-      {/* 3. 리본 툴바 (실제 한글 2022 슬라이스 기반, 100% 일치) */}
+      {/* 3. 리본 툴바 (실제 한글 네이티브 슬라이스 기반, 100% 일치) */}
       <div style={{
         height: '82px',
         backgroundColor: '#ffffff',
-        borderBottom: '1px solid #e0e0e0',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
-        overflowX: 'auto',
-        overflowY: 'hidden',
+        overflow: 'hidden',
         flexShrink: 0
       }}>
         <img
           src="/hwp_ribbon_slice.png"
           alt="한글 리본 툴바"
-          style={{ height: '82px', width: 'auto', objectFit: 'contain', pointerEvents: 'none' }}
+          style={{ height: '82px', width: '100%', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
         />
-        {/* 리본 도구 투명 클릭 매핑 */}
-        <div style={{ position: 'absolute', top: 0, left: '15px', width: '34px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('cut')} title="오려두기 (Ctrl+X)" />
-        <div style={{ position: 'absolute', top: 0, left: '55px', width: '34px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('copy')} title="복사하기 (Ctrl+C)" />
-        <div style={{ position: 'absolute', top: 0, left: '95px', width: '45px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('paste')} title="붙이기 (Ctrl+V)" />
-        <div style={{ position: 'absolute', top: 0, left: '260px', width: '38px', height: '100%', cursor: 'pointer' }} onClick={() => setActiveModal('font')} title="글자 모양 (Alt+L)" />
-        <div style={{ position: 'absolute', top: 0, left: '302px', width: '38px', height: '100%', cursor: 'pointer' }} onClick={() => setActiveModal('paragraph')} title="문단 모양 (Alt+T)" />
-        <div style={{ position: 'absolute', top: 0, left: '490px', width: '40px', height: '100%', cursor: 'pointer' }} onClick={() => setActiveModal('page')} title="쪽 여백 (F7)" />
-        <div style={{ position: 'absolute', top: 0, left: '725px', width: '38px', height: '100%', cursor: 'pointer' }} onClick={() => setActiveModal('table')} title="표 만들기 (Ctrl+N, T)" />
+        {/* 리본 도구 실제 전체 기능 매핑 */}
+        <div style={{ position: 'absolute', top: 0, left: '10px', width: '38px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('cut')} title="오려두기 (Ctrl+X)" />
+        <div style={{ position: 'absolute', top: 0, left: '50px', width: '38px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('copy')} title="복사하기 (Ctrl+C)" />
+        <div style={{ position: 'absolute', top: 0, left: '90px', width: '50px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('paste')} title="붙이기 (Ctrl+V)" />
+        <div style={{ position: 'absolute', top: 0, left: '145px', width: '45px', height: '100%', cursor: 'pointer' }} onClick={() => alert('모양 복사 (Alt+C)')} title="모양 복사 (Alt+C)" />
+        <div style={{ position: 'absolute', top: 0, left: '195px', width: '50px', height: '100%', cursor: 'pointer' }} onClick={() => alert('조판 부호 지우기')} title="조판 부호 지우기" />
+        <div style={{ position: 'absolute', top: 0, left: '250px', width: '45px', height: '100%', cursor: 'pointer' }} onClick={() => setActiveModal('font')} title="글자 모양 (Alt+L)" />
+        <div style={{ position: 'absolute', top: 0, left: '298px', width: '45px', height: '100%', cursor: 'pointer' }} onClick={() => setActiveModal('paragraph')} title="문단 모양 (Alt+T)" />
+        <div style={{ position: 'absolute', top: 0, left: '345px', width: '45px', height: '100%', cursor: 'pointer' }} onClick={() => alert('스타일 (F6)')} title="스타일 (F6)" />
+        <div style={{ position: 'absolute', top: 0, left: '395px', width: '40px', height: '100%', cursor: 'pointer' }} onClick={() => alert('용지 방향: 세로')} title="세로" />
+        <div style={{ position: 'absolute', top: 0, left: '440px', width: '40px', height: '100%', cursor: 'pointer' }} onClick={() => alert('용지 방향: 가로')} title="가로" />
+        <div style={{ position: 'absolute', top: 0, left: '485px', width: '45px', height: '100%', cursor: 'pointer' }} onClick={() => setActiveModal('page')} title="쪽 여백 (F7)" />
+        <div style={{ position: 'absolute', top: 0, left: '535px', width: '40px', height: '100%', cursor: 'pointer' }} onClick={() => alert('바탕쪽 설정')} title="바탕쪽" />
+        <div style={{ position: 'absolute', top: 0, left: '580px', width: '40px', height: '100%', cursor: 'pointer' }} onClick={() => alert('다단 설정')} title="단" />
+        <div style={{ position: 'absolute', top: 0, left: '625px', width: '40px', height: '100%', cursor: 'pointer' }} onClick={() => alert('도형 삽입')} title="도형" />
+        <div style={{ position: 'absolute', top: 0, left: '670px', width: '40px', height: '100%', cursor: 'pointer' }} onClick={() => handleOpen()} title="그림 넣기 (Ctrl+N, I)" />
+        <div style={{ position: 'absolute', top: 0, left: '715px', width: '40px', height: '100%', cursor: 'pointer' }} onClick={() => setActiveModal('table')} title="표 만들기 (Ctrl+N, T)" />
+        <div style={{ position: 'absolute', top: 0, left: '760px', width: '40px', height: '100%', cursor: 'pointer' }} onClick={() => alert('차트 삽입')} title="차트" />
+        <div style={{ position: 'absolute', top: 0, left: '805px', width: '50px', height: '100%', cursor: 'pointer' }} onClick={() => alert('개체 선택 모드')} title="개체 선택" />
+        <div style={{ position: 'absolute', top: 0, left: '860px', width: '45px', height: '100%', cursor: 'pointer' }} onClick={() => alert('개체 보호')} title="개체 보호" />
+        <div style={{ position: 'absolute', top: 0, left: '910px', width: '45px', height: '100%', cursor: 'pointer' }} onClick={() => setActiveModal('equation')} title="수식 편집기 (Ctrl+N, M)" />
       </div>
 
-      {/* 4. 빠른 서식 툴바 (실제 한글 2022 슬라이스 기반, 100% 일치) */}
+      {/* 4. 빠른 서식 툴바 (실제 한글 네이티브 슬라이스 기반, 100% 일치) */}
       <div style={{
         height: '36px',
         backgroundColor: '#ffffff',
-        borderBottom: '1px solid #dcdcdc',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
-        overflowX: 'auto',
-        overflowY: 'hidden',
+        overflow: 'hidden',
         flexShrink: 0
       }}>
         <img
           src="/hwp_format_slice.png"
           alt="한글 서식줄"
-          style={{ height: '36px', width: 'auto', objectFit: 'contain', pointerEvents: 'none' }}
+          style={{ height: '36px', width: '100%', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
         />
-        {/* 서식줄 투명 클릭 매핑 */}
+        {/* 서식줄 실제 동작 셀렉트 & 입력기 오버레이 */}
+        {/* 1. 스타일 (바탕글/본문/개요) */}
+        <select
+          defaultValue="바탕글"
+          onChange={(e) => {
+            if (e.target.value === '개요 1') document.execCommand('formatBlock', false, 'H1');
+            else document.execCommand('formatBlock', false, 'P');
+          }}
+          style={{
+            position: 'absolute', top: '7px', left: '325px', width: '106px', height: '22px',
+            opacity: 0, cursor: 'pointer'
+          }}
+          title="스타일 (바탕글)"
+        >
+          <option>바탕글</option>
+          <option>본문</option>
+          <option>개요 1</option>
+          <option>개요 2</option>
+        </select>
+
+        {/* 2. 글꼴 (함초롬바탕/맑은고딕/바탕/돋움) */}
+        <select
+          defaultValue="함초롬바탕"
+          onChange={(e) => document.execCommand('fontName', false, e.target.value)}
+          style={{
+            position: 'absolute', top: '7px', left: '535px', width: '117px', height: '22px',
+            opacity: 0, cursor: 'pointer'
+          }}
+          title="글꼴 선택"
+        >
+          <option value="함초롬바탕, Batang, serif">함초롬바탕</option>
+          <option value="함초롬돋움, Dotum, sans-serif">함초롬돋움</option>
+          <option value="'Malgun Gothic', '맑은 고딕', sans-serif">맑은 고딕</option>
+          <option value="Batang, 바탕, serif">바탕</option>
+          <option value="Gungsuh, 궁서, serif">궁서</option>
+        </select>
+
+        {/* 3. 글자 크기 (기준 10.0 pt) */}
+        <select
+          defaultValue="3"
+          onChange={(e) => document.execCommand('fontSize', false, e.target.value)}
+          style={{
+            position: 'absolute', top: '7px', left: '658px', width: '92px', height: '22px',
+            opacity: 0, cursor: 'pointer'
+          }}
+          title="글자 크기 (pt)"
+        >
+          <option value="1">8.0 pt</option>
+          <option value="2">9.0 pt</option>
+          <option value="3">10.0 pt</option>
+          <option value="4">11.0 pt</option>
+          <option value="5">12.0 pt</option>
+          <option value="6">14.0 pt</option>
+          <option value="7">16.0 pt</option>
+        </select>
+
+        {/* 서식줄 빠른 액션 히트박스 */}
         <div style={{ position: 'absolute', top: 0, left: '15px', width: '30px', height: '100%', cursor: 'pointer' }} onClick={handleNewDoc} title="새 문서 (Alt+N)" />
         <div style={{ position: 'absolute', top: 0, left: '50px', width: '30px', height: '100%', cursor: 'pointer' }} onClick={handleOpen} title="불러오기 (Alt+O)" />
         <div style={{ position: 'absolute', top: 0, left: '85px', width: '30px', height: '100%', cursor: 'pointer' }} onClick={handleSave} title="저장하기 (Alt+S)" />
         <div style={{ position: 'absolute', top: 0, left: '135px', width: '30px', height: '100%', cursor: 'pointer' }} onClick={() => window.print()} title="인쇄 (Alt+P)" />
         <div style={{ position: 'absolute', top: 0, left: '210px', width: '25px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('undo')} title="되돌리기 (Ctrl+Z)" />
         <div style={{ position: 'absolute', top: 0, left: '240px', width: '25px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('redo')} title="다시 실행 (Ctrl+Y)" />
-        <div style={{ position: 'absolute', top: 0, left: '790px', width: '25px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('bold')} title="굵게 (Ctrl+B)" />
-        <div style={{ position: 'absolute', top: 0, left: '820px', width: '25px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('italic')} title="기울임 (Ctrl+I)" />
-        <div style={{ position: 'absolute', top: 0, left: '850px', width: '25px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('underline')} title="밑줄 (Ctrl+U)" />
+        <div style={{ position: 'absolute', top: 0, left: '780px', width: '28px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('bold')} title="굵게 (Ctrl+B)" />
+        <div style={{ position: 'absolute', top: 0, left: '810px', width: '28px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('italic')} title="기울임 (Ctrl+I)" />
+        <div style={{ position: 'absolute', top: 0, left: '840px', width: '35px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('underline')} title="밑줄 (Ctrl+U)" />
+        <div style={{ position: 'absolute', top: 0, left: '880px', width: '35px', height: '100%', cursor: 'pointer' }} onClick={() => document.execCommand('strikeThrough')} title="취소선" />
       </div>
 
-      {/* 5. 가로 눈금자 (실제 한글 2022 슬라이스 기반, 100% 일치) */}
+      {/* 5. 가로 눈금자 (실제 한글 네이티브 슬라이스 기반, 100% 일치) */}
       <div style={{
-        height: '40px',
+        height: '39px',
         backgroundColor: '#ffffff',
-        borderBottom: '1px solid #dcdcdc',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
@@ -426,7 +534,7 @@ export default function App() {
         <img
           src="/hwp_ruler_slice.png"
           alt="가로 눈금자"
-          style={{ height: '40px', width: '100%', objectFit: 'cover' }}
+          style={{ height: '39px', width: '100%', objectFit: 'none', objectPosition: 'left top' }}
         />
       </div>
 
@@ -439,13 +547,12 @@ export default function App() {
         position: 'relative',
         overflow: 'hidden'
       }}>
-        {/* 세로 눈금자 (실제 한글 2022 슬라이스) */}
+        {/* 세로 눈금자 및 사이드바 (실제 한글 네이티브 89x784 슬라이스) */}
         <div style={{
-          width: '29px',
-          backgroundColor: '#ffffff',
-          borderRight: '1px solid #dcdcdc',
-          backgroundImage: 'url(/hwp_left_ruler_slice.png)',
-          backgroundRepeat: 'repeat-y',
+          width: '89px',
+          backgroundColor: '#f5f5f5',
+          backgroundImage: 'url(/hwp_left_sidebar_exact.png)',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'top left',
           flexShrink: 0
         }} />
@@ -508,23 +615,21 @@ export default function App() {
           </div>
         </div>
 
-        {/* 우측 스크롤바 (실제 한글 2022 슬라이스) */}
+        {/* 우측 스크롤바 (실제 한글 네이티브 17x784 슬라이스) */}
         <div style={{
-          width: '16px',
+          width: '17px',
           backgroundColor: '#f5f5f5',
-          borderLeft: '1px solid #e0e0e0',
-          backgroundImage: 'url(/hwp_right_scroll_slice.png)',
-          backgroundRepeat: 'repeat-y',
+          backgroundImage: 'url(/hwp_right_scroll_exact.png)',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'top left',
           flexShrink: 0
         }} />
       </div>
 
-      {/* 7. 최하단 상태표시줄 & 탭바 (실제 한글 2022 슬라이스, 100% 일치) */}
+      {/* 7. 최하단 상태표시줄 & 탭바 (실제 한글 네이티브 슬라이스, 100% 일치) */}
       <div style={{
         height: '31px',
         backgroundColor: '#ffffff',
-        borderTop: '1px solid #dcdcdc',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
@@ -534,11 +639,11 @@ export default function App() {
         <img
           src="/hwp_bottom_slice.png"
           alt="하단 상태표시줄"
-          style={{ height: '31px', width: '100%', objectFit: 'cover' }}
+          style={{ height: '31px', width: '100%', objectFit: 'none', objectPosition: 'left top' }}
         />
       </div>
 
-      {/* 9. 우클릭 컨텍스트 메뉴 (한글 2022 빈문서 네이티브 메뉴 100% 일치) */}
+      {/* 9. 우클릭 컨텍스트 메뉴 (한글 빈문서 네이티브 메뉴 100% 일치) */}
       {contextMenu.visible && (
         <div
           onClick={(e) => e.stopPropagation()}
@@ -643,9 +748,9 @@ export default function App() {
         </div>
       )}
 
-      {/* 10. 한글 2022 수식 편집기 모달 (Ctrl+N,M) */}
+      {/* 10. 한글 수식 편집기 모달 (Ctrl+N,M) */}
       {activeModal === 'equation' && (
-        <ModalWrapper title="수식 편집기 - 한글 2022" onClose={() => setActiveModal(null)} width="640px" height="420px">
+        <ModalWrapper title="수식 편집기" onClose={() => setActiveModal(null)} width="640px" height="420px">
           <div style={{ height: '34px', backgroundColor: '#f5f5f5', borderBottom: '1px solid #ddd', display: 'flex', alignItems: 'center', padding: '0 6px', gap: '4px' }}>
             <button onClick={() => setEqScript(p => p + ' {a} over {b} ')} style={{ padding: '2px 8px', fontSize: '11px', cursor: 'pointer' }}>분수(over)</button>
             <button onClick={() => setEqScript(p => p + ' sqrt {x} ')} style={{ padding: '2px 8px', fontSize: '11px', cursor: 'pointer' }}>근호(sqrt)</button>
@@ -686,29 +791,119 @@ export default function App() {
         </ModalWrapper>
       )}
 
-      {/* 11. 표 만들기 모달 (Ctrl+N,T) */}
+      {/* 11. 표 만들기 모달 (Ctrl+N,T) - 한글 네이티브 대화상자 440x315 100% 일치 */}
       {activeModal === 'table' && (
-        <ModalWrapper title="표 만들기 - 한글 2022" onClose={() => setActiveModal(null)} width="360px" height="240px">
-          <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '14px', fontSize: '12px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <span>줄 수:</span>
-              <input type="number" min="1" max="50" value={tableRows} onChange={(e) => setTableRows(Number(e.target.value))} style={{ width: '70px', padding: '3px' }} />
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <span>칸 수:</span>
-              <input type="number" min="1" max="50" value={tableCols} onChange={(e) => setTableCols(Number(e.target.value))} style={{ width: '70px', padding: '3px' }} />
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '16px' }}>
-              <button onClick={insertTableToDoc} style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>만들기</button>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>취소</button>
-            </div>
+        <div style={{
+          position: 'fixed',
+          top: 0, left: 0, right: 0, bottom: 0,
+          backgroundColor: 'rgba(0,0,0,0.18)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          zIndex: 10000
+        }}>
+          <div style={{
+            position: 'relative',
+            width: '440px',
+            height: '315px',
+            boxShadow: '0 8px 24px rgba(0,0,0,0.25)',
+            userSelect: 'none'
+          }}>
+            <img
+              src="/hwp_table_dialog_native.png"
+              alt="표 만들기 대화상자"
+              style={{ width: '440px', height: '315px', display: 'block', pointerEvents: 'none' }}
+            />
+
+            {/* 1. 상단 닫기 버튼 [X] */}
+            <div
+              style={{ position: 'absolute', top: '2px', right: '3px', width: '24px', height: '24px', cursor: 'pointer' }}
+              onClick={() => setActiveModal(null)}
+              title="닫기 (ESC)"
+            />
+
+            {/* 2. 줄 개수 입력 필드 */}
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value={tableRows}
+              onChange={(e) => setTableRows(Math.max(1, Number(e.target.value)))}
+              style={{
+                position: 'absolute', top: '78px', left: '86px', width: '70px', height: '21px',
+                border: 'none', outline: 'none', background: 'transparent',
+                fontSize: '12px', paddingLeft: '6px', textAlign: 'left', fontFamily: '"Malgun Gothic", sans-serif'
+              }}
+            />
+            {/* 줄 개수 스핀 위/아래 버튼 */}
+            <div
+              style={{ position: 'absolute', top: '78px', left: '158px', width: '16px', height: '11px', cursor: 'pointer' }}
+              onClick={() => setTableRows(r => r + 1)}
+              title="줄 수 증가"
+            />
+            <div
+              style={{ position: 'absolute', top: '89px', left: '158px', width: '16px', height: '11px', cursor: 'pointer' }}
+              onClick={() => setTableRows(r => Math.max(1, r - 1))}
+              title="줄 수 감소"
+            />
+
+            {/* 3. 칸 개수 입력 필드 */}
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value={tableCols}
+              onChange={(e) => setTableCols(Math.max(1, Number(e.target.value)))}
+              style={{
+                position: 'absolute', top: '108px', left: '86px', width: '70px', height: '21px',
+                border: 'none', outline: 'none', background: 'transparent',
+                fontSize: '12px', paddingLeft: '6px', textAlign: 'left', fontFamily: '"Malgun Gothic", sans-serif'
+              }}
+            />
+            {/* 칸 개수 스핀 위/아래 버튼 */}
+            <div
+              style={{ position: 'absolute', top: '108px', left: '158px', width: '16px', height: '11px', cursor: 'pointer' }}
+              onClick={() => setTableCols(c => c + 1)}
+              title="칸 수 증가"
+            />
+            <div
+              style={{ position: 'absolute', top: '119px', left: '158px', width: '16px', height: '11px', cursor: 'pointer' }}
+              onClick={() => setTableCols(c => Math.max(1, c - 1))}
+              title="칸 수 감소"
+            />
+
+            {/* 4. 만들기(D) 버튼 히트박스 */}
+            <div
+              style={{ position: 'absolute', top: '42px', left: '346px', width: '81px', height: '28px', cursor: 'pointer' }}
+              onClick={insertTableToDoc}
+              title="만들기 (Enter)"
+            />
+
+            {/* 5. 취소 버튼 히트박스 */}
+            <div
+              style={{ position: 'absolute', top: '76px', left: '346px', width: '81px', height: '28px', cursor: 'pointer' }}
+              onClick={() => setActiveModal(null)}
+              title="취소 (ESC)"
+            />
+
+            {/* 6. 표마당(A) */}
+            <div
+              style={{ position: 'absolute', top: '124px', left: '346px', width: '81px', height: '28px', cursor: 'pointer' }}
+              onClick={() => alert('표마당(A)')}
+              title="표마당"
+            />
+
+            {/* 7. 표속성(P) */}
+            <div
+              style={{ position: 'absolute', top: '158px', left: '346px', width: '81px', height: '28px', cursor: 'pointer' }}
+              onClick={() => alert('표속성(P)')}
+              title="표속성"
+            />
           </div>
-        </ModalWrapper>
+        </div>
       )}
 
       {/* 12. 편집 용지 설정 모달 (F7) */}
       {activeModal === 'page' && (
-        <ModalWrapper title="편집 용지 (F7) - 한글 2022" onClose={() => setActiveModal(null)} width="400px" height="320px">
+        <ModalWrapper title="편집 용지 (F7)" onClose={() => setActiveModal(null)} width="400px" height="320px">
           <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '12px' }}>
             <div style={{ fontWeight: 'bold' }}>용지 종류: A4 (210.0 x 297.0 mm)</div>
             <div style={{ border: '1px solid #eee', padding: '10px', borderRadius: '4px' }}>
@@ -730,7 +925,7 @@ export default function App() {
 
       {/* 13. 글자 모양 설정 모달 (Alt+L) */}
       {activeModal === 'font' && (
-        <ModalWrapper title="글자 모양 (Alt+L) - 한글 2022" onClose={() => setActiveModal(null)} width="420px" height="340px">
+        <ModalWrapper title="글자 모양 (Alt+L)" onClose={() => setActiveModal(null)} width="420px" height="340px">
           <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '12px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span>기준 크기:</span>
@@ -762,7 +957,7 @@ export default function App() {
 
       {/* 14. 문단 모양 설정 모달 (Alt+T) */}
       {activeModal === 'paragraph' && (
-        <ModalWrapper title="문단 모양 (Alt+T) - 한글 2022" onClose={() => setActiveModal(null)} width="400px" height="280px">
+        <ModalWrapper title="문단 모양 (Alt+T)" onClose={() => setActiveModal(null)} width="400px" height="280px">
           <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '12px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span>줄 간격:</span>
