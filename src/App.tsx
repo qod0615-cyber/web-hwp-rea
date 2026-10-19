@@ -11,13 +11,18 @@ export default function App() {
   const [zoom, setZoom] = useState(100);
   const [contextMenu, setContextMenu] = useState<{ x: number; y: number; visible: boolean }>({ x: 0, y: 0, visible: false });
   const [caret, setCaret] = useState({ page: 1, section: 1, col: 1, line: 1, chars: 0, strokes: 0 });
-  const [activeModal, setActiveModal] = useState<string | null>(null); // 'equation' | 'table' | 'font' | 'page' | 'paragraph'
+  const [activeModal, setActiveModal] = useState<string | null>(null); // 'equation' | 'table' | 'font' | 'page' | 'paragraph' | 'charmap' | 'find'
   const [chordState, setChordState] = useState<string | null>(null); // 'Ctrl+N' 등 2단 단축키 대기
   const [chordToast, setChordToast] = useState<string | null>(null);
   const [eqScript, setEqScript] = useState('{a+b} over {c} + sqrt {x^2+y^2}');
   const [tableRows, setTableRows] = useState(5);
   const [tableCols, setTableCols] = useState(5);
   const [isStandalone, setIsStandalone] = useState(false);
+  const [selectedChar, setSelectedChar] = useState('※');
+  const [findWord, setFindWord] = useState('');
+  const [replaceWord, setReplaceWord] = useState('');
+  const [fontConfig, setFontConfig] = useState({ size: 10, font: '함초롬바탕', width: 100, spacing: 0, color: '#000000' });
+  const [paraConfig, setParaConfig] = useState({ lineHeight: 160, align: 'justify', indent: 0 });
   const editorRef = useRef<HTMLDivElement>(null);
 
   // 저장된 본문 복원 및 브라우저 탭 타이틀 동기화
@@ -39,31 +44,28 @@ export default function App() {
 
   // 1. Keyboard Lock API 및 전체 단축키 캡처 (브라우저 가로챔 100% 방지)
   useEffect(() => {
-    // PWA standalone 감지
     if (window.matchMedia('(display-mode: standalone)').matches || (window.navigator as any).standalone) {
       setIsStandalone(true);
     }
 
-    // Chromium Keyboard Lock API (PWA 환경에서 Ctrl+N, Ctrl+W, Ctrl+T 등 시스템 키 잠금)
     const nav = navigator as any;
     if (nav.keyboard && typeof nav.keyboard.lock === 'function') {
       try {
         nav.keyboard.lock([
           'ControlLeft', 'ControlRight', 'AltLeft', 'AltRight',
-          'KeyN', 'KeyS', 'KeyO', 'KeyP', 'KeyW', 'KeyT', 'KeyM', 'KeyL', 'KeyC', 'KeyX', 'KeyV', 'KeyA', 'KeyZ', 'KeyY',
+          'KeyN', 'KeyS', 'KeyO', 'KeyP', 'KeyW', 'KeyT', 'KeyM', 'KeyL', 'KeyC', 'KeyX', 'KeyV', 'KeyA', 'KeyZ', 'KeyY', 'KeyF', 'KeyH',
           'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12',
           'Escape'
         ]).catch(() => {});
       } catch (err) {}
     }
 
-    // 전역 keydown 캡처 핸들러 (capture: true 로 최우선 가로챔)
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       const isCtrl = e.ctrlKey || e.metaKey;
       const isAlt = e.altKey;
       const key = e.key.toUpperCase();
 
-      // 1) 2단 조합키 (Chord) 대기 중일 때 (예: Ctrl+N 누른 후 M 또는 T)
+      // 1) 2단 조합키 (Chord)
       if (chordState === 'Ctrl+N') {
         e.preventDefault();
         e.stopPropagation();
@@ -71,27 +73,22 @@ export default function App() {
         setChordToast(null);
 
         if (key === 'M') {
-          // Ctrl+N, M -> 수식 편집기
           setActiveModal('equation');
           return;
         } else if (key === 'T') {
-          // Ctrl+N, T -> 표 만들기
           setActiveModal('table');
           return;
         } else if (key === 'I') {
-          // Ctrl+N, I -> 그림 넣기
-          alert('그림 넣기 파일 선택기를 엽니다.');
+          handleOpen();
           return;
         } else if (key === 'N') {
-          // Ctrl+N, N -> 새 글
           handleNewDoc();
           return;
         }
       }
 
-      // 2) 단일 및 1차 단축키 가로챔
+      // 2) 전역 단축키 가로챔
       if (isCtrl && !isAlt && key === 'N') {
-        // 브라우저의 새 창 띄우기 가로챔 -> 한글의 Ctrl+N 조합 대기 모드 진입
         e.preventDefault();
         e.stopPropagation();
         setChordState('Ctrl+N');
@@ -103,8 +100,23 @@ export default function App() {
         return;
       }
 
+      if (isCtrl && key === 'F10') {
+        // Ctrl+F10 -> 문자표
+        e.preventDefault();
+        e.stopPropagation();
+        setActiveModal('charmap');
+        return;
+      }
+
+      if (isCtrl && (key === 'F' || key === 'H')) {
+        // Ctrl+F / Ctrl+H -> 찾기 및 바꾸기
+        e.preventDefault();
+        e.stopPropagation();
+        setActiveModal('find');
+        return;
+      }
+
       if (isCtrl && key === 'S') {
-        // Ctrl+S -> 저장
         e.preventDefault();
         e.stopPropagation();
         handleSave();
@@ -112,7 +124,6 @@ export default function App() {
       }
 
       if (isCtrl && key === 'O') {
-        // Ctrl+O -> 열기
         e.preventDefault();
         e.stopPropagation();
         handleOpen();
@@ -120,7 +131,6 @@ export default function App() {
       }
 
       if (isCtrl && key === 'P') {
-        // Ctrl+P -> 인쇄
         e.preventDefault();
         e.stopPropagation();
         window.print();
@@ -128,7 +138,6 @@ export default function App() {
       }
 
       if (isAlt && key === 'N') {
-        // Alt+N -> 새 문서
         e.preventDefault();
         e.stopPropagation();
         handleNewDoc();
@@ -136,7 +145,6 @@ export default function App() {
       }
 
       if (isAlt && key === 'S') {
-        // Alt+S -> 저장
         e.preventDefault();
         e.stopPropagation();
         handleSave();
@@ -144,7 +152,6 @@ export default function App() {
       }
 
       if (isAlt && key === 'O') {
-        // Alt+O -> 열기
         e.preventDefault();
         e.stopPropagation();
         handleOpen();
@@ -152,7 +159,6 @@ export default function App() {
       }
 
       if (isAlt && key === 'P') {
-        // Alt+P -> 인쇄
         e.preventDefault();
         e.stopPropagation();
         window.print();
@@ -160,7 +166,6 @@ export default function App() {
       }
 
       if (isAlt && key === 'L') {
-        // Alt+L -> 글자 모양
         e.preventDefault();
         e.stopPropagation();
         setActiveModal('font');
@@ -168,7 +173,6 @@ export default function App() {
       }
 
       if (isAlt && key === 'T') {
-        // Alt+T -> 문단 모양
         e.preventDefault();
         e.stopPropagation();
         setActiveModal('paragraph');
@@ -176,7 +180,6 @@ export default function App() {
       }
 
       if (key === 'F7') {
-        // F7 -> 편집 용지
         e.preventDefault();
         e.stopPropagation();
         setActiveModal('page');
@@ -184,7 +187,6 @@ export default function App() {
       }
 
       if (key === 'F6') {
-        // F6 -> 스타일
         e.preventDefault();
         e.stopPropagation();
         alert('스타일(F6) 대화상자');
@@ -192,7 +194,6 @@ export default function App() {
       }
 
       if (key === 'ESCAPE') {
-        // ESC -> 열린 모달/메뉴 닫기
         if (activeModal) {
           e.preventDefault();
           setActiveModal(null);
@@ -901,7 +902,144 @@ export default function App() {
         </div>
       )}
 
-      {/* 12. 편집 용지 설정 모달 (F7) */}
+      {/* 12. 문자표 모달 (Ctrl+F10) */}
+      {activeModal === 'charmap' && (
+        <ModalWrapper title="문자표 (Ctrl+F10)" onClose={() => setActiveModal(null)} width="460px" height="380px">
+          <div style={{ padding: '12px', display: 'flex', flexDirection: 'column', height: '100%', boxSizing: 'border-box' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+              <span style={{ fontSize: '11px', color: '#555' }}>문자 영역: 사용자 문자표 / 특수기호</span>
+              <span style={{ fontSize: '11px', fontWeight: 'bold', color: '#0078d7' }}>선택된 문자: {selectedChar}</span>
+            </div>
+            <div style={{
+              flex: 1,
+              border: '1px solid #ccc',
+              backgroundColor: '#fff',
+              overflowY: 'auto',
+              display: 'grid',
+              gridTemplateColumns: 'repeat(12, 1fr)',
+              gap: '1px',
+              padding: '4px',
+              userSelect: 'none'
+            }}>
+              {[
+                '※', '★', '☆', '◆', '◇', '○', '●', '◎', '△', '▲', '▽', '▼',
+                '→', '←', '↑', '↓', '↔', '↕', '≪', '≫', '℃', '℉', '№', '℡',
+                'Ⅰ', 'Ⅱ', 'Ⅲ', 'Ⅳ', 'Ⅴ', 'Ⅵ', 'ⅰ', 'ⅱ', 'ⅲ', 'ⅳ', 'ⅴ', 'ⅵ',
+                '±', '×', '÷', '≒', '≠', '≤', '≥', '∞', '∴', '∵', '♂', '♀',
+                '∠', '⊥', '⌒', '∂', '∇', '≡', '≒', '√', '∽', '∝', '∫', '∬',
+                '∈', '∋', '⊆', '⊇', '⊂', '⊃', '∪', '∩', '∧', '∨', '¬', '⇒',
+                'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ',
+                'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω',
+                'Α', 'Β', 'Γ', 'Δ', 'Ε', 'Ζ', 'Η', 'Θ', 'Ι', 'Κ', 'Λ', 'Μ',
+                '가', '나', '다', '라', '마', '바', '사', '아', '자', '차', '카', '타'
+              ].map((ch, idx) => (
+                <div
+                  key={idx}
+                  onClick={() => setSelectedChar(ch)}
+                  onDoubleClick={() => {
+                    document.execCommand('insertText', false, ch);
+                    setActiveModal(null);
+                  }}
+                  style={{
+                    height: '26px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '13px',
+                    cursor: 'pointer',
+                    backgroundColor: selectedChar === ch ? '#cce8ff' : '#ffffff',
+                    border: selectedChar === ch ? '1px solid #99d1ff' : '1px solid transparent'
+                  }}
+                >
+                  {ch}
+                </div>
+              ))}
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '10px' }}>
+              <button
+                onClick={() => {
+                  document.execCommand('insertText', false, selectedChar);
+                  setActiveModal(null);
+                }}
+                style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '4px 16px', borderRadius: '2px', cursor: 'pointer', fontSize: '12px' }}
+              >
+                넣기(Enter)
+              </button>
+              <button
+                onClick={() => setActiveModal(null)}
+                style={{ backgroundColor: '#ffffff', border: '1px solid #ccc', padding: '4px 16px', borderRadius: '2px', cursor: 'pointer', fontSize: '12px' }}
+              >
+                닫기(ESC)
+              </button>
+            </div>
+          </div>
+        </ModalWrapper>
+      )}
+
+      {/* 13. 찾기 및 바꾸기 모달 (Ctrl+F, Ctrl+H) */}
+      {activeModal === 'find' && (
+        <ModalWrapper title="찾기 / 찾아 바꾸기 (Ctrl+F)" onClose={() => setActiveModal(null)} width="420px" height="260px">
+          <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '12px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <span>찾을 내용:</span>
+              <input
+                type="text"
+                value={findWord}
+                onChange={(e) => setFindWord(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && findWord) (window as any).find(findWord, false, false, true);
+                }}
+                style={{ width: '260px', padding: '4px 6px', border: '1px solid #ccc', outline: 'none' }}
+                placeholder="찾을 낱말 입력"
+                autoFocus
+              />
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <span>바꿀 내용:</span>
+              <input
+                type="text"
+                value={replaceWord}
+                onChange={(e) => setReplaceWord(e.target.value)}
+                style={{ width: '260px', padding: '4px 6px', border: '1px solid #ccc', outline: 'none' }}
+                placeholder="바꿀 낱말 입력"
+              />
+            </div>
+            <div style={{ fontSize: '11px', color: '#666', borderTop: '1px solid #eee', paddingTop: '8px' }}>
+              방향: 아래로 | 대소문자 구분 없음
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '6px', marginTop: 'auto' }}>
+              <button
+                onClick={() => {
+                  if (findWord) (window as any).find(findWord, false, false, true);
+                }}
+                style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '4px 12px', borderRadius: '2px', cursor: 'pointer', fontSize: '11px' }}
+              >
+                다음 찾기
+              </button>
+              <button
+                onClick={() => {
+                  if (findWord && editorRef.current) {
+                    const currentHtml = editorRef.current.innerHTML;
+                    const regex = new RegExp(findWord, 'g');
+                    editorRef.current.innerHTML = currentHtml.replace(regex, replaceWord);
+                  }
+                }}
+                style={{ backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '4px 12px', borderRadius: '2px', cursor: 'pointer', fontSize: '11px' }}
+              >
+                모두 바꾸기
+              </button>
+              <button
+                onClick={() => setActiveModal(null)}
+                style={{ backgroundColor: '#ffffff', border: '1px solid #ccc', padding: '4px 12px', borderRadius: '2px', cursor: 'pointer', fontSize: '11px' }}
+              >
+                취소
+              </button>
+            </div>
+          </div>
+        </ModalWrapper>
+      )}
+
+      {/* 14. 편집 용지 설정 모달 (F7) */}
       {activeModal === 'page' && (
         <ModalWrapper title="편집 용지 (F7)" onClose={() => setActiveModal(null)} width="400px" height="320px">
           <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '12px' }}>
@@ -916,65 +1054,146 @@ export default function App() {
               </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '10px' }}>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>설정</button>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>취소</button>
+              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>설정(Enter)</button>
+              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>취소(ESC)</button>
             </div>
           </div>
         </ModalWrapper>
       )}
 
-      {/* 13. 글자 모양 설정 모달 (Alt+L) */}
+      {/* 15. 글자 모양 설정 모달 (Alt+L) */}
       {activeModal === 'font' && (
-        <ModalWrapper title="글자 모양 (Alt+L)" onClose={() => setActiveModal(null)} width="420px" height="340px">
-          <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '12px' }}>
+        <ModalWrapper title="글자 모양 (Alt+L)" onClose={() => setActiveModal(null)} width="440px" height="360px">
+          <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '12px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span>기준 크기:</span>
-              <input type="number" defaultValue="10.0" style={{ width: '60px' }} /> pt
+              <div>
+                <input
+                  type="number"
+                  value={fontConfig.size}
+                  onChange={(e) => setFontConfig(p => ({ ...p, size: Number(e.target.value) }))}
+                  style={{ width: '60px', padding: '2px 4px' }}
+                /> pt
+              </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span>글꼴:</span>
-              <select defaultValue="함초롬바탕" style={{ width: '140px' }}>
-                <option>함초롬바탕</option>
-                <option>함초롬돋움</option>
-                <option>맑은 고딕</option>
+              <select
+                value={fontConfig.font}
+                onChange={(e) => setFontConfig(p => ({ ...p, font: e.target.value }))}
+                style={{ width: '160px', padding: '2px 4px' }}
+              >
+                <option value="함초롬바탕">함초롬바탕</option>
+                <option value="함초롬돋움">함초롬돋움</option>
+                <option value="맑은 고딕">맑은 고딕</option>
+                <option value="바탕">바탕</option>
+                <option value="궁서">궁서</option>
               </select>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span>장평:</span>
-              <input type="number" defaultValue="100" style={{ width: '60px' }} /> %
+              <span>장평 (가로비):</span>
+              <div>
+                <input
+                  type="number"
+                  value={fontConfig.width}
+                  onChange={(e) => setFontConfig(p => ({ ...p, width: Number(e.target.value) }))}
+                  style={{ width: '60px', padding: '2px 4px' }}
+                /> %
+              </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span>자간:</span>
-              <input type="number" defaultValue="0" style={{ width: '60px' }} /> %
+              <span>자간 (글자 사이):</span>
+              <div>
+                <input
+                  type="number"
+                  value={fontConfig.spacing}
+                  onChange={(e) => setFontConfig(p => ({ ...p, spacing: Number(e.target.value) }))}
+                  style={{ width: '60px', padding: '2px 4px' }}
+                /> %
+              </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '16px' }}>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>설정</button>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>취소</button>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <span>글자 색:</span>
+              <input
+                type="color"
+                value={fontConfig.color}
+                onChange={(e) => setFontConfig(p => ({ ...p, color: e.target.value }))}
+                style={{ width: '40px', height: '24px', cursor: 'pointer' }}
+              />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: 'auto' }}>
+              <button
+                onClick={() => {
+                  const sel = window.getSelection();
+                  if (sel && sel.rangeCount > 0) {
+                    const span = document.createElement('span');
+                    span.style.fontFamily = fontConfig.font;
+                    span.style.fontSize = `${fontConfig.size * 1.33}px`;
+                    span.style.color = fontConfig.color;
+                    span.style.letterSpacing = `${fontConfig.spacing * 0.1}px`;
+                    if (fontConfig.width !== 100) {
+                      span.style.display = 'inline-block';
+                      span.style.transform = `scaleX(${fontConfig.width / 100})`;
+                      span.style.transformOrigin = 'left center';
+                    }
+                    const range = sel.getRangeAt(0);
+                    span.appendChild(range.extractContents());
+                    range.insertNode(span);
+                  }
+                  setActiveModal(null);
+                }}
+                style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}
+              >
+                설정(Enter)
+              </button>
+              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>취소(ESC)</button>
             </div>
           </div>
         </ModalWrapper>
       )}
 
-      {/* 14. 문단 모양 설정 모달 (Alt+T) */}
+      {/* 16. 문단 모양 설정 모달 (Alt+T) */}
       {activeModal === 'paragraph' && (
         <ModalWrapper title="문단 모양 (Alt+T)" onClose={() => setActiveModal(null)} width="400px" height="280px">
           <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '12px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span>줄 간격:</span>
-              <input type="number" defaultValue="160" style={{ width: '60px' }} /> %
+              <div>
+                <input
+                  type="number"
+                  value={paraConfig.lineHeight}
+                  onChange={(e) => setParaConfig(p => ({ ...p, lineHeight: Number(e.target.value) }))}
+                  style={{ width: '60px', padding: '2px 4px' }}
+                /> %
+              </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span>정렬 방식:</span>
-              <select defaultValue="양쪽 정렬">
-                <option>양쪽 정렬</option>
-                <option>왼쪽 정렬</option>
-                <option>가운데 정렬</option>
-                <option>오른쪽 정렬</option>
+              <select
+                value={paraConfig.align}
+                onChange={(e) => setParaConfig(p => ({ ...p, align: e.target.value }))}
+                style={{ width: '120px', padding: '2px 4px' }}
+              >
+                <option value="justify">양쪽 정렬</option>
+                <option value="left">왼쪽 정렬</option>
+                <option value="center">가운데 정렬</option>
+                <option value="right">오른쪽 정렬</option>
               </select>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '16px' }}>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>설정</button>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>취소</button>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: 'auto' }}>
+              <button
+                onClick={() => {
+                  if (editorRef.current) {
+                    editorRef.current.style.textAlign = paraConfig.align;
+                    editorRef.current.style.lineHeight = `${paraConfig.lineHeight / 100}`;
+                  }
+                  setActiveModal(null);
+                }}
+                style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}
+              >
+                설정(Enter)
+              </button>
+              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>취소(ESC)</button>
             </div>
           </div>
         </ModalWrapper>
@@ -988,30 +1207,35 @@ function ModalWrapper({ title, onClose, width, height, children }: { title: stri
     <div style={{
       position: 'fixed',
       top: 0, left: 0, right: 0, bottom: 0,
-      backgroundColor: 'rgba(0,0,0,0.3)',
+      backgroundColor: 'rgba(0,0,0,0.22)',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       zIndex: 10000
     }}>
       <div style={{
         width, height,
         backgroundColor: '#ffffff',
-        borderRadius: '3px',
-        boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
-        border: '1px solid #0078d7',
+        boxShadow: '0 8px 24px rgba(0,0,0,0.28)',
+        border: '1px solid #7ba4ff',
         display: 'flex', flexDirection: 'column',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        userSelect: 'none'
       }}>
+        {/* 네이티브 스타일 하늘색 헤더 */}
         <div style={{
           height: '28px',
-          backgroundColor: '#0078d7',
-          color: '#ffffff',
+          background: 'linear-gradient(to bottom, #f7faff, #e8f0fc)',
+          color: '#222222',
+          borderBottom: '1px solid #c9d8ee',
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          padding: '0 10px', fontSize: '12px', fontWeight: 'bold'
+          padding: '0 8px 0 12px', fontSize: '12px', fontWeight: 'bold'
         }}>
           <span>{title}</span>
-          <span onClick={onClose} style={{ cursor: 'pointer', fontSize: '13px' }}>✕</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ cursor: 'pointer', color: '#666', fontSize: '12px' }} title="도움말">?</span>
+            <span onClick={onClose} style={{ cursor: 'pointer', color: '#444', fontSize: '13px' }} title="닫기 (ESC)">✕</span>
+          </div>
         </div>
-        <div style={{ flex: 1, overflow: 'auto' }}>
+        <div style={{ flex: 1, overflow: 'auto', backgroundColor: '#ffffff' }}>
           {children}
         </div>
       </div>
