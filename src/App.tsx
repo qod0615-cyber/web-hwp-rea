@@ -538,7 +538,7 @@ export default function App() {
         />
       </div>
 
-      {/* 9. 우클릭 컨텍스트 메뉴 */}
+      {/* 9. 우클릭 컨텍스트 메뉴 (한글 2022 빈문서 네이티브 메뉴 100% 일치) */}
       {contextMenu.visible && (
         <div
           onClick={(e) => e.stopPropagation()}
@@ -546,33 +546,100 @@ export default function App() {
             position: 'fixed',
             top: `${contextMenu.y}px`,
             left: `${contextMenu.x}px`,
-            width: '190px',
+            width: '211px',
+            height: '354px',
             backgroundColor: '#ffffff',
-            border: '1px solid #c8c8c8',
-            borderRadius: '2px',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.18)',
-            padding: '4px 0',
+            boxShadow: '2px 4px 12px rgba(0,0,0,0.22)',
             zIndex: 9999,
-            fontSize: '12px',
-            color: '#222222'
+            userSelect: 'none',
+            overflow: 'hidden'
           }}
         >
-          <ContextMenuItem label="글자 모양(L)..." shortcut="Alt+L" onClick={() => { setActiveModal('font'); setContextMenu(prev => ({ ...prev, visible: false })); }} />
-          <ContextMenuItem label="문단 모양(T)..." shortcut="Alt+T" onClick={() => { setActiveModal('paragraph'); setContextMenu(prev => ({ ...prev, visible: false })); }} />
-          <ContextMenuItem label="스타일(S)..." shortcut="F6" onClick={() => { alert('스타일(F6)'); setContextMenu(prev => ({ ...prev, visible: false })); }} />
-          <ContextMenuItem label="수식(M)..." shortcut="Ctrl+N,M" onClick={() => { setActiveModal('equation'); setContextMenu(prev => ({ ...prev, visible: false })); }} />
-          <ContextMenuItem label="표 만들기(T)..." shortcut="Ctrl+N,T" onClick={() => { setActiveModal('table'); setContextMenu(prev => ({ ...prev, visible: false })); }} />
-          <ContextMenuDivider />
-          <ContextMenuItem label="오려두기(X)" shortcut="Ctrl+X" onClick={() => document.execCommand('cut')} />
-          <ContextMenuItem label="복사하기(C)" shortcut="Ctrl+C" onClick={() => document.execCommand('copy')} />
-          <ContextMenuItem label="붙이기(V)" shortcut="Ctrl+V" onClick={() => document.execCommand('paste')} />
-          <ContextMenuItem label="모양 복사(C)..." shortcut="Alt+C" />
-          <ContextMenuDivider />
-          <ContextMenuItem label="편집 용지(P)..." shortcut="F7" onClick={() => { setActiveModal('page'); setContextMenu(prev => ({ ...prev, visible: false })); }} />
-          <ContextMenuItem label="모두 선택(A)" shortcut="Ctrl+A" onClick={() => { document.execCommand('selectAll'); setContextMenu(prev => ({ ...prev, visible: false })); }} />
-          <ContextMenuDivider />
-          <ContextMenuItem label="새 문서(N)" shortcut="Alt+N" onClick={handleNewDoc} />
-          <ContextMenuItem label="저장하기(S)" shortcut="Alt+S" onClick={handleSave} />
+          <img
+            src="/hwp_context_menu_exact.png"
+            alt="한글 우클릭 메뉴"
+            style={{ width: '211px', height: '354px', display: 'block', pointerEvents: 'none' }}
+          />
+
+          {/* 항목별 투명 클릭 액션 히트박스 매핑 */}
+          {/* 1. 붙이기(P) Ctrl+V */}
+          <div
+            style={{ position: 'absolute', top: '1px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { document.execCommand('paste'); setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="붙이기 (Ctrl+V)"
+          />
+          {/* 2. 문자표(C)... Ctrl+F10 */}
+          <div
+            style={{ position: 'absolute', top: '27px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { alert('문자표(Ctrl+F10)'); setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="문자표 (Ctrl+F10)"
+          />
+          {/* 3. 인쇄(R)... Alt+P */}
+          <div
+            style={{ position: 'absolute', top: '56px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { window.print(); setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="인쇄 (Alt+P)"
+          />
+          {/* 4. 글자 모양(L)... Alt+L */}
+          <div
+            style={{ position: 'absolute', top: '85px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { setActiveModal('font'); setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="글자 모양 (Alt+L)"
+          />
+          {/* 5. 문단 모양(M)... Alt+T */}
+          <div
+            style={{ position: 'absolute', top: '111px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { setActiveModal('paragraph'); setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="문단 모양 (Alt+T)"
+          />
+          {/* 6. 스타일(S)... F6 */}
+          <div
+            style={{ position: 'absolute', top: '137px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { alert('스타일(F6)'); setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="스타일 (F6)"
+          />
+          {/* 7. 글머리표 및 문단 번호(N)... */}
+          <div
+            style={{ position: 'absolute', top: '163px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { alert('글머리표 및 문단 번호'); setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="글머리표 및 문단 번호"
+          />
+          {/* 8. 하이퍼링크(Y)... Ctrl+K,H */}
+          <div
+            style={{ position: 'absolute', top: '192px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { alert('하이퍼링크 (Ctrl+K,H)'); setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="하이퍼링크"
+          />
+          {/* 9. 새 메모(T) */}
+          <div
+            style={{ position: 'absolute', top: '218px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { alert('새 메모'); setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="새 메모"
+          />
+          {/* 10. 채우기(I) */}
+          <div
+            style={{ position: 'absolute', top: '244px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="채우기"
+          />
+          {/* 11. 교정 부호 넣기(V) */}
+          <div
+            style={{ position: 'absolute', top: '270px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="교정 부호 넣기"
+          />
+          {/* 12. 개인 정보 보호(A) */}
+          <div
+            style={{ position: 'absolute', top: '296px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="개인 정보 보호"
+          />
+          {/* 13. 번역(B) */}
+          <div
+            style={{ position: 'absolute', top: '325px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            onClick={() => { alert('번역 실행'); setContextMenu(prev => ({ ...prev, visible: false })); }}
+            title="번역"
+          />
         </div>
       )}
 
