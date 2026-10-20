@@ -29,15 +29,15 @@ html = html.replace(/<script\s+crossorigin\s+type="module">/g, '<script>');
 const scriptMatch = html.match(/(<script>[\s\S]*?<\/script>)/);
 if (scriptMatch) {
   const scriptTag = scriptMatch[1];
-  html = html.replace(scriptTag, '');
-  html = html.replace('</body>', `${scriptTag}</body>`);
+  html = html.replace(scriptTag, () => '');
+  html = html.replace('</body>', () => `${scriptTag}</body>`);
 }
 
 // 폰트 파일 인라인 변환 (fonts/HYHWPEQ.TTF)
 const fontPath = path.resolve('public/fonts/HYHWPEQ.TTF');
 if (fs.existsSync(fontPath)) {
   const fontB64 = fs.readFileSync(fontPath).toString('base64');
-  html = html.replace(/url\(['"]?fonts\/HYHWPEQ\.TTF['"]?\)/g, `url('data:font/truetype;charset=utf-8;base64,${fontB64}')`);
+  html = html.replace(/url\(['"]?fonts\/HYHWPEQ\.TTF['"]?\)/g, () => `url('data:font/truetype;charset=utf-8;base64,${fontB64}')`);
 }
 
 fs.writeFileSync(htmlPath, html, 'utf-8');
