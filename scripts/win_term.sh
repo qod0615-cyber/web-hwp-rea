@@ -12,6 +12,11 @@ try:
     out = subprocess.check_output(['orca', 'terminal', 'list', '--environment', '$ENV_NAME', '--json'])
     data = json.loads(out)
     for t in data.get('result', {}).get('terminals', []):
+        if '$PROJECT_KEY' in t.get('worktreePath', '') and t.get('connected') and t.get('writable'):
+            print(t['handle'])
+            sys.exit(0)
+    # fallback to any matching if no connected found
+    for t in data.get('result', {}).get('terminals', []):
         if '$PROJECT_KEY' in t.get('worktreePath', ''):
             print(t['handle'])
             sys.exit(0)
