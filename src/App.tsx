@@ -443,8 +443,13 @@ export default function App() {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        height: '100vh',
-        width: '100vw',
+        width: '1916px',
+        minWidth: '1916px',
+        maxWidth: '1916px',
+        height: '918px',
+        minHeight: '918px',
+        maxHeight: '918px',
+        margin: '0 auto',
         backgroundColor: '#ffffff',
         color: '#222222',
         fontFamily: '"Malgun Gothic", "맑은 고딕", -apple-system, BlinkMacSystemFont, sans-serif',
@@ -491,11 +496,11 @@ export default function App() {
         </div>
       )}
 
-      {/* 1. 최상단 타이틀바 (PWA standalone일 땐 OS 프레임과 겹치지 않게 숨김) */}
-      {/* 1. 최상단 타이틀바 (PWA standalone일 땐 OS 프레임과 겹치지 않게 숨김) */}
+      {/* 1. 최상단 타이틀바 (26px) */}
       {!isStandalone && (
         <div style={{
           height: '26px',
+          width: '1916px',
           backgroundColor: '#ffffff',
           backgroundImage: 'url(/hwp_title_exact.png)',
           backgroundRepeat: 'no-repeat',
@@ -518,9 +523,10 @@ export default function App() {
         </div>
       )}
 
-      {/* 2. 메인 메뉴바 (실제 한글 네이티브 슬라이스 기반, 100% 일치) */}
+      {/* 2. 메인 메뉴바 (32px, 실제 한글 네이티브 슬라이스 1:1 일치) */}
       <div style={{
         height: '32px',
+        width: '1916px',
         backgroundColor: '#ffffff',
         display: 'flex',
         alignItems: 'center',
@@ -532,18 +538,18 @@ export default function App() {
         <img
           src="/hwp_menu_exact.png"
           alt="한글 메뉴바"
-          style={{ height: '32px', width: '100%', maxWidth: '1916px', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
+          style={{ height: '32px', width: '1916px', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
         />
-        {/* 투명 클릭 히트박스 영역 매핑 (1916px 네이티브 1:1 정렬) */}
-        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '15px', width: '48px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'file' ? null : 'file')} title="파일" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '68px', width: '48px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'edit' ? null : 'edit')} title="편집" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '122px', width: '48px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'view' ? null : 'view')} title="보기" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '176px', width: '48px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'insert' ? null : 'insert')} title="입력" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '230px', width: '48px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'format' ? null : 'format')} title="서식" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '284px', width: '48px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'page' ? null : 'page')} title="쪽" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '338px', width: '48px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setChordToast('보안 메뉴')} title="보안" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '392px', width: '48px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setChordToast('검토 메뉴')} title="검토" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '446px', width: '48px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setChordToast('도구 메뉴')} title="도구" />
+        {/* 투명 클릭 히트박스 영역 매핑 (1916px 실측 좌표) */}
+        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '10px', width: '44px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'file' ? null : 'file')} title="파일" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '74px', width: '44px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'edit' ? null : 'edit')} title="편집" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '134px', width: '44px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'view' ? null : 'view')} title="보기" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '194px', width: '44px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'insert' ? null : 'insert')} title="입력" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '254px', width: '44px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'format' ? null : 'format')} title="서식" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '308px', width: '42px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveDropdown(activeDropdown === 'page' ? null : 'page')} title="쪽" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '360px', width: '44px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setChordToast('보안 메뉴')} title="보안" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '418px', width: '44px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setChordToast('검토 메뉴')} title="검토" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '2px', left: '478px', width: '44px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setChordToast('도구 메뉴')} title="도구" />
 
         {/* 네이티브 드롭다운 메뉴 레이어 */}
         {activeDropdown && (
@@ -551,11 +557,11 @@ export default function App() {
             style={{
               position: 'absolute',
               top: '32px',
-              left: activeDropdown === 'file' ? '15px' :
-                    activeDropdown === 'edit' ? '68px' :
-                    activeDropdown === 'view' ? '122px' :
-                    activeDropdown === 'insert' ? '176px' :
-                    activeDropdown === 'format' ? '230px' : '284px',
+              left: activeDropdown === 'file' ? '10px' :
+                    activeDropdown === 'edit' ? '74px' :
+                    activeDropdown === 'view' ? '134px' :
+                    activeDropdown === 'insert' ? '194px' :
+                    activeDropdown === 'format' ? '254px' : '308px',
               backgroundColor: '#ffffff',
               border: '1px solid #7ba4ff',
               boxShadow: '2px 4px 12px rgba(0,0,0,0.18)',
@@ -587,15 +593,15 @@ export default function App() {
             )}
             {activeDropdown === 'edit' && (
               <>
-                <ContextMenuItem label="되돌리기" shortcut="Ctrl+Z" onClick={() => { document.execCommand('undo'); setActiveDropdown(null); }} />
-                <ContextMenuItem label="다시 실행" shortcut="Ctrl+Y" onClick={() => { document.execCommand('redo'); setActiveDropdown(null); }} />
+                <ContextMenuItem label="되돌리기" shortcut="Ctrl+Z" onClick={() => { runCommand('undo', null, '되돌리기'); setActiveDropdown(null); }} />
+                <ContextMenuItem label="다시 실행" shortcut="Ctrl+Y" onClick={() => { runCommand('redo', null, '다시 실행'); setActiveDropdown(null); }} />
                 <ContextMenuDivider />
-                <ContextMenuItem label="오려두기" shortcut="Ctrl+X" onClick={() => { document.execCommand('cut'); setActiveDropdown(null); }} />
-                <ContextMenuItem label="복사하기" shortcut="Ctrl+C" onClick={() => { document.execCommand('copy'); setActiveDropdown(null); }} />
-                <ContextMenuItem label="붙이기" shortcut="Ctrl+V" onClick={() => { document.execCommand('paste'); setActiveDropdown(null); }} />
+                <ContextMenuItem label="오려두기" shortcut="Ctrl+X" onClick={() => { runCommand('cut', null, '오려두기'); setActiveDropdown(null); }} />
+                <ContextMenuItem label="복사하기" shortcut="Ctrl+C" onClick={() => { runCommand('copy', null, '복사하기'); setActiveDropdown(null); }} />
+                <ContextMenuItem label="붙이기" shortcut="Ctrl+V" onClick={() => { runCommand('paste', null, '붙이기'); setActiveDropdown(null); }} />
                 <ContextMenuItem label="모양 복사" shortcut="Alt+C" onClick={() => { handleCopyFormat(); setActiveDropdown(null); }} />
                 <ContextMenuDivider />
-                <ContextMenuItem label="모두 선택" shortcut="Ctrl+A" onClick={() => { document.execCommand('selectAll'); setActiveDropdown(null); }} />
+                <ContextMenuItem label="모두 선택" shortcut="Ctrl+A" onClick={() => { runCommand('selectAll', null, '모두 선택'); setActiveDropdown(null); }} />
                 <ContextMenuDivider />
                 <ContextMenuItem label="찾기" shortcut="Ctrl+F" onClick={() => { setActiveModal('find'); setActiveDropdown(null); }} />
                 <ContextMenuItem label="바꾸기" shortcut="Ctrl+H" onClick={() => { setActiveModal('find'); setActiveDropdown(null); }} />
@@ -620,7 +626,7 @@ export default function App() {
                 <ContextMenuItem label="수식..." shortcut="Ctrl+N, M" onClick={() => { setActiveModal('equation'); setActiveDropdown(null); }} />
                 <ContextMenuItem label="문자표..." shortcut="Ctrl+F10" onClick={() => { setActiveModal('charmap'); setActiveDropdown(null); }} />
                 <ContextMenuDivider />
-                <ContextMenuItem label="그림..." shortcut="Ctrl+N, I" onClick={() => { handleOpen(); setActiveDropdown(null); }} />
+                <ContextMenuItem label="그림..." shortcut="Ctrl+N, I" onClick={() => { handleInsertImage(); setActiveDropdown(null); }} />
                 <ContextMenuItem label="차트..." onClick={() => { handleInsertChart(); setActiveDropdown(null); }} />
                 <ContextMenuDivider />
                 <ContextMenuItem label="글상자" onClick={() => { handleInsertShape('textbox'); setActiveDropdown(null); }} />
@@ -634,10 +640,10 @@ export default function App() {
                 <ContextMenuItem label="문단 모양..." shortcut="Alt+T" onClick={() => { setActiveModal('paragraph'); setActiveDropdown(null); }} />
                 <ContextMenuItem label="스타일..." shortcut="F6" onClick={() => { setActiveModal('style'); setActiveDropdown(null); }} />
                 <ContextMenuDivider />
-                <ContextMenuItem label="진하게" shortcut="Ctrl+B" onClick={() => { document.execCommand('bold'); setActiveDropdown(null); }} />
-                <ContextMenuItem label="기울임" shortcut="Ctrl+I" onClick={() => { document.execCommand('italic'); setActiveDropdown(null); }} />
-                <ContextMenuItem label="밑줄" shortcut="Ctrl+U" onClick={() => { document.execCommand('underline'); setActiveDropdown(null); }} />
-                <ContextMenuItem label="취소선" onClick={() => { document.execCommand('strikeThrough'); setActiveDropdown(null); }} />
+                <ContextMenuItem label="진하게" shortcut="Ctrl+B" onClick={() => { runCommand('bold', null, '진하게'); setActiveDropdown(null); }} />
+                <ContextMenuItem label="기울임" shortcut="Ctrl+I" onClick={() => { runCommand('italic', null, '기울임'); setActiveDropdown(null); }} />
+                <ContextMenuItem label="밑줄" shortcut="Ctrl+U" onClick={() => { runCommand('underline', null, '밑줄'); setActiveDropdown(null); }} />
+                <ContextMenuItem label="취소선" onClick={() => { runCommand('strikeThrough', null, '취소선'); setActiveDropdown(null); }} />
               </>
             )}
             {activeDropdown === 'page' && (
@@ -656,9 +662,10 @@ export default function App() {
         )}
       </div>
 
-      {/* 3. 리본 툴바 (실제 한글 네이티브 슬라이스 기반, 100% 일치) */}
+      {/* 3. 리본 툴바 (83px, 21개 도구 실측 1:1 정렬) */}
       <div style={{
         height: '83px',
+        width: '1916px',
         backgroundColor: '#ffffff',
         display: 'flex',
         alignItems: 'center',
@@ -669,34 +676,36 @@ export default function App() {
         <img
           src="/hwp_ribbon_exact.png"
           alt="한글 리본 툴바"
-          style={{ height: '83px', width: '100%', maxWidth: '1916px', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
+          style={{ height: '83px', width: '1916px', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
         />
-        {/* 리본 도구 실제 1:1 정렬 히트박스 매핑 (selection 보존 onMouseDown 적용) */}
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '10px', width: '45px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('cut', null, '오려두기')} title="오려두기 (Ctrl+X)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '58px', width: '45px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('copy', null, '복사하기')} title="복사하기 (Ctrl+C)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '106px', width: '48px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('paste', null, '붙이기')} title="붙이기 (Ctrl+V)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '156px', width: '46px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleCopyFormat} title="모양 복사 (Alt+C)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '204px', width: '50px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => { setShowMarks(!showMarks); setChordToast(`조판 부호 ${!showMarks ? '표시' : '숨김'}`); setTimeout(() => setChordToast(null), 1200); }} title="조판 부호 토글" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '264px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('font')} title="글자 모양 (Alt+L)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '308px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('paragraph')} title="문단 모양 (Alt+T)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '352px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('style')} title="스타일 (F6)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '398px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => { setPageOrientation('portrait'); setChordToast('용지 방향: 세로'); setTimeout(() => setChordToast(null), 1200); }} title="용지 방향: 세로" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '442px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => { setPageOrientation('landscape'); setChordToast('용지 방향: 가로'); setTimeout(() => setChordToast(null), 1200); }} title="용지 방향: 가로" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '486px', width: '46px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('page')} title="쪽 여백 (F7)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '534px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => { setChordToast('바탕쪽 편집 모드'); setTimeout(() => setChordToast(null), 1200); }} title="바탕쪽" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '578px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleToggleColumns} title="다단 설정 (단)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '626px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => handleInsertShape('rect')} title="도형 삽입 (직사각형)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '670px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleInsertImage} title="그림 넣기 (Ctrl+N, I)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '712px', width: '40px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('table')} title="표 만들기 (Ctrl+N, T)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '754px', width: '44px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleInsertChart} title="차트 삽입" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '802px', width: '46px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => { setChordToast('개체 선택 모드 활성화'); setTimeout(() => setChordToast(null), 1200); }} title="개체 선택" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '850px', width: '46px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => { setChordToast('개체 보호 설정'); setTimeout(() => setChordToast(null), 1200); }} title="개체 보호" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '900px', width: '48px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('equation')} title="수식 편집기 (Ctrl+N, M)" />
+        {/* 리본 도구 실측 1:1 정렬 히트박스 매핑 (21개 도구) */}
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '12px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('paste', null, '붙이기')} title="붙이기 (Ctrl+V)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '56px', width: '18px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('paste', null, '골라 붙이기')} title="골라 붙이기" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '76px', width: '32px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('cut', null, '오려두기')} title="오려두기 (Ctrl+X)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '112px', width: '36px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('copy', null, '복사하기')} title="복사하기 (Ctrl+C)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '152px', width: '40px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleCopyFormat} title="모양 복사 (Alt+C)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '196px', width: '48px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('delete', null, '지우기')} title="지우기" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '260px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('font')} title="글자 모양 (Alt+L)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '304px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('paragraph')} title="문단 모양 (Alt+T)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '348px', width: '42px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('style')} title="스타일 (F6)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '396px', width: '38px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => { setPageOrientation('portrait'); setChordToast('용지 방향: 세로'); setTimeout(() => setChordToast(null), 1200); }} title="용지 방향: 세로" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '436px', width: '38px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => { setPageOrientation('landscape'); setChordToast('용지 방향: 가로'); setTimeout(() => setChordToast(null), 1200); }} title="용지 방향: 가로" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '478px', width: '44px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('page')} title="쪽 여백 (F7)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '526px', width: '44px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => { setChordToast('바탕쪽 편집 모드'); setTimeout(() => setChordToast(null), 1200); }} title="바탕쪽" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '574px', width: '44px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleToggleColumns} title="다단 설정 (단)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '624px', width: '38px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => handleInsertShape('rect')} title="도형 삽입 (직사각형)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '664px', width: '38px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleInsertImage} title="그림 넣기 (Ctrl+N, I)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '704px', width: '36px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('table')} title="표 만들기 (Ctrl+N, T)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '742px', width: '38px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleInsertChart} title="차트 삽입" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '792px', width: '46px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => { setChordToast('개체 선택 모드 활성화'); setTimeout(() => setChordToast(null), 1200); }} title="개체 선택" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '846px', width: '46px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => { setChordToast('개체 보호 설정'); setTimeout(() => setChordToast(null), 1200); }} title="개체 보호" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '906px', width: '52px', height: '74px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('equation')} title="수식 편집기 (Ctrl+N, M)" />
       </div>
 
-      {/* 4. 빠른 서식 툴바 (실제 한글 네이티브 슬라이스 기반, 100% 일치) */}
+      {/* 4. 빠른 서식 툴바 (37px, 4개 콤보박스 및 빠른 버튼 1:1 정밀 일치) */}
       <div style={{
         height: '37px',
+        width: '1916px',
         backgroundColor: '#ffffff',
         display: 'flex',
         alignItems: 'center',
@@ -707,18 +716,18 @@ export default function App() {
         <img
           src="/hwp_format_exact.png"
           alt="한글 서식줄"
-          style={{ height: '37px', width: '100%', maxWidth: '1916px', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
+          style={{ height: '37px', width: '1916px', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
         />
-        {/* 서식줄 빠른 액션 히트박스 (1:1 정확한 픽셀 정렬) */}
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '18px', width: '32px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleNewDoc} title="새 문서 (Alt+N)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '54px', width: '34px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleOpen} title="불러오기 (Alt+O)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '92px', width: '34px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleSave} title="저장하기 (Alt+S)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '140px', width: '28px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => window.print()} title="인쇄 (Alt+P)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '170px', width: '28px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => window.print()} title="미리보기" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '204px', width: '28px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('undo', null, '되돌리기')} title="되돌리기 (Ctrl+Z)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '4px', left: '234px', width: '28px', height: '28px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('redo', null, '다시 실행')} title="다시 실행 (Ctrl+Y)" />
+        {/* 서식줄 빠른 액션 히트박스 */}
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '16px', width: '28px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleNewDoc} title="새 문서 (Alt+N)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '56px', width: '28px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleOpen} title="불러오기 (Alt+O)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '98px', width: '28px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={handleSave} title="저장하기 (Alt+S)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '154px', width: '26px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => window.print()} title="인쇄 (Alt+P)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '182px', width: '26px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => window.print()} title="미리보기" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '224px', width: '26px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('undo', null, '되돌리기')} title="되돌리기 (Ctrl+Z)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '266px', width: '26px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('redo', null, '다시 실행')} title="다시 실행 (Ctrl+Y)" />
 
-        {/* 1. 스타일 (바탕글/본문/개요) */}
+        {/* 1. 스타일 (바탕글/본문/개요) 실측: left 326px, width 106px */}
         <select
           defaultValue="바탕글"
           onChange={(e) => {
@@ -727,7 +736,7 @@ export default function App() {
             else runCommand('formatBlock', 'P', '바탕글 적용');
           }}
           style={{
-            position: 'absolute', top: '7px', left: '280px', width: '130px', height: '22px',
+            position: 'absolute', top: '9px', left: '326px', width: '106px', height: '23px',
             opacity: 0, cursor: 'pointer'
           }}
           title="스타일 (바탕글)"
@@ -738,14 +747,17 @@ export default function App() {
           <option>개요 2</option>
         </select>
 
-        {/* 2. 글꼴 (함초롬바탕/맑은고딕/바탕/돋움) */}
+        {/* 2. 글자 모양 대표 실측: left 438px, width 91px */}
+        <div className="hwp-btn" style={{ position: 'absolute', top: '9px', left: '438px', width: '91px', height: '23px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => setActiveModal('font')} title="글자 모양 (대표)" />
+
+        {/* 3. 글꼴 (함초롬바탕) 실측: left 535px, width 118px */}
         <select
           defaultValue="함초롬바탕"
           onChange={(e) => {
             runCommand('fontName', e.target.value, `글꼴: ${e.target.value}`);
           }}
           style={{
-            position: 'absolute', top: '7px', left: '435px', width: '180px', height: '22px',
+            position: 'absolute', top: '9px', left: '535px', width: '118px', height: '23px',
             opacity: 0, cursor: 'pointer'
           }}
           title="글꼴 선택"
@@ -757,14 +769,14 @@ export default function App() {
           <option value="Gungsuh, 궁서, serif">궁서</option>
         </select>
 
-        {/* 3. 글자 크기 (기준 10.0 pt) */}
+        {/* 4. 글자 크기 실측: left 659px, width 106px */}
         <select
           defaultValue="3"
           onChange={(e) => {
             runCommand('fontSize', e.target.value, '글자 크기 변경');
           }}
           style={{
-            position: 'absolute', top: '7px', left: '635px', width: '100px', height: '22px',
+            position: 'absolute', top: '9px', left: '659px', width: '106px', height: '23px',
             opacity: 0, cursor: 'pointer'
           }}
           title="글자 크기 (pt)"
@@ -779,13 +791,13 @@ export default function App() {
         </select>
 
         {/* 서식 빠른 스타일 토글 버튼들 */}
-        <div className="hwp-btn" style={{ position: 'absolute', top: '6px', left: '780px', width: '26px', height: '25px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('bold', null, '진하게 (Ctrl+B)')} title="굵게 (Ctrl+B)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '6px', left: '808px', width: '26px', height: '25px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('italic', null, '기울임 (Ctrl+I)')} title="기울임 (Ctrl+I)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '6px', left: '836px', width: '26px', height: '25px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('underline', null, '밑줄 (Ctrl+U)')} title="밑줄 (Ctrl+U)" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '6px', left: '864px', width: '26px', height: '25px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('strikeThrough', null, '취소선')} title="취소선" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '783px', width: '25px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('bold', null, '진하게 (Ctrl+B)')} title="굵게 (Ctrl+B)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '809px', width: '25px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('italic', null, '기울임 (Ctrl+I)')} title="기울임 (Ctrl+I)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '835px', width: '25px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('underline', null, '밑줄 (Ctrl+U)')} title="밑줄 (Ctrl+U)" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '861px', width: '25px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('strikeThrough', null, '취소선')} title="취소선" />
         
         {/* 글자색 선택 (컬러 피커 연동) */}
-        <div className="hwp-btn" style={{ position: 'absolute', top: '6px', left: '890px', width: '26px', height: '25px' }} title="글자 색">
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '887px', width: '25px', height: '27px' }} title="글자 색">
           <input
             type="color"
             defaultValue="#000000"
@@ -795,15 +807,16 @@ export default function App() {
         </div>
 
         {/* 정렬 버튼들 */}
-        <div className="hwp-btn" style={{ position: 'absolute', top: '6px', left: '924px', width: '26px', height: '25px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('justifyFull', null, '양쪽 정렬')} title="양쪽 정렬" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '6px', left: '952px', width: '26px', height: '25px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('justifyLeft', null, '왼쪽 정렬')} title="왼쪽 정렬" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '6px', left: '978px', width: '26px', height: '25px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('justifyCenter', null, '가운데 정렬')} title="가운데 정렬" />
-        <div className="hwp-btn" style={{ position: 'absolute', top: '6px', left: '1004px', width: '26px', height: '25px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('justifyRight', null, '오른쪽 정렬')} title="오른쪽 정렬" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '935px', width: '24px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('justifyFull', null, '양쪽 정렬')} title="양쪽 정렬" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '960px', width: '24px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('justifyLeft', null, '왼쪽 정렬')} title="왼쪽 정렬" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '985px', width: '24px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('justifyCenter', null, '가운데 정렬')} title="가운데 정렬" />
+        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: '1010px', width: '24px', height: '27px' }} onMouseDown={(e) => e.preventDefault()} onClick={() => runCommand('justifyRight', null, '오른쪽 정렬')} title="오른쪽 정렬" />
       </div>
 
-      {/* 5. 가로 눈금자 (실제 한글 네이티브 슬라이스 기반, 100% 일치) */}
+      {/* 5. 가로 눈금자 (41px, 1916px 1:1 일치) */}
       <div style={{
         height: '41px',
+        width: '1916px',
         backgroundColor: '#ffffff',
         display: 'flex',
         alignItems: 'center',
@@ -814,22 +827,24 @@ export default function App() {
         <img
           src="/hwp_ruler_exact.png"
           alt="가로 눈금자"
-          style={{ height: '41px', width: '100%', maxWidth: '1916px', objectFit: 'none', objectPosition: 'left top' }}
+          style={{ height: '41px', width: '1916px', objectFit: 'none', objectPosition: 'left top' }}
         />
       </div>
 
-      {/* 6. 중앙 워크스페이스 */}
+      {/* 6. 중앙 워크스페이스 (668px, 종이 x=563px 1:1 절대 일치) */}
       <div style={{
-        flex: 1,
+        height: '668px',
+        width: '1916px',
         display: 'flex',
-        minHeight: 0,
         backgroundColor: '#f5f5f5',
         position: 'relative',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        flexShrink: 0
       }}>
         {/* 세로 눈금자 및 사이드바 (실제 한글 네이티브 30x668 슬라이스) */}
         <div style={{
           width: '30px',
+          height: '668px',
           backgroundColor: '#f5f5f5',
           backgroundImage: 'url(/hwp_left_ruler_exact.png)',
           backgroundRepeat: 'no-repeat',
@@ -837,26 +852,25 @@ export default function App() {
           flexShrink: 0
         }} />
 
-        {/* 캔버스 */}
+        {/* 캔버스 (A4 종이 절대 위치 x=563px -> 워크스페이스 기준 563 - 30 = 533px) */}
         <div style={{
           flex: 1,
-          display: 'flex',
-          justifyContent: 'center',
+          height: '668px',
           overflowY: 'auto',
-          padding: '22px 0',
           position: 'relative'
         }}>
           <div style={{
+            position: 'absolute',
+            left: pageOrientation === 'portrait' ? '533px' : '367px',
+            top: '22px',
             width: pageOrientation === 'portrait' ? '792px' : '1123px',
             minHeight: pageOrientation === 'portrait' ? '1123px' : '792px',
             backgroundColor: '#ffffff',
-            border: '1px solid #d0d0d0',
-            boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
-            position: 'relative',
+            boxShadow: '0 1px 3px rgba(0,0,0,0.15)',
             boxSizing: 'border-box',
-            transition: 'width 0.2s ease, min-height 0.2s ease'
+            transition: 'left 0.2s ease, width 0.2s ease, min-height 0.2s ease'
           }}>
-            {/* L자 여백 가이드마커 */}
+            {/* L자 여백 가이드마커 (실측 offset left: 115px, top: 114px) */}
             <svg style={{ position: 'absolute', top: '114px', left: '115px', width: '16px', height: '16px' }}>
               <path d="M0 0 L0 16 M0 0 L16 0" stroke="#cccccc" strokeWidth="1" fill="none" />
             </svg>
@@ -902,6 +916,7 @@ export default function App() {
         {/* 우측 스크롤바 (실제 한글 네이티브 17x668 슬라이스) */}
         <div style={{
           width: '17px',
+          height: '668px',
           backgroundColor: '#f5f5f5',
           backgroundImage: 'url(/hwp_right_scroll_exact.png)',
           backgroundRepeat: 'no-repeat',
@@ -910,9 +925,10 @@ export default function App() {
         }} />
       </div>
 
-      {/* 7. 최하단 상태표시줄 & 탭바 (실제 한글 네이티브 슬라이스, 100% 일치) */}
+      {/* 7. 최하단 상태표시줄 & 탭바 (31px, 실제 한글 네이티브 슬라이스 1:1 일치) */}
       <div style={{
         height: '31px',
+        width: '1916px',
         backgroundColor: '#ffffff',
         display: 'flex',
         alignItems: 'center',
@@ -923,7 +939,7 @@ export default function App() {
         <img
           src="/hwp_bottom_exact.png"
           alt="하단 상태표시줄"
-          style={{ height: '31px', width: '100%', maxWidth: '1916px', objectFit: 'none', objectPosition: 'left top' }}
+          style={{ height: '31px', width: '1916px', objectFit: 'none', objectPosition: 'left top' }}
         />
       </div>
 
