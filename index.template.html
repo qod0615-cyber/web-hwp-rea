@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Web HWP (RE)</title>
+    <meta name="description" content="웹 표준 환경에서 오차 없이 구현한 한글 워드프로세서" />
+    
+    <!-- Open Graph (미리보기 카드) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://web-hwp-rea.vercel.app/" />
+    <meta property="og:title" content="Web HWP (RE)" />
+    <meta property="og:description" content="웹 표준 환경에서 오차 없이 구현한 한글 워드프로세서" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Web HWP (RE)" />
+    <meta name="twitter:description" content="웹 표준 환경에서 오차 없이 구현한 한글 워드프로세서" />
+    <meta name="twitter:image" content="/og-image.png" />
+    <!-- Native HYhwpEQ Font -->
+    <style>
+      @font-face {
+        font-family: 'HYhwpEQ';
+        src: url('/fonts/HYHWPEQ.TTF') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body style="margin: 0; padding: 0; overflow: hidden; font-family: 'Malgun Gothic', '맑은 고딕', -apple-system, sans-serif;">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

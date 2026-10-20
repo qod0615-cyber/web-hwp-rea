@@ -6,7 +6,7 @@ from PIL import Image, ImageChops
 from playwright.sync_api import sync_playwright
 
 def run_loop():
-    html_path = os.path.abspath('dist/index.html')
+    html_path = os.path.abspath('index.html')
     native_dlg_path = '/tmp/extracted_native_dialog.png'
     native_half_path = '/tmp/right_native_1916.png' if os.path.exists('/tmp/right_native_1916.png') else '/tmp/right_native.png'
     log_path = '/tmp/infinite_train_status.json'

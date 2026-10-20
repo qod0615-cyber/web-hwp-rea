@@ -24,6 +24,15 @@ html = html.replace(/<script id="vite-plugin-pwa:register-sw"[^>]*><\/script>/g,
 html = html.replace(/<script\s+type="module"\s+crossorigin>/g, '<script>');
 html = html.replace(/<script\s+crossorigin\s+type="module">/g, '<script>');
 
+// React 컨테이너(#root) 생성 전에 실행되어 흰 화면(Error #299)이 발생하는 것을 방지하기 위해,
+// <head>에 주입된 <script>...</script> 블록을 <body>의 <div id="root"></div> 바로 뒤(</body> 직전)로 이동
+const scriptMatch = html.match(/(<script>[\s\S]*?<\/script>)/);
+if (scriptMatch) {
+  const scriptTag = scriptMatch[1];
+  html = html.replace(scriptTag, '');
+  html = html.replace('</body>', `${scriptTag}</body>`);
+}
+
 // 폰트 파일 인라인 변환 (fonts/HYHWPEQ.TTF)
 const fontPath = path.resolve('public/fonts/HYHWPEQ.TTF');
 if (fs.existsSync(fontPath)) {
@@ -32,4 +41,8 @@ if (fs.existsSync(fontPath)) {
 }
 
 fs.writeFileSync(htmlPath, html, 'utf-8');
-console.log('Successfully bundled singlefile HTML with inlined assets!');
+
+// 프로젝트 루트의 index.html에도 완전체 단일 파일 기록 (dist에 들어가지 않고 프로젝트 루트에서 바로 열 수 있도록)
+const rootHtmlPath = path.resolve('index.html');
+fs.writeFileSync(rootHtmlPath, html, 'utf-8');
+console.log('Successfully bundled singlefile HTML to dist/index.html and project root index.html!');
