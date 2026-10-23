@@ -1,3 +1,29 @@
+## 2026-10-23 재개 — Laptop PC 환경 동기화 및 웹 생성 HWPX 한글 2022 COM 열기 검증 완료 (4/4)
+
+사용자 「재개」 지시에 따라 Laptop PC 환경과 최신 작업물을 동기화하고, 웹에서 생성·편집한 HWPX 문서를 실제 Windows 한글 2022 COM 인스턴스에서 열어 정합성을 검증했다.
+
+1. **Laptop PC 워크트리 동기화 및 빌드 검증**:
+   - Mini PC 최신 작업물(HWPX 양방향 왕복, 5개 리본 탭 분리, UIA hit 영역, 검증 스위트)을 `master`(`fc2454b`)로 푸시 및 Laptop PC에 pull/clean 동기화 완료.
+   - Windows 환경 파일 입출력(`cp949`) 호환을 위해 테스트 스크립트 전반에 `utf-8` 인코딩 명시.
+   - Laptop PC `npm run build` 통과 (단일 번들 `dist/index.html` 746KB 정상 생성).
+
+2. **Laptop PC 로컬 검증 스위트 47/47 통과**:
+   - `scripts/test_editor_workflows.py`: 11/11 통과 (수식 삽입/편집/복구, 대화상자, 리본 전환)
+   - `scripts/test_ribbon_tabs.py`: 5/5 통과 (5개 리본 픽셀 영역 0px 차이, 91개 컨트롤 rect, 드롭다운 팝업)
+   - `scripts/test_first_screen_controls.py`: 4/4 통과 (UIA 버튼 54개 hit 영역 및 인쇄 hover 범위)
+   - `scripts/check_native_equation_metrics.py`: 24/24 통과 (수식 너비/높이/기준선 일치)
+   - `scripts/test_hwpx_workflows.py`: 7/7 통과 (HWPX ZIP/XML 파싱, 표 메트릭 보존, 314개 수식 보존)
+
+3. **웹 생성 HWPX 실제 한글 2022 COM 열기 검증 통과 (4/4)**:
+   - Laptop PC의 `HWPFrame.HwpObject` COM 인스턴스(`v12.0.0.535`) 및 `FilePathCheckerModule` 바이패스를 통해 웹 산출물 직접 열기 실행 (`scripts/test_native_hwpx_open.py`).
+   - `live-saved.hwpx`: 성공 (본문 텍스트 및 수식 `{a+b} over {c}` 1개 복원)
+   - `new-rich-equation-table.hwpx`: 성공 (굵게/색상/줄바꿈/탭/4칸 표 및 수식 정상 인식)
+   - `after-reload.hwpx`: 성공 (브라우저 새로고침 후 재저장본 정상 인식)
+   - `native-314-edited.hwpx`: 성공 (웹에서 텍스트 수정한 314개 수식 문서가 한글 2022에서 314개 수식 컨트롤 `eqed` 전부 온전히 복원)
+   - 검증 영수증: `verification/hwpx-roundtrip/native-open-report.json`
+
+---
+
 ## 2026-10-23 Desktop PC 작업물 Mini PC 이전·종료 및 Laptop PC 환경 세팅 완료
 
 사용자 지시에 따라 Desktop PC 작업을 안전하게 마무리하고 미니 PC로 이전·종료한 뒤, 노트북(`Laptop PC`) 환경 구축 및 위임 준비를 완료했다.
