@@ -1,0 +1,1206 @@
+{
+  "source": "verification/native-baseline/2026-10-22/ui-reference-manifest.json",
+  "sourceSha256": "5368433f9fe927ae34d08a9676e4c3175e75833b8f759e50403478ee020b481e",
+  "ribbonCrop": [
+    1,
+    67,
+    1326,
+    151
+  ],
+  "menuCrop": [
+    1,
+    33,
+    601,
+    67
+  ],
+  "tabs": {
+    "보기": {
+      "ribbonAsset": "/hwp_native_view_ribbon.png",
+      "menuAsset": "/hwp_native_view_menu.png",
+      "capture": "verification/native-baseline/2026-10-22/ui-reference-ribbon-view-label.raw.png",
+      "captureSha256": "ea23876a911d3fe445d6048e2f814db419a26e14aa24d49f14fcffbcd861ea56",
+      "controls": [
+        {
+          "name": "쪽 윤곽",
+          "type": "Button",
+          "enabled": true,
+          "x": 14,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "컬러",
+          "type": "Button",
+          "enabled": true,
+          "x": 65,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "회색조",
+          "type": "Button",
+          "enabled": true,
+          "x": 103,
+          "y": 70,
+          "w": 45,
+          "h": 76
+        },
+        {
+          "name": "사용자 색",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 148,
+          "y": 70,
+          "w": 45,
+          "h": 76
+        },
+        {
+          "name": "문단 부호",
+          "type": "CheckBox",
+          "enabled": true,
+          "x": 206,
+          "y": 73,
+          "w": 80,
+          "h": 18
+        },
+        {
+          "name": "그림",
+          "type": "CheckBox",
+          "enabled": true,
+          "x": 286,
+          "y": 73,
+          "w": 55,
+          "h": 18
+        },
+        {
+          "name": "조판 부호",
+          "type": "CheckBox",
+          "enabled": true,
+          "x": 206,
+          "y": 99,
+          "w": 80,
+          "h": 18
+        },
+        {
+          "name": "투명 선",
+          "type": "CheckBox",
+          "enabled": true,
+          "x": 286,
+          "y": 99,
+          "w": 69,
+          "h": 18
+        },
+        {
+          "name": "교정 부호",
+          "type": "CheckBox",
+          "enabled": true,
+          "x": 206,
+          "y": 125,
+          "w": 80,
+          "h": 18
+        },
+        {
+          "name": "메모",
+          "type": "CheckBox",
+          "enabled": true,
+          "x": 286,
+          "y": 125,
+          "w": 55,
+          "h": 18
+        },
+        {
+          "name": "상황 선",
+          "type": "CheckBox",
+          "enabled": true,
+          "x": 368,
+          "y": 73,
+          "w": 69,
+          "h": 18
+        },
+        {
+          "name": "문서 탭",
+          "type": "CheckBox",
+          "enabled": true,
+          "x": 368,
+          "y": 99,
+          "w": 69,
+          "h": 18
+        },
+        {
+          "name": "격자",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 437,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "개체 이동 안내선",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 475,
+          "y": 70,
+          "w": 65,
+          "h": 76
+        },
+        {
+          "name": "한자 발음 표시",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 553,
+          "y": 70,
+          "w": 79,
+          "h": 76
+        },
+        {
+          "name": "작업 창",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 645,
+          "y": 70,
+          "w": 43,
+          "h": 76
+        },
+        {
+          "name": "편집 화면 나누기",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 701,
+          "y": 70,
+          "w": 65,
+          "h": 76
+        },
+        {
+          "name": "창 배열",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 766,
+          "y": 70,
+          "w": 54,
+          "h": 76
+        },
+        {
+          "name": "창 전환",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 820,
+          "y": 70,
+          "w": 54,
+          "h": 76
+        },
+        {
+          "name": "축소",
+          "type": "Button",
+          "enabled": true,
+          "x": 887,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "확대",
+          "type": "Button",
+          "enabled": true,
+          "x": 925,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "100%",
+          "type": "Button",
+          "enabled": true,
+          "x": 976,
+          "y": 70,
+          "w": 44,
+          "h": 76
+        },
+        {
+          "name": "쪽 맞춤",
+          "type": "Button",
+          "enabled": true,
+          "x": 1020,
+          "y": 70,
+          "w": 67,
+          "h": 24
+        },
+        {
+          "name": "폭 맞춤",
+          "type": "Button",
+          "enabled": true,
+          "x": 1020,
+          "y": 96,
+          "w": 67,
+          "h": 24
+        }
+      ]
+    },
+    "쪽": {
+      "ribbonAsset": "/hwp_native_page_ribbon.png",
+      "menuAsset": "/hwp_native_page_menu.png",
+      "capture": "verification/native-baseline/2026-10-22/ui-reference-ribbon-page-complete.raw.png",
+      "captureSha256": "d12d77d4ec31a15cbd2e14f2355209cb80a562c081d474a2aa0b5c09cb794b45",
+      "controls": [
+        {
+          "name": "편집 용지",
+          "type": "Button",
+          "enabled": true,
+          "x": 14,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "세로",
+          "type": "Button",
+          "enabled": true,
+          "x": 52,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "가로",
+          "type": "Button",
+          "enabled": true,
+          "x": 90,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "쪽 여백",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 128,
+          "y": 70,
+          "w": 54,
+          "h": 76
+        },
+        {
+          "name": "글자 방향",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 195,
+          "y": 70,
+          "w": 54,
+          "h": 76
+        },
+        {
+          "name": "바탕쪽",
+          "type": "Button",
+          "enabled": true,
+          "x": 262,
+          "y": 70,
+          "w": 45,
+          "h": 76
+        },
+        {
+          "name": "머리말",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 307,
+          "y": 70,
+          "w": 45,
+          "h": 76
+        },
+        {
+          "name": "꼬리말",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 352,
+          "y": 70,
+          "w": 45,
+          "h": 76
+        },
+        {
+          "name": "쪽 테두리/배경",
+          "type": "Button",
+          "enabled": true,
+          "x": 397,
+          "y": 70,
+          "w": 64,
+          "h": 76
+        },
+        {
+          "name": "쪽 번호 매기기",
+          "type": "Button",
+          "enabled": true,
+          "x": 461,
+          "y": 70,
+          "w": 48,
+          "h": 76
+        },
+        {
+          "name": "새 번호로 시작",
+          "type": "Button",
+          "enabled": true,
+          "x": 509,
+          "y": 70,
+          "w": 59,
+          "h": 76
+        },
+        {
+          "name": "현재 쪽만 감추기",
+          "type": "Button",
+          "enabled": true,
+          "x": 568,
+          "y": 70,
+          "w": 59,
+          "h": 76
+        },
+        {
+          "name": "줄 번호",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 627,
+          "y": 70,
+          "w": 54,
+          "h": 76
+        },
+        {
+          "name": "쪽 나누기",
+          "type": "Button",
+          "enabled": true,
+          "x": 694,
+          "y": 70,
+          "w": 46,
+          "h": 76
+        },
+        {
+          "name": "단 나누기",
+          "type": "Button",
+          "enabled": true,
+          "x": 740,
+          "y": 70,
+          "w": 46,
+          "h": 76
+        },
+        {
+          "name": "쪽 지우기",
+          "type": "Button",
+          "enabled": false,
+          "x": 786,
+          "y": 70,
+          "w": 46,
+          "h": 76
+        },
+        {
+          "name": "단",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 845,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "다단 설정 나누기",
+          "type": "Button",
+          "enabled": true,
+          "x": 883,
+          "y": 70,
+          "w": 59,
+          "h": 76
+        },
+        {
+          "name": "구역 설정",
+          "type": "Button",
+          "enabled": true,
+          "x": 955,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "구역 나누기",
+          "type": "Button",
+          "enabled": true,
+          "x": 993,
+          "y": 70,
+          "w": 46,
+          "h": 76
+        },
+        {
+          "name": "라벨",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 1052,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "원고지",
+          "type": "Button",
+          "enabled": true,
+          "x": 1090,
+          "y": 70,
+          "w": 45,
+          "h": 76
+        }
+      ]
+    },
+    "보안": {
+      "ribbonAsset": "/hwp_native_security_ribbon.png",
+      "menuAsset": "/hwp_native_security_menu.png",
+      "capture": "verification/native-baseline/2026-10-22/ui-reference-ribbon-security-label.raw.png",
+      "captureSha256": "22c16b8910f208f4d418718f7693929fa76481c52417ff55e065ff5d98207d29",
+      "controls": [
+        {
+          "name": "문서 암호 설정",
+          "type": "Button",
+          "enabled": true,
+          "x": 14,
+          "y": 70,
+          "w": 60,
+          "h": 76
+        },
+        {
+          "name": "문서 암호 변경/해제",
+          "type": "Button",
+          "enabled": false,
+          "x": 74,
+          "y": 70,
+          "w": 62,
+          "h": 76
+        },
+        {
+          "name": "배포용 문서로 저장",
+          "type": "Button",
+          "enabled": true,
+          "x": 149,
+          "y": 70,
+          "w": 71,
+          "h": 76
+        },
+        {
+          "name": "배포용 문서 편집",
+          "type": "Button",
+          "enabled": false,
+          "x": 220,
+          "y": 70,
+          "w": 60,
+          "h": 76
+        },
+        {
+          "name": "배포용 문서 암호 변경/해제",
+          "type": "Button",
+          "enabled": false,
+          "x": 280,
+          "y": 70,
+          "w": 87,
+          "h": 76
+        },
+        {
+          "name": "선택 글자 보호",
+          "type": "Button",
+          "enabled": false,
+          "x": 380,
+          "y": 70,
+          "w": 60,
+          "h": 76
+        },
+        {
+          "name": "개인 정보 찾아서 보호",
+          "type": "Button",
+          "enabled": true,
+          "x": 440,
+          "y": 70,
+          "w": 71,
+          "h": 76
+        },
+        {
+          "name": "개인 정보 보호 해제",
+          "type": "Button",
+          "enabled": false,
+          "x": 511,
+          "y": 70,
+          "w": 60,
+          "h": 76
+        },
+        {
+          "name": "개인 정보 보호 암호 변경",
+          "type": "Button",
+          "enabled": false,
+          "x": 571,
+          "y": 70,
+          "w": 85,
+          "h": 76
+        },
+        {
+          "name": "문서 보안 설정",
+          "type": "Button",
+          "enabled": true,
+          "x": 669,
+          "y": 70,
+          "w": 60,
+          "h": 76
+        }
+      ],
+      "dropdown": {
+        "asset": "/hwp_native_security_dropdown.png",
+        "x": 354,
+        "y": 66,
+        "w": 238,
+        "h": 197,
+        "items": [
+          {
+            "name": "문서 암호 설정",
+            "enabled": true,
+            "x": 357,
+            "y": 69,
+            "w": 232,
+            "h": 26
+          },
+          {
+            "name": "문서 암호 변경/해제",
+            "enabled": false,
+            "x": 357,
+            "y": 95,
+            "w": 232,
+            "h": 26
+          },
+          {
+            "name": "배포용 문서로 저장",
+            "enabled": true,
+            "x": 357,
+            "y": 124,
+            "w": 232,
+            "h": 26
+          },
+          {
+            "name": "배포용 문서 편집",
+            "enabled": false,
+            "x": 357,
+            "y": 150,
+            "w": 232,
+            "h": 26
+          },
+          {
+            "name": "배포용 문서 암호 변경/해제",
+            "enabled": false,
+            "x": 357,
+            "y": 176,
+            "w": 232,
+            "h": 26
+          },
+          {
+            "name": "개인 정보 보호",
+            "enabled": true,
+            "x": 357,
+            "y": 205,
+            "w": 232,
+            "h": 26
+          },
+          {
+            "name": "문서 보안 설정",
+            "enabled": true,
+            "x": 357,
+            "y": 234,
+            "w": 232,
+            "h": 26
+          }
+        ],
+        "capture": "verification/native-baseline/2026-10-22/ui-reference-menu-security-arrow.raw.png",
+        "captureSha256": "12cb6b7ec6538f4956471a0e8a2865cebe438dfa505613fb5876540f0da0b5ca"
+      }
+    },
+    "검토": {
+      "ribbonAsset": "/hwp_native_review_ribbon.png",
+      "menuAsset": "/hwp_native_review_menu.png",
+      "capture": "verification/native-baseline/2026-10-22/ui-reference-ribbon-review-label.raw.png",
+      "captureSha256": "774dea47967a3cb322e22ba2c470c6500d2f7afabbcc10aaf7b38c02b8a674f8",
+      "controls": [
+        {
+          "name": "교정 부호",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 14,
+          "y": 70,
+          "w": 54,
+          "h": 76
+        },
+        {
+          "name": "문서 이력 관리",
+          "type": "Button",
+          "enabled": true,
+          "x": 81,
+          "y": 70,
+          "w": 60,
+          "h": 76
+        },
+        {
+          "name": "문서 비교",
+          "type": "Button",
+          "enabled": true,
+          "x": 141,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "변경 내용 추적",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 192,
+          "y": 70,
+          "w": 79,
+          "h": 76
+        },
+        {
+          "name": "안내문에 표시",
+          "type": "Button",
+          "enabled": true,
+          "x": 271,
+          "y": 70,
+          "w": 56,
+          "h": 76
+        },
+        {
+          "name": "변경 내용 보기",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 327,
+          "y": 70,
+          "w": 79,
+          "h": 76
+        },
+        {
+          "name": "원본",
+          "type": "Button",
+          "enabled": true,
+          "x": 419,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "원본 및 변경 내용",
+          "type": "Button",
+          "enabled": true,
+          "x": 457,
+          "y": 70,
+          "w": 60,
+          "h": 76
+        },
+        {
+          "name": "최종본 및 변경 내용",
+          "type": "Button",
+          "enabled": true,
+          "x": 517,
+          "y": 70,
+          "w": 60,
+          "h": 76
+        },
+        {
+          "name": "최종본",
+          "type": "Button",
+          "enabled": true,
+          "x": 577,
+          "y": 70,
+          "w": 45,
+          "h": 76
+        },
+        {
+          "name": "적용",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 635,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "적용 안 함",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 673,
+          "y": 70,
+          "w": 57,
+          "h": 76
+        },
+        {
+          "name": "이전",
+          "type": "Button",
+          "enabled": true,
+          "x": 730,
+          "y": 70,
+          "w": 23,
+          "h": 24
+        },
+        {
+          "name": "다음",
+          "type": "Button",
+          "enabled": true,
+          "x": 730,
+          "y": 96,
+          "w": 23,
+          "h": 24
+        },
+        {
+          "name": "새 메모",
+          "type": "Button",
+          "enabled": true,
+          "x": 766,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "메모",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 804,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        }
+      ],
+      "dropdown": {
+        "asset": "/hwp_native_review_dropdown.png",
+        "x": 413,
+        "y": 66,
+        "w": 198,
+        "h": 223,
+        "items": [
+          {
+            "name": "교정 부호",
+            "enabled": true,
+            "x": 416,
+            "y": 69,
+            "w": 192,
+            "h": 26
+          },
+          {
+            "name": "변경 내용 추적",
+            "enabled": true,
+            "x": 416,
+            "y": 98,
+            "w": 192,
+            "h": 26
+          },
+          {
+            "name": "변경 내용 표시 설정",
+            "enabled": true,
+            "x": 416,
+            "y": 124,
+            "w": 192,
+            "h": 26
+          },
+          {
+            "name": "문서 이력 관리",
+            "enabled": true,
+            "x": 416,
+            "y": 153,
+            "w": 192,
+            "h": 26
+          },
+          {
+            "name": "문서 비교",
+            "enabled": true,
+            "x": 416,
+            "y": 179,
+            "w": 192,
+            "h": 26
+          },
+          {
+            "name": "새 메모",
+            "enabled": true,
+            "x": 416,
+            "y": 208,
+            "w": 192,
+            "h": 26
+          },
+          {
+            "name": "메모 모양",
+            "enabled": true,
+            "x": 416,
+            "y": 234,
+            "w": 192,
+            "h": 26
+          },
+          {
+            "name": "모든 메모 표시",
+            "enabled": true,
+            "x": 416,
+            "y": 260,
+            "w": 192,
+            "h": 26
+          }
+        ],
+        "capture": "verification/native-baseline/2026-10-22/ui-reference-menu-review-arrow.raw.png",
+        "captureSha256": "484e5bb503caf735ca2d6b15e05156be98148b05e154b77664c66065f3b87ce6"
+      }
+    },
+    "도구": {
+      "ribbonAsset": "/hwp_native_tools_ribbon.png",
+      "menuAsset": "/hwp_native_tools_menu.png",
+      "capture": "verification/native-baseline/2026-10-22/ui-reference-ribbon-tools-label.raw.png",
+      "captureSha256": "c94953f26c2364f31399e481f48c4d1886c244cb288e2549837c9a75e206b65c",
+      "controls": [
+        {
+          "name": "색인",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 14,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "제목 차례",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 52,
+          "y": 70,
+          "w": 54,
+          "h": 76
+        },
+        {
+          "name": "인용",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 119,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "참고 문헌 삽입",
+          "type": "Button",
+          "enabled": false,
+          "x": 157,
+          "y": 70,
+          "w": 23,
+          "h": 24
+        },
+        {
+          "name": "참고 문헌 스타일",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 157,
+          "y": 96,
+          "w": 39,
+          "h": 24
+        },
+        {
+          "name": "참고 문헌 새로 고침",
+          "type": "Button",
+          "enabled": false,
+          "x": 157,
+          "y": 122,
+          "w": 23,
+          "h": 24
+        },
+        {
+          "name": "블록 계산",
+          "type": "MenuItem",
+          "enabled": false,
+          "x": 209,
+          "y": 70,
+          "w": 54,
+          "h": 76
+        },
+        {
+          "name": "스크립트 매크로",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 276,
+          "y": 70,
+          "w": 65,
+          "h": 76
+        },
+        {
+          "name": "맞춤법",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 354,
+          "y": 70,
+          "w": 45,
+          "h": 76
+        },
+        {
+          "name": "빠른 교정",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 399,
+          "y": 70,
+          "w": 54,
+          "h": 76
+        },
+        {
+          "name": "한컴 사전",
+          "type": "Button",
+          "enabled": false,
+          "x": 453,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "번역",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 504,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "프레젠테이션",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 555,
+          "y": 70,
+          "w": 78,
+          "h": 76
+        },
+        {
+          "name": "글자판",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 646,
+          "y": 70,
+          "w": 45,
+          "h": 76
+        },
+        {
+          "name": "사용자 설정",
+          "type": "Button",
+          "enabled": true,
+          "x": 691,
+          "y": 70,
+          "w": 45,
+          "h": 76
+        },
+        {
+          "name": "환경 설정",
+          "type": "Button",
+          "enabled": true,
+          "x": 736,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "개인 정보 바꾸기",
+          "type": "MenuItem",
+          "enabled": true,
+          "x": 787,
+          "y": 70,
+          "w": 65,
+          "h": 76
+        },
+        {
+          "name": "한컴 애셋",
+          "type": "Button",
+          "enabled": true,
+          "x": 852,
+          "y": 70,
+          "w": 38,
+          "h": 76
+        },
+        {
+          "name": "오피스 톡",
+          "type": "Button",
+          "enabled": true,
+          "x": 890,
+          "y": 70,
+          "w": 45,
+          "h": 76
+        }
+      ],
+      "dropdown": {
+        "asset": "/hwp_native_tools_dropdown.png",
+        "x": 472,
+        "y": 66,
+        "w": 245,
+        "h": 596,
+        "items": [
+          {
+            "name": "맞춤법",
+            "enabled": true,
+            "x": 475,
+            "y": 69,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "한컴 사전",
+            "enabled": false,
+            "x": 475,
+            "y": 95,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "한자 사전",
+            "enabled": true,
+            "x": 475,
+            "y": 121,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "유의어/반의어 사전",
+            "enabled": true,
+            "x": 475,
+            "y": 147,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "번역",
+            "enabled": true,
+            "x": 475,
+            "y": 173,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "빠른 교정",
+            "enabled": true,
+            "x": 475,
+            "y": 199,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "한컴 애셋",
+            "enabled": true,
+            "x": 475,
+            "y": 228,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "무엇이든 3줄 요약",
+            "enabled": true,
+            "x": 475,
+            "y": 254,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "메일 머지",
+            "enabled": true,
+            "x": 475,
+            "y": 283,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "스크립트 매크로",
+            "enabled": true,
+            "x": 475,
+            "y": 309,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "차례/색인",
+            "enabled": true,
+            "x": 475,
+            "y": 335,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "참고 문헌",
+            "enabled": true,
+            "x": 475,
+            "y": 361,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "블록 계산",
+            "enabled": false,
+            "x": 475,
+            "y": 387,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "문서 찾기",
+            "enabled": false,
+            "x": 475,
+            "y": 413,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "개인 정보 바꾸기",
+            "enabled": true,
+            "x": 475,
+            "y": 439,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "프레젠테이션",
+            "enabled": true,
+            "x": 475,
+            "y": 468,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "오피스 톡",
+            "enabled": true,
+            "x": 475,
+            "y": 497,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "글자판",
+            "enabled": true,
+            "x": 475,
+            "y": 526,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "추가 기능 설정",
+            "enabled": true,
+            "x": 475,
+            "y": 555,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "사용자 설정",
+            "enabled": true,
+            "x": 475,
+            "y": 581,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "환경 설정",
+            "enabled": true,
+            "x": 475,
+            "y": 607,
+            "w": 239,
+            "h": 26
+          },
+          {
+            "name": "스킨 설정",
+            "enabled": true,
+            "x": 475,
+            "y": 633,
+            "w": 239,
+            "h": 26
+          }
+        ],
+        "capture": "verification/native-baseline/2026-10-22/ui-reference-menu-tools-arrow.raw.png",
+        "captureSha256": "46e2472caa3f0624fe9032ff8c3d7b2a72cadabea357c2fde558aa62b6643846"
+      }
+    }
+  }
+}

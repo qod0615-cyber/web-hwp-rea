@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-22T21:33:23.389566+09:00",
+  "windows": [
+    {
+      "hwnd": 131748,
+      "pid": 21704,
+      "title": "Orca",
+      "class": "Chrome_WidgetWin_1",
+      "rect": [
+        187,
+        36,
+        1927,
+        1025
+      ]
+    }
+  ],
+  "read_only": true
+}

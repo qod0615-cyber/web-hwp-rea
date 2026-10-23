@@ -1,0 +1,51 @@
+{
+  "status": "existing_local_static_bodies_found_not_executed",
+  "source_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\rea_결과_편집화면_20261019_212751\\draw_extent.c",
+  "source_sha256": "2cd0d900ff0af0566f7f18f00d96fad3d03fadc34e942bbd9af7e3a0fc06040f",
+  "functions": [
+    {
+      "binary": "HncBaseDraw.dll",
+      "va": "0x10062040",
+      "name": "CHncDrawContext::GetTextExtentPointW",
+      "delegate": "0x1004df20",
+      "return_units": "SIZE output is logical extent in the active CHncDrawContext mapping; scalar return is status, not height."
+    },
+    {
+      "binary": "HncBaseDraw.dll",
+      "va": "0x10062060",
+      "name": "CHncDrawContext::GetTextExtentExPointW",
+      "delegate": "0x1004df20",
+      "return_units": "SIZE output is logical extent in the active CHncDrawContext mapping; scalar return is status. Not unconditionally raw screen pixels."
+    },
+    {
+      "binary": "HncBaseDraw.dll",
+      "va": "0x1004df20",
+      "name": "internal common extent body",
+      "calls": [
+        "0x10056520",
+        "0x100568a0",
+        "0x1004e2b0"
+      ],
+      "return_units": "Fills logical SIZE through 0x1004e2b0; the decompiler labels the internal scalar return as void, so do not infer success semantics from this prototype."
+    },
+    {
+      "binary": "HncBaseDraw.dll",
+      "va": "0x1004e2b0",
+      "name": "extent accumulator",
+      "return_units": "Ordinary horizontal branch sets cx from advances and cy to maximum run height from run+0x1c. Vertical/rotation branches differ; physical-pixel-to-logical conversion depends on upstream context and run measurements."
+    }
+  ],
+  "mapping_context": {
+    "source_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\rea_결과_편집화면_20261019_212751\\plugin_entry.c",
+    "source_sha256": "3187ada4baab46cf51f306a0a222877c9d29636f7b48953732b699cee5b7986f",
+    "binary": "HwpPlugin.dll",
+    "va": "0x10064ca0",
+    "observation": "Static body sets mapping mode 8, window ext 7200/7200, viewport ext based on device DPI and requested scale, and logical DPI 7200/7200.",
+    "conditional_unit_inference": "At 100% scale and 96dpi viewport, 1 device pixel corresponds to 75 logical HU; actual native-save mapping/scale/mode is not observed in this task."
+  },
+  "call_direction_note": "HwpPlugin 0x1008b480 calls glyph measurement 0x10084f60; that measurement calls CHncDrawContext GetTextExtent*. The wrapper is a callee, not a caller of 0x1008b480.",
+  "limits": [
+    "No HNC DLL loaded or executed.",
+    "Do not equate fresh memory-DC GDI SIZE.cy with HNC/native-save-context SIZE.cy without mapping/mode evidence."
+  ]
+}

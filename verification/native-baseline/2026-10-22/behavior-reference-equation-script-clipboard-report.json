@@ -1,0 +1,3173 @@
+{
+  "phase": "equation-script-clipboard",
+  "started": "2026-10-22T21:43:12.224892+09:00",
+  "pid": 30432,
+  "target_hwnd": 985892,
+  "target_pid": 4032,
+  "source": "C:\\Users\\K\\.orca\\coordination\\desktop_control.py",
+  "source_sha256": "4084e572dc5e9fe8e07c2ec4a6784fe0a54f9730344d186af51ff035cb86a882",
+  "collector": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-collector.py",
+  "collector_sha256": "8f11c6170daa35ae0296a3e1ac210594b4b97eefb6bef182f0577f4aac71e98f",
+  "events": [
+    {
+      "kind": "before_request",
+      "time": "2026-10-22T21:43:12.231600+09:00",
+      "epoch": 1792672992.2316,
+      "owner": {
+        "owner": "Astris",
+        "session": "hangul-pc-upper-0051",
+        "job": "upper-0051",
+        "pid": 32080,
+        "since": 1792672811.7173536,
+        "since_iso": "2026-10-22 21:40:11",
+        "heartbeat": 1792672991.7869368,
+        "heartbeat_iso": "2026-10-22 21:43:11",
+        "token": "50dbc54d8b2241ab9703ad8924b4807e",
+        "heartbeat_age_s": 0.4,
+        "stale_suspect": false
+      },
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          -8,
+          -8,
+          1928,
+          1048
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1936,
+          1056
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1936,
+          1056
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "acquired",
+      "time": "2026-10-22T21:43:30.277082+09:00",
+      "epoch": 1792673010.2770827,
+      "owner": {
+        "owner": "Web HWP",
+        "session": "behavior-reference-2026-10-22",
+        "job": "equation-script-clipboard",
+        "pid": 30432,
+        "since": 1792673010.2699425,
+        "since_iso": "2026-10-22 21:43:30",
+        "heartbeat": 1792673010.2699425,
+        "heartbeat_iso": "2026-10-22 21:43:30",
+        "token": "4e1cc27c672d4ffaa933c395f4a6b67c",
+        "heartbeat_age_s": 0.0,
+        "stale_suspect": false
+      },
+      "heartbeat": true
+    },
+    {
+      "kind": "clipboard_original_stashed_in_memory",
+      "time": "2026-10-22T21:43:30.300080+09:00",
+      "epoch": 1792673010.30008,
+      "format_count": 4
+    },
+    {
+      "kind": "activate_title_click",
+      "time": "2026-10-22T21:43:30.999795+09:00",
+      "epoch": 1792673010.9997957,
+      "screen": [
+        665,
+        52
+      ]
+    },
+    {
+      "kind": "click",
+      "time": "2026-10-22T21:43:31.295901+09:00",
+      "epoch": 1792673011.2959018,
+      "label": "focus dedicated blank document",
+      "client": [
+        500,
+        400
+      ],
+      "screen": [
+        502,
+        440
+      ],
+      "window_relative": [
+        500,
+        400
+      ],
+      "hit": {
+        "hwnd": 1444636,
+        "pid": 4032,
+        "class": "HwpMainEditWnd",
+        "name": "",
+        "id": 12968844,
+        "rect_screen": [
+          38,
+          261,
+          1306,
+          944
+        ],
+        "rect_client_main": [
+          36,
+          221,
+          1304,
+          904
+        ],
+        "rect_window_main": [
+          36,
+          221,
+          1304,
+          904
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 985892,
+        "owner": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:32.161405+09:00",
+      "epoch": 1792673012.1614053,
+      "keys": [
+        17,
+        78
+      ],
+      "label": "Ctrl+N",
+      "foreground": 985892
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:32.508408+09:00",
+      "epoch": 1792673012.508408,
+      "keys": [
+        77
+      ],
+      "label": "M",
+      "foreground": 985892
+    },
+    {
+      "kind": "equation_opened",
+      "time": "2026-10-22T21:43:36.586341+09:00",
+      "epoch": 1792673016.5863419,
+      "window": {
+        "hwnd": 1049544,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;3dce030b-e9f7-4b00-abdd-bf54c042b5dd]",
+        "name": "수식 편집기",
+        "id": 0,
+        "rect_screen": [
+          -950,
+          427,
+          0,
+          827
+        ],
+        "rect_client_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "rect_window_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 1049544
+      },
+      "placement": [
+        0,
+        1,
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -950,
+          427,
+          0,
+          827
+        ]
+      ]
+    },
+    {
+      "kind": "temporary_own_topmost_for_activation",
+      "time": "2026-10-22T21:43:36.604341+09:00",
+      "epoch": 1792673016.6043415,
+      "hwnd": 1049544,
+      "original_topmost": false
+    },
+    {
+      "kind": "equation_click",
+      "time": "2026-10-22T21:43:36.659341+09:00",
+      "epoch": 1792673016.659341,
+      "window_relative": [
+        25,
+        300
+      ],
+      "screen": [
+        -925,
+        727
+      ],
+      "label": "focus blank command pane",
+      "hit": {
+        "hwnd": 16976504,
+        "pid": 4032,
+        "class": "HWP_EqMainView",
+        "name": "",
+        "id": 12788776,
+        "rect_screen": [
+          -949,
+          525,
+          -1,
+          821
+        ],
+        "rect_client_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "rect_window_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 1049544,
+        "owner": 985892,
+        "root_owner": 1049544
+      }
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:37.074128+09:00",
+      "epoch": 1792673017.0741286,
+      "keys": [
+        65
+      ],
+      "label": "equation character 'a'",
+      "foreground": 1049544
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:37.505685+09:00",
+      "epoch": 1792673017.505685,
+      "keys": [
+        16,
+        187
+      ],
+      "label": "equation character '+'",
+      "foreground": 1049544
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:37.833846+09:00",
+      "epoch": 1792673017.8338468,
+      "keys": [
+        66
+      ],
+      "label": "equation character 'b'",
+      "foreground": 1049544
+    },
+    {
+      "kind": "equation_typed",
+      "time": "2026-10-22T21:43:38.136413+09:00",
+      "epoch": 1792673018.1364133,
+      "literal": "a+b"
+    },
+    {
+      "kind": "equation_click",
+      "time": "2026-10-22T21:43:39.217342+09:00",
+      "epoch": 1792673019.2183416,
+      "window_relative": [
+        25,
+        300
+      ],
+      "screen": [
+        -925,
+        727
+      ],
+      "label": "focus actual command pane for script copy a+b",
+      "hit": {
+        "hwnd": 16976504,
+        "pid": 4032,
+        "class": "HWP_EqMainView",
+        "name": "",
+        "id": 12788776,
+        "rect_screen": [
+          -949,
+          525,
+          -1,
+          821
+        ],
+        "rect_client_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "rect_window_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 1049544,
+        "owner": 985892,
+        "root_owner": 1049544
+      }
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:39.665962+09:00",
+      "epoch": 1792673019.665963,
+      "keys": [
+        17,
+        65
+      ],
+      "label": "select command text only a+b",
+      "foreground": 1049544
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:40.012092+09:00",
+      "epoch": 1792673020.0120924,
+      "keys": [
+        17,
+        67
+      ],
+      "label": "copy command script a+b",
+      "foreground": 1049544
+    },
+    {
+      "kind": "native_script_copy_recorded",
+      "time": "2026-10-22T21:43:40.314774+09:00",
+      "epoch": 1792673020.3147748,
+      "sample": "a+b",
+      "classification": "actual_CF_UNICODETEXT"
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:40.360256+09:00",
+      "epoch": 1792673020.3602567,
+      "keys": [
+        46
+      ],
+      "label": "clear selected own command script",
+      "foreground": 1049544
+    },
+    {
+      "kind": "equation_click",
+      "time": "2026-10-22T21:43:40.779410+09:00",
+      "epoch": 1792673020.7794106,
+      "window_relative": [
+        114,
+        48
+      ],
+      "screen": [
+        -836,
+        475
+      ],
+      "label": "fraction primary icon in empty equation",
+      "hit": {
+        "hwnd": 1049544,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;3dce030b-e9f7-4b00-abdd-bf54c042b5dd]",
+        "name": "수식 편집기",
+        "id": 0,
+        "rect_screen": [
+          -950,
+          427,
+          0,
+          827
+        ],
+        "rect_client_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "rect_window_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 1049544
+      }
+    },
+    {
+      "kind": "equation_click",
+      "time": "2026-10-22T21:43:42.366083+09:00",
+      "epoch": 1792673022.3660839,
+      "window_relative": [
+        25,
+        300
+      ],
+      "screen": [
+        -925,
+        727
+      ],
+      "label": "focus actual command pane for script copy fraction_empty",
+      "hit": {
+        "hwnd": 16976504,
+        "pid": 4032,
+        "class": "HWP_EqMainView",
+        "name": "",
+        "id": 12788776,
+        "rect_screen": [
+          -949,
+          525,
+          -1,
+          821
+        ],
+        "rect_client_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "rect_window_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 1049544,
+        "owner": 985892,
+        "root_owner": 1049544
+      }
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:42.824663+09:00",
+      "epoch": 1792673022.8246634,
+      "keys": [
+        17,
+        65
+      ],
+      "label": "select command text only fraction_empty",
+      "foreground": 1049544
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:43.146787+09:00",
+      "epoch": 1792673023.1467874,
+      "keys": [
+        17,
+        67
+      ],
+      "label": "copy command script fraction_empty",
+      "foreground": 1049544
+    },
+    {
+      "kind": "native_script_copy_recorded",
+      "time": "2026-10-22T21:43:43.478892+09:00",
+      "epoch": 1792673023.4788923,
+      "sample": "fraction_empty",
+      "classification": "actual_CF_UNICODETEXT"
+    },
+    {
+      "kind": "equation_click",
+      "time": "2026-10-22T21:43:43.556413+09:00",
+      "epoch": 1792673023.5564132,
+      "window_relative": [
+        17,
+        122
+      ],
+      "screen": [
+        -933,
+        549
+      ],
+      "label": "select empty numerator",
+      "hit": {
+        "hwnd": 16976504,
+        "pid": 4032,
+        "class": "HWP_EqMainView",
+        "name": "",
+        "id": 12788776,
+        "rect_screen": [
+          -949,
+          525,
+          -1,
+          821
+        ],
+        "rect_client_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "rect_window_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 1049544,
+        "owner": 985892,
+        "root_owner": 1049544
+      }
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:44.065539+09:00",
+      "epoch": 1792673024.0655394,
+      "keys": [
+        49
+      ],
+      "label": "equation character '1'",
+      "foreground": 1049544
+    },
+    {
+      "kind": "equation_typed",
+      "time": "2026-10-22T21:43:44.368941+09:00",
+      "epoch": 1792673024.3689418,
+      "literal": "1"
+    },
+    {
+      "kind": "equation_click",
+      "time": "2026-10-22T21:43:44.412528+09:00",
+      "epoch": 1792673024.412528,
+      "window_relative": [
+        17,
+        161
+      ],
+      "screen": [
+        -933,
+        588
+      ],
+      "label": "select empty denominator",
+      "hit": {
+        "hwnd": 16976504,
+        "pid": 4032,
+        "class": "HWP_EqMainView",
+        "name": "",
+        "id": 12788776,
+        "rect_screen": [
+          -949,
+          525,
+          -1,
+          821
+        ],
+        "rect_client_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "rect_window_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 1049544,
+        "owner": 985892,
+        "root_owner": 1049544
+      }
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:44.835731+09:00",
+      "epoch": 1792673024.835732,
+      "keys": [
+        50
+      ],
+      "label": "equation character '2'",
+      "foreground": 1049544
+    },
+    {
+      "kind": "equation_typed",
+      "time": "2026-10-22T21:43:45.139422+09:00",
+      "epoch": 1792673025.1394222,
+      "literal": "2"
+    },
+    {
+      "kind": "equation_click",
+      "time": "2026-10-22T21:43:46.361232+09:00",
+      "epoch": 1792673026.361233,
+      "window_relative": [
+        25,
+        300
+      ],
+      "screen": [
+        -925,
+        727
+      ],
+      "label": "focus actual command pane for script copy fraction_1_2",
+      "hit": {
+        "hwnd": 16976504,
+        "pid": 4032,
+        "class": "HWP_EqMainView",
+        "name": "",
+        "id": 12788776,
+        "rect_screen": [
+          -949,
+          525,
+          -1,
+          821
+        ],
+        "rect_client_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "rect_window_main": [
+          -951,
+          485,
+          -3,
+          781
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 1049544,
+        "owner": 985892,
+        "root_owner": 1049544
+      }
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:46.877442+09:00",
+      "epoch": 1792673026.8774424,
+      "keys": [
+        17,
+        65
+      ],
+      "label": "select command text only fraction_1_2",
+      "foreground": 1049544
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:47.198510+09:00",
+      "epoch": 1792673027.1985104,
+      "keys": [
+        17,
+        67
+      ],
+      "label": "copy command script fraction_1_2",
+      "foreground": 1049544
+    },
+    {
+      "kind": "native_script_copy_recorded",
+      "time": "2026-10-22T21:43:47.503204+09:00",
+      "epoch": 1792673027.5032043,
+      "sample": "fraction_1_2",
+      "classification": "actual_CF_UNICODETEXT"
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:47.523354+09:00",
+      "epoch": 1792673027.523354,
+      "keys": [
+        39
+      ],
+      "label": "collapse own command selection",
+      "foreground": 1049544
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:43:48.266053+09:00",
+      "epoch": 1792673028.2660532,
+      "keys": [
+        27
+      ],
+      "label": "close own scratch equation editor",
+      "foreground": 1049544
+    },
+    {
+      "kind": "temporary_own_topmost_for_activation",
+      "time": "2026-10-22T21:43:50.185006+09:00",
+      "epoch": 1792673030.1850069,
+      "hwnd": 2294736,
+      "original_topmost": true
+    },
+    {
+      "kind": "discard_scratch_equation",
+      "time": "2026-10-22T21:43:50.909892+09:00",
+      "epoch": 1792673030.9098926,
+      "button": {
+        "name": "나가기 : ALT+N",
+        "class": "DialogButtonImpl",
+        "automation_id": "",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          -515,
+          655,
+          -435,
+          683
+        ],
+        "visible": true,
+        "enabled": true
+      }
+    },
+    {
+      "kind": "release_completed",
+      "time": "2026-10-22T21:43:52.781346+09:00",
+      "epoch": 1792673032.7813466
+    },
+    {
+      "kind": "own_request_deleted",
+      "time": "2026-10-22T21:43:52.785345+09:00",
+      "epoch": 1792673032.7853453
+    }
+  ],
+  "captures": [
+    {
+      "name": "behavior-reference-equation-script-copy-a-plus-b",
+      "raw": "behavior-reference-equation-script-copy-a-plus-b.raw.png",
+      "time": "2026-10-22T21:43:39.174342+09:00",
+      "window": {
+        "hwnd": 1049544,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;3dce030b-e9f7-4b00-abdd-bf54c042b5dd]",
+        "name": "수식 편집기",
+        "id": 0,
+        "rect_screen": [
+          -950,
+          427,
+          0,
+          827
+        ],
+        "rect_client_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "rect_window_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 1049544
+      },
+      "dpi": 96,
+      "gui": {
+        "flags": 0,
+        "active": 1049544,
+        "focus": 16976504,
+        "menu_owner": null,
+        "capture": null,
+        "caret_hwnd": 16976504,
+        "caret_rect": [
+          24,
+          194,
+          2949213,
+          -4456327
+        ]
+      },
+      "cursor": {
+        "handle": 303434519,
+        "visible": true,
+        "screen": [
+          -925,
+          727
+        ],
+        "hotspot": [
+          4,
+          8
+        ],
+        "size": [
+          32,
+          32
+        ]
+      },
+      "native_children": [
+        {
+          "hwnd": 16976504,
+          "pid": 4032,
+          "class": "HWP_EqMainView",
+          "name": "",
+          "id": 12788776,
+          "rect_screen": [
+            -949,
+            525,
+            -1,
+            821
+          ],
+          "rect_client_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "rect_window_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 1049544,
+          "owner": 985892,
+          "root_owner": 1049544
+        }
+      ],
+      "input_event_count": 14,
+      "expected_script": null,
+      "actual_script": "pending screenshot transcription; native custom view has no exposed script getter",
+      "occlusion_samples": [
+        {
+          "screen": [
+            -930,
+            442
+          ],
+          "hwnd": 1049544,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -20,
+            442
+          ],
+          "hwnd": 1049544,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -920,
+            547
+          ],
+          "hwnd": 16976504,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -920,
+            737
+          ],
+          "hwnd": 16976504,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -20,
+            807
+          ],
+          "hwnd": 16976504,
+          "root": 1049544
+        }
+      ],
+      "status": "pending_visual_behavior_review"
+    },
+    {
+      "name": "behavior-reference-equation-script-copy-fraction-empty",
+      "raw": "behavior-reference-equation-script-copy-fraction-empty.raw.png",
+      "time": "2026-10-22T21:43:42.225001+09:00",
+      "window": {
+        "hwnd": 1049544,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;3dce030b-e9f7-4b00-abdd-bf54c042b5dd]",
+        "name": "수식 편집기",
+        "id": 0,
+        "rect_screen": [
+          -950,
+          427,
+          0,
+          827
+        ],
+        "rect_client_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "rect_window_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 1049544
+      },
+      "dpi": 96,
+      "gui": {
+        "flags": 0,
+        "active": 1049544,
+        "focus": 16976504,
+        "menu_owner": null,
+        "capture": null,
+        "caret_hwnd": 16976504,
+        "caret_rect": [
+          14,
+          194,
+          15,
+          206
+        ]
+      },
+      "cursor": {
+        "handle": 65541,
+        "visible": true,
+        "screen": [
+          -836,
+          475
+        ],
+        "hotspot": [
+          0,
+          0
+        ],
+        "size": [
+          32,
+          32
+        ]
+      },
+      "native_children": [
+        {
+          "hwnd": 16976504,
+          "pid": 4032,
+          "class": "HWP_EqMainView",
+          "name": "",
+          "id": 12788776,
+          "rect_screen": [
+            -949,
+            525,
+            -1,
+            821
+          ],
+          "rect_client_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "rect_window_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 1049544,
+          "owner": 985892,
+          "root_owner": 1049544
+        }
+      ],
+      "input_event_count": 20,
+      "expected_script": null,
+      "actual_script": "pending screenshot transcription; native custom view has no exposed script getter",
+      "occlusion_samples": [
+        {
+          "screen": [
+            -930,
+            442
+          ],
+          "hwnd": 1049544,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -20,
+            442
+          ],
+          "hwnd": 1049544,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -920,
+            547
+          ],
+          "hwnd": 16976504,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -920,
+            737
+          ],
+          "hwnd": 16976504,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -20,
+            807
+          ],
+          "hwnd": 16976504,
+          "root": 1049544
+        }
+      ],
+      "status": "pending_visual_behavior_review"
+    },
+    {
+      "name": "behavior-reference-equation-script-copy-fraction-one-half",
+      "raw": "behavior-reference-equation-script-copy-fraction-one-half.raw.png",
+      "time": "2026-10-22T21:43:46.193811+09:00",
+      "window": {
+        "hwnd": 1049544,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;3dce030b-e9f7-4b00-abdd-bf54c042b5dd]",
+        "name": "수식 편집기",
+        "id": 0,
+        "rect_screen": [
+          -950,
+          427,
+          0,
+          827
+        ],
+        "rect_client_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "rect_window_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 1049544
+      },
+      "dpi": 96,
+      "gui": {
+        "flags": 1,
+        "active": 1049544,
+        "focus": 16976504,
+        "menu_owner": null,
+        "capture": null,
+        "caret_hwnd": 16976504,
+        "caret_rect": [
+          42,
+          30,
+          43,
+          60
+        ]
+      },
+      "cursor": {
+        "handle": 65541,
+        "visible": true,
+        "screen": [
+          -933,
+          588
+        ],
+        "hotspot": [
+          0,
+          0
+        ],
+        "size": [
+          32,
+          32
+        ]
+      },
+      "native_children": [
+        {
+          "hwnd": 16976504,
+          "pid": 4032,
+          "class": "HWP_EqMainView",
+          "name": "",
+          "id": 12788776,
+          "rect_screen": [
+            -949,
+            525,
+            -1,
+            821
+          ],
+          "rect_client_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "rect_window_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 1049544,
+          "owner": 985892,
+          "root_owner": 1049544
+        }
+      ],
+      "input_event_count": 30,
+      "expected_script": null,
+      "actual_script": "pending screenshot transcription; native custom view has no exposed script getter",
+      "occlusion_samples": [
+        {
+          "screen": [
+            -930,
+            442
+          ],
+          "hwnd": 1049544,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -20,
+            442
+          ],
+          "hwnd": 1049544,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -920,
+            547
+          ],
+          "hwnd": 16976504,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -920,
+            737
+          ],
+          "hwnd": 16976504,
+          "root": 1049544
+        },
+        {
+          "screen": [
+            -20,
+            807
+          ],
+          "hwnd": 16976504,
+          "root": 1049544
+        }
+      ],
+      "status": "pending_visual_behavior_review"
+    },
+    {
+      "name": "behavior-reference-equation-script-samples-discarded-blank",
+      "kind": "editor",
+      "time": "2026-10-22T21:43:52.763248+09:00",
+      "raw": "behavior-reference-equation-script-samples-discarded-blank.raw.png",
+      "dialog_raw": null,
+      "window": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      },
+      "window_rect": [
+        2,
+        40,
+        1329,
+        1006
+      ],
+      "client_rect": [
+        0,
+        0,
+        1327,
+        966
+      ],
+      "client_origin_screen": [
+        2,
+        40
+      ],
+      "dpi": 96,
+      "units": "physical pixels; rectangles half-open",
+      "zoom": {
+        "text": "100%",
+        "source": "status bar visual review required",
+        "ribbon_160_percent": "character width ratio; not document zoom"
+      },
+      "foreground": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      },
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      },
+      "gui_thread": {
+        "flags": 0,
+        "active": 985892,
+        "focus": 1444636,
+        "menu_owner": null,
+        "capture": null,
+        "caret_hwnd": 1444636,
+        "caret_rect": [
+          321,
+          174,
+          323,
+          189
+        ]
+      },
+      "native_children": [
+        {
+          "hwnd": 2165522,
+          "pid": 4032,
+          "class": "HwpRulerTabButtonWnd",
+          "name": "",
+          "id": 155592296,
+          "rect_screen": [
+            10,
+            233,
+            38,
+            261
+          ],
+          "rect_client_main": [
+            8,
+            193,
+            36,
+            221
+          ],
+          "rect_window_main": [
+            8,
+            193,
+            36,
+            221
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 985890,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208327152,
+          "rect_screen": [
+            38,
+            233,
+            1306,
+            261
+          ],
+          "rect_client_main": [
+            36,
+            193,
+            1304,
+            221
+          ],
+          "rect_window_main": [
+            36,
+            193,
+            1304,
+            221
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 789302,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208335432,
+          "rect_screen": [
+            10,
+            261,
+            38,
+            944
+          ],
+          "rect_client_main": [
+            8,
+            221,
+            36,
+            904
+          ],
+          "rect_window_main": [
+            8,
+            221,
+            36,
+            904
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1444636,
+          "pid": 4032,
+          "class": "HwpMainEditWnd",
+          "name": "",
+          "id": 12968844,
+          "rect_screen": [
+            38,
+            261,
+            1306,
+            944
+          ],
+          "rect_client_main": [
+            36,
+            221,
+            1304,
+            904
+          ],
+          "rect_window_main": [
+            36,
+            221,
+            1304,
+            904
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1248016,
+          "pid": 4032,
+          "class": "msctls_progress32",
+          "name": "",
+          "id": 0,
+          "rect_screen": [
+            2,
+            40,
+            402,
+            56
+          ],
+          "rect_client_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "rect_window_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "visible": false,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        }
+      ],
+      "main_native_children": null,
+      "occlusion_samples": [
+        {
+          "screen": [
+            22,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            523
+          ],
+          "hwnd": 789302,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            523
+          ],
+          "hwnd": 1444636,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            523
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        }
+      ],
+      "input_event_count": 38,
+      "status": "pending_visual_review",
+      "uia": {
+        "elements": [
+          {
+            "name": "빈 문서 1 - 한글",
+            "class": "FrameWindowImpl",
+            "automation_id": "",
+            "control_type": "Window",
+            "hwnd": 985892,
+            "rect_screen": [
+              2,
+              40,
+              1329,
+              1006
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "HwpRulerTabButtonWnd",
+            "automation_id": "155592296",
+            "control_type": "Pane",
+            "hwnd": 2165522,
+            "rect_screen": [
+              10,
+              233,
+              38,
+              261
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "HwpRulerWnd",
+            "automation_id": "208327152",
+            "control_type": "Pane",
+            "hwnd": 985890,
+            "rect_screen": [
+              38,
+              233,
+              1306,
+              261
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "HwpRulerWnd",
+            "automation_id": "208335432",
+            "control_type": "Pane",
+            "hwnd": 789302,
+            "rect_screen": [
+              10,
+              261,
+              38,
+              944
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "HwpMainEditWnd",
+            "automation_id": "12968844",
+            "control_type": "Pane",
+            "hwnd": 1444636,
+            "rect_screen": [
+              38,
+              261,
+              1306,
+              944
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "빈 문서 1 - 글",
+            "class": "TitleBarImpl",
+            "automation_id": "",
+            "control_type": "TitleBar",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              48,
+              1321,
+              80
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "MenuBar",
+            "class": "MenuBarImpl",
+            "automation_id": "",
+            "control_type": "Menu",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              80,
+              1321,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "ToolBox",
+            "class": "ToolBoxImpl",
+            "automation_id": "b8403768-121d-4db1-89f7-663872a204df",
+            "control_type": "Custom",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              112,
+              1321,
+              200
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "ToolBar",
+            "class": "ToolBarImpl",
+            "automation_id": "b8ce731d-8baa-4ff3-9464-df1ec9af4c6c",
+            "control_type": "Custom",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              200,
+              1321,
+              232
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "StatusBar",
+            "class": "StatusBarImpl",
+            "automation_id": "",
+            "control_type": "StatusBar",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              973,
+              1321,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "msctls_progress32",
+            "automation_id": "",
+            "control_type": "ProgressBar",
+            "hwnd": 1248016,
+            "rect_screen": [
+              2,
+              40,
+              402,
+              56
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "최소화",
+            "class": "Button",
+            "automation_id": "PART_Min",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1220,
+              48,
+              1252,
+              80
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "파일 F",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              84,
+              73,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "편집 E",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              80,
+              84,
+              139,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "보기 U",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              139,
+              84,
+              198,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "입력 D",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              198,
+              84,
+              257,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "서식 J",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              257,
+              84,
+              316,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "쪽 W",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              316,
+              84,
+              364,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "보안 R",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              364,
+              84,
+              423,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "검토 H",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              423,
+              84,
+              482,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "도구 K",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              482,
+              84,
+              541,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "도형 X3",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              541,
+              84,
+              573,
+              110
+            ],
+            "visible": true,
+            "enabled": false
+          },
+          {
+            "name": "",
+            "class": "SearchComboImpl",
+            "automation_id": "PART_QuickSearch",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              1093,
+              84,
+              1253,
+              108
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "오려 두기 : ALT+T",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              24,
+              118,
+              62,
+              194
+            ],
+            "visible": true,
+            "enabled": false
+          },
+          {
+            "name": "복사하기 : ALT+C",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              62,
+              118,
+              118,
+              194
+            ],
+            "visible": true,
+            "enabled": false
+          },
+          {
+            "name": "붙이기 : ALT+P",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              118,
+              118,
+              163,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "모양 복사 : ALT+A",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              163,
+              118,
+              201,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "조판 부호 지우기 : ALT+Y",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              201,
+              118,
+              260,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "글자 모양 : ALT+L",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              273,
+              118,
+              311,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "문단 모양 : ALT+M",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              311,
+              118,
+              349,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "스타일 : ALT+S",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              349,
+              118,
+              394,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "세로 : ALT+G",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              407,
+              118,
+              445,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "가로 : ALT+D",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              445,
+              118,
+              483,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "쪽 여백 : ALT+J",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              483,
+              118,
+              537,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "바탕쪽 : ALT+E",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              537,
+              118,
+              582,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "단 : ALT+U",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              582,
+              118,
+              620,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "도형 : ALT+H",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              633,
+              118,
+              671,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "그림 : ALT+I",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              671,
+              118,
+              709,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "표 : ALT+B",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              709,
+              118,
+              747,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "차트 : ALT+R",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              747,
+              118,
+              785,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "개체 선택 : ALT+V",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              798,
+              118,
+              852,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "개체 보호 : ALT+K",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              852,
+              118,
+              906,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "찾기 : ALT+F",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              919,
+              118,
+              957,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "글자 바꾸기 : ALT+N",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              957,
+              118,
+              1022,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "정렬 : ALT+O",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1022,
+              118,
+              1060,
+              194
+            ],
+            "visible": true,
+            "enabled": false
+          },
+          {
+            "name": "새 문서 : ALT+N",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              27,
+              204,
+              67,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "불러오기 : ALT+O",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              69,
+              204,
+              109,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "저장하기 : ALT+S",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              111,
+              204,
+              151,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "인쇄 : ALT+P",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              168,
+              204,
+              192,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "미리 보기 : ALT+V",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              194,
+              204,
+              218,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "되돌리기 : ALT+8",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              235,
+              204,
+              275,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "다시 실행 : ALT+9",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              277,
+              204,
+              317,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "스타일 : ALT+Y",
+            "class": "ComboImpl",
+            "automation_id": "",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              336,
+              204,
+              442,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "언어 : ALT+Q",
+            "class": "ComboImpl",
+            "automation_id": "",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              448,
+              204,
+              539,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "함초롬바탕",
+            "class": "FontNameComboImpl",
+            "automation_id": "",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              545,
+              204,
+              663,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "글자 크기 : 10.0 pt ALT+M",
+            "class": "SpinComboImpl",
+            "automation_id": "",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              669,
+              204,
+              775,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "진하게 : ALT+B",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              794,
+              204,
+              818,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "기울임 : ALT+I",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              820,
+              204,
+              844,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "밑줄 : ALT+L",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              846,
+              204,
+              886,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "취소선 : ALT+T",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              888,
+              204,
+              928,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "글자 색 : ALT+C",
+            "class": "ColorButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              930,
+              204,
+              970,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "양쪽 정렬 : ALT+1",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              987,
+              204,
+              1011,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "왼쪽 정렬 : ALT+2",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1013,
+              204,
+              1037,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "가운데 정렬 : ALT+3",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1039,
+              204,
+              1063,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "오른쪽 정렬 : ALT+4",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1065,
+              204,
+              1089,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "배분 정렬 : ALT+5",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1091,
+              204,
+              1115,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "나눔 정렬 : ALT+6",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1117,
+              204,
+              1141,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "줄 간격 : 160 % ALT+7",
+            "class": "SpinComboImpl",
+            "automation_id": "",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              1160,
+              204,
+              1263,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "1/1쪽",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              20,
+              974,
+              68,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "1단",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              68,
+              974,
+              104,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "1줄",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              104,
+              974,
+              140,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "1칸",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              140,
+              974,
+              176,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "0글자",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              176,
+              974,
+              223,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "문자 입력",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              223,
+              974,
+              288,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "1/1 구역",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              288,
+              974,
+              350,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "삽입",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              350,
+              974,
+              390,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "변경 내용 [기록 중지]",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              390,
+              974,
+              515,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "타수 : 0타",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              515,
+              974,
+              583,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "Label",
+            "automation_id": "",
+            "control_type": "Text",
+            "hwnd": null,
+            "rect_screen": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "Label",
+            "automation_id": "",
+            "control_type": "Text",
+            "hwnd": null,
+            "rect_screen": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "쪽 윤곽",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              991,
+              974,
+              1023,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "폭 맞춤",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1023,
+              974,
+              1055,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "쪽 맞춤",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1055,
+              974,
+              1087,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "축소",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1095,
+              974,
+              1127,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "확대/축소 슬라이더 : 261.125 ",
+            "class": "SliderImpl",
+            "automation_id": "",
+            "control_type": "Slider",
+            "hwnd": null,
+            "rect_screen": [
+              1132,
+              974,
+              1220,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "확대",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1225,
+              974,
+              1257,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "110%",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1257,
+              974,
+              1321,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          }
+        ],
+        "truncated": false,
+        "method": "UIA read-only; native dialog editing COM not used"
+      }
+    }
+  ],
+  "inputs_finished": true,
+  "com_used": false,
+  "resident_commands_sent": false,
+  "request_token": "ed4506526c4c4c5d847c8b85f3e224b8",
+  "request_created_at": "2026-10-22T21:43:12.238601+09:00",
+  "request_deadline": 1792673112.2326002,
+  "acquired_at": "2026-10-22T21:43:30.271268+09:00",
+  "lock_token": "4e1cc27c672d4ffaa933c395f4a6b67c",
+  "input_deadline_epoch": 1792673060.2712681,
+  "clipboard_original_formats": [
+    {
+      "id": 13,
+      "name": "CF_UNICODETEXT"
+    },
+    {
+      "id": 16,
+      "name": "CF_LOCALE"
+    },
+    {
+      "id": 1,
+      "name": "CF_TEXT"
+    },
+    {
+      "id": 7,
+      "name": "CF_OEMTEXT"
+    }
+  ],
+  "clipboard_original_data_logged": false,
+  "actual_script_samples": [
+    {
+      "sample": "a+b",
+      "time": "2026-10-22T21:43:40.314774+09:00",
+      "clipboard_sequence_before": 16899,
+      "clipboard_sequence_after": 16904,
+      "formats": [
+        {
+          "id": 13,
+          "name": "CF_UNICODETEXT"
+        },
+        {
+          "id": 1,
+          "name": "CF_TEXT"
+        },
+        {
+          "id": 16,
+          "name": "CF_LOCALE"
+        },
+        {
+          "id": 7,
+          "name": "CF_OEMTEXT"
+        }
+      ],
+      "copied_object_format_detected": false,
+      "actual_script": "a+b",
+      "classification": "actual_CF_UNICODETEXT",
+      "focus": {
+        "flags": 0,
+        "active": 1049544,
+        "focus": 16976504,
+        "menu_owner": null,
+        "capture": null,
+        "caret_hwnd": 16976504,
+        "caret_rect": [
+          24,
+          194,
+          25,
+          206
+        ]
+      },
+      "command_pane_click_window_relative": [
+        25,
+        300
+      ]
+    },
+    {
+      "sample": "fraction_empty",
+      "time": "2026-10-22T21:43:43.478892+09:00",
+      "clipboard_sequence_before": 16904,
+      "clipboard_sequence_after": 16909,
+      "formats": [
+        {
+          "id": 13,
+          "name": "CF_UNICODETEXT"
+        },
+        {
+          "id": 1,
+          "name": "CF_TEXT"
+        },
+        {
+          "id": 16,
+          "name": "CF_LOCALE"
+        },
+        {
+          "id": 7,
+          "name": "CF_OEMTEXT"
+        }
+      ],
+      "copied_object_format_detected": false,
+      "actual_script": "{ } over { }",
+      "classification": "actual_CF_UNICODETEXT",
+      "focus": {
+        "flags": 0,
+        "active": 1049544,
+        "focus": 16976504,
+        "menu_owner": null,
+        "capture": null,
+        "caret_hwnd": 16976504,
+        "caret_rect": [
+          68,
+          194,
+          69,
+          206
+        ]
+      },
+      "command_pane_click_window_relative": [
+        25,
+        300
+      ]
+    },
+    {
+      "sample": "fraction_1_2",
+      "time": "2026-10-22T21:43:47.503204+09:00",
+      "clipboard_sequence_before": 16909,
+      "clipboard_sequence_after": 16914,
+      "formats": [
+        {
+          "id": 13,
+          "name": "CF_UNICODETEXT"
+        },
+        {
+          "id": 1,
+          "name": "CF_TEXT"
+        },
+        {
+          "id": 16,
+          "name": "CF_LOCALE"
+        },
+        {
+          "id": 7,
+          "name": "CF_OEMTEXT"
+        }
+      ],
+      "copied_object_format_detected": false,
+      "actual_script": "12 {} over {}",
+      "classification": "actual_CF_UNICODETEXT",
+      "focus": {
+        "flags": 0,
+        "active": 1049544,
+        "focus": 16976504,
+        "menu_owner": null,
+        "capture": null,
+        "caret_hwnd": 16976504,
+        "caret_rect": [
+          76,
+          194,
+          77,
+          206
+        ]
+      },
+      "command_pane_click_window_relative": [
+        25,
+        300
+      ]
+    }
+  ],
+  "script_copy_close_prompt_uia": {
+    "elements": [
+      {
+        "name": "수식\r\n달라진 수식 내용이 있습니다. 수식을 넣을까요?\r\n넣기Y 나가기N 취소C \r\n",
+        "class": "MessageBoxImpl",
+        "automation_id": "",
+        "control_type": "Window",
+        "hwnd": 2294736,
+        "rect_screen": [
+          -638,
+          548,
+          -312,
+          706
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "달라진 수식 내용이 있습니다. 수식을 넣을까요?",
+        "class": "",
+        "automation_id": "PART_Message",
+        "control_type": "Custom",
+        "hwnd": null,
+        "rect_screen": [
+          -573,
+          605,
+          -337,
+          621
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "넣기 : ALT+Y",
+        "class": "DialogButtonImpl",
+        "automation_id": "",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          -601,
+          655,
+          -521,
+          683
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "나가기 : ALT+N",
+        "class": "DialogButtonImpl",
+        "automation_id": "",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          -515,
+          655,
+          -435,
+          683
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "취소 : ALT+C",
+        "class": "DialogButtonImpl",
+        "automation_id": "",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          -429,
+          655,
+          -349,
+          683
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "",
+        "class": "Button",
+        "automation_id": "PART_Close",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          -347,
+          549,
+          -313,
+          577
+        ],
+        "visible": true,
+        "enabled": true
+      }
+    ],
+    "truncated": false,
+    "method": "UIA read-only; native dialog editing COM not used"
+  },
+  "status": "captured_pending_review",
+  "clipboard_original_restored": true,
+  "clipboard_restored_at": "2026-10-22T21:43:52.770248+09:00",
+  "cleanup_verified": true,
+  "input_finished_at": "2026-10-22T21:43:52.773345+09:00",
+  "down_remaining": false,
+  "keys_remaining": [],
+  "own_topmost_restored_at": "2026-10-22T21:43:52.777345+09:00",
+  "released_at": "2026-10-22T21:43:52.781346+09:00",
+  "request_deleted_at": "2026-10-22T21:43:52.785345+09:00",
+  "owner_after_return": {
+    "owner": "Astris",
+    "session": "hangul-pc-upper-0051",
+    "job": "upper-0051",
+    "pid": 32080,
+    "since": 1792673033.001581,
+    "since_iso": "2026-10-22 21:43:53",
+    "heartbeat": 1792673033.001581,
+    "heartbeat_iso": "2026-10-22 21:43:53",
+    "token": "a166ae78c3b24463a2ce9fffc657a634",
+    "heartbeat_age_s": 0.3,
+    "stale_suspect": false
+  },
+  "astris_reacquired_at": "2026-10-22T21:43:53.294128+09:00",
+  "finished": "2026-10-22T21:43:53.294128+09:00"
+}

@@ -1,0 +1,34 @@
+{
+  "source": "/home/k/projects/Web HWP REA/verification/native-baseline/2026-10-22/ui-reference-manifest.json",
+  "checks": [
+    {
+      "viewport": [
+        960,
+        662
+      ],
+      "visible_native_rectangles_checked": 45
+    },
+    {
+      "viewport": [
+        1204,
+        662
+      ],
+      "visible_native_rectangles_checked": 53
+    },
+    {
+      "viewport": [
+        1916,
+        918
+      ],
+      "visible_native_rectangles_checked": 54
+    },
+    {
+      "viewport": [
+        2560,
+        1440
+      ],
+      "visible_native_rectangles_checked": 54
+    }
+  ],
+  "scope": "Geometry and hit ownership only; not a native color or behavior equivalence claim."
+}

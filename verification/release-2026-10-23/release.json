@@ -1,0 +1,39 @@
+{
+  "authorization": "배포 1회",
+  "authorized_at": "2026-10-23T10:24:50.117697+09:00",
+  "status": "deployed_and_live_verified",
+  "deployment_limit": 1,
+  "used": 1,
+  "project": {
+    "projectId": "prj_9meN3B3UC6V59cbgfvlpgcmb3QK8",
+    "orgId": "team_xTHTAbj4jVZjFdIA6qSKYN8H",
+    "projectName": "web-hwp-rea"
+  },
+  "public_url": "https://web-hwp-rea.vercel.app/",
+  "local_release": {
+    "build": "3137294a888afd5e"
+  },
+  "html_sha256": "be4e8bd350272f35a28ef6484e59013aa0a5ae9b48b5a5e13291ced3fcab796e",
+  "known_remaining": "67 new ribbon commands unsupported; full native behavior/pixel/document layout parity incomplete.",
+  "preflight": {
+    "framework": {
+      "name": "Vite",
+      "slug": "vite"
+    },
+    "files": 248,
+    "private_evidence_excluded": true
+  },
+  "remaining_authorized_deployments": 0,
+  "deployment": {
+    "id": "dpl_8V9BaYh16UJRBUcZCyFcvtmYrjsP",
+    "url": "https://web-hwp-6bvc0hbdv-qod0615-2108s-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/qod0615-2108s-projects/web-hwp-rea/8V9BaYh16UJRBUcZCyFcvtmYrjsP",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_8V9BaYh16UJRBUcZCyFcvtmYrjsP"
+  },
+  "deployed_at": "2026-10-23T10:26:36.950984+09:00",
+  "verified_at": "2026-10-23T10:27:26.890229+09:00",
+  "live_verification": "verification/release-2026-10-23/live-check.json",
+  "live_screenshots_inspected": true
+}

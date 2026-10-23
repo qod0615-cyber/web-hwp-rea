@@ -1,0 +1,1793 @@
+{
+  "phase": "priority",
+  "started": "2026-10-22T18:41:46.023621+09:00",
+  "pid": 31156,
+  "target_hwnd": 985892,
+  "target_pid": 4032,
+  "source": "C:\\Users\\K\\.orca\\coordination\\desktop_control.py",
+  "source_sha256": "4084e572dc5e9fe8e07c2ec4a6784fe0a54f9730344d186af51ff035cb86a882",
+  "collector": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\ui-reference-collector.py",
+  "collector_sha256": "79ded97814e8d27396b3c8cb4a6c0bd6a80964e6053f394e66900bc56d08173e",
+  "events": [
+    {
+      "kind": "before_request",
+      "time": "2026-10-22T18:41:46.029620+09:00",
+      "epoch": 1792662106.0296204,
+      "owner": {
+        "owner": "Astris",
+        "session": "hangul-pc-upper-0051",
+        "job": "upper-0051",
+        "pid": 12644,
+        "since": 1792661314.821659,
+        "since_iso": "2026-10-22 18:28:34",
+        "heartbeat": 1792662095.8254356,
+        "heartbeat_iso": "2026-10-22 18:41:35",
+        "token": "5c928b6e2cc64aedaa8bdd72f26e92fa",
+        "heartbeat_age_s": 10.2,
+        "stale_suspect": false
+      },
+      "pending": null,
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          100,
+          40,
+          1427,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "acquired",
+      "time": "2026-10-22T18:42:02.075390+09:00",
+      "epoch": 1792662122.07539,
+      "owner": {
+        "owner": "Web HWP",
+        "session": "ui-reference-2026-10-22",
+        "job": "priority",
+        "pid": 31156,
+        "since": 1792662122.0688736,
+        "since_iso": "2026-10-22 18:42:02",
+        "heartbeat": 1792662122.0688736,
+        "heartbeat_iso": "2026-10-22 18:42:02",
+        "token": "42b5bc5974444f07be73ac8b148393cd",
+        "heartbeat_age_s": 0.0,
+        "stale_suspect": false
+      },
+      "heartbeat": true
+    },
+    {
+      "kind": "activate_title_click",
+      "time": "2026-10-22T18:42:02.307263+09:00",
+      "epoch": 1792662122.3072639,
+      "screen": [
+        665,
+        52
+      ]
+    },
+    {
+      "kind": "resize",
+      "time": "2026-10-22T18:42:03.236427+09:00",
+      "epoch": 1792662123.2364278,
+      "width": 1916,
+      "height": 918
+    },
+    {
+      "kind": "resize",
+      "time": "2026-10-22T18:42:03.810502+09:00",
+      "epoch": 1792662123.810502,
+      "width": 1327,
+      "height": 966
+    },
+    {
+      "kind": "click",
+      "time": "2026-10-22T18:42:04.132361+09:00",
+      "epoch": 1792662124.1333618,
+      "label": "입력 label",
+      "client": [
+        216,
+        48
+      ],
+      "screen": [
+        218,
+        88
+      ],
+      "window_relative": [
+        216,
+        48
+      ],
+      "hit": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "click",
+      "time": "2026-10-22T18:42:04.519925+09:00",
+      "epoch": 1792662124.5199249,
+      "label": "서식 label",
+      "client": [
+        276,
+        48
+      ],
+      "screen": [
+        278,
+        88
+      ],
+      "window_relative": [
+        276,
+        48
+      ],
+      "hit": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "click",
+      "time": "2026-10-22T18:42:06.102153+09:00",
+      "epoch": 1792662126.1021535,
+      "label": "편집 label",
+      "client": [
+        96,
+        48
+      ],
+      "screen": [
+        98,
+        88
+      ],
+      "window_relative": [
+        96,
+        48
+      ],
+      "hit": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T18:42:06.460476+09:00",
+      "epoch": 1792662126.4604766,
+      "keys": [
+        18,
+        76
+      ],
+      "label": "Alt+L",
+      "foreground": 985892
+    },
+    {
+      "kind": "failure",
+      "time": "2026-10-22T18:42:07.175656+09:00",
+      "epoch": 1792662127.175656,
+      "error": "AssertionError('expected owned dialog not found')"
+    },
+    {
+      "kind": "release_completed",
+      "time": "2026-10-22T18:42:07.194171+09:00",
+      "epoch": 1792662127.194171
+    },
+    {
+      "kind": "own_request_deleted",
+      "time": "2026-10-22T18:42:07.197172+09:00",
+      "epoch": 1792662127.197172
+    }
+  ],
+  "captures": [
+    {
+      "name": "ui-reference-baseline-1327x966",
+      "kind": "editor",
+      "time": "2026-10-22T18:42:02.685120+09:00",
+      "raw": "ui-reference-baseline-1327x966.raw.png",
+      "dialog_raw": null,
+      "window": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "window_rect": [
+        2,
+        40,
+        1329,
+        1006
+      ],
+      "client_rect": [
+        0,
+        0,
+        1327,
+        966
+      ],
+      "client_origin_screen": [
+        2,
+        40
+      ],
+      "dpi": 96,
+      "units": "physical pixels; rectangles half-open",
+      "zoom": {
+        "text": "100%",
+        "source": "status bar visual review required",
+        "ribbon_160_percent": "character width ratio; not document zoom"
+      },
+      "foreground": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "gui_thread": {
+        "flags": 0,
+        "active": 985892,
+        "focus": 1444636,
+        "menu_owner": null,
+        "capture": null
+      },
+      "native_children": [
+        {
+          "hwnd": 2165522,
+          "pid": 4032,
+          "class": "HwpRulerTabButtonWnd",
+          "name": "",
+          "id": 155592296,
+          "rect_screen": [
+            3,
+            226,
+            31,
+            254
+          ],
+          "rect_client_main": [
+            1,
+            186,
+            29,
+            214
+          ],
+          "rect_window_main": [
+            1,
+            186,
+            29,
+            214
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 985890,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208327152,
+          "rect_screen": [
+            31,
+            226,
+            1313,
+            254
+          ],
+          "rect_client_main": [
+            29,
+            186,
+            1311,
+            214
+          ],
+          "rect_window_main": [
+            29,
+            186,
+            1311,
+            214
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 789302,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208335432,
+          "rect_screen": [
+            3,
+            254,
+            31,
+            951
+          ],
+          "rect_client_main": [
+            1,
+            214,
+            29,
+            911
+          ],
+          "rect_window_main": [
+            1,
+            214,
+            29,
+            911
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1444636,
+          "pid": 4032,
+          "class": "HwpMainEditWnd",
+          "name": "",
+          "id": 12968844,
+          "rect_screen": [
+            31,
+            254,
+            1313,
+            951
+          ],
+          "rect_client_main": [
+            29,
+            214,
+            1311,
+            911
+          ],
+          "rect_window_main": [
+            29,
+            214,
+            1311,
+            911
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1248016,
+          "pid": 4032,
+          "class": "msctls_progress32",
+          "name": "",
+          "id": 0,
+          "rect_screen": [
+            2,
+            40,
+            402,
+            56
+          ],
+          "rect_client_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "rect_window_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "visible": false,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        }
+      ],
+      "main_native_children": null,
+      "occlusion_samples": [
+        {
+          "screen": [
+            22,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            523
+          ],
+          "hwnd": 789302,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            523
+          ],
+          "hwnd": 1444636,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            523
+          ],
+          "hwnd": 1444636,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        }
+      ],
+      "input_event_count": 3,
+      "status": "pending_visual_review"
+    },
+    {
+      "name": "ui-reference-baseline-1916x918",
+      "kind": "editor",
+      "time": "2026-10-22T18:42:03.721894+09:00",
+      "raw": "ui-reference-baseline-1916x918.raw.png",
+      "dialog_raw": null,
+      "window": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1918,
+          958
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1916,
+          918
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1916,
+          918
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "window_rect": [
+        2,
+        40,
+        1918,
+        958
+      ],
+      "client_rect": [
+        0,
+        0,
+        1916,
+        918
+      ],
+      "client_origin_screen": [
+        2,
+        40
+      ],
+      "dpi": 96,
+      "units": "physical pixels; rectangles half-open",
+      "zoom": {
+        "text": "100%",
+        "source": "status bar visual review required",
+        "ribbon_160_percent": "character width ratio; not document zoom"
+      },
+      "foreground": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1918,
+          958
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1916,
+          918
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1916,
+          918
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1918,
+          958
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1916,
+          918
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1916,
+          918
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "gui_thread": {
+        "flags": 0,
+        "active": 985892,
+        "focus": 1444636,
+        "menu_owner": null,
+        "capture": null
+      },
+      "native_children": [
+        {
+          "hwnd": 2165522,
+          "pid": 4032,
+          "class": "HwpRulerTabButtonWnd",
+          "name": "",
+          "id": 155592296,
+          "rect_screen": [
+            3,
+            226,
+            31,
+            254
+          ],
+          "rect_client_main": [
+            1,
+            186,
+            29,
+            214
+          ],
+          "rect_window_main": [
+            1,
+            186,
+            29,
+            214
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 985890,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208327152,
+          "rect_screen": [
+            31,
+            226,
+            1902,
+            254
+          ],
+          "rect_client_main": [
+            29,
+            186,
+            1900,
+            214
+          ],
+          "rect_window_main": [
+            29,
+            186,
+            1900,
+            214
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 789302,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208335432,
+          "rect_screen": [
+            3,
+            254,
+            31,
+            903
+          ],
+          "rect_client_main": [
+            1,
+            214,
+            29,
+            863
+          ],
+          "rect_window_main": [
+            1,
+            214,
+            29,
+            863
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1444636,
+          "pid": 4032,
+          "class": "HwpMainEditWnd",
+          "name": "",
+          "id": 12968844,
+          "rect_screen": [
+            31,
+            254,
+            1902,
+            903
+          ],
+          "rect_client_main": [
+            29,
+            214,
+            1900,
+            863
+          ],
+          "rect_window_main": [
+            29,
+            214,
+            1900,
+            863
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1248016,
+          "pid": 4032,
+          "class": "msctls_progress32",
+          "name": "",
+          "id": 0,
+          "rect_screen": [
+            2,
+            40,
+            402,
+            56
+          ],
+          "rect_client_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "rect_window_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "visible": false,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        }
+      ],
+      "main_native_children": null,
+      "occlusion_samples": [
+        {
+          "screen": [
+            22,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            499
+          ],
+          "hwnd": 789302,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            943
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            960,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            960,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            960,
+            499
+          ],
+          "hwnd": 1444636,
+          "related": true
+        },
+        {
+          "screen": [
+            960,
+            943
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1898,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1898,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1898,
+            499
+          ],
+          "hwnd": 1444636,
+          "related": true
+        },
+        {
+          "screen": [
+            1898,
+            943
+          ],
+          "hwnd": 985892,
+          "related": true
+        }
+      ],
+      "input_event_count": 4,
+      "status": "pending_visual_review"
+    },
+    {
+      "name": "ui-reference-ribbon-input",
+      "kind": "editor",
+      "time": "2026-10-22T18:42:04.483925+09:00",
+      "raw": "ui-reference-ribbon-input.raw.png",
+      "dialog_raw": null,
+      "window": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "window_rect": [
+        2,
+        40,
+        1329,
+        1006
+      ],
+      "client_rect": [
+        0,
+        0,
+        1327,
+        966
+      ],
+      "client_origin_screen": [
+        2,
+        40
+      ],
+      "dpi": 96,
+      "units": "physical pixels; rectangles half-open",
+      "zoom": {
+        "text": "100%",
+        "source": "status bar visual review required",
+        "ribbon_160_percent": "character width ratio; not document zoom"
+      },
+      "foreground": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "gui_thread": {
+        "flags": 0,
+        "active": 985892,
+        "focus": 1444636,
+        "menu_owner": null,
+        "capture": null
+      },
+      "native_children": [
+        {
+          "hwnd": 2165522,
+          "pid": 4032,
+          "class": "HwpRulerTabButtonWnd",
+          "name": "",
+          "id": 155592296,
+          "rect_screen": [
+            3,
+            226,
+            31,
+            254
+          ],
+          "rect_client_main": [
+            1,
+            186,
+            29,
+            214
+          ],
+          "rect_window_main": [
+            1,
+            186,
+            29,
+            214
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 985890,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208327152,
+          "rect_screen": [
+            31,
+            226,
+            1313,
+            254
+          ],
+          "rect_client_main": [
+            29,
+            186,
+            1311,
+            214
+          ],
+          "rect_window_main": [
+            29,
+            186,
+            1311,
+            214
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 789302,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208335432,
+          "rect_screen": [
+            3,
+            254,
+            31,
+            951
+          ],
+          "rect_client_main": [
+            1,
+            214,
+            29,
+            911
+          ],
+          "rect_window_main": [
+            1,
+            214,
+            29,
+            911
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1444636,
+          "pid": 4032,
+          "class": "HwpMainEditWnd",
+          "name": "",
+          "id": 12968844,
+          "rect_screen": [
+            31,
+            254,
+            1313,
+            951
+          ],
+          "rect_client_main": [
+            29,
+            214,
+            1311,
+            911
+          ],
+          "rect_window_main": [
+            29,
+            214,
+            1311,
+            911
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1248016,
+          "pid": 4032,
+          "class": "msctls_progress32",
+          "name": "",
+          "id": 0,
+          "rect_screen": [
+            2,
+            40,
+            402,
+            56
+          ],
+          "rect_client_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "rect_window_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "visible": false,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        }
+      ],
+      "main_native_children": null,
+      "occlusion_samples": [
+        {
+          "screen": [
+            22,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            523
+          ],
+          "hwnd": 789302,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            523
+          ],
+          "hwnd": 1444636,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            523
+          ],
+          "hwnd": 1444636,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        }
+      ],
+      "input_event_count": 6,
+      "status": "pending_visual_review"
+    },
+    {
+      "name": "ui-reference-ribbon-format",
+      "kind": "editor",
+      "time": "2026-10-22T18:42:06.044162+09:00",
+      "raw": "ui-reference-ribbon-format.raw.png",
+      "dialog_raw": null,
+      "window": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "window_rect": [
+        2,
+        40,
+        1329,
+        1006
+      ],
+      "client_rect": [
+        0,
+        0,
+        1327,
+        966
+      ],
+      "client_origin_screen": [
+        2,
+        40
+      ],
+      "dpi": 96,
+      "units": "physical pixels; rectangles half-open",
+      "zoom": {
+        "text": "100%",
+        "source": "status bar visual review required",
+        "ribbon_160_percent": "character width ratio; not document zoom"
+      },
+      "foreground": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "root_owner": 985892
+      },
+      "gui_thread": {
+        "flags": 0,
+        "active": 985892,
+        "focus": 1444636,
+        "menu_owner": null,
+        "capture": null
+      },
+      "native_children": [
+        {
+          "hwnd": 2165522,
+          "pid": 4032,
+          "class": "HwpRulerTabButtonWnd",
+          "name": "",
+          "id": 155592296,
+          "rect_screen": [
+            3,
+            226,
+            31,
+            254
+          ],
+          "rect_client_main": [
+            1,
+            186,
+            29,
+            214
+          ],
+          "rect_window_main": [
+            1,
+            186,
+            29,
+            214
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 985890,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208327152,
+          "rect_screen": [
+            31,
+            226,
+            1313,
+            254
+          ],
+          "rect_client_main": [
+            29,
+            186,
+            1311,
+            214
+          ],
+          "rect_window_main": [
+            29,
+            186,
+            1311,
+            214
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 789302,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208335432,
+          "rect_screen": [
+            3,
+            254,
+            31,
+            951
+          ],
+          "rect_client_main": [
+            1,
+            214,
+            29,
+            911
+          ],
+          "rect_window_main": [
+            1,
+            214,
+            29,
+            911
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1444636,
+          "pid": 4032,
+          "class": "HwpMainEditWnd",
+          "name": "",
+          "id": 12968844,
+          "rect_screen": [
+            31,
+            254,
+            1313,
+            951
+          ],
+          "rect_client_main": [
+            29,
+            214,
+            1311,
+            911
+          ],
+          "rect_window_main": [
+            29,
+            214,
+            1311,
+            911
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1248016,
+          "pid": 4032,
+          "class": "msctls_progress32",
+          "name": "",
+          "id": 0,
+          "rect_screen": [
+            2,
+            40,
+            402,
+            56
+          ],
+          "rect_client_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "rect_window_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "visible": false,
+          "enabled": true,
+          "parent": 985892,
+          "root_owner": 985892
+        }
+      ],
+      "main_native_children": null,
+      "occlusion_samples": [
+        {
+          "screen": [
+            22,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            523
+          ],
+          "hwnd": 789302,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            523
+          ],
+          "hwnd": 1444636,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            523
+          ],
+          "hwnd": 1444636,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        }
+      ],
+      "input_event_count": 7,
+      "status": "pending_visual_review"
+    }
+  ],
+  "inputs_finished": true,
+  "com_used": false,
+  "resident_commands_sent": false,
+  "request_token": "2d6e4f1aef87430d85538d516ae38852",
+  "request_created_at": "2026-10-22T18:41:46.036394+09:00",
+  "request_deadline": 1792662226.0308442,
+  "lock_token": "42b5bc5974444f07be73ac8b148393cd",
+  "acquired_at": "2026-10-22T18:42:02.070479+09:00",
+  "input_deadline_epoch": 1792662172.0704792,
+  "status": "failed_preserved",
+  "error": "AssertionError('expected owned dialog not found')",
+  "cleanup_verified": true,
+  "input_finished_at": "2026-10-22T18:42:07.190169+09:00",
+  "down_remaining": false,
+  "keys_remaining": [],
+  "released_at": "2026-10-22T18:42:07.194171+09:00",
+  "request_deleted_at": "2026-10-22T18:42:07.197172+09:00",
+  "owner_after_return": {
+    "owner": "Astris",
+    "session": "hangul-pc-upper-0051",
+    "job": "upper-0051",
+    "pid": 12644,
+    "since": 1792662127.7616525,
+    "since_iso": "2026-10-22 18:42:07",
+    "heartbeat": 1792662127.7616525,
+    "heartbeat_iso": "2026-10-22 18:42:07",
+    "token": "ec928652cd1247eeae7a97ccd92c0d46",
+    "heartbeat_age_s": 0.4,
+    "stale_suspect": false
+  },
+  "astris_reacquired_at": "2026-10-22T18:42:08.206065+09:00",
+  "finished": "2026-10-22T18:42:08.206065+09:00"
+}

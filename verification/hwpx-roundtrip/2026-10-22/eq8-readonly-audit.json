@@ -1,0 +1,1558 @@
+{
+  "status": "read_only_static_audit_complete",
+  "time": "2026-10-22T21:54:20.911252+09:00",
+  "source": {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\eq8.py",
+    "exists": true,
+    "bytes": 71180,
+    "sha256": "569c9f9756ad60974e268833d27d0362e5a289798173733a82e400b140b57aa3"
+  },
+  "source_modified": false,
+  "source_imported_or_executed": false,
+  "direct_python_imports": [
+    "fontTools.ttLib",
+    "gdiw14",
+    "os",
+    "pefile",
+    "sim"
+  ],
+  "local_dependencies": [
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\eq8.py",
+      "exists": true,
+      "bytes": 71180,
+      "sha256": "569c9f9756ad60974e268833d27d0362e5a289798173733a82e400b140b57aa3"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\sim.py",
+      "exists": true,
+      "bytes": 6742,
+      "sha256": "9aa363b5a349b0fd4dbc36cb4ce52c61ab3f4c614a5bb4b8535009558efa37ff"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\gdiw14.py",
+      "exists": true,
+      "bytes": 1345,
+      "sha256": "ab3a49abbe66bda88a2c2704e34791237536c3823470666677bb8fd8fa58113e"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\kwtab.json",
+      "exists": true,
+      "bytes": 5887,
+      "sha256": "05fba73324a91a0f2ad69cb58211ddd887c83826eaef224b9d3bbd857eac6746"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\kwtables9.json",
+      "exists": true,
+      "bytes": 11532,
+      "sha256": "030e86e24463b06e059fb804605b65e49a3f113254fd34318251ccf7e8b03546"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\hyhwpeq_metrics.json",
+      "exists": true,
+      "bytes": 210386,
+      "sha256": "bf51ceb50c275853f51a3b7535260d4839c2fac78122d3b42c0d2f2d50b168c2"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\val8.py",
+      "exists": true,
+      "bytes": 3784,
+      "sha256": "91d1856a38cef9fbe7a10b42026670540cd41fc940db41d9c5fd04854183d591"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\hfit.py",
+      "exists": true,
+      "bytes": 3478,
+      "sha256": "fa8e11d3f7af053b951b083db5532a7e8c8f92cce7000972932f78ff62a1403e"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\hpos.py",
+      "exists": true,
+      "bytes": 5238,
+      "sha256": "bdf4995598638152f93e5377abec12216178fe7474d5cf2fa1791dde00cadefb"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\pdfeq.py",
+      "exists": true,
+      "bytes": 1819,
+      "sha256": "347f930d8624c43f5aea905c8f096c2b19855ba1bbe3e6d4849f87810b5efd98"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\pdfrows.py",
+      "exists": true,
+      "bytes": 1201,
+      "sha256": "a353151b8884f8515085c38d71388aef393903ef51cbfd274f958a1050bc5c19"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\README_tools.md",
+      "exists": true,
+      "bytes": 8624,
+      "sha256": "1b0ec3404d981b3098c54206a59980bd8c587d165d558376eb75bb76f3c2baa2"
+    }
+  ],
+  "data_tables": {
+    "glyphs": 618,
+    "best_cmap_entries": 626,
+    "metrics_root_keys": [
+      "font_info",
+      "best_cmap_count",
+      "best_cmap_mapping",
+      "cmap_subtables",
+      "glyphs"
+    ],
+    "kwtab_entries": 288,
+    "kwtables9_counts": {
+      "A": 128,
+      "B": 296
+    }
+  },
+  "native_dependencies": [
+    {
+      "path": "C:\\Program Files (x86)\\HNC\\Office 2022\\HOffice120\\Shared\\TTF\\All\\HBATANG.TTF",
+      "exists": true,
+      "bytes": 32361044,
+      "sha256": "35f84328500fc2c3ee0b148aa75de0ed384bf9eee8dee9148c01b0a11a27fe05"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\HNC\\Office 2022\\HOffice120\\Bin\\HwpPlugin.dll",
+      "exists": true,
+      "bytes": 963808,
+      "sha256": "101cf47afbb608726d36ad353af6c1ebe826146abd7acff053bc351f03925d20"
+    }
+  ],
+  "optional_packages_available": {
+    "fontTools": true,
+    "pefile": true,
+    "fitz": true
+  },
+  "runtime_notes": [
+    "eq8 imports sim and reads hyhwpeq_metrics.json / kwtab.json; kwtables9.json is lazy-loaded.",
+    "EQ8_GDI defaults to 1; gdiw14 uses Windows gdi32/user32 and installed HYhwpEQ/Haansoft Batang. Optional fontTools reads Batang fallback.",
+    "pefile + hard-coded HwpPlugin.dll virtual addresses are optional native keyword-symbol mapping dependencies and are tied to installed binary version.",
+    "REA_ROOT sets original job root. val8/hfit/pdfeq compare native HWPX box/line metrics and PDF glyph positions; PyMuPDF required.",
+    "hfit.rows() would create/update REA_CACHE (default TEMP/rea_hfit_all.pkl); it was not executed. pdfrows also writes a cache if executed."
+  ],
+  "environment_defaults_found": [
+    [
+      "EQ8_GDI",
+      "1"
+    ],
+    [
+      "EQ8_BRELOVER",
+      "1"
+    ],
+    [
+      "EQ8_GRPSPLIT",
+      "1"
+    ],
+    [
+      "EQ8_EMPTYORD",
+      "1"
+    ],
+    [
+      "EQ8_SCRNEST",
+      "1"
+    ],
+    [
+      "EQ8_BOLD",
+      "1"
+    ],
+    [
+      "EQ8_EMPTYCELL",
+      "1"
+    ],
+    [
+      "EQ8_ROOTNOOF",
+      "1"
+    ],
+    [
+      "EQ8_AMP0",
+      "1"
+    ],
+    [
+      "EQ8_UNICH",
+      "1"
+    ],
+    [
+      "EQ8_PUABAR",
+      "1"
+    ],
+    [
+      "EQ8_LIMOVER",
+      "1"
+    ],
+    [
+      "EQ8_AMPROW",
+      "1"
+    ],
+    [
+      "EQ8_EMPTYEQ",
+      "1"
+    ],
+    [
+      "EQ8_EMPTYSCR",
+      "1"
+    ],
+    [
+      "EQ8_STRAY",
+      "1"
+    ],
+    [
+      "EQ8_LONERIGHT",
+      "1"
+    ],
+    [
+      "EQ8_RMCGAP",
+      "1"
+    ],
+    [
+      "EQ8_RMCGROUP",
+      "0"
+    ],
+    [
+      "EQ8_BSLASH",
+      "1"
+    ],
+    [
+      "EQ8_QUOTE",
+      "1"
+    ],
+    [
+      "EQ8_EQROWS",
+      "1"
+    ],
+    [
+      "EQ8_NOT0",
+      "1"
+    ],
+    [
+      "EQ8_NEW17",
+      "1"
+    ],
+    [
+      "EQ8_RELEAT",
+      "1"
+    ],
+    [
+      "EQ8_GLUE",
+      "1"
+    ],
+    [
+      "EQ8_FNITALIC",
+      "1"
+    ],
+    [
+      "EQ8_FNGAP",
+      "1"
+    ],
+    [
+      "EQ8_FNALPHA",
+      "0"
+    ],
+    [
+      "EQ8_NEST23",
+      "1"
+    ],
+    [
+      "EQ8_LRSKIP",
+      "1"
+    ],
+    [
+      "EQ8_SCRGAP",
+      "0"
+    ],
+    [
+      "EQ8_EMPTYH",
+      "ss"
+    ],
+    [
+      "EQ8_EMPTYBASE",
+      "1"
+    ],
+    [
+      "EQ8_FNIT20",
+      "0"
+    ],
+    [
+      "EQ8_RMSCOPE",
+      "global"
+    ],
+    [
+      "EQ8_GLUENUM",
+      "1"
+    ],
+    [
+      "EQ8_LRSTRAY",
+      "close"
+    ],
+    [
+      "EQ8_RMCPREV",
+      "1"
+    ]
+  ],
+  "existing_test_samples": {
+    "root": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험",
+    "json_files": 64,
+    "items_total": 130661,
+    "kinds": {
+      "control": 708,
+      "example": 8186,
+      "random": 3000,
+      "job": 118698,
+      "unspecified": 69
+    },
+    "jobs": [
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_20261017_191550\\수식목록.json",
+        "items": 11198,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx",
+          "결과_2.hwpx",
+          "결과_3.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf",
+          "결과_2.pdf",
+          "결과_3.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0002_20261017_211543\\수식목록.json",
+        "items": 3012,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0003_20261017_214346\\수식목록.json",
+        "items": 3012,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0004_20261017_220547\\수식목록.json",
+        "items": 3012,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0005_20261017_223709\\수식목록.json",
+        "items": 3012,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0006_20261017_225911\\수식목록.json",
+        "items": 2815,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0007_20261017_232129\\수식목록.json",
+        "items": 1969,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0008_20261018_002659\\수식목록.json",
+        "items": 1322,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0009_20261018_013423\\수식목록.json",
+        "items": 1308,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0010_20261018_014624\\수식목록.json",
+        "items": 563,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0011_20261018_015451\\수식목록.json",
+        "items": 556,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0012_20261018_021708\\수식목록.json",
+        "items": 888,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0013_20261018_021936\\수식목록.json",
+        "items": 622,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0014_20261018_031229\\수식목록.json",
+        "items": 664,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0015_20261018_044544\\수식목록.json",
+        "items": 929,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0016_20261018_045822\\수식목록.json",
+        "items": 807,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0017_20261018_052056\\수식목록.json",
+        "items": 761,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0018_20261018_053334\\수식목록.json",
+        "items": 748,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0019_20261018_054540\\수식목록.json",
+        "items": 562,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0020_20261018_060800\\수식목록.json",
+        "items": 704,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0021_20261018_062054\\수식목록.json",
+        "items": 756,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0022_20261018_063341\\수식목록.json",
+        "items": 720,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0023_20261018_065629\\수식목록.json",
+        "items": 698,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0024_20261018_070938\\수식목록.json",
+        "items": 772,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0025_20261018_072247\\수식목록.json",
+        "items": 777,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0026_20261018_073640\\수식목록.json",
+        "items": 912,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0027_20261018_074952\\수식목록.json",
+        "items": 837,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0028_20261018_105152\\수식목록.json",
+        "items": 912,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0029_20261018_110539\\수식목록.json",
+        "items": 912,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0030_20261018_123852\\수식목록.json",
+        "items": 832,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0031_20261018_125159\\수식목록.json",
+        "items": 764,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0032_20261018_170643\\수식목록.json",
+        "items": 772,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0033_20261018_182700\\수식목록.json",
+        "items": 884,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0034_20261018_184926\\수식목록.json",
+        "items": 888,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0035_20261018_192246\\수식목록.json",
+        "items": 862,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0036_20261018_193728\\수식목록.json",
+        "items": 1352,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0037_20261018_195016\\수식목록.json",
+        "items": 774,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0038_20261018_200252\\수식목록.json",
+        "items": 770,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0039_20261018_221630\\수식목록.json",
+        "items": 1238,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0040_20261018_221902\\수식목록.json",
+        "items": 780,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0041_20261019_040326\\수식목록.json",
+        "items": 1172,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0042_20261019_044012\\수식목록.json",
+        "items": 3522,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0043_20261019_051145\\수식목록.json",
+        "items": 5012,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx",
+          "결과_2.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf",
+          "결과_2.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0044_20261019_054322\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0045_20261019_054544\\수식목록.json",
+        "items": 1052,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0046_20261019_061642\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0047_20261019_064807\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0048_20261019_071928\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0049_20261019_075058\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0050_20261019_081214\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0051_20261019_083339\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0052_20261019_085500\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0053_20261019_091608\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0054_20261019_095613\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0055_20261019_101737\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0056_20261019_103916\\수식목록.json",
+        "items": 5000,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\수식목록.json",
+        "items": 2832,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\수식목록.json",
+        "items": 314,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0059_20261019_121434\\수식목록.json",
+        "items": 1012,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "kind",
+          "count",
+          "source",
+          "orig",
+          "result"
+        ],
+        "hwpx_files": [
+          "결과.hwpx"
+        ],
+        "pdf_files": [
+          "결과.pdf"
+        ]
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_upper-0001_20261019_105610\\수식목록.json",
+        "items": 22,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script"
+        ],
+        "hwpx_files": [],
+        "pdf_files": []
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_upper-0002_20261019_115848\\수식목록.json",
+        "items": 5,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script"
+        ],
+        "hwpx_files": [],
+        "pdf_files": []
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_upper-0003_20261019_160710\\수식목록.json",
+        "items": 22,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script"
+        ],
+        "hwpx_files": [],
+        "pdf_files": []
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_upper-0004_20261019_162929\\수식목록.json",
+        "items": 16,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script"
+        ],
+        "hwpx_files": [],
+        "pdf_files": []
+      },
+      {
+        "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_upper-0005_20261019_163253\\수식목록.json",
+        "items": 4,
+        "root_type": "list",
+        "first_keys": [
+          "n",
+          "script",
+          "시작칸",
+          "입력후시험키"
+        ],
+        "hwpx_files": [],
+        "pdf_files": []
+      }
+    ],
+    "parse_errors": [],
+    "additional_hwpx_scripts_json": [
+      "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\P0b-pilot-20261017\\K\\hwpx_scripts.json",
+      "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\P1-input-20261017\\K\\hwpx_scripts.json",
+      "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\P3-S2-20261017\\K\\hwpx_scripts.json",
+      "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\P5-S3-20261017\\K\\hwpx_scripts.json"
+    ]
+  },
+  "validation_boundary": "No eq8 test run or match percentage was recomputed. Existing external Python metrics/PDF/HWPX matching is not validation of browser TypeScript renderer, editing, export, or roundtrip."
+}

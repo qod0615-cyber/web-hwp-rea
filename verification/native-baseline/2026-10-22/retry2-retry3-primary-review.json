@@ -1,0 +1,175 @@
+{
+  "reviewer": "Linux primary agent",
+  "images_opened": true,
+  "reference_scope": "Native HWP 12.0.0.535, 96 DPI, 1327x966 window. No full Web HWP parity claim.",
+  "captures": {
+    "retry2-editor-normal": {
+      "raw_sha256": "216730f7f9a064ad0b125658435c40a3c143aca95920cede753f3a757d4dba38",
+      "foreground_verified_in_report": true,
+      "use": "native window/button state baseline",
+      "cursor_handle": 65541,
+      "cursor_hotspot": [
+        0,
+        0
+      ],
+      "mouse_button_down": false
+    },
+    "retry2-ribbon-normal": {
+      "raw_sha256": "c1b3cc5ce5f7e1fe4be1f80f0e6f288c5f0ca5d15d95c72d131c22bd8e8cdd8b",
+      "foreground_verified_in_report": true,
+      "use": "native window/button state baseline",
+      "cursor_handle": 65541,
+      "cursor_hotspot": [
+        0,
+        0
+      ],
+      "mouse_button_down": false
+    },
+    "retry2-ribbon-hover": {
+      "raw_sha256": "880fc44f9cb4b9ae52672a9435f8ab1b49a7b18d639f7ba2c1c155f0701e3c18",
+      "foreground_verified_in_report": true,
+      "use": "native window/button state baseline",
+      "cursor_handle": 65541,
+      "cursor_hotspot": [
+        0,
+        0
+      ],
+      "mouse_button_down": false
+    },
+    "retry2-ribbon-pressed": {
+      "raw_sha256": "478a2103d6710fdd9d4558ae2b23a8b3c8561449e9f70b928dffc5e8207727ca",
+      "foreground_verified_in_report": true,
+      "use": "native window/button state baseline",
+      "cursor_handle": 65541,
+      "cursor_hotspot": [
+        0,
+        0
+      ],
+      "mouse_button_down": true
+    },
+    "retry2-ribbon-released": {
+      "raw_sha256": "452d0c0c8454cdeab1b91efb63cd1f546d9a5b650ac6f5fae73f78c6c2b6e981",
+      "foreground_verified_in_report": true,
+      "use": "native window/button state baseline",
+      "cursor_handle": 65541,
+      "cursor_hotspot": [
+        0,
+        0
+      ],
+      "mouse_button_down": false
+    },
+    "retry2-body-ibeam": {
+      "raw_sha256": "452d0c0c8454cdeab1b91efb63cd1f546d9a5b650ac6f5fae73f78c6c2b6e981",
+      "foreground_verified_in_report": true,
+      "use": "body image only; cursor is arrow, so not an I-beam baseline",
+      "cursor_handle": 65541,
+      "cursor_hotspot": [
+        0,
+        0
+      ],
+      "mouse_button_down": false
+    },
+    "retry3-editor-normal": {
+      "raw_sha256": "38486e7bd43919d42bd46caa7d7d5a2557b9f3cf119dee73b731fdb02cdbfad0",
+      "foreground_verified_in_report": true,
+      "use": "native window/button state baseline",
+      "cursor_handle": 65541,
+      "cursor_hotspot": [
+        0,
+        0
+      ],
+      "mouse_button_down": false
+    },
+    "retry3-body-ibeam": {
+      "raw_sha256": "38486e7bd43919d42bd46caa7d7d5a2557b9f3cf119dee73b731fdb02cdbfad0",
+      "foreground_verified_in_report": true,
+      "use": "I-beam baseline",
+      "cursor_handle": 303434519,
+      "cursor_hotspot": [
+        4,
+        8
+      ],
+      "mouse_button_down": false
+    }
+  },
+  "measurements": {
+    "normal": {
+      "sample_window_xy": [
+        400,
+        110
+      ],
+      "fill_rgb": [
+        224,
+        224,
+        224
+      ],
+      "different_from_normal_bbox_in_crop": null
+    },
+    "hover": {
+      "sample_window_xy": [
+        400,
+        110
+      ],
+      "fill_rgb": [
+        235,
+        235,
+        235
+      ],
+      "different_from_normal_bbox_in_crop": [
+        9,
+        7,
+        45,
+        81
+      ]
+    },
+    "pressed": {
+      "sample_window_xy": [
+        400,
+        110
+      ],
+      "fill_rgb": [
+        204,
+        204,
+        204
+      ],
+      "different_from_normal_bbox_in_crop": [
+        9,
+        7,
+        45,
+        81
+      ]
+    },
+    "released": {
+      "sample_window_xy": [
+        400,
+        110
+      ],
+      "fill_rgb": [
+        235,
+        235,
+        235
+      ],
+      "different_from_normal_bbox_in_crop": [
+        9,
+        7,
+        45,
+        81
+      ]
+    }
+  },
+  "cursor_note": "Retry2 moved via SetCursorPos only and body retained arrow 65541. Retry3 used a real relative mouse movement event and produced an I-beam image. Do not relabel the arrow sample as I-beam.",
+  "handoff": {
+    "retry2": {
+      "lock_acquired_at": "2026-10-22T18:27:24.039205+09:00",
+      "lock_released_at": "2026-10-22T18:27:26.864149+09:00",
+      "request_deleted": true,
+      "astris_return_observed_at": "2026-10-22T18:27:27.876845+09:00"
+    },
+    "retry3": {
+      "lock_acquired_at": "2026-10-22T18:28:32.221358+09:00",
+      "lock_released_at": "2026-10-22T18:28:34.166586+09:00",
+      "request_deleted": true,
+      "astris_return_observed_at": "2026-10-22T18:28:35.176774+09:00"
+    }
+  }
+}

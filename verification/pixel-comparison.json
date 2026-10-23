@@ -1,0 +1,16 @@
+{
+  "reference": "/tmp/right_native_1916.png",
+  "reference_sha256": "17bf05d0215a4658d99c8725310f18975298586ed37964744850571da5abb86a",
+  "top_ui": {
+    "pixels": 419604,
+    "different_pixels": 0,
+    "different_pixels_above_15": 0,
+    "exact_match_percent": 100.0
+  },
+  "whole_page": {
+    "pixels": 1758888,
+    "different_pixels": 30287,
+    "different_pixels_above_15": 9842,
+    "exact_match_percent": 98.2781
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "verified_at": "2026-10-23T08:57:50.397648+09:00",
+  "checks": {
+    "build": "passed",
+    "hwpx_browser_workflows": {
+      "passed": 7,
+      "total": 7
+    },
+    "editor_workflows": {
+      "passed": 11,
+      "total": 11
+    },
+    "pwa_upgrade": {
+      "passed": 1,
+      "total": 1
+    },
+    "native_equation_metrics": {
+      "passed": 24,
+      "total": 24
+    }
+  },
+  "native_314_equations": "Independent ZIP/XML comparison: all 314 original equation elements unchanged after text edit and reload.",
+  "merged_table": "Synthetic HWPX: text edit retains cell sizes/margins/addresses/spans; row-span continuation uses column 1.",
+  "native_reopen_verified": false,
+  "deployment_performed": false,
+  "screenshot_inspected": true,
+  "artifacts": {
+    "new-rich-equation-table.hwpx": "eebffe1c3f1ff9b85aeae0a08c18909fdd1178e5ca1c0b5866426d36af47d75c",
+    "after-reload.hwpx": "6211e9f50b5b14ecd0d0b5cb4ec310bb58dadc888c87fdae615fe4014165b3be",
+    "native-314-edited.hwpx": "2b3312bb93bb2c7ead9cf99c4f9db7b52109ba194aabbda41a18e8373bba2f96",
+    "merged-table-edited.hwpx": "0450ef01941cd537daef7c19fd0f06849a0919f9cc3b74ee9a437b2019a424b4",
+    "multisection-edited.hwpx": "dbe7ca0dcd5ce6d85b47937264b537aa46303355b56421acc8c5f18e80698b68",
+    "rich-document.png": "fe14239d05c67072b62599a7c3b6709a42cbc1dc2bec4965fe79a548c03e547a"
+  }
+}

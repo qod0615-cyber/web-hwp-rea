@@ -2,7 +2,7 @@
 # Web HWP REA - Windows PC 연동 도구
 set -e
 
-ENV_NAME="home window-pc"
+ENV_NAME="${ORCA_ENV:-Laptop PC}"
 PROJECT_KEY="Web HWP REA"
 
 get_handle() {
@@ -11,12 +11,19 @@ import subprocess, json, sys
 try:
     out = subprocess.check_output(['orca', 'terminal', 'list', '--environment', '$ENV_NAME', '--json'])
     data = json.loads(out)
-    for t in data.get('result', {}).get('terminals', []):
+    terminals = data.get('result', {}).get('terminals', [])
+    # 1. Connected & writable Codex terminal in project worktree
+    for t in terminals:
+        if '$PROJECT_KEY' in t.get('worktreePath', '') and t.get('connected') and t.get('writable') and t.get('agentIdentity') == 'codex':
+            print(t['handle'])
+            sys.exit(0)
+    # 2. Any connected & writable terminal in project worktree
+    for t in terminals:
         if '$PROJECT_KEY' in t.get('worktreePath', '') and t.get('connected') and t.get('writable'):
             print(t['handle'])
             sys.exit(0)
-    # fallback to any matching if no connected found
-    for t in data.get('result', {}).get('terminals', []):
+    # 3. Fallback to any matching project worktree
+    for t in terminals:
         if '$PROJECT_KEY' in t.get('worktreePath', ''):
             print(t['handle'])
             sys.exit(0)

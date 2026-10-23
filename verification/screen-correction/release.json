@@ -1,0 +1,35 @@
+{
+  "authorization": "이것부터 고치고 재배포해",
+  "status": "deployed_and_live_verified",
+  "deployment_limit": 1,
+  "used": 1,
+  "html_sha256": "e5d38ab9d6348f0fbb7221669c0856cf1806531c47feb3cd995c559a2d9d9880",
+  "build": "8785fef8cce66ea7",
+  "scope": [
+    "single functional scrollbar per axis",
+    "native-size rulers/footer and document tabs",
+    "linked 100/110% document zoom and supplied paper bounds",
+    "Web HWP theme identity",
+    "PWA stale-cache migration with document preservation"
+  ],
+  "checks": [
+    "build passed",
+    "editor regression 8/8 passed",
+    "real legacy service worker upgrade and offline document recovery passed",
+    "supplied whole-screen bounds and scroll/zoom controls passed"
+  ],
+  "remaining": [
+    "full UI/control/hover/cursor parity",
+    "true HWPX open/save round trip and layout fidelity",
+    "native equation editor behavior and rendering parity"
+  ],
+  "deployment": {
+    "id": "dpl_Bsbty73hYfsu89EDFTKVFFbF2PkN",
+    "url": "https://web-hwp-7e40ena4u-qod0615-2108s-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/qod0615-2108s-projects/web-hwp-rea/Bsbty73hYfsu89EDFTKVFFbF2PkN",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_Bsbty73hYfsu89EDFTKVFFbF2PkN"
+  },
+  "remaining_authorized_deployments": 0
+}

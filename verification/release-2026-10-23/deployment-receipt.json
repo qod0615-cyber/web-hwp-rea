@@ -1,0 +1,22 @@
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_8V9BaYh16UJRBUcZCyFcvtmYrjsP",
+    "url": "https://web-hwp-6bvc0hbdv-qod0615-2108s-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/qod0615-2108s-projects/web-hwp-rea/8V9BaYh16UJRBUcZCyFcvtmYrjsP",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_8V9BaYh16UJRBUcZCyFcvtmYrjsP"
+  },
+  "message": "Deployment web-hwp-6bvc0hbdv-qod0615-2108s-projects.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel inspect web-hwp-6bvc0hbdv-qod0615-2108s-projects.vercel.app",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}

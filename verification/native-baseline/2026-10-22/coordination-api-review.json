@@ -1,0 +1,164 @@
+{
+  "reviewed_at": "2026-10-22T17:01:17.934953+09:00",
+  "review_type": "static_source_only",
+  "source": "C:\\Users\\K\\.orca\\coordination\\desktop_control.py",
+  "snapshot": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\desktop-control-source.py",
+  "sha256": "73e71d6b157b2f3c0aa9a5e45a20fee50bd2e5e81f9ffc98f86137414d6b3435",
+  "bytes": 7605,
+  "source_stat_before": {
+    "size": 7605,
+    "mtime_ns": 1792655814752926600
+  },
+  "source_stat_after": {
+    "size": 7605,
+    "mtime_ns": 1792655814752926600
+  },
+  "source_stable_during_read": true,
+  "snapshot_byte_identical": true,
+  "module_imported": false,
+  "module_executed": false,
+  "os_lock_acquired": false,
+  "request_created": false,
+  "ui_com_clipboard_input": false,
+  "shared_source_edited": false,
+  "import_side_effects_static": "Top level imports stdlib/msvcrt, reads DESKTOP_CONTROL_DIR, constructs paths/constants/dictionary and threading.Lock. No top-level file opens, OS file locks, request writes, worker-thread starts or UI/COM calls found. This is source analysis only.",
+  "constants": {
+    "HEARTBEAT_EVERY": 30,
+    "STALE_AFTER": 300,
+    "REQUEST_EXPIRED_EXTRA": 600
+  },
+  "paths": {
+    "lock": "desktop-control.lock",
+    "owner": "desktop-control.owner.json",
+    "request": "desktop-control.request"
+  },
+  "api": [
+    {
+      "name": "current_owner",
+      "signature": "current_owner()",
+      "line": 62,
+      "behavior": "Reads owner JSON; adds heartbeat_age_s and stale_suspect after 300 s; owner=None means released. Does not verify OS lock."
+    },
+    {
+      "name": "pending_request",
+      "signature": "pending_request()",
+      "line": 73,
+      "behavior": "Reads request JSON; adds age_s and expired_suspect after max_seconds + 600 s."
+    },
+    {
+      "name": "heartbeat",
+      "signature": "heartbeat(token)",
+      "line": 92,
+      "behavior": "Under process-local mutex, updates in-memory heartbeat and atomically replaces owner JSON; returns False for unknown token."
+    },
+    {
+      "name": "holds",
+      "signature": "holds(token)",
+      "line": 107,
+      "behavior": "Only checks membership in this process-local _held dictionary; does not independently probe OS lock."
+    },
+    {
+      "name": "acquire",
+      "signature": "acquire(owner, session, job, timeout=None, request_token=None, poll=0.5)",
+      "line": 111,
+      "behavior": "Polls foreign request, opens permanent lock without truncation, seeks byte 0 and uses LK_NBLCK length 1; stores fd/token, publishes owner, starts daemon heartbeat every 30 s. Optional timeout; does not prove Astris original-job boundary or external authorization."
+    },
+    {
+      "name": "release",
+      "signature": "release(token)",
+      "line": 140,
+      "behavior": "Pops local token, stops heartbeat, unlocks and closes fd, then publishes owner=None. Returns False for unknown token."
+    },
+    {
+      "name": "request",
+      "signature": "request(owner, session, reason, max_seconds)",
+      "line": 156,
+      "behavior": "O_CREAT|O_EXCL|O_WRONLY creates request, writes required identity/timing/reason/max_seconds plus pid; returns token or None if existing."
+    },
+    {
+      "name": "cancel_request",
+      "signature": "cancel_request(token)",
+      "line": 170,
+      "behavior": "Reads request, compares token, then removes only REQUEST path; no lock-file removal. Ownership relies on caller retaining its own token."
+    },
+    {
+      "name": "wait_request_gone",
+      "signature": "wait_request_gone(poll=1.0, should_abort=None, log=None)",
+      "line": 182,
+      "behavior": "Waits while request exists and is not expired_suspect; returns for absent or expired request; optional abort/log callbacks."
+    }
+  ],
+  "contract_checks": {
+    "permanent_lock": "PASS_STATIC: LOCK opened O_RDWR|O_CREAT without O_TRUNC; seek(0), LK_NBLCK length 1; no unlink/remove/replace of LOCK present.",
+    "owner_atomic_replace": "PASS_STATIC: unique temp + os.replace(tmp, OWNER); required owner/session/job/pid/since/heartbeat/token fields present. Release ordering race F1 remains.",
+    "request_exclusive": "PASS_STATIC: O_EXCL; required fields present. Partial-publication window F4 remains.",
+    "request_delete": "PASS_STATIC: token equality before os.remove(REQUEST); requester identity is a caller responsibility.",
+    "owner_stale": "PASS_STATIC: >300 s only stale_suspect flag; no force termination or automatic owner-file removal.",
+    "request_expiry": "REVIEW_REQUIRED: elapsed max_seconds+600 bypasses pending request without requester deletion (F3).",
+    "heartbeat": "PASS_STATIC: daemon thread every 30 s; errors swallowed (F5).",
+    "upper_queue_boundary": "NOT_VERIFIED: this module contains no upper_queue integration; separate caller code and fake test results not reviewed."
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "high",
+      "function": "release",
+      "line": 151,
+      "status": "source-derived race; not executed",
+      "issue": "release publishes owner=None after dropping the OS lock. Another process may acquire and publish its owner between unlock and this publication; former owner can overwrite the current owner record.",
+      "impact": "Owner metadata may falsely indicate released while another process holds the OS lock. Mutual exclusion itself still depends on OS lock.",
+      "suggested_fix_for_astris": "Publish release metadata while still holding the OS lock, then unlock/close; protect failure cleanup with finally. Do not edit shared module from Web HWP."
+    },
+    {
+      "id": "F2",
+      "severity": "high",
+      "function": "acquire",
+      "line": 132,
+      "status": "source-derived exception path; not executed",
+      "issue": "After LK_NBLCK succeeds and _held is set, owner publication or heartbeat-thread startup can raise without rollback. Caller receives no token, but fd and lock can remain held by this live process.",
+      "impact": "Caller can time out/fail while process retains an unmanageable lock; heartbeat may never start.",
+      "suggested_fix_for_astris": "On any post-lock initialization error, stop any started heartbeat, remove local entry, unlock/close fd and re-raise; preserve permanent lock file."
+    },
+    {
+      "id": "F3",
+      "severity": "high",
+      "function": "acquire",
+      "line": 117,
+      "related_lines": [
+        188
+      ],
+      "status": "observed source policy; requires coordination decision",
+      "issue": "acquire ignores foreign requests marked expired_suspect and wait_request_gone returns while that request still exists. This bypasses the agreed request-gone boundary based on elapsed time.",
+      "impact": "Does not steal an active OS lock or delete request, but elapsed time can allow progress without requester cleanup or explicit boundary confirmation.",
+      "suggested_fix_for_astris": "Treat expiry as diagnostic only, or obtain explicit agreed timeout policy. Keep Web HWP automation disabled until clarified."
+    },
+    {
+      "id": "F4",
+      "severity": "medium",
+      "function": "_read_json",
+      "line": 58,
+      "related_lines": [
+        162,
+        116
+      ],
+      "status": "source-derived publication window; not executed",
+      "issue": "request is created before JSON is written; empty/partial/corrupt request reads become None. acquire can interpret an existing request as absent. Request creation can also occur after the pre-lock check.",
+      "impact": "Requester-priority/safe-boundary fairness is not atomic. OS byte-lock mutual exclusion still holds.",
+      "suggested_fix_for_astris": "Distinguish absent from unreadable request and fail closed on an existing incomplete file; recheck request after acquiring OS lock before granting UI access."
+    },
+    {
+      "id": "F5",
+      "severity": "medium",
+      "function": "_beat_loop",
+      "line": 103,
+      "status": "observed source policy; not executed",
+      "issue": "Heartbeat publication errors are silently swallowed; caller is not informed that metadata heartbeat stopped updating.",
+      "impact": "OS lock remains authoritative, but monitoring can report stale owner without exposing I/O failure.",
+      "suggested_fix_for_astris": "Expose/log heartbeat publication failures so coordinator can diagnose; never automatically reclaim a stale lock."
+    }
+  ],
+  "execution_validation": "NOT_RUN: no import, fake test, real lock, request or module API call; no concurrency success claim.",
+  "integration_status": "HOLD: await Astris API/test result delivery, findings resolution, explicit collection instruction and shared lock authorization.",
+  "next_safe_action": "Linux primary agent forwards this static report to Astris owner; Web HWP continues file-only analysis and does not edit the shared module.",
+  "reproduce": "Read source bytes and parse with ast.parse; compare SHA-256 against desktop-control-source.py. Do not import or run either module copy."
+}

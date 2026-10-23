@@ -1,6 +1,7 @@
 import hyhwpMetricsRaw from './hyhwpeq_metrics.json';
 import kwtabRaw from './kwtab.json';
 import { mulDiv } from './muldiv';
+import gdiWidthsRaw from './gdi-widths.json';
 import { FontMetrics } from './types';
 
 export const METRICS = hyhwpMetricsRaw as unknown as FontMetrics;
@@ -42,6 +43,8 @@ export function getGlyphAdvance(code: number): number | null {
  */
 export function getGlyphWidthHU(code: number, s: number, fw?: number): number {
   if (fw === undefined) fw = Math.floor(s / 2);
+  const measured = getMeasuredGlyphWidthHU(code, s, fw);
+  if (measured !== undefined) return measured;
   const hp = 2 * mulDiv(fw, 96, 7200);
   const adv = getGlyphAdvance(code);
   if (adv !== null) {
@@ -49,6 +52,13 @@ export function getGlyphWidthHU(code: number, s: number, fw?: number): number {
   }
   // Fallback for non-HYhwpEQ characters
   return Math.floor((512 * hp) / 1024 + 0.5) * 75;
+}
+
+/** Width measured by Windows GDI at this exact integer font height and width. */
+export function getMeasuredGlyphWidthHU(code: number, s: number, fw = Math.floor(s / 2)): number | undefined {
+  const nativeWidths = gdiWidthsRaw as Record<string, Record<string, number>>;
+  const measured = nativeWidths[`${mulDiv(s, 96, 7200)},${mulDiv(fw, 96, 7200)}`]?.[String(code)];
+  return measured === undefined ? undefined : measured * 75;
 }
 
 export function getCellHeightHU(s: number): number {

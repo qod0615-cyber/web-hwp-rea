@@ -1,0 +1,15 @@
+{
+  "reviewer": "Linux primary agent",
+  "captures": {
+    "editor-initial": {
+      "accepted": false,
+      "image_opened": true,
+      "reasons": [
+        "Manifest target HWND 985892 differs from foreground HWND 16124738.",
+        "Visible capture shows a different document title and an overlapping equation editor.",
+        "Cursor position (-50, 722) is outside the recorded target rectangle."
+      ],
+      "followup": "Requested an unobscured capture with matching target and foreground; preserve other documents."
+    }
+  }
+}

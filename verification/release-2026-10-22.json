@@ -1,0 +1,21 @@
+{
+  "authorization": "지금하는거까지 하고 배포 1회하고 이어서해",
+  "deployment_limit": 1,
+  "status": "deployed_and_live_verified",
+  "local_html_sha256": "c6e252d63d7ad2405e2615b56de3da3964b497606b7ac981b77dcd4c96b33a09",
+  "checks": "npm run build; python3 scripts/test_editor_workflows.py — 8/8 passed",
+  "scope": "native frame geometry, edit/input/format ribbon, label-vs-arrow interaction, three native-sized dialogs, page margins, equation edit/persistence",
+  "remaining": "full dialog fields/tabs/states and other ribbon controls; true HWPX round trip and native document layout parity",
+  "deployment": {
+    "id": "dpl_6rykWoGmidNhxsZbmvd4nGzSPduE",
+    "url": "https://web-hwp-nl4kf3cys-qod0615-2108s-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/qod0615-2108s-projects/web-hwp-rea/6rykWoGmidNhxsZbmvd4nGzSPduE",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_6rykWoGmidNhxsZbmvd4nGzSPduE"
+  },
+  "deployment_used": 1,
+  "public_alias": "https://web-hwp-rea.vercel.app/",
+  "live_check": "verification/live-release-check.json",
+  "deployment_authorization_remaining": 0
+}

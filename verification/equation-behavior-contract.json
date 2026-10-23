@@ -1,0 +1,97 @@
+{
+  "source": "verification/native-baseline/2026-10-22/behavior-reference-manifest.json",
+  "source_status": "requested_native_behavior_reference_verified",
+  "geometry": {
+    "title_bar": [
+      0,
+      0,
+      950,
+      32
+    ],
+    "toolbar": [
+      1,
+      32,
+      949,
+      98
+    ],
+    "preview_initial": [
+      1,
+      99,
+      949,
+      274
+    ],
+    "command_input_initial": [
+      1,
+      277,
+      949,
+      375
+    ],
+    "splitter_initial_y": 275,
+    "splitter_after_drag_y": 240,
+    "command_input_after_drag": [
+      1,
+      244,
+      949,
+      375
+    ],
+    "fraction_primary_click": [
+      114,
+      48
+    ],
+    "sqrt_primary_click": [
+      129,
+      48
+    ],
+    "numerator_click": [
+      85,
+      122
+    ],
+    "denominator_click": [
+      85,
+      161
+    ],
+    "method": "Pixel-observed regions, click coordinates and native HWNDs recorded in captures; individual painted controls have no separate native HWND.",
+    "script_template_menu_arrow": [
+      48,
+      48
+    ],
+    "script_template_menu_palette": [
+      18,
+      64,
+      181,
+      98
+    ],
+    "filled_fraction_slot_clicks_empty_equation": {
+      "numerator": [
+        26,
+        122
+      ],
+      "denominator": [
+        26,
+        161
+      ]
+    },
+    "double_click_reedit_points_observed": [
+      [
+        386,
+        400
+      ],
+      [
+        405,
+        390
+      ]
+    ],
+    "reopen_splitter_y": 275
+  },
+  "scripts": {
+    "a+b": "a+b",
+    "empty_fraction": "{ } over { }",
+    "filled_1_over_2": "{1} over {2}"
+  },
+  "escape": {
+    "changed_equation": "Escape opens native prompt asking whether to insert; choices Insert(Y), Leave(N), Cancel(C). Escape at prompt cancels the prompt and returns to equation editor.",
+    "unchanged_reedit": "After template popup dismissed, Escape returned to document with equation unchanged.",
+    "source": "behavior-reference-equation-nested-prompt.raw.png and behavior-reference-equation-reedit-finish-report.json"
+  },
+  "scope": "independent captured native behavior; does not certify full editor or pixel parity"
+}

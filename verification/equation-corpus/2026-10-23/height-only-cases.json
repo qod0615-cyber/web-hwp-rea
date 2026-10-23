@@ -1,0 +1,2418 @@
+{
+  "validation_boundary": "Native HWPX stored height/baseLine versus web; equal widths only. No inferred per-formula offsets applied.",
+  "count": 134,
+  "rows": [
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "9 CDOT 0.5 - epsilon ^{m ^{rm A cdot 663} +- w}``CDOT p <= {}_{2}C_{3} < n _{rm O ^{10 - 122}}",
+      "size": 800,
+      "expected": {
+        "width": 12335,
+        "height": 1298,
+        "baseline": 72
+      },
+      "actual": {
+        "width": 12335,
+        "height": 1289,
+        "baseline": 73,
+        "glyphs": 30
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "e ^{{}_{5}C_{0} times~{}_{7}C_{2}} = m _{rm{CDH}} ^{180} < {it a ^{f} +- left ( rm Q right ) +- `left ( B _{rm D + n} div 1 times vec{rm AB}``+- alpha ^{369} right )} over {u +- it k div` `sin ^{2} s}",
+      "size": 800,
+      "expected": {
+        "width": 18758,
+        "height": 2344,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 18758,
+        "height": 2335,
+        "baseline": 67,
+        "glyphs": 52
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "s _{rm{GPQ} div 9} div~~839",
+      "size": 800,
+      "expected": {
+        "width": 5351,
+        "height": 988,
+        "baseline": 71
+      },
+      "actual": {
+        "width": 5351,
+        "height": 979,
+        "baseline": 71,
+        "glyphs": 10
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "w _{root {3} of {7~cdot rm{AOE}} cdot rm P ^{c +- 73}} ^{567~~div rm P ^{g cdot`0.01}} +- q` `CDOT``12 - rm B < sqrt {3.14} CDOT 289",
+      "size": 800,
+      "expected": {
+        "width": 15037,
+        "height": 1341,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 15037,
+        "height": 1336,
+        "baseline": 73,
+        "glyphs": 44
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "377 <= bar{rm AB} - i _{rm C} cdot rm{DE}~-`0.01 < h - `{}_{6}C_{1} -~820",
+      "size": 800,
+      "expected": {
+        "width": 14954,
+        "height": 1153,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 14954,
+        "height": 1144,
+        "baseline": 75,
+        "glyphs": 28
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sum _{k=1} ^{n} e ^{b ^{980 +-~rm D} + i _{7}} +-` k ^{Q -~~l} div {rm{PG} ^{rm Q} + h _{1}} over {bar{rm{PQ}} cdot g ^{12` `div b}} > gamma _{mu~~- w} ^{beta cdot t}``CDOT 10",
+      "size": 800,
+      "expected": {
+        "width": 16992,
+        "height": 2345,
+        "baseline": 65
+      },
+      "actual": {
+        "width": 16992,
+        "height": 2335,
+        "baseline": 65,
+        "glyphs": 48
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "v _{k div 10} +-` {tan ^{2} q +- 12} over {k CDOT 4 - e _{LEFT [ 0.25 div` rm{AC} RIGHT ] times` {3 times rm B + M times L} over {X + phi` `times 8`cdot rm H}} +- h}",
+      "size": 800,
+      "expected": {
+        "width": 14723,
+        "height": 2854,
+        "baseline": 48
+      },
+      "actual": {
+        "width": 14723,
+        "height": 2835,
+        "baseline": 48,
+        "glyphs": 47
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "0` `div` `T - `tan~~p LEQ u cdot rm B _{{f} over {rm E} +- rm{QE}} +- z ^{beta + 12} cdot` 3",
+      "size": 800,
+      "expected": {
+        "width": 14134,
+        "height": 1770,
+        "baseline": 47
+      },
+      "actual": {
+        "width": 14134,
+        "height": 1751,
+        "baseline": 47,
+        "glyphs": 26
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "phi`CDOT``it a _{rm C} ^{502 div g} - sqrt {11 times 5} + z _{6 - u}",
+      "size": 800,
+      "expected": {
+        "width": 9677,
+        "height": 1114,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 9677,
+        "height": 1105,
+        "baseline": 75,
+        "glyphs": 21
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "gamma ^{s}``CDOT beta _{rm F} ^{rm{HBO} div alpha}",
+      "size": 800,
+      "expected": {
+        "width": 4329,
+        "height": 1124,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 4329,
+        "height": 1105,
+        "baseline": 75,
+        "glyphs": 10
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "l ^{rm{GD}}: 0 cdot~omega +- 4 +- ln lambda",
+      "size": 800,
+      "expected": {
+        "width": 6806,
+        "height": 961,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 6806,
+        "height": 951,
+        "baseline": 87,
+        "glyphs": 13
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "f LEFT { x RIGHT } = s _{775 cdot 4} ^{rm D}",
+      "size": 800,
+      "expected": {
+        "width": 4518,
+        "height": 1115,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 4518,
+        "height": 1105,
+        "baseline": 75,
+        "glyphs": 12
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sqrt {9 -~~{}_{8}C_{3}} <= s < beta _{q CDOT {k +- 597 CDOT 596} over {U times 8}}` `+ bar{rm AB}``cdot` `root {3} of {j _{192 div `y} ^{it y} times 12`div 9 CDOT sqrt {j times 0.25}}~+ exp` c",
+      "size": 800,
+      "expected": {
+        "width": 27452,
+        "height": 1881,
+        "baseline": 51
+      },
+      "actual": {
+        "width": 27452,
+        "height": 1871,
+        "baseline": 51,
+        "glyphs": 60
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "u = {cases{9` - beta _{402 +- j} ^{rm{QHF}~cdot 10} +- rm B` div {}_{7}C_{3}&x = 2#root {4} of {1``div rm G cdot l} CDOT j ^{it b} cdot rm A ^{9} cdot `sqrt {lambda}&y = 985}}",
+      "size": 800,
+      "expected": {
+        "width": 13373,
+        "height": 2196,
+        "baseline": 63
+      },
+      "actual": {
+        "width": 13373,
+        "height": 2186,
+        "baseline": 63,
+        "glyphs": 49
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "g times 386 div {8 +-` phi~+-~~phi} over {{}_{3}C_{0} times 11 -` 2.58 times sqrt {p}} > {607 times k _{rm{FGB}} ^{619 div 1.96}} over {i + epsilon} >= k``times l",
+      "size": 800,
+      "expected": {
+        "width": 19242,
+        "height": 2453,
+        "baseline": 62
+      },
+      "actual": {
+        "width": 19242,
+        "height": 2444,
+        "baseline": 62,
+        "glyphs": 52
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "l~~cdot LEFT [ b _{rm{OG} - 1}``+ 6 CDOT x RIGHT ]`+ it a CDOT 3",
+      "size": 800,
+      "expected": {
+        "width": 9652,
+        "height": 988,
+        "baseline": 71
+      },
+      "actual": {
+        "width": 9652,
+        "height": 979,
+        "baseline": 71,
+        "glyphs": 17
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "f'' left { x right } + k ^{left ( p times it y right ) CDOT it a _{y +- 685}} >= 6",
+      "size": 800,
+      "expected": {
+        "width": 7972,
+        "height": 1062,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 7972,
+        "height": 1052,
+        "baseline": 88,
+        "glyphs": 21
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x _{rm P - j} + e ^{rm O} cdot omega ^{beta} ,  root {4} of {it a``+` `b` `times c cdot gamma} div sqrt {4``CDOT it x times it k +- lambda}` `cdot m ^{146 CDOT~~12}",
+      "size": 800,
+      "expected": {
+        "width": 20481,
+        "height": 1124,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 20481,
+        "height": 1115,
+        "baseline": 75,
+        "glyphs": 39
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "9 CDOT 0.5 - epsilon ^{m ^{rm A cdot 663} +- w}``CDOT p <= {}_{2}C_{3} < n _{rm O ^{10 - 122}}",
+      "size": 900,
+      "expected": {
+        "width": 14996,
+        "height": 1506,
+        "baseline": 71
+      },
+      "actual": {
+        "width": 14996,
+        "height": 1500,
+        "baseline": 72,
+        "glyphs": 30
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "e ^{{}_{5}C_{0} times~{}_{7}C_{2}} = m _{rm{CDH}} ^{180} < {it a ^{f} +- left ( rm Q right ) +- `left ( B _{rm D + n} div 1 times vec{rm AB}``+- alpha ^{369} right )} over {u +- it k div` `sin ^{2} s}",
+      "size": 900,
+      "expected": {
+        "width": 21714,
+        "height": 2584,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 21714,
+        "height": 2578,
+        "baseline": 67,
+        "glyphs": 52
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "s _{rm{GPQ} div 9} div~~839",
+      "size": 900,
+      "expected": {
+        "width": 6024,
+        "height": 1084,
+        "baseline": 71
+      },
+      "actual": {
+        "width": 6024,
+        "height": 1078,
+        "baseline": 71,
+        "glyphs": 10
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "w _{root {3} of {7~cdot rm{AOE}} cdot rm P ^{c +- 73}} ^{567~~div rm P ^{g cdot`0.01}} +- q` `CDOT``12 - rm B < sqrt {3.14} CDOT 289",
+      "size": 900,
+      "expected": {
+        "width": 17451,
+        "height": 1552,
+        "baseline": 72
+      },
+      "actual": {
+        "width": 17451,
+        "height": 1551,
+        "baseline": 72,
+        "glyphs": 44
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "377 <= bar{rm AB} - i _{rm C} cdot rm{DE}~-`0.01 < h - `{}_{6}C_{1} -~820",
+      "size": 900,
+      "expected": {
+        "width": 17381,
+        "height": 1264,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 17381,
+        "height": 1258,
+        "baseline": 76,
+        "glyphs": 28
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sum _{k=1} ^{n} e ^{b ^{980 +-~rm D} + i _{7}} +-` k ^{Q -~~l} div {rm{PG} ^{rm Q} + h _{1}} over {bar{rm{PQ}} cdot g ^{12` `div b}} > gamma _{mu~~- w} ^{beta cdot t}``CDOT 10",
+      "size": 900,
+      "expected": {
+        "width": 19708,
+        "height": 2594,
+        "baseline": 66
+      },
+      "actual": {
+        "width": 19708,
+        "height": 2582,
+        "baseline": 65,
+        "glyphs": 48
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "v _{k div 10} +-` {tan ^{2} q +- 12} over {k CDOT 4 - e _{LEFT [ 0.25 div` rm{AC} RIGHT ] times` {3 times rm B + M times L} over {X + phi` `times 8`cdot rm H}} +- h}",
+      "size": 900,
+      "expected": {
+        "width": 16293,
+        "height": 3178,
+        "baseline": 48
+      },
+      "actual": {
+        "width": 16293,
+        "height": 3166,
+        "baseline": 48,
+        "glyphs": 47
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "0` `div` `T - `tan~~p LEQ u cdot rm B _{{f} over {rm E} +- rm{QE}} +- z ^{beta + 12} cdot` 3",
+      "size": 900,
+      "expected": {
+        "width": 16293,
+        "height": 1996,
+        "baseline": 46
+      },
+      "actual": {
+        "width": 16293,
+        "height": 1984,
+        "baseline": 47,
+        "glyphs": 26
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "phi`CDOT``it a _{rm C} ^{502 div g} - sqrt {11 times 5} + z _{6 - u}",
+      "size": 900,
+      "expected": {
+        "width": 10959,
+        "height": 1234,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 10959,
+        "height": 1228,
+        "baseline": 75,
+        "glyphs": 21
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "gamma ^{s}``CDOT beta _{rm F} ^{rm{HBO} div alpha}",
+      "size": 900,
+      "expected": {
+        "width": 4742,
+        "height": 1246,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 4742,
+        "height": 1228,
+        "baseline": 75,
+        "glyphs": 10
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "l ^{rm{GD}}: 0 cdot~omega +- 4 +- ln lambda",
+      "size": 900,
+      "expected": {
+        "width": 8013,
+        "height": 1062,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 8013,
+        "height": 1050,
+        "baseline": 88,
+        "glyphs": 13
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "f LEFT { x RIGHT } = s _{775 cdot 4} ^{rm D}",
+      "size": 900,
+      "expected": {
+        "width": 4989,
+        "height": 1240,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 4989,
+        "height": 1228,
+        "baseline": 75,
+        "glyphs": 12
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sqrt {9 -~~{}_{8}C_{3}} <= s < beta _{q CDOT {k +- 597 CDOT 596} over {U times 8}}` `+ bar{rm AB}``cdot` `root {3} of {j _{192 div `y} ^{it y} times 12`div 9 CDOT sqrt {j times 0.25}}~+ exp` c",
+      "size": 900,
+      "expected": {
+        "width": 31521,
+        "height": 2131,
+        "baseline": 50
+      },
+      "actual": {
+        "width": 31521,
+        "height": 2119,
+        "baseline": 50,
+        "glyphs": 60
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "u = {cases{9` - beta _{402 +- j} ^{rm{QHF}~cdot 10} +- rm B` div {}_{7}C_{3}&x = 2#root {4} of {1``div rm G cdot l} CDOT j ^{it b} cdot rm A ^{9} cdot `sqrt {lambda}&y = 985}}",
+      "size": 900,
+      "expected": {
+        "width": 15765,
+        "height": 2437,
+        "baseline": 63
+      },
+      "actual": {
+        "width": 15765,
+        "height": 2425,
+        "baseline": 63,
+        "glyphs": 49
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "g times 386 div {8 +-` phi~+-~~phi} over {{}_{3}C_{0} times 11 -` 2.58 times sqrt {p}} > {607 times k _{rm{FGB}} ^{619 div 1.96}} over {i + epsilon} >= k``times l",
+      "size": 900,
+      "expected": {
+        "width": 22578,
+        "height": 2717,
+        "baseline": 62
+      },
+      "actual": {
+        "width": 22578,
+        "height": 2711,
+        "baseline": 62,
+        "glyphs": 52
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "l~~cdot LEFT [ b _{rm{OG} - 1}``+ 6 CDOT x RIGHT ]`+ it a CDOT 3",
+      "size": 900,
+      "expected": {
+        "width": 11058,
+        "height": 1084,
+        "baseline": 71
+      },
+      "actual": {
+        "width": 11058,
+        "height": 1078,
+        "baseline": 71,
+        "glyphs": 17
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "f'' left { x right } + k ^{left ( p times it y right ) CDOT it a _{y +- 685}} >= 6",
+      "size": 900,
+      "expected": {
+        "width": 9490,
+        "height": 1206,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 9490,
+        "height": 1200,
+        "baseline": 89,
+        "glyphs": 21
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x _{rm P - j} + e ^{rm O} cdot omega ^{beta} ,  root {4} of {it a``+` `b` `times c cdot gamma} div sqrt {4``CDOT it x times it k +- lambda}` `cdot m ^{146 CDOT~~12}",
+      "size": 900,
+      "expected": {
+        "width": 23584,
+        "height": 1246,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 23584,
+        "height": 1240,
+        "baseline": 75,
+        "glyphs": 39
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "9 CDOT 0.5 - epsilon ^{m ^{rm A cdot 663} +- w}``CDOT p <= {}_{2}C_{3} < n _{rm O ^{10 - 122}}",
+      "size": 1000,
+      "expected": {
+        "width": 17151,
+        "height": 1590,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 17151,
+        "height": 1576,
+        "baseline": 73,
+        "glyphs": 30
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a = {cases{12 +- B _{5` `+~epsilon} -` e``div` `rm{EBD}&x >= 3.14#h&rm E <= 0.5}}",
+      "size": 1000,
+      "expected": {
+        "width": 16846,
+        "height": 2342,
+        "baseline": 65
+      },
+      "actual": {
+        "width": 16846,
+        "height": 2317,
+        "baseline": 66,
+        "glyphs": 28
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "138 cdot l ^{rm H} NE bar{rm OP}",
+      "size": 1000,
+      "expected": {
+        "width": 6445,
+        "height": 1195,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 6445,
+        "height": 1170,
+        "baseline": 89,
+        "glyphs": 10
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "e ^{{}_{5}C_{0} times~{}_{7}C_{2}} = m _{rm{CDH}} ^{180} < {it a ^{f} +- left ( rm Q right ) +- `left ( B _{rm D + n} div 1 times vec{rm AB}``+- alpha ^{369} right )} over {u +- it k div` `sin ^{2} s}",
+      "size": 1000,
+      "expected": {
+        "width": 24779,
+        "height": 2862,
+        "baseline": 66
+      },
+      "actual": {
+        "width": 24779,
+        "height": 2847,
+        "baseline": 66,
+        "glyphs": 52
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "{{}_{2}C_{1} div `w} over {rm F ^{t` `CDOT i} - 8 + bar{rm AB}} +- left | m ^{l} right | div q ^{11 + t} + y > rm G ^{9 cdot t} +~~6 CDOT d~div` `0.5",
+      "size": 1000,
+      "expected": {
+        "width": 26376,
+        "height": 2685,
+        "baseline": 63
+      },
+      "actual": {
+        "width": 26376,
+        "height": 2660,
+        "baseline": 64,
+        "glyphs": 42
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "c - it x _{1 times 399} ^{root {4} of {9 +- a} + rm{QGC}} +- sqrt {omega _{8 + 5} ^{d div q} cdot~~sqrt {7`- 818}} cdot m != {}_{5}C_{2} +`theta _{d _{theta} ^{rm{PG} cdot M}} ^{Q``-` `root {3} of {rm D~~cdot``y}}",
+      "size": 1000,
+      "expected": {
+        "width": 29668,
+        "height": 1758,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 29668,
+        "height": 1746,
+        "baseline": 68,
+        "glyphs": 58
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "matrix{l & it k # 1 & 3}",
+      "size": 1000,
+      "expected": {
+        "width": 1250,
+        "height": 2125,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 1250,
+        "height": 2100,
+        "baseline": 67,
+        "glyphs": 4
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "rm D",
+      "size": 1000,
+      "expected": {
+        "width": 750,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 750,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 1
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "lim _{x rarrow 1+} 2 CDOT rm{HO}` +~omega~~cdot v ^{F ^{6 times rm C}} = u _{z} + vec{a} div alpha _{p} ^{pi~~+- r} cdot g",
+      "size": 1000,
+      "expected": {
+        "width": 21677,
+        "height": 2108,
+        "baseline": 57
+      },
+      "actual": {
+        "width": 21677,
+        "height": 2096,
+        "baseline": 56,
+        "glyphs": 34
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "n = {cases{it k&it x LEQ 5#z&n != 9}}",
+      "size": 1000,
+      "expected": {
+        "width": 5690,
+        "height": 2125,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 5690,
+        "height": 2100,
+        "baseline": 67,
+        "glyphs": 11
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "s _{rm{GPQ} div 9} div~~839",
+      "size": 1000,
+      "expected": {
+        "width": 6936,
+        "height": 1192,
+        "baseline": 72
+      },
+      "actual": {
+        "width": 6936,
+        "height": 1190,
+        "baseline": 72,
+        "glyphs": 10
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "beta ^{m times 78}``CDOT i div z _{g} ^{5 -``rm G} != {0.5 div 12 cdot` l} over {l times rm{CEB}}``+- bar{rm{PQ}} cdot rm F _{v} != LEFT [ e~~times epsilon RIGHT ] cdot b",
+      "size": 1000,
+      "expected": {
+        "width": 27092,
+        "height": 2300,
+        "baseline": 66
+      },
+      "actual": {
+        "width": 27092,
+        "height": 2275,
+        "baseline": 66,
+        "glyphs": 43
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "w _{root {3} of {7~cdot rm{AOE}} cdot rm P ^{c +- 73}} ^{567~~div rm P ^{g cdot`0.01}} +- q` `CDOT``12 - rm B < sqrt {3.14} CDOT 289",
+      "size": 1000,
+      "expected": {
+        "width": 20394,
+        "height": 1623,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 20394,
+        "height": 1621,
+        "baseline": 73,
+        "glyphs": 44
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "it x times 6",
+      "size": 1000,
+      "expected": {
+        "width": 2230,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 2230,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 3
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "377 <= bar{rm AB} - i _{rm C} cdot rm{DE}~-`0.01 < h - `{}_{6}C_{1} -~820",
+      "size": 1000,
+      "expected": {
+        "width": 20335,
+        "height": 1397,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 20335,
+        "height": 1384,
+        "baseline": 75,
+        "glyphs": 28
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "beta = {cases{t _{9 CDOT e} +- rm O&rm H = 393#it k +- LEFT { v`+``d RIGHT }&x NE 3.14}}",
+      "size": 1000,
+      "expected": {
+        "width": 11585,
+        "height": 2340,
+        "baseline": 65
+      },
+      "actual": {
+        "width": 11585,
+        "height": 2327,
+        "baseline": 66,
+        "glyphs": 27
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "matrix{a & M # 691 & rm{EB}}",
+      "size": 1000,
+      "expected": {
+        "width": 3125,
+        "height": 2125,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 3125,
+        "height": 2100,
+        "baseline": 67,
+        "glyphs": 7
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "l = {cases{root {4} of {8 +``449 +-` z} cdot {}_{6}C_{1} `times` {z +-``2.58} over {m - 0 CDOT~~theta div rm O}&b >= 924#n +- it y _{i} times 358&p <= 439}}",
+      "size": 1000,
+      "expected": {
+        "width": 23710,
+        "height": 3640,
+        "baseline": 60
+      },
+      "actual": {
+        "width": 23710,
+        "height": 3627,
+        "baseline": 60,
+        "glyphs": 54
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "matrix{1 & 2 # x & rm{EB}}",
+      "size": 1000,
+      "expected": {
+        "width": 2150,
+        "height": 2125,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 2150,
+        "height": 2100,
+        "baseline": 67,
+        "glyphs": 5
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sum _{k=1} ^{n} e ^{b ^{980 +-~rm D} + i _{7}} +-` k ^{Q -~~l} div {rm{PG} ^{rm Q} + h _{1}} over {bar{rm{PQ}} cdot g ^{12` `div b}} > gamma _{mu~~- w} ^{beta cdot t}``CDOT 10",
+      "size": 1000,
+      "expected": {
+        "width": 23013,
+        "height": 2870,
+        "baseline": 66
+      },
+      "actual": {
+        "width": 23013,
+        "height": 2865,
+        "baseline": 66,
+        "glyphs": 48
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "BOX{rm Q ^{1.96 cdot`sqrt {3 + 1.5}} - p}",
+      "size": 1000,
+      "expected": {
+        "width": 7817,
+        "height": 1474,
+        "baseline": 82
+      },
+      "actual": {
+        "width": 7817,
+        "height": 1462,
+        "baseline": 83,
+        "glyphs": 15
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "it x times 1",
+      "size": 1000,
+      "expected": {
+        "width": 2230,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 2230,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 3
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "h LEFT ( x RIGHT ) = exp d cdot 1 CDOT LEFT | vec{rm AB} - bar{rm OP} +-``vec{rm AB} CDOT w RIGHT |",
+      "size": 1000,
+      "expected": {
+        "width": 17780,
+        "height": 1195,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 17780,
+        "height": 1182,
+        "baseline": 88,
+        "glyphs": 29
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "v _{k div 10} +-` {tan ^{2} q +- 12} over {k CDOT 4 - e _{LEFT [ 0.25 div` rm{AC} RIGHT ] times` {3 times rm B + M times L} over {X + phi` `times 8`cdot rm H}} +- h}",
+      "size": 1000,
+      "expected": {
+        "width": 19507,
+        "height": 3514,
+        "baseline": 48
+      },
+      "actual": {
+        "width": 19507,
+        "height": 3509,
+        "baseline": 48,
+        "glyphs": 47
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "r ^{4} cdot vec{rm{PQ}} < rm{DP} cdot left { 846 times epsilon right } CDOT y times gamma _{7} >= rm A` `+ d",
+      "size": 1000,
+      "expected": {
+        "width": 19165,
+        "height": 1385,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 19165,
+        "height": 1372,
+        "baseline": 76,
+        "glyphs": 27
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "gamma <= it b",
+      "size": 1000,
+      "expected": {
+        "width": 2445,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 2445,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 3
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "0` `div` `T - `tan~~p LEQ u cdot rm B _{{f} over {rm E} +- rm{QE}} +- z ^{beta + 12} cdot` 3",
+      "size": 1000,
+      "expected": {
+        "width": 18854,
+        "height": 2234,
+        "baseline": 46
+      },
+      "actual": {
+        "width": 18854,
+        "height": 2229,
+        "baseline": 46,
+        "glyphs": 26
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "matrix{12 & it y # 0.01 & rm Q}",
+      "size": 1000,
+      "expected": {
+        "width": 2825,
+        "height": 2150,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 2825,
+        "height": 2100,
+        "baseline": 67,
+        "glyphs": 8
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "phi`CDOT``it a _{rm C} ^{502 div g} - sqrt {11 times 5} + z _{6 - u}",
+      "size": 1000,
+      "expected": {
+        "width": 12872,
+        "height": 1367,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 12872,
+        "height": 1365,
+        "baseline": 76,
+        "glyphs": 21
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "BOX{LEFT { 5 div u RIGHT }``times`gamma CDOT {u~times` `y div {}_{7}C_{3}} over {left [ n - rm B right ]}}",
+      "size": 1000,
+      "expected": {
+        "width": 12525,
+        "height": 2685,
+        "baseline": 66
+      },
+      "actual": {
+        "width": 12525,
+        "height": 2660,
+        "baseline": 67,
+        "glyphs": 21
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "BOX{4`+ `h ^{LEFT { t``div sigma RIGHT }}` `cdot {LEFT { rm{FC}` cdot it x RIGHT } CDOT LEFT ( 178 + 10 cdot 3 RIGHT ) `- i} over {epsilon _{x} times t - LEFT | 9 RIGHT | CDOT cos f} +~l}",
+      "size": 1000,
+      "expected": {
+        "width": 21501,
+        "height": 2685,
+        "baseline": 59
+      },
+      "actual": {
+        "width": 21501,
+        "height": 2672,
+        "baseline": 60,
+        "glyphs": 44
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "it a",
+      "size": 1000,
+      "expected": {
+        "width": 525,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 525,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 1
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "omega + k < tan ^{2} j` `-``0.01 div 1.96 != l CDOT omega` `- vec{rm{PQ}}",
+      "size": 1000,
+      "expected": {
+        "width": 18650,
+        "height": 1195,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 18650,
+        "height": 1182,
+        "baseline": 88,
+        "glyphs": 28
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "{u` + `8~~div B` `+- r} over {rm{AQ} div 9 div m - rm{DC}} + {k CDOT h +- f} over {3.14 - epsilon} < rm B times vec{rm OP} +-`f`' LEFT | x RIGHT |",
+      "size": 1000,
+      "expected": {
+        "width": 21395,
+        "height": 2300,
+        "baseline": 66
+      },
+      "actual": {
+        "width": 21395,
+        "height": 2275,
+        "baseline": 66,
+        "glyphs": 43
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "omega +-``epsilon _{bar{x} - 225} NE LEFT { {p} over {1 div it y _{5 CDOT` `s}} RIGHT }`cdot `3~cdot b cdot 582",
+      "size": 1000,
+      "expected": {
+        "width": 18043,
+        "height": 2467,
+        "baseline": 60
+      },
+      "actual": {
+        "width": 18043,
+        "height": 2454,
+        "baseline": 61,
+        "glyphs": 28
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "l cdot 457 cdot r > vec{rm AB}",
+      "size": 1000,
+      "expected": {
+        "width": 7350,
+        "height": 1195,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 7350,
+        "height": 1170,
+        "baseline": 89,
+        "glyphs": 12
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "e = {cases{j _{8~CDOT `380}&epsilon = 471#beta ^{a} times x _{0.5 + it a}`CDOT {rm{HAG} - rm A} over {it k cdot rm{CA} div f -` `e}&Q >= 0.5}}",
+      "size": 1000,
+      "expected": {
+        "width": 19136,
+        "height": 3629,
+        "baseline": 60
+      },
+      "actual": {
+        "width": 19136,
+        "height": 3604,
+        "baseline": 60,
+        "glyphs": 47
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sqrt {0.5 CDOT rm D},` `omega",
+      "size": 1000,
+      "expected": {
+        "width": 5665,
+        "height": 1150,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 5665,
+        "height": 1137,
+        "baseline": 87,
+        "glyphs": 9
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "gamma ^{s}``CDOT beta _{rm F} ^{rm{HBO} div alpha}",
+      "size": 1000,
+      "expected": {
+        "width": 5696,
+        "height": 1372,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 5696,
+        "height": 1365,
+        "baseline": 76,
+        "glyphs": 10
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "rm A - 0.01",
+      "size": 1000,
+      "expected": {
+        "width": 3805,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 3805,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 6
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "vec{rm AB} + 2.58 >= 751 `+- omega _{phi} -` `8",
+      "size": 1000,
+      "expected": {
+        "width": 11785,
+        "height": 1385,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 11785,
+        "height": 1372,
+        "baseline": 76,
+        "glyphs": 18
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "it b",
+      "size": 1000,
+      "expected": {
+        "width": 450,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 450,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 1
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "matrix{9 & rm F # 10 & rm{QG}}",
+      "size": 1000,
+      "expected": {
+        "width": 2750,
+        "height": 2150,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 2750,
+        "height": 2100,
+        "baseline": 67,
+        "glyphs": 6
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "l ^{rm{GD}}: 0 cdot~omega +- 4 +- ln lambda",
+      "size": 1000,
+      "expected": {
+        "width": 9145,
+        "height": 1180,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 9145,
+        "height": 1175,
+        "baseline": 88,
+        "glyphs": 13
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "delta _{9}` `div root {5} of {rm{HEF}} cdot mu: phi~+-`f + vec{rm AB}",
+      "size": 1000,
+      "expected": {
+        "width": 13360,
+        "height": 1385,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 13360,
+        "height": 1372,
+        "baseline": 76,
+        "glyphs": 20
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "j = {cases{11 cdot``vec{rm AB} div LEFT ( 5 RIGHT )&it b LEQ 343#s~~div 1 cdot `v&l > 6}}",
+      "size": 1000,
+      "expected": {
+        "width": 12110,
+        "height": 2345,
+        "baseline": 65
+      },
+      "actual": {
+        "width": 12110,
+        "height": 2332,
+        "baseline": 66,
+        "glyphs": 27
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "4 + rm O",
+      "size": 1000,
+      "expected": {
+        "width": 2380,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 2380,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 3
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "it k - c",
+      "size": 1000,
+      "expected": {
+        "width": 2080,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 2080,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 3
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "matrix{w & P # rm C & l}",
+      "size": 1000,
+      "expected": {
+        "width": 1700,
+        "height": 2125,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 1700,
+        "height": 2100,
+        "baseline": 67,
+        "glyphs": 4
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "u NE w CDOT vec{rm AB} + 0",
+      "size": 1000,
+      "expected": {
+        "width": 6825,
+        "height": 1195,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 6825,
+        "height": 1170,
+        "baseline": 89,
+        "glyphs": 10
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "l = {cases{{rm A times rm B CDOT m} over {s} div` tan ^{2} it y cdot `tan ^{2} s&m != 249#sin alpha``CDOT f cdot 2&rm D >= 874}}",
+      "size": 1000,
+      "expected": {
+        "width": 18195,
+        "height": 3425,
+        "baseline": 61
+      },
+      "actual": {
+        "width": 18195,
+        "height": 3400,
+        "baseline": 61,
+        "glyphs": 44
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "h LEFT ( x RIGHT ) = N times rm C",
+      "size": 1000,
+      "expected": {
+        "width": 5590,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 5590,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 8
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "matrix{10 & 0 # 1.5 & rm O}",
+      "size": 1000,
+      "expected": {
+        "width": 2300,
+        "height": 2125,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 2300,
+        "height": 2100,
+        "baseline": 67,
+        "glyphs": 7
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "f LEFT { x RIGHT } = s _{775 cdot 4} ^{rm D}",
+      "size": 1000,
+      "expected": {
+        "width": 6060,
+        "height": 1370,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 6060,
+        "height": 1365,
+        "baseline": 76,
+        "glyphs": 12
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "h LEFT | x RIGHT | = bar{rm OP}~~+` x``times epsilon` div {}_{7}C_{3}",
+      "size": 1000,
+      "expected": {
+        "width": 12105,
+        "height": 1385,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 12105,
+        "height": 1372,
+        "baseline": 76,
+        "glyphs": 16
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | rm F RIGHT | <= f = l",
+      "size": 1000,
+      "expected": {
+        "width": 4905,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 4905,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 7
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sqrt {9 -~~{}_{8}C_{3}} <= s < beta _{q CDOT {k +- 597 CDOT 596} over {U times 8}}` `+ bar{rm AB}``cdot` `root {3} of {j _{192 div `y} ^{it y} times 12`div 9 CDOT sqrt {j times 0.25}}~+ exp` c",
+      "size": 1000,
+      "expected": {
+        "width": 36752,
+        "height": 2384,
+        "baseline": 50
+      },
+      "actual": {
+        "width": 36752,
+        "height": 2379,
+        "baseline": 50,
+        "glyphs": 60
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "{c~~times h} over {LEFT | rm{PD} RIGHT | + 10} != u",
+      "size": 1000,
+      "expected": {
+        "width": 6780,
+        "height": 2300,
+        "baseline": 66
+      },
+      "actual": {
+        "width": 6780,
+        "height": 2275,
+        "baseline": 66,
+        "glyphs": 13
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "u = {cases{9` - beta _{402 +- j} ^{rm{QHF}~cdot 10} +- rm B` div {}_{7}C_{3}&x = 2#root {4} of {1``div rm G cdot l} CDOT j ^{it b} cdot rm A ^{9} cdot `sqrt {lambda}&y = 985}}",
+      "size": 1000,
+      "expected": {
+        "width": 18235,
+        "height": 2700,
+        "baseline": 63
+      },
+      "actual": {
+        "width": 18235,
+        "height": 2695,
+        "baseline": 63,
+        "glyphs": 49
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "0 + {u - a cdot h} over {it k cdot rm{DCF} + pi div n}",
+      "size": 1000,
+      "expected": {
+        "width": 9215,
+        "height": 2275,
+        "baseline": 65
+      },
+      "actual": {
+        "width": 9215,
+        "height": 2250,
+        "baseline": 66,
+        "glyphs": 17
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "rm{PQ}",
+      "size": 1000,
+      "expected": {
+        "width": 1425,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 1425,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 2
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "rm Q - `{rm D times~rm D +-``l` +- 250} over {it b CDOT t cdot rm O CDOT 0.01} GEQ sqrt {d~~CDOT l} times 9~~+ {b} over {h} != omega _{c} ^{rm C times c} +- g prime `left ( x right ) times~lambda",
+      "size": 1000,
+      "expected": {
+        "width": 29336,
+        "height": 2300,
+        "baseline": 66
+      },
+      "actual": {
+        "width": 29336,
+        "height": 2275,
+        "baseline": 66,
+        "glyphs": 48
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "564 cdot it x` `CDOT 9 >= 10 CDOT`{sqrt {8 - `7 + it y div 3.14} -``vec{rm AB}` `- e} over {rm F ^{k - h} times t} div phi",
+      "size": 1000,
+      "expected": {
+        "width": 23695,
+        "height": 2670,
+        "baseline": 64
+      },
+      "actual": {
+        "width": 23695,
+        "height": 2645,
+        "baseline": 64,
+        "glyphs": 39
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "matrix{rm{GO} & rm O # p & epsilon}",
+      "size": 1000,
+      "expected": {
+        "width": 2450,
+        "height": 2125,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 2450,
+        "height": 2100,
+        "baseline": 67,
+        "glyphs": 5
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "it k + 81",
+      "size": 1000,
+      "expected": {
+        "width": 2680,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 2680,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 4
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "rm{HQE}",
+      "size": 1000,
+      "expected": {
+        "width": 2250,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 2250,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 3
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "g times 386 div {8 +-` phi~+-~~phi} over {{}_{3}C_{0} times 11 -` 2.58 times sqrt {p}} > {607 times k _{rm{FGB}} ^{619 div 1.96}} over {i + epsilon} >= k``times l",
+      "size": 1000,
+      "expected": {
+        "width": 26081,
+        "height": 2994,
+        "baseline": 63
+      },
+      "actual": {
+        "width": 26081,
+        "height": 2992,
+        "baseline": 63,
+        "glyphs": 52
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "rm C",
+      "size": 1000,
+      "expected": {
+        "width": 675,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 675,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 1
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "rm{DQH}",
+      "size": 1000,
+      "expected": {
+        "width": 2325,
+        "height": 1000,
+        "baseline": 86
+      },
+      "actual": {
+        "width": 2325,
+        "height": 975,
+        "baseline": 86,
+        "glyphs": 3
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "l~~cdot LEFT [ b _{rm{OG} - 1}``+ 6 CDOT x RIGHT ]`+ it a CDOT 3",
+      "size": 1000,
+      "expected": {
+        "width": 12931,
+        "height": 1192,
+        "baseline": 72
+      },
+      "actual": {
+        "width": 12931,
+        "height": 1190,
+        "baseline": 72,
+        "glyphs": 17
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "r LEQ vec{rm OP} +``pi ^{rm O} = u `times` 11 times 1 CDOT``u",
+      "size": 1000,
+      "expected": {
+        "width": 13660,
+        "height": 1195,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 13660,
+        "height": 1182,
+        "baseline": 88,
+        "glyphs": 18
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sqrt {11 times S _{L +`u}``+- exp `w} div rm{BA} cdot root {5} of {0} = {s + k ^{rm{AF}` `+ i} - p _{272 +~~7}} over {{}_{3}C_{1} times 0.01~~+~y +- bar{rm OP}} CDOT~~log _{10} omega `div {}_{3}C_{0} times 3.14 GEQ 2.58 cdot` {}_{2}C_{3}",
+      "size": 1000,
+      "expected": {
+        "width": 43351,
+        "height": 3057,
+        "baseline": 62
+      },
+      "actual": {
+        "width": 43351,
+        "height": 3044,
+        "baseline": 62,
+        "glyphs": 77
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "f'' left { x right } + k ^{left ( p times it y right ) CDOT it a _{y +- 685}} >= 6",
+      "size": 1000,
+      "expected": {
+        "width": 10947,
+        "height": 1299,
+        "baseline": 90
+      },
+      "actual": {
+        "width": 10947,
+        "height": 1296,
+        "baseline": 90,
+        "glyphs": 21
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "BOX{rm G _{n}}",
+      "size": 1000,
+      "expected": {
+        "width": 1230,
+        "height": 1385,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 1230,
+        "height": 1372,
+        "baseline": 67,
+        "glyphs": 2
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x _{rm P - j} + e ^{rm O} cdot omega ^{beta} ,  root {4} of {it a``+` `b` `times c cdot gamma} div sqrt {4``CDOT it x times it k +- lambda}` `cdot m ^{146 CDOT~~12}",
+      "size": 1000,
+      "expected": {
+        "width": 27536,
+        "height": 1372,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 27536,
+        "height": 1370,
+        "baseline": 76,
+        "glyphs": 39
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "9 CDOT 0.5 - epsilon ^{m ^{rm A cdot 663} +- w}``CDOT p <= {}_{2}C_{3} < n _{rm O ^{10 - 122}}",
+      "size": 1200,
+      "expected": {
+        "width": 19625,
+        "height": 1916,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 19625,
+        "height": 1896,
+        "baseline": 73,
+        "glyphs": 30
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "c - it x _{1 times 399} ^{root {4} of {9 +- a} + rm{QGC}} +- sqrt {omega _{8 + 5} ^{d div q} cdot~~sqrt {7`- 818}} cdot m != {}_{5}C_{2} +`theta _{d _{theta} ^{rm{PG} cdot M}} ^{Q``-` `root {3} of {rm D~~cdot``y}}",
+      "size": 1200,
+      "expected": {
+        "width": 32697,
+        "height": 2125,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 32697,
+        "height": 2105,
+        "baseline": 68,
+        "glyphs": 58
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "lim _{x rarrow 1+} 2 CDOT rm{HO}` +~omega~~cdot v ^{F ^{6 times rm C}} = u _{z} + vec{a} div alpha _{p} ^{pi~~+- r} cdot g",
+      "size": 1200,
+      "expected": {
+        "width": 24297,
+        "height": 2553,
+        "baseline": 57
+      },
+      "actual": {
+        "width": 24297,
+        "height": 2533,
+        "baseline": 56,
+        "glyphs": 34
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "9 CDOT 0.5 - epsilon ^{m ^{rm A cdot 663} +- w}``CDOT p <= {}_{2}C_{3} < n _{rm O ^{10 - 122}}",
+      "size": 2000,
+      "expected": {
+        "width": 32049,
+        "height": 3180,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 32049,
+        "height": 3150,
+        "baseline": 73,
+        "glyphs": 30
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "e ^{{}_{5}C_{0} times~{}_{7}C_{2}} = m _{rm{CDH}} ^{180} < {it a ^{f} +- left ( rm Q right ) +- `left ( B _{rm D + n} div 1 times vec{rm AB}``+- alpha ^{369} right )} over {u +- it k div` `sin ^{2} s}",
+      "size": 2000,
+      "expected": {
+        "width": 46962,
+        "height": 5801,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 46962,
+        "height": 5796,
+        "baseline": 67,
+        "glyphs": 52
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "c - it x _{1 times 399} ^{root {4} of {9 +- a} + rm{QGC}} +- sqrt {omega _{8 + 5} ^{d div q} cdot~~sqrt {7`- 818}} cdot m != {}_{5}C_{2} +`theta _{d _{theta} ^{rm{PG} cdot M}} ^{Q``-` `root {3} of {rm D~~cdot``y}}",
+      "size": 2000,
+      "expected": {
+        "width": 55385,
+        "height": 3515,
+        "baseline": 67
+      },
+      "actual": {
+        "width": 55385,
+        "height": 3490,
+        "baseline": 68,
+        "glyphs": 58
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "lim _{x rarrow 1+} 2 CDOT rm{HO}` +~omega~~cdot v ^{F ^{6 times rm C}} = u _{z} + vec{a} div alpha _{p} ^{pi~~+- r} cdot g",
+      "size": 2000,
+      "expected": {
+        "width": 40182,
+        "height": 4256,
+        "baseline": 57
+      },
+      "actual": {
+        "width": 40182,
+        "height": 4231,
+        "baseline": 57,
+        "glyphs": 34
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "s _{rm{GPQ} div 9} div~~839",
+      "size": 2000,
+      "expected": {
+        "width": 13033,
+        "height": 2433,
+        "baseline": 71
+      },
+      "actual": {
+        "width": 13033,
+        "height": 2428,
+        "baseline": 71,
+        "glyphs": 10
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "w _{root {3} of {7~cdot rm{AOE}} cdot rm P ^{c +- 73}} ^{567~~div rm P ^{g cdot`0.01}} +- q` `CDOT``12 - rm B < sqrt {3.14} CDOT 289",
+      "size": 2000,
+      "expected": {
+        "width": 38026,
+        "height": 3286,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 38026,
+        "height": 3281,
+        "baseline": 74,
+        "glyphs": 44
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "377 <= bar{rm AB} - i _{rm C} cdot rm{DE}~-`0.01 < h - `{}_{6}C_{1} -~820",
+      "size": 2000,
+      "expected": {
+        "width": 37880,
+        "height": 2838,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 37880,
+        "height": 2833,
+        "baseline": 75,
+        "glyphs": 28
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sum _{k=1} ^{n} e ^{b ^{980 +-~rm D} + i _{7}} +-` k ^{Q -~~l} div {rm{PG} ^{rm Q} + h _{1}} over {bar{rm{PQ}} cdot g ^{12` `div b}} > gamma _{mu~~- w} ^{beta cdot t}``CDOT 10",
+      "size": 2000,
+      "expected": {
+        "width": 43055,
+        "height": 5806,
+        "baseline": 66
+      },
+      "actual": {
+        "width": 43055,
+        "height": 5796,
+        "baseline": 65,
+        "glyphs": 48
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "v _{k div 10} +-` {tan ^{2} q +- 12} over {k CDOT 4 - e _{LEFT [ 0.25 div` rm{AC} RIGHT ] times` {3 times rm B + M times L} over {X + phi` `times 8`cdot rm H}} +- h}",
+      "size": 2000,
+      "expected": {
+        "width": 36026,
+        "height": 7103,
+        "baseline": 48
+      },
+      "actual": {
+        "width": 36026,
+        "height": 7093,
+        "baseline": 48,
+        "glyphs": 47
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "0` `div` `T - `tan~~p LEQ u cdot rm B _{{f} over {rm E} +- rm{QE}} +- z ^{beta + 12} cdot` 3",
+      "size": 2000,
+      "expected": {
+        "width": 35362,
+        "height": 4468,
+        "baseline": 46
+      },
+      "actual": {
+        "width": 35362,
+        "height": 4458,
+        "baseline": 46,
+        "glyphs": 26
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "phi`CDOT``it a _{rm C} ^{502 div g} - sqrt {11 times 5} + z _{6 - u}",
+      "size": 2000,
+      "expected": {
+        "width": 24216,
+        "height": 2771,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 24216,
+        "height": 2766,
+        "baseline": 75,
+        "glyphs": 21
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "gamma ^{s}``CDOT beta _{rm F} ^{rm{HBO} div alpha}",
+      "size": 2000,
+      "expected": {
+        "width": 10478,
+        "height": 2781,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 10478,
+        "height": 2766,
+        "baseline": 75,
+        "glyphs": 10
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "l ^{rm{GD}}: 0 cdot~omega +- 4 +- ln lambda",
+      "size": 2000,
+      "expected": {
+        "width": 17240,
+        "height": 2373,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 17240,
+        "height": 2363,
+        "baseline": 87,
+        "glyphs": 13
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "f LEFT { x RIGHT } = s _{775 cdot 4} ^{rm D}",
+      "size": 2000,
+      "expected": {
+        "width": 10995,
+        "height": 2776,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 10995,
+        "height": 2766,
+        "baseline": 75,
+        "glyphs": 12
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sqrt {9 -~~{}_{8}C_{3}} <= s < beta _{q CDOT {k +- 597 CDOT 596} over {U times 8}}` `+ bar{rm AB}``cdot` `root {3} of {j _{192 div `y} ^{it y} times 12`div 9 CDOT sqrt {j times 0.25}}~+ exp` c",
+      "size": 2000,
+      "expected": {
+        "width": 68661,
+        "height": 4768,
+        "baseline": 50
+      },
+      "actual": {
+        "width": 68661,
+        "height": 4758,
+        "baseline": 50,
+        "glyphs": 60
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "u = {cases{9` - beta _{402 +- j} ^{rm{QHF}~cdot 10} +- rm B` div {}_{7}C_{3}&x = 2#root {4} of {1``div rm G cdot l} CDOT j ^{it b} cdot rm A ^{9} cdot `sqrt {lambda}&y = 985}}",
+      "size": 2000,
+      "expected": {
+        "width": 34220,
+        "height": 5449,
+        "baseline": 63
+      },
+      "actual": {
+        "width": 34220,
+        "height": 5439,
+        "baseline": 63,
+        "glyphs": 49
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "g times 386 div {8 +-` phi~+-~~phi} over {{}_{3}C_{0} times 11 -` 2.58 times sqrt {p}} > {607 times k _{rm{FGB}} ^{619 div 1.96}} over {i + epsilon} >= k``times l",
+      "size": 2000,
+      "expected": {
+        "width": 48998,
+        "height": 6099,
+        "baseline": 62
+      },
+      "actual": {
+        "width": 48998,
+        "height": 6094,
+        "baseline": 62,
+        "glyphs": 52
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "l~~cdot LEFT [ b _{rm{OG} - 1}``+ 6 CDOT x RIGHT ]`+ it a CDOT 3",
+      "size": 2000,
+      "expected": {
+        "width": 24273,
+        "height": 2433,
+        "baseline": 71
+      },
+      "actual": {
+        "width": 24273,
+        "height": 2428,
+        "baseline": 71,
+        "glyphs": 17
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "f'' left { x right } + k ^{left ( p times it y right ) CDOT it a _{y +- 685}} >= 6",
+      "size": 2000,
+      "expected": {
+        "width": 20544,
+        "height": 2633,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 20544,
+        "height": 2628,
+        "baseline": 89,
+        "glyphs": 21
+      },
+      "matched": false
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x _{rm P - j} + e ^{rm O} cdot omega ^{beta} ,  root {4} of {it a``+` `b` `times c cdot gamma} div sqrt {4``CDOT it x times it k +- lambda}` `cdot m ^{146 CDOT~~12}",
+      "size": 2000,
+      "expected": {
+        "width": 51533,
+        "height": 2781,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 51533,
+        "height": 2776,
+        "baseline": 75,
+        "glyphs": 39
+      },
+      "matched": false
+    }
+  ]
+}

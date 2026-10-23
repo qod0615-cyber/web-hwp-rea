@@ -1,0 +1,215 @@
+{
+  "kind": "blank",
+  "started": "2026-10-22T21:53:17.251312+09:00",
+  "collector_pid": 31728,
+  "output_file": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\native-blank.hwpx",
+  "events": [
+    {
+      "kind": "before_request",
+      "time": "2026-10-22T21:53:17.263488+09:00",
+      "epoch": 1792673597.2634883,
+      "owner": {
+        "owner": "Astris",
+        "session": "hangul-pc-upper-0051",
+        "job": "upper-0051",
+        "pid": 32080,
+        "since": 1792673162.3917098,
+        "since_iso": "2026-10-22 21:46:02",
+        "heartbeat": 1792673583.6035619,
+        "heartbeat_iso": "2026-10-22 21:53:03",
+        "token": "2ab20bd527f3453f8bb2a611b45640f9",
+        "heartbeat_age_s": 13.7,
+        "stale_suspect": false
+      }
+    },
+    {
+      "kind": "acquired",
+      "time": "2026-10-22T21:53:17.777418+09:00",
+      "epoch": 1792673597.777418,
+      "owner": {
+        "owner": "Web HWP",
+        "session": "hwpx-roundtrip-2026-10-22",
+        "job": "blank",
+        "pid": 31728,
+        "since": 1792673597.7704184,
+        "since_iso": "2026-10-22 21:53:17",
+        "heartbeat": 1792673597.7704184,
+        "heartbeat_iso": "2026-10-22 21:53:17",
+        "token": "b0b65ae54d674a3c81cadc796618c7dd",
+        "heartbeat_age_s": 0.0,
+        "stale_suspect": false
+      },
+      "heartbeat": true
+    },
+    {
+      "kind": "dedicated_instance_verified",
+      "time": "2026-10-22T21:53:35.277036+09:00",
+      "epoch": 1792673615.277037,
+      "window": {
+        "hwnd": 2296340,
+        "pid": 15656,
+        "title": "빈 문서 1 - 한글",
+        "class": "HwndWrapper[hwp.exe;;ef0538ca-732a-4f20-980c-ec43f1203874]",
+        "rect": [
+          -32000,
+          -32000,
+          -31840,
+          -31972
+        ],
+        "owner": 0,
+        "enabled": true
+      }
+    },
+    {
+      "kind": "com_start",
+      "time": "2026-10-22T21:53:39.073229+09:00",
+      "epoch": 1792673619.073229,
+      "call": "RegisterModule existing FilePathCheckDLL"
+    },
+    {
+      "kind": "com_end",
+      "time": "2026-10-22T21:53:39.076228+09:00",
+      "epoch": 1792673619.0762289,
+      "call": "RegisterModule existing FilePathCheckDLL",
+      "result": true
+    },
+    {
+      "kind": "com_start",
+      "time": "2026-10-22T21:53:39.077226+09:00",
+      "epoch": 1792673619.0772264,
+      "call": "SetMessageBoxMode dedicated instance only"
+    },
+    {
+      "kind": "com_end",
+      "time": "2026-10-22T21:53:39.086226+09:00",
+      "epoch": 1792673619.0862265,
+      "call": "SetMessageBoxMode dedicated instance only",
+      "result": 0
+    },
+    {
+      "kind": "com_start",
+      "time": "2026-10-22T21:53:39.117227+09:00",
+      "epoch": 1792673619.117227,
+      "call": "CharShape 10pt 함초롬바탕"
+    },
+    {
+      "kind": "com_end",
+      "time": "2026-10-22T21:53:39.119227+09:00",
+      "epoch": 1792673619.1192276,
+      "call": "CharShape 10pt 함초롬바탕",
+      "result": true
+    },
+    {
+      "kind": "com_start",
+      "time": "2026-10-22T21:53:39.572354+09:00",
+      "epoch": 1792673619.5723548,
+      "call": "ParagraphShape 160 percent"
+    },
+    {
+      "kind": "com_end",
+      "time": "2026-10-22T21:53:39.575355+09:00",
+      "epoch": 1792673619.5753553,
+      "call": "ParagraphShape 160 percent",
+      "result": true
+    },
+    {
+      "kind": "key",
+      "time": "2026-10-22T21:53:39.653885+09:00",
+      "epoch": 1792673619.6538851,
+      "label": "open initial-save-dialog",
+      "vks": [
+        17,
+        83
+      ],
+      "foreground": 2296340
+    },
+    {
+      "kind": "failure",
+      "time": "2026-10-22T21:53:44.104660+09:00",
+      "epoch": 1792673624.1046603,
+      "error": "AssertionError('owned dialog not observed')"
+    },
+    {
+      "kind": "release_completed",
+      "time": "2026-10-22T21:53:53.313275+09:00",
+      "epoch": 1792673633.3132756
+    },
+    {
+      "kind": "own_request_deleted",
+      "time": "2026-10-22T21:53:53.314275+09:00",
+      "epoch": 1792673633.314275
+    }
+  ],
+  "captures": [],
+  "source": "C:\\Users\\K\\.orca\\coordination\\desktop_control.py",
+  "source_sha256": "4084e572dc5e9fe8e07c2ec4a6784fe0a54f9730344d186af51ff035cb86a882",
+  "collector_sha256": "2e9b78e322642710de77cdd1e0e79af5203200aac332b36070f7dc3f47b4e5b3",
+  "existing_com_attached": false,
+  "resident_commands_sent": false,
+  "original_baseline_before": {
+    "hwnd": 985892,
+    "pid": 4032,
+    "title": "빈 문서 1 - 한글",
+    "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+    "rect": [
+      2,
+      40,
+      1329,
+      1006
+    ],
+    "owner": 0,
+    "enabled": true
+  },
+  "foreground_before_request": 43387452,
+  "request_token": "523618a6f4a245fd97a00cfeaf5dc50c",
+  "request_created_at": "2026-10-22T21:53:17.268647+09:00",
+  "request_deadline": 1792673717.264488,
+  "acquired_at": "2026-10-22T21:53:17.771418+09:00",
+  "lock_token": "b0b65ae54d674a3c81cadc796618c7dd",
+  "input_deadline_epoch": 1792673647.771418,
+  "dedicated_hwnd": 2296340,
+  "dedicated_pid": 15656,
+  "hwp_version": "12, 0, 0, 535",
+  "isolation_verified": true,
+  "status": "failed_preserved",
+  "error": "AssertionError('owned dialog not observed')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\native-fixture-collector.py\", line 126, in <module>\n    if KIND=='blank':show_dialog([k.VK_CONTROL,ord('S')],'initial-save-dialog')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\native-fixture-collector.py\", line 85, in show_dialog\n    fg=g.GetForegroundWindow();assert fg!=hwnd and related(fg),'owned dialog not observed'\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: owned dialog not observed\n",
+  "dedicated_com_quit_returned_at": "2026-10-22T21:53:50.296921+09:00",
+  "dedicated_window_closed": false,
+  "input_finished_at": "2026-10-22T21:53:53.311264+09:00",
+  "inputs_finished": true,
+  "mouse_down_remaining": false,
+  "keys_remaining": [],
+  "released_at": "2026-10-22T21:53:53.313275+09:00",
+  "request_deleted_at": "2026-10-22T21:53:53.314275+09:00",
+  "owner_after_return": {
+    "owner": "Astris",
+    "session": "hangul-pc-upper-0051",
+    "job": "upper-0051",
+    "pid": 32080,
+    "since": 1792673633.5918002,
+    "since_iso": "2026-10-22 21:53:53",
+    "heartbeat": 1792673633.5918002,
+    "heartbeat_iso": "2026-10-22 21:53:53",
+    "token": "2cd2e5a54a02459daec2f7b7fc5381fc",
+    "heartbeat_age_s": 0.2,
+    "stale_suspect": false
+  },
+  "astris_reacquired_at": "2026-10-22T21:53:53.820800+09:00",
+  "original_baseline_after": {
+    "hwnd": 985892,
+    "pid": 4032,
+    "title": "빈 문서 1 - 한글",
+    "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+    "rect": [
+      2,
+      40,
+      1329,
+      1006
+    ],
+    "owner": 0,
+    "enabled": true
+  },
+  "original_baseline_native_state_unchanged": true,
+  "finished": "2026-10-22T21:53:54.129333+09:00"
+}

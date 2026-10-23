@@ -1,0 +1,11 @@
+# Private native captures, coordination evidence and working notes are not release inputs.
+verification/
+docs/
+.orca/
+/*.png
+AGENTS.md
+CLAUDE.md
+scripts/test_*.py
+scripts/collect_native_baseline.py
+scripts/compare_editor_ui.py
+scripts/prepare_equation_font.py

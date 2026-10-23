@@ -1,0 +1,40 @@
+{
+  "status": "installed_pwa_window_not_found",
+  "observed_at": "2026-10-22T21:39:25.731969+09:00",
+  "title_process_inventory": {
+    "time": "2026-10-22T21:32:43.447047+09:00",
+    "read_only": true,
+    "windows": []
+  },
+  "chromium_class_inventory": {
+    "time": "2026-10-22T21:33:23.389566+09:00",
+    "windows": [
+      {
+        "hwnd": 131748,
+        "pid": 21704,
+        "title": "Orca",
+        "class": "Chrome_WidgetWin_1",
+        "rect": [
+          187,
+          36,
+          1927,
+          1025
+        ]
+      }
+    ],
+    "read_only": true
+  },
+  "only_chromium_window_process": {
+    "pid": 21704,
+    "name": "Orca",
+    "path": "C:\\Users\\K\\AppData\\Local\\Programs\\orca\\Orca.exe"
+  },
+  "target_web_hwp_window": null,
+  "ctrl_r_count": 0,
+  "clipboard_changed": false,
+  "local_storage_changed": false,
+  "cache_deleted": false,
+  "new_install_requested": false,
+  "expected_public_release": "8785fef8cce66ea7",
+  "scope": "Read-only native window/process inventory. No browser/PWA operation because no matching installed window exists."
+}

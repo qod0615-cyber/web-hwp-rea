@@ -1,0 +1,5665 @@
+{
+  "validation": "Native HWPX stored dimensions versus bundled TypeScript engine; glyph pixels not checked",
+  "sources": [
+    {
+      "path": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "sha256": "9a4596bd5d8e30a7a55e03790cb8dd2e86684332eb9465e397f048c692b3c30b"
+    }
+  ],
+  "native_document_equations": 314,
+  "all_metrics_matched": 314,
+  "rows": [
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "12",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "f` LEFT ( x RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2087,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2087,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "alpha",
+      "size": 1100,
+      "expected": {
+        "width": 675,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 675,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "{1} over {2}",
+      "size": 1100,
+      "expected": {
+        "width": 1100,
+        "height": 2580,
+        "baseline": 65
+      },
+      "actual": {
+        "width": 1100,
+        "height": 2580,
+        "baseline": 65,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "{bar{rm AB}}",
+      "size": 1100,
+      "expected": {
+        "width": 1605,
+        "height": 1350,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1605,
+        "height": 1350,
+        "baseline": 87,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a _{`n+1}",
+      "size": 1100,
+      "expected": {
+        "width": 2253,
+        "height": 1350,
+        "baseline": 71
+      },
+      "actual": {
+        "width": 2253,
+        "height": 1350,
+        "baseline": 71,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k= {11} over {4 sqrt {5}}`",
+      "size": 1100,
+      "expected": {
+        "width": 4786,
+        "height": 2745,
+        "baseline": 62
+      },
+      "actual": {
+        "width": 4786,
+        "height": 2745,
+        "baseline": 62,
+        "glyphs": 9
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "{vec{rm OP}} CDOT  {vec{rm OQ}} & =0",
+      "size": 1100,
+      "expected": {
+        "width": 5986,
+        "height": 1350,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 5986,
+        "height": 1350,
+        "baseline": 87,
+        "glyphs": 11
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "rmCDFE`",
+      "size": 1100,
+      "expected": {
+        "width": 2912,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2912,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "f` LEFT ( 0 RIGHT ) =it-a ^{2} =it-9",
+      "size": 1100,
+      "expected": {
+        "width": 7837,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 7837,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 11
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sin`A`:sin`B`=`2`:`3`",
+      "size": 1100,
+      "expected": {
+        "width": 9382,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 9382,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 13
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "{5} over {11} `",
+      "size": 1100,
+      "expected": {
+        "width": 1737,
+        "height": 2580,
+        "baseline": 65
+      },
+      "actual": {
+        "width": 1737,
+        "height": 2580,
+        "baseline": 65,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x^it",
+      "size": 1100,
+      "expected": {
+        "width": 600,
+        "height": 1311,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 600,
+        "height": 1311,
+        "baseline": 87,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x^it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1311,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1311,
+        "baseline": 87,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( x^it right)",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1311,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1311,
+        "baseline": 87,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | x^it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1311,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1311,
+        "baseline": 87,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x_it",
+      "size": 1100,
+      "expected": {
+        "width": 600,
+        "height": 1310,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 600,
+        "height": 1310,
+        "baseline": 73,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x_it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1310,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1310,
+        "baseline": 73,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( x_it right)",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1310,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1310,
+        "baseline": 73,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | x_it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1310,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1310,
+        "baseline": 73,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x^it_it",
+      "size": 1100,
+      "expected": {
+        "width": 600,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 600,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x^it_it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( x^it_it right)",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | x^it_it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x_it^it",
+      "size": 1100,
+      "expected": {
+        "width": 600,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 600,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x_it^it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( x_it^it right)",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | x_it^it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x^{it}_{it}",
+      "size": 1100,
+      "expected": {
+        "width": 600,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 600,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x^{it}_{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( x^{it}_{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | x^{it}_{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x_{it}^{it}",
+      "size": 1100,
+      "expected": {
+        "width": 600,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 600,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x_{it}^{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( x_{it}^{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | x_{it}^{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x^{it}",
+      "size": 1100,
+      "expected": {
+        "width": 600,
+        "height": 1311,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 600,
+        "height": 1311,
+        "baseline": 87,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x^{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1311,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1311,
+        "baseline": 87,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( x^{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1311,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1311,
+        "baseline": 87,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | x^{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1311,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1311,
+        "baseline": 87,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x_{it}",
+      "size": 1100,
+      "expected": {
+        "width": 600,
+        "height": 1310,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 600,
+        "height": 1310,
+        "baseline": 73,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x_{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1310,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1310,
+        "baseline": 73,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( x_{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1310,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1310,
+        "baseline": 73,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | x_{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1310,
+        "baseline": 73
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1310,
+        "baseline": 73,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x^{it} it _{it} it",
+      "size": 1100,
+      "expected": {
+        "width": 600,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 600,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x^{it} it _{it} it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( x^{it} it _{it} it right)",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | x^{it} it _{it} it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1496,
+        "baseline": 76
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1496,
+        "baseline": 76,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x^{it ^{it}}",
+      "size": 1100,
+      "expected": {
+        "width": 600,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 600,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x^{it ^{it}} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( x^{it ^{it}} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | x^{it ^{it}} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x_{it _{it}}",
+      "size": 1100,
+      "expected": {
+        "width": 600,
+        "height": 1484,
+        "baseline": 64
+      },
+      "actual": {
+        "width": 600,
+        "height": 1484,
+        "baseline": 64,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x_{it _{it}} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1484,
+        "baseline": 64
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1484,
+        "baseline": 64,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( x_{it _{it}} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1484,
+        "baseline": 64
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1484,
+        "baseline": 64,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | x_{it _{it}} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1484,
+        "baseline": 64
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1484,
+        "baseline": 64,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k ^{2}^it",
+      "size": 1100,
+      "expected": {
+        "width": 900,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 900,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( k ^{2}^it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( k ^{2}^it right)",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | k ^{2}^it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1950,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1950,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k ^{2}_it",
+      "size": 1100,
+      "expected": {
+        "width": 900,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 900,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( k ^{2}_it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( k ^{2}_it right)",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | k ^{2}_it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1950,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1950,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k ^{2}^it_it",
+      "size": 1100,
+      "expected": {
+        "width": 900,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 900,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( k ^{2}^it_it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( k ^{2}^it_it right)",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | k ^{2}^it_it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1950,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 1950,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k ^{2}_it^it",
+      "size": 1100,
+      "expected": {
+        "width": 900,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 900,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( k ^{2}_it^it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( k ^{2}_it^it right)",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | k ^{2}_it^it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1950,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1950,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k ^{2}^{it}_{it}",
+      "size": 1100,
+      "expected": {
+        "width": 900,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 900,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( k ^{2}^{it}_{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( k ^{2}^{it}_{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | k ^{2}^{it}_{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1950,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 1950,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k ^{2}_{it}^{it}",
+      "size": 1100,
+      "expected": {
+        "width": 900,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 900,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( k ^{2}_{it}^{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( k ^{2}_{it}^{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | k ^{2}_{it}^{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1950,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 1950,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k ^{2}^{it}",
+      "size": 1100,
+      "expected": {
+        "width": 900,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 900,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( k ^{2}^{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( k ^{2}^{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | k ^{2}^{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1950,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1950,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k ^{2}_{it}",
+      "size": 1100,
+      "expected": {
+        "width": 900,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 900,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( k ^{2}_{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( k ^{2}_{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | k ^{2}_{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1950,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1950,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k ^{2}^{it} it _{it} it",
+      "size": 1100,
+      "expected": {
+        "width": 900,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 900,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( k ^{2}^{it} it _{it} it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( k ^{2}^{it} it _{it} it right)",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | k ^{2}^{it} it _{it} it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1950,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 1950,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k ^{2}^{it ^{it}}",
+      "size": 1100,
+      "expected": {
+        "width": 900,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 900,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( k ^{2}^{it ^{it}} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( k ^{2}^{it ^{it}} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | k ^{2}^{it ^{it}} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1950,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 1950,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "k ^{2}_{it _{it}}",
+      "size": 1100,
+      "expected": {
+        "width": 900,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 900,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( k ^{2}_{it _{it}} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( k ^{2}_{it _{it}} right)",
+      "size": 1100,
+      "expected": {
+        "width": 1650,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 1650,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | k ^{2}_{it _{it}} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 1950,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 1950,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "2k ^{2}^it",
+      "size": 1100,
+      "expected": {
+        "width": 1425,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1425,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( 2k ^{2}^it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( 2k ^{2}^it right)",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | 2k ^{2}^it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "2k ^{2}_it",
+      "size": 1100,
+      "expected": {
+        "width": 1425,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1425,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( 2k ^{2}_it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( 2k ^{2}_it right)",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | 2k ^{2}_it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "2k ^{2}^it_it",
+      "size": 1100,
+      "expected": {
+        "width": 1425,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 1425,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( 2k ^{2}^it_it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( 2k ^{2}^it_it right)",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | 2k ^{2}^it_it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "2k ^{2}_it^it",
+      "size": 1100,
+      "expected": {
+        "width": 1425,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1425,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( 2k ^{2}_it^it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( 2k ^{2}_it^it right)",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | 2k ^{2}_it^it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "2k ^{2}^{it}_{it}",
+      "size": 1100,
+      "expected": {
+        "width": 1425,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 1425,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( 2k ^{2}^{it}_{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( 2k ^{2}^{it}_{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | 2k ^{2}^{it}_{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "2k ^{2}_{it}^{it}",
+      "size": 1100,
+      "expected": {
+        "width": 1425,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 1425,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( 2k ^{2}_{it}^{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( 2k ^{2}_{it}^{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | 2k ^{2}_{it}^{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "2k ^{2}^{it}",
+      "size": 1100,
+      "expected": {
+        "width": 1425,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1425,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( 2k ^{2}^{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( 2k ^{2}^{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | 2k ^{2}^{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "2k ^{2}_{it}",
+      "size": 1100,
+      "expected": {
+        "width": 1425,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1425,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( 2k ^{2}_{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( 2k ^{2}_{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | 2k ^{2}_{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "2k ^{2}^{it} it _{it} it",
+      "size": 1100,
+      "expected": {
+        "width": 1425,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 1425,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( 2k ^{2}^{it} it _{it} it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( 2k ^{2}^{it} it _{it} it right)",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | 2k ^{2}^{it} it _{it} it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "2k ^{2}^{it ^{it}}",
+      "size": 1100,
+      "expected": {
+        "width": 1425,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 1425,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( 2k ^{2}^{it ^{it}} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( 2k ^{2}^{it ^{it}} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | 2k ^{2}^{it ^{it}} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "2k ^{2}_{it _{it}}",
+      "size": 1100,
+      "expected": {
+        "width": 1425,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 1425,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( 2k ^{2}_{it _{it}} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( 2k ^{2}_{it _{it}} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2175,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 2175,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | 2k ^{2}_{it _{it}} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "(x-2) ^{2}^it",
+      "size": 1100,
+      "expected": {
+        "width": 3460,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 3460,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( (x-2) ^{2}^it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( (x-2) ^{2}^it right)",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | (x-2) ^{2}^it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 4510,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 4510,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "(x-2) ^{2}_it",
+      "size": 1100,
+      "expected": {
+        "width": 3460,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 3460,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( (x-2) ^{2}_it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( (x-2) ^{2}_it right)",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | (x-2) ^{2}_it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 4510,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 4510,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "(x-2) ^{2}^it_it",
+      "size": 1100,
+      "expected": {
+        "width": 3460,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 3460,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( (x-2) ^{2}^it_it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( (x-2) ^{2}^it_it right)",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | (x-2) ^{2}^it_it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 4510,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 4510,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "(x-2) ^{2}_it^it",
+      "size": 1100,
+      "expected": {
+        "width": 3460,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 3460,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( (x-2) ^{2}_it^it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( (x-2) ^{2}_it^it right)",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | (x-2) ^{2}_it^it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 4510,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 4510,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "(x-2) ^{2}^{it}_{it}",
+      "size": 1100,
+      "expected": {
+        "width": 3460,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 3460,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( (x-2) ^{2}^{it}_{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( (x-2) ^{2}^{it}_{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | (x-2) ^{2}^{it}_{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 4510,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 4510,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "(x-2) ^{2}_{it}^{it}",
+      "size": 1100,
+      "expected": {
+        "width": 3460,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 3460,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( (x-2) ^{2}_{it}^{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( (x-2) ^{2}_{it}^{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | (x-2) ^{2}_{it}^{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 4510,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 4510,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "(x-2) ^{2}^{it}",
+      "size": 1100,
+      "expected": {
+        "width": 3460,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 3460,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( (x-2) ^{2}^{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( (x-2) ^{2}^{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | (x-2) ^{2}^{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 4510,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 4510,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "(x-2) ^{2}_{it}",
+      "size": 1100,
+      "expected": {
+        "width": 3460,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 3460,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( (x-2) ^{2}_{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( (x-2) ^{2}_{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | (x-2) ^{2}_{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 4510,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 4510,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "(x-2) ^{2}^{it} it _{it} it",
+      "size": 1100,
+      "expected": {
+        "width": 3460,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 3460,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( (x-2) ^{2}^{it} it _{it} it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( (x-2) ^{2}^{it} it _{it} it right)",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | (x-2) ^{2}^{it} it _{it} it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 4510,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 4510,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "(x-2) ^{2}^{it ^{it}}",
+      "size": 1100,
+      "expected": {
+        "width": 3460,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 3460,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( (x-2) ^{2}^{it ^{it}} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( (x-2) ^{2}^{it ^{it}} right)",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | (x-2) ^{2}^{it ^{it}} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 4510,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 4510,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "(x-2) ^{2}_{it _{it}}",
+      "size": 1100,
+      "expected": {
+        "width": 3460,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 3460,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( (x-2) ^{2}_{it _{it}} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( (x-2) ^{2}_{it _{it}} right)",
+      "size": 1100,
+      "expected": {
+        "width": 4210,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 4210,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | (x-2) ^{2}_{it _{it}} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 4510,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 4510,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x RIGHT ) ^{2}^it",
+      "size": 1100,
+      "expected": {
+        "width": 1725,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1725,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( LEFT ( x RIGHT ) ^{2}^it right)",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | LEFT ( x RIGHT ) ^{2}^it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2775,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2775,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x RIGHT ) ^{2}_it",
+      "size": 1100,
+      "expected": {
+        "width": 1725,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1725,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( LEFT ( x RIGHT ) ^{2}_it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( LEFT ( x RIGHT ) ^{2}_it right)",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | LEFT ( x RIGHT ) ^{2}_it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2775,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2775,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x RIGHT ) ^{2}^it_it",
+      "size": 1100,
+      "expected": {
+        "width": 1725,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 1725,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^it_it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( LEFT ( x RIGHT ) ^{2}^it_it right)",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | LEFT ( x RIGHT ) ^{2}^it_it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2775,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2775,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x RIGHT ) ^{2}_it^it",
+      "size": 1100,
+      "expected": {
+        "width": 1725,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1725,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( LEFT ( x RIGHT ) ^{2}_it^it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( LEFT ( x RIGHT ) ^{2}_it^it right)",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | LEFT ( x RIGHT ) ^{2}_it^it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2775,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2775,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x RIGHT ) ^{2}^{it}_{it}",
+      "size": 1100,
+      "expected": {
+        "width": 1725,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 1725,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^{it}_{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( LEFT ( x RIGHT ) ^{2}^{it}_{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | LEFT ( x RIGHT ) ^{2}^{it}_{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2775,
+        "height": 1581,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2775,
+        "height": 1581,
+        "baseline": 89,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x RIGHT ) ^{2}_{it}^{it}",
+      "size": 1100,
+      "expected": {
+        "width": 1725,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 1725,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( LEFT ( x RIGHT ) ^{2}_{it}^{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( LEFT ( x RIGHT ) ^{2}_{it}^{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | LEFT ( x RIGHT ) ^{2}_{it}^{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2775,
+        "height": 1633,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 2775,
+        "height": 1633,
+        "baseline": 70,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x RIGHT ) ^{2}^{it}",
+      "size": 1100,
+      "expected": {
+        "width": 1725,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 1725,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( LEFT ( x RIGHT ) ^{2}^{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | LEFT ( x RIGHT ) ^{2}^{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2775,
+        "height": 1447,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 2775,
+        "height": 1447,
+        "baseline": 88,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x RIGHT ) ^{2}_{it}",
+      "size": 1100,
+      "expected": {
+        "width": 1725,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 1725,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( LEFT ( x RIGHT ) ^{2}_{it} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( LEFT ( x RIGHT ) ^{2}_{it} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | LEFT ( x RIGHT ) ^{2}_{it} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2775,
+        "height": 1537,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 2775,
+        "height": 1537,
+        "baseline": 74,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x RIGHT ) ^{2}^{it} it _{it} it",
+      "size": 1100,
+      "expected": {
+        "width": 1725,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 1725,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^{it} it _{it} it RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( LEFT ( x RIGHT ) ^{2}^{it} it _{it} it right)",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | LEFT ( x RIGHT ) ^{2}^{it} it _{it} it RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2775,
+        "height": 1632,
+        "baseline": 78
+      },
+      "actual": {
+        "width": 2775,
+        "height": 1632,
+        "baseline": 78,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x RIGHT ) ^{2}^{it ^{it}}",
+      "size": 1100,
+      "expected": {
+        "width": 1725,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 1725,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^{it ^{it}} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( LEFT ( x RIGHT ) ^{2}^{it ^{it}} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | LEFT ( x RIGHT ) ^{2}^{it ^{it}} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2775,
+        "height": 1599,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 2775,
+        "height": 1599,
+        "baseline": 89,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( x RIGHT ) ^{2}_{it _{it}}",
+      "size": 1100,
+      "expected": {
+        "width": 1725,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 1725,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 4
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( LEFT ( x RIGHT ) ^{2}_{it _{it}} RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "left( LEFT ( x RIGHT ) ^{2}_{it _{it}} right)",
+      "size": 1100,
+      "expected": {
+        "width": 2475,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 2475,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT | LEFT ( x RIGHT ) ^{2}_{it _{it}} RIGHT |",
+      "size": 1100,
+      "expected": {
+        "width": 2775,
+        "height": 1672,
+        "baseline": 68
+      },
+      "actual": {
+        "width": 2775,
+        "height": 1672,
+        "baseline": 68,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "①",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a①b",
+      "size": 1100,
+      "expected": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``①``}",
+      "size": 1100,
+      "expected": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "①~①",
+      "size": 1100,
+      "expected": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{①}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "②",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a②b",
+      "size": 1100,
+      "expected": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``②``}",
+      "size": 1100,
+      "expected": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "②~②",
+      "size": 1100,
+      "expected": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{②}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "⑤",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a⑤b",
+      "size": 1100,
+      "expected": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``⑤``}",
+      "size": 1100,
+      "expected": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "⑤~⑤",
+      "size": 1100,
+      "expected": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{⑤}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "⑩",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a⑩b",
+      "size": 1100,
+      "expected": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``⑩``}",
+      "size": 1100,
+      "expected": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "⑩~⑩",
+      "size": 1100,
+      "expected": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{⑩}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "㉠",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a㉠b",
+      "size": 1100,
+      "expected": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``㉠``}",
+      "size": 1100,
+      "expected": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "㉠~㉠",
+      "size": 1100,
+      "expected": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{㉠}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "㉮",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a㉮b",
+      "size": 1100,
+      "expected": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``㉮``}",
+      "size": 1100,
+      "expected": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "㉮~㉮",
+      "size": 1100,
+      "expected": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{㉮}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "ⓐ",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "aⓐb",
+      "size": 1100,
+      "expected": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``ⓐ``}",
+      "size": 1100,
+      "expected": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "ⓐ~ⓐ",
+      "size": 1100,
+      "expected": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{ⓐ}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "□",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a□b",
+      "size": 1100,
+      "expected": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``□``}",
+      "size": 1100,
+      "expected": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "□~□",
+      "size": 1100,
+      "expected": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{□}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "△",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a△b",
+      "size": 1100,
+      "expected": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``△``}",
+      "size": 1100,
+      "expected": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "△~△",
+      "size": 1100,
+      "expected": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{△}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "○",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a○b",
+      "size": 1100,
+      "expected": {
+        "width": 2333,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2333,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``○``}",
+      "size": 1100,
+      "expected": {
+        "width": 2011,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 2011,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "○~○",
+      "size": 1100,
+      "expected": {
+        "width": 2958,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2958,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{○}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "☆",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a☆b",
+      "size": 1100,
+      "expected": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``☆``}",
+      "size": 1100,
+      "expected": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "☆~☆",
+      "size": 1100,
+      "expected": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{☆}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "※",
+      "size": 1100,
+      "expected": {
+        "width": 825,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 825,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a※b",
+      "size": 1100,
+      "expected": {
+        "width": 1800,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1800,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``※``}",
+      "size": 1100,
+      "expected": {
+        "width": 1478,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1478,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "※~※",
+      "size": 1100,
+      "expected": {
+        "width": 2200,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2200,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{※}",
+      "size": 1100,
+      "expected": {
+        "width": 1200,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1200,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "◎",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "a◎b",
+      "size": 1100,
+      "expected": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2025,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "box{``◎``}",
+      "size": 1100,
+      "expected": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77
+      },
+      "actual": {
+        "width": 1703,
+        "height": 1350,
+        "baseline": 77,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "◎~◎",
+      "size": 1100,
+      "expected": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2650,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "x ^{◎}",
+      "size": 1100,
+      "expected": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1350,
+        "height": 1313,
+        "baseline": 87,
+        "glyphs": 2
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "g{circ}f",
+      "size": 1100,
+      "expected": {
+        "width": 2483,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2483,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "LEFT ( g{circ}f RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 3233,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 3233,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "g circ f",
+      "size": 1100,
+      "expected": {
+        "width": 2483,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2483,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "{circ}",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 1
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "f{circ}g{circ}h",
+      "size": 1100,
+      "expected": {
+        "width": 4441,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 4441,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 5
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "g`{circ}`f",
+      "size": 1100,
+      "expected": {
+        "width": 2757,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2757,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "lim _{x` rarrow `- INF}",
+      "size": 1100,
+      "expected": {
+        "width": 2946,
+        "height": 2100,
+        "baseline": 51
+      },
+      "actual": {
+        "width": 2946,
+        "height": 2100,
+        "baseline": 51,
+        "glyphs": 7
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "lim _{x -> -INF} f",
+      "size": 1100,
+      "expected": {
+        "width": 3360,
+        "height": 2100,
+        "baseline": 51
+      },
+      "actual": {
+        "width": 3360,
+        "height": 2100,
+        "baseline": 51,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "lim _{x` rarrow  `- INF } {sin`f` LEFT ( x RIGHT )}",
+      "size": 1100,
+      "expected": {
+        "width": 6595,
+        "height": 2100,
+        "baseline": 51
+      },
+      "actual": {
+        "width": 6595,
+        "height": 2100,
+        "baseline": 51,
+        "glyphs": 14
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "lim _{x rarrow 0-} x",
+      "size": 1100,
+      "expected": {
+        "width": 2880,
+        "height": 2100,
+        "baseline": 51
+      },
+      "actual": {
+        "width": 2880,
+        "height": 2100,
+        "baseline": 51,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "lim _{x rarrow -inf} x",
+      "size": 1100,
+      "expected": {
+        "width": 3360,
+        "height": 2100,
+        "baseline": 51
+      },
+      "actual": {
+        "width": 3360,
+        "height": 2100,
+        "baseline": 51,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "lim _{x` rarrow`inf} x",
+      "size": 1100,
+      "expected": {
+        "width": 2736,
+        "height": 2100,
+        "baseline": 51
+      },
+      "actual": {
+        "width": 2736,
+        "height": 2100,
+        "baseline": 51,
+        "glyphs": 7
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "root{b^2 -left( { b} over { 2} } right)^2",
+      "size": 1100,
+      "expected": {
+        "width": 5486,
+        "height": 2924,
+        "baseline": 70
+      },
+      "actual": {
+        "width": 5486,
+        "height": 2924,
+        "baseline": 70,
+        "glyphs": 11
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "root{b^2} -a",
+      "size": 1100,
+      "expected": {
+        "width": 3566,
+        "height": 1478,
+        "baseline": 88
+      },
+      "actual": {
+        "width": 3566,
+        "height": 1478,
+        "baseline": 88,
+        "glyphs": 6
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "sqrt{a - left( b right)^2}",
+      "size": 1100,
+      "expected": {
+        "width": 4470,
+        "height": 1473,
+        "baseline": 89
+      },
+      "actual": {
+        "width": 4470,
+        "height": 1473,
+        "baseline": 89,
+        "glyphs": 8
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "root{a}}",
+      "size": 1100,
+      "expected": {
+        "width": 1762,
+        "height": 1281,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1762,
+        "height": 1281,
+        "baseline": 87,
+        "glyphs": 3
+      },
+      "matched": true
+    },
+    {
+      "source": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "section": "Contents/section0.xml",
+      "script": "{a+b}} c",
+      "size": 1100,
+      "expected": {
+        "width": 2558,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2558,
+        "height": 1125,
+        "baseline": 85,
+        "glyphs": 4
+      },
+      "matched": true
+    }
+  ]
+}

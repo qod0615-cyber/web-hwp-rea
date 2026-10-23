@@ -1,0 +1,1106 @@
+[
+  {
+    "function_va": "0x10005610",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      3414,
+      3438
+    ],
+    "c_file": "c/10005610.c",
+    "asm_file": "asm/10005610.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100057c0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      3522,
+      3625
+    ],
+    "c_file": "c/100057c0.c",
+    "asm_file": "asm/100057c0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1005e970",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      80700,
+      81014
+    ],
+    "c_file": "c/1005e970.c",
+    "asm_file": "asm/1005e970.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100844d0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      112741,
+      112773
+    ],
+    "c_file": "c/100844d0.c",
+    "asm_file": "asm/100844d0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10084560",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      112773,
+      112802
+    ],
+    "c_file": "c/10084560.c",
+    "asm_file": "asm/10084560.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100845e0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      112802,
+      112818
+    ],
+    "c_file": "c/100845e0.c",
+    "asm_file": "asm/100845e0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10084610",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      112818,
+      112865
+    ],
+    "c_file": "c/10084610.c",
+    "asm_file": "asm/10084610.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100846d0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      112865,
+      112893
+    ],
+    "c_file": "c/100846d0.c",
+    "asm_file": "asm/100846d0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10084770",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      112893,
+      112918
+    ],
+    "c_file": "c/10084770.c",
+    "asm_file": "asm/10084770.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10084820",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      112918,
+      112989
+    ],
+    "c_file": "c/10084820.c",
+    "asm_file": "asm/10084820.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10084930",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      112989,
+      113133
+    ],
+    "c_file": "c/10084930.c",
+    "asm_file": "asm/10084930.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10084f60",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      113259,
+      113361
+    ],
+    "c_file": "c/10084f60.c",
+    "asm_file": "asm/10084f60.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100852e0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      113432,
+      113493
+    ],
+    "c_file": "c/100852e0.c",
+    "asm_file": "asm/100852e0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10086e10",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      114941,
+      114972
+    ],
+    "c_file": "c/10086e10.c",
+    "asm_file": "asm/10086e10.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10086e90",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      114972,
+      115080
+    ],
+    "c_file": "c/10086e90.c",
+    "asm_file": "asm/10086e90.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100883f0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      116163,
+      116219
+    ],
+    "c_file": "c/100883f0.c",
+    "asm_file": "asm/100883f0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008a470",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      117621,
+      117810
+    ],
+    "c_file": "c/1008a470.c",
+    "asm_file": "asm/1008a470.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008aa20",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      117856,
+      118009
+    ],
+    "c_file": "c/1008aa20.c",
+    "asm_file": "asm/1008aa20.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008afa0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      118164,
+      118372
+    ],
+    "c_file": "c/1008afa0.c",
+    "asm_file": "asm/1008afa0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008b480",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      118372,
+      118457
+    ],
+    "c_file": "c/1008b480.c",
+    "asm_file": "asm/1008b480.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008ba00",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      118665,
+      118789
+    ],
+    "c_file": "c/1008ba00.c",
+    "asm_file": "asm/1008ba00.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008c350",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      119122,
+      119204
+    ],
+    "c_file": "c/1008c350.c",
+    "asm_file": "asm/1008c350.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008c580",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      119204,
+      119303
+    ],
+    "c_file": "c/1008c580.c",
+    "asm_file": "asm/1008c580.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008cab0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      119460,
+      119554
+    ],
+    "c_file": "c/1008cab0.c",
+    "asm_file": "asm/1008cab0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008cd10",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      119554,
+      119612
+    ],
+    "c_file": "c/1008cd10.c",
+    "asm_file": "asm/1008cd10.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008d0b0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      119732,
+      119842
+    ],
+    "c_file": "c/1008d0b0.c",
+    "asm_file": "asm/1008d0b0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008d380",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      119842,
+      119909
+    ],
+    "c_file": "c/1008d380.c",
+    "asm_file": "asm/1008d380.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008d730",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      120029,
+      120124
+    ],
+    "c_file": "c/1008d730.c",
+    "asm_file": "asm/1008d730.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008d980",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      120124,
+      120180
+    ],
+    "c_file": "c/1008d980.c",
+    "asm_file": "asm/1008d980.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008dfd0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      120422,
+      120557
+    ],
+    "c_file": "c/1008dfd0.c",
+    "asm_file": "asm/1008dfd0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008e270",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      120557,
+      120795
+    ],
+    "c_file": "c/1008e270.c",
+    "asm_file": "asm/1008e270.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008eaa0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      121021,
+      121127
+    ],
+    "c_file": "c/1008eaa0.c",
+    "asm_file": "asm/1008eaa0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008ee80",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      121181,
+      121299
+    ],
+    "c_file": "c/1008ee80.c",
+    "asm_file": "asm/1008ee80.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008f2e0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      121434,
+      121500
+    ],
+    "c_file": "c/1008f2e0.c",
+    "asm_file": "asm/1008f2e0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008f440",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      121500,
+      121597
+    ],
+    "c_file": "c/1008f440.c",
+    "asm_file": "asm/1008f440.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008f650",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      121597,
+      121671
+    ],
+    "c_file": "c/1008f650.c",
+    "asm_file": "asm/1008f650.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1008fee0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      121972,
+      122161
+    ],
+    "c_file": "c/1008fee0.c",
+    "asm_file": "asm/1008fee0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10090cc0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      122600,
+      122704
+    ],
+    "c_file": "c/10090cc0.c",
+    "asm_file": "asm/10090cc0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10090ff0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      122704,
+      122792
+    ],
+    "c_file": "c/10090ff0.c",
+    "asm_file": "asm/10090ff0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10091bf0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      123292,
+      123416
+    ],
+    "c_file": "c/10091bf0.c",
+    "asm_file": "asm/10091bf0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100923e0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      123705,
+      123823
+    ],
+    "c_file": "c/100923e0.c",
+    "asm_file": "asm/100923e0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10092910",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      123982,
+      124081
+    ],
+    "c_file": "c/10092910.c",
+    "asm_file": "asm/10092910.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10092b40",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      124081,
+      124145
+    ],
+    "c_file": "c/10092b40.c",
+    "asm_file": "asm/10092b40.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10093d10",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      124943,
+      125108
+    ],
+    "c_file": "c/10093d10.c",
+    "asm_file": "asm/10093d10.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10094430",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      125341,
+      125472
+    ],
+    "c_file": "c/10094430.c",
+    "asm_file": "asm/10094430.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10094720",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      125472,
+      125655
+    ],
+    "c_file": "c/10094720.c",
+    "asm_file": "asm/10094720.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10094ac0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      125655,
+      125703
+    ],
+    "c_file": "c/10094ac0.c",
+    "asm_file": "asm/10094ac0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10094b70",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      125703,
+      125771
+    ],
+    "c_file": "c/10094b70.c",
+    "asm_file": "asm/10094b70.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x10095450",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      126185,
+      126331
+    ],
+    "c_file": "c/10095450.c",
+    "asm_file": "asm/10095450.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100964c0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      127074,
+      127246
+    ],
+    "c_file": "c/100964c0.c",
+    "asm_file": "asm/100964c0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009b3f0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      130890,
+      130957
+    ],
+    "c_file": "c/1009b3f0.c",
+    "asm_file": "asm/1009b3f0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009b580",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      130957,
+      131028
+    ],
+    "c_file": "c/1009b580.c",
+    "asm_file": "asm/1009b580.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009b6d0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      131028,
+      131115
+    ],
+    "c_file": "c/1009b6d0.c",
+    "asm_file": "asm/1009b6d0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009b960",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      131176,
+      131243
+    ],
+    "c_file": "c/1009b960.c",
+    "asm_file": "asm/1009b960.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009baf0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      131243,
+      131318
+    ],
+    "c_file": "c/1009baf0.c",
+    "asm_file": "asm/1009baf0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009bc40",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      131318,
+      131388
+    ],
+    "c_file": "c/1009bc40.c",
+    "asm_file": "asm/1009bc40.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009bed0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      131449,
+      131554
+    ],
+    "c_file": "c/1009bed0.c",
+    "asm_file": "asm/1009bed0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009c230",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      131615,
+      131703
+    ],
+    "c_file": "c/1009c230.c",
+    "asm_file": "asm/1009c230.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009c450",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      131703,
+      131776
+    ],
+    "c_file": "c/1009c450.c",
+    "asm_file": "asm/1009c450.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009c6a0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      131837,
+      131955
+    ],
+    "c_file": "c/1009c6a0.c",
+    "asm_file": "asm/1009c6a0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009c970",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      131955,
+      132033
+    ],
+    "c_file": "c/1009c970.c",
+    "asm_file": "asm/1009c970.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009cbd0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      132094,
+      132199
+    ],
+    "c_file": "c/1009cbd0.c",
+    "asm_file": "asm/1009cbd0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009ce10",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      132199,
+      132270
+    ],
+    "c_file": "c/1009ce10.c",
+    "asm_file": "asm/1009ce10.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009d050",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      132331,
+      132441
+    ],
+    "c_file": "c/1009d050.c",
+    "asm_file": "asm/1009d050.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009d2a0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      132441,
+      132512
+    ],
+    "c_file": "c/1009d2a0.c",
+    "asm_file": "asm/1009d2a0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009d4e0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      132573,
+      132683
+    ],
+    "c_file": "c/1009d4e0.c",
+    "asm_file": "asm/1009d4e0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009d730",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      132683,
+      132754
+    ],
+    "c_file": "c/1009d730.c",
+    "asm_file": "asm/1009d730.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009d970",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      132815,
+      132925
+    ],
+    "c_file": "c/1009d970.c",
+    "asm_file": "asm/1009d970.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009dbc0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      132925,
+      132996
+    ],
+    "c_file": "c/1009dbc0.c",
+    "asm_file": "asm/1009dbc0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009de00",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      133057,
+      133124
+    ],
+    "c_file": "c/1009de00.c",
+    "asm_file": "asm/1009de00.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009df90",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      133124,
+      133195
+    ],
+    "c_file": "c/1009df90.c",
+    "asm_file": "asm/1009df90.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009e0d0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      133195,
+      133271
+    ],
+    "c_file": "c/1009e0d0.c",
+    "asm_file": "asm/1009e0d0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009e340",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      133332,
+      133399
+    ],
+    "c_file": "c/1009e340.c",
+    "asm_file": "asm/1009e340.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009e4d0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      133399,
+      133470
+    ],
+    "c_file": "c/1009e4d0.c",
+    "asm_file": "asm/1009e4d0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009e610",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      133470,
+      133541
+    ],
+    "c_file": "c/1009e610.c",
+    "asm_file": "asm/1009e610.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009e870",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      133602,
+      133669
+    ],
+    "c_file": "c/1009e870.c",
+    "asm_file": "asm/1009e870.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009ea00",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      133669,
+      133740
+    ],
+    "c_file": "c/1009ea00.c",
+    "asm_file": "asm/1009ea00.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009eb50",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      133740,
+      133808
+    ],
+    "c_file": "c/1009eb50.c",
+    "asm_file": "asm/1009eb50.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009edc0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      133869,
+      133936
+    ],
+    "c_file": "c/1009edc0.c",
+    "asm_file": "asm/1009edc0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009ef50",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      133936,
+      134007
+    ],
+    "c_file": "c/1009ef50.c",
+    "asm_file": "asm/1009ef50.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009f0a0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      134007,
+      134078
+    ],
+    "c_file": "c/1009f0a0.c",
+    "asm_file": "asm/1009f0a0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009f310",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      134138,
+      134204
+    ],
+    "c_file": "c/1009f310.c",
+    "asm_file": "asm/1009f310.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009f720",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      134343,
+      134402
+    ],
+    "c_file": "c/1009f720.c",
+    "asm_file": "asm/1009f720.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009f9d0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      134489,
+      134548
+    ],
+    "c_file": "c/1009f9d0.c",
+    "asm_file": "asm/1009f9d0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x1009fda0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      134689,
+      134763
+    ],
+    "c_file": "c/1009fda0.c",
+    "asm_file": "asm/1009fda0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100a03d0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      134979,
+      135060
+    ],
+    "c_file": "c/100a03d0.c",
+    "asm_file": "asm/100a03d0.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100a0590",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      135060,
+      135159
+    ],
+    "c_file": "c/100a0590.c",
+    "asm_file": "asm/100a0590.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100a0790",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      135159,
+      135268
+    ],
+    "c_file": "c/100a0790.c",
+    "asm_file": "asm/100a0790.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100a0d20",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      135397,
+      135487
+    ],
+    "c_file": "c/100a0d20.c",
+    "asm_file": "asm/100a0d20.asm",
+    "explicit_848_reference": false,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100a1100",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      135605,
+      135717
+    ],
+    "c_file": "c/100a1100.c",
+    "asm_file": "asm/100a1100.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100a16a0",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      135824,
+      135905
+    ],
+    "c_file": "c/100a16a0.c",
+    "asm_file": "asm/100a16a0.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  },
+  {
+    "function_va": "0x100a1830",
+    "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "original_lines": [
+      135905,
+      136031
+    ],
+    "c_file": "c/100a1830.c",
+    "asm_file": "asm/100a1830.asm",
+    "explicit_848_reference": true,
+    "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+  }
+]

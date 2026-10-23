@@ -1,0 +1,152 @@
+{
+  "status": "read_only_original_source_reference_ready",
+  "created_at": "2026-10-22T22:05:26.813080+09:00",
+  "private_validation_only": true,
+  "public_distribution": false,
+  "sources_executed": false,
+  "originals_modified": false,
+  "files": [
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\eq8.py",
+      "archive_path": "tools/eq8.py",
+      "bytes": 71180,
+      "original_sha256": "569c9f9756ad60974e268833d27d0362e5a289798173733a82e400b140b57aa3",
+      "copy_sha256": "569c9f9756ad60974e268833d27d0362e5a289798173733a82e400b140b57aa3",
+      "original_modified": false,
+      "executed": false
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\sim.py",
+      "archive_path": "tools/sim.py",
+      "bytes": 6742,
+      "original_sha256": "9aa363b5a349b0fd4dbc36cb4ce52c61ab3f4c614a5bb4b8535009558efa37ff",
+      "copy_sha256": "9aa363b5a349b0fd4dbc36cb4ce52c61ab3f4c614a5bb4b8535009558efa37ff",
+      "original_modified": false,
+      "executed": false
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\gdiw14.py",
+      "archive_path": "tools/gdiw14.py",
+      "bytes": 1345,
+      "original_sha256": "ab3a49abbe66bda88a2c2704e34791237536c3823470666677bb8fd8fa58113e",
+      "copy_sha256": "ab3a49abbe66bda88a2c2704e34791237536c3823470666677bb8fd8fa58113e",
+      "original_modified": false,
+      "executed": false
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\hyhwpeq_metrics.json",
+      "archive_path": "tools/hyhwpeq_metrics.json",
+      "bytes": 210386,
+      "original_sha256": "bf51ceb50c275853f51a3b7535260d4839c2fac78122d3b42c0d2f2d50b168c2",
+      "copy_sha256": "bf51ceb50c275853f51a3b7535260d4839c2fac78122d3b42c0d2f2d50b168c2",
+      "original_modified": false,
+      "executed": false
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\kwtab.json",
+      "archive_path": "tools/kwtab.json",
+      "bytes": 5887,
+      "original_sha256": "05fba73324a91a0f2ad69cb58211ddd887c83826eaef224b9d3bbd857eac6746",
+      "copy_sha256": "05fba73324a91a0f2ad69cb58211ddd887c83826eaef224b9d3bbd857eac6746",
+      "original_modified": false,
+      "executed": false
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\tools\\kwtables9.json",
+      "archive_path": "tools/kwtables9.json",
+      "bytes": 11532,
+      "original_sha256": "030e86e24463b06e059fb804605b65e49a3f113254fd34318251ccf7e8b03546",
+      "copy_sha256": "030e86e24463b06e059fb804605b65e49a3f113254fd34318251ccf7e8b03546",
+      "original_modified": false,
+      "executed": false
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0043_20261019_051145\\build_meta.json",
+      "archive_path": "native-sample-job0043/build_meta.json",
+      "bytes": 523,
+      "original_sha256": "6f12c2975d1304ce9cad89efecd219d457ad8dd14095e5d7caa6c6eb8a5c1d37",
+      "copy_sha256": "6f12c2975d1304ce9cad89efecd219d457ad8dd14095e5d7caa6c6eb8a5c1d37",
+      "original_modified": false,
+      "executed": false
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0043_20261019_051145\\수식목록.json",
+      "archive_path": "native-sample-job0043/수식목록.json",
+      "bytes": 1704620,
+      "original_sha256": "b8ade14a92a264f1cfe29a0b545414c32597e1e0d28ffb341fe0c3f2c21b39e0",
+      "copy_sha256": "b8ade14a92a264f1cfe29a0b545414c32597e1e0d28ffb341fe0c3f2c21b39e0",
+      "original_modified": false,
+      "executed": false
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0043_20261019_051145\\build_doc.py",
+      "archive_path": "native-sample-job0043/build_doc.py",
+      "bytes": 5360,
+      "original_sha256": "12f8dd89553e136499c6f5cb38afc8f79e6ee1c2e508425d1a2645b96f8c0fc0",
+      "copy_sha256": "12f8dd89553e136499c6f5cb38afc8f79e6ee1c2e508425d1a2645b96f8c0fc0",
+      "original_modified": false,
+      "executed": false
+    }
+  ],
+  "direct_python_imports": {
+    "eq8.py": [
+      "fontTools.ttLib",
+      "gdiw14",
+      "json",
+      "os",
+      "pefile",
+      "re",
+      "sim",
+      "struct",
+      "sys"
+    ],
+    "sim.py": [
+      "glob",
+      "json",
+      "os",
+      "re",
+      "sys"
+    ],
+    "gdiw14.py": [
+      "ctypes",
+      "sys"
+    ]
+  },
+  "runtime_data": [
+    "sim.py loads hyhwpeq_metrics.json and kwtab.json",
+    "eq8.py lazily loads kwtables9.json"
+  ],
+  "external_dependencies": [
+    "Windows gdi32/user32 and installed HYhwpEQ/Haansoft Batang fonts",
+    "fontTools.ttLib optional Batang font lookup",
+    "pefile optional HwpPlugin.dll keyword mapping; fixed virtual addresses are version-specific"
+  ],
+  "validation_boundary": "Original Python code and historical native metadata are reference material only. They do not prove browser TypeScript parity. Linux reports current TS exact width/height/baseline match 6/24 for actual job0043 fixture. No Python validation was executed here.",
+  "fixture_source": {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\existing-native-generated-job-0043.hwpx",
+    "source": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0043_20261019_051145\\결과_2.hwpx",
+    "bytes": 34835,
+    "sha256": "395c5b17fb160bce439f55bb3a6c8db055476a8a056d9d14adf36d13ae5e6ca6",
+    "provenance": "Existing native HWP automation validation output under generated job directory; copied read-only without UI/COM",
+    "generation_tool": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\도구_한글자동시험\\build_doc.py",
+    "generation_tool_sha256": "e8472d074d6152b2daab6bf57c90848e0045ace0132d00da0aa6348ba9c62737",
+    "signature": "504b0304",
+    "entries": [
+      "mimetype",
+      "version.xml",
+      "Contents/header.xml",
+      "Contents/section0.xml",
+      "Preview/PrvText.txt",
+      "Scripts/headerScripts.js",
+      "Scripts/sourceScripts.js",
+      "settings.xml",
+      "Preview/PrvImage.png",
+      "META-INF/container.rdf",
+      "Contents/content.hpf",
+      "META-INF/container.xml",
+      "META-INF/manifest.xml"
+    ],
+    "native_reopen_this_session": "not_yet_performed"
+  },
+  "new_com_generation": "stopped_by_user_after_four_preserved_reports; no additional COM or UI requested"
+}

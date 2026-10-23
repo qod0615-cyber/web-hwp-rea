@@ -1,0 +1,224 @@
+{
+  "created_at": "2026-10-22T23:35:38.559305+00:00",
+  "status": "requested_document_variants_not_found_native_reference_only",
+  "copied_hwpx_count": 1,
+  "qualifying_rich_table_multisection_or_blank_count": 0,
+  "scan_file_count": 225,
+  "feature_counts": {
+    "table": 0,
+    "multiple_sections": 0,
+    "empty_document": 0,
+    "applied_bold": 0,
+    "applied_color": 0,
+    "multiple_applied_text_sizes": 0
+  },
+  "missing": [
+    "native table document",
+    "native multiple-section document",
+    "native blank document",
+    "nonempty text runs with bold/color/multiple text sizes"
+  ],
+  "files": [
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\결과.hwpx",
+      "bytes": 39234,
+      "sha256": "9a4596bd5d8e30a7a55e03790cb8dd2e86684332eb9465e397f048c692b3c30b",
+      "section_count": 1,
+      "sections": [
+        "Contents/section0.xml"
+      ],
+      "table_count": 0,
+      "equation_count": 314,
+      "text_character_count": 1904,
+      "charPr": [
+        {
+          "attributes": {
+            "id": "0",
+            "height": "1000",
+            "textColor": "#000000",
+            "shadeColor": "none",
+            "useFontSpace": "0",
+            "useKerning": "0",
+            "symMark": "NONE",
+            "borderFillIDRef": "2"
+          },
+          "xml": "<ns0:charPr xmlns:ns0=\"http://www.hancom.co.kr/hwpml/2011/head\" id=\"0\" height=\"1000\" textColor=\"#000000\" shadeColor=\"none\" useFontSpace=\"0\" useKerning=\"0\" symMark=\"NONE\" borderFillIDRef=\"2\"><ns0:fontRef hangul=\"1\" latin=\"1\" hanja=\"1\" japanese=\"1\" other=\"1\" symbol=\"1\" user=\"1\" /><ns0:ratio hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:spacing hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:relSz hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:offset hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:underline type=\"NONE\" shape=\"SOLID\" color=\"#000000\" /><ns0:strikeout shape=\"NONE\" color=\"#000000\" /><ns0:outline type=\"NONE\" /><ns0:shadow type=\"NONE\" color=\"#C0C0C0\" offsetX=\"10\" offsetY=\"10\" /></ns0:charPr>",
+          "id": "0",
+          "height": "1000",
+          "color": "#000000",
+          "bold": false,
+          "used_by_nonempty_text_run": true
+        },
+        {
+          "attributes": {
+            "id": "1",
+            "height": "1000",
+            "textColor": "#000000",
+            "shadeColor": "none",
+            "useFontSpace": "0",
+            "useKerning": "0",
+            "symMark": "NONE",
+            "borderFillIDRef": "2"
+          },
+          "xml": "<ns0:charPr xmlns:ns0=\"http://www.hancom.co.kr/hwpml/2011/head\" id=\"1\" height=\"1000\" textColor=\"#000000\" shadeColor=\"none\" useFontSpace=\"0\" useKerning=\"0\" symMark=\"NONE\" borderFillIDRef=\"2\"><ns0:fontRef hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:ratio hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:spacing hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:relSz hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:offset hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:underline type=\"NONE\" shape=\"SOLID\" color=\"#000000\" /><ns0:strikeout shape=\"NONE\" color=\"#000000\" /><ns0:outline type=\"NONE\" /><ns0:shadow type=\"NONE\" color=\"#C0C0C0\" offsetX=\"10\" offsetY=\"10\" /></ns0:charPr>",
+          "id": "1",
+          "height": "1000",
+          "color": "#000000",
+          "bold": false,
+          "used_by_nonempty_text_run": false
+        },
+        {
+          "attributes": {
+            "id": "2",
+            "height": "900",
+            "textColor": "#000000",
+            "shadeColor": "none",
+            "useFontSpace": "0",
+            "useKerning": "0",
+            "symMark": "NONE",
+            "borderFillIDRef": "2"
+          },
+          "xml": "<ns0:charPr xmlns:ns0=\"http://www.hancom.co.kr/hwpml/2011/head\" id=\"2\" height=\"900\" textColor=\"#000000\" shadeColor=\"none\" useFontSpace=\"0\" useKerning=\"0\" symMark=\"NONE\" borderFillIDRef=\"2\"><ns0:fontRef hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:ratio hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:spacing hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:relSz hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:offset hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:underline type=\"NONE\" shape=\"SOLID\" color=\"#000000\" /><ns0:strikeout shape=\"NONE\" color=\"#000000\" /><ns0:outline type=\"NONE\" /><ns0:shadow type=\"NONE\" color=\"#C0C0C0\" offsetX=\"10\" offsetY=\"10\" /></ns0:charPr>",
+          "id": "2",
+          "height": "900",
+          "color": "#000000",
+          "bold": false,
+          "used_by_nonempty_text_run": false
+        },
+        {
+          "attributes": {
+            "id": "3",
+            "height": "900",
+            "textColor": "#000000",
+            "shadeColor": "none",
+            "useFontSpace": "0",
+            "useKerning": "0",
+            "symMark": "NONE",
+            "borderFillIDRef": "2"
+          },
+          "xml": "<ns0:charPr xmlns:ns0=\"http://www.hancom.co.kr/hwpml/2011/head\" id=\"3\" height=\"900\" textColor=\"#000000\" shadeColor=\"none\" useFontSpace=\"0\" useKerning=\"0\" symMark=\"NONE\" borderFillIDRef=\"2\"><ns0:fontRef hangul=\"1\" latin=\"1\" hanja=\"1\" japanese=\"1\" other=\"1\" symbol=\"1\" user=\"1\" /><ns0:ratio hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:spacing hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:relSz hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:offset hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:underline type=\"NONE\" shape=\"SOLID\" color=\"#000000\" /><ns0:strikeout shape=\"NONE\" color=\"#000000\" /><ns0:outline type=\"NONE\" /><ns0:shadow type=\"NONE\" color=\"#C0C0C0\" offsetX=\"10\" offsetY=\"10\" /></ns0:charPr>",
+          "id": "3",
+          "height": "900",
+          "color": "#000000",
+          "bold": false,
+          "used_by_nonempty_text_run": false
+        },
+        {
+          "attributes": {
+            "id": "4",
+            "height": "900",
+            "textColor": "#000000",
+            "shadeColor": "none",
+            "useFontSpace": "0",
+            "useKerning": "0",
+            "symMark": "NONE",
+            "borderFillIDRef": "2"
+          },
+          "xml": "<ns0:charPr xmlns:ns0=\"http://www.hancom.co.kr/hwpml/2011/head\" id=\"4\" height=\"900\" textColor=\"#000000\" shadeColor=\"none\" useFontSpace=\"0\" useKerning=\"0\" symMark=\"NONE\" borderFillIDRef=\"2\"><ns0:fontRef hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:ratio hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:spacing hangul=\"-5\" latin=\"-5\" hanja=\"-5\" japanese=\"-5\" other=\"-5\" symbol=\"-5\" user=\"-5\" /><ns0:relSz hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:offset hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:underline type=\"NONE\" shape=\"SOLID\" color=\"#000000\" /><ns0:strikeout shape=\"NONE\" color=\"#000000\" /><ns0:outline type=\"NONE\" /><ns0:shadow type=\"NONE\" color=\"#C0C0C0\" offsetX=\"10\" offsetY=\"10\" /></ns0:charPr>",
+          "id": "4",
+          "height": "900",
+          "color": "#000000",
+          "bold": false,
+          "used_by_nonempty_text_run": false
+        },
+        {
+          "attributes": {
+            "id": "5",
+            "height": "1600",
+            "textColor": "#2E74B5",
+            "shadeColor": "none",
+            "useFontSpace": "0",
+            "useKerning": "0",
+            "symMark": "NONE",
+            "borderFillIDRef": "2"
+          },
+          "xml": "<ns0:charPr xmlns:ns0=\"http://www.hancom.co.kr/hwpml/2011/head\" id=\"5\" height=\"1600\" textColor=\"#2E74B5\" shadeColor=\"none\" useFontSpace=\"0\" useKerning=\"0\" symMark=\"NONE\" borderFillIDRef=\"2\"><ns0:fontRef hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:ratio hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:spacing hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:relSz hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:offset hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:underline type=\"NONE\" shape=\"SOLID\" color=\"#000000\" /><ns0:strikeout shape=\"NONE\" color=\"#000000\" /><ns0:outline type=\"NONE\" /><ns0:shadow type=\"NONE\" color=\"#C0C0C0\" offsetX=\"10\" offsetY=\"10\" /></ns0:charPr>",
+          "id": "5",
+          "height": "1600",
+          "color": "#2E74B5",
+          "bold": false,
+          "used_by_nonempty_text_run": false
+        },
+        {
+          "attributes": {
+            "id": "6",
+            "height": "1100",
+            "textColor": "#000000",
+            "shadeColor": "none",
+            "useFontSpace": "0",
+            "useKerning": "0",
+            "symMark": "NONE",
+            "borderFillIDRef": "2"
+          },
+          "xml": "<ns0:charPr xmlns:ns0=\"http://www.hancom.co.kr/hwpml/2011/head\" id=\"6\" height=\"1100\" textColor=\"#000000\" shadeColor=\"none\" useFontSpace=\"0\" useKerning=\"0\" symMark=\"NONE\" borderFillIDRef=\"2\"><ns0:fontRef hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:ratio hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:spacing hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:relSz hangul=\"100\" latin=\"100\" hanja=\"100\" japanese=\"100\" other=\"100\" symbol=\"100\" user=\"100\" /><ns0:offset hangul=\"0\" latin=\"0\" hanja=\"0\" japanese=\"0\" other=\"0\" symbol=\"0\" user=\"0\" /><ns0:underline type=\"NONE\" shape=\"SOLID\" color=\"#000000\" /><ns0:strikeout shape=\"NONE\" color=\"#000000\" /><ns0:outline type=\"NONE\" /><ns0:shadow type=\"NONE\" color=\"#C0C0C0\" offsetX=\"10\" offsetY=\"10\" /></ns0:charPr>",
+          "id": "6",
+          "height": "1100",
+          "color": "#000000",
+          "bold": false,
+          "used_by_nonempty_text_run": false
+        }
+      ],
+      "text_charPr_reference_counts": {
+        "0": 1904
+      },
+      "features": {
+        "table": false,
+        "multiple_sections": false,
+        "empty_document": false,
+        "applied_bold": false,
+        "applied_color": false,
+        "multiple_applied_text_sizes": false
+      },
+      "copy_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-23\\hwpx-document-fixtures\\native-job0058-reference.hwpx",
+      "archive_path": "native-job0058-reference.hwpx",
+      "native_save_provenance": {
+        "build_meta": {
+          "hwp_version": "12, 0, 0, 535",
+          "docs": [
+            {
+              "name": "결과",
+              "count": 314,
+              "first": 1,
+              "last": 314,
+              "save_hwpx": true,
+              "save_pdf": true,
+              "pages": 11,
+              "fails": []
+            }
+          ],
+          "started": "2026-10-19 10:50:16",
+          "pauses": 0,
+          "probe3": "ok",
+          "dialogs": [],
+          "seconds": 39,
+          "finished": "2026-10-19 10:50:55"
+        },
+        "evidence": [
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\build_meta.json",
+            "sha256": "81168331bd816a59add994c31981d803db88133745c70defdf72febe91c5a0ee",
+            "archive_path": "provenance-job0058/build_meta.json"
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\build_doc.py",
+            "sha256": "e8472d074d6152b2daab6bf57c90848e0045ace0132d00da0aa6348ba9c62737",
+            "archive_path": "provenance-job0058/build_doc.py"
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\report.md",
+            "sha256": "a8272bb8bed1ebb463bf00c7933f2dad7d1e3a8d192a27b589747ef233813ef3",
+            "archive_path": "provenance-job0058/report.md"
+          }
+        ],
+        "description": "Existing EquationCreate/SaveAs HWPX automation output; generator only read, never executed."
+      },
+      "role": "Native plain-text/equation reference only; no table/rich-format/multi-section/blank fixture claim. Header charPr definitions include unused color and sizes; those are not applied-format examples."
+    }
+  ],
+  "coordination_report": "coordination-state.json",
+  "inventory": "scan-inventory.json",
+  "source_mutation": false,
+  "new_Hwp_COM_GUI_request": false,
+  "native_reopen_performed": false,
+  "deployment": false
+}

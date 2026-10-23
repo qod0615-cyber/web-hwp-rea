@@ -1,0 +1,10 @@
+{
+  "derived_from": "verification/hwpx-roundtrip/2026-10-22/existing-native-generated-job-0043.hwpx",
+  "sha256": "395c5b17fb160bce439f55bb3a6c8db055476a8a056d9d14adf36d13ae5e6ca6",
+  "kind": "derived blank package, not a newly generated native fixture",
+  "changes": [
+    "remove source body paragraphs; retain section properties",
+    "replace source title and author",
+    "omit scripts and stale preview image"
+  ]
+}

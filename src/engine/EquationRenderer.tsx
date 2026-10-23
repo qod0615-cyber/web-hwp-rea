@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { layoutEquation } from './layout';
 import { FormattedGlyph } from './types';
+import { METRICS } from './metrics';
 
 interface EquationRendererProps {
   script: string;
@@ -9,6 +10,7 @@ interface EquationRendererProps {
   color?: string;
   showCursor?: boolean;
   cursorPos?: number;
+  editorMode?: boolean;
 }
 
 export const EquationRenderer: React.FC<EquationRendererProps> = ({
@@ -17,18 +19,19 @@ export const EquationRenderer: React.FC<EquationRendererProps> = ({
   scale = 1.0,
   color = '#000000',
   showCursor = false,
+  editorMode = false,
 }) => {
   // s in HU: 1pt = 100 HU
   const s = Math.round(fontSize * 100);
 
   const box = useMemo(() => {
     try {
-      return layoutEquation(script, s);
+      return layoutEquation(script, s, { editor: editorMode });
     } catch (e) {
       console.error('Equation layout error:', e);
       return null;
     }
-  }, [script, s]);
+  }, [script, s, editorMode]);
 
   if (!box || box.w === 0) {
     return (
@@ -57,6 +60,9 @@ export const EquationRenderer: React.FC<EquationRendererProps> = ({
         style={{ overflow: 'visible', display: 'block' }}
       >
         <g transform={`translate(0, ${offsetY})`}>
+          {editorMode && box.nodes?.filter(node => node.kind === 'placeholder').map((node, index) =>
+            <rect key={`placeholder-${index}`} x={node.x * pxRatio} y={node.y * pxRatio} width={Math.max(8, node.width * pxRatio - 2)}
+              height={Math.max(14, node.height * pxRatio - 1)} stroke={color} strokeWidth={1} fill="none" />)}
           {box.glyphs.map((g: FormattedGlyph, idx: number) => {
             const gx = g.x * pxRatio;
             const gy = g.y * pxRatio;
@@ -64,7 +70,7 @@ export const EquationRenderer: React.FC<EquationRendererProps> = ({
 
             // Handle horizontal rule (fraction bar or radical overbar: 0xe06d)
             if (g.code === 0xe06d) {
-              const ruleW = Math.max(12 * pxRatio, 1);
+              const ruleW = Math.max((g.ruleWidth ?? 12) * pxRatio, 1);
               return (
                 <line
                   key={idx}
@@ -86,11 +92,11 @@ export const EquationRenderer: React.FC<EquationRendererProps> = ({
               <text
                 key={idx}
                 x={gx}
-                y={gy}
+                y={gy + (g.kind !== 'b' ? glyphPxSize * METRICS.font_info.ascender / METRICS.font_info.units_per_em : 0)}
                 fill={color}
                 fontSize={`${glyphPxSize}px`}
                 fontFamily="'HYhwpEQ', 'Batang', serif"
-                dominantBaseline={g.kind === 't' ? 'hanging' : 'alphabetic'}
+                dominantBaseline="alphabetic"
                 style={{
                   userSelect: 'none',
                   textAnchor: 'start',

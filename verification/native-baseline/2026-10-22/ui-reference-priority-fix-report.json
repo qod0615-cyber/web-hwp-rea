@@ -1,0 +1,131 @@
+{
+  "phase": "priority-fix",
+  "started": "2026-10-22T18:43:26.979578+09:00",
+  "pid": 31512,
+  "target_hwnd": 985892,
+  "target_pid": 4032,
+  "source": "C:\\Users\\K\\.orca\\coordination\\desktop_control.py",
+  "source_sha256": "4084e572dc5e9fe8e07c2ec4a6784fe0a54f9730344d186af51ff035cb86a882",
+  "collector": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\ui-reference-collector.py",
+  "collector_sha256": "d940a17693a22f1b4db655550fed6b6107602b193468b3cd9dbcccd259da881d",
+  "events": [
+    {
+      "kind": "before_request",
+      "time": "2026-10-22T18:43:27.012670+09:00",
+      "epoch": 1792662207.0126708,
+      "owner": {
+        "owner": "Astris",
+        "session": "hangul-pc-upper-0051",
+        "job": "upper-0051",
+        "pid": 12644,
+        "since": 1792662127.7616525,
+        "since_iso": "2026-10-22 18:42:07",
+        "heartbeat": 1792662187.8968365,
+        "heartbeat_iso": "2026-10-22 18:43:07",
+        "token": "ec928652cd1247eeae7a97ccd92c0d46",
+        "heartbeat_age_s": 19.1,
+        "stale_suspect": false
+      },
+      "pending": null,
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": false,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "acquired",
+      "time": "2026-10-22T18:43:29.029675+09:00",
+      "epoch": 1792662209.029675,
+      "owner": {
+        "owner": "Web HWP",
+        "session": "ui-reference-2026-10-22",
+        "job": "priority-fix",
+        "pid": 31512,
+        "since": 1792662209.0228338,
+        "since_iso": "2026-10-22 18:43:29",
+        "heartbeat": 1792662209.0228338,
+        "heartbeat_iso": "2026-10-22 18:43:29",
+        "token": "47ba030d831d4ff1a0fc41c788353e48",
+        "heartbeat_age_s": 0.0,
+        "stale_suspect": false
+      },
+      "heartbeat": true
+    },
+    {
+      "kind": "failure",
+      "time": "2026-10-22T18:43:29.399278+09:00",
+      "epoch": 1792662209.3992784,
+      "error": "AssertionError('foreign foreground; no input')"
+    },
+    {
+      "kind": "release_completed",
+      "time": "2026-10-22T18:43:29.403279+09:00",
+      "epoch": 1792662209.4032793
+    },
+    {
+      "kind": "own_request_deleted",
+      "time": "2026-10-22T18:43:29.404279+09:00",
+      "epoch": 1792662209.4042792
+    }
+  ],
+  "captures": [],
+  "inputs_finished": true,
+  "com_used": false,
+  "resident_commands_sent": false,
+  "request_token": "511414dd28c4486ba1236d0825eb27da",
+  "request_created_at": "2026-10-22T18:43:27.018042+09:00",
+  "request_deadline": 1792662327.0135274,
+  "lock_token": "47ba030d831d4ff1a0fc41c788353e48",
+  "acquired_at": "2026-10-22T18:43:29.024676+09:00",
+  "input_deadline_epoch": 1792662259.0246763,
+  "status": "failed_preserved",
+  "error": "AssertionError('foreign foreground; no input')",
+  "cleanup_verified": false,
+  "cleanup_error": "AssertionError('foreign foreground; no input')",
+  "input_finished_at": "2026-10-22T18:43:29.401279+09:00",
+  "down_remaining": false,
+  "keys_remaining": [],
+  "released_at": "2026-10-22T18:43:29.403279+09:00",
+  "request_deleted_at": "2026-10-22T18:43:29.404279+09:00",
+  "owner_after_return": {
+    "owner": "Astris",
+    "session": "hangul-pc-upper-0051",
+    "job": "upper-0051",
+    "pid": 12644,
+    "since": 1792662209.8540359,
+    "since_iso": "2026-10-22 18:43:29",
+    "heartbeat": 1792662209.8540359,
+    "heartbeat_iso": "2026-10-22 18:43:29",
+    "token": "f713a07a9782473cb1d7846531f5a7cd",
+    "heartbeat_age_s": 0.1,
+    "stale_suspect": false
+  },
+  "astris_reacquired_at": "2026-10-22T18:43:29.912034+09:00",
+  "finished": "2026-10-22T18:43:29.912034+09:00"
+}

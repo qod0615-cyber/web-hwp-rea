@@ -1,0 +1,176 @@
+{
+  "observed_at": "2026-10-22T23:35:38.508306+00:00",
+  "owner_path": "C:\\Users\\K\\.orca\\coordination\\desktop-control.owner.json",
+  "owner_file_snapshot": {
+    "owner": "Astris",
+    "session": "hangul-pc-upper-0051",
+    "job": "upper-0051",
+    "pid": 30000,
+    "since": 1792710167.040833,
+    "since_iso": "2026-10-23 08:02:47",
+    "heartbeat": 1792712118.5500615,
+    "heartbeat_iso": "2026-10-23 08:35:18",
+    "token": "28f77b29eb2344f9a8f54445248fd4b1"
+  },
+  "request_path": "C:\\Users\\K\\.orca\\coordination\\desktop-control.request",
+  "request_exists": false,
+  "request_snapshot": null,
+  "interpretation": "Owner-file snapshot only; no OS-lock probe, module import/API call, request creation or process inspection. Absence/staleness is not permission or proof the OS lock is free.",
+  "shared_module": {
+    "path": "C:\\Users\\K\\.orca\\coordination\\desktop_control.py",
+    "sha256": "4084e572dc5e9fe8e07c2ec4a6784fe0a54f9730344d186af51ff035cb86a882",
+    "matches_existing_web_retry_snapshot": true
+  },
+  "astris_integration": {
+    "queue_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\도구_한글자동시험\\upper_queue.py",
+    "queue_sha256": "45b2a8959842077e6233e1426696e6857b59797942302c3481a251d837b43c44",
+    "worker_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\도구_한글자동시험\\upper_job.py",
+    "worker_sha256": "a56b6a2386c8e65a7b62c0d5a332bd60aaae447e79b49a48eb8c322292347765",
+    "connection": "upper_queue launches upper_job; upper_job imports shared desktop_control; desk_acquire before Hwp, desk_boundary at source boundaries, release at process end. Static source observations, not a new run.",
+    "worker_line_excerpts": [
+      {
+        "line": 19,
+        "text": "import desktop_control as DC   # shared screen-control lock with Web HWP (stdlib only)"
+      },
+      {
+        "line": 57,
+        "text": "def desk_acquire(why):"
+      },
+      {
+        "line": 63,
+        "text": "            LOCK[\"token\"] = DC.acquire(\"Astris\", \"hangul-pc-\" + WORK.name, WORK.name, timeout=5)"
+      },
+      {
+        "line": 64,
+        "text": "            own = DC.current_owner() or {}"
+      },
+      {
+        "line": 71,
+        "text": "def desk_boundary(s):"
+      },
+      {
+        "line": 74,
+        "text": "    req = DC.pending_request()"
+      },
+      {
+        "line": 77,
+        "text": "        DC.release(LOCK[\"token\"])"
+      },
+      {
+        "line": 79,
+        "text": "        DC.wait_request_gone(poll=1.0, should_abort=A.should_stop, log=dlog)"
+      },
+      {
+        "line": 80,
+        "text": "        desk_acquire(\"after request cleared\")"
+      },
+      {
+        "line": 83,
+        "text": "    elif not DC.holds(LOCK[\"token\"]):"
+      },
+      {
+        "line": 84,
+        "text": "        desk_acquire(\"lost lock, retaken at boundary\")"
+      },
+      {
+        "line": 803,
+        "text": "        desk_boundary(s)"
+      },
+      {
+        "line": 891,
+        "text": "    desk_acquire(\"process start, before Hwp is started\")"
+      },
+      {
+        "line": 919,
+        "text": "                DC.release(LOCK[\"token\"])"
+      }
+    ],
+    "existing_log_path": "C:\\Users\\K\\AppData\\Local\\Astris\\HancomBridge\\Jobs\\rea_upper\\upper-0051\\capture_stdout.log",
+    "recent_lock_records": [
+      {
+        "line": 2821,
+        "text": "{\"t\": \"2026-10-23 03:53:16\", \"desktop_lock\": \"released at process end\"}"
+      },
+      {
+        "line": 2822,
+        "text": "{\"t\": \"2026-10-23 03:53:40\", \"desktop_lock\": \"acquired (process start, before Hwp is started) owner=Astris job=upper-0051 pid=32736 token=54a6523f\"}"
+      },
+      {
+        "line": 2950,
+        "text": "{\"t\": \"2026-10-23 04:46:35\", \"desktop_lock\": \"released at process end\"}"
+      },
+      {
+        "line": 2951,
+        "text": "{\"t\": \"2026-10-23 04:47:01\", \"desktop_lock\": \"acquired (process start, before Hwp is started) owner=Astris job=upper-0051 pid=30436 token=c79cf395\"}"
+      },
+      {
+        "line": 3074,
+        "text": "{\"t\": \"2026-10-23 05:38:50\", \"desktop_lock\": \"released at process end\"}"
+      },
+      {
+        "line": 3075,
+        "text": "{\"t\": \"2026-10-23 05:39:23\", \"desktop_lock\": \"acquired (process start, before Hwp is started) owner=Astris job=upper-0051 pid=17276 token=62c0869e\"}"
+      },
+      {
+        "line": 3173,
+        "text": "{\"t\": \"2026-10-23 06:27:10\", \"desktop_lock\": \"released at process end\"}"
+      },
+      {
+        "line": 3174,
+        "text": "{\"t\": \"2026-10-23 06:27:44\", \"desktop_lock\": \"acquired (process start, before Hwp is started) owner=Astris job=upper-0051 pid=32548 token=d0a152b9\"}"
+      },
+      {
+        "line": 3267,
+        "text": "{\"t\": \"2026-10-23 07:14:40\", \"desktop_lock\": \"released at process end\"}"
+      },
+      {
+        "line": 3268,
+        "text": "{\"t\": \"2026-10-23 07:15:26\", \"desktop_lock\": \"acquired (process start, before Hwp is started) owner=Astris job=upper-0051 pid=29972 token=f4a9f7f4\"}"
+      },
+      {
+        "line": 3358,
+        "text": "{\"t\": \"2026-10-23 08:02:22\", \"desktop_lock\": \"released at process end\"}"
+      },
+      {
+        "line": 3359,
+        "text": "{\"t\": \"2026-10-23 08:02:47\", \"desktop_lock\": \"acquired (process start, before Hwp is started) owner=Astris job=upper-0051 pid=30000 token=28f77b29\"}"
+      }
+    ]
+  },
+  "web_validation": {
+    "initial_static_review": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\coordination-api-review.json",
+    "initial_review_is_older_than_current_module": true,
+    "current_module_matched_snapshot": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\retry3-desktop-control-source.py",
+    "existing_handoff_record": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\retry3-guarded-retry-report.json",
+    "handoff_record_sha256": "49cc320574e8c9572ad72c8320ae8957b4aed51af81daef5e3d340db9b15eb61",
+    "recorded_module_sha256": "4084e572dc5e9fe8e07c2ec4a6784fe0a54f9730344d186af51ff035cb86a882",
+    "historical_results": {
+      "status": "verified_body_ibeam_followup",
+      "input_finished_at": "2026-10-22T18:28:34.162586+09:00",
+      "lock_released_at": "2026-10-22T18:28:34.166586+09:00",
+      "request_deleted": true,
+      "owner_after_return": {
+        "owner": "Astris",
+        "session": "hangul-pc-upper-0051",
+        "job": "upper-0051",
+        "pid": 12644,
+        "since": 1792661314.821659,
+        "since_iso": "2026-10-22 18:28:34",
+        "heartbeat": 1792661314.821659,
+        "heartbeat_iso": "2026-10-22 18:28:34",
+        "token": "5c928b6e2cc64aedaa8bdd72f26e92fa",
+        "heartbeat_age_s": 0.4,
+        "stale_suspect": false
+      },
+      "astris_return_observed_at": "2026-10-22T18:28:35.176774+09:00"
+    },
+    "note": "Historical guarded lock exchange is documented; this does not authorize native reopen or failed COM save retry."
+  },
+  "fake_simultaneous_acquire_test_record": "Not located in inspected coordination directory, REA tool/results record searches; no current fake-test pass claim.",
+  "future_native_reopen_boundary": [
+    "Coordinator must hand over current module/worker versions, queue original-source boundary state and applicable validation evidence.",
+    "Explicit desktop-control authorization plus actual OS-lock ownership for full native-input interval; file snapshots or elapsed time do not grant control.",
+    "No new COM create/save retries; previous failed route stays prohibited.",
+    "No baseline worker commands, Astris changes, process termination or deployment performed in this task."
+  ]
+}

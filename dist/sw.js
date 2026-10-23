@@ -1,1 +1,47 @@
-if(!self.define){let e,i={};const n=(n,r)=>(n=new URL(n+".js",r).href,i[n]||new Promise(i=>{if("document"in self){const e=document.createElement("script");e.src=n,e.onload=i,document.head.appendChild(e)}else e=n,importScripts(n),i()}).then(()=>{let e=i[n];if(!e)throw new Error(`Module ${n} didn’t register its module`);return e}));self.define=(r,c)=>{const o=e||("document"in self?document.currentScript.src:"")||location.href;if(i[o])return;let t={};const s=e=>n(e,o),l={module:{uri:o},exports:t,require:s};i[o]=Promise.all(r.map(e=>l[e]||s(e))).then(e=>(c(...e),t))}}define(["./workbox-9c191d2f"],function(e){"use strict";self.skipWaiting(),e.clientsClaim(),e.precacheAndRoute([{url:"registerSW.js",revision:null},{url:"index.html",revision:null},{url:"apple-touch-icon.png",revision:"ca16aa188d8c17a70bdf3a382cf161c7"},{url:"favicon.ico",revision:"cd398c3d4725646e35725376f685c451"},{url:"pwa-192x192.png",revision:"ca16aa188d8c17a70bdf3a382cf161c7"},{url:"pwa-512x512.png",revision:"601a696dbeb8f6c403ac9fec02ea03ea"},{url:"manifest.webmanifest",revision:"1f934b7bcecb9c3e205567a6643aa107"}],{}),e.cleanupOutdatedCaches(),e.registerRoute(new e.NavigationRoute(e.createHandlerBoundToURL("index.html")))});
+/* Generated with the hash of the final, bundled HTML (not Vite's intermediate HTML). */
+const BUILD = '3137294a888afd5e';
+const CACHE = 'web-hwp-shell-' + BUILD;
+const INDEX = new URL('index.html', self.registration.scope).href;
+self.addEventListener('install', event => {
+  event.waitUntil((async () => {
+    const response = await fetch(INDEX, { cache: 'no-store' });
+    if (!response.ok) throw new Error('Unable to cache Web HWP shell: ' + response.status);
+    const cache = await caches.open(CACHE);
+    await cache.put(INDEX, response);
+    await self.skipWaiting();
+  })());
+});
+self.addEventListener('activate', event => {
+  event.waitUntil((async () => {
+    const priorCaches = await caches.keys();
+    await Promise.all(priorCaches.filter(key => key !== CACHE &&
+      (key.startsWith('web-hwp-shell-') || key.startsWith('workbox-precache-'))).map(key => caches.delete(key)));
+    await self.clients.claim();
+    // Older installed pages have no update listener. Replace their stale shell once,
+    // while preserving the app's localStorage document and all browser storage.
+    if (priorCaches.some(key => key !== CACHE && (key.startsWith('web-hwp-shell-') || key.startsWith('workbox-precache-')))) {
+      const clients = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+      // Do not await navigation inside activate: its fetch waits for activation,
+      // so awaiting both creates a deadlock for an already-installed app.
+      for (const client of clients.filter(client => client.url.startsWith(self.registration.scope))) {
+        client.navigate(client.url).catch(() => {});
+      }
+    }
+  })());
+});
+self.addEventListener('fetch', event => {
+  if (event.request.mode !== 'navigate' || new URL(event.request.url).origin !== self.location.origin) return;
+  event.respondWith((async () => {
+    try {
+      const response = await fetch(event.request, { cache: 'no-store' });
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      const cache = await caches.open(CACHE);
+      await cache.put(INDEX, response.clone());
+      return response;
+    } catch (error) {
+      const saved = await caches.match(INDEX, { cacheName: CACHE });
+      if (saved) return saved;
+      throw error;
+    }
+  })());
+});

@@ -1,0 +1,1016 @@
+{
+  "phase": "equation-navigation-resume",
+  "started": "2026-10-22T21:23:19.944327+09:00",
+  "pid": 31932,
+  "target_hwnd": 985892,
+  "target_pid": 4032,
+  "source": "C:\\Users\\K\\.orca\\coordination\\desktop_control.py",
+  "source_sha256": "4084e572dc5e9fe8e07c2ec4a6784fe0a54f9730344d186af51ff035cb86a882",
+  "collector": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-collector.py",
+  "collector_sha256": "33d97b6d0f328148f9aa48aded4978e3508a0380f7b86b5415d1d8b7077b3227",
+  "events": [
+    {
+      "kind": "before_request",
+      "time": "2026-10-22T21:23:19.951892+09:00",
+      "epoch": 1792671799.9518929,
+      "owner": {
+        "owner": "Astris",
+        "session": "hangul-pc-upper-0051",
+        "job": "upper-0051",
+        "pid": 30616,
+        "since": 1792671752.5472589,
+        "since_iso": "2026-10-22 21:22:32",
+        "heartbeat": 1792671782.5522957,
+        "heartbeat_iso": "2026-10-22 21:23:02",
+        "token": "3128403753184bae9bdb8eab9abdf0b3",
+        "heartbeat_age_s": 17.4,
+        "stale_suspect": false
+      },
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": false,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "acquired",
+      "time": "2026-10-22T21:23:30.486542+09:00",
+      "epoch": 1792671810.4865427,
+      "owner": {
+        "owner": "Web HWP",
+        "session": "behavior-reference-2026-10-22",
+        "job": "equation-navigation-resume",
+        "pid": 31932,
+        "since": 1792671810.4795406,
+        "since_iso": "2026-10-22 21:23:30",
+        "heartbeat": 1792671810.4795406,
+        "heartbeat_iso": "2026-10-22 21:23:30",
+        "token": "a3a08a0af1a445779bdd2b70ac40578c",
+        "heartbeat_age_s": 0.0,
+        "stale_suspect": false
+      },
+      "heartbeat": true
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:23:31.008884+09:00",
+      "epoch": 1792671811.0088844,
+      "keys": [
+        40
+      ],
+      "label": "Down numerator to denominator",
+      "foreground": 23792188
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:23:31.692244+09:00",
+      "epoch": 1792671811.6922443,
+      "keys": [
+        50
+      ],
+      "label": "equation character '2'",
+      "foreground": 23792188
+    },
+    {
+      "kind": "equation_typed",
+      "time": "2026-10-22T21:23:31.994904+09:00",
+      "epoch": 1792671811.9949048,
+      "literal": "2"
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:23:32.295177+09:00",
+      "epoch": 1792671812.295177,
+      "keys": [
+        9
+      ],
+      "label": "Tab leave current fraction slot",
+      "foreground": 23792188
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:23:32.778605+09:00",
+      "epoch": 1792671812.778606,
+      "keys": [
+        37
+      ],
+      "label": "Left navigation",
+      "foreground": 23792188
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:23:33.303970+09:00",
+      "epoch": 1792671813.3039708,
+      "keys": [
+        8
+      ],
+      "label": "Backspace current equation element",
+      "foreground": 23792188
+    },
+    {
+      "kind": "splitter_drag",
+      "time": "2026-10-22T21:23:34.114933+09:00",
+      "epoch": 1792671814.1149333,
+      "start_screen": [
+        -475,
+        702
+      ],
+      "end_screen": [
+        -475,
+        667
+      ],
+      "expected_delta_y": -35
+    },
+    {
+      "kind": "release_completed",
+      "time": "2026-10-22T21:23:34.264210+09:00",
+      "epoch": 1792671814.2642102
+    },
+    {
+      "kind": "own_request_deleted",
+      "time": "2026-10-22T21:23:34.266210+09:00",
+      "epoch": 1792671814.2662103
+    }
+  ],
+  "captures": [
+    {
+      "name": "behavior-reference-equation-down-to-denominator",
+      "raw": "behavior-reference-equation-down-to-denominator.raw.png",
+      "time": "2026-10-22T21:23:31.599353+09:00",
+      "window": {
+        "hwnd": 23792188,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;ce006aeb-ba60-44e9-a082-e7764d6ae1f1]",
+        "name": "수식 편집기",
+        "id": 0,
+        "rect_screen": [
+          -950,
+          427,
+          0,
+          827
+        ],
+        "rect_client_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "rect_window_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 23792188
+      },
+      "dpi": 96,
+      "gui": {
+        "flags": 1,
+        "active": 23792188,
+        "focus": 464784370,
+        "menu_owner": null,
+        "capture": null
+      },
+      "cursor": {
+        "handle": 65541,
+        "visible": true,
+        "screen": [
+          -475,
+          441
+        ],
+        "hotspot": [
+          0,
+          0
+        ],
+        "size": [
+          32,
+          32
+        ]
+      },
+      "native_children": [
+        {
+          "hwnd": 464784370,
+          "pid": 4032,
+          "class": "HWP_EqMainView",
+          "name": "",
+          "id": 12789248,
+          "rect_screen": [
+            -949,
+            525,
+            -1,
+            821
+          ],
+          "rect_client_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "rect_window_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 23792188,
+          "owner": 985892,
+          "root_owner": 23792188
+        }
+      ],
+      "input_event_count": 3,
+      "expected_script": null,
+      "actual_script": "pending screenshot transcription; native custom view has no exposed script getter",
+      "occlusion_samples": [
+        {
+          "screen": [
+            -930,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            547
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            737
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            807
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        }
+      ],
+      "status": "pending_visual_behavior_review"
+    },
+    {
+      "name": "behavior-reference-equation-denominator-two",
+      "raw": "behavior-reference-equation-denominator-two.raw.png",
+      "time": "2026-10-22T21:23:32.255176+09:00",
+      "window": {
+        "hwnd": 23792188,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;ce006aeb-ba60-44e9-a082-e7764d6ae1f1]",
+        "name": "수식 편집기",
+        "id": 0,
+        "rect_screen": [
+          -950,
+          427,
+          0,
+          827
+        ],
+        "rect_client_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "rect_window_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 23792188
+      },
+      "dpi": 96,
+      "gui": {
+        "flags": 1,
+        "active": 23792188,
+        "focus": 464784370,
+        "menu_owner": null,
+        "capture": null
+      },
+      "cursor": {
+        "handle": 65541,
+        "visible": true,
+        "screen": [
+          -475,
+          441
+        ],
+        "hotspot": [
+          0,
+          0
+        ],
+        "size": [
+          32,
+          32
+        ]
+      },
+      "native_children": [
+        {
+          "hwnd": 464784370,
+          "pid": 4032,
+          "class": "HWP_EqMainView",
+          "name": "",
+          "id": 12789248,
+          "rect_screen": [
+            -949,
+            525,
+            -1,
+            821
+          ],
+          "rect_client_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "rect_window_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 23792188,
+          "owner": 985892,
+          "root_owner": 23792188
+        }
+      ],
+      "input_event_count": 5,
+      "expected_script": null,
+      "actual_script": "pending screenshot transcription; native custom view has no exposed script getter",
+      "occlusion_samples": [
+        {
+          "screen": [
+            -930,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            547
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            737
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            807
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        }
+      ],
+      "status": "pending_visual_behavior_review"
+    },
+    {
+      "name": "behavior-reference-equation-tab-navigation",
+      "raw": "behavior-reference-equation-tab-navigation.raw.png",
+      "time": "2026-10-22T21:23:32.755604+09:00",
+      "window": {
+        "hwnd": 23792188,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;ce006aeb-ba60-44e9-a082-e7764d6ae1f1]",
+        "name": "수식 편집기",
+        "id": 0,
+        "rect_screen": [
+          -950,
+          427,
+          0,
+          827
+        ],
+        "rect_client_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "rect_window_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 23792188
+      },
+      "dpi": 96,
+      "gui": {
+        "flags": 1,
+        "active": 23792188,
+        "focus": 464784370,
+        "menu_owner": null,
+        "capture": null
+      },
+      "cursor": {
+        "handle": 65541,
+        "visible": true,
+        "screen": [
+          -475,
+          441
+        ],
+        "hotspot": [
+          0,
+          0
+        ],
+        "size": [
+          32,
+          32
+        ]
+      },
+      "native_children": [
+        {
+          "hwnd": 464784370,
+          "pid": 4032,
+          "class": "HWP_EqMainView",
+          "name": "",
+          "id": 12789248,
+          "rect_screen": [
+            -949,
+            525,
+            -1,
+            821
+          ],
+          "rect_client_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "rect_window_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 23792188,
+          "owner": 985892,
+          "root_owner": 23792188
+        }
+      ],
+      "input_event_count": 6,
+      "expected_script": null,
+      "actual_script": "pending screenshot transcription; native custom view has no exposed script getter",
+      "occlusion_samples": [
+        {
+          "screen": [
+            -930,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            547
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            737
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            807
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        }
+      ],
+      "status": "pending_visual_behavior_review"
+    },
+    {
+      "name": "behavior-reference-equation-left-navigation",
+      "raw": "behavior-reference-equation-left-navigation.raw.png",
+      "time": "2026-10-22T21:23:33.215010+09:00",
+      "window": {
+        "hwnd": 23792188,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;ce006aeb-ba60-44e9-a082-e7764d6ae1f1]",
+        "name": "수식 편집기",
+        "id": 0,
+        "rect_screen": [
+          -950,
+          427,
+          0,
+          827
+        ],
+        "rect_client_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "rect_window_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 23792188
+      },
+      "dpi": 96,
+      "gui": {
+        "flags": 1,
+        "active": 23792188,
+        "focus": 464784370,
+        "menu_owner": null,
+        "capture": null
+      },
+      "cursor": {
+        "handle": 65541,
+        "visible": true,
+        "screen": [
+          -475,
+          441
+        ],
+        "hotspot": [
+          0,
+          0
+        ],
+        "size": [
+          32,
+          32
+        ]
+      },
+      "native_children": [
+        {
+          "hwnd": 464784370,
+          "pid": 4032,
+          "class": "HWP_EqMainView",
+          "name": "",
+          "id": 12789248,
+          "rect_screen": [
+            -949,
+            525,
+            -1,
+            821
+          ],
+          "rect_client_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "rect_window_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 23792188,
+          "owner": 985892,
+          "root_owner": 23792188
+        }
+      ],
+      "input_event_count": 7,
+      "expected_script": null,
+      "actual_script": "pending screenshot transcription; native custom view has no exposed script getter",
+      "occlusion_samples": [
+        {
+          "screen": [
+            -930,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            547
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            737
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            807
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        }
+      ],
+      "status": "pending_visual_behavior_review"
+    },
+    {
+      "name": "behavior-reference-equation-backspace",
+      "raw": "behavior-reference-equation-backspace.raw.png",
+      "time": "2026-10-22T21:23:33.742606+09:00",
+      "window": {
+        "hwnd": 23792188,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;ce006aeb-ba60-44e9-a082-e7764d6ae1f1]",
+        "name": "수식 편집기",
+        "id": 0,
+        "rect_screen": [
+          -950,
+          427,
+          0,
+          827
+        ],
+        "rect_client_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "rect_window_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 23792188
+      },
+      "dpi": 96,
+      "gui": {
+        "flags": 1,
+        "active": 23792188,
+        "focus": 464784370,
+        "menu_owner": null,
+        "capture": null
+      },
+      "cursor": {
+        "handle": 65541,
+        "visible": true,
+        "screen": [
+          -475,
+          441
+        ],
+        "hotspot": [
+          0,
+          0
+        ],
+        "size": [
+          32,
+          32
+        ]
+      },
+      "native_children": [
+        {
+          "hwnd": 464784370,
+          "pid": 4032,
+          "class": "HWP_EqMainView",
+          "name": "",
+          "id": 12789248,
+          "rect_screen": [
+            -949,
+            525,
+            -1,
+            821
+          ],
+          "rect_client_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "rect_window_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 23792188,
+          "owner": 985892,
+          "root_owner": 23792188
+        }
+      ],
+      "input_event_count": 8,
+      "expected_script": null,
+      "actual_script": "pending screenshot transcription; native custom view has no exposed script getter",
+      "occlusion_samples": [
+        {
+          "screen": [
+            -930,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            547
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            737
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            807
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        }
+      ],
+      "status": "pending_visual_behavior_review"
+    },
+    {
+      "name": "behavior-reference-equation-splitter-dragged",
+      "raw": "behavior-reference-equation-splitter-dragged.raw.png",
+      "time": "2026-10-22T21:23:34.258209+09:00",
+      "window": {
+        "hwnd": 23792188,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;ce006aeb-ba60-44e9-a082-e7764d6ae1f1]",
+        "name": "수식 편집기",
+        "id": 0,
+        "rect_screen": [
+          -950,
+          427,
+          0,
+          827
+        ],
+        "rect_client_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "rect_window_main": [
+          -952,
+          387,
+          -2,
+          787
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 23792188
+      },
+      "dpi": 96,
+      "gui": {
+        "flags": 0,
+        "active": 23792188,
+        "focus": 464784370,
+        "menu_owner": null,
+        "capture": null
+      },
+      "cursor": {
+        "handle": 65541,
+        "visible": true,
+        "screen": [
+          -475,
+          667
+        ],
+        "hotspot": [
+          0,
+          0
+        ],
+        "size": [
+          32,
+          32
+        ]
+      },
+      "native_children": [
+        {
+          "hwnd": 464784370,
+          "pid": 4032,
+          "class": "HWP_EqMainView",
+          "name": "",
+          "id": 12789248,
+          "rect_screen": [
+            -949,
+            525,
+            -1,
+            821
+          ],
+          "rect_client_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "rect_window_main": [
+            -951,
+            485,
+            -3,
+            781
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 23792188,
+          "owner": 985892,
+          "root_owner": 23792188
+        }
+      ],
+      "input_event_count": 9,
+      "expected_script": null,
+      "actual_script": "pending screenshot transcription; native custom view has no exposed script getter",
+      "occlusion_samples": [
+        {
+          "screen": [
+            -930,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            442
+          ],
+          "hwnd": 23792188,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            547
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -920,
+            737
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        },
+        {
+          "screen": [
+            -20,
+            807
+          ],
+          "hwnd": 464784370,
+          "root": 23792188
+        }
+      ],
+      "status": "pending_visual_behavior_review"
+    }
+  ],
+  "inputs_finished": true,
+  "com_used": false,
+  "resident_commands_sent": false,
+  "request_token": "b6734e2bc8f34884896b89a1b8f88931",
+  "request_created_at": "2026-10-22T21:23:19.958893+09:00",
+  "request_deadline": 1792671919.9528947,
+  "acquired_at": "2026-10-22T21:23:30.480540+09:00",
+  "lock_token": "a3a08a0af1a445779bdd2b70ac40578c",
+  "input_deadline_epoch": 1792671860.4805408,
+  "status": "captured_pending_review",
+  "equation_left_open_idle": true,
+  "cleanup_verified": true,
+  "input_finished_at": "2026-10-22T21:23:34.261210+09:00",
+  "down_remaining": false,
+  "keys_remaining": [],
+  "released_at": "2026-10-22T21:23:34.264210+09:00",
+  "request_deleted_at": "2026-10-22T21:23:34.266210+09:00",
+  "owner_after_return": {
+    "owner": "Astris",
+    "session": "hangul-pc-upper-0051",
+    "job": "upper-0051",
+    "pid": 30616,
+    "since": 1792671815.0703058,
+    "since_iso": "2026-10-22 21:23:35",
+    "heartbeat": 1792671815.0703058,
+    "heartbeat_iso": "2026-10-22 21:23:35",
+    "token": "77c8ef67b9844f3cbc16c07efdaa36e1",
+    "heartbeat_age_s": 0.2,
+    "stale_suspect": false
+  },
+  "astris_reacquired_at": "2026-10-22T21:23:35.274153+09:00",
+  "finished": "2026-10-22T21:23:35.274153+09:00"
+}

@@ -1,0 +1,134 @@
+{
+  "verified_at": "2026-10-23T10:22:00.927241+09:00",
+  "scope": "Five additional native ribbon tabs; initial captured visual state only.",
+  "checks": {
+    "build": "passed",
+    "ribbon_tabs": "5/5",
+    "first_screen_controls": "4/4",
+    "editor_workflows": "11/11",
+    "hwpx_workflows": "7/7",
+    "pwa_upgrade": "1/1"
+  },
+  "ribbon_regions": {
+    "count": 5,
+    "size": [
+      1253,
+      84
+    ],
+    "different_pixels": 0
+  },
+  "selected_menu_regions": {
+    "count": 5,
+    "size": [
+      600,
+      34
+    ],
+    "different_pixels": 0
+  },
+  "popup_regions": {
+    "count": 3,
+    "different_pixels": 0
+  },
+  "native_control_rectangles": 91,
+  "command_status": {
+    "unavailable": 67,
+    "connected": 13,
+    "native-disabled": 11
+  },
+  "unsupported_commands": {
+    "보기": [
+      "쪽 윤곽",
+      "사용자 색",
+      "문단 부호",
+      "조판 부호",
+      "투명 선",
+      "교정 부호",
+      "메모",
+      "격자",
+      "개체 이동 안내선",
+      "한자 발음 표시",
+      "작업 창",
+      "편집 화면 나누기",
+      "창 배열",
+      "창 전환"
+    ],
+    "쪽": [
+      "쪽 여백",
+      "글자 방향",
+      "바탕쪽",
+      "머리말",
+      "꼬리말",
+      "쪽 테두리/배경",
+      "쪽 번호 매기기",
+      "새 번호로 시작",
+      "현재 쪽만 감추기",
+      "줄 번호",
+      "쪽 나누기",
+      "단 나누기",
+      "단",
+      "다단 설정 나누기",
+      "구역 설정",
+      "구역 나누기",
+      "라벨",
+      "원고지"
+    ],
+    "보안": [
+      "문서 암호 설정",
+      "배포용 문서로 저장",
+      "개인 정보 찾아서 보호",
+      "문서 보안 설정"
+    ],
+    "검토": [
+      "교정 부호",
+      "문서 이력 관리",
+      "문서 비교",
+      "변경 내용 추적",
+      "안내문에 표시",
+      "변경 내용 보기",
+      "원본",
+      "원본 및 변경 내용",
+      "최종본 및 변경 내용",
+      "최종본",
+      "적용",
+      "적용 안 함",
+      "이전",
+      "다음",
+      "새 메모",
+      "메모"
+    ],
+    "도구": [
+      "색인",
+      "제목 차례",
+      "인용",
+      "참고 문헌 스타일",
+      "스크립트 매크로",
+      "맞춤법",
+      "빠른 교정",
+      "번역",
+      "프레젠테이션",
+      "글자판",
+      "사용자 설정",
+      "환경 설정",
+      "개인 정보 바꾸기",
+      "한컴 애셋",
+      "오피스 톡"
+    ]
+  },
+  "limitations": [
+    "The 67 unavailable ribbon commands explicitly report unsupported; their functions are not implemented.",
+    "The three new popup menus match captured images, geometry and open/close/navigation behavior; their command implementations and submenus remain unsupported.",
+    "Changed checked/selected/hover/pressed/focus states and complete desktop/window motion have not been compared with native HWP.",
+    "Native enabled states are snapshots from the reference empty document, not a complete dynamic document-state model.",
+    "This is local work; no deployment or new Windows desktop/COM/request action."
+  ],
+  "artifacts": {
+    "page-ribbon.png": "d4ded346901180569a124f748242557c67850e3c931233de1b38db766da000a2",
+    "review-dropdown.png": "fdcf033406fdb8b483acddbf657b0b63adf28789e7c3c8eaa50d6faabbceca3a",
+    "review-ribbon.png": "d609a4edaee2b15e94b2cab1ee276f5f33fe72b4598b9838da89a21781b702cd",
+    "security-dropdown.png": "67c7779e6151de59ec2662c743e73c84b538d8bcf63f99b78775519231f44a25",
+    "security-ribbon.png": "2d04e1d1027e1c686a1e4e3d127697deb8bebbe87746118666285821664ce3cd",
+    "tools-dropdown.png": "d355c5743f08873c0f1052a8cac5711678945ca4412549acd9bae05009edda8b",
+    "tools-ribbon.png": "47a584dde6a702943fb060b916e8ec2065f186a8ad5d052434ac286146601bbf",
+    "view-ribbon.png": "3498a57c8ff5559f488ddbcdf1955dce28d9a878eab3c2e840ba9addbb8c1d09"
+  }
+}

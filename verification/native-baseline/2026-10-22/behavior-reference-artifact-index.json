@@ -1,0 +1,1166 @@
+[
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-dialog-font-recovered.dialog.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-dialog-font-recovered.dialog.png",
+    "bytes": 17379,
+    "sha256": "6d78f6d6f0ec6872df459bf3b5f491cfefb3de9dd75361de893c41ccf586616c"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-dialog-font-recovered.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-dialog-font-recovered.raw.png",
+    "bytes": 40753,
+    "sha256": "783946b8a527c2bbca79470bdfa68021ba16fcc80078edbaea4eac29e948aa9a"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-a-plus-b.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-a-plus-b.composite.png",
+    "bytes": 16730,
+    "sha256": "43124222730ac2e61752d8d7edbe984a652bb62e5af1efef4ae0d82972f24bd9"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-a-plus-b.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-a-plus-b.cursor-black.png",
+    "bytes": 161,
+    "sha256": "6a4fa34ed2aebeaa90f6c424f6eca8bf99584bb5fe118f7f0fce75af08818648"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-a-plus-b.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-a-plus-b.cursor-white.png",
+    "bytes": 144,
+    "sha256": "49a384e17e02785661c3bbf636629d14bf2d54c28d5ffa3fe6180343a1a8b757"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-a-plus-b.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-a-plus-b.raw.png",
+    "bytes": 16682,
+    "sha256": "1440875153adc519b17bd5a4154ef47a7bed52a133aa8a823a4de0d8a1c96d8b"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-after-nested-prompt-cancel.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-after-nested-prompt-cancel.composite.png",
+    "bytes": 17617,
+    "sha256": "0d2df9aa63ef5361bde66cb2373dfef9b7d2ec590e4a1deaf1982a23acdafa2f"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-after-nested-prompt-cancel.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-after-nested-prompt-cancel.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-after-nested-prompt-cancel.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-after-nested-prompt-cancel.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-after-nested-prompt-cancel.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-after-nested-prompt-cancel.raw.png",
+    "bytes": 17382,
+    "sha256": "b6f754c088a806e7bf3d78b386245ab530fe9443fda6a0e3b5f327c694eec0d5"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-backspace-settled.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-backspace-settled.composite.png",
+    "bytes": 17256,
+    "sha256": "497b37febe2dab39db76030f27794fb1653def89cb45cf0d754f2f9decdbbb82"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-backspace-settled.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-backspace-settled.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-backspace-settled.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-backspace-settled.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-backspace-settled.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-backspace-settled.raw.png",
+    "bytes": 16965,
+    "sha256": "64db59b5e59352e65988b486fbd7fa3dfa40cdf88fd593a997cb5fcb59ec1527"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-backspace.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-backspace.composite.png",
+    "bytes": 17239,
+    "sha256": "90b56cc901c031c76355d06aae2a1dadfde3851565051e02f00b4286675d4567"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-backspace.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-backspace.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-backspace.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-backspace.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-backspace.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-backspace.raw.png",
+    "bytes": 16960,
+    "sha256": "f5044362cec37788dab53472937ce541a935ef64f87d70d7c9557115a9ecb66e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-before-fraction.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-before-fraction.composite.png",
+    "bytes": 13378,
+    "sha256": "84c1f26710100613a037e977d712154bdd4532886af5bc43a132eba19123ead9"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-before-fraction.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-before-fraction.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-before-fraction.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-before-fraction.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-before-fraction.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-before-fraction.raw.png",
+    "bytes": 13086,
+    "sha256": "b3cbbb79550ed62ba7a947c4b378ed5f05b2192777ecddc6b32852122679f2db"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-before-insert.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-before-insert.composite.png",
+    "bytes": 17669,
+    "sha256": "dfa9dc04d74257becf41a27b895f72c2f32a8dd0388f408aa9d9e00b110c1461"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-before-insert.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-before-insert.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-before-insert.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-before-insert.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-before-insert.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-before-insert.raw.png",
+    "bytes": 17386,
+    "sha256": "c4374d3f523e8fea85a78ab2f3b18a1049060deacd96f65bd99f85810a8bda2b"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-collector.py",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-collector.py",
+    "bytes": 33264,
+    "sha256": "882ba6e5557584b8213347a471b748dd0fb6e0a19f08bf46150aa53231a147ae"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-command-focused.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-command-focused.composite.png",
+    "bytes": 16059,
+    "sha256": "26e5ab7ceaac1e1935177004e14a57cbf8a2703de1e3efc5ada7a9723bdeadc2"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-command-focused.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-command-focused.cursor-black.png",
+    "bytes": 161,
+    "sha256": "6a4fa34ed2aebeaa90f6c424f6eca8bf99584bb5fe118f7f0fce75af08818648"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-command-focused.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-command-focused.cursor-white.png",
+    "bytes": 144,
+    "sha256": "49a384e17e02785661c3bbf636629d14bf2d54c28d5ffa3fe6180343a1a8b757"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-command-focused.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-command-focused.raw.png",
+    "bytes": 16011,
+    "sha256": "1242e68aff206a8c7a0c1b4039f0b2d08f2783716dfff92c55b67f80d2fade2d"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-default.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-default.composite.png",
+    "bytes": 12373,
+    "sha256": "8da29a3a698d2aea5d3f9573cce26dd8fff62538917e30abb2b0e5b77fce70f6"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-default.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-default.cursor-black.png",
+    "bytes": 161,
+    "sha256": "6a4fa34ed2aebeaa90f6c424f6eca8bf99584bb5fe118f7f0fce75af08818648"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-default.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-default.cursor-white.png",
+    "bytes": 144,
+    "sha256": "49a384e17e02785661c3bbf636629d14bf2d54c28d5ffa3fe6180343a1a8b757"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-default.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-default.raw.png",
+    "bytes": 12373,
+    "sha256": "8da29a3a698d2aea5d3f9573cce26dd8fff62538917e30abb2b0e5b77fce70f6"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-selected-settled.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-selected-settled.composite.png",
+    "bytes": 17256,
+    "sha256": "497b37febe2dab39db76030f27794fb1653def89cb45cf0d754f2f9decdbbb82"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-selected-settled.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-selected-settled.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-selected-settled.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-selected-settled.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-selected-settled.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-selected-settled.raw.png",
+    "bytes": 16965,
+    "sha256": "64db59b5e59352e65988b486fbd7fa3dfa40cdf88fd593a997cb5fcb59ec1527"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-two-settled.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-two-settled.composite.png",
+    "bytes": 17559,
+    "sha256": "77f7c1a2b86c8265519ef386dd6cde38c5af84db46cdde0422dac663fd88f7d2"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-two-settled.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-two-settled.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-two-settled.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-two-settled.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-two-settled.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-two-settled.raw.png",
+    "bytes": 17282,
+    "sha256": "f00ad7f04a519222a5f5cb39efc33b97a25ff8ec11fe72b5b244c87639905413"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-two.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-two.composite.png",
+    "bytes": 17239,
+    "sha256": "90b56cc901c031c76355d06aae2a1dadfde3851565051e02f00b4286675d4567"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-two.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-two.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-two.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-two.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-denominator-two.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-denominator-two.raw.png",
+    "bytes": 16960,
+    "sha256": "f5044362cec37788dab53472937ce541a935ef64f87d70d7c9557115a9ecb66e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-doubleclick-reedited.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-doubleclick-reedited.composite.png",
+    "bytes": 14070,
+    "sha256": "8bc4d663e5659d83a1b9ad3cf48aa667086f7f7e9de5375f4c99ad06b87d8498"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-doubleclick-reedited.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-doubleclick-reedited.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-doubleclick-reedited.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-doubleclick-reedited.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-doubleclick-reedited.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-doubleclick-reedited.raw.png",
+    "bytes": 13785,
+    "sha256": "458041c3c6fc4c5ef387f4a92264a94f21f846a409090d388d67d8088f039364"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-down-to-denominator.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-down-to-denominator.composite.png",
+    "bytes": 17239,
+    "sha256": "90b56cc901c031c76355d06aae2a1dadfde3851565051e02f00b4286675d4567"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-down-to-denominator.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-down-to-denominator.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-down-to-denominator.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-down-to-denominator.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-down-to-denominator.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-down-to-denominator.raw.png",
+    "bytes": 16960,
+    "sha256": "f5044362cec37788dab53472937ce541a935ef64f87d70d7c9557115a9ecb66e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fixture-restored-blank.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fixture-restored-blank.raw.png",
+    "bytes": 39354,
+    "sha256": "cfb5ed8f2107e9d2570161b212b4d25a4bd1376c6bffa729fe0c2b76d6f5c32c"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-dropdown-closed.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-dropdown-closed.composite.png",
+    "bytes": 17741,
+    "sha256": "515b59a23ed0d50d27e7565fa5721b371e220e96c36d10c7c12bf0f99dd13301"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-dropdown-closed.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-dropdown-closed.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-dropdown-closed.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-dropdown-closed.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-dropdown-closed.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-dropdown-closed.raw.png",
+    "bytes": 17458,
+    "sha256": "5d86f13a5ddef728c0311d4d2353b2c9449fd670a3a48abafd39b3ffed498642"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-dropdown.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-dropdown.composite.png",
+    "bytes": 17741,
+    "sha256": "515b59a23ed0d50d27e7565fa5721b371e220e96c36d10c7c12bf0f99dd13301"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-dropdown.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-dropdown.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-dropdown.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-dropdown.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-dropdown.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-dropdown.raw.png",
+    "bytes": 17458,
+    "sha256": "5d86f13a5ddef728c0311d4d2353b2c9449fd670a3a48abafd39b3ffed498642"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-template.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-template.composite.png",
+    "bytes": 17301,
+    "sha256": "183542ae8eff570c342c444432c001ca1d6a4e1721e35a8bca17c83a27da8f01"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-template.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-template.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-template.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-template.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-fraction-template.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-fraction-template.raw.png",
+    "bytes": 16954,
+    "sha256": "114be677cbd01b8fc491628e4e58da3f2ce6358dbf33268ed6de08b7c2e0f0d0"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-input-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-input-console.log",
+    "bytes": 2896,
+    "sha256": "5a6302ed4f232b326cb86e51db07c2d2167092dcb3a03d7dc544a06f2f411a7e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-input-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-input-report.json",
+    "bytes": 17494,
+    "sha256": "7ede81eb7bf2e07d60b52348fbd58fcd0a41ca0eb55e8340f6b7d14da0437d30"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-insert-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-insert-console.log",
+    "bytes": 2326,
+    "sha256": "189e88ac1575fa95e5106f5fdbc9dedb179f8f478ca2792279e5bb6515d9e07a"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-insert-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-insert-report.json",
+    "bytes": 49804,
+    "sha256": "282552462299c27701215556edc50fc57d0a83c0755d0fe2ea0bc2212bde0b16"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-inserted-document.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-inserted-document.raw.png",
+    "bytes": 39788,
+    "sha256": "de21e98054710018a08d2d489d58987ecea3e7c677848c690de9ce4f5405eae3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-left-navigation.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-left-navigation.composite.png",
+    "bytes": 17557,
+    "sha256": "af7ee27d9cff8786e9dff6a9d605dae8d28bf00d9752bb20b9c8c2848c613fad"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-left-navigation.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-left-navigation.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-left-navigation.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-left-navigation.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-left-navigation.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-left-navigation.raw.png",
+    "bytes": 17274,
+    "sha256": "a2c8b7cfe39036c616f3979d262ed6e647c52b150b8b7af47d4971b5293950aa"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-left-settled.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-left-settled.composite.png",
+    "bytes": 17559,
+    "sha256": "77f7c1a2b86c8265519ef386dd6cde38c5af84db46cdde0422dac663fd88f7d2"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-left-settled.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-left-settled.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-left-settled.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-left-settled.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-left-settled.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-left-settled.raw.png",
+    "bytes": 17282,
+    "sha256": "f00ad7f04a519222a5f5cb39efc33b97a25ff8ec11fe72b5b244c87639905413"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-menu-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-menu-console.log",
+    "bytes": 2100,
+    "sha256": "1ed740b413d27578e26e9647cae18c2923ebf777fa26f0ef5fcbb2e4b07e6911"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-menu-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-menu-report.json",
+    "bytes": 11214,
+    "sha256": "ca2e0ac24b7cb9dcb6eeb835e0116657c58e5f8bc8ee66e0a1696b03cd896dc6"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-nav-verified-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-nav-verified-console.log",
+    "bytes": 4024,
+    "sha256": "71ca2c52af1bfc0a6e08d363a817ed175b4d97ec744d24f8163cb143093d96a8"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-nav-verified-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-nav-verified-report.json",
+    "bytes": 21629,
+    "sha256": "aedc433505e98e3e5854dec4247585fc7b2dde0a2015879834298e6f21efe704"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-navigation-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-navigation-console.log",
+    "bytes": 1910,
+    "sha256": "776d53d13c712d6e2eb0550053963b6609afec1862d8de85b2456e116d1aee9d"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-navigation-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-navigation-report.json",
+    "bytes": 11603,
+    "sha256": "b7cc6bd34c9fda444e90f55fee80ce45230b158e3707613016882ab94075e0af"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-navigation-resume-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-navigation-resume-console.log",
+    "bytes": 4896,
+    "sha256": "3934b65057b2b4f13d82da768ded75a459ba10f75db7e9e31bb22da283af8c9f"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-navigation-resume-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-navigation-resume-report.json",
+    "bytes": 23792,
+    "sha256": "c83346bbc83d88cb9cee9e905f2e6eea69782a18e96ae006fafe5dcff82710f6"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-nested-prompt.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-nested-prompt.raw.png",
+    "bytes": 4242,
+    "sha256": "d8c328fdd9f6d6166e233cab1a6041ffeba27ec119990331be87b036b77ae248"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-numerator-one.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-numerator-one.composite.png",
+    "bytes": 17235,
+    "sha256": "adee8b4c55a9cae998becec465fb29dc4e4a9b7ceb0675f4ec28bf585224222f"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-numerator-one.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-numerator-one.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-numerator-one.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-numerator-one.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-numerator-one.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-numerator-one.raw.png",
+    "bytes": 16970,
+    "sha256": "5c1db0101cf693c6382d19c743a364d15a478f28d0789e484a07aa8a68fb445f"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-numerator-selected.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-numerator-selected.composite.png",
+    "bytes": 17158,
+    "sha256": "7c72f16ce7572d9668bce2b6b4319d73bf5726326eaefafb8e0cf0082d683689"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-numerator-selected.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-numerator-selected.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-numerator-selected.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-numerator-selected.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-numerator-selected.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-numerator-selected.raw.png",
+    "bytes": 16856,
+    "sha256": "12963ebde026e3d5469da06954abd564c30877c9c953ecfed14962177b0ab9cf"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-prompt-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-prompt-console.log",
+    "bytes": 1136,
+    "sha256": "59ec4482609273de5aadae384379a74c66a5538fd7d04b6ffed288dea5417649"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-prompt-recovery-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-prompt-recovery-console.log",
+    "bytes": 1784,
+    "sha256": "6ccf1452d91c4caed98d31d02bf50be6812bad4ea9ab9a1c48cf3ebe71e25cd9"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-prompt-recovery-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-prompt-recovery-report.json",
+    "bytes": 14286,
+    "sha256": "2c11438963fb6724776580dca90260a81024d96c62004c0c665a1232c6b4a41e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-prompt-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-prompt-report.json",
+    "bytes": 4180,
+    "sha256": "e8174f60c6d4acfa7b234bce419009a6f3ab78829c582a5c139c4cb178577c02"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-real-menu-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-real-menu-console.log",
+    "bytes": 1142,
+    "sha256": "4af94c2deac22135b7ce537c5b23812e92647328e5b51a54fe798429991fb961"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-real-menu-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-real-menu-report.json",
+    "bytes": 4183,
+    "sha256": "1d76427692633d682dbe31ee7006debc031a5f3600af69ad4385b4a1ee2e9b34"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-reedit-before-confirmed-click.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-reedit-before-confirmed-click.raw.png",
+    "bytes": 44875,
+    "sha256": "d624de372c98143a941a3f512a126f909d312db8960a5a67bb04877b8137cf5b"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-reedit-cancelled-document.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-reedit-cancelled-document.raw.png",
+    "bytes": 44875,
+    "sha256": "d624de372c98143a941a3f512a126f909d312db8960a5a67bb04877b8137cf5b"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-reedit-confirmed-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-reedit-confirmed-console.log",
+    "bytes": 2516,
+    "sha256": "27c2f08f43097fbc817a8ae9dafef38cd87820d4092333a78ecb9c6bb0e0da9e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-reedit-confirmed-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-reedit-confirmed-report.json",
+    "bytes": 89305,
+    "sha256": "228e85e0e48a00605bd75ac158f30b51d0d411a748d23cc52b45575e0aca7357"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-reedit-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-reedit-console.log",
+    "bytes": 1226,
+    "sha256": "468cd6ccd083f01d90c26b879abe42c39d3af61e115e0e2cf7e4ad56cdf00498"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-reedit-finish-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-reedit-finish-console.log",
+    "bytes": 4292,
+    "sha256": "c6c7c463ff13ac6e5a6c4f9adbd0eb79d25a66165a876f8464f0514064e24374"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-reedit-finish-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-reedit-finish-report.json",
+    "bytes": 116173,
+    "sha256": "670afe4369b3d4b1f681f978b17fb473af57c752574f8af30107e90e98fcadd7"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-reedit-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-reedit-report.json",
+    "bytes": 5043,
+    "sha256": "7d4b2bb45ae852fed784cd8972cab492b155a05cea1d20c1e5b18ff6539db572"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-clipboard-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-clipboard-console.log",
+    "bytes": 3724,
+    "sha256": "7f7d57a49e75db8a61756afe024ee5e1ae7f29f0873467570409fd8f3915d989"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-clipboard-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-clipboard-report.json",
+    "bytes": 76434,
+    "sha256": "57ae8c28fc880ed18f8932c8b4683e525bc20bd6926eab17ca3874de3baaf73f"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-a-plus-b.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-a-plus-b.composite.png",
+    "bytes": 13161,
+    "sha256": "dca9fe8b169d7021b626d7d6f5e416b4d12041fe5a49cca6ef384a42e3228e36"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-a-plus-b.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-a-plus-b.cursor-black.png",
+    "bytes": 161,
+    "sha256": "6a4fa34ed2aebeaa90f6c424f6eca8bf99584bb5fe118f7f0fce75af08818648"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-a-plus-b.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-a-plus-b.cursor-white.png",
+    "bytes": 144,
+    "sha256": "49a384e17e02785661c3bbf636629d14bf2d54c28d5ffa3fe6180343a1a8b757"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-a-plus-b.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-a-plus-b.raw.png",
+    "bytes": 13110,
+    "sha256": "fa932ace9b258058a06573b177227728639c51d228a1f784e0f108c0e83512f7"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-fraction-empty.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-fraction-empty.composite.png",
+    "bytes": 13033,
+    "sha256": "6769e8a594d9e333b6e578aa760e77bd15a7f2210fab2653d83b710ac8ea0081"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-fraction-empty.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-fraction-empty.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-fraction-empty.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-fraction-empty.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-fraction-empty.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-fraction-empty.raw.png",
+    "bytes": 12683,
+    "sha256": "b043c1aa4e5dec2a8d90e6b958a2db6cb345cb94b12623b533a4a4b598b272d4"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-fraction-one-half.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-fraction-one-half.composite.png",
+    "bytes": 13304,
+    "sha256": "6281f7cc0b4e2e920db3bf23255a1c9a7b55f15689d36f3d9cdc677aca190726"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-fraction-one-half.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-fraction-one-half.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-fraction-one-half.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-fraction-one-half.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-copy-fraction-one-half.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-copy-fraction-one-half.raw.png",
+    "bytes": 13050,
+    "sha256": "2687fc5057090eef04afffedfc24d813e49e164c7deff71f32cc8c1b2611bc76"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-half-clipboard-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-half-clipboard-console.log",
+    "bytes": 3088,
+    "sha256": "9239672323c86a38ba6efbe7035260d9333a49e1aab33b3764002d11f1ba05b0"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-half-clipboard-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-half-clipboard-report.json",
+    "bytes": 65889,
+    "sha256": "206cbc15ef56b7ef5ec2d2bc34c3e3cd3d730bebb25a87ea886262f05efde378"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-half-discarded-blank.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-half-discarded-blank.raw.png",
+    "bytes": 39354,
+    "sha256": "cfb5ed8f2107e9d2570161b212b4d25a4bd1376c6bffa729fe0c2b76d6f5c32c"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-half-empty.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-half-empty.composite.png",
+    "bytes": 12991,
+    "sha256": "7baf46361faedabb266ce19145023cc2f111c5a99b76afde7df6e6fac430fafa"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-half-empty.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-half-empty.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-half-empty.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-half-empty.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-half-empty.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-half-empty.raw.png",
+    "bytes": 12642,
+    "sha256": "39a8ac48ebcec1abff68386da41cc0e65aff2c5f65fd36eba1f841b6a47b474c"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-half-filled.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-half-filled.composite.png",
+    "bytes": 13308,
+    "sha256": "93aaa4a7cde977ec4ac76baa26dfd5d408d0bef112a810c00465a68d4930a24f"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-half-filled.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-half-filled.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-half-filled.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-half-filled.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-half-filled.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-half-filled.raw.png",
+    "bytes": 13025,
+    "sha256": "69638e27f9556a568d12607331e3b06a762a3dd8204fb9281d47b9247ad67fef"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-menu-dismissed.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-menu-dismissed.composite.png",
+    "bytes": 14458,
+    "sha256": "4907d0e5032392f5291eb2b74265c9b4a0eed324d2924bd0694e495c40b236fc"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-menu-dismissed.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-menu-dismissed.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-menu-dismissed.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-menu-dismissed.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-menu-dismissed.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-menu-dismissed.raw.png",
+    "bytes": 14163,
+    "sha256": "d7f55e226bf6d8e1c890071a5bda12c3e392dc0c393e68f1a5e449120dc6bf9c"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-menu-observed.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-menu-observed.composite.png",
+    "bytes": 14250,
+    "sha256": "4e74b4d5a071da101838df9365ad54792cbcd17b31ab1f59020f7e7066d546f6"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-menu-observed.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-menu-observed.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-menu-observed.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-menu-observed.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-menu-observed.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-menu-observed.raw.png",
+    "bytes": 13929,
+    "sha256": "e9770c1e87a7a20cab0b58c2f6689e8f45b9cf65187ec9cf58a0698925f71514"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-script-samples-discarded-blank.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-script-samples-discarded-blank.raw.png",
+    "bytes": 39354,
+    "sha256": "cfb5ed8f2107e9d2570161b212b4d25a4bd1376c6bffa729fe0c2b76d6f5c32c"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-session.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-session.json",
+    "bytes": 147,
+    "sha256": "b09ba7b68dc0231519f4ccee50439c64852353d18317181a724237cc3b8ea020"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-splitter-dragged.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-splitter-dragged.composite.png",
+    "bytes": 17432,
+    "sha256": "3d949c509b763e4c196699f7069a4a7a9d7dc029bcc853ab5f9888b6933e7bd6"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-splitter-dragged.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-splitter-dragged.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-splitter-dragged.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-splitter-dragged.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-splitter-dragged.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-splitter-dragged.raw.png",
+    "bytes": 17122,
+    "sha256": "238edb47457e43fe596f68f51fc3e4d7df864198862a01db7eebbff8afb4973c"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-tab-navigation.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-tab-navigation.composite.png",
+    "bytes": 17563,
+    "sha256": "54a542b50e57dbec9f6256336903769ba2f5767c0f92a07b81f99175c5217fa6"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-tab-navigation.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-tab-navigation.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-tab-navigation.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-tab-navigation.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-tab-navigation.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-tab-navigation.raw.png",
+    "bytes": 17281,
+    "sha256": "79bbcce77407652134baeec8057323dbbc08a895c508d603e4cfa975cfef1037"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-tab-settled.composite.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-tab-settled.composite.png",
+    "bytes": 17545,
+    "sha256": "0f4f7b6d5c26ae9d4964430d12a8e7ce6b861f88a25d9de5ebf4601f490945b2"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-tab-settled.cursor-black.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-tab-settled.cursor-black.png",
+    "bytes": 262,
+    "sha256": "736dee3d2644d5d7f0f454a529163bc4a3f964fede3c36dd9ca8c22729887e6e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-tab-settled.cursor-white.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-tab-settled.cursor-white.png",
+    "bytes": 355,
+    "sha256": "8a3df2080cd32a721ca63ee9d0ce6009a45e834f687adb19412e409fc75d6fa3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-tab-settled.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-tab-settled.raw.png",
+    "bytes": 17290,
+    "sha256": "6ce76f559fa8742dc926e4e35535b8a833743fa83d163b8bb5635fc1f7142d40"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-template-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-template-console.log",
+    "bytes": 2346,
+    "sha256": "2ff05ea31e3d0dd50d4caf7951c6d768022b86a6303d05d33e13ae393c4221bd"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-equation-template-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-equation-template-report.json",
+    "bytes": 10975,
+    "sha256": "ebb49ffb3f0201651b15a57c6a9630f84f48646335baf716a79420634ad2419d"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-finalize.py",
+    "url": "http://100.105.111.56:18976/behavior-reference-finalize.py",
+    "bytes": 14972,
+    "sha256": "1796e1be92f3925776726e812a8845265291ee068f5d910d56b60889c806bb7e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-manifest.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-manifest.json",
+    "bytes": 745242,
+    "sha256": "b8ee3e9ccd9ae5c2cba08f74fc8a42b4b2abfc2f06f997fe85b2e515a8d65c22"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-measure-zoom.py",
+    "url": "http://100.105.111.56:18976/behavior-reference-measure-zoom.py",
+    "bytes": 4701,
+    "sha256": "b67330a87f5fe1f6e3a798c184c8f7590ba7fa2c5d716d4ceb6580f45074fb49"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-pwa-chromium-inventory.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-pwa-chromium-inventory.json",
+    "bytes": 296,
+    "sha256": "d1aeb9016f7d46dbd23a076cc346aaed865b58ad0481c2ea5848a8b5578e78b6"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-pwa-update-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-pwa-update-report.json",
+    "bytes": 1112,
+    "sha256": "ce2f6a29309f0e945fe9358b576a148d00e1dc036a2051c75a0b3fabfaa7a2c5"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-pwa-window-inventory.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-pwa-window-inventory.json",
+    "bytes": 90,
+    "sha256": "2c60d52d2c500158007aa28275b9f04c02d8e97d2a13f153c0fb83068b07bc23"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-return-audit.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-return-audit.json",
+    "bytes": 593,
+    "sha256": "309a4763827af40f6b5a59ec7ae48a6dc399df60457c69f0c7f42966558b883e"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-100-maximized.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-100-maximized.raw.png",
+    "bytes": 46780,
+    "sha256": "727915b2ce36ccfb2ab9b621be2d5207fe8b73fb55a68f60ca73e3f6cfe9bbb1"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-100-maximized.visible.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-100-maximized.visible.raw.png",
+    "bytes": 43363,
+    "sha256": "66d0ff07ca2a4d4b42442f43d0278536076e328ee278d297534d6c25eff454fa"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-100.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-100.raw.png",
+    "bytes": 39967,
+    "sha256": "51195ddc45ff3b7a33e1f476a856cf1f87cf9a17b2b618b93e174e3ae3a544d8"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-110-maximized.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-110-maximized.raw.png",
+    "bytes": 46183,
+    "sha256": "8626374d523fe894868a5f01c5aaabc25d6142ae72230ecb936cefb480dc54fd"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-110-maximized.visible.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-110-maximized.visible.raw.png",
+    "bytes": 42804,
+    "sha256": "b1bda8f19cf3aa3f8043fbc4b28138a4bb1b133228186ff8cd6f69acdb3d96e6"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-110.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-110.raw.png",
+    "bytes": 39421,
+    "sha256": "ce48fda83a60f7cf72b325f660a4fd1dfef68665efd5814aa7c8ba62c4ad82a0"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-110.ruler-crop.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-110.ruler-crop.png",
+    "bytes": 1911,
+    "sha256": "c29d5b4a98dd99ea03a83f6dc96413a36c37e8fd158183982d8c03c6af2ddcc3"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-apply-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-apply-console.log",
+    "bytes": 2294,
+    "sha256": "d35370b50463c8b8001851ddd27ce9508877c3f62353953e8e8badecb87ce1de"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-apply-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-apply-report.json",
+    "bytes": 127718,
+    "sha256": "3889ebf8e8aa42012e48620bf066d1faca844d239229b7afd08df7ddf8f78082"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-apply.py",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-apply.py",
+    "bytes": 16130,
+    "sha256": "55a654a412478ffdcb4b13986389511edeb419c6021cc1d8ad799abbe18a2f71"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-collector.py",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-collector.py",
+    "bytes": 15777,
+    "sha256": "83b9fc3db56e99022600e11f456b689cabaa39d8320c7447d3ea6ebe75a5413b"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-console.log",
+    "bytes": 1742,
+    "sha256": "aebc8c64b1abca7b21c80c52862b30f2787311d0234fdca6bd3312bead9ba49c"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-custom-dialog.dialog.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-custom-dialog.dialog.png",
+    "bytes": 15996,
+    "sha256": "042c8d2d04b06b717004f38971acc0f510b4214addd0af490af37d120093c882"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-custom-dialog.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-custom-dialog.raw.png",
+    "bytes": 55302,
+    "sha256": "c5cb9567cddd3ab4b47acc8f1d5a05c1088f5a40a9e90da611afeff14bbc8aaa"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-inspect-baseline.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-inspect-baseline.raw.png",
+    "bytes": 39967,
+    "sha256": "51195ddc45ff3b7a33e1f476a856cf1f87cf9a17b2b618b93e174e3ae3a544d8"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-inspect-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-inspect-console.log",
+    "bytes": 2334,
+    "sha256": "8fc09ae15c7be7cc30f8c21af96f4f66d0c672ae31a48d0678ca9de9e275c1b6"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-inspect-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-inspect-report.json",
+    "bytes": 102451,
+    "sha256": "ec1231b6a13fe3233cf0d9fa8946647e165ec311ab4027431c4703b399515ea8"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-inspect.py",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-inspect.py",
+    "bytes": 14769,
+    "sha256": "bca9f5e8fe3c271254fee47baefbb54e84726769261feef36e2b97aa391381b8"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-max-console.log",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-max-console.log",
+    "bytes": 2310,
+    "sha256": "ff1499a5a76426839de17c5b828f364a5630864760068cec7d81474292ed43f8"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-max-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-max-report.json",
+    "bytes": 94740,
+    "sha256": "243ba0ea9660ee5168a6c2eecca54ae2fa62675bcd7c441d709ffaf06b0b4989"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-max.py",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-max.py",
+    "bytes": 15119,
+    "sha256": "0e072ba1aab92c0ff2a4ebba7505e1dc168b821dd6ca8cb56576082a397a3eb9"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-maximized-100.raw.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-maximized-100.raw.png",
+    "bytes": 39967,
+    "sha256": "51195ddc45ff3b7a33e1f476a856cf1f87cf9a17b2b618b93e174e3ae3a544d8"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-maximized-100.ruler-crop.png",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-maximized-100.ruler-crop.png",
+    "bytes": 1888,
+    "sha256": "36b8f3788dbca19957348ffcd19e54d3188d9ce5d8fa57ec6149c62be8db15b2"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-measurement-final.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-measurement-final.json",
+    "bytes": 5628,
+    "sha256": "29a80c20577b2731e489fd52226720c181227bf86d3c128f4a1c8c2b9595bde8"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-measurement.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-measurement.json",
+    "bytes": 3234,
+    "sha256": "8669dc3fb9183f18a916174fd5aec30675c2165ac151bbea016936bf66edbc29"
+  },
+  {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-report.json",
+    "url": "http://100.105.111.56:18976/behavior-reference-zoom-report.json",
+    "bytes": 84171,
+    "sha256": "a44ad01c3be081f5aea9ceda276279298fcc11564b373118289d5356db84efda"
+  }
+]

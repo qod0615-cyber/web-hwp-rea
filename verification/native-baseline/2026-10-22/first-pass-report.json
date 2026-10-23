@@ -1,0 +1,59 @@
+{
+  "status": "failed_to_obtain_valid_foreground_baseline",
+  "observation": {
+    "time": "2026-10-22T16:44:11.869331+09:00",
+    "target_hwnd": 985892,
+    "target_title": "빈 문서 1 - 한글",
+    "target_rect": [
+      100,
+      40,
+      1427,
+      1006
+    ],
+    "foreground_hwnd": 131203578,
+    "foreground_title": "수식 편집기",
+    "foreground_pid": 27772,
+    "target_dpi": 96
+  },
+  "accepted": [],
+  "rejected": [
+    {
+      "name": "editor-initial",
+      "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\editor-initial.raw.png",
+      "reason": "foreground HWND differs from target HWND; cursor outside target rectangle; cannot attribute cursor to target; pixel review: another document/equation window occludes target",
+      "foreground": 16124738,
+      "target": 985892
+    },
+    {
+      "name": "editor-normal",
+      "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\editor-normal.raw.png",
+      "reason": "foreground HWND differs from target HWND; cursor outside target rectangle; cannot attribute cursor to target",
+      "foreground": 16124738,
+      "target": 985892
+    },
+    {
+      "name": "editor-foreground",
+      "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\editor-foreground.raw.png",
+      "reason": "foreground HWND differs from target HWND",
+      "foreground": 96406406,
+      "target": 985892
+    }
+  ],
+  "actual_errors": [
+    "@oai/sky native pipe unavailable; Orca available",
+    "raw GDI screenshots omit cursor; cursor tiles captured separately",
+    "keyboard focus must be verified visually",
+    "Orca synthetic click reported unverified; did not establish target foreground",
+    "SetForegroundWindow: pywintypes.error(0, SetForegroundWindow, No error message is available)",
+    "All collected cursor tiles are unassigned samples, not verified HWP cursor baselines"
+  ],
+  "scope": "No pull/reset/source overwrite/deployment. Existing documents/windows not closed or edited. Only dedicated window created/repositioned; no document export attempted.",
+  "remote_rules": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\remote-rules.txt",
+  "reproduction": [
+    "python verification/native-baseline/2026-10-22/finalize-first-pass.py (read-only audit)",
+    "orca computer get-app-state --app pid:4032 --window-id 985892 --json (observation only)",
+    "Do not rerun baseline.py: existing worker is idle. Never wait for its exit. Command response last-result.json must be observed for at most 20 seconds."
+  ],
+  "next_safe_action": "Linux primary agent coordinates exclusive UI time with other native sessions; after stable dedicated foreground is observed, capture one verified normal state before any hover/pressed input. HWPX/PDF deferred.",
+  "manual_user_action": "none"
+}

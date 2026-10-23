@@ -1,0 +1,83 @@
+{
+  "time": "2026-10-22T17:11:05.859065+09:00",
+  "status": "source_updated_static_review_only_awaiting_actual_astris_release_and_instruction",
+  "collector": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\guarded-retry.py",
+  "collector_sha256": "671e32daa5910afa98260bfb8b4cc1a83c93ecc443cd2d125687d434a656c167",
+  "checks": {
+    "syntax_compile_without_execution": "passed",
+    "event_first_parameter": "event_kind",
+    "event_call_count": 19,
+    "conflicting_event_calls": [],
+    "forbidden_icon_click_literal_absent": true,
+    "title_point_calculated_from_GetWindowRect": true,
+    "WindowFromPoint_verified_before_single_click": true,
+    "GUIThreadInfo_menu_flags_observed": true,
+    "Escape_requires_exact_dedicated_foreground_active_menu_owner_and_system_flag": true,
+    "other_menu_or_popup_input": "refused",
+    "capture_names": [
+      "retry2-editor-normal",
+      "retry2-ribbon-normal",
+      "retry2-ribbon-hover",
+      "retry2-ribbon-released",
+      "retry2-body-ibeam",
+      "retry2-ribbon-pressed"
+    ],
+    "all_capture_names_retry2": true,
+    "outputs": [
+      "retry2-guarded-retry-report.json",
+      "retry2-manifest.json"
+    ],
+    "first_attempt_files_unchanged": true,
+    "overwrite_refusal_guard": true,
+    "explicit_launch_flag_required": "--authorized-retry2",
+    "module_imported": false,
+    "collector_executed": false,
+    "request_created": false,
+    "ui_com_clipboard_inputs": false
+  },
+  "preserved_first_attempt": {
+    "guarded-retry-report.json": {
+      "sha256": "15c238c6cfc5224870e0eec3c2a3e57f51481b39654cb9b2615eff4f0270ec09",
+      "unchanged": true
+    },
+    "manifest.json": {
+      "sha256": "8ef47a96837204029c154106993409d7ace0be7c895526fd888f7278b15e2498",
+      "unchanged": true
+    }
+  },
+  "previous_handoff": {
+    "request_token": "f79da10141094311a0a6d4262f1651e4",
+    "lock_released_at": "2026-10-22T17:07:05.565453+09:00",
+    "release_event": [
+      {
+        "event": "release_completed",
+        "time": "2026-10-22T17:07:05.565453+09:00",
+        "epoch": 1792656425.5654533
+      }
+    ],
+    "cancel_event": [
+      {
+        "event": "own_request_deleted",
+        "time": "2026-10-22T17:07:05.567452+09:00",
+        "epoch": 1792656425.5684516,
+        "ok": true
+      }
+    ],
+    "astris_return_observed_at": "2026-10-22T17:07:06.075810+09:00",
+    "astris_owner": {
+      "owner": "Astris",
+      "session": "hangul-pc-upper-0051",
+      "job": "upper-0051",
+      "pid": 21888,
+      "since": 1792656425.6747677,
+      "since_iso": "2026-10-22 17:07:05",
+      "heartbeat": 1792656425.6747677,
+      "heartbeat_iso": "2026-10-22 17:07:05",
+      "token": "cbf217fb7c49463c96daaf18439bf965",
+      "heartbeat_age_s": 0.4,
+      "stale_suspect": false
+    }
+  },
+  "runtime_limitations": "Static checks only: actual title hit/menu flags/visual cleanliness/capture sequence remain unverified. No capture success claim.",
+  "next_action": "Wait for Linux primary agent explicit Astris safe-stop/release confirmation and capture instruction; then shared OS lock required."
+}

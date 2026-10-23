@@ -1,0 +1,321 @@
+{
+  "created_at": "2026-10-22T22:23:41.754292+00:00",
+  "selection": "Three most recent completed native saved HWPX results; job0043 excluded",
+  "source_root": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험",
+  "file_count": 3,
+  "total_equations": 4158,
+  "files": [
+    {
+      "job": "0059",
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0059_20261019_121434\\결과.hwpx",
+      "copy_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\equation-corpus\\2026-10-23\\native-equation-corpus\\job0059\\native-job0059.hwpx",
+      "archive_path": "job0059/native-job0059.hwpx",
+      "sha256": "67947792fcff5a9118ab337ec69b30e814f7760525c3f8d52e2b9788e677b495",
+      "bytes": 126569,
+      "source_mtime": "2026-10-19T03:14:34.208209+00:00",
+      "equation_count": 1012,
+      "complete_metadata_count": 1012,
+      "width_range": [
+        300,
+        47446
+      ],
+      "height_range": [
+        1125,
+        5490
+      ],
+      "baseLine_range": [
+        35,
+        94
+      ],
+      "generation_provenance": {
+        "method": "Existing native HWP EquationCreate and SaveAs HWPX; established by saved build_doc.py, build_meta.json and report.md; not rerun",
+        "hwp_version": "12, 0, 0, 535",
+        "build_meta": {
+          "hwp_version": "12, 0, 0, 535",
+          "docs": [
+            {
+              "name": "결과",
+              "count": 1012,
+              "first": 1,
+              "last": 1012,
+              "save_hwpx": true,
+              "save_pdf": true,
+              "pages": 40,
+              "fails": []
+            }
+          ],
+          "started": "2026-10-19 12:10:28",
+          "pauses": 0,
+          "probe3": "ok",
+          "dialogs": [],
+          "seconds": 246,
+          "finished": "2026-10-19 12:14:33"
+        },
+        "evidence": [
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0059_20261019_121434\\build_meta.json",
+            "archive_path": "job0059/build_meta.json",
+            "sha256": "9b54c0ffe4cd949aef22c542b7171a0b93afe7894a5ac1e2296448fd1e04b173",
+            "bytes": 358
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0059_20261019_121434\\build_doc.py",
+            "archive_path": "job0059/build_doc.py",
+            "sha256": "e8472d074d6152b2daab6bf57c90848e0045ace0132d00da0aa6348ba9c62737",
+            "bytes": 5668
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0059_20261019_121434\\report.md",
+            "archive_path": "job0059/report.md",
+            "sha256": "69a524fce6b86d76e776b757b238d2730e7ea28a83f0be28dc2e22b2d6803c6c",
+            "bytes": 2815
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0059_20261019_121434\\verify.py",
+            "archive_path": "job0059/verify.py",
+            "sha256": "5d89166a881e95df05abbc91a254cbd0606bfe82ca3236693688aecbb42aeb51",
+            "bytes": 3894
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0059_20261019_121434\\gen_list.py",
+            "archive_path": "job0059/gen_list.py",
+            "sha256": "ed7f99287a9580e51e7b51750f17ff590da5f22eded339dd8b1e99631d671869",
+            "bytes": 9423
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0059_20261019_121434\\검증.json",
+            "archive_path": "job0059/검증.json",
+            "sha256": "1e7c5ae6e1fa93e287b14ccb27a6cb9cf3eeb95f6e18efd6b3c0b6321058f407",
+            "bytes": 3358
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0059_20261019_121434\\실패.json",
+            "archive_path": "job0059/실패.json",
+            "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "bytes": 2
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0059_20261019_121434\\수식목록.json",
+            "archive_path": "job0059/수식목록.json",
+            "sha256": "84007852889190889951ff45eeedc887efb4e76c040d1d90e023acfee0d228c6",
+            "bytes": 365768
+          }
+        ]
+      },
+      "metadata_units": {
+        "width_height": "Raw HWPX sz attributes (HWPUNIT); no pixel conversion",
+        "baseLine": "Raw equation baseLine attribute; retained without conversion"
+      }
+    },
+    {
+      "job": "0058",
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\결과.hwpx",
+      "copy_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\equation-corpus\\2026-10-23\\native-equation-corpus\\job0058\\native-job0058.hwpx",
+      "archive_path": "job0058/native-job0058.hwpx",
+      "sha256": "9a4596bd5d8e30a7a55e03790cb8dd2e86684332eb9465e397f048c692b3c30b",
+      "bytes": 39234,
+      "source_mtime": "2026-10-19T01:50:55.935259+00:00",
+      "equation_count": 314,
+      "complete_metadata_count": 314,
+      "width_range": [
+        600,
+        9382
+      ],
+      "height_range": [
+        1125,
+        2924
+      ],
+      "baseLine_range": [
+        51,
+        89
+      ],
+      "generation_provenance": {
+        "method": "Existing native HWP EquationCreate and SaveAs HWPX; established by saved build_doc.py, build_meta.json and report.md; not rerun",
+        "hwp_version": "12, 0, 0, 535",
+        "build_meta": {
+          "hwp_version": "12, 0, 0, 535",
+          "docs": [
+            {
+              "name": "결과",
+              "count": 314,
+              "first": 1,
+              "last": 314,
+              "save_hwpx": true,
+              "save_pdf": true,
+              "pages": 11,
+              "fails": []
+            }
+          ],
+          "started": "2026-10-19 10:50:16",
+          "pauses": 0,
+          "probe3": "ok",
+          "dialogs": [],
+          "seconds": 39,
+          "finished": "2026-10-19 10:50:55"
+        },
+        "evidence": [
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\build_meta.json",
+            "archive_path": "job0058/build_meta.json",
+            "sha256": "81168331bd816a59add994c31981d803db88133745c70defdf72febe91c5a0ee",
+            "bytes": 355
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\build_doc.py",
+            "archive_path": "job0058/build_doc.py",
+            "sha256": "e8472d074d6152b2daab6bf57c90848e0045ace0132d00da0aa6348ba9c62737",
+            "bytes": 5668
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\report.md",
+            "archive_path": "job0058/report.md",
+            "sha256": "a8272bb8bed1ebb463bf00c7933f2dad7d1e3a8d192a27b589747ef233813ef3",
+            "bytes": 2810
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\verify.py",
+            "archive_path": "job0058/verify.py",
+            "sha256": "5d89166a881e95df05abbc91a254cbd0606bfe82ca3236693688aecbb42aeb51",
+            "bytes": 3894
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\gen_list.py",
+            "archive_path": "job0058/gen_list.py",
+            "sha256": "ed7f99287a9580e51e7b51750f17ff590da5f22eded339dd8b1e99631d671869",
+            "bytes": 9423
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\검증.json",
+            "archive_path": "job0058/검증.json",
+            "sha256": "3ad2db25bdc0783da1bbeb7fb476ddbcccd4560b80f6fab4031e66e8a07b7310",
+            "bytes": 3352
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\실패.json",
+            "archive_path": "job0058/실패.json",
+            "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "bytes": 2
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0058_20261019_105055\\수식목록.json",
+            "archive_path": "job0058/수식목록.json",
+            "sha256": "557476d345f8bc95719f82273b9fa7b35b087019b03a227deef37b9bfe4f2ea6",
+            "bytes": 97098
+          }
+        ]
+      },
+      "metadata_units": {
+        "width_height": "Raw HWPX sz attributes (HWPUNIT); no pixel conversion",
+        "baseLine": "Raw equation baseLine attribute; retained without conversion"
+      }
+    },
+    {
+      "job": "0057",
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\결과.hwpx",
+      "copy_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\equation-corpus\\2026-10-23\\native-equation-corpus\\job0057\\native-job0057.hwpx",
+      "archive_path": "job0057/native-job0057.hwpx",
+      "sha256": "593dee27bb27d3e4d3a78066010a53fc71f21944b6d1c39869140ea0fbdf5a1d",
+      "bytes": 257515,
+      "source_mtime": "2026-10-19T01:50:13.811607+00:00",
+      "equation_count": 2832,
+      "complete_metadata_count": 2832,
+      "width_range": [
+        225,
+        83723
+      ],
+      "height_range": [
+        825,
+        7716
+      ],
+      "baseLine_range": [
+        41,
+        97
+      ],
+      "generation_provenance": {
+        "method": "Existing native HWP EquationCreate and SaveAs HWPX; established by saved build_doc.py, build_meta.json and report.md; not rerun",
+        "hwp_version": "12, 0, 0, 535",
+        "build_meta": {
+          "hwp_version": "12, 0, 0, 535",
+          "docs": [
+            {
+              "name": "결과",
+              "count": 2832,
+              "first": 1,
+              "last": 2832,
+              "save_hwpx": true,
+              "save_pdf": true,
+              "pages": 119,
+              "fails": []
+            }
+          ],
+          "started": "2026-10-19 10:39:20",
+          "pauses": 0,
+          "probe3": "ok",
+          "dialogs": [],
+          "seconds": 653,
+          "finished": "2026-10-19 10:50:13"
+        },
+        "evidence": [
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\build_meta.json",
+            "archive_path": "job0057/build_meta.json",
+            "sha256": "fbac843cc6cff8c1e9e23bcb212e97d8cb096882abb2e92c11dd6ce7bf7da9af",
+            "bytes": 359
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\build_doc.py",
+            "archive_path": "job0057/build_doc.py",
+            "sha256": "e8472d074d6152b2daab6bf57c90848e0045ace0132d00da0aa6348ba9c62737",
+            "bytes": 5668
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\report.md",
+            "archive_path": "job0057/report.md",
+            "sha256": "7524ef86e0ec0b590f2b870d4175d99ced6325d43988370a0c8d914813072e6e",
+            "bytes": 2816
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\verify.py",
+            "archive_path": "job0057/verify.py",
+            "sha256": "5d89166a881e95df05abbc91a254cbd0606bfe82ca3236693688aecbb42aeb51",
+            "bytes": 3894
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\gen_list.py",
+            "archive_path": "job0057/gen_list.py",
+            "sha256": "ed7f99287a9580e51e7b51750f17ff590da5f22eded339dd8b1e99631d671869",
+            "bytes": 9423
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\검증.json",
+            "archive_path": "job0057/검증.json",
+            "sha256": "4aba793f015aa81720f5dba709ddfdcc929d0b2f463b4b6469de3b149e7d953c",
+            "bytes": 3358
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\실패.json",
+            "archive_path": "job0057/실패.json",
+            "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "bytes": 2
+          },
+          {
+            "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\수식목록.json",
+            "archive_path": "job0057/수식목록.json",
+            "sha256": "0ac03d3366fb88fb3e51a2ff4f79ca8d3836d89b1b917ad49d736c41732aec24",
+            "bytes": 1067673
+          }
+        ]
+      },
+      "metadata_units": {
+        "width_height": "Raw HWPX sz attributes (HWPUNIT); no pixel conversion",
+        "baseLine": "Raw equation baseLine attribute; retained without conversion"
+      }
+    }
+  ],
+  "server": {
+    "root": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22",
+    "root_evidence": "Read-only Win32_Process command line, PID 31328, python -m http.server 18977 --bind 100.105.111.56 --directory",
+    "retrieval_url": "http://100.105.111.56:18977/native-equation-corpus-2026-10-23.zip"
+  },
+  "operations": "Read existing files; write copies and metadata only. No HWP, COM, GUI, request creation, source changes or deployment. Native reopen not performed."
+}

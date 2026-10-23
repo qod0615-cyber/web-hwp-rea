@@ -1,0 +1,49 @@
+{
+  "reference": "verification/user-screen-2026-10-22/native.png",
+  "viewport": {
+    "width": 1918,
+    "height": 1031
+  },
+  "document_zoom": 110,
+  "native_paper": {
+    "left": 527,
+    "top": 225,
+    "width": 879
+  },
+  "web_paper": {
+    "left": 527,
+    "top": 225,
+    "width": 879
+  },
+  "passed": [
+    "paper bounds equal the supplied native screen",
+    "one functional vertical scrollbar; no browser scrollbar",
+    "PageDown/Home/drag scroll actual document",
+    "100/110% changes paper and persists",
+    "ruler/footer stay at native pixel height in both supplied window sizes",
+    "browser errors: 0"
+  ],
+  "pixel_diagnostics": {
+    "title": {
+      "different_pixels": 1224,
+      "total_pixels": 61376
+    },
+    "menu_ribbon_format": {
+      "different_pixels": 1463,
+      "total_pixels": 295372
+    },
+    "ruler": {
+      "different_pixels": 1438,
+      "total_pixels": 53704
+    },
+    "workspace": {
+      "different_pixels": 10147,
+      "total_pixels": 1465352
+    },
+    "tabs_status": {
+      "different_pixels": 1906,
+      "total_pixels": 101654
+    }
+  },
+  "limitations": "Pixel report is unmasked and includes the requested theme change, native caret and different controls. Full UI parity is NOT yet achieved."
+}

@@ -1,0 +1,406 @@
+[
+  {
+    "tab": "보기",
+    "native_control_rectangles": 24,
+    "different_pixels": 0,
+    "source_sha256": "ea23876a911d3fe445d6048e2f814db419a26e14aa24d49f14fcffbcd861ea56",
+    "commands": [
+      {
+        "name": "쪽 윤곽",
+        "status": "unavailable"
+      },
+      {
+        "name": "컬러",
+        "status": "connected"
+      },
+      {
+        "name": "회색조",
+        "status": "connected"
+      },
+      {
+        "name": "사용자 색",
+        "status": "unavailable"
+      },
+      {
+        "name": "문단 부호",
+        "status": "unavailable"
+      },
+      {
+        "name": "그림",
+        "status": "connected"
+      },
+      {
+        "name": "조판 부호",
+        "status": "unavailable"
+      },
+      {
+        "name": "투명 선",
+        "status": "unavailable"
+      },
+      {
+        "name": "교정 부호",
+        "status": "unavailable"
+      },
+      {
+        "name": "메모",
+        "status": "unavailable"
+      },
+      {
+        "name": "상황 선",
+        "status": "connected"
+      },
+      {
+        "name": "문서 탭",
+        "status": "connected"
+      },
+      {
+        "name": "격자",
+        "status": "unavailable"
+      },
+      {
+        "name": "개체 이동 안내선",
+        "status": "unavailable"
+      },
+      {
+        "name": "한자 발음 표시",
+        "status": "unavailable"
+      },
+      {
+        "name": "작업 창",
+        "status": "unavailable"
+      },
+      {
+        "name": "편집 화면 나누기",
+        "status": "unavailable"
+      },
+      {
+        "name": "창 배열",
+        "status": "unavailable"
+      },
+      {
+        "name": "창 전환",
+        "status": "unavailable"
+      },
+      {
+        "name": "축소",
+        "status": "connected"
+      },
+      {
+        "name": "확대",
+        "status": "connected"
+      },
+      {
+        "name": "100%",
+        "status": "connected"
+      },
+      {
+        "name": "쪽 맞춤",
+        "status": "connected"
+      },
+      {
+        "name": "폭 맞춤",
+        "status": "connected"
+      }
+    ]
+  },
+  {
+    "tab": "쪽",
+    "native_control_rectangles": 22,
+    "different_pixels": 0,
+    "source_sha256": "d12d77d4ec31a15cbd2e14f2355209cb80a562c081d474a2aa0b5c09cb794b45",
+    "commands": [
+      {
+        "name": "편집 용지",
+        "status": "connected"
+      },
+      {
+        "name": "세로",
+        "status": "connected"
+      },
+      {
+        "name": "가로",
+        "status": "connected"
+      },
+      {
+        "name": "쪽 여백",
+        "status": "unavailable"
+      },
+      {
+        "name": "글자 방향",
+        "status": "unavailable"
+      },
+      {
+        "name": "바탕쪽",
+        "status": "unavailable"
+      },
+      {
+        "name": "머리말",
+        "status": "unavailable"
+      },
+      {
+        "name": "꼬리말",
+        "status": "unavailable"
+      },
+      {
+        "name": "쪽 테두리/배경",
+        "status": "unavailable"
+      },
+      {
+        "name": "쪽 번호 매기기",
+        "status": "unavailable"
+      },
+      {
+        "name": "새 번호로 시작",
+        "status": "unavailable"
+      },
+      {
+        "name": "현재 쪽만 감추기",
+        "status": "unavailable"
+      },
+      {
+        "name": "줄 번호",
+        "status": "unavailable"
+      },
+      {
+        "name": "쪽 나누기",
+        "status": "unavailable"
+      },
+      {
+        "name": "단 나누기",
+        "status": "unavailable"
+      },
+      {
+        "name": "쪽 지우기",
+        "status": "native-disabled"
+      },
+      {
+        "name": "단",
+        "status": "unavailable"
+      },
+      {
+        "name": "다단 설정 나누기",
+        "status": "unavailable"
+      },
+      {
+        "name": "구역 설정",
+        "status": "unavailable"
+      },
+      {
+        "name": "구역 나누기",
+        "status": "unavailable"
+      },
+      {
+        "name": "라벨",
+        "status": "unavailable"
+      },
+      {
+        "name": "원고지",
+        "status": "unavailable"
+      }
+    ]
+  },
+  {
+    "tab": "보안",
+    "native_control_rectangles": 10,
+    "different_pixels": 0,
+    "source_sha256": "22c16b8910f208f4d418718f7693929fa76481c52417ff55e065ff5d98207d29",
+    "commands": [
+      {
+        "name": "문서 암호 설정",
+        "status": "unavailable"
+      },
+      {
+        "name": "문서 암호 변경/해제",
+        "status": "native-disabled"
+      },
+      {
+        "name": "배포용 문서로 저장",
+        "status": "unavailable"
+      },
+      {
+        "name": "배포용 문서 편집",
+        "status": "native-disabled"
+      },
+      {
+        "name": "배포용 문서 암호 변경/해제",
+        "status": "native-disabled"
+      },
+      {
+        "name": "선택 글자 보호",
+        "status": "native-disabled"
+      },
+      {
+        "name": "개인 정보 찾아서 보호",
+        "status": "unavailable"
+      },
+      {
+        "name": "개인 정보 보호 해제",
+        "status": "native-disabled"
+      },
+      {
+        "name": "개인 정보 보호 암호 변경",
+        "status": "native-disabled"
+      },
+      {
+        "name": "문서 보안 설정",
+        "status": "unavailable"
+      }
+    ]
+  },
+  {
+    "tab": "검토",
+    "native_control_rectangles": 16,
+    "different_pixels": 0,
+    "source_sha256": "774dea47967a3cb322e22ba2c470c6500d2f7afabbcc10aaf7b38c02b8a674f8",
+    "commands": [
+      {
+        "name": "교정 부호",
+        "status": "unavailable"
+      },
+      {
+        "name": "문서 이력 관리",
+        "status": "unavailable"
+      },
+      {
+        "name": "문서 비교",
+        "status": "unavailable"
+      },
+      {
+        "name": "변경 내용 추적",
+        "status": "unavailable"
+      },
+      {
+        "name": "안내문에 표시",
+        "status": "unavailable"
+      },
+      {
+        "name": "변경 내용 보기",
+        "status": "unavailable"
+      },
+      {
+        "name": "원본",
+        "status": "unavailable"
+      },
+      {
+        "name": "원본 및 변경 내용",
+        "status": "unavailable"
+      },
+      {
+        "name": "최종본 및 변경 내용",
+        "status": "unavailable"
+      },
+      {
+        "name": "최종본",
+        "status": "unavailable"
+      },
+      {
+        "name": "적용",
+        "status": "unavailable"
+      },
+      {
+        "name": "적용 안 함",
+        "status": "unavailable"
+      },
+      {
+        "name": "이전",
+        "status": "unavailable"
+      },
+      {
+        "name": "다음",
+        "status": "unavailable"
+      },
+      {
+        "name": "새 메모",
+        "status": "unavailable"
+      },
+      {
+        "name": "메모",
+        "status": "unavailable"
+      }
+    ]
+  },
+  {
+    "tab": "도구",
+    "native_control_rectangles": 19,
+    "different_pixels": 0,
+    "source_sha256": "c94953f26c2364f31399e481f48c4d1886c244cb288e2549837c9a75e206b65c",
+    "commands": [
+      {
+        "name": "색인",
+        "status": "unavailable"
+      },
+      {
+        "name": "제목 차례",
+        "status": "unavailable"
+      },
+      {
+        "name": "인용",
+        "status": "unavailable"
+      },
+      {
+        "name": "참고 문헌 삽입",
+        "status": "native-disabled"
+      },
+      {
+        "name": "참고 문헌 스타일",
+        "status": "unavailable"
+      },
+      {
+        "name": "참고 문헌 새로 고침",
+        "status": "native-disabled"
+      },
+      {
+        "name": "블록 계산",
+        "status": "native-disabled"
+      },
+      {
+        "name": "스크립트 매크로",
+        "status": "unavailable"
+      },
+      {
+        "name": "맞춤법",
+        "status": "unavailable"
+      },
+      {
+        "name": "빠른 교정",
+        "status": "unavailable"
+      },
+      {
+        "name": "한컴 사전",
+        "status": "native-disabled"
+      },
+      {
+        "name": "번역",
+        "status": "unavailable"
+      },
+      {
+        "name": "프레젠테이션",
+        "status": "unavailable"
+      },
+      {
+        "name": "글자판",
+        "status": "unavailable"
+      },
+      {
+        "name": "사용자 설정",
+        "status": "unavailable"
+      },
+      {
+        "name": "환경 설정",
+        "status": "unavailable"
+      },
+      {
+        "name": "개인 정보 바꾸기",
+        "status": "unavailable"
+      },
+      {
+        "name": "한컴 애셋",
+        "status": "unavailable"
+      },
+      {
+        "name": "오피스 톡",
+        "status": "unavailable"
+      }
+    ]
+  }
+]

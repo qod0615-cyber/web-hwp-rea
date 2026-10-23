@@ -1,0 +1,278 @@
+{
+  "kind": "blank",
+  "started": "2026-10-22T21:55:36.849805+09:00",
+  "collector_pid": 31324,
+  "output_file": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\native-blank.hwpx",
+  "events": [
+    {
+      "kind": "before_request",
+      "time": "2026-10-22T21:55:36.944825+09:00",
+      "epoch": 1792673736.9448256,
+      "owner": {
+        "owner": "Astris",
+        "session": "hangul-pc-upper-0051",
+        "job": "upper-0051",
+        "pid": 32080,
+        "since": 1792673633.5918002,
+        "since_iso": "2026-10-22 21:53:53",
+        "heartbeat": 1792673723.8395553,
+        "heartbeat_iso": "2026-10-22 21:55:23",
+        "token": "2cd2e5a54a02459daec2f7b7fc5381fc",
+        "heartbeat_age_s": 13.1,
+        "stale_suspect": false
+      }
+    },
+    {
+      "kind": "acquired",
+      "time": "2026-10-22T21:55:58.493696+09:00",
+      "epoch": 1792673758.493696,
+      "owner": {
+        "owner": "Web HWP",
+        "session": "hwpx-roundtrip-2026-10-22",
+        "job": "blank",
+        "pid": 31324,
+        "since": 1792673758.486696,
+        "since_iso": "2026-10-22 21:55:58",
+        "heartbeat": 1792673758.486696,
+        "heartbeat_iso": "2026-10-22 21:55:58",
+        "token": "4263b784fd514c35a02ff24f9077e02f",
+        "heartbeat_age_s": 0.0,
+        "stale_suspect": false
+      },
+      "heartbeat": true
+    },
+    {
+      "kind": "dedicated_instance_verified",
+      "time": "2026-10-22T21:56:13.953112+09:00",
+      "epoch": 1792673773.9531128,
+      "window": {
+        "hwnd": 134288,
+        "pid": 14220,
+        "title": "빈 문서 1 - 한글",
+        "class": "HwndWrapper[hwp.exe;;652526ef-1637-476d-b833-8db9ce4cddfe]",
+        "rect": [
+          -32000,
+          -32000,
+          -31840,
+          -31972
+        ],
+        "owner": 0,
+        "enabled": true
+      }
+    },
+    {
+      "kind": "com_start",
+      "time": "2026-10-22T21:56:19.366951+09:00",
+      "epoch": 1792673779.3669517,
+      "call": "RegisterModule existing FilePathCheckDLL"
+    },
+    {
+      "kind": "com_end",
+      "time": "2026-10-22T21:56:19.459374+09:00",
+      "epoch": 1792673779.4593742,
+      "call": "RegisterModule existing FilePathCheckDLL",
+      "result": true
+    },
+    {
+      "kind": "com_start",
+      "time": "2026-10-22T21:56:19.461374+09:00",
+      "epoch": 1792673779.4613743,
+      "call": "SetMessageBoxMode dedicated instance only"
+    },
+    {
+      "kind": "com_end",
+      "time": "2026-10-22T21:56:19.463373+09:00",
+      "epoch": 1792673779.463374,
+      "call": "SetMessageBoxMode dedicated instance only",
+      "result": 0
+    },
+    {
+      "kind": "com_start",
+      "time": "2026-10-22T21:56:19.567373+09:00",
+      "epoch": 1792673779.567373,
+      "call": "CharShape 10pt 함초롬바탕"
+    },
+    {
+      "kind": "com_end",
+      "time": "2026-10-22T21:56:19.568374+09:00",
+      "epoch": 1792673779.568374,
+      "call": "CharShape 10pt 함초롬바탕",
+      "result": true
+    },
+    {
+      "kind": "com_start",
+      "time": "2026-10-22T21:56:19.588889+09:00",
+      "epoch": 1792673779.5888896,
+      "call": "ParagraphShape 160 percent"
+    },
+    {
+      "kind": "com_end",
+      "time": "2026-10-22T21:56:19.591888+09:00",
+      "epoch": 1792673779.591889,
+      "call": "ParagraphShape 160 percent",
+      "result": true
+    },
+    {
+      "kind": "com_start",
+      "time": "2026-10-22T21:56:20.787977+09:00",
+      "epoch": 1792673780.7879777,
+      "call": "SaveAs native HWPX"
+    },
+    {
+      "kind": "com_end",
+      "time": "2026-10-22T21:56:20.788977+09:00",
+      "epoch": 1792673780.7889774,
+      "call": "SaveAs native HWPX",
+      "result": false
+    },
+    {
+      "kind": "failure",
+      "time": "2026-10-22T21:56:20.792977+09:00",
+      "epoch": 1792673780.7929773,
+      "error": "AssertionError()"
+    },
+    {
+      "kind": "release_completed",
+      "time": "2026-10-22T21:56:22.398818+09:00",
+      "epoch": 1792673782.3988183
+    },
+    {
+      "kind": "own_request_deleted",
+      "time": "2026-10-22T21:56:22.399818+09:00",
+      "epoch": 1792673782.3998184
+    }
+  ],
+  "captures": [
+    {
+      "name": "before-save",
+      "time": "2026-10-22T21:56:20.785976+09:00",
+      "raw": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\native-blank-before-save.raw.png",
+      "window": {
+        "hwnd": 134288,
+        "pid": 14220,
+        "title": "빈 문서 1 - 한글",
+        "class": "HwndWrapper[hwp.exe;;652526ef-1637-476d-b833-8db9ce4cddfe]",
+        "rect": [
+          100,
+          40,
+          1427,
+          1006
+        ],
+        "owner": 0,
+        "enabled": true
+      },
+      "foreground": {
+        "hwnd": 134288,
+        "pid": 14220,
+        "title": "빈 문서 1 - 한글",
+        "class": "HwndWrapper[hwp.exe;;652526ef-1637-476d-b833-8db9ce4cddfe]",
+        "rect": [
+          100,
+          40,
+          1427,
+          1006
+        ],
+        "owner": 0,
+        "enabled": true
+      },
+      "main_window": {
+        "hwnd": 134288,
+        "pid": 14220,
+        "title": "빈 문서 1 - 한글",
+        "class": "HwndWrapper[hwp.exe;;652526ef-1637-476d-b833-8db9ce4cddfe]",
+        "rect": [
+          100,
+          40,
+          1427,
+          1006
+        ],
+        "owner": 0,
+        "enabled": true
+      },
+      "client_rect": [
+        0,
+        0,
+        1327,
+        966
+      ],
+      "client_origin_screen": [
+        100,
+        40
+      ],
+      "dpi": 96,
+      "units": "physical pixels",
+      "status": "pending_visual_review"
+    }
+  ],
+  "source": "C:\\Users\\K\\.orca\\coordination\\desktop_control.py",
+  "source_sha256": "4084e572dc5e9fe8e07c2ec4a6784fe0a54f9730344d186af51ff035cb86a882",
+  "collector_sha256": "7193065a5bf466e3f8c51348b634ea9529a6cdeb126acb44bcae0c099fa53169",
+  "existing_com_attached": false,
+  "resident_commands_sent": false,
+  "original_baseline_before": {
+    "hwnd": 985892,
+    "pid": 4032,
+    "title": "빈 문서 1 - 한글",
+    "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+    "rect": [
+      2,
+      40,
+      1329,
+      1006
+    ],
+    "owner": 0,
+    "enabled": true
+  },
+  "foreground_before_request": 108923954,
+  "request_token": "5f8b4db7f70a46b38bd82d90d6a232cf",
+  "request_created_at": "2026-10-22T21:55:36.951343+09:00",
+  "request_deadline": 1792673856.945825,
+  "acquired_at": "2026-10-22T21:55:58.487695+09:00",
+  "lock_token": "4263b784fd514c35a02ff24f9077e02f",
+  "input_deadline_epoch": 1792673808.487696,
+  "dedicated_hwnd": 134288,
+  "dedicated_pid": 14220,
+  "hwp_version": "12, 0, 0, 535",
+  "isolation_verified": true,
+  "status": "failed_preserved",
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\native-fixture-collector.py\", line 145, in <module>\n    assert com_call('SaveAs native HWPX',obj.SaveAs,str(FILE),'HWPX','')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "dedicated_com_quit_returned_at": "2026-10-22T21:56:21.994512+09:00",
+  "dedicated_window_closed": true,
+  "input_finished_at": "2026-10-22T21:56:22.396819+09:00",
+  "inputs_finished": true,
+  "mouse_down_remaining": false,
+  "keys_remaining": [],
+  "released_at": "2026-10-22T21:56:22.398818+09:00",
+  "request_deleted_at": "2026-10-22T21:56:22.399818+09:00",
+  "owner_after_return": {
+    "owner": "Astris",
+    "session": "hangul-pc-upper-0051",
+    "job": "upper-0051",
+    "pid": 32080,
+    "since": 1792673783.090624,
+    "since_iso": "2026-10-22 21:56:23",
+    "heartbeat": 1792673783.090624,
+    "heartbeat_iso": "2026-10-22 21:56:23",
+    "token": "72d635bb1cea4353ad7d467adb9f0ff1",
+    "heartbeat_age_s": 0.3,
+    "stale_suspect": false
+  },
+  "astris_reacquired_at": "2026-10-22T21:56:23.407826+09:00",
+  "original_baseline_after": {
+    "hwnd": 985892,
+    "pid": 4032,
+    "title": "빈 문서 1 - 한글",
+    "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+    "rect": [
+      2,
+      40,
+      1329,
+      1006
+    ],
+    "owner": 0,
+    "enabled": true
+  },
+  "original_baseline_native_state_unchanged": true,
+  "finished": "2026-10-22T21:56:23.457712+09:00"
+}

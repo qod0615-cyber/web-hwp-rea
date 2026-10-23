@@ -1,0 +1,368 @@
+{
+  "source": "existing-native-generated-job-0043.hwpx",
+  "native_document_equations": 24,
+  "all_metrics_matched": 12,
+  "rows": [
+    {
+      "script": "12",
+      "size": 1100,
+      "expected": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 1050,
+        "height": 1125,
+        "baseline": 85
+      },
+      "matched": true
+    },
+    {
+      "script": "f` LEFT ( x RIGHT )",
+      "size": 1100,
+      "expected": {
+        "width": 2087,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2087,
+        "height": 1125,
+        "baseline": 85
+      },
+      "matched": true
+    },
+    {
+      "script": "alpha",
+      "size": 1100,
+      "expected": {
+        "width": 675,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 675,
+        "height": 1125,
+        "baseline": 85
+      },
+      "matched": true
+    },
+    {
+      "script": "{1} over {2}",
+      "size": 1100,
+      "expected": {
+        "width": 1100,
+        "height": 2580,
+        "baseline": 65
+      },
+      "actual": {
+        "width": 1100,
+        "height": 2580,
+        "baseline": 65
+      },
+      "matched": true
+    },
+    {
+      "script": "{bar{rm AB}}",
+      "size": 1100,
+      "expected": {
+        "width": 1605,
+        "height": 1350,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 1605,
+        "height": 1350,
+        "baseline": 87
+      },
+      "matched": true
+    },
+    {
+      "script": "a _{`n+1}",
+      "size": 1100,
+      "expected": {
+        "width": 2253,
+        "height": 1350,
+        "baseline": 71
+      },
+      "actual": {
+        "width": 2253,
+        "height": 1312,
+        "baseline": 73
+      },
+      "matched": false
+    },
+    {
+      "script": "k= {11} over {4 sqrt {5}}`",
+      "size": 1100,
+      "expected": {
+        "width": 4786,
+        "height": 2745,
+        "baseline": 62
+      },
+      "actual": {
+        "width": 4786,
+        "height": 2745,
+        "baseline": 62
+      },
+      "matched": true
+    },
+    {
+      "script": "{vec{rm OP}} CDOT  {vec{rm OQ}} & =0",
+      "size": 1100,
+      "expected": {
+        "width": 5986,
+        "height": 1350,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 5986,
+        "height": 1350,
+        "baseline": 87
+      },
+      "matched": true
+    },
+    {
+      "script": "rmCDFE`",
+      "size": 1100,
+      "expected": {
+        "width": 2912,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 2912,
+        "height": 1125,
+        "baseline": 85
+      },
+      "matched": true
+    },
+    {
+      "script": "f` LEFT ( 0 RIGHT ) =it-a ^{2} =it-9",
+      "size": 1100,
+      "expected": {
+        "width": 7837,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 7837,
+        "height": 1313,
+        "baseline": 87
+      },
+      "matched": true
+    },
+    {
+      "script": "sin`A`:sin`B`=`2`:`3`",
+      "size": 1100,
+      "expected": {
+        "width": 9382,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 9519,
+        "height": 1125,
+        "baseline": 85
+      },
+      "matched": false
+    },
+    {
+      "script": "{5} over {11} `",
+      "size": 1100,
+      "expected": {
+        "width": 1737,
+        "height": 2580,
+        "baseline": 65
+      },
+      "actual": {
+        "width": 1737,
+        "height": 2580,
+        "baseline": 65
+      },
+      "matched": true
+    },
+    {
+      "script": "e~- 549",
+      "size": 1100,
+      "expected": {
+        "width": 3783,
+        "height": 1125,
+        "baseline": 85
+      },
+      "actual": {
+        "width": 3783,
+        "height": 1125,
+        "baseline": 85
+      },
+      "matched": true
+    },
+    {
+      "script": "h~LEFT | x RIGHT | = bar{x} cdot``0.01 -`vec{rm AB}",
+      "size": 1100,
+      "expected": {
+        "width": 10635,
+        "height": 1350,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 11160,
+        "height": 1350,
+        "baseline": 87
+      },
+      "matched": false
+    },
+    {
+      "script": "{root {3} of {h times e}} over {root {5} of {theta}``- {s} over {i~cdot`delta times x}} +- u LEQ g times y prime LEFT [ x RIGHT ] = LEFT [ 90 cdot exp`rm Q` times rm{DP} _{0} cdot n RIGHT ]",
+      "size": 1100,
+      "expected": {
+        "width": 27251,
+        "height": 4191,
+        "baseline": 44
+      },
+      "actual": {
+        "width": 34189,
+        "height": 4191,
+        "baseline": 44
+      },
+      "matched": false
+    },
+    {
+      "script": "e = {cases{11 - K&epsilon > 101#m&rm{FO} LEQ 666}}",
+      "size": 1100,
+      "expected": {
+        "width": 10077,
+        "height": 2415,
+        "baseline": 66
+      },
+      "actual": {
+        "width": 9552,
+        "height": 2415,
+        "baseline": 66
+      },
+      "matched": false
+    },
+    {
+      "script": "f prime LEFT ( x RIGHT ) div b NE y ^{3}",
+      "size": 1100,
+      "expected": {
+        "width": 5937,
+        "height": 1313,
+        "baseline": 87
+      },
+      "actual": {
+        "width": 6450,
+        "height": 1313,
+        "baseline": 87
+      },
+      "matched": false
+    },
+    {
+      "script": "theta = {cases{it x cdot l ^{1.5 +- rm{BE}} CDOT bar{a}~- `rm O _{rm G} ^{3 +`w}&j = 9#lambda ^{5 -`x}~~times LEFT | f cdot `rm{PH}` times 6 +- `w RIGHT | + 2.58&z GEQ 11}}",
+      "size": 1100,
+      "expected": {
+        "width": 20986,
+        "height": 3053,
+        "baseline": 63
+      },
+      "actual": {
+        "width": 24345,
+        "height": 3015,
+        "baseline": 63
+      },
+      "matched": false
+    },
+    {
+      "script": "j _{F} ^{left ( 12` `+ 3.14 div 12 div``E right )}",
+      "size": 1100,
+      "expected": {
+        "width": 7227,
+        "height": 1538,
+        "baseline": 74
+      },
+      "actual": {
+        "width": 7557,
+        "height": 1500,
+        "baseline": 76
+      },
+      "matched": false
+    },
+    {
+      "script": "gamma +~vec{rm OP} ,  10 +- {}_{4}C_{1}~- tan ^{2}``rm G",
+      "size": 1100,
+      "expected": {
+        "width": 12305,
+        "height": 1575,
+        "baseline": 75
+      },
+      "actual": {
+        "width": 12442,
+        "height": 1537,
+        "baseline": 77
+      },
+      "matched": false
+    },
+    {
+      "script": "int _{0} ^{pi} tan m +- rm G ^{6` +- v}`dx = r~times` `f CDOT e",
+      "size": 1100,
+      "expected": {
+        "width": 15023,
+        "height": 2800,
+        "baseline": 62
+      },
+      "actual": {
+        "width": 15724,
+        "height": 1500,
+        "baseline": 76
+      },
+      "matched": false
+    },
+    {
+      "script": "lim _{x -> 1+} i times alpha _{u CDOT g} div~~mu ^{rm{QPE} +-` q} +- 71 >= t ^{7}` times 6~~+- {C} over {u} +-~~sqrt {6}",
+      "size": 1100,
+      "expected": {
+        "width": 25320,
+        "height": 2715,
+        "baseline": 62
+      },
+      "actual": {
+        "width": 29335,
+        "height": 2580,
+        "baseline": 65
+      },
+      "matched": false
+    },
+    {
+      "script": "matrix{rm P & 3 # a & it b}",
+      "size": 1100,
+      "expected": {
+        "width": 1420,
+        "height": 2415,
+        "baseline": 66
+      },
+      "actual": {
+        "width": 1420,
+        "height": 2415,
+        "baseline": 66
+      },
+      "matched": true
+    },
+    {
+      "script": "2 GEQ ln alpha NE {}_{8}C_{1}` times exp c",
+      "size": 1100,
+      "expected": {
+        "width": 9840,
+        "height": 1350,
+        "baseline": 71
+      },
+      "actual": {
+        "width": 11911,
+        "height": 1312,
+        "baseline": 73
+      },
+      "matched": false
+    }
+  ],
+  "before_matches": 6
+}

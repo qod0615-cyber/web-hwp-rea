@@ -1,0 +1,27 @@
+{
+  "url": "https://web-hwp-rea.vercel.app/",
+  "expected_build": "3137294a888afd5e",
+  "deployment_id": "dpl_8V9BaYh16UJRBUcZCyFcvtmYrjsP",
+  "browser_errors": [],
+  "http_status": 200,
+  "build": "3137294a888afd5e",
+  "cache_headers": {
+    "release.json": "no-store",
+    "sw.js": "no-store"
+  },
+  "tab_control_counts": {
+    "보기": 24,
+    "쪽": 22,
+    "보안": 10,
+    "검토": 16,
+    "도구": 19
+  },
+  "hwpx_download": {
+    "valid_zip_xml": true,
+    "equation_script": "{a+b} over {c}",
+    "sha256": "d62daab0341033bfffa955fed5d05669dece060deb4574acf50b11fb1e20ce9a"
+  },
+  "hwpx_reopened_in_browser": true,
+  "service_worker_controlled": true,
+  "offline_document_equation_and_tabs_restored": true
+}

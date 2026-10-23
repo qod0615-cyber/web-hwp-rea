@@ -1,0 +1,68 @@
+{
+  "sections": [
+    "Contents/section0.xml"
+  ],
+  "characters": [
+    {
+      "id": "0",
+      "height": 1000,
+      "font": "함초롬바탕",
+      "color": "#000000",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "strike": false
+    },
+    {
+      "id": "1",
+      "height": 1000,
+      "font": "함초롬돋움",
+      "color": "#000000",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "strike": false
+    }
+  ],
+  "paragraphStyles": [
+    {
+      "id": "0",
+      "align": "JUSTIFY",
+      "lineSpacing": 160,
+      "lineSpacingType": "PERCENT",
+      "marginLeft": 0,
+      "marginRight": 0,
+      "indent": 0,
+      "before": 0,
+      "after": 0
+    }
+  ],
+  "equationCount": 24,
+  "paragraphs": [
+    "HYhwpEQ 서로 다른 식 5012개",
+    "00001 12",
+    "00002 f` LEFT ( x RIGHT )",
+    "00003 alpha",
+    "00004 {1} over {2}",
+    "00005 {bar{rm AB}}",
+    "00006 a _{`n+1}",
+    "00007 k= {11} over {4 sqrt {5}}`",
+    "00008 {vec{rm OP}} CDOT  {vec{rm OQ}} & =0",
+    "00009 rmCDFE`",
+    "00010 f` LEFT ( 0 RIGHT ) =it-a ^{2} =it-9",
+    "00011 sin`A`:sin`B`=`2`:`3`",
+    "00012 {5} over {11} `",
+    "05001 e~- 549",
+    "05002 h~LEFT | x RIGHT | = bar{x} cdot``0.01 -`vec{rm AB}",
+    "05003 {root {3} of {h times e}} over {root {5} of {theta}``- {s} over {i~cdot`delta times x}} +- u LEQ g times y prime LEFT [ x RIGHT ] = LEFT [ 90 cdot exp`rm Q` times rm{DP} _{0} cdot n RIGHT ]",
+    "05004 e = {cases{11 - K&epsilon > 101#m&rm{FO} LEQ 666}}",
+    "05005 f prime LEFT ( x RIGHT ) div b NE y ^{3}",
+    "05006 theta = {cases{it x cdot l ^{1.5 +- rm{BE}} CDOT bar{a}~- `rm O _{rm G} ^{3 +`w}&j = 9#lambda ^{5 -`x}~~times LEFT | f cdot `rm{PH}` times 6 +- `w RIGHT | + 2.58&z GEQ 11}}",
+    "05007 j _{F} ^{left ( 12` `+ 3.14 div 12 div``E right )}",
+    "05008 gamma +~vec{rm OP} ,  10 +- {}_{4}C_{1}~- tan ^{2}``rm G",
+    "05009 int _{0} ^{pi} tan m +- rm G ^{6` +- v}`dx = r~times` `f CDOT e",
+    "05010 lim _{x -> 1+} i times alpha _{u CDOT g} div~~mu ^{rm{QPE} +-` q} +- 71 >= t ^{7}` times 6~~+- {C} over {u} +-~~sqrt {6}",
+    "05011 matrix{rm P & 3 # a & it b}",
+    "05012 2 GEQ ln alpha NE {}_{8}C_{1}` times exp c"
+  ]
+}

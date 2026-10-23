@@ -1,43 +1,50 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { EquationRenderer } from './engine/EquationRenderer';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { NativeDialog, NativeField } from './components/NativeDialog';
+import { DocumentScrollBar } from './components/DocumentScrollBar';
+import { EquationEditor } from './components/EquationEditor';
+import './components/document-viewport.css';
+import { HwpxDocument } from './document/hwpx-document';
+import { DocumentFileSession } from './document/file-session';
+import nativeControlBounds from './components/native-control-bounds.json';
+import { ToolbarCombo } from './components/ToolbarCombo';
+import ribbonReference from './components/ribbon-reference.json';
+import { ReferenceDropdown, ReferenceMenu } from './components/ReferenceDropdown';
+
+const referencedTabs = ribbonReference.tabs as Record<string, { ribbonAsset: string; menuAsset: string; controls: { name: string; type: string; enabled: boolean; x: number; y: number; w: number; h: number }[]; dropdown?: ReferenceMenu }>;
+
+const nativeBounds = nativeControlBounds.controls as Record<string, Record<string, { x: number; y: number; w: number; h: number }>>;
+const controlStyle = (group: string, name: string, sectionTop: number): React.CSSProperties => {
+  const rect = nativeBounds[group][name];
+  return { position: 'absolute', left: rect.x, top: rect.y - sectionTop, width: rect.w, height: rect.h, padding: 0, background: 'transparent' };
+};
 
 
-// 1916px 슬라이스 실측 구간(픽셀 열 분석) -> 이웃 구간 중점으로 경계 확정 (겹침/공백 없음)
-function layoutBoxes(ranges: [number, number][], minX: number, maxX: number) {
-  return ranges.map(([a, b], i) => {
-    const left = i === 0 ? Math.max(minX, a - 6) : Math.round((ranges[i - 1][1] + a) / 2);
-    const right = i === ranges.length - 1 ? Math.min(maxX, b + 6) : Math.round((b + ranges[i + 1][0]) / 2);
-    return { x: left, w: right - left };
-  });
-}
-const MENU_DEF: { title: string; drop?: string; r: [number, number] }[] = [
-  { title: '파일', drop: 'file', r: [20, 40] },
-  { title: '편집', drop: 'edit', r: [66, 127] },
-  { title: '보기', drop: 'view', r: [144, 182] },
-  { title: '입력', drop: 'insert', r: [204, 241] },
-  { title: '서식', drop: 'format', r: [262, 300] },
-  { title: '쪽', drop: 'page', r: [321, 348] },
-  { title: '보안', r: [369, 407] },
-  { title: '검토', r: [429, 466] },
-  { title: '도구', r: [487, 525] },
+// Native UIA rectangles, recorded with source hash in native-control-bounds.json.
+const MENU_DEF: { title: string; drop?: string }[] = [
+  { title: '파일', drop: 'file' },
+  { title: '편집', drop: 'edit' },
+  { title: '보기', drop: 'view' },
+  { title: '입력', drop: 'insert' },
+  { title: '서식', drop: 'format' },
+  { title: '쪽', drop: 'page' },
+  { title: '보안', drop: 'security' },
+  { title: '검토', drop: 'review' },
+  { title: '도구', drop: 'tools' },
 ];
 const MENU_BOXES = (() => {
-  const b = layoutBoxes(MENU_DEF.map(m => m.r), 4, 560);
-  return MENU_DEF.map((m, i) => ({ key: m.title, title: m.title, drop: m.drop, ...b[i] }));
+  return MENU_DEF.map(m => ({ key: m.title, title: m.title, drop: m.drop, ...nativeBounds['메뉴'][m.title] }));
 })();
-const RIBBON_RANGES: [number, number][] = [
-  [22, 44], [58, 100], [114, 145], [160, 185], [197, 243], [271, 293], [308, 333], [345, 376], [397, 434], [442, 465],
-  [489, 521], [534, 565], [579, 602], [631, 651], [668, 691], [707, 728], [745, 766], [803, 836], [857, 890], [917, 947],
-];
-const RIBBON_BOXES_POS = layoutBoxes(RIBBON_RANGES, 2, 960);
-const FMT_COMBO = { style: { x: 326, w: 106 }, font: { x: 535, w: 118 }, size: { x: 659, w: 106 } };
-const FMT_RANGES: [number, number][] = [
-  [22, 51], [63, 93], [106, 135], [163, 176], [188, 202], [231, 259], [273, 301],
-];
-const FMT_POS_L = layoutBoxes(FMT_RANGES, 2, 320);
-const FMT_POS_R = layoutBoxes([[790, 801], [816, 827], [841, 870], [883, 912]], 776, 922);
-const FMT_POS = [...FMT_POS_L, ...FMT_POS_R.slice(0, 3)];
-const FMT_COLOR = FMT_POS_R[3];
+
+// Preserve native pixels; only the empty middle region expands with the window.
+function Slice({ src, h, rightW = 0, stretchX: _stretchX }: { src: string; h: number; rightW?: number; stretchX?: number }) {
+  const bg = (pos: string): React.CSSProperties => ({ backgroundImage: `url("${src}")`, backgroundRepeat: 'no-repeat', backgroundPosition: pos, pointerEvents: 'none', position: 'absolute', top: 0, height: h });
+  return <>
+    <div style={{ ...bg('left top'), left: 0, width: rightW ? `calc(100% - ${rightW}px)` : '100%', maxWidth: 1916 - rightW }} />
+    {rightW > 0 && <div style={{ ...bg('right top'), right: 0, width: rightW }} />}
+  </>;
+}
 
 export default function App() {
   const [docTitle, setDocTitle] = useState(() => {
@@ -47,7 +54,21 @@ export default function App() {
     return localStorage.getItem('web_hwp_current_path') || '';
   });
   const [activeMenu, setActiveMenu] = useState('편집');
-  const [zoom, setZoom] = useState(100);
+  const [zoom, setZoom] = useState(() => {
+    const saved = Number(localStorage.getItem('web_hwp_zoom'));
+    return saved >= 25 && saved <= 500 ? saved : 110;
+  });
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const [scrollPosition, setScrollPosition] = useState({ x: 0, y: 0 });
+  const documentScale = zoom / 100;
+  const [viewportWidth, setViewportWidth] = useState(() => window.innerWidth - 41);
+  useLayoutEffect(() => {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+    const observer = new ResizeObserver(() => setViewportWidth(viewport.clientWidth));
+    observer.observe(viewport); return () => observer.disconnect();
+  }, []);
+  useEffect(() => { localStorage.setItem('web_hwp_zoom', String(zoom)); }, [zoom]);
   const [contextMenu, setContextMenu] = useState<{ x: number; y: number; visible: boolean }>({ x: 0, y: 0, visible: false });
   const [caret, setCaret] = useState({ page: 1, section: 1, col: 1, line: 1, chars: 0, strokes: 0 });
   const [activeModal, setActiveModal] = useState<string | null>(null); // 'equation' | 'table' | 'font' | 'page' | 'paragraph' | 'charmap' | 'find' | 'style' | 'docinfo'
@@ -55,35 +76,89 @@ export default function App() {
   const [pageOrientation, setPageOrientation] = useState<'portrait' | 'landscape'>('portrait');
   const [columnCount, setColumnCount] = useState<number>(1);
   const [showMarks, setShowMarks] = useState<boolean>(false);
+  const [viewColor, setViewColor] = useState<'color' | 'grayscale'>('color');
+  const [showPictures, setShowPictures] = useState(true);
+  const [showStatus, setShowStatus] = useState(true);
+  const [showDocumentTabs, setShowDocumentTabs] = useState(true);
   const [copiedStyle, setCopiedStyle] = useState<any | null>(null);
   const [chordState, setChordState] = useState<string | null>(null); // 'Ctrl+N' 등 2단 단축키 대기
   const [chordToast, setChordToast] = useState<string | null>(null);
-  const [eqScript, setEqScript] = useState('{a+b} over {c} + sqrt {x^2+y^2}');
+  const [eqScript, setEqScript] = useState('');
+  const [eqFontSize, setEqFontSize] = useState(11);
   const [tableRows, setTableRows] = useState(5);
   const [tableCols, setTableCols] = useState(5);
   const [isStandalone, setIsStandalone] = useState(false);
   const [selectedChar, setSelectedChar] = useState('※');
   const [findWord, setFindWord] = useState('');
   const [replaceWord, setReplaceWord] = useState('');
-  const [fontConfig, setFontConfig] = useState({ size: 10, font: '함초롬바탕', width: 100, spacing: 0, color: '#000000' });
-  const [paraConfig, setParaConfig] = useState({ lineHeight: 160, align: 'justify', indent: 0 });
+  const [fontConfig, setFontConfig] = useState({ size: 10, font: '함초롬바탕', width: 100, spacing: 0, color: '#000000', bold: false, italic: false, underline: false, strike: false, relativeSize: 100, position: 0 });
+  const [paraConfig, setParaConfig] = useState({ lineHeight: 160, align: 'justify', indent: 0, left: 0, right: 0, before: 0, after: 0 });
+  const [lineSpacingDraft, setLineSpacingDraft] = useState('160');
+  useEffect(() => setLineSpacingDraft(String(paraConfig.lineHeight)), [paraConfig.lineHeight]);
+  const [pageConfig, setPageConfig] = useState({ top: 20, bottom: 15, left: 30, right: 30, header: 15, footer: 15, width: 210, height: 297 });
+  const [fontDraft, setFontDraft] = useState(fontConfig);
+  const [paraDraft, setParaDraft] = useState(paraConfig);
+  useLayoutEffect(() => { if (activeModal === 'font') setFontDraft(fontConfig); if (activeModal === 'paragraph') setParaDraft(paraConfig); }, [activeModal]);
+  const [pageDraft, setPageDraft] = useState(pageConfig);
+  const [orientationDraft, setOrientationDraft] = useState(pageOrientation);
+  useLayoutEffect(() => { if (activeModal === 'page') { setPageDraft(pageConfig); setOrientationDraft(pageOrientation); } }, [activeModal]);
   const editorRef = useRef<HTMLDivElement>(null);
+  const editedEquation = useRef<HTMLElement | null>(null);
+  const hwpxDocument = useRef<HwpxDocument | null>(null);
+  const fileSession = useRef(new DocumentFileSession());
+  const fileOperation = useRef(false);
+  const cleanDocument = useRef('');
+  const settingsRef = useRef({ page: pageConfig, orientation: pageOrientation, columns: columnCount });
+  settingsRef.current = { page: pageConfig, orientation: pageOrientation, columns: columnCount };
+  const titleRef = useRef(docTitle); titleRef.current = docTitle;
+  const documentSignature = () => JSON.stringify([editorRef.current?.innerHTML || '', settingsRef.current]);
+  const confirmReplaceDocument = () => cleanDocument.current === documentSignature() || window.confirm('변경된 문서를 저장하지 않고 닫을까요?');
+
+  const paperMmWidth = pageOrientation === 'portrait' ? pageConfig.width : pageConfig.height;
+  const paperMmHeight = pageOrientation === 'portrait' ? pageConfig.height : pageConfig.width;
+  // HWP's 96-DPI 110% paper frame measures 878/879px across odd/even window
+  // centers (100%: 795/796px). Keep that view frame separate from mm layout.
+  const nativeFrameWidth = (paperMmWidth * 96 / 25.4 + 2) * documentScale + (zoom === 110 ? 3.4 * paperMmWidth / 210 : 0);
+  const paperLeft = Math.max(20, Math.round((viewportWidth - nativeFrameWidth) / 2));
+  const paperScreenWidth = Math.round((viewportWidth + nativeFrameWidth) / 2) - Math.round((viewportWidth - nativeFrameWidth) / 2);
+
+  const openEquation = () => { captureEditorSelection(); editedEquation.current = null; setEqScript(''); setEqFontSize(11); setActiveModal('equation'); };
 
   // 저장된 본문 복원 및 브라우저 탭 타이틀 동기화
-  useEffect(() => {
-    const savedContent = localStorage.getItem('web_hwp_current_content');
-    if (savedContent && editorRef.current) {
-      editorRef.current.innerText = savedContent;
+  useLayoutEffect(() => {
+    const source = localStorage.getItem('web_hwp_hwpx_source');
+    try {
+      hwpxDocument.current = new HwpxDocument(source ? Uint8Array.from(atob(source), ch => ch.charCodeAt(0)) : undefined);
+      // Rebuild original-object identities before restoring editable HTML.
+      hwpxDocument.current.render();
+      const savedSettings = localStorage.getItem('web_hwp_page_settings');
+      if (savedSettings) {
+        const settings = JSON.parse(savedSettings);
+        setPageConfig(settings.page); setPageOrientation(settings.orientation); setColumnCount(settings.columns);
+        settingsRef.current = settings;
+      }
+    } catch {
+      setChordToast('이전 HWPX 원본을 복원하지 못했습니다. 원본 파일을 다시 열어 주세요.');
     }
+    const savedHtml = localStorage.getItem('web_hwp_current_html');
+    const savedContent = localStorage.getItem('web_hwp_current_content');
+    if (editorRef.current) {
+      if (savedHtml !== null) editorRef.current.innerHTML = savedHtml;
+      else if (savedContent) editorRef.current.innerText = savedContent;
+    }
+    cleanDocument.current = documentSignature();
   }, []);
+
+  useEffect(() => {
+    if (activeModal !== 'equation') editedEquation.current = null;
+  }, [activeModal]);
 
   useEffect(() => {
     // 한글 원본 형식: '파일명.hwpx [경로] - 한글' 또는 'Web HWP (RE) - [파일명]'
     document.title = `${docTitle}${docFilePath ? ` [${docFilePath}]` : ''} - 한글`;
     localStorage.setItem('web_hwp_current_title', docTitle);
-    if (docFilePath) {
-      localStorage.setItem('web_hwp_current_path', docFilePath);
-    }
+    if (docFilePath) localStorage.setItem('web_hwp_current_path', docFilePath);
+    else localStorage.removeItem('web_hwp_current_path');
   }, [docTitle, docFilePath]);
 
   // 1. Keyboard Lock API 및 전체 단축키 캡처 (브라우저 가로챔 100% 방지)
@@ -105,9 +180,12 @@ export default function App() {
     }
 
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
+      captureEditorSelection();
       const isCtrl = e.ctrlKey || e.metaKey;
       const isAlt = e.altKey;
       const key = e.key.toUpperCase();
+      // The equation editor owns its keys, including Esc's native confirmation.
+      if (activeModal === 'equation') return;
 
       // 1) 2단 조합키 (Chord)
       if (chordState === 'Ctrl+N') {
@@ -117,7 +195,7 @@ export default function App() {
         setChordToast(null);
 
         if (key === 'M') {
-          setActiveModal('equation');
+          openEquation();
           return;
         } else if (key === 'T') {
           setActiveModal('table');
@@ -163,7 +241,7 @@ export default function App() {
       if (isCtrl && key === 'S') {
         e.preventDefault();
         e.stopPropagation();
-        handleSave();
+        void handleSave(e.shiftKey);
         return;
       }
 
@@ -193,6 +271,10 @@ export default function App() {
         e.stopPropagation();
         handleSave();
         return;
+      }
+
+      if (isAlt && key === 'V') {
+        e.preventDefault(); e.stopPropagation(); void handleSave(true); return;
       }
 
       if (isAlt && key === 'O') {
@@ -245,6 +327,11 @@ export default function App() {
       }
 
       if (key === 'ESCAPE') {
+        if (activeModal === 'equation' && e.shiftKey) {
+          e.preventDefault();
+          insertEquationToDoc();
+          return;
+        }
         if (activeModal) {
           e.preventDefault();
           setActiveModal(null);
@@ -258,7 +345,7 @@ export default function App() {
 
     window.addEventListener('keydown', handleGlobalKeyDown, { capture: true });
     return () => window.removeEventListener('keydown', handleGlobalKeyDown, { capture: true });
-  }, [chordState, activeModal, copiedStyle]);
+  }, [chordState, activeModal, copiedStyle, eqScript, eqFontSize]);
 
   // 모양 복사 (Alt+C) 실제 동작
   const handleCopyFormat = () => {
@@ -319,7 +406,7 @@ export default function App() {
       } else {
         shapeHtml = `<div style="display:inline-block; width:220px; height:110px; border:1px solid #999; background:#ffffff; box-shadow:2px 2px 6px rgba(0,0,0,0.15); margin:10px 0; padding:10px; resize:both; overflow:auto;" contenteditable="true"><p><strong>[글상자]</strong></p><p>내용을 입력하세요.</p></div>&nbsp;`;
       }
-      document.execCommand('insertHTML', false, shapeHtml);
+      insertHtmlToDoc(shapeHtml);
     }
   };
 
@@ -343,7 +430,7 @@ export default function App() {
           </svg>
         </div>&nbsp;
       `;
-      document.execCommand('insertHTML', false, chartHtml);
+      insertHtmlToDoc(chartHtml);
     }
   };
 
@@ -358,7 +445,7 @@ export default function App() {
         reader.onload = (re: any) => {
           if (editorRef.current) {
             const imgHtml = `<img src="${re.target.result}" style="max-width:100%; height:auto; margin:8px 0; border:1px solid #ccc;" /><p>&nbsp;</p>`;
-            document.execCommand('insertHTML', false, imgHtml);
+            insertHtmlToDoc(imgHtml);
             editorRef.current.focus();
             setChordToast('그림 삽입 완료');
             setTimeout(() => setChordToast(null), 1200);
@@ -370,63 +457,172 @@ export default function App() {
     input.click();
   };
 
+  // 마지막 본문 selection 저장/복원 (툴바 클릭으로 focus가 빠져도 서식 명령이 본문에 적용되도록)
+  const savedRange = useRef<Range | null>(null);
+  const captureEditorSelection = () => {
+    const selection = window.getSelection();
+    if (selection?.rangeCount && editorRef.current?.contains(selection.anchorNode)) savedRange.current = selection.getRangeAt(0).cloneRange();
+  };
+  useEffect(() => {
+    const onSel = () => {
+      const sel = window.getSelection();
+      if (sel && sel.rangeCount > 0 && editorRef.current && editorRef.current.contains(sel.anchorNode)) {
+        savedRange.current = sel.getRangeAt(0).cloneRange();
+      }
+    };
+    document.addEventListener('selectionchange', onSel);
+    return () => document.removeEventListener('selectionchange', onSel);
+  }, []);
+
+  const focusEditor = () => {
+    const ed = editorRef.current;
+    if (!ed) return;
+    ed.focus();
+    const sel = window.getSelection();
+    if (sel) {
+      if (savedRange.current && ed.contains(savedRange.current.commonAncestorContainer)) { sel.removeAllRanges(); sel.addRange(savedRange.current); }
+      else { const r = document.createRange(); r.selectNodeContents(ed); r.collapse(false); sel.removeAllRanges(); sel.addRange(r); }
+    }
+  };
+
+  const persistEditor = () => {
+    const ed = editorRef.current;
+    if (!ed) return;
+    localStorage.setItem('web_hwp_current_html', ed.innerHTML);
+    localStorage.setItem('web_hwp_current_content', ed.innerText);
+    localStorage.setItem('web_hwp_page_settings', JSON.stringify(settingsRef.current));
+    setCaret(prev => ({ ...prev, chars: ed.innerText.length, strokes: ed.innerText.length * 2 }));
+  };
+
+  const insertHtmlToDoc = (html: string) => {
+    focusEditor();
+    document.execCommand('insertHTML', false, html);
+    persistEditor();
+  };
+
+  const insertEquationToDoc = () => {
+    if (!eqScript.trim() || !editorRef.current) return;
+    const object = document.createElement('span');
+    object.contentEditable = 'false';
+    object.dataset.hwpEquation = eqScript;
+    object.dataset.hwpEquationSize = String(eqFontSize);
+    object.setAttribute('role', 'math');
+    object.setAttribute('aria-label', eqScript);
+    object.title = '두 번 클릭하여 수식 편집';
+    object.style.cssText = 'display:inline-block;vertical-align:middle;cursor:pointer;';
+    object.innerHTML = renderToStaticMarkup(<EquationRenderer script={eqScript} fontSize={eqFontSize} />).replace(/<(\/?)div(?=[ >])/g, '<$1span');
+    if (editedEquation.current?.dataset.hwpxObject) object.dataset.hwpxObject = editedEquation.current.dataset.hwpxObject;
+    if (editedEquation.current && editorRef.current.contains(editedEquation.current)) {
+      const range = document.createRange();
+      range.selectNode(editedEquation.current);
+      savedRange.current = range;
+    }
+    insertHtmlToDoc(object.outerHTML);
+    setActiveModal(null);
+  };
+
   const runCommand = (cmd: string, val: any = null, toastMsg?: string) => {
-    document.execCommand(cmd, false, val);
-    editorRef.current?.focus();
+    focusEditor();
+    if (cmd === 'paste') {
+      const nav: any = navigator;
+      if (nav.clipboard && nav.clipboard.readText) {
+        nav.clipboard.readText().then((t: string) => { focusEditor(); document.execCommand('insertText', false, t); persistEditor(); })
+          .catch(() => { setChordToast('붙이기: 브라우저가 클립보드 읽기를 막았습니다 (Ctrl+V 사용)'); setTimeout(() => setChordToast(null), 2000); });
+      }
+      return;
+    }
+    const ok = document.execCommand(cmd, false, val);
+    if ((cmd === 'copy' || cmd === 'cut') && !ok) {
+      const t = window.getSelection()?.toString();
+      if (t && (navigator as any).clipboard) (navigator as any).clipboard.writeText(t);
+    }
     if (toastMsg) {
       setChordToast(toastMsg);
       setTimeout(() => setChordToast(null), 1200);
     }
+    persistEditor();
+  };
+
+  const applyParagraphStyle = (styles: Partial<CSSStyleDeclaration> & { textJustify?: string }, restoreFocus = true) => {
+    if (restoreFocus) focusEditor();
+    const editor = editorRef.current, selection = window.getSelection();
+    if (!editor) return;
+    const range = !restoreFocus && savedRange.current ? savedRange.current : selection?.rangeCount ? selection.getRangeAt(0) : null;
+    if (!range || !editor.contains(range.commonAncestorContainer)) return;
+    const paragraphs = Array.from(editor.querySelectorAll<HTMLElement>('div,p,li,h1,h2,h3,blockquote'))
+      .filter(element => !element.querySelector('div,p,li,h1,h2,h3,blockquote') && range.intersectsNode(element));
+    if (!paragraphs.length) paragraphs.push(editor);
+    paragraphs.forEach(paragraph => Object.assign(paragraph.style, styles));
+    persistEditor();
   };
 
   const handleDocInfo = () => {
     setActiveModal('docinfo');
   };
 
-  const handleSave = () => {
-    const text = editorRef.current ? editorRef.current.innerText : '';
-    localStorage.setItem('web_hwp_current_content', text);
-    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = docTitle.includes('.') ? docTitle : `${docTitle}.hwpx`;
-    a.click();
-    URL.revokeObjectURL(url);
+  const reportFileError = (error: unknown) => {
+    setChordToast(error instanceof Error ? error.message : '파일을 처리하지 못했습니다.');
   };
 
-  const handleOpen = () => {
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = '.hwp,.hwpx,.txt';
-    input.onchange = (e: any) => {
-      const file = e.target.files[0];
-      if (file) {
-        const name = file.name;
-        setDocTitle(name);
-        setDocFilePath('C:\\Users\\K\\Desktop\\');
-        const reader = new FileReader();
-        reader.onload = (re: any) => {
-          if (editorRef.current) {
-            editorRef.current.innerText = re.target.result;
-            localStorage.setItem('web_hwp_current_content', re.target.result);
-          }
-        };
-        reader.readAsText(file);
-      }
-    };
-    input.click();
+  const handleSave = async (saveAs = false) => {
+    if (fileOperation.current || !editorRef.current) return;
+    fileOperation.current = true;
+    try {
+      if (!hwpxDocument.current) throw new Error('HWPX 원본 정보가 없습니다. 원본 파일을 다시 열어 주세요.');
+      persistEditor();
+      const signature = documentSignature();
+      const bytes = hwpxDocument.current.save(editorRef.current, settingsRef.current, titleRef.current);
+      const result = await fileSession.current.save(bytes, titleRef.current, saveAs);
+      if (!result) return;
+      setDocTitle(result.name); setDocFilePath('');
+      cleanDocument.current = signature;
+      setChordToast(result.associated ? 'HWPX 저장 완료' : 'HWPX 파일 다운로드 완료');
+      setTimeout(() => setChordToast(null), 2000);
+    } catch (error) { reportFileError(error); }
+    finally { fileOperation.current = false; }
+  };
+
+  const handleOpen = async () => {
+    if (fileOperation.current) return;
+    fileOperation.current = true;
+    try {
+      const selected = await fileSession.current.chooseOpen();
+      if (!selected) return;
+      const bytes = new Uint8Array(await selected.file.arrayBuffer());
+      const model = new HwpxDocument(bytes);
+      const fragment = model.render(), settings = model.settings();
+      if (!confirmReplaceDocument() || !editorRef.current) return;
+      // Store the backing package first; failures leave the current document intact.
+      let encoded = '';
+      for (let offset = 0; offset < bytes.length; offset += 16384) encoded += String.fromCharCode(...bytes.subarray(offset, offset + 16384));
+      localStorage.setItem('web_hwp_hwpx_source', btoa(encoded));
+      hwpxDocument.current = model;
+      editorRef.current.replaceChildren(fragment);
+      fileSession.current.associate(selected.handle);
+      savedRange.current = null;
+      settingsRef.current = settings;
+      setPageConfig(settings.page); setPageOrientation(settings.orientation); setColumnCount(settings.columns);
+      setDocTitle(selected.file.name); setDocFilePath('');
+      persistEditor();
+      cleanDocument.current = documentSignature();
+      setChordToast('HWPX 문서 열기 완료'); setTimeout(() => setChordToast(null), 2000);
+    } catch (error) { reportFileError(error); }
+    finally { fileOperation.current = false; }
   };
 
   const handleNewDoc = () => {
-    if (editorRef.current) {
-      editorRef.current.innerText = '';
-    }
-    setDocTitle('빈 문서 1');
-    setDocFilePath('');
+    if (fileOperation.current || !confirmReplaceDocument()) return;
+    hwpxDocument.current = new HwpxDocument();
+    fileSession.current.reset();
+    if (editorRef.current) editorRef.current.innerText = '';
+    savedRange.current = null;
+    setDocTitle('빈 문서 1'); setDocFilePath('');
     localStorage.removeItem('web_hwp_current_content');
+    localStorage.removeItem('web_hwp_current_html');
+    localStorage.removeItem('web_hwp_hwpx_source');
     localStorage.removeItem('web_hwp_current_path');
     localStorage.setItem('web_hwp_current_title', '빈 문서 1');
+    cleanDocument.current = documentSignature();
   };
 
   const handleContextMenu = (e: React.MouseEvent) => {
@@ -439,6 +635,7 @@ export default function App() {
   };
 
   const handleInput = (e: React.FormEvent<HTMLDivElement>) => {
+    persistEditor();
     const text = e.currentTarget.innerText;
     setCaret(prev => ({
       ...prev,
@@ -458,13 +655,36 @@ export default function App() {
         tableHtml += `</tr>`;
       }
       tableHtml += `</table><p>&nbsp;</p>`;
-      document.execCommand('insertHTML', false, tableHtml);
+      insertHtmlToDoc(tableHtml);
     }
     setActiveModal(null);
   };
 
   const toast = (m: string) => { setChordToast(m); setTimeout(() => setChordToast(null), 1200); };
-  const RIBBON_ACTIONS: { title: string; run: () => void }[] = [
+  const fitDocument = (wholePage: boolean) => {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+    const widthScale = (viewport.clientWidth - 40) / (paperMmWidth * 96 / 25.4 + 2);
+    const heightScale = (viewport.clientHeight - 22) / (paperMmHeight * 96 / 25.4 + 2);
+    setZoom(Math.max(25, Math.min(500, Math.floor(100 * (wholePage ? Math.min(widthScale, heightScale) : widthScale)))));
+  };
+  const referencedActions: Record<string, Partial<Record<string, () => void>>> = {
+    '보기': {
+      '컬러': () => setViewColor('color'), '회색조': () => setViewColor('grayscale'),
+      '그림': () => setShowPictures(value => !value), '상황 선': () => setShowStatus(value => !value),
+      '문서 탭': () => setShowDocumentTabs(value => !value),
+      '축소': () => setZoom(value => Math.max(25, value - 10)), '확대': () => setZoom(value => Math.min(500, value + 10)),
+      '100%': () => setZoom(100), '쪽 맞춤': () => fitDocument(true), '폭 맞춤': () => fitDocument(false),
+    },
+    '쪽': {
+      '편집 용지': () => setActiveModal('page'),
+      '세로': () => setPageOrientation('portrait'), '가로': () => setPageOrientation('landscape'),
+    },
+  };
+  const referenceChecked: Record<string, boolean> = { '보기:그림': showPictures, '보기:상황 선': showStatus, '보기:문서 탭': showDocumentTabs };
+  const referenceDropdownLabel = MENU_DEF.find(menu => menu.drop === activeDropdown)?.title || '';
+  const referenceDropdown = referencedTabs[referenceDropdownLabel]?.dropdown;
+  const RIBBON_ACTIONS: { title: string; run: () => void; disabled?: boolean }[] = [
     { title: '오려두기 (Ctrl+X)', run: () => runCommand('cut', null, '오려두기') },
     { title: '복사하기 (Ctrl+C)', run: () => runCommand('copy', null, '복사하기') },
     { title: '붙이기 (Ctrl+V)', run: () => runCommand('paste', null, '붙이기') },
@@ -485,12 +705,15 @@ export default function App() {
     { title: '개체 선택', run: () => toast('개체 선택 모드') },
     { title: '개체 보호', run: () => toast('개체 보호 설정') },
     { title: '찾기 (Ctrl+F)', run: () => setActiveModal('find') },
+    { title: '글자 바꾸기 (Ctrl+H)', run: () => setActiveModal('find') },
+    { title: '정렬', run: () => {}, disabled: true },
   ];
-  const RIBBON_BOXES = RIBBON_ACTIONS.map((a, i) => ({ ...a, ...RIBBON_BOXES_POS[i] }));
+  const ribbonNames = ['오려 두기', '복사하기', '붙이기', '모양 복사', '조판 부호 지우기', '글자 모양', '문단 모양', '스타일', '세로', '가로', '쪽 여백', '바탕쪽', '단', '도형', '그림', '표', '차트', '개체 선택', '개체 보호', '찾기', '글자 바꾸기', '정렬'];
+  const RIBBON_BOXES = RIBBON_ACTIONS.map((a, i) => ({ ...a, nativeName: ribbonNames[i] }));
   const FMT_ACTIONS: { title: string; run: () => void }[] = [
     { title: '새 문서 (Alt+N)', run: handleNewDoc },
     { title: '불러오기 (Alt+O)', run: handleOpen },
-    { title: '저장하기 (Alt+S)', run: handleSave },
+    { title: '저장하기 (Alt+S)', run: () => { void handleSave(); } },
     { title: '인쇄 (Alt+P)', run: () => window.print() },
     { title: '미리 보기', run: () => window.print() },
     { title: '되돌리기 (Ctrl+Z)', run: () => runCommand('undo', null, '되돌리기') },
@@ -498,10 +721,17 @@ export default function App() {
     { title: '진하게 (Ctrl+B)', run: () => runCommand('bold', null, '진하게') },
     { title: '기울임 (Ctrl+I)', run: () => runCommand('italic', null, '기울임') },
     { title: '밑줄 (Ctrl+U)', run: () => runCommand('underline', null, '밑줄') },
+    { title: '취소선', run: () => runCommand('strikeThrough') },
+    { title: '양쪽 정렬', run: () => runCommand('justifyFull') },
+    { title: '왼쪽 정렬', run: () => runCommand('justifyLeft') },
+    { title: '가운데 정렬', run: () => runCommand('justifyCenter') },
+    { title: '오른쪽 정렬', run: () => runCommand('justifyRight') },
+    { title: '배분 정렬', run: () => applyParagraphStyle({ textAlign: 'justify', textAlignLast: 'justify', textJustify: 'inter-character' }) },
+    { title: '나눔 정렬', run: () => applyParagraphStyle({ textAlign: 'justify', textAlignLast: 'justify', textJustify: 'inter-word' }) },
   ];
+  const formatNames = ['새 문서', '불러오기', '저장하기', '인쇄', '미리 보기', '되돌리기', '다시 실행', '진하게', '기울임', '밑줄', '취소선', '양쪽 정렬', '왼쪽 정렬', '가운데 정렬', '오른쪽 정렬', '배분 정렬', '나눔 정렬'];
   const FORMAT_BOXES = [
-    ...FMT_ACTIONS.map((a, i) => ({ ...a, top: 5, h: 27, ...FMT_POS[i] })),
-    { title: '글자 모양 (대표)', run: () => setActiveModal('font'), top: 9, h: 24, x: 438, w: 91 },
+    ...FMT_ACTIONS.map((a, i) => ({ ...a, nativeName: formatNames[i] })),
   ];
 
   const menus = [
@@ -519,16 +749,17 @@ export default function App() {
   return (
     <div
       onContextMenu={handleContextMenu}
+      onPointerDownCapture={event => {
+        captureEditorSelection();
+        if (activeDropdown && !(event.target as Element).closest('[data-native-dropdown], [data-native-control^="메뉴:"]')) setActiveDropdown(null);
+      }}
       style={{
         display: 'flex',
         flexDirection: 'column',
-        width: '1916px',
-        minWidth: '1916px',
-        maxWidth: '1916px',
-        height: '918px',
-        minHeight: '918px',
-        maxHeight: '918px',
-        margin: '0 auto',
+        width: '100%',
+        minWidth: '960px',
+        height: '100vh',
+        minHeight: 0,
         backgroundColor: '#ffffff',
         color: '#222222',
         fontFamily: '"Malgun Gothic", "맑은 고딕", -apple-system, BlinkMacSystemFont, sans-serif',
@@ -540,20 +771,40 @@ export default function App() {
     >
       {/* 2단 조합키 (Chord) 실시간 안내 토스트 */}
       <style>{`
+        .document-hide-pictures img { visibility: hidden; }
         .hwp-btn {
-          cursor: pointer;
+          cursor: default;
           box-sizing: border-box;
-          border-radius: 2px;
+          border-radius: 0;
           border: 1px solid transparent;
-          transition: background-color 0.08s, border-color 0.08s;
+          transition: none;
         }
-        .hwp-btn:hover {
-          background-color: rgba(0, 120, 215, 0.16) !important;
-          border-color: rgba(0, 120, 215, 0.45) !important;
+        .hwp-btn:not(:disabled):hover {
+          background-color: rgba(0, 0, 0, 0.0784314) !important;
+          border-color: #b4b4b4 !important;
         }
-        .hwp-btn:active {
-          background-color: rgba(0, 120, 215, 0.32) !important;
-          border-color: #005fb8 !important;
+        .hwp-btn:not(:disabled):active {
+          background-color: rgba(0, 0, 0, 0.2) !important;
+          border-color: #b4b4b4 !important;
+        }
+        .hwp-btn[data-native-portrait] {
+          border: 0;
+          border-radius: 0;
+          transition: none;
+        }
+        .hwp-btn[data-native-portrait]:hover,
+        .hwp-btn[data-native-portrait]:active {
+          background-color: transparent !important;
+        }
+        .hwp-btn[data-native-portrait]:hover::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: url('/hwp_portrait_hover.png') no-repeat;
+          pointer-events: none;
+        }
+        .hwp-btn[data-native-portrait]:active::after {
+          background-image: url('/hwp_portrait_pressed.png');
         }
       `}</style>
       {chordToast && (
@@ -577,35 +828,19 @@ export default function App() {
 
       {/* 1. 최상단 타이틀바 (26px) */}
       {!isStandalone && (
-        <div style={{
-          height: '26px',
-          width: '1916px',
-          backgroundColor: '#ffffff',
-          backgroundImage: 'url(/hwp_title_exact.png)',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'left top',
-          backgroundSize: '1916px 26px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'flex-end',
-          padding: '0 8px 0 10px',
-          fontSize: '12px',
-          flexShrink: 0,
-          position: 'relative'
-        }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', fontSize: '11px', color: '#666666', marginLeft: 'auto', zIndex: 10 }}>
-            <span style={{ cursor: 'pointer', opacity: 0 }}>로그인</span>
-            <span title="최소화" style={{ cursor: 'pointer', width: '24px', height: '24px', display: 'inline-block', opacity: 0 }}>─</span>
-            <span title="최대화" style={{ cursor: 'pointer', width: '24px', height: '24px', display: 'inline-block', opacity: 0 }}>□</span>
-            <span title="닫기" style={{ cursor: 'pointer', width: '24px', height: '24px', display: 'inline-block', opacity: 0 }}>✕</span>
-          </div>
+        <div style={{ height: '32px', width: '100%', minWidth: '960px', backgroundColor: '#ffffff', flexShrink: 0, position: 'relative', overflow: 'hidden' }}>
+          <Slice src="/hwp_native_title.png" h={32} rightW={272} /><div className="hwp-brand" aria-label="Web HWP REA">ㅎ</div>
+          <div style={{ position: 'absolute', left: 32, right: 272, top: 1, height: 30, background: 'white', textAlign: 'center', lineHeight: '30px', pointerEvents: 'none' }}>{docTitle} - 한글</div>
+          {[['로그인', 1800, 44, () => toast('로그인')], ['최소화', 1848, 20, () => toast('최소화 (브라우저 창 사용)')], ['최대화', 1873, 20, () => { if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen?.(); }], ['닫기', 1897, 19, () => toast('닫기: 브라우저 탭을 닫아 주세요')]].map(([t, x, w, f]: any) => (
+            <div key={t} className="hwp-btn" style={{ position: 'absolute', top: 0, right: 1916 - x - w, width: w, height: 26 }} onMouseDown={(e) => e.preventDefault()} onClick={f} title={t} />
+          ))}
         </div>
       )}
 
       {/* 2. 메인 메뉴바 (32px, 실제 한글 네이티브 슬라이스 1:1 일치) */}
       <div style={{
-        height: '32px',
-        width: '1916px',
+        height: '34px',
+        width: '100%', minWidth: '960px',
         backgroundColor: '#ffffff',
         display: 'flex',
         alignItems: 'center',
@@ -614,22 +849,30 @@ export default function App() {
         flexShrink: 0,
         zIndex: 50
       }}>
-        <img
-          src="/hwp_menu_exact.png"
-          alt="한글 메뉴바"
-          style={{ height: '32px', width: '1916px', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
-        />
-        {/* 투명 클릭 히트박스: 1916px 슬라이스 실측 구간 기반 (이웃 구간 중점 경계) */}
+        <Slice src={referencedTabs[activeMenu]?.menuAsset || (activeMenu === '입력' ? '/hwp_native_insert_menu.png' : activeMenu === '서식' ? '/hwp_native_format_menu.png' : '/hwp_native_menu.png')} h={34} rightW={272} />
+        {/* Native UIA bounds; label and dropdown arrow have separate actions. */}
         {MENU_BOXES.map((m) => (
-          <div key={m.key} className="hwp-btn" style={{ position: 'absolute', top: '2px', left: `${m.x}px`, width: `${m.w}px`, height: '28px' }}
-            onMouseDown={(e) => e.preventDefault()}
-            onClick={() => m.drop ? setActiveDropdown(activeDropdown === m.drop ? null : m.drop) : toast(m.title + ' 메뉴')}
-            title={m.title} />
+          <div key={m.key} data-native-control={`메뉴:${m.title}`} style={controlStyle('메뉴', m.title, 32)}>
+            <button className="hwp-btn" title={m.title} aria-pressed={m.title !== '파일' && activeMenu === m.title}
+              style={{ position: 'absolute', top: 0, left: 0, width: m.w - (m.title === '파일' ? 0 : 18), height: 28, padding: 0, background: 'transparent' }}
+              onMouseDown={e => e.preventDefault()}
+              onClick={() => {
+                if (m.title === '파일') setActiveDropdown(activeDropdown === 'file' ? null : 'file');
+                else { setActiveMenu(m.title); setActiveDropdown(null); }
+              }} />
+            {m.title !== '파일' && <button className="hwp-btn" title={`${m.title} 메뉴 펼치기`} aria-expanded={activeDropdown === m.drop}
+              style={{ position: 'absolute', top: 0, left: m.w - 18, width: 18, height: 28, padding: 0, background: 'transparent' }}
+              onMouseDown={e => e.preventDefault()}
+              onClick={() => { if (m.drop) setActiveDropdown(activeDropdown === m.drop ? null : m.drop); }} />}
+          </div>
         ))}
 
         {/* 네이티브 드롭다운 메뉴 레이어 */}
-        {activeDropdown && (
+        {activeDropdown && referenceDropdown && <ReferenceDropdown menu={referenceDropdown} label={referenceDropdownLabel}
+          onClose={() => setActiveDropdown(null)} onCommand={name => window.alert(`${name} 기능은 아직 지원하지 않습니다.`)} />}
+        {activeDropdown && !referenceDropdown && (
           <div
+            data-native-dropdown={activeDropdown}
             style={{
               position: 'absolute',
               top: '32px',
@@ -654,7 +897,7 @@ export default function App() {
                 <ContextMenuItem label="최근 문서" />
                 <ContextMenuDivider />
                 <ContextMenuItem label="저장하기" shortcut="Ctrl+S" onClick={() => { handleSave(); setActiveDropdown(null); }} />
-                <ContextMenuItem label="다른 이름으로 저장하기..." shortcut="Alt+V" onClick={() => { handleSave(); setActiveDropdown(null); }} />
+                <ContextMenuItem label="다른 이름으로 저장하기..." shortcut="Alt+V" onClick={() => { void handleSave(true); setActiveDropdown(null); }} />
                 <ContextMenuDivider />
                 <ContextMenuItem label="인쇄..." shortcut="Ctrl+P" onClick={() => { window.print(); setActiveDropdown(null); }} />
                 <ContextMenuItem label="미리 보기" onClick={() => { window.print(); setActiveDropdown(null); }} />
@@ -736,8 +979,8 @@ export default function App() {
 
       {/* 3. 리본 툴바 (83px, 21개 도구 실측 1:1 정렬) */}
       <div style={{
-        height: '83px',
-        width: '1916px',
+        height: '84px',
+        width: '100%', minWidth: '960px',
         backgroundColor: '#ffffff',
         display: 'flex',
         alignItems: 'center',
@@ -745,22 +988,54 @@ export default function App() {
         overflow: 'hidden',
         flexShrink: 0
       }}>
-        <img
-          src="/hwp_ribbon_exact.png"
-          alt="한글 리본 툴바"
-          style={{ height: '83px', width: '1916px', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
-        />
+        <Slice src={referencedTabs[activeMenu]?.ribbonAsset || (activeMenu === '입력' ? '/hwp_native_insert.png' : activeMenu === '서식' ? '/hwp_native_format_ribbon.png' : '/hwp_native_ribbon.png')} h={84} />
         {/* 리본(편집 탭) 20개 도구: 슬라이스 실측 구간 */}
-        {RIBBON_BOXES.map((r) => (
-          <div key={r.title} className="hwp-btn" style={{ position: 'absolute', top: '4px', left: `${r.x}px`, width: `${r.w}px`, height: '74px' }}
+        {activeMenu === '편집' && RIBBON_BOXES.map((r) => (
+          <button key={r.title} className="hwp-btn" type="button" disabled={r.disabled} data-native-control={`편집:${r.nativeName}`}
+            data-native-portrait={r.title === '용지 방향: 세로' && pageOrientation === 'portrait' ? '' : undefined}
+            style={controlStyle('편집', r.nativeName, 66)}
             onMouseDown={(e) => e.preventDefault()} onClick={r.run} title={r.title} />
         ))}
+        {referencedTabs[activeMenu]?.controls.map(control => {
+          const action = referencedActions[activeMenu]?.[control.name];
+          const key = `${activeMenu}:${control.name}`;
+          const checked = referenceChecked[key];
+          return <button key={control.name} type="button" className={control.type === 'CheckBox' ? 'native-ribbon-checkbox' : 'hwp-btn'}
+            data-native-control={key} data-command-status={!control.enabled ? 'native-disabled' : action ? 'connected' : 'unavailable'}
+            role={control.type === 'CheckBox' ? 'checkbox' : undefined} aria-checked={control.type === 'CheckBox' ? checked : undefined}
+            title={control.name} aria-description={control.enabled && !action ? '현재 지원하지 않는 기능' : undefined}
+            disabled={!control.enabled}
+            style={{ position: 'absolute', left: control.x, top: control.y - 66, width: control.w, height: control.h, padding: 0, background: 'transparent', ...(control.type === 'CheckBox' ? { border: 0 } : {}) }}
+            onMouseDown={event => event.preventDefault()}
+            onClick={() => { if (action) action(); else window.alert(`${control.name} 기능은 아직 지원하지 않습니다.`); }}>
+            {checked === false && <span aria-hidden="true" style={{ position: 'absolute', left: 0, top: 3, width: 14, height: 14, background: 'white', border: '1px solid #d4d4d4', boxSizing: 'border-box' }} />}
+          </button>;
+        })}
+        {activeMenu === '서식' && [
+          { title: '글자 모양 (Alt+L)', x: 472, w: 48, run: () => setActiveModal('font') },
+          { title: '문단 모양 (Alt+T)', x: 879, w: 49, run: () => setActiveModal('paragraph') },
+          { title: '양쪽 정렬', x: 942, w: 41, run: () => runCommand('justifyFull', null, '양쪽 정렬') },
+          { title: '바탕글 적용', x: 19, w: 194, run: () => runCommand('formatBlock', 'P', '바탕글') },
+          { title: '개요 1 적용', x: 19, w: 194, run: () => runCommand('formatBlock', 'H1', '개요 1'), top: 48 }
+        ].map(r => <button key={r.title} className="hwp-btn" title={r.title}
+          style={{ position: 'absolute', top: r.top || 5, left: r.x, width: r.w, height: r.x === 19 ? 37 : 76, padding: 0, background: 'transparent' }}
+          onMouseDown={e => e.preventDefault()} onClick={r.run} />)}
+        {activeMenu === '입력' && [
+          { title: '그림 (Ctrl+N, I)', x: 160, w: 37, run: handleInsertImage },
+          { title: '표 (Ctrl+N, T)', x: 198, w: 37, run: () => setActiveModal('table') },
+          { title: '차트', x: 236, w: 37, run: handleInsertChart },
+          { title: '글맵시', x: 274, w: 41, run: () => handleInsertShape('textbox') },
+          { title: '수식 (Ctrl+N, M)', x: 316, w: 42, run: openEquation },
+          { title: '문자표 (Ctrl+F10)', x: 903, w: 41, run: () => setActiveModal('charmap') }
+        ].map(r => <button key={r.title} className="hwp-btn" title={r.title}
+          style={{ position: 'absolute', top: 5, left: r.x, width: r.w, height: 76, padding: 0, background: 'transparent' }}
+          onMouseDown={e => e.preventDefault()} onClick={r.run} />)}
       </div>
 
       {/* 4. 빠른 서식 툴바 (37px, 4개 콤보박스 및 빠른 버튼 1:1 정밀 일치) */}
       <div style={{
-        height: '37px',
-        width: '1916px',
+        height: '36px',
+        width: '100%', minWidth: '960px',
         backgroundColor: '#ffffff',
         display: 'flex',
         alignItems: 'center',
@@ -768,46 +1043,52 @@ export default function App() {
         overflow: 'hidden',
         flexShrink: 0
       }}>
-        <img
-          src="/hwp_format_exact.png"
-          alt="한글 서식줄"
-          style={{ height: '37px', width: '1916px', objectFit: 'none', objectPosition: 'left top', pointerEvents: 'none' }}
-        />
+        <Slice src="/hwp_native_format.png" h={36} />
         {FORMAT_BOXES.map((f) => (
-          <div key={f.title} className="hwp-btn" style={{ position: 'absolute', top: `${f.top}px`, left: `${f.x}px`, width: `${f.w}px`, height: `${f.h}px` }}
+          <button key={f.title} type="button" className="hwp-btn" data-native-control={`빠른 서식:${f.nativeName}`} style={controlStyle('빠른 서식', f.nativeName, 150)}
             onMouseDown={(e) => e.preventDefault()} onClick={f.run} title={f.title} />
         ))}
-        <select defaultValue="바탕글" style={{ position: 'absolute', top: '9px', left: `${FMT_COMBO.style.x}px`, width: `${FMT_COMBO.style.w}px`, height: '24px', opacity: 0, cursor: 'pointer' }} title="스타일"
-          onChange={(e) => {
-            if (e.target.value === '개요 1') runCommand('formatBlock', 'H1', '개요 1 적용');
-            else if (e.target.value === '개요 2') runCommand('formatBlock', 'H2', '개요 2 적용');
-            else runCommand('formatBlock', 'P', '바탕글 적용');
-          }}>
+        <ToolbarCombo title="스타일" initial="바탕글" bounds={controlStyle('빠른 서식', '스타일', 150)}
+          onChange={value => runCommand('formatBlock', value === '개요 1' ? 'H1' : value === '개요 2' ? 'H2' : 'P')}>
           <option>바탕글</option><option>본문</option><option>개요 1</option><option>개요 2</option>
-        </select>
-        <select defaultValue="함초롬바탕, Batang, serif" style={{ position: 'absolute', top: '9px', left: `${FMT_COMBO.font.x}px`, width: `${FMT_COMBO.font.w}px`, height: '24px', opacity: 0, cursor: 'pointer' }} title="글꼴"
-          onChange={(e) => runCommand('fontName', e.target.value, '글꼴 적용')}>
-          <option value="함초롬바탕, Batang, serif">함초롬바탕</option>
-          <option value="함초롬돋움, Dotum, sans-serif">함초롬돋움</option>
-          <option value="'Malgun Gothic', '맑은 고딕', sans-serif">맑은 고딕</option>
-          <option value="Batang, 바탕, serif">바탕</option>
-          <option value="Gungsuh, 궁서, serif">궁서</option>
-        </select>
-        <select defaultValue="3" style={{ position: 'absolute', top: '9px', left: `${FMT_COMBO.size.x}px`, width: `${FMT_COMBO.size.w}px`, height: '24px', opacity: 0, cursor: 'pointer' }} title="글자 크기"
-          onChange={(e) => runCommand('fontSize', e.target.value, '글자 크기 적용')}>
-          <option value="1">8.0 pt</option><option value="2">9.0 pt</option><option value="3">10.0 pt</option><option value="4">11.0 pt</option>
-          <option value="5">12.0 pt</option><option value="6">14.0 pt</option><option value="7">16.0 pt</option>
-        </select>
-        <div className="hwp-btn" style={{ position: 'absolute', top: '5px', left: `${FMT_COLOR.x}px`, width: `${FMT_COLOR.w}px`, height: '27px' }} title="글자 색">
+        </ToolbarCombo>
+        <ToolbarCombo title="언어" initial="대표" bounds={controlStyle('빠른 서식', '언어', 150)}>
+          <option>대표</option><option>한글</option><option>영문</option><option>한자</option><option>일어</option><option>기타</option><option>기호</option><option>사용자</option>
+        </ToolbarCombo>
+        <ToolbarCombo title="글꼴" initial="함초롬바탕" bounds={controlStyle('빠른 서식', '함초롬바탕', 150)}
+          onChange={value => runCommand('fontName', value)}>
+          <option>함초롬바탕</option><option>함초롬돋움</option><option>맑은 고딕</option><option>바탕</option><option>궁서</option>
+        </ToolbarCombo>
+        <ToolbarCombo title="글자 크기" initial="10" bounds={controlStyle('빠른 서식', '글자 크기', 150)} onChange={value => {
+          focusEditor(); document.execCommand('fontSize', false, '7');
+          editorRef.current?.querySelectorAll('font[size="7"]').forEach(element => {
+            element.removeAttribute('size'); (element as HTMLElement).style.fontSize = `${Number(value)}pt`;
+          });
+          persistEditor();
+        }}>
+          {[8,9,10,11,12,14,16,18,20,24,28,36,48,72].map(size => <option key={size} value={size}>{size.toFixed(1)}</option>)}
+        </ToolbarCombo>
+        <div className="hwp-btn" data-native-control="빠른 서식:글자 색" style={controlStyle('빠른 서식', '글자 색', 150)} title="글자 색">
           <input type="color" defaultValue="#ff0000" onChange={(e) => runCommand('foreColor', e.target.value, '글자 색 적용')}
-            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0, cursor: 'pointer' }} />
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0, cursor: 'default' }} />
         </div>
+        <input type="number" title="줄 간격" aria-label="빠른 서식 줄 간격" data-native-control="빠른 서식:줄 간격" min={50} max={500} step={10} value={lineSpacingDraft}
+          style={{ ...controlStyle('빠른 서식', '줄 간격', 150), boxSizing: 'border-box', background: 'white', border: '1px solid #d4d4d4', color: '#222', font: '12px Malgun Gothic, sans-serif', paddingLeft: 6 }}
+          onChange={event => setLineSpacingDraft(event.target.value)}
+          onKeyDown={event => { if (event.key === 'Enter') { event.preventDefault(); event.stopPropagation(); event.currentTarget.blur(); } }}
+          onBlur={event => {
+            const value = Number(event.target.value);
+            if (value < 50 || value > 500) { setLineSpacingDraft(String(paraConfig.lineHeight)); return; }
+            applyParagraphStyle({ lineHeight: String(value / 100) }, false);
+            setParaConfig(config => ({ ...config, lineHeight: value }));
+          }} />
+        <span aria-hidden="true" style={{ position: 'absolute', left: 1206, top: 9, color: '#0078d7', fontSize: 11, pointerEvents: 'none' }}>%</span>
       </div>
 
       {/* 5. 가로 눈금자 (41px, 1916px 1:1 일치) */}
       <div style={{
-        height: '41px',
-        width: '1916px',
+        height: '28px',
+        width: '100%', minWidth: '960px',
         backgroundColor: '#ffffff',
         display: 'flex',
         alignItems: 'center',
@@ -815,63 +1096,62 @@ export default function App() {
         overflow: 'hidden',
         flexShrink: 0
       }}>
-        <img
-          src="/hwp_ruler_exact.png"
-          alt="가로 눈금자"
-          style={{ height: '41px', width: '1916px', objectFit: 'none', objectPosition: 'left top' }}
-        />
+        <div style={{ position: 'absolute', inset: 0, background: '#f5f5f5', borderTop: '1px solid #ddd' }} />
+        <div data-testid="horizontal-ruler" style={{ position: 'absolute', left: 28 + paperLeft - 1 - scrollPosition.x, top: zoom === 110 ? -1 : 0,
+          width: zoom === 110 ? 882 : 800, height: 28, backgroundImage: zoom === 110 ? 'url(/hwp_native_ruler_110.png)' : 'url(/hwp_native_ruler_scale.png)',
+          transform: zoom === 100 || zoom === 110 ? 'none' : `scaleX(${documentScale})`, transformOrigin: 'left top' }} />
+        <div style={{ position: 'absolute', left: 1, top: 0, width: 28, height: 28, backgroundImage: 'url(/hwp_native_ruler_tab.png)' }} />
       </div>
 
       {/* 6. 중앙 워크스페이스 (668px, 종이 x=563px 1:1 절대 일치) */}
       <div style={{
-        height: '668px',
-        width: '1916px',
+        flex: 1,
+        minHeight: 0,
+        width: '100%',
+        minWidth: '960px',
         display: 'flex',
         backgroundColor: '#f5f5f5',
         position: 'relative',
-        overflow: 'hidden',
-        flexShrink: 0
+        overflow: 'visible'
       }}>
         {/* 세로 눈금자 및 사이드바 (실제 한글 네이티브 30x668 슬라이스) */}
         <div style={{
-          width: '30px',
-          height: '668px',
+          width: '28px',
           backgroundColor: '#f5f5f5',
-          backgroundImage: 'url(/hwp_left_ruler_exact.png)',
+          backgroundImage: zoom === 110 ? 'url(/hwp_native_left_ruler_110.png)' : 'url(/hwp_native_left_ruler.png)',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'top left',
+          backgroundPosition: `0px -${scrollPosition.y}px`,
           flexShrink: 0
         }} />
 
-        {/* 캔버스 (A4 종이 절대 위치 x=563px -> 워크스페이스 기준 563 - 30 = 533px) */}
-        <div style={{
-          flex: 1,
-          height: '668px',
-          overflowY: 'auto',
-          position: 'relative'
-        }}>
-          <div style={{
+        <div ref={viewportRef} id="document-viewport" className={`document-viewport${showPictures ? '' : ' document-hide-pictures'}`}
+          onScroll={event => setScrollPosition({ x: event.currentTarget.scrollLeft, y: event.currentTarget.scrollTop })}>
+          <div aria-hidden="true" style={{ height: ((pageOrientation === 'portrait' ? pageConfig.height : pageConfig.width) * 96 / 25.4 + 2) * documentScale + 71,
+            minWidth: ((pageOrientation === 'portrait' ? pageConfig.width : pageConfig.height) * 96 / 25.4 + 2) * documentScale + 40, pointerEvents: 'none' }} />
+          <div data-testid="document-paper" style={{
+            filter: viewColor === 'grayscale' ? 'grayscale(1)' : undefined,
             position: 'absolute',
-            left: pageOrientation === 'portrait' ? '533px' : '367px',
-            top: '22px',
-            width: pageOrientation === 'portrait' ? '792px' : '1123px',
-            minHeight: pageOrientation === 'portrait' ? '1123px' : '792px',
+            left: paperLeft,
+            top: '11px',
+            width: paperScreenWidth,
+            minHeight: `${(paperMmHeight * 96 / 25.4 + 2) * documentScale}px`,
             backgroundColor: '#ffffff',
-            boxShadow: '0 1px 3px rgba(0,0,0,0.15)',
+            border: '1px solid #ababab',
             boxSizing: 'border-box',
-            transition: 'left 0.2s ease, width 0.2s ease, min-height 0.2s ease'
+            transition: 'none'
           }}>
+            <div style={{ position: 'absolute', left: 0, top: 0, width: (paperScreenWidth - 2) / documentScale, minHeight: paperMmHeight * 96 / 25.4, transform: `scale(${documentScale})`, transformOrigin: 'top left' }}>
             {/* L자 여백 가이드마커 (실측 offset left: 115px, top: 114px) */}
-            <svg style={{ position: 'absolute', top: '114px', left: '115px', width: '16px', height: '16px' }}>
-              <path d="M0 0 L0 16 M0 0 L16 0" stroke="#cccccc" strokeWidth="1" fill="none" />
+            <svg style={{ position: 'absolute', top: `${(pageConfig.top + pageConfig.header) * 96 / 25.4 - 19}px`, left: `${pageConfig.left * 96 / 25.4 - 19}px`, width: '20px', height: '20px' }}>
+              <path d="M0 19 H19 V0" stroke="#cccccc" strokeWidth="1" fill="none" />
             </svg>
-            <svg style={{ position: 'absolute', top: '114px', right: '112px', width: '16px', height: '16px' }}>
-              <path d="M16 0 L16 16 M16 0 L0 0" stroke="#cccccc" strokeWidth="1" fill="none" />
+            <svg style={{ position: 'absolute', top: `${(pageConfig.top + pageConfig.header) * 96 / 25.4 - 19}px`, right: `${pageConfig.right * 96 / 25.4 - 19}px`, width: '20px', height: '20px' }}>
+              <path d="M0 0 V19 H19" stroke="#cccccc" strokeWidth="1" fill="none" />
             </svg>
-            <svg style={{ position: 'absolute', bottom: '114px', left: '115px', width: '16px', height: '16px' }}>
+            <svg style={{ position: 'absolute', bottom: '114px', left: `${pageConfig.left * 96 / 25.4}px`, width: '16px', height: '16px' }}>
               <path d="M0 16 L0 0 M0 16 L16 16" stroke="#cccccc" strokeWidth="1" fill="none" />
             </svg>
-            <svg style={{ position: 'absolute', bottom: '114px', right: '112px', width: '16px', height: '16px' }}>
+            <svg style={{ position: 'absolute', bottom: '114px', right: `${pageConfig.right * 96 / 25.4}px`, width: '16px', height: '16px' }}>
               <path d="M16 16 L16 0 M16 16 L0 16" stroke="#cccccc" strokeWidth="1" fill="none" />
             </svg>
 
@@ -881,11 +1161,20 @@ export default function App() {
               contentEditable
               suppressContentEditableWarning
               onInput={handleInput}
+              onDoubleClick={(e) => {
+                const object = (e.target as Element).closest<HTMLElement>('[data-hwp-equation]');
+                if (object && editorRef.current?.contains(object)) {
+                  editedEquation.current = object;
+                  setEqScript(object.dataset.hwpEquation || '');
+                  setEqFontSize(Number(object.dataset.hwpEquationSize) || 11);
+                  setActiveModal('equation');
+                }
+              }}
               style={{
                 position: 'absolute',
-                top: '114px',
-                left: '115px',
-                right: '112px',
+                top: `${(pageConfig.top + pageConfig.header) * 96 / 25.4}px`,
+                left: `${pageConfig.left * 96 / 25.4}px`,
+                right: `${pageConfig.right * 96 / 25.4}px`,
                 minHeight: pageOrientation === 'portrait' ? '895px' : '566px',
                 outline: 'none',
                 fontFamily: '"Batang", "함초롬바탕", serif',
@@ -901,25 +1190,18 @@ export default function App() {
                 columnRule: columnCount > 1 ? '1px dashed #dcdcdc' : 'none'
               }}
             />
+            </div>
           </div>
         </div>
 
-        {/* 우측 스크롤바 (실제 한글 네이티브 17x668 슬라이스) */}
-        <div style={{
-          width: '17px',
-          height: '668px',
-          backgroundColor: '#f5f5f5',
-          backgroundImage: 'url(/hwp_right_scroll_exact.png)',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'top left',
-          flexShrink: 0
-        }} />
+        <div aria-hidden="true" style={{ width: 13, flexShrink: 0 }} />
+        <DocumentScrollBar target={viewportRef} />
       </div>
 
       {/* 7. 최하단 상태표시줄 & 탭바 (31px, 실제 한글 네이티브 슬라이스 1:1 일치) */}
       <div style={{
-        height: '31px',
-        width: '1916px',
+        height: showStatus ? '53px' : '29px',
+        width: '100%', minWidth: '960px',
         backgroundColor: '#ffffff',
         display: 'flex',
         alignItems: 'center',
@@ -927,11 +1209,25 @@ export default function App() {
         overflow: 'hidden',
         flexShrink: 0
       }}>
-        <img
-          src="/hwp_bottom_exact.png"
-          alt="하단 상태표시줄"
-          style={{ height: '31px', width: '1916px', objectFit: 'none', objectPosition: 'left top' }}
-        />
+        <div style={{ position: 'absolute', top: 0, height: 29, left: 0, right: 0, background: '#f5f5f5', borderTop: '1px solid #d4d4d4' }}>
+          <div data-testid="document-tabs" style={{ display: showDocumentTabs ? undefined : 'none', position: 'absolute', left: 0, top: 0, width: 272, height: 28 }}>
+            <div style={{ position: 'absolute', left: 0, width: 272, height: 28, backgroundImage: 'url(/hwp_native_tabs_max.png)', backgroundPosition: '0 -1px' }} />
+            <button title="현재 문서" aria-label={docTitle} onClick={focusEditor} style={{ position: 'absolute', top: 1, left: 145, width: 94, height: 26, border: 0, background: docTitle === '빈 문서 1' ? 'transparent' : 'white', fontSize: 11, color: '#111', cursor: 'default', overflow: 'hidden', whiteSpace: 'nowrap' }}>{docTitle === '빈 문서 1' ? null : docTitle}</button>
+            <button title="새 문서 탭" onClick={handleNewDoc} style={{ position: 'absolute', top: 1, left: 239, width: 33, height: 26, border: 0, background: 'transparent', cursor: 'default' }} />
+          </div>
+          <div style={{ position: 'absolute', left: 'calc(50% - 13px)', right: 0, height: 28, background: '#f5f5f5', borderLeft: '3px double #d4d4d4', boxSizing: 'border-box' }}>
+            <DocumentScrollBar target={viewportRef} horizontal />
+          </div>
+        </div>
+        <div data-testid="document-status" style={{ display: showStatus ? undefined : 'none', position: 'absolute', top: 29, height: 24, left: 0, right: 0, background: 'white' }}>
+          <Slice src="/hwp_native_status_max.png" h={24} rightW={330} />
+          {caret.chars > 0 && <span style={{ position: 'absolute', left: 174, top: 1, width: 44, height: 22, lineHeight: '22px', background: 'white', fontSize: 11 }}>{caret.chars}글자</span>}
+          <div className="document-zoom"><input aria-label="화면 배율" type="number" min={25} max={500} step={5} value={zoom}
+            onChange={event => { const value = Number(event.target.value); if (value >= 25 && value <= 500) setZoom(value); }} /><label>%</label></div>
+          <input className="native-zoom-slider" aria-label="화면 배율 슬라이더" type="range" min={25} max={500} step={5} value={zoom}
+            onChange={event => setZoom(Number(event.target.value))}
+            style={{ position: 'absolute', right: 96, top: 3, width: 88, height: 16, cursor: 'default' }} />
+        </div>
       </div>
 
       {/* 9. 우클릭 컨텍스트 메뉴 (한글 빈문서 네이티브 메뉴 100% 일치) */}
@@ -960,43 +1256,43 @@ export default function App() {
           {/* 항목별 투명 클릭 액션 히트박스 매핑 */}
           {/* 1. 붙이기(P) Ctrl+V */}
           <div
-            style={{ position: 'absolute', top: '1px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '1px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => { document.execCommand('paste'); setContextMenu(prev => ({ ...prev, visible: false })); }}
             title="붙이기 (Ctrl+V)"
           />
           {/* 2. 문자표(C)... Ctrl+F10 */}
           <div
-            style={{ position: 'absolute', top: '27px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '27px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => { setActiveModal('charmap'); setContextMenu(prev => ({ ...prev, visible: false })); }}
             title="문자표 (Ctrl+F10)"
           />
           {/* 3. 인쇄(R)... Alt+P */}
           <div
-            style={{ position: 'absolute', top: '56px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '56px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => { window.print(); setContextMenu(prev => ({ ...prev, visible: false })); }}
             title="인쇄 (Alt+P)"
           />
           {/* 4. 글자 모양(L)... Alt+L */}
           <div
-            style={{ position: 'absolute', top: '85px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '85px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => { setActiveModal('font'); setContextMenu(prev => ({ ...prev, visible: false })); }}
             title="글자 모양 (Alt+L)"
           />
           {/* 5. 문단 모양(M)... Alt+T */}
           <div
-            style={{ position: 'absolute', top: '111px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '111px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => { setActiveModal('paragraph'); setContextMenu(prev => ({ ...prev, visible: false })); }}
             title="문단 모양 (Alt+T)"
           />
           {/* 6. 스타일(S)... F6 */}
           <div
-            style={{ position: 'absolute', top: '137px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '137px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => { setActiveModal('style'); setContextMenu(prev => ({ ...prev, visible: false })); }}
             title="스타일 (F6)"
           />
           {/* 7. 글머리표 및 문단 번호(N)... */}
           <div
-            style={{ position: 'absolute', top: '163px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '163px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => {
               document.execCommand('insertUnorderedList');
               setContextMenu(prev => ({ ...prev, visible: false }));
@@ -1005,7 +1301,7 @@ export default function App() {
           />
           {/* 8. 하이퍼링크(Y)... Ctrl+K,H */}
           <div
-            style={{ position: 'absolute', top: '192px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '192px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => {
               const url = prompt('하이퍼링크 URL을 입력하세요:', 'https://');
               if (url) document.execCommand('createLink', false, url);
@@ -1015,77 +1311,39 @@ export default function App() {
           />
           {/* 9. 새 메모(T) */}
           <div
-            style={{ position: 'absolute', top: '218px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '218px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => { alert('새 메모'); setContextMenu(prev => ({ ...prev, visible: false })); }}
             title="새 메모"
           />
           {/* 10. 채우기(I) */}
           <div
-            style={{ position: 'absolute', top: '244px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '244px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => { setContextMenu(prev => ({ ...prev, visible: false })); }}
             title="채우기"
           />
           {/* 11. 교정 부호 넣기(V) */}
           <div
-            style={{ position: 'absolute', top: '270px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '270px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => { setContextMenu(prev => ({ ...prev, visible: false })); }}
             title="교정 부호 넣기"
           />
           {/* 12. 개인 정보 보호(A) */}
           <div
-            style={{ position: 'absolute', top: '296px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '296px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => { setContextMenu(prev => ({ ...prev, visible: false })); }}
             title="개인 정보 보호"
           />
           {/* 13. 번역(B) */}
           <div
-            style={{ position: 'absolute', top: '325px', left: 0, width: '100%', height: '26px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '325px', left: 0, width: '100%', height: '26px', cursor: 'default' }}
             onClick={() => { alert('번역 실행'); setContextMenu(prev => ({ ...prev, visible: false })); }}
             title="번역"
           />
         </div>
       )}
 
-      {/* 10. 한글 수식 편집기 모달 (Ctrl+N,M) */}
-      {activeModal === 'equation' && (
-        <ModalWrapper title="수식 편집기" onClose={() => setActiveModal(null)} width="640px" height="420px">
-          <div style={{ height: '34px', backgroundColor: '#f5f5f5', borderBottom: '1px solid #ddd', display: 'flex', alignItems: 'center', padding: '0 6px', gap: '4px' }}>
-            <button onClick={() => setEqScript(p => p + ' {a} over {b} ')} style={{ padding: '2px 8px', fontSize: '11px', cursor: 'pointer' }}>분수(over)</button>
-            <button onClick={() => setEqScript(p => p + ' sqrt {x} ')} style={{ padding: '2px 8px', fontSize: '11px', cursor: 'pointer' }}>근호(sqrt)</button>
-            <button onClick={() => setEqScript(p => p + ' ^{2} ')} style={{ padding: '2px 8px', fontSize: '11px', cursor: 'pointer' }}>위첨자(^)</button>
-            <button onClick={() => setEqScript(p => p + ' _{1} ')} style={{ padding: '2px 8px', fontSize: '11px', cursor: 'pointer' }}>아래첨자(_)</button>
-            <button onClick={() => setEqScript(p => p + ' sum _{i=1} ^{n} ')} style={{ padding: '2px 8px', fontSize: '11px', cursor: 'pointer' }}>합(sum)</button>
-            <button onClick={() => setEqScript(p => p + ' int _{0} ^{1} ')} style={{ padding: '2px 8px', fontSize: '11px', cursor: 'pointer' }}>적분(int)</button>
-            <button onClick={() => setEqScript(p => p + ' matrix { a & b # c & d } ')} style={{ padding: '2px 8px', fontSize: '11px', cursor: 'pointer' }}>행렬</button>
-          </div>
-          <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px', backgroundColor: '#fafafa', borderBottom: '1px solid #ddd', overflow: 'auto' }}>
-            <EquationRenderer script={eqScript} fontSize={18} scale={1.5} color="#111111" showCursor={true} />
-          </div>
-          <div style={{ height: '110px', display: 'flex', flexDirection: 'column' }}>
-            <textarea
-              value={eqScript}
-              onChange={(e) => setEqScript(e.target.value)}
-              style={{ flex: 1, padding: '8px', border: 'none', outline: 'none', fontSize: '13px', fontFamily: 'Consolas, monospace', resize: 'none' }}
-            />
-            <div style={{ height: '34px', backgroundColor: '#f0f0f0', borderTop: '1px solid #ddd', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', padding: '0 8px', gap: '6px' }}>
-              <button
-                onClick={() => {
-                  if (editorRef.current) {
-                    document.execCommand('insertHTML', false, `<span style="display:inline-block; padding: 2px 6px; background:#f0f8ff; border:1px solid #cce5ff; border-radius:3px; font-style:italic;">${eqScript}</span>&nbsp;`);
-                  }
-                  setActiveModal(null);
-                }}
-                style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '4px 12px', borderRadius: '2px', cursor: 'pointer', fontSize: '11px' }}
-              >
-                본문에 넣기 (Shift+ESC)
-              </button>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#ffffff', border: '1px solid #ccc', padding: '4px 12px', borderRadius: '2px', cursor: 'pointer', fontSize: '11px' }}>
-                취소 (ESC)
-              </button>
-            </div>
-          </div>
-        </ModalWrapper>
-      )}
+      {activeModal === 'equation' && <EquationEditor source={eqScript} onChange={setEqScript}
+        fontSize={eqFontSize} onFontSize={setEqFontSize} onApply={insertEquationToDoc} onClose={() => setActiveModal(null)} />}
 
       {/* 11. 표 만들기 모달 (Ctrl+N,T) - 한글 네이티브 대화상자 440x315 100% 일치 */}
       {activeModal === 'table' && (
@@ -1111,14 +1369,14 @@ export default function App() {
 
             {/* 1. 상단 닫기 버튼 [X] */}
             <div
-              style={{ position: 'absolute', top: '2px', right: '3px', width: '24px', height: '24px', cursor: 'pointer' }}
+              style={{ position: 'absolute', top: '2px', right: '3px', width: '24px', height: '24px', cursor: 'default' }}
               onClick={() => setActiveModal(null)}
               title="닫기 (ESC)"
             />
 
             {/* 2. 줄 개수 입력 필드 */}
             <input
-              type="number"
+              type="number" aria-label="표 줄 개수"
               min="1"
               max="100"
               value={tableRows}
@@ -1131,19 +1389,19 @@ export default function App() {
             />
             {/* 줄 개수 스핀 위/아래 버튼 */}
             <div
-              style={{ position: 'absolute', top: '78px', left: '158px', width: '16px', height: '11px', cursor: 'pointer' }}
+              style={{ position: 'absolute', top: '78px', left: '158px', width: '16px', height: '11px', cursor: 'default' }}
               onClick={() => setTableRows(r => r + 1)}
               title="줄 수 증가"
             />
             <div
-              style={{ position: 'absolute', top: '89px', left: '158px', width: '16px', height: '11px', cursor: 'pointer' }}
+              style={{ position: 'absolute', top: '89px', left: '158px', width: '16px', height: '11px', cursor: 'default' }}
               onClick={() => setTableRows(r => Math.max(1, r - 1))}
               title="줄 수 감소"
             />
 
             {/* 3. 칸 개수 입력 필드 */}
             <input
-              type="number"
+              type="number" aria-label="표 칸 개수"
               min="1"
               max="100"
               value={tableCols}
@@ -1156,40 +1414,40 @@ export default function App() {
             />
             {/* 칸 개수 스핀 위/아래 버튼 */}
             <div
-              style={{ position: 'absolute', top: '108px', left: '158px', width: '16px', height: '11px', cursor: 'pointer' }}
+              style={{ position: 'absolute', top: '108px', left: '158px', width: '16px', height: '11px', cursor: 'default' }}
               onClick={() => setTableCols(c => c + 1)}
               title="칸 수 증가"
             />
             <div
-              style={{ position: 'absolute', top: '119px', left: '158px', width: '16px', height: '11px', cursor: 'pointer' }}
+              style={{ position: 'absolute', top: '119px', left: '158px', width: '16px', height: '11px', cursor: 'default' }}
               onClick={() => setTableCols(c => Math.max(1, c - 1))}
               title="칸 수 감소"
             />
 
             {/* 4. 만들기(D) 버튼 히트박스 */}
             <div
-              style={{ position: 'absolute', top: '42px', left: '346px', width: '81px', height: '28px', cursor: 'pointer' }}
+              style={{ position: 'absolute', top: '42px', left: '346px', width: '81px', height: '28px', cursor: 'default' }}
               onClick={insertTableToDoc}
               title="만들기 (Enter)"
             />
 
             {/* 5. 취소 버튼 히트박스 */}
             <div
-              style={{ position: 'absolute', top: '76px', left: '346px', width: '81px', height: '28px', cursor: 'pointer' }}
+              style={{ position: 'absolute', top: '76px', left: '346px', width: '81px', height: '28px', cursor: 'default' }}
               onClick={() => setActiveModal(null)}
               title="취소 (ESC)"
             />
 
             {/* 6. 표마당(A) */}
             <div
-              style={{ position: 'absolute', top: '124px', left: '346px', width: '81px', height: '28px', cursor: 'pointer' }}
+              style={{ position: 'absolute', top: '124px', left: '346px', width: '81px', height: '28px', cursor: 'default' }}
               onClick={() => alert('표마당(A)')}
               title="표마당"
             />
 
             {/* 7. 표속성(P) */}
             <div
-              style={{ position: 'absolute', top: '158px', left: '346px', width: '81px', height: '28px', cursor: 'pointer' }}
+              style={{ position: 'absolute', top: '158px', left: '346px', width: '81px', height: '28px', cursor: 'default' }}
               onClick={() => alert('표속성(P)')}
               title="표속성"
             />
@@ -1241,7 +1499,7 @@ export default function App() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     fontSize: '13px',
-                    cursor: 'pointer',
+                    cursor: 'default',
                     backgroundColor: selectedChar === ch ? '#cce8ff' : '#ffffff',
                     border: selectedChar === ch ? '1px solid #99d1ff' : '1px solid transparent'
                   }}
@@ -1253,16 +1511,16 @@ export default function App() {
             <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '10px' }}>
               <button
                 onClick={() => {
-                  document.execCommand('insertText', false, selectedChar);
+                  runCommand('insertText', selectedChar);
                   setActiveModal(null);
                 }}
-                style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '4px 16px', borderRadius: '2px', cursor: 'pointer', fontSize: '12px' }}
+                style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '4px 16px', borderRadius: '2px', cursor: 'default', fontSize: '12px' }}
               >
                 넣기(Enter)
               </button>
               <button
                 onClick={() => setActiveModal(null)}
-                style={{ backgroundColor: '#ffffff', border: '1px solid #ccc', padding: '4px 16px', borderRadius: '2px', cursor: 'pointer', fontSize: '12px' }}
+                style={{ backgroundColor: '#ffffff', border: '1px solid #ccc', padding: '4px 16px', borderRadius: '2px', cursor: 'default', fontSize: '12px' }}
               >
                 닫기(ESC)
               </button>
@@ -1307,7 +1565,7 @@ export default function App() {
                 onClick={() => {
                   if (findWord) (window as any).find(findWord, false, false, true);
                 }}
-                style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '4px 12px', borderRadius: '2px', cursor: 'pointer', fontSize: '11px' }}
+                style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '4px 12px', borderRadius: '2px', cursor: 'default', fontSize: '11px' }}
               >
                 다음 찾기
               </button>
@@ -1319,13 +1577,13 @@ export default function App() {
                     editorRef.current.innerHTML = currentHtml.replace(regex, replaceWord);
                   }
                 }}
-                style={{ backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '4px 12px', borderRadius: '2px', cursor: 'pointer', fontSize: '11px' }}
+                style={{ backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '4px 12px', borderRadius: '2px', cursor: 'default', fontSize: '11px' }}
               >
                 모두 바꾸기
               </button>
               <button
                 onClick={() => setActiveModal(null)}
-                style={{ backgroundColor: '#ffffff', border: '1px solid #ccc', padding: '4px 12px', borderRadius: '2px', cursor: 'pointer', fontSize: '11px' }}
+                style={{ backgroundColor: '#ffffff', border: '1px solid #ccc', padding: '4px 12px', borderRadius: '2px', cursor: 'default', fontSize: '11px' }}
               >
                 취소
               </button>
@@ -1334,165 +1592,116 @@ export default function App() {
         </ModalWrapper>
       )}
 
-      {/* 14. 편집 용지 설정 모달 (F7) */}
-      {activeModal === 'page' && (
-        <ModalWrapper title="편집 용지 (F7)" onClose={() => setActiveModal(null)} width="400px" height="320px">
-          <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '12px' }}>
-            <div style={{ fontWeight: 'bold' }}>용지 종류: A4 (210.0 x 297.0 mm)</div>
-            <div style={{ border: '1px solid #eee', padding: '10px', borderRadius: '4px' }}>
-              <div style={{ fontWeight: 'bold', marginBottom: '8px' }}>용지 여백 (mm)</div>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
-                <div>위쪽: <input type="number" defaultValue="20.0" style={{ width: '50px' }} /></div>
-                <div>아래쪽: <input type="number" defaultValue="15.0" style={{ width: '50px' }} /></div>
-                <div>왼쪽: <input type="number" defaultValue="30.0" style={{ width: '50px' }} /></div>
-                <div>오른쪽: <input type="number" defaultValue="30.0" style={{ width: '50px' }} /></div>
-              </div>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '10px' }}>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>설정(Enter)</button>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>취소(ESC)</button>
-            </div>
-          </div>
-        </ModalWrapper>
-      )}
+      {activeModal === 'page' && <NativeDialog title="편집 용지" width={661} height={682} tabs={['기본', '줄 격자']}
+        onClose={() => setActiveModal(null)} onApply={() => { setPageConfig(pageDraft); setPageOrientation(orientationDraft); setActiveModal(null); }}>
+        <div className="native-section-label" style={{ top: 17 }}><span>용지 종류</span></div>
+        <label style={{ position: 'absolute', top: 39, left: 28 }}>종류 <select aria-label="용지 종류" style={{ width: 360, height: 24 }}><option>A4(국배판) [210 x 297 mm]</option></select></label>
+        <NativeField label="폭" x={57} y={69} value={pageDraft.width} min={50} max={1000} unit="mm" onChange={width => setPageDraft(draft => ({ ...draft, width }))} />
+        <NativeField label="길이" x={195} y={69} value={pageDraft.height} min={50} max={1000} unit="mm" onChange={height => setPageDraft(draft => ({ ...draft, height }))} />
+        <div className="native-section-label" style={{ top: 102 }}><span>용지 방향</span></div>
+        <div className="native-page-options">{(['portrait', 'landscape'] as const).map((value, i) => <button type="button" key={value} title={i ? '가로' : '세로'} aria-pressed={orientationDraft === value}
+          onClick={() => setOrientationDraft(value)}>{i ? '▭' : '▤'}<span>{i ? '가로' : '세로'}</span></button>)}</div>
+        <div className="native-section-label" style={{ top: 196 }}><span>용지 여백</span></div>
+        {([
+          ['위쪽', 'top', 243, 218], ['머리말', 'header', 243, 248], ['왼쪽', 'left', 97, 327], ['오른쪽', 'right', 350, 327],
+          ['꼬리말', 'footer', 243, 435], ['아래쪽', 'bottom', 243, 465]
+        ] as const).map(([label, key, x, y]) => <NativeField key={key} label={label} x={x} y={y} value={pageDraft[key]} min={0} max={100} unit="mm"
+          onChange={value => setPageDraft(draft => ({ ...draft, [key]: value }))} />)}
+        <div style={{ position: 'absolute', left: 194, top: 278, width: 150, height: 150, background: '#f5f5f5', border: '1px solid #ddd', display: 'grid', placeItems: 'center' }}>
+          <div style={{ width: orientationDraft === 'portrait' ? 82 : 115, height: orientationDraft === 'portrait' ? 118 : 82, border: '1px solid black', background: 'white', padding: 13, boxSizing: 'border-box' }}>━━━━<br/>━━━━<br/>━━━━</div>
+        </div>
+      </NativeDialog>}
 
-      {/* 15. 글자 모양 설정 모달 (Alt+L) */}
-      {activeModal === 'font' && (
-        <ModalWrapper title="글자 모양 (Alt+L)" onClose={() => setActiveModal(null)} width="440px" height="360px">
-          <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '12px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span>기준 크기:</span>
-              <div>
-                <input
-                  type="number"
-                  value={fontConfig.size}
-                  onChange={(e) => setFontConfig(p => ({ ...p, size: Number(e.target.value) }))}
-                  style={{ width: '60px', padding: '2px 4px' }}
-                /> pt
-              </div>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span>글꼴:</span>
-              <select
-                value={fontConfig.font}
-                onChange={(e) => setFontConfig(p => ({ ...p, font: e.target.value }))}
-                style={{ width: '160px', padding: '2px 4px' }}
-              >
-                <option value="함초롬바탕">함초롬바탕</option>
-                <option value="함초롬돋움">함초롬돋움</option>
-                <option value="맑은 고딕">맑은 고딕</option>
-                <option value="바탕">바탕</option>
-                <option value="궁서">궁서</option>
-              </select>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span>장평 (가로비):</span>
-              <div>
-                <input
-                  type="number"
-                  value={fontConfig.width}
-                  onChange={(e) => setFontConfig(p => ({ ...p, width: Number(e.target.value) }))}
-                  style={{ width: '60px', padding: '2px 4px' }}
-                /> %
-              </div>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span>자간 (글자 사이):</span>
-              <div>
-                <input
-                  type="number"
-                  value={fontConfig.spacing}
-                  onChange={(e) => setFontConfig(p => ({ ...p, spacing: Number(e.target.value) }))}
-                  style={{ width: '60px', padding: '2px 4px' }}
-                /> %
-              </div>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span>글자 색:</span>
-              <input
-                type="color"
-                value={fontConfig.color}
-                onChange={(e) => setFontConfig(p => ({ ...p, color: e.target.value }))}
-                style={{ width: '40px', height: '24px', cursor: 'pointer' }}
-              />
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: 'auto' }}>
-              <button
-                onClick={() => {
+      {activeModal === 'font' && <NativeDialog title="글자 모양" width={695} height={570} tabs={['기본', '확장', '테두리/배경']}
+        onClose={() => setActiveModal(null)} onApply={() => {
+                  setFontConfig(fontDraft);
+                  focusEditor();
                   const sel = window.getSelection();
                   if (sel && sel.rangeCount > 0) {
                     const span = document.createElement('span');
-                    span.style.fontFamily = fontConfig.font;
-                    span.style.fontSize = `${fontConfig.size * 1.33}px`;
-                    span.style.color = fontConfig.color;
-                    span.style.letterSpacing = `${fontConfig.spacing * 0.1}px`;
-                    if (fontConfig.width !== 100) {
+                    span.style.fontFamily = fontDraft.font;
+                    span.style.fontSize = `${fontDraft.size * fontDraft.relativeSize / 100}pt`;
+                    span.style.color = fontDraft.color;
+                    span.style.position = 'relative';
+                    span.style.top = `${-fontDraft.position / 100}em`;
+                    span.style.fontWeight = fontDraft.bold ? 'bold' : 'normal';
+                    span.style.fontStyle = fontDraft.italic ? 'italic' : 'normal';
+                    span.style.textDecoration = [fontDraft.underline ? 'underline' : '', fontDraft.strike ? 'line-through' : ''].filter(Boolean).join(' ') || 'none';
+                    span.style.letterSpacing = `${fontDraft.spacing / 100}em`;
+                    if (fontDraft.width !== 100) {
                       span.style.display = 'inline-block';
-                      span.style.transform = `scaleX(${fontConfig.width / 100})`;
+                      span.style.transform = `scaleX(${fontDraft.width / 100})`;
                       span.style.transformOrigin = 'left center';
                     }
                     const range = sel.getRangeAt(0);
                     span.appendChild(range.extractContents());
                     range.insertNode(span);
+                    persistEditor();
                   }
-                  setActiveModal(null);
-                }}
-                style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}
-              >
-                설정(Enter)
-              </button>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>취소(ESC)</button>
-            </div>
-          </div>
-        </ModalWrapper>
-      )}
+          setActiveModal(null);
+        }}>
+        <NativeField label="기준 크기" x={70} y={17} width={106} value={fontDraft.size} min={1} max={200} unit="pt"
+          onChange={size => setFontDraft(config => ({ ...config, size }))} />
+        <div className="native-section-label" style={{ top: 46 }}><span>언어별 설정</span></div>
+        <label style={{ position: 'absolute', left: 28, top: 69 }}>언어 <select aria-label="언어" style={{ marginLeft: 12, width: 90, height: 24 }}><option>대표</option><option>한글</option><option>영문</option></select></label>
+        <label style={{ position: 'absolute', left: 191, top: 69 }}>글꼴 <select aria-label="글꼴" value={fontDraft.font} style={{ marginLeft: 8, width: 322, height: 24 }}
+          onChange={event => setFontDraft(config => ({ ...config, font: event.target.value }))}>
+          {['함초롬바탕', '함초롬돋움', '맑은 고딕', '바탕', '궁서'].map(font => <option key={font}>{font}</option>)}
+        </select></label>
+        <NativeField label="상대 크기" x={81} y={99} value={fontDraft.relativeSize} min={10} max={500} unit="%" onChange={relativeSize => setFontDraft(config => ({ ...config, relativeSize }))} />
+        <NativeField label="글자 위치" x={81} y={129} value={fontDraft.position} min={-100} max={100} unit="%" onChange={position => setFontDraft(config => ({ ...config, position }))} />
+        <NativeField label="장평" x={220} y={99} value={fontDraft.width} min={50} max={200} unit="%" onChange={width => setFontDraft(config => ({ ...config, width }))} />
+        <NativeField label="자간" x={220} y={129} value={fontDraft.spacing} min={-50} max={100} unit="%" onChange={spacing => setFontDraft(config => ({ ...config, spacing }))} />
+        <div className="native-section-label" style={{ top: 164 }}><span>속성</span></div>
+        <div style={{ position: 'absolute', left: 28, top: 183, display: 'flex', gap: 6 }}>
+          {([['bold', '진하게', '가'], ['italic', '기울임', '가'], ['underline', '밑줄', '가'], ['strike', '취소선', '가']] as const).map(([key, title, text]) =>
+            <button type="button" key={key} title={title} aria-pressed={fontDraft[key]} style={{ width: 40, height: 40, fontSize: 21, background: fontDraft[key] ? '#e0e0e0' : 'white', fontWeight: key === 'bold' ? 'bold' : 'normal', fontStyle: key === 'italic' ? 'italic' : 'normal', textDecoration: key === 'underline' ? 'underline' : key === 'strike' ? 'line-through' : 'none' }}
+              onClick={() => setFontDraft(config => ({ ...config, [key]: !config[key] }))}>{text}</button>)}
+        </div>
+        <label style={{ position: 'absolute', top: 230, left: 28 }}>글자 색 <input aria-label="글자 색" type="color" value={fontDraft.color} style={{ marginLeft: 8, width: 90, height: 24 }}
+          onChange={event => setFontDraft(config => ({ ...config, color: event.target.value }))} /></label>
+        <div className="native-preview" style={{ top: 293, height: 134, display: 'flex', alignItems: 'end' }}>
+          <span style={{ fontFamily: fontDraft.font, fontSize: `${fontDraft.size * fontDraft.relativeSize / 100}pt`, color: fontDraft.color, letterSpacing: `${fontDraft.spacing * .1}px` }}>한글Eng123漢字あいう※◎</span>
+        </div>
+      </NativeDialog>}
 
-      {/* 16. 문단 모양 설정 모달 (Alt+T) */}
-      {activeModal === 'paragraph' && (
-        <ModalWrapper title="문단 모양 (Alt+T)" onClose={() => setActiveModal(null)} width="400px" height="280px">
-          <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '12px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span>줄 간격:</span>
-              <div>
-                <input
-                  type="number"
-                  value={paraConfig.lineHeight}
-                  onChange={(e) => setParaConfig(p => ({ ...p, lineHeight: Number(e.target.value) }))}
-                  style={{ width: '60px', padding: '2px 4px' }}
-                /> %
-              </div>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span>정렬 방식:</span>
-              <select
-                value={paraConfig.align}
-                onChange={(e) => setParaConfig(p => ({ ...p, align: e.target.value }))}
-                style={{ width: '120px', padding: '2px 4px' }}
-              >
-                <option value="justify">양쪽 정렬</option>
-                <option value="left">왼쪽 정렬</option>
-                <option value="center">가운데 정렬</option>
-                <option value="right">오른쪽 정렬</option>
-              </select>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: 'auto' }}>
-              <button
-                onClick={() => {
-                  if (editorRef.current) {
-                    editorRef.current.style.textAlign = paraConfig.align;
-                    editorRef.current.style.lineHeight = `${paraConfig.lineHeight / 100}`;
-                  }
-                  setActiveModal(null);
-                }}
-                style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}
-              >
-                설정(Enter)
-              </button>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>취소(ESC)</button>
-            </div>
-          </div>
-        </ModalWrapper>
-      )}
+      {activeModal === 'paragraph' && <NativeDialog title="문단 모양" width={553} height={647} tabs={['기본', '확장', '탭 설정', '테두리/배경']}
+        onClose={() => setActiveModal(null)} onApply={() => {
+          setParaConfig(paraDraft);
+          focusEditor();
+          const editor = editorRef.current;
+          const selection = window.getSelection();
+          if (editor && selection?.rangeCount) {
+            let paragraph = selection.anchorNode instanceof Element ? selection.anchorNode : selection.anchorNode?.parentElement;
+            while (paragraph && paragraph.parentElement !== editor && paragraph !== editor) paragraph = paragraph.parentElement;
+            if (!paragraph || paragraph === editor || !/^(P|DIV|H[1-6])$/.test(paragraph.tagName)) {
+              document.execCommand('formatBlock', false, 'P');
+              paragraph = window.getSelection()?.anchorNode?.parentElement || null;
+              while (paragraph && paragraph.parentElement !== editor && paragraph !== editor) paragraph = paragraph.parentElement;
+            }
+            if (paragraph instanceof HTMLElement && paragraph !== editor) {
+              Object.assign(paragraph.style, { textAlign: paraDraft.align, lineHeight: `${paraDraft.lineHeight / 100}`, marginLeft: `${paraDraft.left}pt`, marginRight: `${paraDraft.right}pt`, textIndent: `${paraDraft.indent}pt`, marginTop: `${paraDraft.before}pt`, marginBottom: `${paraDraft.after}pt` });
+              persistEditor();
+            }
+          }
+          setActiveModal(null);
+        }}>
+        <div className="native-section-label" style={{ top: 20 }}><span>정렬 방식</span></div>
+        <div className="native-align">{[['justify', '양쪽 정렬', '☰'], ['left', '왼쪽 정렬', '≡'], ['center', '가운데 정렬', '≡'], ['right', '오른쪽 정렬', '≡']].map(([value, label, icon]) =>
+          <button type="button" key={value} aria-label={label} aria-pressed={paraDraft.align === value} onClick={() => setParaDraft(config => ({ ...config, align: value }))}>{icon}</button>)}</div>
+        <NativeField label="왼쪽" x={67} y={115} value={paraDraft.left} unit="pt" onChange={left => setParaDraft(config => ({ ...config, left }))} />
+        <NativeField label="오른쪽" x={67} y={145} value={paraDraft.right} unit="pt" onChange={right => setParaDraft(config => ({ ...config, right }))} />
+        <NativeField label="첫 줄" x={279} y={145} value={paraDraft.indent} unit="pt" onChange={indent => setParaDraft(config => ({ ...config, indent }))} />
+        <div className="native-section-label" style={{ top: 188 }}><span>간격</span></div>
+        <label style={{ position: 'absolute', left: 28, top: 212 }}>줄 간격 <select aria-label="줄 간격 기준" style={{ marginLeft: 6, height: 24, width: 134 }}><option>글자에 따라</option></select></label>
+        <NativeField label="줄 간격" x={70} y={242} value={paraDraft.lineHeight} unit="%" min={50} max={500}
+          onChange={lineHeight => setParaDraft(config => ({ ...config, lineHeight }))} />
+        <NativeField label="문단 위" x={278} y={212} value={paraDraft.before} unit="pt" onChange={before => setParaDraft(config => ({ ...config, before }))} />
+        <NativeField label="문단 아래" x={278} y={242} value={paraDraft.after} unit="pt" onChange={after => setParaDraft(config => ({ ...config, after }))} />
+        <div className="native-preview" style={{ top: 384, height: 119, fontSize: 9, lineHeight: `${paraDraft.lineHeight / 100}`, textAlign: paraDraft.align as React.CSSProperties['textAlign'] }}>
+          이런 문단 모양 이런 문단 모양 이런 문단 모양 이런 문단 모양<br/>가나다라마바사 AbCd12345 가나다라마바사<br/>한글 문단 모양과 줄 간격을 미리 봅니다.
+        </div>
+      </NativeDialog>}
 
       {/* 17. 스타일 대화상자 (F6) */}
       {activeModal === 'style' && (
@@ -1523,7 +1732,7 @@ export default function App() {
                       }}
                       style={{
                         padding: '6px 8px',
-                        cursor: 'pointer',
+                        cursor: 'default',
                         borderRadius: '2px',
                         display: 'flex',
                         justifyContent: 'space-between',
@@ -1558,8 +1767,8 @@ export default function App() {
             </div>
 
             <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '14px' }}>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>적용(Enter)</button>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'pointer' }}>닫기(ESC)</button>
+              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 16px', borderRadius: '2px', cursor: 'default' }}>적용(Enter)</button>
+              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '5px 16px', borderRadius: '2px', cursor: 'default' }}>닫기(ESC)</button>
             </div>
           </div>
         </ModalWrapper>
@@ -1592,7 +1801,7 @@ export default function App() {
             </div>
 
             <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '14px' }}>
-              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 20px', borderRadius: '2px', cursor: 'pointer' }}>확인(Enter)</button>
+              <button onClick={() => setActiveModal(null)} style={{ backgroundColor: '#0078d7', color: '#fff', border: 'none', padding: '5px 20px', borderRadius: '2px', cursor: 'default' }}>확인(Enter)</button>
             </div>
           </div>
         </ModalWrapper>
@@ -1630,8 +1839,8 @@ function ModalWrapper({ title, onClose, width, height, children }: { title: stri
         }}>
           <span>{title}</span>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ cursor: 'pointer', color: '#666', fontSize: '12px' }} title="도움말">?</span>
-            <span onClick={onClose} style={{ cursor: 'pointer', color: '#444', fontSize: '13px' }} title="닫기 (ESC)">✕</span>
+            <span style={{ cursor: 'default', color: '#666', fontSize: '12px' }} title="도움말">?</span>
+            <span onClick={onClose} style={{ cursor: 'default', color: '#444', fontSize: '13px' }} title="닫기 (ESC)">✕</span>
           </div>
         </div>
         <div style={{ flex: 1, overflow: 'auto', backgroundColor: '#ffffff' }}>
@@ -1732,7 +1941,7 @@ function ToolBtn({ icon, title, onClick }: { icon: string; title: string; onClic
         justifyContent: 'center',
         width: '18px',
         height: '18px',
-        cursor: 'pointer',
+        cursor: 'default',
         borderRadius: '2px',
         fontSize: '11px',
         flexShrink: 0

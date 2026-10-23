@@ -1,0 +1,208 @@
+{
+  "phase": "file",
+  "started": "2026-10-22T18:49:20.388960+09:00",
+  "pid": 30652,
+  "target_hwnd": 985892,
+  "target_pid": 4032,
+  "source": "C:\\Users\\K\\.orca\\coordination\\desktop_control.py",
+  "source_sha256": "4084e572dc5e9fe8e07c2ec4a6784fe0a54f9730344d186af51ff035cb86a882",
+  "collector": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\ui-reference-collector.py",
+  "collector_sha256": "76155de6ae240af6b47ad1f861f2f51ebe7950d21abaac93ca71a4882385d0c8",
+  "events": [
+    {
+      "kind": "before_request",
+      "time": "2026-10-22T18:49:20.389960+09:00",
+      "epoch": 1792662560.389961,
+      "owner": {
+        "owner": "Astris",
+        "session": "hangul-pc-upper-0051",
+        "job": "upper-0051",
+        "pid": 12644,
+        "since": 1792662546.4253027,
+        "since_iso": "2026-10-22 18:49:06",
+        "heartbeat": 1792662546.4253027,
+        "heartbeat_iso": "2026-10-22 18:49:06",
+        "token": "4365a73ca3d846658709b5fde0888dfc",
+        "heartbeat_age_s": 14.0,
+        "stale_suspect": false
+      },
+      "pending": null,
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "acquired",
+      "time": "2026-10-22T18:49:43.943386+09:00",
+      "epoch": 1792662583.9433866,
+      "owner": {
+        "owner": "Web HWP",
+        "session": "ui-reference-2026-10-22",
+        "job": "file",
+        "pid": 30652,
+        "since": 1792662583.9364116,
+        "since_iso": "2026-10-22 18:49:43",
+        "heartbeat": 1792662583.9364116,
+        "heartbeat_iso": "2026-10-22 18:49:43",
+        "token": "f9550d2b125a41cb816f9f97e486aed7",
+        "heartbeat_age_s": 0.0,
+        "stale_suspect": false
+      },
+      "heartbeat": true
+    },
+    {
+      "kind": "activate_title_click",
+      "time": "2026-10-22T18:49:44.308711+09:00",
+      "epoch": 1792662584.308711,
+      "screen": [
+        665,
+        52
+      ]
+    },
+    {
+      "kind": "click",
+      "time": "2026-10-22T18:49:44.664868+09:00",
+      "epoch": 1792662584.6648686,
+      "label": "focus blank document body",
+      "client": [
+        500,
+        400
+      ],
+      "screen": [
+        502,
+        440
+      ],
+      "window_relative": [
+        500,
+        400
+      ],
+      "hit": {
+        "hwnd": 1444636,
+        "pid": 4032,
+        "class": "HwpMainEditWnd",
+        "name": "",
+        "id": 12968844,
+        "rect_screen": [
+          31,
+          254,
+          1313,
+          951
+        ],
+        "rect_client_main": [
+          29,
+          214,
+          1311,
+          911
+        ],
+        "rect_window_main": [
+          29,
+          214,
+          1311,
+          911
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 985892,
+        "owner": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T18:49:45.510539+09:00",
+      "epoch": 1792662585.510539,
+      "keys": [
+        18,
+        84
+      ],
+      "label": "Alt+T",
+      "foreground": 985892
+    },
+    {
+      "kind": "failure",
+      "time": "2026-10-22T18:49:48.191090+09:00",
+      "epoch": 1792662588.19109,
+      "error": "AssertionError()"
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T18:49:48.223461+09:00",
+      "epoch": 1792662588.2234616,
+      "keys": [
+        27
+      ],
+      "label": "close own dialog/menu",
+      "foreground": 641928118
+    },
+    {
+      "kind": "release_completed",
+      "time": "2026-10-22T18:49:48.527851+09:00",
+      "epoch": 1792662588.5278516
+    },
+    {
+      "kind": "own_request_deleted",
+      "time": "2026-10-22T18:49:48.528852+09:00",
+      "epoch": 1792662588.5288525
+    }
+  ],
+  "captures": [],
+  "inputs_finished": true,
+  "com_used": false,
+  "resident_commands_sent": false,
+  "request_token": "cf2e3793877946e093a4978f9d3b954b",
+  "request_created_at": "2026-10-22T18:49:20.396959+09:00",
+  "request_deadline": 1792662680.3909605,
+  "lock_token": "f9550d2b125a41cb816f9f97e486aed7",
+  "acquired_at": "2026-10-22T18:49:43.937387+09:00",
+  "input_deadline_epoch": 1792662633.9373872,
+  "status": "failed_preserved",
+  "error": "AssertionError()",
+  "cleanup_verified": true,
+  "input_finished_at": "2026-10-22T18:49:48.525850+09:00",
+  "down_remaining": false,
+  "keys_remaining": [],
+  "released_at": "2026-10-22T18:49:48.527851+09:00",
+  "request_deleted_at": "2026-10-22T18:49:48.528852+09:00",
+  "owner_after_return": {
+    "owner": "Astris",
+    "session": "hangul-pc-upper-0051",
+    "job": "upper-0051",
+    "pid": 12644,
+    "since": 1792662588.7865405,
+    "since_iso": "2026-10-22 18:49:48",
+    "heartbeat": 1792662588.7865405,
+    "heartbeat_iso": "2026-10-22 18:49:48",
+    "token": "f615cd21468f414a9d52a9efa61af058",
+    "heartbeat_age_s": 0.2,
+    "stale_suspect": false
+  },
+  "astris_reacquired_at": "2026-10-22T18:49:49.035438+09:00",
+  "finished": "2026-10-22T18:49:49.035438+09:00"
+}

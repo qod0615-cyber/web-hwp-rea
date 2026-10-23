@@ -1,0 +1,29 @@
+.equation-modal-layer {position:fixed;inset:0;background:transparent;z-index:10000;}
+.native-equation-editor {position:absolute;width:950px;height:400px;min-width:640px;min-height:280px;max-width:100vw;max-height:100vh;box-sizing:border-box;border:1px solid #a0a0a0;background:white;resize:both;overflow:hidden;color:#111;}
+.equation-chrome {position:absolute;left:-1px;right:0;top:-1px;height:99px;background:white url('/hwp_equation_chrome.png') no-repeat;pointer-events:none;}
+.equation-title-drag {position:absolute;left:32px;right:100px;top:0;height:30px;cursor:default;touch-action:none;}
+.equation-close {position:absolute;right:0;top:0;width:32px;height:30px;border:0;background:transparent;cursor:default;}
+.equation-close:hover {background:rgba(232,17,35,.2);}
+.equation-tool {position:absolute;top:35px;height:26px;padding:0;border:1px solid transparent;background:transparent;cursor:default;}
+.equation-tool:hover {background:rgba(0,0,0,.0784314);border-color:#b4b4b4;}
+.equation-tool:active {background:rgba(0,0,0,.2);border-color:#b4b4b4;}
+.equation-font-size,.equation-preview-zoom {position:absolute;top:68px;height:24px;width:90px;border:1px solid #d4d4d4;border-radius:0;background:white;color:#333;font:12px 'Malgun Gothic',sans-serif;cursor:default;}
+.equation-font-size {left:658px;}
+.equation-preview-zoom {left:797px;}
+.equation-visual-pane {position:absolute;left:0;right:0;top:97px;overflow:auto;box-sizing:border-box;border:2px inset #ddd;background:white;cursor:text;}
+.equation-rendered {position:absolute;left:9px;top:8px;pointer-events:none;}
+.equation-visual-input {position:absolute;left:9px;top:8px;width:1px;height:30px;opacity:0;border:0;padding:0;outline:none;}
+.equation-caret,.equation-empty-caret {position:absolute;pointer-events:none;box-sizing:border-box;}
+.equation-caret {width:1px;background:red;}
+.equation-empty-caret {width:16px;border:1px solid red;}
+.equation-selection {position:absolute;pointer-events:none;background:rgba(51,153,255,.35);}
+.equation-splitter {position:absolute;left:0;right:0;height:2px;background:#c0c0c0;border-top:1px solid #888;border-bottom:1px solid white;box-sizing:border-box;cursor:row-resize;touch-action:none;}
+.equation-command-pane {position:absolute;left:0;right:0;bottom:6px;width:100%;box-sizing:border-box;resize:none;border:2px inset #ddd;border-radius:0;outline:none;padding:2px;font:11px 'Malgun Gothic',sans-serif;color:black;background:white;cursor:text;}
+.equation-confirm-blocker {position:absolute;inset:0;z-index:10;display:flex;align-items:center;justify-content:center;}
+.equation-confirm {position:relative;width:326px;height:158px;background:white url('/hwp_equation_confirm.png') no-repeat;}
+.equation-confirm button {position:absolute;top:107px;width:80px;height:28px;padding:0;border:0;background:transparent;cursor:default;}
+.equation-confirm button:hover {background:rgba(0,0,0,.0784314);}
+.equation-confirm button:active {background:rgba(0,0,0,.2);}
+.equation-confirm button:focus-visible {outline:1px dotted #111;outline-offset:-5px;}
+.equation-confirm .confirm-close {right:0;left:auto;top:0;width:30px;height:29px;}
+.equation-sr-only {position:absolute;overflow:hidden;clip:rect(0,0,0,0);width:1px;height:1px;white-space:nowrap;}

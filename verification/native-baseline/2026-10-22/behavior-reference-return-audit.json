@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-10-22T21:29:38.257256+09:00",
+  "astris_owner": {
+    "owner": "Astris",
+    "session": "hangul-pc-upper-0051",
+    "job": "upper-0051",
+    "pid": 32080,
+    "since": 1792671980.0305488,
+    "since_iso": "2026-10-22 21:26:20",
+    "heartbeat": 1792672160.3229399,
+    "heartbeat_iso": "2026-10-22 21:29:20",
+    "token": "ebccc30221fc4fa694305deb6f01ea78"
+  },
+  "confirms_later_return_for": [
+    "equation-nav-verified",
+    "equation-menu"
+  ],
+  "notes": "No Astris process modified by this collector; external restart/reacquisition observed."
+}

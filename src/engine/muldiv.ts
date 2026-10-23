@@ -22,9 +22,8 @@ export function devPx(hu: number): number {
 export function calcBaseline(top: number, bot: number, s: number = 1100): number {
   const h = bot - top;
   if (h <= 0) return 85;
-  // baseLine = 100 - floor(100 * (bot - 385) / h)
-  const normBot = bot - mulDiv(s, 35, 100);
-  return 100 - Math.floor((100 * normBot) / h);
+  // Native rounds the ascent ratio down, then adds one even at an exact integer.
+  return Math.floor(100 * (mulDiv(s, 35, 100) - top) / h) + 1;
 }
 
 /**

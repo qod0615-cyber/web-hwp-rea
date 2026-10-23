@@ -1,0 +1,122 @@
+{
+  "status": "partial_zoom_verified_restored_size_maximized_pending",
+  "measurements": [
+    {
+      "capture": "behavior-reference-zoom-maximized-100",
+      "zoom_percent": 100,
+      "raw_size": [
+        1327,
+        966
+      ],
+      "window_rect_screen": [
+        2,
+        40,
+        1329,
+        1006
+      ],
+      "paper_border_rect_raw_halfopen": [
+        272,
+        232,
+        1068,
+        null
+      ],
+      "paper_border_left_right_top_screen": [
+        274,
+        1070,
+        272
+      ],
+      "paper_white_interior_width_px": 794,
+      "paper_outer_width_px": 796,
+      "ruler_major_tick_row_raw": 210,
+      "ruler_major_tick_x_raw": [
+        461.0,
+        499.0,
+        537.0,
+        575.0,
+        612.0,
+        650.0,
+        688.0,
+        726.0,
+        763.0,
+        801.0,
+        839.0,
+        877.0,
+        914.0,
+        952.0,
+        956.0
+      ],
+      "ruler_major_gap_px_mean": 37.76923076923077,
+      "ruler_major_gap_px_median": 38.0,
+      "a4_actual_width_mm": 210.0,
+      "a4_width_source": "previous actual F7 page dialog and UIA width 210.0mm, unchanged",
+      "review": "matched restored-size 100/110 pair verified; names containing maximized do not prove maximization; actual window rect takes precedence"
+    },
+    {
+      "capture": "behavior-reference-zoom-110",
+      "zoom_percent": 110,
+      "raw_size": [
+        1327,
+        966
+      ],
+      "window_rect_screen": [
+        2,
+        40,
+        1329,
+        1006
+      ],
+      "paper_border_rect_raw_halfopen": [
+        231,
+        233,
+        1109,
+        null
+      ],
+      "paper_border_left_right_top_screen": [
+        233,
+        1111,
+        273
+      ],
+      "paper_white_interior_width_px": 876,
+      "paper_outer_width_px": 878,
+      "ruler_major_tick_row_raw": 210,
+      "ruler_major_tick_x_raw": [
+        399.0,
+        440.0,
+        482.0,
+        524.0,
+        565.0,
+        607.0,
+        649.0,
+        690.0,
+        732.0,
+        773.0,
+        815.0,
+        857.0,
+        898.0,
+        940.0,
+        981.0,
+        985.0
+      ],
+      "ruler_major_gap_px_mean": 41.57142857142857,
+      "ruler_major_gap_px_median": 42.0,
+      "a4_actual_width_mm": 210.0,
+      "a4_width_source": "previous actual F7 page dialog and UIA width 210.0mm, unchanged",
+      "review": "matched restored-size 100/110 pair verified; names containing maximized do not prove maximization; actual window rect takes precedence"
+    }
+  ],
+  "ruler_gap_ratio": 1.100669188245563,
+  "paper_outer_width_ratio": 1.1030150753768844,
+  "user_reference": {
+    "image_size": [
+      1918,
+      1031
+    ],
+    "zoom_percent": 110,
+    "paper_left": 527,
+    "paper_right": 1406,
+    "paper_width": 879,
+    "paper_top": 225
+  },
+  "maximization_issue": "Window remained in SW_SHOWMAXIMIZED state while SetWindowPos changed bounds to 1327x966; repeated SW_MAXIMIZE did not recalculate bounds. Prepared fix explicitly restores then maximizes before paired capture. Not yet executed.",
+  "no_web_source_changes": true,
+  "time": "2026-10-22T21:27:56.915849+09:00"
+}

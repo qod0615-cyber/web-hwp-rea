@@ -1,0 +1,1054 @@
+[
+  {
+    "name": "Arial (TrueType)",
+    "file": "arial.ttf"
+  },
+  {
+    "name": "Arial Black (TrueType)",
+    "file": "ariblk.ttf"
+  },
+  {
+    "name": "Arial Bold (TrueType)",
+    "file": "arialbd.ttf"
+  },
+  {
+    "name": "Arial Bold Italic (TrueType)",
+    "file": "arialbi.ttf"
+  },
+  {
+    "name": "Arial Italic (TrueType)",
+    "file": "ariali.ttf"
+  },
+  {
+    "name": "Bahnschrift (TrueType)",
+    "file": "bahnschrift.ttf"
+  },
+  {
+    "name": "Calibri (TrueType)",
+    "file": "calibri.ttf"
+  },
+  {
+    "name": "Calibri Bold (TrueType)",
+    "file": "calibrib.ttf"
+  },
+  {
+    "name": "Calibri Bold Italic (TrueType)",
+    "file": "calibriz.ttf"
+  },
+  {
+    "name": "Calibri Italic (TrueType)",
+    "file": "calibrii.ttf"
+  },
+  {
+    "name": "Calibri Light (TrueType)",
+    "file": "calibril.ttf"
+  },
+  {
+    "name": "Calibri Light Italic (TrueType)",
+    "file": "calibrili.ttf"
+  },
+  {
+    "name": "Cambria & Cambria Math (TrueType)",
+    "file": "cambria.ttc"
+  },
+  {
+    "name": "Cambria Bold (TrueType)",
+    "file": "cambriab.ttf"
+  },
+  {
+    "name": "Cambria Bold Italic (TrueType)",
+    "file": "cambriaz.ttf"
+  },
+  {
+    "name": "Cambria Italic (TrueType)",
+    "file": "cambriai.ttf"
+  },
+  {
+    "name": "Candara (TrueType)",
+    "file": "candara.ttf"
+  },
+  {
+    "name": "Candara Bold (TrueType)",
+    "file": "candarab.ttf"
+  },
+  {
+    "name": "Candara Bold Italic (TrueType)",
+    "file": "candaraz.ttf"
+  },
+  {
+    "name": "Candara Italic (TrueType)",
+    "file": "candarai.ttf"
+  },
+  {
+    "name": "Candara Light (TrueType)",
+    "file": "candaral.ttf"
+  },
+  {
+    "name": "Candara Light Italic (TrueType)",
+    "file": "candarali.ttf"
+  },
+  {
+    "name": "Comic Sans MS (TrueType)",
+    "file": "comic.ttf"
+  },
+  {
+    "name": "Comic Sans MS Bold (TrueType)",
+    "file": "comicbd.ttf"
+  },
+  {
+    "name": "Comic Sans MS Bold Italic (TrueType)",
+    "file": "comicz.ttf"
+  },
+  {
+    "name": "Comic Sans MS Italic (TrueType)",
+    "file": "comici.ttf"
+  },
+  {
+    "name": "Consolas (TrueType)",
+    "file": "consola.ttf"
+  },
+  {
+    "name": "Consolas Bold (TrueType)",
+    "file": "consolab.ttf"
+  },
+  {
+    "name": "Consolas Bold Italic (TrueType)",
+    "file": "consolaz.ttf"
+  },
+  {
+    "name": "Consolas Italic (TrueType)",
+    "file": "consolai.ttf"
+  },
+  {
+    "name": "Constantia (TrueType)",
+    "file": "constan.ttf"
+  },
+  {
+    "name": "Constantia Bold (TrueType)",
+    "file": "constanb.ttf"
+  },
+  {
+    "name": "Constantia Bold Italic (TrueType)",
+    "file": "constanz.ttf"
+  },
+  {
+    "name": "Constantia Italic (TrueType)",
+    "file": "constani.ttf"
+  },
+  {
+    "name": "Corbel (TrueType)",
+    "file": "corbel.ttf"
+  },
+  {
+    "name": "Corbel Bold (TrueType)",
+    "file": "corbelb.ttf"
+  },
+  {
+    "name": "Corbel Bold Italic (TrueType)",
+    "file": "corbelz.ttf"
+  },
+  {
+    "name": "Corbel Italic (TrueType)",
+    "file": "corbeli.ttf"
+  },
+  {
+    "name": "Corbel Light (TrueType)",
+    "file": "corbell.ttf"
+  },
+  {
+    "name": "Corbel Light Italic (TrueType)",
+    "file": "corbelli.ttf"
+  },
+  {
+    "name": "Courier New (TrueType)",
+    "file": "cour.ttf"
+  },
+  {
+    "name": "Courier New Bold (TrueType)",
+    "file": "courbd.ttf"
+  },
+  {
+    "name": "Courier New Bold Italic (TrueType)",
+    "file": "courbi.ttf"
+  },
+  {
+    "name": "Courier New Italic (TrueType)",
+    "file": "couri.ttf"
+  },
+  {
+    "name": "Ebrima (TrueType)",
+    "file": "ebrima.ttf"
+  },
+  {
+    "name": "Ebrima Bold (TrueType)",
+    "file": "ebrimabd.ttf"
+  },
+  {
+    "name": "Franklin Gothic Medium (TrueType)",
+    "file": "framd.ttf"
+  },
+  {
+    "name": "Franklin Gothic Medium Italic (TrueType)",
+    "file": "framdit.ttf"
+  },
+  {
+    "name": "Gabriola (TrueType)",
+    "file": "Gabriola.ttf"
+  },
+  {
+    "name": "Gadugi (TrueType)",
+    "file": "gadugi.ttf"
+  },
+  {
+    "name": "Gadugi Bold (TrueType)",
+    "file": "gadugib.ttf"
+  },
+  {
+    "name": "Georgia (TrueType)",
+    "file": "georgia.ttf"
+  },
+  {
+    "name": "Georgia Bold (TrueType)",
+    "file": "georgiab.ttf"
+  },
+  {
+    "name": "Georgia Bold Italic (TrueType)",
+    "file": "georgiaz.ttf"
+  },
+  {
+    "name": "Georgia Italic (TrueType)",
+    "file": "georgiai.ttf"
+  },
+  {
+    "name": "Impact (TrueType)",
+    "file": "impact.ttf"
+  },
+  {
+    "name": "Ink Free (TrueType)",
+    "file": "Inkfree.ttf"
+  },
+  {
+    "name": "Javanese Text (TrueType)",
+    "file": "javatext.ttf"
+  },
+  {
+    "name": "Leelawadee UI (TrueType)",
+    "file": "leelawui.ttf"
+  },
+  {
+    "name": "Leelawadee UI Bold (TrueType)",
+    "file": "leelauib.ttf"
+  },
+  {
+    "name": "Leelawadee UI Semilight (TrueType)",
+    "file": "leeluisl.ttf"
+  },
+  {
+    "name": "Lucida Console (TrueType)",
+    "file": "lucon.TTF"
+  },
+  {
+    "name": "Lucida Sans Unicode (TrueType)",
+    "file": "l_10646.ttf"
+  },
+  {
+    "name": "Malgun Gothic (TrueType)",
+    "file": "malgun.ttf"
+  },
+  {
+    "name": "Malgun Gothic Bold (TrueType)",
+    "file": "malgunbd.ttf"
+  },
+  {
+    "name": "Malgun Gothic SemiLight (TrueType)",
+    "file": "malgunsl.ttf"
+  },
+  {
+    "name": "Microsoft Himalaya (TrueType)",
+    "file": "himalaya.ttf"
+  },
+  {
+    "name": "Microsoft JhengHei & Microsoft JhengHei UI (TrueType)",
+    "file": "msjh.ttc"
+  },
+  {
+    "name": "Microsoft JhengHei Bold & Microsoft JhengHei UI Bold (TrueType)",
+    "file": "msjhbd.ttc"
+  },
+  {
+    "name": "Microsoft JhengHei Light & Microsoft JhengHei UI Light (TrueType)",
+    "file": "msjhl.ttc"
+  },
+  {
+    "name": "Microsoft New Tai Lue (TrueType)",
+    "file": "ntailu.ttf"
+  },
+  {
+    "name": "Microsoft New Tai Lue Bold (TrueType)",
+    "file": "ntailub.ttf"
+  },
+  {
+    "name": "Microsoft PhagsPa (TrueType)",
+    "file": "phagspa.ttf"
+  },
+  {
+    "name": "Microsoft PhagsPa Bold (TrueType)",
+    "file": "phagspab.ttf"
+  },
+  {
+    "name": "Microsoft Sans Serif (TrueType)",
+    "file": "micross.ttf"
+  },
+  {
+    "name": "Microsoft Tai Le (TrueType)",
+    "file": "taile.ttf"
+  },
+  {
+    "name": "Microsoft Tai Le Bold (TrueType)",
+    "file": "taileb.ttf"
+  },
+  {
+    "name": "Microsoft YaHei & Microsoft YaHei UI (TrueType)",
+    "file": "msyh.ttc"
+  },
+  {
+    "name": "Microsoft YaHei Bold & Microsoft YaHei UI Bold (TrueType)",
+    "file": "msyhbd.ttc"
+  },
+  {
+    "name": "Microsoft YaHei Light & Microsoft YaHei UI Light (TrueType)",
+    "file": "msyhl.ttc"
+  },
+  {
+    "name": "Microsoft Yi Baiti (TrueType)",
+    "file": "msyi.ttf"
+  },
+  {
+    "name": "MingLiU-ExtB & PMingLiU-ExtB & MingLiU_HKSCS-ExtB (TrueType)",
+    "file": "mingliub.ttc"
+  },
+  {
+    "name": "Modern (All res)",
+    "file": "modern.fon"
+  },
+  {
+    "name": "Mongolian Baiti (TrueType)",
+    "file": "monbaiti.ttf"
+  },
+  {
+    "name": "MS Gothic & MS UI Gothic & MS PGothic (TrueType)",
+    "file": "msgothic.ttc"
+  },
+  {
+    "name": "MV Boli (TrueType)",
+    "file": "mvboli.ttf"
+  },
+  {
+    "name": "Myanmar Text (TrueType)",
+    "file": "mmrtext.ttf"
+  },
+  {
+    "name": "Myanmar Text Bold (TrueType)",
+    "file": "mmrtextb.ttf"
+  },
+  {
+    "name": "Nirmala UI (TrueType)",
+    "file": "Nirmala.ttf"
+  },
+  {
+    "name": "Nirmala UI Bold (TrueType)",
+    "file": "NirmalaB.ttf"
+  },
+  {
+    "name": "Nirmala UI Semilight (TrueType)",
+    "file": "NirmalaS.ttf"
+  },
+  {
+    "name": "Palatino Linotype (TrueType)",
+    "file": "pala.ttf"
+  },
+  {
+    "name": "Palatino Linotype Bold (TrueType)",
+    "file": "palab.ttf"
+  },
+  {
+    "name": "Palatino Linotype Bold Italic (TrueType)",
+    "file": "palabi.ttf"
+  },
+  {
+    "name": "Palatino Linotype Italic (TrueType)",
+    "file": "palai.ttf"
+  },
+  {
+    "name": "Roman (All res)",
+    "file": "roman.fon"
+  },
+  {
+    "name": "Script (All res)",
+    "file": "script.fon"
+  },
+  {
+    "name": "Segoe MDL2 Assets (TrueType)",
+    "file": "segmdl2.ttf"
+  },
+  {
+    "name": "Segoe Print (TrueType)",
+    "file": "segoepr.ttf"
+  },
+  {
+    "name": "Segoe Print Bold (TrueType)",
+    "file": "segoeprb.ttf"
+  },
+  {
+    "name": "Segoe Script (TrueType)",
+    "file": "segoesc.ttf"
+  },
+  {
+    "name": "Segoe Script Bold (TrueType)",
+    "file": "segoescb.ttf"
+  },
+  {
+    "name": "Segoe UI (TrueType)",
+    "file": "segoeui.ttf"
+  },
+  {
+    "name": "Segoe UI Black (TrueType)",
+    "file": "seguibl.ttf"
+  },
+  {
+    "name": "Segoe UI Black Italic (TrueType)",
+    "file": "seguibli.ttf"
+  },
+  {
+    "name": "Segoe UI Bold (TrueType)",
+    "file": "segoeuib.ttf"
+  },
+  {
+    "name": "Segoe UI Bold Italic (TrueType)",
+    "file": "segoeuiz.ttf"
+  },
+  {
+    "name": "Segoe UI Emoji (TrueType)",
+    "file": "seguiemj.ttf"
+  },
+  {
+    "name": "Segoe UI Historic (TrueType)",
+    "file": "seguihis.ttf"
+  },
+  {
+    "name": "Segoe UI Italic (TrueType)",
+    "file": "segoeuii.ttf"
+  },
+  {
+    "name": "Segoe UI Light (TrueType)",
+    "file": "segoeuil.ttf"
+  },
+  {
+    "name": "Segoe UI Light Italic (TrueType)",
+    "file": "seguili.ttf"
+  },
+  {
+    "name": "Segoe UI Semibold (TrueType)",
+    "file": "seguisb.ttf"
+  },
+  {
+    "name": "Segoe UI Semibold Italic (TrueType)",
+    "file": "seguisbi.ttf"
+  },
+  {
+    "name": "Segoe UI Semilight (TrueType)",
+    "file": "segoeuisl.ttf"
+  },
+  {
+    "name": "Segoe UI Semilight Italic (TrueType)",
+    "file": "seguisli.ttf"
+  },
+  {
+    "name": "Segoe UI Symbol (TrueType)",
+    "file": "seguisym.ttf"
+  },
+  {
+    "name": "SimSun & NSimSun (TrueType)",
+    "file": "simsun.ttc"
+  },
+  {
+    "name": "SimSun-ExtB (TrueType)",
+    "file": "simsunb.ttf"
+  },
+  {
+    "name": "Sitka Small & Sitka Text & Sitka Subheading & Sitka Heading & Sitka Display & Sitka Banner (TrueType)",
+    "file": "Sitka.ttc"
+  },
+  {
+    "name": "Sitka Small Bold & Sitka Text Bold & Sitka Subheading Bold & Sitka Heading Bold & Sitka Display Bold & Sitka Banner Bold (TrueType)",
+    "file": "SitkaB.ttc"
+  },
+  {
+    "name": "Sitka Small Bold Italic & Sitka Text Bold Italic & Sitka Subheading Bold Italic & Sitka Heading Bold Italic & Sitka Display Bold Italic & Sitka Banner Bold Italic (TrueType)",
+    "file": "SitkaZ.ttc"
+  },
+  {
+    "name": "Sitka Small Italic & Sitka Text Italic & Sitka Subheading Italic & Sitka Heading Italic & Sitka Display Italic & Sitka Banner Italic (TrueType)",
+    "file": "SitkaI.ttc"
+  },
+  {
+    "name": "Sylfaen (TrueType)",
+    "file": "sylfaen.ttf"
+  },
+  {
+    "name": "Symbol (TrueType)",
+    "file": "symbol.ttf"
+  },
+  {
+    "name": "Tahoma (TrueType)",
+    "file": "tahoma.ttf"
+  },
+  {
+    "name": "Tahoma Bold (TrueType)",
+    "file": "tahomabd.ttf"
+  },
+  {
+    "name": "Times New Roman (TrueType)",
+    "file": "times.ttf"
+  },
+  {
+    "name": "Times New Roman Bold (TrueType)",
+    "file": "timesbd.ttf"
+  },
+  {
+    "name": "Times New Roman Bold Italic (TrueType)",
+    "file": "timesbi.ttf"
+  },
+  {
+    "name": "Times New Roman Italic (TrueType)",
+    "file": "timesi.ttf"
+  },
+  {
+    "name": "Trebuchet MS (TrueType)",
+    "file": "trebuc.ttf"
+  },
+  {
+    "name": "Trebuchet MS Bold (TrueType)",
+    "file": "trebucbd.ttf"
+  },
+  {
+    "name": "Trebuchet MS Bold Italic (TrueType)",
+    "file": "trebucbi.ttf"
+  },
+  {
+    "name": "Trebuchet MS Italic (TrueType)",
+    "file": "trebucit.ttf"
+  },
+  {
+    "name": "Verdana (TrueType)",
+    "file": "verdana.ttf"
+  },
+  {
+    "name": "Verdana Bold (TrueType)",
+    "file": "verdanab.ttf"
+  },
+  {
+    "name": "Verdana Bold Italic (TrueType)",
+    "file": "verdanaz.ttf"
+  },
+  {
+    "name": "Verdana Italic (TrueType)",
+    "file": "verdanai.ttf"
+  },
+  {
+    "name": "Webdings (TrueType)",
+    "file": "webdings.ttf"
+  },
+  {
+    "name": "Wingdings (TrueType)",
+    "file": "wingding.ttf"
+  },
+  {
+    "name": "Yu Gothic Bold & Yu Gothic UI Semibold & Yu Gothic UI Bold (TrueType)",
+    "file": "YuGothB.ttc"
+  },
+  {
+    "name": "Yu Gothic Light & Yu Gothic UI Light (TrueType)",
+    "file": "YuGothL.ttc"
+  },
+  {
+    "name": "Yu Gothic Medium & Yu Gothic UI Regular (TrueType)",
+    "file": "YuGothM.ttc"
+  },
+  {
+    "name": "Yu Gothic Regular & Yu Gothic UI Semilight (TrueType)",
+    "file": "YuGothR.ttc"
+  },
+  {
+    "name": "Courier 10,12,15",
+    "file": "COURE.FON"
+  },
+  {
+    "name": "Courier 10,12,15 (120)",
+    "file": "COURF.FON"
+  },
+  {
+    "name": "MS Serif 8,10,12,14,18,24",
+    "file": "SERIFE.FON"
+  },
+  {
+    "name": "MS Serif 8,10,12,14,18,24 (120)",
+    "file": "SERIFF.FON"
+  },
+  {
+    "name": "MS Sans Serif 8,10,12,14,18,24",
+    "file": "SSERIFE.FON"
+  },
+  {
+    "name": "MS Sans Serif 8,10,12,14,18,24 (120)",
+    "file": "SSERIFF.FON"
+  },
+  {
+    "name": "Small Fonts",
+    "file": "SMALLE.FON"
+  },
+  {
+    "name": "Small Fonts (120)",
+    "file": "SMALLF.FON"
+  },
+  {
+    "name": "Batang & BatangChe & Gungsuh & GungsuhChe (TrueType)",
+    "file": "batang.ttc"
+  },
+  {
+    "name": "Gulim & GulimChe & Dotum & DotumChe (TrueType)",
+    "file": "gulim.ttc"
+  },
+  {
+    "name": "Holo MDL2 Assets (TrueType)",
+    "file": "holomdl2.ttf"
+  },
+  {
+    "name": "BIZ UDGothic & BIZ UDPGothic (TrueType);",
+    "file": "BIZ-UDGothicR.ttc"
+  },
+  {
+    "name": "BIZ UDGothic Bold & BIZ UDPGothic Bold (TrueType);",
+    "file": "BIZ-UDGothicB.ttc"
+  },
+  {
+    "name": "BIZ UDMincho Medium & BIZ UDPMincho Medium (TrueType);",
+    "file": "BIZ-UDMinchoM.ttc"
+  },
+  {
+    "name": "Meiryo & Meiryo Italic & Meiryo UI & Meiryo UI Italic (TrueType)",
+    "file": "meiryo.ttc"
+  },
+  {
+    "name": "Meiryo Bold & Meiryo Bold Italic & Meiryo UI Bold & Meiryo UI Bold Italic (TrueType)",
+    "file": "meiryob.ttc"
+  },
+  {
+    "name": "MS Mincho & MS PMincho (TrueType)",
+    "file": "msmincho.ttc"
+  },
+  {
+    "name": "UD Digi Kyokasho N-B & UD Digi Kyokasho NP-B & UD Digi Kyokasho NK-B (TrueType)",
+    "file": "UDDigiKyokashoN-B.ttc"
+  },
+  {
+    "name": "UD Digi Kyokasho N-R & UD Digi Kyokasho NP-R & UD Digi Kyokasho NK-R (TrueType)",
+    "file": "UDDigiKyokashoN-R.ttc"
+  },
+  {
+    "name": "Yu Mincho (TrueType)",
+    "file": "yumin.ttf"
+  },
+  {
+    "name": "Yu Mincho Demibold (TrueType)",
+    "file": "yumindb.ttf"
+  },
+  {
+    "name": "Yu Mincho Light (TrueType)",
+    "file": "yuminl.ttf"
+  },
+  {
+    "name": "Noto Sans JP (TrueType)",
+    "file": "NotoSansJP-VF.ttf"
+  },
+  {
+    "name": "Noto Sans KR (TrueType)",
+    "file": "NotoSansKR-VF.ttf"
+  },
+  {
+    "name": "SimSun-ExtG (TrueType)",
+    "file": "SimsunExtG.ttf"
+  },
+  {
+    "name": "HCR Dotum (TrueType)",
+    "file": "HANDotum.ttf"
+  },
+  {
+    "name": "HCR Dotum Bold (TrueType)",
+    "file": "HANDotumB.ttf"
+  },
+  {
+    "name": "HCR Dotum Ext (TrueType)",
+    "file": "HANDotumExt.ttf"
+  },
+  {
+    "name": "HCR Batang (TrueType)",
+    "file": "HANBatang.ttf"
+  },
+  {
+    "name": "HCR Batang Bold (TrueType)",
+    "file": "HANBatangB.ttf"
+  },
+  {
+    "name": "HCR Batang Ext (TrueType)",
+    "file": "HANBatangExt.ttf"
+  },
+  {
+    "name": "HCR Batang ExtB (TrueType)",
+    "file": "HANBatangExtB.ttf"
+  },
+  {
+    "name": "HCR Batang ExtB Bold (TrueType)",
+    "file": "HANBatangExtBB.ttf"
+  },
+  {
+    "name": "HyhwpEQ (TrueType)",
+    "file": "HYHWPEQ.TTF"
+  },
+  {
+    "name": "HancomEQN (TrueType)",
+    "file": "HancomEQN.ttf"
+  },
+  {
+    "name": "NewJumja (TrueType)",
+    "file": "JUMJA.TTF"
+  },
+  {
+    "name": "Hancom Gothic Bold (TrueType)",
+    "file": "Hancom Gothic Bold.ttf"
+  },
+  {
+    "name": "Hancom Gothic Regular (TrueType)",
+    "file": "Hancom Gothic Regular.ttf"
+  },
+  {
+    "name": "Haan Wing2 (TrueType)",
+    "file": "HANWing2.ttf"
+  },
+  {
+    "name": "Han Santteut Dotum Regular (TrueType)",
+    "file": "HanSantteutDotum-Regular.ttf"
+  },
+  {
+    "name": "Han Santteut Dotum Bold (TrueType)",
+    "file": "HanSantteutDotum-Bold.ttf"
+  },
+  {
+    "name": "Hancom MalangMalang Bold (TrueType)",
+    "file": "MalangmalangB.ttf"
+  },
+  {
+    "name": "Hancom MalangMalang Regular (TrueType)",
+    "file": "MalangmalangR.ttf"
+  },
+  {
+    "name": "Hancom Hoonminjeongeum_V (TrueType)",
+    "file": "Hancom HMJE_V.ttf"
+  },
+  {
+    "name": "Hancom Hoonminjeongeum_H (TrueType)",
+    "file": "HancomHoonminjeongeumH.ttf"
+  },
+  {
+    "name": "Cascadia Code Regular (TrueType)",
+    "file": "CascadiaCode.ttf"
+  },
+  {
+    "name": "Cascadia Mono Regular (TrueType)",
+    "file": "CascadiaMono.ttf"
+  },
+  {
+    "name": "Noto Sans KR SemiBold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NotoSansKR-SemiBold.ttf"
+  },
+  {
+    "name": "Pretendard Black (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Pretendard-Black.ttf"
+  },
+  {
+    "name": "Pretendard Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Pretendard-Bold.ttf"
+  },
+  {
+    "name": "Pretendard ExtraBold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Pretendard-ExtraBold.ttf"
+  },
+  {
+    "name": "Pretendard ExtraLight (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Pretendard-ExtraLight.ttf"
+  },
+  {
+    "name": "Pretendard Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Pretendard-Light.ttf"
+  },
+  {
+    "name": "Pretendard Medium (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Pretendard-Medium.ttf"
+  },
+  {
+    "name": "Pretendard Regular (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Pretendard-Regular.ttf"
+  },
+  {
+    "name": "Pretendard SemiBold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Pretendard-SemiBold.ttf"
+  },
+  {
+    "name": "Pretendard Thin (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Pretendard-Thin.ttf"
+  },
+  {
+    "name": "KoPub바탕체 Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPub Batang Light.ttf"
+  },
+  {
+    "name": "나눔스퀘어_ac Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumSquare_acL.ttf"
+  },
+  {
+    "name": "나눔스퀘어_ac Regular (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumSquare_acR.ttf"
+  },
+  {
+    "name": "나눔스퀘어 Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumSquareB.ttf"
+  },
+  {
+    "name": "나눔스퀘어 ExtraBold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumSquareEB.ttf"
+  },
+  {
+    "name": "나눔스퀘어 Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumSquareL.ttf"
+  },
+  {
+    "name": "나눔스퀘어 Regular (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumSquareR.ttf"
+  },
+  {
+    "name": "배달의민족 도현 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\BMDOHYEON_ttf.ttf"
+  },
+  {
+    "name": "카페24 써라운드 Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Cafe24Ssurround.ttf"
+  },
+  {
+    "name": "D2Coding ligature Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\D2CodingBold-Ver1.3.2-20180524-ligature.ttf"
+  },
+  {
+    "name": "D2Coding & D2Coding Bold & D2Coding ligature & D2Coding ligature Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\D2Coding-Ver1.3.2-20180524-all.ttc"
+  },
+  {
+    "name": "D2Coding ligature & D2Coding ligature Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\D2Coding-Ver1.3.2-20180524-ligature.ttc"
+  },
+  {
+    "name": "D2Coding ligature (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\D2Coding-Ver1.3.2-20180524-ligature.ttf"
+  },
+  {
+    "name": "G마켓 산스 Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\GmarketSansBold.otf"
+  },
+  {
+    "name": "G마켓 산스 Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\GmarketSansLight.otf"
+  },
+  {
+    "name": "G마켓 산스 Medium (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\GmarketSansMedium.otf"
+  },
+  {
+    "name": "G마켓 산스 TTF Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\GmarketSansTTFBold.ttf"
+  },
+  {
+    "name": "G마켓 산스 TTF Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\GmarketSansTTFLight.ttf"
+  },
+  {
+    "name": "G마켓 산스 TTF Medium (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\GmarketSansTTFMedium.ttf"
+  },
+  {
+    "name": "HY신명조 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\H2MJSM.TTF"
+  },
+  {
+    "name": "KoPubWorld바탕체 Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Batang Bold.ttf"
+  },
+  {
+    "name": "KoPubWorld바탕체 Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Batang Light.ttf"
+  },
+  {
+    "name": "KoPubWorld바탕체 Medium (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Batang Medium.ttf"
+  },
+  {
+    "name": "KoPubWorld바탕체_Pro Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Batang_Pro Bold.otf"
+  },
+  {
+    "name": "KoPubWorld바탕체_Pro Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Batang_Pro Light.otf"
+  },
+  {
+    "name": "KoPubWorld바탕체_Pro Medium (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Batang_Pro Medium.otf"
+  },
+  {
+    "name": "KoPubWorld돋움체 Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Dotum Bold.ttf"
+  },
+  {
+    "name": "KoPubWorld돋움체 Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Dotum Light.ttf"
+  },
+  {
+    "name": "KoPubWorld돋움체 Medium (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Dotum Medium.ttf"
+  },
+  {
+    "name": "KoPubWorld돋움체_Pro Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Dotum_Pro Bold.otf"
+  },
+  {
+    "name": "KoPubWorld돋움체_Pro Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Dotum_Pro Light.otf"
+  },
+  {
+    "name": "KoPubWorld돋움체_Pro Medium (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\KoPubWorld Dotum_Pro Medium.otf"
+  },
+  {
+    "name": "나눔바른고딕 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumBarunGothic.ttf"
+  },
+  {
+    "name": "나눔바른고딕 Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumBarunGothicBold.ttf"
+  },
+  {
+    "name": "나눔바른고딕 Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumBarunGothicLight.ttf"
+  },
+  {
+    "name": "나눔바른고딕 UltraLight (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumBarunGothicUltraLight.ttf"
+  },
+  {
+    "name": "나눔바른고딕OTF 옛한글 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumBarunGothic-YetHangul.otf"
+  },
+  {
+    "name": "나눔바른고딕 옛한글 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumBarunGothic-YetHangul.ttf"
+  },
+  {
+    "name": "나눔바른펜 Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumBarunpenB.ttf"
+  },
+  {
+    "name": "나눔바른펜 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumBarunpenR.ttf"
+  },
+  {
+    "name": "나눔손글씨 붓 OTF (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumBrush.otf"
+  },
+  {
+    "name": "나눔손글씨 붓 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumBrush.ttf"
+  },
+  {
+    "name": "나눔고딕 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothic.ttf"
+  },
+  {
+    "name": "나눔고딕 Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothicBold.ttf"
+  },
+  {
+    "name": "나눔고딕 에코 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothicEco.ttf"
+  },
+  {
+    "name": "나눔고딕 에코 Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothicEcoBold.ttf"
+  },
+  {
+    "name": "나눔고딕 에코 ExtraBold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothicEcoExtraBold.ttf"
+  },
+  {
+    "name": "나눔고딕 ExtraBold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothicExtraBold.ttf"
+  },
+  {
+    "name": "나눔고딕 Light (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothicLight.ttf"
+  },
+  {
+    "name": "나눔명조 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumMyeongjo.ttf"
+  },
+  {
+    "name": "나눔명조 Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumMyeongjoBold.ttf"
+  },
+  {
+    "name": "나눔명조 에코 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumMyeongjoEco.ttf"
+  },
+  {
+    "name": "나눔명조 에코 Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumMyeongjoEcoBold.ttf"
+  },
+  {
+    "name": "나눔명조 에코 ExtraBold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumMyeongjoEcoExtraBold.ttf"
+  },
+  {
+    "name": "나눔명조 ExtraBold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumMyeongjoExtraBold.ttf"
+  },
+  {
+    "name": "나눔명조 옛한글 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumMyeongjo-YetHangul.ttf"
+  },
+  {
+    "name": "나눔손글씨 펜 OTF (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumPen.otf"
+  },
+  {
+    "name": "나눔손글씨 펜 (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumPen.ttf"
+  },
+  {
+    "name": "나눔스퀘어_ac Bold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumSquare.ttf"
+  },
+  {
+    "name": "나눔스퀘어_ac ExtraBold (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumSquare_0.ttf"
+  },
+  {
+    "name": "Haansoft Batang (TrueType)",
+    "file": "C:\\Users\\K\\AppData\\Local\\Microsoft\\Windows\\Fonts\\HBATANG.TTF"
+  }
+]

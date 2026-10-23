@@ -1,0 +1,6294 @@
+[
+ {
+  "n": 1,
+  "script": "12",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 1050,
+   "h": 1125,
+   "baseLine": 85
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 2,
+  "script": "f` LEFT ( x RIGHT )",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 2087,
+   "h": 1125,
+   "baseLine": 85
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2087,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 3,
+  "script": "alpha",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 675,
+   "h": 1125,
+   "baseLine": 85
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 675,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 4,
+  "script": "{1} over {2}",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 1100,
+   "h": 2580,
+   "baseLine": 65
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1100,
+    "h": 2580,
+    "baseLine": 65,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 5,
+  "script": "{bar{rm AB}}",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 1605,
+   "h": 1350,
+   "baseLine": 87
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1605,
+    "h": 1350,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 6,
+  "script": "a _{`n+1}",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 2253,
+   "h": 1350,
+   "baseLine": 71
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2253,
+    "h": 1350,
+    "baseLine": 71,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 7,
+  "script": "k= {11} over {4 sqrt {5}}`",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 4786,
+   "h": 2745,
+   "baseLine": 62
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4786,
+    "h": 2745,
+    "baseLine": 62,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 8,
+  "script": "{vec{rm OP}} CDOT  {vec{rm OQ}} & =0",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 5986,
+   "h": 1350,
+   "baseLine": 87
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 5986,
+    "h": 1350,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 9,
+  "script": "rmCDFE`",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 2912,
+   "h": 1125,
+   "baseLine": 85
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2912,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 10,
+  "script": "f` LEFT ( 0 RIGHT ) =it-a ^{2} =it-9",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 7837,
+   "h": 1313,
+   "baseLine": 87
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 7837,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 11,
+  "script": "sin`A`:sin`B`=`2`:`3`",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 9382,
+   "h": 1125,
+   "baseLine": 85
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 9382,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 12,
+  "script": "{5} over {11} `",
+  "kind": "control",
+  "count": 0,
+  "source": "지시문 C",
+  "orig": {
+   "baseUnit": 1100,
+   "w": 1737,
+   "h": 2580,
+   "baseLine": 65
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1737,
+    "h": 2580,
+    "baseLine": 65,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 13,
+  "script": "x^it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 1
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 600,
+    "h": 1311,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 14,
+  "script": "LEFT ( x^it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 2
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1311,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 15,
+  "script": "left( x^it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 3
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1311,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 16,
+  "script": "LEFT | x^it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 4
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1311,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 17,
+  "script": "x_it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 5
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 600,
+    "h": 1310,
+    "baseLine": 73,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 18,
+  "script": "LEFT ( x_it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 6
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1310,
+    "baseLine": 73,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 19,
+  "script": "left( x_it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 7
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1310,
+    "baseLine": 73,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 20,
+  "script": "LEFT | x_it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 8
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1310,
+    "baseLine": 73,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 21,
+  "script": "x^it_it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 9
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 600,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 22,
+  "script": "LEFT ( x^it_it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 10
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 23,
+  "script": "left( x^it_it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 11
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 24,
+  "script": "LEFT | x^it_it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 12
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 25,
+  "script": "x_it^it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 13
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 600,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 26,
+  "script": "LEFT ( x_it^it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 14
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 27,
+  "script": "left( x_it^it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 15
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 28,
+  "script": "LEFT | x_it^it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 16
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 29,
+  "script": "x^{it}_{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 17
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 600,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 30,
+  "script": "LEFT ( x^{it}_{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 18
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 31,
+  "script": "left( x^{it}_{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 19
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 32,
+  "script": "LEFT | x^{it}_{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 20
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 33,
+  "script": "x_{it}^{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 21
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 600,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 34,
+  "script": "LEFT ( x_{it}^{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 22
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 35,
+  "script": "left( x_{it}^{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 23
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 36,
+  "script": "LEFT | x_{it}^{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 24
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 37,
+  "script": "x^{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 25
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 600,
+    "h": 1311,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 38,
+  "script": "LEFT ( x^{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 26
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1311,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 39,
+  "script": "left( x^{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 27
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1311,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 40,
+  "script": "LEFT | x^{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 28
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1311,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 41,
+  "script": "x_{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 29
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 600,
+    "h": 1310,
+    "baseLine": 73,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 42,
+  "script": "LEFT ( x_{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 30
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1310,
+    "baseLine": 73,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 43,
+  "script": "left( x_{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 31
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1310,
+    "baseLine": 73,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 44,
+  "script": "LEFT | x_{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 32
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1310,
+    "baseLine": 73,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 45,
+  "script": "x^{it} it _{it} it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 33
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 600,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 46,
+  "script": "LEFT ( x^{it} it _{it} it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 34
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 47,
+  "script": "left( x^{it} it _{it} it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 35
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 48,
+  "script": "LEFT | x^{it} it _{it} it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 36
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1496,
+    "baseLine": 76,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 49,
+  "script": "x^{it ^{it}}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 37
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 600,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 50,
+  "script": "LEFT ( x^{it ^{it}} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 38
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 51,
+  "script": "left( x^{it ^{it}} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 39
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 52,
+  "script": "LEFT | x^{it ^{it}} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 40
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 53,
+  "script": "x_{it _{it}}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 41
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 600,
+    "h": 1484,
+    "baseLine": 64,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 54,
+  "script": "LEFT ( x_{it _{it}} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 42
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1484,
+    "baseLine": 64,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 55,
+  "script": "left( x_{it _{it}} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 43
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1484,
+    "baseLine": 64,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 56,
+  "script": "LEFT | x_{it _{it}} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 44
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1484,
+    "baseLine": 64,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 57,
+  "script": "k ^{2}^it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 45
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 900,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 58,
+  "script": "LEFT ( k ^{2}^it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 46
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 59,
+  "script": "left( k ^{2}^it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 47
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 60,
+  "script": "LEFT | k ^{2}^it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 48
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1950,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 61,
+  "script": "k ^{2}_it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 49
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 900,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 62,
+  "script": "LEFT ( k ^{2}_it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 50
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 63,
+  "script": "left( k ^{2}_it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 51
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 64,
+  "script": "LEFT | k ^{2}_it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 52
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1950,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 65,
+  "script": "k ^{2}^it_it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 53
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 900,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 66,
+  "script": "LEFT ( k ^{2}^it_it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 54
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 67,
+  "script": "left( k ^{2}^it_it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 55
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 68,
+  "script": "LEFT | k ^{2}^it_it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 56
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1950,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 69,
+  "script": "k ^{2}_it^it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 57
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 900,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 70,
+  "script": "LEFT ( k ^{2}_it^it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 58
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 71,
+  "script": "left( k ^{2}_it^it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 59
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 72,
+  "script": "LEFT | k ^{2}_it^it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 60
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1950,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 73,
+  "script": "k ^{2}^{it}_{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 61
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 900,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 74,
+  "script": "LEFT ( k ^{2}^{it}_{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 62
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 75,
+  "script": "left( k ^{2}^{it}_{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 63
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 76,
+  "script": "LEFT | k ^{2}^{it}_{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 64
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1950,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 77,
+  "script": "k ^{2}_{it}^{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 65
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 900,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 78,
+  "script": "LEFT ( k ^{2}_{it}^{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 66
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 79,
+  "script": "left( k ^{2}_{it}^{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 67
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 80,
+  "script": "LEFT | k ^{2}_{it}^{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 68
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1950,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 81,
+  "script": "k ^{2}^{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 69
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 900,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 82,
+  "script": "LEFT ( k ^{2}^{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 70
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 83,
+  "script": "left( k ^{2}^{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 71
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 84,
+  "script": "LEFT | k ^{2}^{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 72
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1950,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 85,
+  "script": "k ^{2}_{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 73
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 900,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 86,
+  "script": "LEFT ( k ^{2}_{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 74
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 87,
+  "script": "left( k ^{2}_{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 75
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 88,
+  "script": "LEFT | k ^{2}_{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 76
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1950,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 89,
+  "script": "k ^{2}^{it} it _{it} it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 77
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 900,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 90,
+  "script": "LEFT ( k ^{2}^{it} it _{it} it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 78
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 91,
+  "script": "left( k ^{2}^{it} it _{it} it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 79
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 92,
+  "script": "LEFT | k ^{2}^{it} it _{it} it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 80
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1950,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 93,
+  "script": "k ^{2}^{it ^{it}}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 81
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 900,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 94,
+  "script": "LEFT ( k ^{2}^{it ^{it}} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 82
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 95,
+  "script": "left( k ^{2}^{it ^{it}} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 83
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 96,
+  "script": "LEFT | k ^{2}^{it ^{it}} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 84
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1950,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 97,
+  "script": "k ^{2}_{it _{it}}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 85
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 900,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 98,
+  "script": "LEFT ( k ^{2}_{it _{it}} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 86
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 99,
+  "script": "left( k ^{2}_{it _{it}} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 87
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1650,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 100,
+  "script": "LEFT | k ^{2}_{it _{it}} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 88
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1950,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 101,
+  "script": "2k ^{2}^it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 89
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1425,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 102,
+  "script": "LEFT ( 2k ^{2}^it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 90
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 103,
+  "script": "left( 2k ^{2}^it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 91
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 104,
+  "script": "LEFT | 2k ^{2}^it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 92
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 105,
+  "script": "2k ^{2}_it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 93
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1425,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 106,
+  "script": "LEFT ( 2k ^{2}_it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 94
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 107,
+  "script": "left( 2k ^{2}_it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 95
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 108,
+  "script": "LEFT | 2k ^{2}_it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 96
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 109,
+  "script": "2k ^{2}^it_it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 97
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1425,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 110,
+  "script": "LEFT ( 2k ^{2}^it_it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 98
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 111,
+  "script": "left( 2k ^{2}^it_it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 99
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 112,
+  "script": "LEFT | 2k ^{2}^it_it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 100
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 113,
+  "script": "2k ^{2}_it^it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 101
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1425,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 114,
+  "script": "LEFT ( 2k ^{2}_it^it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 102
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 115,
+  "script": "left( 2k ^{2}_it^it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 103
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 116,
+  "script": "LEFT | 2k ^{2}_it^it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 104
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 117,
+  "script": "2k ^{2}^{it}_{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 105
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1425,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 118,
+  "script": "LEFT ( 2k ^{2}^{it}_{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 106
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 119,
+  "script": "left( 2k ^{2}^{it}_{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 107
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 120,
+  "script": "LEFT | 2k ^{2}^{it}_{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 108
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 121,
+  "script": "2k ^{2}_{it}^{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 109
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1425,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 122,
+  "script": "LEFT ( 2k ^{2}_{it}^{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 110
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 123,
+  "script": "left( 2k ^{2}_{it}^{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 111
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 124,
+  "script": "LEFT | 2k ^{2}_{it}^{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 112
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 125,
+  "script": "2k ^{2}^{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 113
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1425,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 126,
+  "script": "LEFT ( 2k ^{2}^{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 114
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 127,
+  "script": "left( 2k ^{2}^{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 115
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 128,
+  "script": "LEFT | 2k ^{2}^{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 116
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 129,
+  "script": "2k ^{2}_{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 117
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1425,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 130,
+  "script": "LEFT ( 2k ^{2}_{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 118
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 131,
+  "script": "left( 2k ^{2}_{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 119
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 132,
+  "script": "LEFT | 2k ^{2}_{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 120
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 133,
+  "script": "2k ^{2}^{it} it _{it} it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 121
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1425,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 134,
+  "script": "LEFT ( 2k ^{2}^{it} it _{it} it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 122
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 135,
+  "script": "left( 2k ^{2}^{it} it _{it} it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 123
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 136,
+  "script": "LEFT | 2k ^{2}^{it} it _{it} it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 124
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 137,
+  "script": "2k ^{2}^{it ^{it}}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 125
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1425,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 138,
+  "script": "LEFT ( 2k ^{2}^{it ^{it}} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 126
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 139,
+  "script": "left( 2k ^{2}^{it ^{it}} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 127
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 140,
+  "script": "LEFT | 2k ^{2}^{it ^{it}} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 128
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 141,
+  "script": "2k ^{2}_{it _{it}}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 129
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1425,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 142,
+  "script": "LEFT ( 2k ^{2}_{it _{it}} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 130
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 143,
+  "script": "left( 2k ^{2}_{it _{it}} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 131
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2175,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 144,
+  "script": "LEFT | 2k ^{2}_{it _{it}} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 132
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 145,
+  "script": "(x-2) ^{2}^it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 133
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3460,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 146,
+  "script": "LEFT ( (x-2) ^{2}^it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 134
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 147,
+  "script": "left( (x-2) ^{2}^it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 135
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 148,
+  "script": "LEFT | (x-2) ^{2}^it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 136
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4510,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 149,
+  "script": "(x-2) ^{2}_it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 137
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3460,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 150,
+  "script": "LEFT ( (x-2) ^{2}_it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 138
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 151,
+  "script": "left( (x-2) ^{2}_it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 139
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 152,
+  "script": "LEFT | (x-2) ^{2}_it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 140
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4510,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 153,
+  "script": "(x-2) ^{2}^it_it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 141
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3460,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 154,
+  "script": "LEFT ( (x-2) ^{2}^it_it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 142
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 155,
+  "script": "left( (x-2) ^{2}^it_it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 143
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 156,
+  "script": "LEFT | (x-2) ^{2}^it_it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 144
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4510,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 157,
+  "script": "(x-2) ^{2}_it^it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 145
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3460,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 158,
+  "script": "LEFT ( (x-2) ^{2}_it^it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 146
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 159,
+  "script": "left( (x-2) ^{2}_it^it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 147
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 160,
+  "script": "LEFT | (x-2) ^{2}_it^it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 148
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4510,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 161,
+  "script": "(x-2) ^{2}^{it}_{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 149
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3460,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 162,
+  "script": "LEFT ( (x-2) ^{2}^{it}_{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 150
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 163,
+  "script": "left( (x-2) ^{2}^{it}_{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 151
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 164,
+  "script": "LEFT | (x-2) ^{2}^{it}_{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 152
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4510,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 165,
+  "script": "(x-2) ^{2}_{it}^{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 153
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3460,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 166,
+  "script": "LEFT ( (x-2) ^{2}_{it}^{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 154
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 167,
+  "script": "left( (x-2) ^{2}_{it}^{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 155
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 168,
+  "script": "LEFT | (x-2) ^{2}_{it}^{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 156
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4510,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 169,
+  "script": "(x-2) ^{2}^{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 157
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3460,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 170,
+  "script": "LEFT ( (x-2) ^{2}^{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 158
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 171,
+  "script": "left( (x-2) ^{2}^{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 159
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 172,
+  "script": "LEFT | (x-2) ^{2}^{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 160
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4510,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 173,
+  "script": "(x-2) ^{2}_{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 161
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3460,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 174,
+  "script": "LEFT ( (x-2) ^{2}_{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 162
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 175,
+  "script": "left( (x-2) ^{2}_{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 163
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 176,
+  "script": "LEFT | (x-2) ^{2}_{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 164
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4510,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 177,
+  "script": "(x-2) ^{2}^{it} it _{it} it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 165
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3460,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 178,
+  "script": "LEFT ( (x-2) ^{2}^{it} it _{it} it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 166
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 179,
+  "script": "left( (x-2) ^{2}^{it} it _{it} it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 167
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 180,
+  "script": "LEFT | (x-2) ^{2}^{it} it _{it} it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 168
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4510,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 181,
+  "script": "(x-2) ^{2}^{it ^{it}}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 169
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3460,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 182,
+  "script": "LEFT ( (x-2) ^{2}^{it ^{it}} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 170
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 183,
+  "script": "left( (x-2) ^{2}^{it ^{it}} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 171
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 184,
+  "script": "LEFT | (x-2) ^{2}^{it ^{it}} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 172
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4510,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 185,
+  "script": "(x-2) ^{2}_{it _{it}}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 173
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3460,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 186,
+  "script": "LEFT ( (x-2) ^{2}_{it _{it}} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 174
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 187,
+  "script": "left( (x-2) ^{2}_{it _{it}} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 175
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4210,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 188,
+  "script": "LEFT | (x-2) ^{2}_{it _{it}} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 176
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4510,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 189,
+  "script": "LEFT ( x RIGHT ) ^{2}^it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 177
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1725,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 190,
+  "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 178
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 191,
+  "script": "left( LEFT ( x RIGHT ) ^{2}^it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 179
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 192,
+  "script": "LEFT | LEFT ( x RIGHT ) ^{2}^it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 180
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2775,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 193,
+  "script": "LEFT ( x RIGHT ) ^{2}_it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 181
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1725,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 194,
+  "script": "LEFT ( LEFT ( x RIGHT ) ^{2}_it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 182
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 195,
+  "script": "left( LEFT ( x RIGHT ) ^{2}_it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 183
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 196,
+  "script": "LEFT | LEFT ( x RIGHT ) ^{2}_it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 184
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2775,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 197,
+  "script": "LEFT ( x RIGHT ) ^{2}^it_it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 185
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1725,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 198,
+  "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^it_it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 186
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 199,
+  "script": "left( LEFT ( x RIGHT ) ^{2}^it_it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 187
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 200,
+  "script": "LEFT | LEFT ( x RIGHT ) ^{2}^it_it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 188
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2775,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 201,
+  "script": "LEFT ( x RIGHT ) ^{2}_it^it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 189
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1725,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 202,
+  "script": "LEFT ( LEFT ( x RIGHT ) ^{2}_it^it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 190
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 203,
+  "script": "left( LEFT ( x RIGHT ) ^{2}_it^it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 191
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 204,
+  "script": "LEFT | LEFT ( x RIGHT ) ^{2}_it^it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 192
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2775,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 205,
+  "script": "LEFT ( x RIGHT ) ^{2}^{it}_{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 193
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1725,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 206,
+  "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^{it}_{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 194
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 207,
+  "script": "left( LEFT ( x RIGHT ) ^{2}^{it}_{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 195
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 208,
+  "script": "LEFT | LEFT ( x RIGHT ) ^{2}^{it}_{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 196
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2775,
+    "h": 1581,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 209,
+  "script": "LEFT ( x RIGHT ) ^{2}_{it}^{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 197
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1725,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 210,
+  "script": "LEFT ( LEFT ( x RIGHT ) ^{2}_{it}^{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 198
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 211,
+  "script": "left( LEFT ( x RIGHT ) ^{2}_{it}^{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 199
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 212,
+  "script": "LEFT | LEFT ( x RIGHT ) ^{2}_{it}^{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 200
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2775,
+    "h": 1633,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 213,
+  "script": "LEFT ( x RIGHT ) ^{2}^{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 201
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1725,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 214,
+  "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 202
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 215,
+  "script": "left( LEFT ( x RIGHT ) ^{2}^{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 203
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 216,
+  "script": "LEFT | LEFT ( x RIGHT ) ^{2}^{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 204
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2775,
+    "h": 1447,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 217,
+  "script": "LEFT ( x RIGHT ) ^{2}_{it}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 205
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1725,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 218,
+  "script": "LEFT ( LEFT ( x RIGHT ) ^{2}_{it} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 206
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 219,
+  "script": "left( LEFT ( x RIGHT ) ^{2}_{it} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 207
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 220,
+  "script": "LEFT | LEFT ( x RIGHT ) ^{2}_{it} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 208
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2775,
+    "h": 1537,
+    "baseLine": 74,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 221,
+  "script": "LEFT ( x RIGHT ) ^{2}^{it} it _{it} it",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 209
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1725,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 222,
+  "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^{it} it _{it} it RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 210
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 223,
+  "script": "left( LEFT ( x RIGHT ) ^{2}^{it} it _{it} it right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 211
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 224,
+  "script": "LEFT | LEFT ( x RIGHT ) ^{2}^{it} it _{it} it RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 212
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2775,
+    "h": 1632,
+    "baseLine": 78,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 225,
+  "script": "LEFT ( x RIGHT ) ^{2}^{it ^{it}}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 213
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1725,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 226,
+  "script": "LEFT ( LEFT ( x RIGHT ) ^{2}^{it ^{it}} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 214
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 227,
+  "script": "left( LEFT ( x RIGHT ) ^{2}^{it ^{it}} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 215
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 228,
+  "script": "LEFT | LEFT ( x RIGHT ) ^{2}^{it ^{it}} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 216
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2775,
+    "h": 1599,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 229,
+  "script": "LEFT ( x RIGHT ) ^{2}_{it _{it}}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 217
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1725,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 230,
+  "script": "LEFT ( LEFT ( x RIGHT ) ^{2}_{it _{it}} RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 218
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 231,
+  "script": "left( LEFT ( x RIGHT ) ^{2}_{it _{it}} right)",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 219
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2475,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 232,
+  "script": "LEFT | LEFT ( x RIGHT ) ^{2}_{it _{it}} RIGHT |",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "eit",
+   "n": 220
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2775,
+    "h": 1672,
+    "baseLine": 68,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 233,
+  "script": "①",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 221
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 234,
+  "script": "a①b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 222
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2025,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 235,
+  "script": "box{``①``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 223
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1703,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 236,
+  "script": "①~①",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 224
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2650,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 237,
+  "script": "x ^{①}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 225
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 238,
+  "script": "②",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 226
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 239,
+  "script": "a②b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 227
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2025,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 240,
+  "script": "box{``②``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 228
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1703,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 241,
+  "script": "②~②",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 229
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2650,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 242,
+  "script": "x ^{②}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 230
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 243,
+  "script": "⑤",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 231
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 244,
+  "script": "a⑤b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 232
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2025,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 245,
+  "script": "box{``⑤``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 233
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1703,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 246,
+  "script": "⑤~⑤",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 234
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2650,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 247,
+  "script": "x ^{⑤}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 235
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 248,
+  "script": "⑩",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 236
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 249,
+  "script": "a⑩b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 237
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2025,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 250,
+  "script": "box{``⑩``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 238
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1703,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 251,
+  "script": "⑩~⑩",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 239
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2650,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 252,
+  "script": "x ^{⑩}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 240
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 253,
+  "script": "㉠",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 241
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 254,
+  "script": "a㉠b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 242
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2025,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 255,
+  "script": "box{``㉠``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 243
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1703,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 256,
+  "script": "㉠~㉠",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 244
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2650,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 257,
+  "script": "x ^{㉠}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 245
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 258,
+  "script": "㉮",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 246
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 259,
+  "script": "a㉮b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 247
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2025,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 260,
+  "script": "box{``㉮``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 248
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1703,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 261,
+  "script": "㉮~㉮",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 249
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2650,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 262,
+  "script": "x ^{㉮}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 250
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 263,
+  "script": "ⓐ",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 251
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 264,
+  "script": "aⓐb",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 252
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2025,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 265,
+  "script": "box{``ⓐ``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 253
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1703,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 266,
+  "script": "ⓐ~ⓐ",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 254
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2650,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 267,
+  "script": "x ^{ⓐ}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 255
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 268,
+  "script": "□",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 256
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 269,
+  "script": "a□b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 257
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2025,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 270,
+  "script": "box{``□``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 258
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1703,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 271,
+  "script": "□~□",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 259
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2650,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 272,
+  "script": "x ^{□}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 260
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 273,
+  "script": "△",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 261
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 274,
+  "script": "a△b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 262
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2025,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 275,
+  "script": "box{``△``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 263
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1703,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 276,
+  "script": "△~△",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 264
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2650,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 277,
+  "script": "x ^{△}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 265
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 278,
+  "script": "○",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 266
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 279,
+  "script": "a○b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 267
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2333,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 280,
+  "script": "box{``○``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 268
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2011,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 281,
+  "script": "○~○",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 269
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2958,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 282,
+  "script": "x ^{○}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 270
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 283,
+  "script": "☆",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 271
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 284,
+  "script": "a☆b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 272
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2025,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 285,
+  "script": "box{``☆``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 273
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1703,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 286,
+  "script": "☆~☆",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 274
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2650,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 287,
+  "script": "x ^{☆}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 275
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 288,
+  "script": "※",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 276
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 825,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 289,
+  "script": "a※b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 277
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1800,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 290,
+  "script": "box{``※``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 278
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1478,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 291,
+  "script": "※~※",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 279
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2200,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 292,
+  "script": "x ^{※}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 280
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1200,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 293,
+  "script": "◎",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 281
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 294,
+  "script": "a◎b",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 282
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2025,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 295,
+  "script": "box{``◎``}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 283
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1703,
+    "h": 1350,
+    "baseLine": 77,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 296,
+  "script": "◎~◎",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 284
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2650,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 297,
+  "script": "x ^{◎}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circ",
+   "n": 285
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1350,
+    "h": 1313,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 298,
+  "script": "g{circ}f",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circop",
+   "n": 286
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2483,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 299,
+  "script": "LEFT ( g{circ}f RIGHT )",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circop",
+   "n": 287
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3233,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 300,
+  "script": "g circ f",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circop",
+   "n": 288
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2483,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 301,
+  "script": "{circ}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circop",
+   "n": 289
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 302,
+  "script": "f{circ}g{circ}h",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circop",
+   "n": 290
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4441,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 303,
+  "script": "g`{circ}`f",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "circop",
+   "n": 291
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2757,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 304,
+  "script": "lim _{x` rarrow `- INF}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "liminf",
+   "n": 292
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2946,
+    "h": 2100,
+    "baseLine": 51,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 305,
+  "script": "lim _{x -> -INF} f",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "liminf",
+   "n": 293
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3360,
+    "h": 2100,
+    "baseLine": 51,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 306,
+  "script": "lim _{x` rarrow  `- INF } {sin`f` LEFT ( x RIGHT )}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "liminf",
+   "n": 294
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 6595,
+    "h": 2100,
+    "baseLine": 51,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 307,
+  "script": "lim _{x rarrow 0-} x",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "liminf",
+   "n": 295
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2880,
+    "h": 2100,
+    "baseLine": 51,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 308,
+  "script": "lim _{x rarrow -inf} x",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "liminf",
+   "n": 296
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3360,
+    "h": 2100,
+    "baseLine": 51,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 309,
+  "script": "lim _{x` rarrow`inf} x",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "liminf",
+   "n": 297
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2736,
+    "h": 2100,
+    "baseLine": 51,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 310,
+  "script": "root{b^2 -left( { b} over { 2} } right)^2",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "brace",
+   "n": 298
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 5486,
+    "h": 2924,
+    "baseLine": 70,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 311,
+  "script": "root{b^2} -a",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "brace",
+   "n": 299
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 3566,
+    "h": 1478,
+    "baseLine": 88,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 312,
+  "script": "sqrt{a - left( b right)^2}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "brace",
+   "n": 300
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 4470,
+    "h": 1473,
+    "baseLine": 89,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 313,
+  "script": "root{a}}",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "brace",
+   "n": 301
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 1762,
+    "h": 1281,
+    "baseLine": 87,
+    "baseUnit": 1100
+   }
+  }
+ },
+ {
+  "n": 314,
+  "script": "{a+b}} c",
+  "kind": "job",
+  "count": 0,
+  "source": "job",
+  "orig": null,
+  "job_item": {
+   "kind": "brace",
+   "n": 302
+  },
+  "result": {
+   "결과.hwpx": {
+    "w": 2558,
+    "h": 1125,
+    "baseLine": 85,
+    "baseUnit": 1100
+   }
+  }
+ }
+]

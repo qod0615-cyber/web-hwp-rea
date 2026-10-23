@@ -1,0 +1,21 @@
+{
+ "hwp_version": "12, 0, 0, 535",
+ "docs": [
+  {
+   "name": "결과",
+   "count": 2832,
+   "first": 1,
+   "last": 2832,
+   "save_hwpx": true,
+   "save_pdf": true,
+   "pages": 119,
+   "fails": []
+  }
+ ],
+ "started": "2026-10-19 10:39:20",
+ "pauses": 0,
+ "probe3": "ok",
+ "dialogs": [],
+ "seconds": 653,
+ "finished": "2026-10-19 10:50:13"
+}

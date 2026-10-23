@@ -1,0 +1,215 @@
+{
+ "docs": [
+  {
+   "doc": "결과.hwpx",
+   "paragraphs": 2832,
+   "equations": 2832,
+   "first": 1,
+   "last": 2832
+  }
+ ],
+ "control": [
+  {
+   "n": 1,
+   "doc": "결과.hwpx",
+   "script": "12",
+   "expected": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85
+   },
+   "got": {
+    "w": 1050,
+    "h": 1125,
+    "baseLine": 85
+   },
+   "match": true
+  },
+  {
+   "n": 2,
+   "doc": "결과.hwpx",
+   "script": "f` LEFT ( x RIGHT )",
+   "expected": {
+    "w": 2087,
+    "h": 1125,
+    "baseLine": 85
+   },
+   "got": {
+    "w": 2087,
+    "h": 1125,
+    "baseLine": 85
+   },
+   "match": true
+  },
+  {
+   "n": 3,
+   "doc": "결과.hwpx",
+   "script": "alpha",
+   "expected": {
+    "w": 675,
+    "h": 1125,
+    "baseLine": 85
+   },
+   "got": {
+    "w": 675,
+    "h": 1125,
+    "baseLine": 85
+   },
+   "match": true
+  },
+  {
+   "n": 4,
+   "doc": "결과.hwpx",
+   "script": "{1} over {2}",
+   "expected": {
+    "w": 1100,
+    "h": 2580,
+    "baseLine": 65
+   },
+   "got": {
+    "w": 1100,
+    "h": 2580,
+    "baseLine": 65
+   },
+   "match": true
+  },
+  {
+   "n": 5,
+   "doc": "결과.hwpx",
+   "script": "{bar{rm AB}}",
+   "expected": {
+    "w": 1605,
+    "h": 1350,
+    "baseLine": 87
+   },
+   "got": {
+    "w": 1605,
+    "h": 1350,
+    "baseLine": 87
+   },
+   "match": true
+  },
+  {
+   "n": 6,
+   "doc": "결과.hwpx",
+   "script": "a _{`n+1}",
+   "expected": {
+    "w": 2253,
+    "h": 1350,
+    "baseLine": 71
+   },
+   "got": {
+    "w": 2253,
+    "h": 1350,
+    "baseLine": 71
+   },
+   "match": true
+  },
+  {
+   "n": 7,
+   "doc": "결과.hwpx",
+   "script": "k= {11} over {4 sqrt {5}}`",
+   "expected": {
+    "w": 4786,
+    "h": 2745,
+    "baseLine": 62
+   },
+   "got": {
+    "w": 4786,
+    "h": 2745,
+    "baseLine": 62
+   },
+   "match": true
+  },
+  {
+   "n": 8,
+   "doc": "결과.hwpx",
+   "script": "{vec{rm OP}} CDOT  {vec{rm OQ}} & =0",
+   "expected": {
+    "w": 5986,
+    "h": 1350,
+    "baseLine": 87
+   },
+   "got": {
+    "w": 5986,
+    "h": 1350,
+    "baseLine": 87
+   },
+   "match": true
+  },
+  {
+   "n": 9,
+   "doc": "결과.hwpx",
+   "script": "rmCDFE`",
+   "expected": {
+    "w": 2912,
+    "h": 1125,
+    "baseLine": 85
+   },
+   "got": {
+    "w": 2912,
+    "h": 1125,
+    "baseLine": 85
+   },
+   "match": true
+  },
+  {
+   "n": 10,
+   "doc": "결과.hwpx",
+   "script": "f` LEFT ( 0 RIGHT ) =it-a ^{2} =it-9",
+   "expected": {
+    "w": 7837,
+    "h": 1313,
+    "baseLine": 87
+   },
+   "got": {
+    "w": 7837,
+    "h": 1313,
+    "baseLine": 87
+   },
+   "match": true
+  },
+  {
+   "n": 11,
+   "doc": "결과.hwpx",
+   "script": "sin`A`:sin`B`=`2`:`3`",
+   "expected": {
+    "w": 9382,
+    "h": 1125,
+    "baseLine": 85
+   },
+   "got": {
+    "w": 9382,
+    "h": 1125,
+    "baseLine": 85
+   },
+   "match": true
+  },
+  {
+   "n": 12,
+   "doc": "결과.hwpx",
+   "script": "{5} over {11} `",
+   "expected": {
+    "w": 1737,
+    "h": 2580,
+    "baseLine": 65
+   },
+   "got": {
+    "w": 1737,
+    "h": 2580,
+    "baseLine": 65
+   },
+   "match": true
+  }
+ ],
+ "mismatch": [],
+ "attr_bad": [],
+ "counts": {
+  "결과.hwpx": 2832
+ },
+ "missing_numbers": [],
+ "equations_total": 2832,
+ "list_total": 2832,
+ "fails": 0,
+ "control_match": "12/12"
+}

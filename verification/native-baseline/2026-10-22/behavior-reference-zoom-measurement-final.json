@@ -1,0 +1,239 @@
+{
+  "status": "verified_true_maximized_100_110",
+  "measured_at": "2026-10-22T21:44:19.986474+09:00",
+  "measurements": [
+    {
+      "capture": "behavior-reference-zoom-100-maximized",
+      "raw": "behavior-reference-zoom-100-maximized.raw.png",
+      "visible_raw": "behavior-reference-zoom-100-maximized.visible.raw.png",
+      "raw_window_rect_screen": [
+        -8,
+        -8,
+        1928,
+        1048
+      ],
+      "client_rect": [
+        0,
+        0,
+        1936,
+        1056
+      ],
+      "client_origin_screen": [
+        -8,
+        -8
+      ],
+      "visible_rect_screen": [
+        0,
+        0,
+        1920,
+        1040
+      ],
+      "visible_image_size": [
+        1920,
+        1040
+      ],
+      "dpi": 96,
+      "actual_zoom_status": "100%",
+      "zoom_percent": 100,
+      "physical_paper_width_mm": 210.0,
+      "physical_paper_height_mm": 297.0,
+      "physical_paper_source": "Actual unchanged F7 page dialog UIA 210.0 x 297.0 mm, previously captured; zoom changes only view.",
+      "paper_outer_rect_visible_halfopen": [
+        569,
+        224,
+        1364,
+        null
+      ],
+      "paper_left_screen": 569,
+      "paper_right_exclusive_screen": 1364,
+      "paper_top_screen": 224,
+      "paper_outer_width_px": 795,
+      "paper_white_width_px": 793,
+      "ruler_major_tick_x_visible": [
+        758.0,
+        796.0,
+        834.0,
+        872.0,
+        909.0,
+        947.0,
+        985.0,
+        1023.0,
+        1060.0,
+        1098.0,
+        1136.0,
+        1174.0,
+        1211.0,
+        1249.0
+      ],
+      "ruler_major_tick_sample_row_visible": 202,
+      "ruler_major_gap_mean_px": 37.76923076923077,
+      "ruler_major_gap_median_px": 38.0,
+      "chrome": {
+        "MenuBar": {
+          "rect_screen": [
+            0,
+            32,
+            1920,
+            64
+          ],
+          "height": 32
+        },
+        "ToolBox": {
+          "rect_screen": [
+            0,
+            64,
+            1920,
+            152
+          ],
+          "height": 88
+        },
+        "ToolBar": {
+          "rect_screen": [
+            0,
+            152,
+            1920,
+            184
+          ],
+          "height": 32
+        },
+        "StatusBar": {
+          "rect_screen": [
+            0,
+            1015,
+            1920,
+            1040
+          ],
+          "height": 25
+        }
+      }
+    },
+    {
+      "capture": "behavior-reference-zoom-110-maximized",
+      "raw": "behavior-reference-zoom-110-maximized.raw.png",
+      "visible_raw": "behavior-reference-zoom-110-maximized.visible.raw.png",
+      "raw_window_rect_screen": [
+        -8,
+        -8,
+        1928,
+        1048
+      ],
+      "client_rect": [
+        0,
+        0,
+        1936,
+        1056
+      ],
+      "client_origin_screen": [
+        -8,
+        -8
+      ],
+      "visible_rect_screen": [
+        0,
+        0,
+        1920,
+        1040
+      ],
+      "visible_image_size": [
+        1920,
+        1040
+      ],
+      "dpi": 96,
+      "actual_zoom_status": "110%",
+      "zoom_percent": 110,
+      "physical_paper_width_mm": 210.0,
+      "physical_paper_height_mm": 297.0,
+      "physical_paper_source": "Actual unchanged F7 page dialog UIA 210.0 x 297.0 mm, previously captured; zoom changes only view.",
+      "paper_outer_rect_visible_halfopen": [
+        527,
+        225,
+        1406,
+        null
+      ],
+      "paper_left_screen": 527,
+      "paper_right_exclusive_screen": 1406,
+      "paper_top_screen": 225,
+      "paper_outer_width_px": 879,
+      "paper_white_width_px": 877,
+      "ruler_major_tick_x_visible": [
+        736.0,
+        778.0,
+        820.0,
+        861.0,
+        903.0,
+        945.0,
+        986.0,
+        1028.0,
+        1069.0,
+        1111.0,
+        1153.0,
+        1194.0,
+        1236.0,
+        1277.0,
+        1281.0
+      ],
+      "ruler_major_tick_sample_row_visible": 202,
+      "ruler_major_gap_mean_px": 41.61538461538461,
+      "ruler_major_gap_median_px": 42.0,
+      "chrome": {
+        "MenuBar": {
+          "rect_screen": [
+            0,
+            32,
+            1920,
+            64
+          ],
+          "height": 32
+        },
+        "ToolBox": {
+          "rect_screen": [
+            0,
+            64,
+            1920,
+            152
+          ],
+          "height": 88
+        },
+        "ToolBar": {
+          "rect_screen": [
+            0,
+            152,
+            1920,
+            184
+          ],
+          "height": 32
+        },
+        "StatusBar": {
+          "rect_screen": [
+            0,
+            1015,
+            1920,
+            1040
+          ],
+          "height": 25
+        }
+      }
+    }
+  ],
+  "user_reference": {
+    "paper_left": 527,
+    "paper_right_exclusive": 1406,
+    "paper_width": 879,
+    "paper_top": 225,
+    "image_size": [
+      1918,
+      1031
+    ]
+  },
+  "delta_to_user_reference_px": {
+    "left": 0,
+    "right_exclusive": 0,
+    "width": 0,
+    "top": 0
+  },
+  "paper_matches_user_reference": true,
+  "ruler_gap_ratio": 1.1018329938900204,
+  "chrome_heights_unchanged": true,
+  "image_size_difference_note": "This desktop visible work area is 1920x1040; supplied native screenshot is 1918x1031. Paper coordinates compared in screen/work-area origin, not by assuming identical outer screenshot crops.",
+  "document_text_changed": false,
+  "astris_return_verified": "2026-10-22T21:40:11.861377+09:00"
+}

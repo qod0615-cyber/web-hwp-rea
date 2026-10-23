@@ -1,0 +1,410 @@
+{
+  "status": "partial_native_document_metrics_parity",
+  "matched": 3830,
+  "total": 4158,
+  "remaining": 328,
+  "validation_boundary": "Width, height, and baseLine stored by native HWPX. Not a pixel comparison or native roundtrip.",
+  "by_size": {
+    "800": {
+      "total": 470,
+      "matched": 435
+    },
+    "900": {
+      "total": 470,
+      "matched": 432
+    },
+    "1000": {
+      "total": 470,
+      "matched": 375
+    },
+    "1100": {
+      "total": 1338,
+      "matched": 1262
+    },
+    "1200": {
+      "total": 470,
+      "matched": 448
+    },
+    "1400": {
+      "total": 470,
+      "matched": 450
+    },
+    "2000": {
+      "total": 470,
+      "matched": 428
+    }
+  },
+  "evidence_sha256": {
+    "native-equation-corpus-2026-10-23.zip": "3ef7c10445a541c56b038a845cf5faf05a19d963b8c36c2b4a9d998c709935ef",
+    "gdi-font-widths.json": "dd60d00f93c8115426dbc35b30495d7b06919f0c50df64d112192e683a9f1a2d",
+    "gdi-font-widths-full.json": "e051cec8bed91bd6def937f2d1663658ca1ee5033eba46a76e92430fa25c6a82"
+  },
+  "local_checks": {
+    "build": "passed",
+    "editor_workflows": "11/11 passed",
+    "pwa_upgrade": "1/1 passed (current build)"
+  },
+  "windows_operations": "Existing files copied read-only; width measurement in memory DC only. No Hwp/COM/UI, desktop requests, deployment or Astris process changes.",
+  "sources": [
+    {
+      "path": "verification/equation-corpus/2026-10-23/job0057/native-job0057.hwpx",
+      "sha256": "593dee27bb27d3e4d3a78066010a53fc71f21944b6d1c39869140ea0fbdf5a1d"
+    },
+    {
+      "path": "verification/equation-corpus/2026-10-23/job0058/native-job0058.hwpx",
+      "sha256": "9a4596bd5d8e30a7a55e03790cb8dd2e86684332eb9465e397f048c692b3c30b"
+    },
+    {
+      "path": "verification/equation-corpus/2026-10-23/job0059/native-job0059.hwpx",
+      "sha256": "67947792fcff5a9118ab337ec69b30e814f7760525c3f8d52e2b9788e677b495"
+    }
+  ],
+  "remaining_deltas": [
+    {
+      "height_delta": -25,
+      "width_delta": 0,
+      "count": 39
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -75,
+      "count": 33
+    },
+    {
+      "height_delta": 0,
+      "width_delta": 75,
+      "count": 26
+    },
+    {
+      "height_delta": -5,
+      "width_delta": 0,
+      "count": 17
+    },
+    {
+      "height_delta": -13,
+      "width_delta": 0,
+      "count": 16
+    },
+    {
+      "height_delta": 0,
+      "width_delta": 150,
+      "count": 13
+    },
+    {
+      "height_delta": -10,
+      "width_delta": 0,
+      "count": 13
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -165,
+      "count": 13
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -150,
+      "count": 11
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -100,
+      "count": 10
+    },
+    {
+      "height_delta": -12,
+      "width_delta": 0,
+      "count": 10
+    },
+    {
+      "height_delta": -6,
+      "width_delta": 0,
+      "count": 9
+    },
+    {
+      "height_delta": -9,
+      "width_delta": 0,
+      "count": 8
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -137,
+      "count": 7
+    },
+    {
+      "height_delta": -2,
+      "width_delta": 0,
+      "count": 6
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -287,
+      "count": 6
+    },
+    {
+      "height_delta": 0,
+      "width_delta": 165,
+      "count": 6
+    },
+    {
+      "height_delta": 0,
+      "width_delta": 225,
+      "count": 4
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -112,
+      "count": 4
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -62,
+      "count": 4
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -25,
+      "count": 3
+    },
+    {
+      "height_delta": -19,
+      "width_delta": 0,
+      "count": 3
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -125,
+      "count": 3
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -180,
+      "count": 3
+    },
+    {
+      "height_delta": -20,
+      "width_delta": 0,
+      "count": 3
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -300,
+      "count": 3
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -210,
+      "count": 3
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -120,
+      "count": 2
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -187,
+      "count": 2
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -135,
+      "count": 2
+    },
+    {
+      "height_delta": -15,
+      "width_delta": 0,
+      "count": 2
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -50,
+      "count": 2
+    },
+    {
+      "height_delta": -50,
+      "width_delta": 0,
+      "count": 2
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -143,
+      "count": 2
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -250,
+      "count": 2
+    },
+    {
+      "height_delta": 0,
+      "width_delta": 112,
+      "count": 2
+    },
+    {
+      "height_delta": 0,
+      "width_delta": 13,
+      "count": 2
+    },
+    {
+      "height_delta": -10,
+      "width_delta": -120,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -82,
+      "count": 1
+    },
+    {
+      "height_delta": -19,
+      "width_delta": -82,
+      "count": 1
+    },
+    {
+      "height_delta": -12,
+      "width_delta": -135,
+      "count": 1
+    },
+    {
+      "height_delta": -1,
+      "width_delta": 0,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -262,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -92,
+      "count": 1
+    },
+    {
+      "height_delta": -18,
+      "width_delta": 0,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -37,
+      "count": 1
+    },
+    {
+      "height_delta": -18,
+      "width_delta": -92,
+      "count": 1
+    },
+    {
+      "height_delta": -5,
+      "width_delta": -150,
+      "count": 1
+    },
+    {
+      "height_delta": -14,
+      "width_delta": 0,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -275,
+      "count": 1
+    },
+    {
+      "height_delta": -25,
+      "width_delta": -102,
+      "count": 1
+    },
+    {
+      "height_delta": -7,
+      "width_delta": 0,
+      "count": 1
+    },
+    {
+      "height_delta": -13,
+      "width_delta": 150,
+      "count": 1
+    },
+    {
+      "height_delta": -3,
+      "width_delta": 0,
+      "count": 1
+    },
+    {
+      "height_delta": -7,
+      "width_delta": -102,
+      "count": 1
+    },
+    {
+      "height_delta": -20,
+      "width_delta": -122,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -122,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -325,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -175,
+      "count": 1
+    },
+    {
+      "height_delta": -10,
+      "width_delta": -300,
+      "count": 1
+    },
+    {
+      "height_delta": -30,
+      "width_delta": 0,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -475,
+      "count": 1
+    },
+    {
+      "height_delta": -25,
+      "width_delta": -204,
+      "count": 1
+    },
+    {
+      "height_delta": -15,
+      "width_delta": -204,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -76,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": 375,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -240,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": -225,
+      "count": 1
+    },
+    {
+      "height_delta": 0,
+      "width_delta": 450,
+      "count": 1
+    }
+  ],
+  "native_job0058": "314/314 width/height/baseLine matched"
+}

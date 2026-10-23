@@ -1,0 +1,42 @@
+{
+  "verified_at": "2026-10-23T09:42:35.059242+09:00",
+  "checks": {
+    "build": "passed",
+    "first_screen_controls": "4/4",
+    "editor_workflows": "11/11",
+    "hwpx_workflows": "7/7",
+    "pwa_upgrade": "1/1"
+  },
+  "control_rectangles_at_1916px": 54,
+  "native_geometry_source": "/home/k/projects/Web HWP REA/verification/native-baseline/2026-10-22/ui-reference-manifest.json",
+  "print_control": {
+    "previous_rect": [
+      149,
+      155,
+      33,
+      27
+    ],
+    "corrected_rect": [
+      158,
+      156,
+      24,
+      24
+    ],
+    "hover_diff_confined_to_corrected_rect": true
+  },
+  "visual_equivalence_verified": false,
+  "all_first_screen_functions_complete": false,
+  "deployment_performed": false,
+  "remaining": [
+    "바탕쪽·개체 선택·개체 보호는 현재 toast-only. 조판 부호 지우기는 전체 native 삭제 대화상자/행동이 아니다.",
+    "보기·쪽·보안·검토·도구의 리본은 편집 리본 fallback이 남음. 보안·검토·도구 메뉴 화살표는 dropdown 연결이 없음.",
+    "title-bar login/minimize/close, menu search/collapse, ruler dragging, status-bar view buttons are not covered by the 54-rectangle audit.",
+    "Split-button menus, actual selection/disabled/checked states and toolbar selection synchronization are incomplete.",
+    "Native hover/pressed colors, dialog motion and complete first-screen pixel equivalence remain unverified."
+  ],
+  "artifacts": {
+    "print-hover.png": "50c8100b70bfc074c8834a868903d2396a6f5aa8b2c30fee99f88d4d4515917c",
+    "formatting-after-clicks.png": "befb76e89762c6028566e2f7d5e91536b807556e2566f1233624dd37af885217",
+    "native-hit-regions.json": "ebae10b6260d8661c559cc9a2695ce37db3068d824bad9c9dfb17c263c004145"
+  }
+}

@@ -1,0 +1,1126 @@
+{
+  "source": "verification/native-baseline/2026-10-22/ui-reference-manifest.json",
+  "sourceSha256": "5368433f9fe927ae34d08a9676e4c3175e75833b8f759e50403478ee020b481e",
+  "coordinateMapping": "native client minus (1,1): screenshot slices exclude the native window outer border",
+  "controls": {
+    "편집": {
+      "오려 두기": {
+        "x": 14,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "복사하기": {
+        "x": 52,
+        "y": 70,
+        "w": 56,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "붙이기": {
+        "x": 108,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "모양 복사": {
+        "x": 153,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "조판 부호 지우기": {
+        "x": 191,
+        "y": 70,
+        "w": 59,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "글자 모양": {
+        "x": 263,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "문단 모양": {
+        "x": 301,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "세로": {
+        "x": 397,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "가로": {
+        "x": 435,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "쪽 여백": {
+        "x": 473,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "바탕쪽": {
+        "x": 527,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "단": {
+        "x": 572,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "도형": {
+        "x": 623,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "그림": {
+        "x": 661,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "표": {
+        "x": 699,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "차트": {
+        "x": 737,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "개체 선택": {
+        "x": 788,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "개체 보호": {
+        "x": 842,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "찾기": {
+        "x": 909,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "글자 바꾸기": {
+        "x": 947,
+        "y": 70,
+        "w": 65,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "정렬": {
+        "x": 1012,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "스타일": {
+        "x": 339,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      }
+    },
+    "보기": {
+      "쪽 윤곽": {
+        "x": 14,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "컬러": {
+        "x": 65,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "회색조": {
+        "x": 103,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "사용자 색": {
+        "x": 148,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "격자": {
+        "x": 437,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "개체 이동 안내선": {
+        "x": 475,
+        "y": 70,
+        "w": 65,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "한자 발음 표시": {
+        "x": 553,
+        "y": 70,
+        "w": 79,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "작업 창": {
+        "x": 645,
+        "y": 70,
+        "w": 43,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "편집 화면 나누기": {
+        "x": 701,
+        "y": 70,
+        "w": 65,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "창 배열": {
+        "x": 766,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "창 전환": {
+        "x": 820,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "축소": {
+        "x": 887,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "확대": {
+        "x": 925,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "100%": {
+        "x": 976,
+        "y": 70,
+        "w": 44,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "쪽 맞춤": {
+        "x": 1020,
+        "y": 70,
+        "w": 67,
+        "h": 24,
+        "nativeEnabled": true
+      }
+    },
+    "입력": {
+      "그림": {
+        "x": 159,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "표": {
+        "x": 197,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "차트": {
+        "x": 235,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "글맵시": {
+        "x": 273,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "수식": {
+        "x": 318,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "OLE 개체": {
+        "x": 356,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "양식 개체": {
+        "x": 407,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "누름틀": {
+        "x": 461,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "각주": {
+        "x": 519,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "미주": {
+        "x": 557,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "메모": {
+        "x": 595,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "교정 부호": {
+        "x": 633,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "책갈피": {
+        "x": 700,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "상호 참조": {
+        "x": 745,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "하이퍼링크": {
+        "x": 796,
+        "y": 70,
+        "w": 67,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "하이퍼링크 이전": {
+        "x": 863,
+        "y": 70,
+        "w": 23,
+        "h": 24,
+        "nativeEnabled": false
+      },
+      "문자표": {
+        "x": 899,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "입력 도우미": {
+        "x": 944,
+        "y": 70,
+        "w": 104,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "위로": {
+        "x": 140,
+        "y": 70,
+        "w": 16,
+        "h": 26,
+        "nativeEnabled": false
+      }
+    },
+    "서식": {
+      "글자 모양": {
+        "x": 476,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "문단 모양": {
+        "x": 883,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "문단 정렬": {
+        "x": 934,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "개요": {
+        "x": 1070,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "위로": {
+        "x": 408,
+        "y": 70,
+        "w": 16,
+        "h": 26,
+        "nativeEnabled": false
+      }
+    },
+    "쪽": {
+      "편집 용지": {
+        "x": 14,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "세로": {
+        "x": 52,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "가로": {
+        "x": 90,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "쪽 여백": {
+        "x": 128,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "글자 방향": {
+        "x": 195,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "바탕쪽": {
+        "x": 262,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "머리말": {
+        "x": 307,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "꼬리말": {
+        "x": 352,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "쪽 테두리/배경": {
+        "x": 397,
+        "y": 70,
+        "w": 64,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "쪽 번호 매기기": {
+        "x": 461,
+        "y": 70,
+        "w": 48,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "새 번호로 시작": {
+        "x": 509,
+        "y": 70,
+        "w": 59,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "현재 쪽만 감추기": {
+        "x": 568,
+        "y": 70,
+        "w": 59,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "줄 번호": {
+        "x": 627,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "쪽 나누기": {
+        "x": 694,
+        "y": 70,
+        "w": 46,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "단 나누기": {
+        "x": 740,
+        "y": 70,
+        "w": 46,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "쪽 지우기": {
+        "x": 786,
+        "y": 70,
+        "w": 46,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "단": {
+        "x": 845,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "다단 설정 나누기": {
+        "x": 883,
+        "y": 70,
+        "w": 59,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "구역 설정": {
+        "x": 955,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "구역 나누기": {
+        "x": 993,
+        "y": 70,
+        "w": 46,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "라벨": {
+        "x": 1052,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "원고지": {
+        "x": 1090,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      }
+    },
+    "보안": {
+      "문서 암호 설정": {
+        "x": 14,
+        "y": 70,
+        "w": 60,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "문서 암호 변경/해제": {
+        "x": 74,
+        "y": 70,
+        "w": 62,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "배포용 문서로 저장": {
+        "x": 149,
+        "y": 70,
+        "w": 71,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "배포용 문서 편집": {
+        "x": 220,
+        "y": 70,
+        "w": 60,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "배포용 문서 암호 변경/해제": {
+        "x": 280,
+        "y": 70,
+        "w": 87,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "선택 글자 보호": {
+        "x": 380,
+        "y": 70,
+        "w": 60,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "개인 정보 찾아서 보호": {
+        "x": 440,
+        "y": 70,
+        "w": 71,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "개인 정보 보호 해제": {
+        "x": 511,
+        "y": 70,
+        "w": 60,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "개인 정보 보호 암호 변경": {
+        "x": 571,
+        "y": 70,
+        "w": 85,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "문서 보안 설정": {
+        "x": 669,
+        "y": 70,
+        "w": 60,
+        "h": 76,
+        "nativeEnabled": true
+      }
+    },
+    "검토": {
+      "교정 부호": {
+        "x": 14,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "문서 이력 관리": {
+        "x": 81,
+        "y": 70,
+        "w": 60,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "문서 비교": {
+        "x": 141,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "변경 내용 추적": {
+        "x": 192,
+        "y": 70,
+        "w": 79,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "안내문에 표시": {
+        "x": 271,
+        "y": 70,
+        "w": 56,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "변경 내용 보기": {
+        "x": 327,
+        "y": 70,
+        "w": 79,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "원본": {
+        "x": 419,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "원본 및 변경 내용": {
+        "x": 457,
+        "y": 70,
+        "w": 60,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "최종본 및 변경 내용": {
+        "x": 517,
+        "y": 70,
+        "w": 60,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "최종본": {
+        "x": 577,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "적용": {
+        "x": 635,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "적용 안 함": {
+        "x": 673,
+        "y": 70,
+        "w": 57,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "이전": {
+        "x": 730,
+        "y": 70,
+        "w": 23,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "새 메모": {
+        "x": 766,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "메모": {
+        "x": 804,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      }
+    },
+    "도구": {
+      "색인": {
+        "x": 14,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "제목 차례": {
+        "x": 52,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "인용": {
+        "x": 119,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "참고 문헌 삽입": {
+        "x": 157,
+        "y": 70,
+        "w": 23,
+        "h": 24,
+        "nativeEnabled": false
+      },
+      "블록 계산": {
+        "x": 209,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "스크립트 매크로": {
+        "x": 276,
+        "y": 70,
+        "w": 65,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "맞춤법": {
+        "x": 354,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "빠른 교정": {
+        "x": 399,
+        "y": 70,
+        "w": 54,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "한컴 사전": {
+        "x": 453,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": false
+      },
+      "번역": {
+        "x": 504,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "프레젠테이션": {
+        "x": 555,
+        "y": 70,
+        "w": 78,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "글자판": {
+        "x": 646,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "사용자 설정": {
+        "x": 691,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "환경 설정": {
+        "x": 736,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "개인 정보 바꾸기": {
+        "x": 787,
+        "y": 70,
+        "w": 65,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "한컴 애셋": {
+        "x": 852,
+        "y": 70,
+        "w": 38,
+        "h": 76,
+        "nativeEnabled": true
+      },
+      "오피스 톡": {
+        "x": 890,
+        "y": 70,
+        "w": 45,
+        "h": 76,
+        "nativeEnabled": true
+      }
+    },
+    "빠른 서식": {
+      "스타일": {
+        "x": 326,
+        "y": 156,
+        "w": 106,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "새 문서": {
+        "x": 17,
+        "y": 156,
+        "w": 40,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "불러오기": {
+        "x": 59,
+        "y": 156,
+        "w": 40,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "저장하기": {
+        "x": 101,
+        "y": 156,
+        "w": 40,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "인쇄": {
+        "x": 158,
+        "y": 156,
+        "w": 24,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "미리 보기": {
+        "x": 184,
+        "y": 156,
+        "w": 24,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "되돌리기": {
+        "x": 225,
+        "y": 156,
+        "w": 40,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "다시 실행": {
+        "x": 267,
+        "y": 156,
+        "w": 40,
+        "h": 24,
+        "nativeEnabled": false
+      },
+      "언어": {
+        "x": 438,
+        "y": 156,
+        "w": 91,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "함초롬바탕": {
+        "x": 535,
+        "y": 156,
+        "w": 118,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "글자 크기": {
+        "x": 659,
+        "y": 156,
+        "w": 106,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "진하게": {
+        "x": 784,
+        "y": 156,
+        "w": 24,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "기울임": {
+        "x": 810,
+        "y": 156,
+        "w": 24,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "밑줄": {
+        "x": 836,
+        "y": 156,
+        "w": 40,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "취소선": {
+        "x": 878,
+        "y": 156,
+        "w": 40,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "글자 색": {
+        "x": 920,
+        "y": 156,
+        "w": 40,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "양쪽 정렬": {
+        "x": 977,
+        "y": 156,
+        "w": 24,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "왼쪽 정렬": {
+        "x": 1003,
+        "y": 156,
+        "w": 24,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "가운데 정렬": {
+        "x": 1029,
+        "y": 156,
+        "w": 24,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "오른쪽 정렬": {
+        "x": 1055,
+        "y": 156,
+        "w": 24,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "배분 정렬": {
+        "x": 1081,
+        "y": 156,
+        "w": 24,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "나눔 정렬": {
+        "x": 1107,
+        "y": 156,
+        "w": 24,
+        "h": 24,
+        "nativeEnabled": true
+      },
+      "줄 간격": {
+        "x": 1150,
+        "y": 156,
+        "w": 103,
+        "h": 24,
+        "nativeEnabled": true
+      }
+    },
+    "메뉴": {
+      "편집": {
+        "x": 70,
+        "y": 36,
+        "w": 59,
+        "h": 28,
+        "nativeEnabled": true
+      },
+      "보기": {
+        "x": 129,
+        "y": 36,
+        "w": 59,
+        "h": 28,
+        "nativeEnabled": true
+      },
+      "입력": {
+        "x": 188,
+        "y": 36,
+        "w": 59,
+        "h": 28,
+        "nativeEnabled": true
+      },
+      "서식": {
+        "x": 247,
+        "y": 36,
+        "w": 59,
+        "h": 28,
+        "nativeEnabled": true
+      },
+      "쪽": {
+        "x": 306,
+        "y": 36,
+        "w": 48,
+        "h": 28,
+        "nativeEnabled": true
+      },
+      "보안": {
+        "x": 354,
+        "y": 36,
+        "w": 59,
+        "h": 28,
+        "nativeEnabled": true
+      },
+      "검토": {
+        "x": 413,
+        "y": 36,
+        "w": 59,
+        "h": 28,
+        "nativeEnabled": true
+      },
+      "도구": {
+        "x": 472,
+        "y": 36,
+        "w": 59,
+        "h": 28,
+        "nativeEnabled": true
+      },
+      "파일": {
+        "x": 0,
+        "y": 36,
+        "w": 63,
+        "h": 28,
+        "nativeEnabled": true
+      }
+    }
+  }
+}

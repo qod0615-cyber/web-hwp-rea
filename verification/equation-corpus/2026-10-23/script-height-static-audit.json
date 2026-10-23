@@ -1,0 +1,2628 @@
+{
+  "created_at": "2026-10-22T22:45:31.599682+00:00",
+  "status": "static_audit_complete_root_cause_unresolved",
+  "progress_user_report": {
+    "matched": 3830,
+    "total": 4158,
+    "height_only_remaining": 134,
+    "job0058": "314/314"
+  },
+  "scope": "Read existing files; write audit/evidence artifacts only. No process inspection, target binary execution, GDI calls, GUI, Hwp, COM, requests, source modification or deployment.",
+  "target_script": "s _{rm{GPQ} div 9} div~~839",
+  "native_cases": [
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\결과.hwpx",
+      "copied_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\equation-corpus\\2026-10-23\\native-equation-corpus\\job0057\\native-job0057.hwpx",
+      "sha256": "593dee27bb27d3e4d3a78066010a53fc71f21944b6d1c39869140ea0fbdf5a1d",
+      "section": "Contents/section0.xml",
+      "id": "1224489553",
+      "script": "s _{rm{GPQ} div 9} div~~839",
+      "baseUnit": 800,
+      "native_width": 5351,
+      "native_height": 988,
+      "native_baseLine": 71,
+      "web_height_user_report": 979,
+      "native_minus_web": 9
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\결과.hwpx",
+      "copied_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\equation-corpus\\2026-10-23\\native-equation-corpus\\job0057\\native-job0057.hwpx",
+      "sha256": "593dee27bb27d3e4d3a78066010a53fc71f21944b6d1c39869140ea0fbdf5a1d",
+      "section": "Contents/section0.xml",
+      "id": "1224490023",
+      "script": "s _{rm{GPQ} div 9} div~~839",
+      "baseUnit": 900,
+      "native_width": 6024,
+      "native_height": 1084,
+      "native_baseLine": 71,
+      "web_height_user_report": 1078,
+      "native_minus_web": 6
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\결과.hwpx",
+      "copied_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\equation-corpus\\2026-10-23\\native-equation-corpus\\job0057\\native-job0057.hwpx",
+      "sha256": "593dee27bb27d3e4d3a78066010a53fc71f21944b6d1c39869140ea0fbdf5a1d",
+      "section": "Contents/section0.xml",
+      "id": "1224490493",
+      "script": "s _{rm{GPQ} div 9} div~~839",
+      "baseUnit": 1000,
+      "native_width": 6936,
+      "native_height": 1192,
+      "native_baseLine": 72,
+      "web_height_user_report": 1190,
+      "native_minus_web": 2
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\결과.hwpx",
+      "copied_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\equation-corpus\\2026-10-23\\native-equation-corpus\\job0057\\native-job0057.hwpx",
+      "sha256": "593dee27bb27d3e4d3a78066010a53fc71f21944b6d1c39869140ea0fbdf5a1d",
+      "section": "Contents/section0.xml",
+      "id": "1224490963",
+      "script": "s _{rm{GPQ} div 9} div~~839",
+      "baseUnit": 1200,
+      "native_width": 7682,
+      "native_height": 1450,
+      "native_baseLine": 71,
+      "web_height_user_report": 1450,
+      "native_minus_web": 0
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\결과.hwpx",
+      "copied_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\equation-corpus\\2026-10-23\\native-equation-corpus\\job0057\\native-job0057.hwpx",
+      "sha256": "593dee27bb27d3e4d3a78066010a53fc71f21944b6d1c39869140ea0fbdf5a1d",
+      "section": "Contents/section0.xml",
+      "id": "1224491433",
+      "script": "s _{rm{GPQ} div 9} div~~839",
+      "baseUnit": 1400,
+      "native_width": 8892,
+      "native_height": 1723,
+      "native_baseLine": 70,
+      "web_height_user_report": 1723,
+      "native_minus_web": 0
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0057_20261019_105013\\결과.hwpx",
+      "copied_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\equation-corpus\\2026-10-23\\native-equation-corpus\\job0057\\native-job0057.hwpx",
+      "sha256": "593dee27bb27d3e4d3a78066010a53fc71f21944b6d1c39869140ea0fbdf5a1d",
+      "section": "Contents/section0.xml",
+      "id": "1224491903",
+      "script": "s _{rm{GPQ} div 9} div~~839",
+      "baseUnit": 2000,
+      "native_width": 13033,
+      "native_height": 2433,
+      "native_baseLine": 71,
+      "web_height_user_report": 2428,
+      "native_minus_web": 5
+    }
+  ],
+  "findings": [
+    {
+      "classification": "address_confirmed",
+      "finding": "20% and 25% consume the same snapshot of ctx+0x848 AFTER sub/sup measurement. Snapshot load VA 0x1008e4a4, local store 0x1008e4aa; calls 0x1008e58b and 0x1008e5a2 use IAT 0x100ae2c8 = KERNEL32 MulDiv.",
+      "evidence": [
+        "offset_input"
+      ]
+    },
+    {
+      "classification": "address_confirmed",
+      "finding": "ctx+0x848 stores requested logical input height, written by 0x10084560 at VA 0x1008458d, also 0x100844d0. No direct Roman/GDI TEXTMETRIC substitution at offset call site or in inspected Roman glyph/face setters.",
+      "evidence": [
+        "size_setter",
+        "separate_height_width_setter",
+        "roman_conversion_fallback_measure",
+        "face_setter"
+      ]
+    },
+    {
+      "classification": "address_confirmed",
+      "finding": "Native character height is returned SIZE.cy from Hnc measurement, distinct from requested size. This permits height-only differences without LAST having changed. Exact target-case cy is unobserved.",
+      "evidence": [
+        "character_height_vs_LAST"
+      ]
+    },
+    {
+      "classification": "static_inference_not_proven_runtime",
+      "finding": "rm GPQ should use ASCII G/P/Q after remapping; all exist in HYhwpEQ cmap. Automatic Batang for all Roman letters is unsupported. GlyphExist wrapper behavior/context must still be verified statically before claiming actual runtime face.",
+      "font_path": "C:\\Windows\\Fonts\\HYHWPEQ.TTF",
+      "font_sha256": "a3a3cd992a89ac38e7707b58143ebdb1da9511d3c462f019cda7f92c30467807",
+      "cmap": {
+        "G": {
+          "code": 71,
+          "glyph": "G"
+        },
+        "P": {
+          "code": 80,
+          "glyph": "P"
+        },
+        "Q": {
+          "code": 81,
+          "glyph": "Q"
+        },
+        "9": {
+          "code": 57,
+          "glyph": "nine"
+        }
+      }
+    },
+    {
+      "classification": "open_hypotheses_not_fixes",
+      "finding": "Remaining differences may involve node+8 inheritance, measure/cache order, Hnc SIZE.cy mapping/rounding, or style scope. None is established as the cause. No empirical +25/-25 or other patch constant proposed."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "offset_input",
+      "status": "address_confirmed_static",
+      "source_path": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "source_sha256": "29d90cbc45723f290c95390de76b1e16947fe484a220c6cae7aeab74e48ff420",
+      "function_va": "0x1008e270",
+      "excerpts": [
+        {
+          "start_line": 120663,
+          "end_line": 120668,
+          "quote": "    }\n  }\n  local_4c = (ushort ***)MulDiv(*(int *)((int)this + 8),0x44,100);\n  local_5c = 0;\n  local_58 = 0;\n  if (7 < *(uint *)((int)pppuVar11 + 0x14)) {"
+        },
+        {
+          "start_line": 120696,
+          "end_line": 120701,
+          "quote": "  FUN_10043d00(local_2c,(undefined4 *)((int)this + 0x24));\n  local_8 = 1;\n  local_48 = *(void **)((int)local_48 + 0x848);\n  ppppuVar6 = local_2c;\n  if (7 < local_18) {\n    ppppuVar6 = (ushort ****)local_2c[0];"
+        },
+        {
+          "start_line": 120758,
+          "end_line": 120763,
+          "quote": "  }\nLAB_1008e584:\n  iVar10 = MulDiv((int)local_48,0x14,100);\n  *(int *)((int)this + 0x80) = iVar3 - iVar10;\n  iVar7 = MulDiv((int)local_48,0x19,100);\n  iVar7 = iVar7 + iVar4;"
+        },
+        {
+          "start_line": 120760,
+          "end_line": 120765,
+          "quote": "  iVar10 = MulDiv((int)local_48,0x14,100);\n  *(int *)((int)this + 0x80) = iVar3 - iVar10;\n  iVar7 = MulDiv((int)local_48,0x19,100);\n  iVar7 = iVar7 + iVar4;\n  iVar10 = *(int *)((int)this + 0x80);\n  *(int *)((int)this + 0x84) = iVar7;"
+        }
+      ],
+      "conclusion": "Measure lower child then upper child, snapshot ctx+0x848, use the same snapshot for 20% lower and 25% upper offsets. It is the current requested logical font size state, not a GDI TEXTMETRIC value at this call site.",
+      "evidence_c": "c/1008e270.c",
+      "evidence_asm": "asm/1008e270.asm"
+    },
+    {
+      "id": "size_setter",
+      "status": "address_confirmed_static",
+      "source_path": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "source_sha256": "29d90cbc45723f290c95390de76b1e16947fe484a220c6cae7aeab74e48ff420",
+      "function_va": "0x10084560",
+      "excerpts": [
+        {
+          "start_line": 112785,
+          "end_line": 112790,
+          "quote": "  *(int *)((int)this + 0xa8) = param_1;\n  *(int *)((int)this + 0x14) = param_1;\n  *(int *)((int)this + 0x848) = param_1;\n  iVar1 = param_1 / 2;\n  *(int *)((int)this + 0x394) = iVar1;\n  *(int *)((int)this + 0x300) = iVar1;"
+        },
+        {
+          "start_line": 112786,
+          "end_line": 112791,
+          "quote": "  *(int *)((int)this + 0x14) = param_1;\n  *(int *)((int)this + 0x848) = param_1;\n  iVar1 = param_1 / 2;\n  *(int *)((int)this + 0x394) = iVar1;\n  *(int *)((int)this + 0x300) = iVar1;\n  *(int *)((int)this + 0x26c) = iVar1;"
+        }
+      ],
+      "conclusion": "Setter directly writes requested input param_1 to ctx+0x848 and all language heights; width becomes C-truncated param_1/2. No measured-height conversion appears here.",
+      "evidence_c": "c/10084560.c",
+      "evidence_asm": "asm/10084560.asm"
+    },
+    {
+      "id": "separate_height_width_setter",
+      "status": "address_confirmed_static",
+      "source_path": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "source_sha256": "29d90cbc45723f290c95390de76b1e16947fe484a220c6cae7aeab74e48ff420",
+      "function_va": "0x100844d0",
+      "excerpts": [
+        {
+          "start_line": 112757,
+          "end_line": 112762,
+          "quote": "  *(undefined4 *)((int)this + 0xa8) = param_1;\n  *(undefined4 *)((int)this + 0x14) = param_1;\n  *(undefined4 *)((int)this + 0x848) = param_1;\n  *(undefined4 *)((int)this + 0x394) = param_2;\n  *(undefined4 *)((int)this + 0x300) = param_2;\n  *(undefined4 *)((int)this + 0x26c) = param_2;"
+        },
+        {
+          "start_line": 112765,
+          "end_line": 112770,
+          "quote": "  *(undefined4 *)((int)this + 0xb0) = param_2;\n  *(undefined4 *)((int)this + 0x1c) = param_2;\n  *(undefined4 *)((int)this + 0x84c) = param_2;\n  FUN_10084770(this,(int)this + 4,pwVar1);\n  return;\n}"
+        }
+      ],
+      "conclusion": "Alternative setter stores height param_1 and width param_2 independently; caller-dependent size changes must not be replaced by global LAST=ss assumptions.",
+      "evidence_c": "c/100844d0.c",
+      "evidence_asm": "asm/100844d0.asm"
+    },
+    {
+      "id": "node_size_inheritance",
+      "status": "address_confirmed_static",
+      "source_path": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "source_sha256": "29d90cbc45723f290c95390de76b1e16947fe484a220c6cae7aeab74e48ff420",
+      "function_va": "0x100883f0",
+      "excerpts": [
+        {
+          "start_line": 116182,
+          "end_line": 116187,
+          "quote": "    *(undefined4 *)(param_1 + 0x40) = 0;\n    *(undefined4 *)(param_1 + 0x3c) = 0;\n    *(undefined4 *)(param_1 + 8) = 1000;\n    FUN_10005ad0((void *)(param_1 + 0xc),L\"HancomEQN\",9);\n  }\n  else {"
+        },
+        {
+          "start_line": 116187,
+          "end_line": 116192,
+          "quote": "  else {\n    *(undefined4 *)(param_1 + 0x3c) = *(undefined4 *)(iVar1 + 0x3c);\n    *(undefined4 *)(param_1 + 8) = *(undefined4 *)(iVar1 + 8);\n    FUN_10043d00(&local_40,(undefined4 *)(iVar1 + 0xc));\n    if ((uint *)(param_1 + 0xc) != &local_40) {\n      FUN_10005c10((int *)(param_1 + 0xc));"
+        }
+      ],
+      "conclusion": "Node preparation inherits node+8 from predecessor/parent reference node+0x60, with a 1000 default if absent. This is a confirmed input-size propagation path; target-case runtime node links are unobserved.",
+      "evidence_c": "c/100883f0.c",
+      "evidence_asm": "asm/100883f0.asm"
+    },
+    {
+      "id": "character_height_vs_LAST",
+      "status": "address_confirmed_static",
+      "source_path": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "source_sha256": "29d90cbc45723f290c95390de76b1e16947fe484a220c6cae7aeab74e48ff420",
+      "function_va": "0x1008b480",
+      "excerpts": [
+        {
+          "start_line": 118403,
+          "end_line": 118408,
+          "quote": "    pwVar1 = *(wchar_t **)pwVar1;\n  }\n  FUN_10084560(this_00,*(int *)((int)this + 8),pwVar1);\n  iStack_18 = 0;\n  if ((*(int *)((int)this + 100) != 0) && (*(int *)(*(int *)((int)this + 100) + 4) != 0x7a)) {\n    iVar2 = FUN_10087f30((int)this);"
+        },
+        {
+          "start_line": 118416,
+          "end_line": 118421,
+          "quote": "  uVar4 = (uint)*(ushort *)((int)this + 0x9c);\n  if (((uVar4 != 0x20) && (uVar4 != 0x7e)) && (uVar4 != 0x60)) {\n    FUN_10084f60(this_00,&iStack_10,uVar4);\n    if (*(int *)((int)this + 0x94) != 0) {\n      *(uint *)((int)this_00 + 0x850) = (uint)(iVar6 == 0);\n    }"
+        },
+        {
+          "start_line": 118439,
+          "end_line": 118444,
+          "quote": "  else {\n    uVar4 = FUN_10085250(0x31);\n    piVar5 = (int *)FUN_10084f60(this_00,&iStack_10,uVar4 & 0xffff);\n    iVar6 = *piVar5;\n    iVar2 = piVar5[1];\n  }"
+        },
+        {
+          "start_line": 118421,
+          "end_line": 118426,
+          "quote": "    }\n    *(int *)((int)this + 0x58) = iStack_10 + iStack_18;\n    *(int *)((int)this + 0x5c) = iStack_c;\n    *(int *)((int)this + 0x54) = -(iStack_c / 2);\n    *param_1 = iStack_10 + iStack_18;\n    param_1[1] = iStack_c;"
+        },
+        {
+          "start_line": 118422,
+          "end_line": 118427,
+          "quote": "    *(int *)((int)this + 0x58) = iStack_10 + iStack_18;\n    *(int *)((int)this + 0x5c) = iStack_c;\n    *(int *)((int)this + 0x54) = -(iStack_c / 2);\n    *param_1 = iStack_10 + iStack_18;\n    param_1[1] = iStack_c;\n    return;"
+        }
+      ],
+      "conclusion": "Character height/top come from measurement output SIZE.cy, while LAST/ctx+0x848 is requested size set separately. Web cy(s) is a model assumption, not the native instruction sequence.",
+      "evidence_c": "c/1008b480.c",
+      "evidence_asm": "asm/1008b480.asm"
+    },
+    {
+      "id": "roman_conversion_fallback_measure",
+      "status": "address_confirmed_static",
+      "source_path": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "source_sha256": "29d90cbc45723f290c95390de76b1e16947fe484a220c6cae7aeab74e48ff420",
+      "function_va": "0x10084f60",
+      "excerpts": [
+        {
+          "start_line": 113294,
+          "end_line": 113299,
+          "quote": "    goto LAB_100851a1;\n  }\n  if (*(int *)((int)this + 0x850) == 0) {\n    if ((ushort)((ushort)param_2 + 0x1f1b) < 0x1a) {\n      sVar2 = 0x1f7c;\n    }"
+        },
+        {
+          "start_line": 113296,
+          "end_line": 113301,
+          "quote": "  if (*(int *)((int)this + 0x850) == 0) {\n    if ((ushort)((ushort)param_2 + 0x1f1b) < 0x1a) {\n      sVar2 = 0x1f7c;\n    }\n    else {\n      if (0x19 < (ushort)((ushort)param_2 + 0x2000)) goto LAB_10084ff0;"
+        },
+        {
+          "start_line": 113300,
+          "end_line": 113305,
+          "quote": "    else {\n      if (0x19 < (ushort)((ushort)param_2 + 0x2000)) goto LAB_10084ff0;\n      sVar2 = 0x2041;\n    }\n    param_2 = CONCAT22(param_2._2_2_,(ushort)param_2 + sVar2);\nLAB_10084ff0:"
+        },
+        {
+          "start_line": 113304,
+          "end_line": 113309,
+          "quote": "    param_2 = CONCAT22(param_2._2_2_,(ushort)param_2 + sVar2);\nLAB_10084ff0:\n    iVar3 = FUN_10084610(this,(ushort)param_2);\n    if (iVar3 == 0) {\n      CHncStringW::CHncStringW((CHncStringW *)&local_224);\n      local_8 = 0;"
+        },
+        {
+          "start_line": 113308,
+          "end_line": 113313,
+          "quote": "      CHncStringW::CHncStringW((CHncStringW *)&local_224);\n      local_8 = 0;\n      HncLoadStringW((HINSTANCE__ *)0x0,\"IDS_EQ_LOG_FONTNAME\",(CHncStringW *)&local_224);\n      wcscpy_s(local_21c,0x104,(wchar_t *)((int)this + 0x28));\n      FUN_10084770(this,(int)this + 4,local_224);\n      local_8 = 0xffffffff;"
+        },
+        {
+          "start_line": 113324,
+          "end_line": 113329,
+          "quote": "    local_230 = 0;\n    uStackY_260 = 0x1008516a;\n    CHncDrawContext::GetTextExtentExPointW\n              ((CHncDrawContext *)*local_220,(ushort *)&param_2,1,0,(int *)0x0,&local_230,\n               (tagSIZE *)&local_22c);\n    puVar6 = local_220;"
+        },
+        {
+          "start_line": 113351,
+          "end_line": 113356,
+          "quote": "  }\n  *param_1 = local_22c;\n  param_1[1] = local_228;\nLAB_100851a1:\n  ExceptionList = local_10;\n  __security_check_cookie(local_14 ^ (uint)&stack0xfffffffc);"
+        }
+      ],
+      "conclusion": "rm branch remaps PUA letters to ASCII then checks glyph availability; fallback swaps face for measurement and restores face. Width and cy returned by Hnc wrapper. No ctx+0x848 write in this function body.",
+      "evidence_c": "c/10084f60.c",
+      "evidence_asm": "asm/10084f60.asm"
+    },
+    {
+      "id": "face_setter",
+      "status": "address_confirmed_static",
+      "source_path": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "source_sha256": "29d90cbc45723f290c95390de76b1e16947fe484a220c6cae7aeab74e48ff420",
+      "function_va": "0x10084770",
+      "excerpts": [
+        {
+          "start_line": 112899,
+          "end_line": 112904,
+          "quote": "  wchar_t *pwVar2;\n  \n  wcsncpy_s((wchar_t *)(param_1 + 0x24),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0xb8),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x14c),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x1e0),0x40,param_2,0xffffffff);"
+        },
+        {
+          "start_line": 112900,
+          "end_line": 112905,
+          "quote": "  \n  wcsncpy_s((wchar_t *)(param_1 + 0x24),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0xb8),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x14c),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x1e0),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x274),0x40,param_2,0xffffffff);"
+        },
+        {
+          "start_line": 112901,
+          "end_line": 112906,
+          "quote": "  wcsncpy_s((wchar_t *)(param_1 + 0x24),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0xb8),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x14c),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x1e0),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x274),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x308),0x40,param_2,0xffffffff);"
+        },
+        {
+          "start_line": 112902,
+          "end_line": 112907,
+          "quote": "  wcsncpy_s((wchar_t *)(param_1 + 0xb8),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x14c),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x1e0),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x274),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x308),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x39c),0x40,param_2,0xffffffff);"
+        },
+        {
+          "start_line": 112903,
+          "end_line": 112908,
+          "quote": "  wcsncpy_s((wchar_t *)(param_1 + 0x14c),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x1e0),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x274),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x308),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x39c),0x40,param_2,0xffffffff);\n  pwVar2 = param_2;"
+        },
+        {
+          "start_line": 112904,
+          "end_line": 112909,
+          "quote": "  wcsncpy_s((wchar_t *)(param_1 + 0x1e0),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x274),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x308),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x39c),0x40,param_2,0xffffffff);\n  pwVar2 = param_2;\n  do {"
+        },
+        {
+          "start_line": 112905,
+          "end_line": 112910,
+          "quote": "  wcsncpy_s((wchar_t *)(param_1 + 0x274),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x308),0x40,param_2,0xffffffff);\n  wcsncpy_s((wchar_t *)(param_1 + 0x39c),0x40,param_2,0xffffffff);\n  pwVar2 = param_2;\n  do {\n    wVar1 = *pwVar2;"
+        },
+        {
+          "start_line": 112911,
+          "end_line": 112916,
+          "quote": "    pwVar2 = pwVar2 + 1;\n  } while (wVar1 != L'\\0');\n  FUN_10005ad0((void *)((int)this + 0x858),param_2,(int)pwVar2 - (int)(param_2 + 1) >> 1);\n  return;\n}\n"
+        }
+      ],
+      "conclusion": "Face setter writes language names and ctx+0x858; it does not directly write ctx+0x848. Roman mode alone does not establish Batang fallback.",
+      "evidence_c": "c/10084770.c",
+      "evidence_asm": "asm/10084770.asm"
+    },
+    {
+      "id": "glyph_test",
+      "status": "address_confirmed_static",
+      "source_path": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "source_sha256": "29d90cbc45723f290c95390de76b1e16947fe484a220c6cae7aeab74e48ff420",
+      "function_va": "0x10084610",
+      "excerpts": [
+        {
+          "start_line": 112827,
+          "end_line": 112832,
+          "quote": "  ushort *puVar5;\n  \n  if (param_1 == 0xac) {\n    return 0;\n  }\n  uVar2 = *(uint *)((int)this + 0x86c);"
+        },
+        {
+          "start_line": 112853,
+          "end_line": 112858,
+          "quote": "      puVar3 = *(ushort **)puVar3;\n    }\n    iVar4 = CHncDrawContext::GlyphExist(*(CHncDrawContext **)this,puVar3,1,(uint)param_1);\n    if (iVar4 != 0) {\n      return 1;\n    }"
+        },
+        {
+          "start_line": 112858,
+          "end_line": 112863,
+          "quote": "    }\n  }\n  iVar4 = CHncDrawContext::GlyphExist(*(CHncDrawContext **)this,&DAT_100bf2b0,1,(uint)param_1);\n  return iVar4;\n}\n"
+        }
+      ],
+      "conclusion": "Fallback depends on GlyphExist (U+00AC forced absent). TTF cmap support is corroboration only, not proof of native wrapper branch.",
+      "evidence_c": "c/10084610.c",
+      "evidence_asm": "asm/10084610.asm"
+    }
+  ],
+  "binary_static_provenance": {
+    "binary_path": "C:\\Users\\K\\tools\\work\\HwpPlugin.dll",
+    "sha256": "101cf47afbb608726d36ad353af6c1ebe826146abd7acff053bc351f03925d20",
+    "image_base": "0x10000000",
+    "method": "pefile reads PE bytes; Capstone decodes bytes offline; no DLL loading/execution",
+    "import_resolution": [
+      {
+        "iat_va": "0x100ae2c8",
+        "dll": "KERNEL32.dll",
+        "symbol": "MulDiv"
+      }
+    ],
+    "instruction_ranges": [
+      {
+        "start_va": "0x1008e3ce",
+        "end_va_exclusive": "0x1008e4b3",
+        "file_offset": 579534,
+        "bytes_hex": "8b048518f30b1085c074176a6450ffb348080000ff15c8e20a108d048003c08945b08b75b86a646a44ff7708ff15c8e20a10837e14088945b8c745a800000000c745ac0000000072028b3656ff77088bcbe83c61ffff83bf88000000008b75b8741e8b47786a008970088d45a08b4f78508b01ff50088b188b40048945a8eb0233db83bf8c00000000741e8b477c6a008970088d45a08b4f7c508b01ff50088b088b40048945aceb0233c93bd98d4724500f4fcb33f6894da433db8d4dd8e86f58fbff8b45bcc745fc010000008b4dec83f9088b55d88b80480800008945bc8d45d80f43c2",
+        "instructions": [
+          {
+            "va": "0x1008e3ce",
+            "bytes": "8b048518f30b10",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [eax*4 + 0x100bf318]"
+          },
+          {
+            "va": "0x1008e3d5",
+            "bytes": "85c0",
+            "mnemonic": "test",
+            "operands": "eax, eax"
+          },
+          {
+            "va": "0x1008e3d7",
+            "bytes": "7417",
+            "mnemonic": "je",
+            "operands": "0x1008e3f0"
+          },
+          {
+            "va": "0x1008e3d9",
+            "bytes": "6a64",
+            "mnemonic": "push",
+            "operands": "0x64"
+          },
+          {
+            "va": "0x1008e3db",
+            "bytes": "50",
+            "mnemonic": "push",
+            "operands": "eax"
+          },
+          {
+            "va": "0x1008e3dc",
+            "bytes": "ffb348080000",
+            "mnemonic": "push",
+            "operands": "dword ptr [ebx + 0x848]"
+          },
+          {
+            "va": "0x1008e3e2",
+            "bytes": "ff15c8e20a10",
+            "mnemonic": "call",
+            "operands": "dword ptr [0x100ae2c8]"
+          },
+          {
+            "va": "0x1008e3e8",
+            "bytes": "8d0480",
+            "mnemonic": "lea",
+            "operands": "eax, [eax + eax*4]"
+          },
+          {
+            "va": "0x1008e3eb",
+            "bytes": "03c0",
+            "mnemonic": "add",
+            "operands": "eax, eax"
+          },
+          {
+            "va": "0x1008e3ed",
+            "bytes": "8945b0",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp - 0x50], eax"
+          },
+          {
+            "va": "0x1008e3f0",
+            "bytes": "8b75b8",
+            "mnemonic": "mov",
+            "operands": "esi, dword ptr [ebp - 0x48]"
+          },
+          {
+            "va": "0x1008e3f3",
+            "bytes": "6a64",
+            "mnemonic": "push",
+            "operands": "0x64"
+          },
+          {
+            "va": "0x1008e3f5",
+            "bytes": "6a44",
+            "mnemonic": "push",
+            "operands": "0x44"
+          },
+          {
+            "va": "0x1008e3f7",
+            "bytes": "ff7708",
+            "mnemonic": "push",
+            "operands": "dword ptr [edi + 8]"
+          },
+          {
+            "va": "0x1008e3fa",
+            "bytes": "ff15c8e20a10",
+            "mnemonic": "call",
+            "operands": "dword ptr [0x100ae2c8]"
+          },
+          {
+            "va": "0x1008e400",
+            "bytes": "837e1408",
+            "mnemonic": "cmp",
+            "operands": "dword ptr [esi + 0x14], 8"
+          },
+          {
+            "va": "0x1008e404",
+            "bytes": "8945b8",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp - 0x48], eax"
+          },
+          {
+            "va": "0x1008e407",
+            "bytes": "c745a800000000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp - 0x58], 0"
+          },
+          {
+            "va": "0x1008e40e",
+            "bytes": "c745ac00000000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp - 0x54], 0"
+          },
+          {
+            "va": "0x1008e415",
+            "bytes": "7202",
+            "mnemonic": "jb",
+            "operands": "0x1008e419"
+          },
+          {
+            "va": "0x1008e417",
+            "bytes": "8b36",
+            "mnemonic": "mov",
+            "operands": "esi, dword ptr [esi]"
+          },
+          {
+            "va": "0x1008e419",
+            "bytes": "56",
+            "mnemonic": "push",
+            "operands": "esi"
+          },
+          {
+            "va": "0x1008e41a",
+            "bytes": "ff7708",
+            "mnemonic": "push",
+            "operands": "dword ptr [edi + 8]"
+          },
+          {
+            "va": "0x1008e41d",
+            "bytes": "8bcb",
+            "mnemonic": "mov",
+            "operands": "ecx, ebx"
+          },
+          {
+            "va": "0x1008e41f",
+            "bytes": "e83c61ffff",
+            "mnemonic": "call",
+            "operands": "0x10084560"
+          },
+          {
+            "va": "0x1008e424",
+            "bytes": "83bf8800000000",
+            "mnemonic": "cmp",
+            "operands": "dword ptr [edi + 0x88], 0"
+          },
+          {
+            "va": "0x1008e42b",
+            "bytes": "8b75b8",
+            "mnemonic": "mov",
+            "operands": "esi, dword ptr [ebp - 0x48]"
+          },
+          {
+            "va": "0x1008e42e",
+            "bytes": "741e",
+            "mnemonic": "je",
+            "operands": "0x1008e44e"
+          },
+          {
+            "va": "0x1008e430",
+            "bytes": "8b4778",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [edi + 0x78]"
+          },
+          {
+            "va": "0x1008e433",
+            "bytes": "6a00",
+            "mnemonic": "push",
+            "operands": "0"
+          },
+          {
+            "va": "0x1008e435",
+            "bytes": "897008",
+            "mnemonic": "mov",
+            "operands": "dword ptr [eax + 8], esi"
+          },
+          {
+            "va": "0x1008e438",
+            "bytes": "8d45a0",
+            "mnemonic": "lea",
+            "operands": "eax, [ebp - 0x60]"
+          },
+          {
+            "va": "0x1008e43b",
+            "bytes": "8b4f78",
+            "mnemonic": "mov",
+            "operands": "ecx, dword ptr [edi + 0x78]"
+          },
+          {
+            "va": "0x1008e43e",
+            "bytes": "50",
+            "mnemonic": "push",
+            "operands": "eax"
+          },
+          {
+            "va": "0x1008e43f",
+            "bytes": "8b01",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [ecx]"
+          },
+          {
+            "va": "0x1008e441",
+            "bytes": "ff5008",
+            "mnemonic": "call",
+            "operands": "dword ptr [eax + 8]"
+          },
+          {
+            "va": "0x1008e444",
+            "bytes": "8b18",
+            "mnemonic": "mov",
+            "operands": "ebx, dword ptr [eax]"
+          },
+          {
+            "va": "0x1008e446",
+            "bytes": "8b4004",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [eax + 4]"
+          },
+          {
+            "va": "0x1008e449",
+            "bytes": "8945a8",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp - 0x58], eax"
+          },
+          {
+            "va": "0x1008e44c",
+            "bytes": "eb02",
+            "mnemonic": "jmp",
+            "operands": "0x1008e450"
+          },
+          {
+            "va": "0x1008e44e",
+            "bytes": "33db",
+            "mnemonic": "xor",
+            "operands": "ebx, ebx"
+          },
+          {
+            "va": "0x1008e450",
+            "bytes": "83bf8c00000000",
+            "mnemonic": "cmp",
+            "operands": "dword ptr [edi + 0x8c], 0"
+          },
+          {
+            "va": "0x1008e457",
+            "bytes": "741e",
+            "mnemonic": "je",
+            "operands": "0x1008e477"
+          },
+          {
+            "va": "0x1008e459",
+            "bytes": "8b477c",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [edi + 0x7c]"
+          },
+          {
+            "va": "0x1008e45c",
+            "bytes": "6a00",
+            "mnemonic": "push",
+            "operands": "0"
+          },
+          {
+            "va": "0x1008e45e",
+            "bytes": "897008",
+            "mnemonic": "mov",
+            "operands": "dword ptr [eax + 8], esi"
+          },
+          {
+            "va": "0x1008e461",
+            "bytes": "8d45a0",
+            "mnemonic": "lea",
+            "operands": "eax, [ebp - 0x60]"
+          },
+          {
+            "va": "0x1008e464",
+            "bytes": "8b4f7c",
+            "mnemonic": "mov",
+            "operands": "ecx, dword ptr [edi + 0x7c]"
+          },
+          {
+            "va": "0x1008e467",
+            "bytes": "50",
+            "mnemonic": "push",
+            "operands": "eax"
+          },
+          {
+            "va": "0x1008e468",
+            "bytes": "8b01",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [ecx]"
+          },
+          {
+            "va": "0x1008e46a",
+            "bytes": "ff5008",
+            "mnemonic": "call",
+            "operands": "dword ptr [eax + 8]"
+          },
+          {
+            "va": "0x1008e46d",
+            "bytes": "8b08",
+            "mnemonic": "mov",
+            "operands": "ecx, dword ptr [eax]"
+          },
+          {
+            "va": "0x1008e46f",
+            "bytes": "8b4004",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [eax + 4]"
+          },
+          {
+            "va": "0x1008e472",
+            "bytes": "8945ac",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp - 0x54], eax"
+          },
+          {
+            "va": "0x1008e475",
+            "bytes": "eb02",
+            "mnemonic": "jmp",
+            "operands": "0x1008e479"
+          },
+          {
+            "va": "0x1008e477",
+            "bytes": "33c9",
+            "mnemonic": "xor",
+            "operands": "ecx, ecx"
+          },
+          {
+            "va": "0x1008e479",
+            "bytes": "3bd9",
+            "mnemonic": "cmp",
+            "operands": "ebx, ecx"
+          },
+          {
+            "va": "0x1008e47b",
+            "bytes": "8d4724",
+            "mnemonic": "lea",
+            "operands": "eax, [edi + 0x24]"
+          },
+          {
+            "va": "0x1008e47e",
+            "bytes": "50",
+            "mnemonic": "push",
+            "operands": "eax"
+          },
+          {
+            "va": "0x1008e47f",
+            "bytes": "0f4fcb",
+            "mnemonic": "cmovg",
+            "operands": "ecx, ebx"
+          },
+          {
+            "va": "0x1008e482",
+            "bytes": "33f6",
+            "mnemonic": "xor",
+            "operands": "esi, esi"
+          },
+          {
+            "va": "0x1008e484",
+            "bytes": "894da4",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp - 0x5c], ecx"
+          },
+          {
+            "va": "0x1008e487",
+            "bytes": "33db",
+            "mnemonic": "xor",
+            "operands": "ebx, ebx"
+          },
+          {
+            "va": "0x1008e489",
+            "bytes": "8d4dd8",
+            "mnemonic": "lea",
+            "operands": "ecx, [ebp - 0x28]"
+          },
+          {
+            "va": "0x1008e48c",
+            "bytes": "e86f58fbff",
+            "mnemonic": "call",
+            "operands": "0x10043d00"
+          },
+          {
+            "va": "0x1008e491",
+            "bytes": "8b45bc",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [ebp - 0x44]"
+          },
+          {
+            "va": "0x1008e494",
+            "bytes": "c745fc01000000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp - 4], 1"
+          },
+          {
+            "va": "0x1008e49b",
+            "bytes": "8b4dec",
+            "mnemonic": "mov",
+            "operands": "ecx, dword ptr [ebp - 0x14]"
+          },
+          {
+            "va": "0x1008e49e",
+            "bytes": "83f908",
+            "mnemonic": "cmp",
+            "operands": "ecx, 8"
+          },
+          {
+            "va": "0x1008e4a1",
+            "bytes": "8b55d8",
+            "mnemonic": "mov",
+            "operands": "edx, dword ptr [ebp - 0x28]"
+          },
+          {
+            "va": "0x1008e4a4",
+            "bytes": "8b8048080000",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [eax + 0x848]"
+          },
+          {
+            "va": "0x1008e4aa",
+            "bytes": "8945bc",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp - 0x44], eax"
+          },
+          {
+            "va": "0x1008e4ad",
+            "bytes": "8d45d8",
+            "mnemonic": "lea",
+            "operands": "eax, [ebp - 0x28]"
+          },
+          {
+            "va": "0x1008e4b0",
+            "bytes": "0f43c2",
+            "mnemonic": "cmovae",
+            "operands": "eax, edx"
+          }
+        ]
+      },
+      {
+        "start_va": "0x1008e584",
+        "end_va_exclusive": "0x1008e5c5",
+        "file_offset": 579972,
+        "bytes_hex": "6a646a14ff75bcff15c8e20a106a646a19ff75bc8bce2bc8898f80000000ff15c8e20a108b4f7803c38b97800000008987840000008b495403ca894db88b4f7c8b",
+        "instructions": [
+          {
+            "va": "0x1008e584",
+            "bytes": "6a64",
+            "mnemonic": "push",
+            "operands": "0x64"
+          },
+          {
+            "va": "0x1008e586",
+            "bytes": "6a14",
+            "mnemonic": "push",
+            "operands": "0x14"
+          },
+          {
+            "va": "0x1008e588",
+            "bytes": "ff75bc",
+            "mnemonic": "push",
+            "operands": "dword ptr [ebp - 0x44]"
+          },
+          {
+            "va": "0x1008e58b",
+            "bytes": "ff15c8e20a10",
+            "mnemonic": "call",
+            "operands": "dword ptr [0x100ae2c8]"
+          },
+          {
+            "va": "0x1008e591",
+            "bytes": "6a64",
+            "mnemonic": "push",
+            "operands": "0x64"
+          },
+          {
+            "va": "0x1008e593",
+            "bytes": "6a19",
+            "mnemonic": "push",
+            "operands": "0x19"
+          },
+          {
+            "va": "0x1008e595",
+            "bytes": "ff75bc",
+            "mnemonic": "push",
+            "operands": "dword ptr [ebp - 0x44]"
+          },
+          {
+            "va": "0x1008e598",
+            "bytes": "8bce",
+            "mnemonic": "mov",
+            "operands": "ecx, esi"
+          },
+          {
+            "va": "0x1008e59a",
+            "bytes": "2bc8",
+            "mnemonic": "sub",
+            "operands": "ecx, eax"
+          },
+          {
+            "va": "0x1008e59c",
+            "bytes": "898f80000000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [edi + 0x80], ecx"
+          },
+          {
+            "va": "0x1008e5a2",
+            "bytes": "ff15c8e20a10",
+            "mnemonic": "call",
+            "operands": "dword ptr [0x100ae2c8]"
+          },
+          {
+            "va": "0x1008e5a8",
+            "bytes": "8b4f78",
+            "mnemonic": "mov",
+            "operands": "ecx, dword ptr [edi + 0x78]"
+          },
+          {
+            "va": "0x1008e5ab",
+            "bytes": "03c3",
+            "mnemonic": "add",
+            "operands": "eax, ebx"
+          },
+          {
+            "va": "0x1008e5ad",
+            "bytes": "8b9780000000",
+            "mnemonic": "mov",
+            "operands": "edx, dword ptr [edi + 0x80]"
+          },
+          {
+            "va": "0x1008e5b3",
+            "bytes": "898784000000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [edi + 0x84], eax"
+          },
+          {
+            "va": "0x1008e5b9",
+            "bytes": "8b4954",
+            "mnemonic": "mov",
+            "operands": "ecx, dword ptr [ecx + 0x54]"
+          },
+          {
+            "va": "0x1008e5bc",
+            "bytes": "03ca",
+            "mnemonic": "add",
+            "operands": "ecx, edx"
+          },
+          {
+            "va": "0x1008e5be",
+            "bytes": "894db8",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp - 0x48], ecx"
+          },
+          {
+            "va": "0x1008e5c1",
+            "bytes": "8b4f7c",
+            "mnemonic": "mov",
+            "operands": "ecx, dword ptr [edi + 0x7c]"
+          },
+          {
+            "va": "0x1008e5c4",
+            "bytes": "8b",
+            "mnemonic": ".byte",
+            "operands": "0x8b"
+          }
+        ]
+      },
+      {
+        "start_va": "0x10084560",
+        "end_va_exclusive": "0x100845d1",
+        "file_offset": 538976,
+        "bytes_hex": "558bec8b450889818c0300008981f80200008981640200008981d001000089813c0100008981a8000000894114898148080000992bc2d1f889819403000089810003000089816c0200008981d80100008981440100008981b000000089411c89814c0800008d41048945085de99f010000",
+        "instructions": [
+          {
+            "va": "0x10084560",
+            "bytes": "55",
+            "mnemonic": "push",
+            "operands": "ebp"
+          },
+          {
+            "va": "0x10084561",
+            "bytes": "8bec",
+            "mnemonic": "mov",
+            "operands": "ebp, esp"
+          },
+          {
+            "va": "0x10084563",
+            "bytes": "8b4508",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [ebp + 8]"
+          },
+          {
+            "va": "0x10084566",
+            "bytes": "89818c030000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x38c], eax"
+          },
+          {
+            "va": "0x1008456c",
+            "bytes": "8981f8020000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x2f8], eax"
+          },
+          {
+            "va": "0x10084572",
+            "bytes": "898164020000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x264], eax"
+          },
+          {
+            "va": "0x10084578",
+            "bytes": "8981d0010000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x1d0], eax"
+          },
+          {
+            "va": "0x1008457e",
+            "bytes": "89813c010000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x13c], eax"
+          },
+          {
+            "va": "0x10084584",
+            "bytes": "8981a8000000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0xa8], eax"
+          },
+          {
+            "va": "0x1008458a",
+            "bytes": "894114",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x14], eax"
+          },
+          {
+            "va": "0x1008458d",
+            "bytes": "898148080000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x848], eax"
+          },
+          {
+            "va": "0x10084593",
+            "bytes": "99",
+            "mnemonic": "cdq",
+            "operands": ""
+          },
+          {
+            "va": "0x10084594",
+            "bytes": "2bc2",
+            "mnemonic": "sub",
+            "operands": "eax, edx"
+          },
+          {
+            "va": "0x10084596",
+            "bytes": "d1f8",
+            "mnemonic": "sar",
+            "operands": "eax, 1"
+          },
+          {
+            "va": "0x10084598",
+            "bytes": "898194030000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x394], eax"
+          },
+          {
+            "va": "0x1008459e",
+            "bytes": "898100030000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x300], eax"
+          },
+          {
+            "va": "0x100845a4",
+            "bytes": "89816c020000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x26c], eax"
+          },
+          {
+            "va": "0x100845aa",
+            "bytes": "8981d8010000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x1d8], eax"
+          },
+          {
+            "va": "0x100845b0",
+            "bytes": "898144010000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x144], eax"
+          },
+          {
+            "va": "0x100845b6",
+            "bytes": "8981b0000000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0xb0], eax"
+          },
+          {
+            "va": "0x100845bc",
+            "bytes": "89411c",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x1c], eax"
+          },
+          {
+            "va": "0x100845bf",
+            "bytes": "89814c080000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x84c], eax"
+          },
+          {
+            "va": "0x100845c5",
+            "bytes": "8d4104",
+            "mnemonic": "lea",
+            "operands": "eax, [ecx + 4]"
+          },
+          {
+            "va": "0x100845c8",
+            "bytes": "894508",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp + 8], eax"
+          },
+          {
+            "va": "0x100845cb",
+            "bytes": "5d",
+            "mnemonic": "pop",
+            "operands": "ebp"
+          },
+          {
+            "va": "0x100845cc",
+            "bytes": "e99f010000",
+            "mnemonic": "jmp",
+            "operands": "0x10084770"
+          }
+        ]
+      },
+      {
+        "start_va": "0x100844d0",
+        "end_va_exclusive": "0x10084560",
+        "file_offset": 538832,
+        "bytes_hex": "558bec83b96c080000088d915808000072028b128b450889818c0300008981f80200008981640200008981d001000089813c0100008981a80000008941148981480800008b450c89819403000089810003000089816c0200008981d80100008981440100008981b000000089411c89814c08000089550c8d41048945085de91d020000cccccccccccccccccccccccccc",
+        "instructions": [
+          {
+            "va": "0x100844d0",
+            "bytes": "55",
+            "mnemonic": "push",
+            "operands": "ebp"
+          },
+          {
+            "va": "0x100844d1",
+            "bytes": "8bec",
+            "mnemonic": "mov",
+            "operands": "ebp, esp"
+          },
+          {
+            "va": "0x100844d3",
+            "bytes": "83b96c08000008",
+            "mnemonic": "cmp",
+            "operands": "dword ptr [ecx + 0x86c], 8"
+          },
+          {
+            "va": "0x100844da",
+            "bytes": "8d9158080000",
+            "mnemonic": "lea",
+            "operands": "edx, [ecx + 0x858]"
+          },
+          {
+            "va": "0x100844e0",
+            "bytes": "7202",
+            "mnemonic": "jb",
+            "operands": "0x100844e4"
+          },
+          {
+            "va": "0x100844e2",
+            "bytes": "8b12",
+            "mnemonic": "mov",
+            "operands": "edx, dword ptr [edx]"
+          },
+          {
+            "va": "0x100844e4",
+            "bytes": "8b4508",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [ebp + 8]"
+          },
+          {
+            "va": "0x100844e7",
+            "bytes": "89818c030000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x38c], eax"
+          },
+          {
+            "va": "0x100844ed",
+            "bytes": "8981f8020000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x2f8], eax"
+          },
+          {
+            "va": "0x100844f3",
+            "bytes": "898164020000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x264], eax"
+          },
+          {
+            "va": "0x100844f9",
+            "bytes": "8981d0010000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x1d0], eax"
+          },
+          {
+            "va": "0x100844ff",
+            "bytes": "89813c010000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x13c], eax"
+          },
+          {
+            "va": "0x10084505",
+            "bytes": "8981a8000000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0xa8], eax"
+          },
+          {
+            "va": "0x1008450b",
+            "bytes": "894114",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x14], eax"
+          },
+          {
+            "va": "0x1008450e",
+            "bytes": "898148080000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x848], eax"
+          },
+          {
+            "va": "0x10084514",
+            "bytes": "8b450c",
+            "mnemonic": "mov",
+            "operands": "eax, dword ptr [ebp + 0xc]"
+          },
+          {
+            "va": "0x10084517",
+            "bytes": "898194030000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x394], eax"
+          },
+          {
+            "va": "0x1008451d",
+            "bytes": "898100030000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x300], eax"
+          },
+          {
+            "va": "0x10084523",
+            "bytes": "89816c020000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x26c], eax"
+          },
+          {
+            "va": "0x10084529",
+            "bytes": "8981d8010000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x1d8], eax"
+          },
+          {
+            "va": "0x1008452f",
+            "bytes": "898144010000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x144], eax"
+          },
+          {
+            "va": "0x10084535",
+            "bytes": "8981b0000000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0xb0], eax"
+          },
+          {
+            "va": "0x1008453b",
+            "bytes": "89411c",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x1c], eax"
+          },
+          {
+            "va": "0x1008453e",
+            "bytes": "89814c080000",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ecx + 0x84c], eax"
+          },
+          {
+            "va": "0x10084544",
+            "bytes": "89550c",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp + 0xc], edx"
+          },
+          {
+            "va": "0x10084547",
+            "bytes": "8d4104",
+            "mnemonic": "lea",
+            "operands": "eax, [ecx + 4]"
+          },
+          {
+            "va": "0x1008454a",
+            "bytes": "894508",
+            "mnemonic": "mov",
+            "operands": "dword ptr [ebp + 8], eax"
+          },
+          {
+            "va": "0x1008454d",
+            "bytes": "5d",
+            "mnemonic": "pop",
+            "operands": "ebp"
+          },
+          {
+            "va": "0x1008454e",
+            "bytes": "e91d020000",
+            "mnemonic": "jmp",
+            "operands": "0x10084770"
+          },
+          {
+            "va": "0x10084553",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x10084554",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x10084555",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x10084556",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x10084557",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x10084558",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x10084559",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x1008455a",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x1008455b",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x1008455c",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x1008455d",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x1008455e",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          },
+          {
+            "va": "0x1008455f",
+            "bytes": "cc",
+            "mnemonic": "int3",
+            "operands": ""
+          }
+        ]
+      }
+    ]
+  },
+  "decompiler_source": {
+    "path": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+    "sha256": "29d90cbc45723f290c95390de76b1e16947fe484a220c6cae7aeab74e48ff420"
+  },
+  "documents": [
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\structures_8.md",
+      "sha256": "7fb683614610689f17f2ac7afa66e11f23a718e65395fa453a0c17ab55ebcde2",
+      "evidence_path": "documents/structures_8.md"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\spacing_scripts_grids.md",
+      "sha256": "e233a56c9bac2d1122328cb5992d6ceecce763dda5f789b2a13bf077c6e4f3d6",
+      "evidence_path": "documents/spacing_scripts_grids.md"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\vertical_boxes_baseline.md",
+      "sha256": "e6fc1c3eb05787e0c9a5c607a0e2ed495ccff5578f4da665c02d48e271c7d34d",
+      "evidence_path": "documents/vertical_boxes_baseline.md"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\hangul_font_19.md",
+      "sha256": "9eb1c5936b4ca25cbeb67214bdc844febd46eb58273e52265b3d6ec5b77d4fd9",
+      "evidence_path": "documents/hangul_font_19.md"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\eq_fallback_font_44.md",
+      "sha256": "22174267e85221af5e902f0c0103cb99feb3887195ad41f8507e0b15588a6bc5",
+      "evidence_path": "documents/eq_fallback_font_44.md"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\fix_22.md",
+      "sha256": "b284847b1a4f7ced9e61e78ebe4eba94cb63b5ae38cda15edce47d505d24f5e8",
+      "evidence_path": "documents/fix_22.md"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\fix_23.md",
+      "sha256": "f6ea532a88a1f62aadd5852c35648832efc71620104776430518a873d9efceb3",
+      "evidence_path": "documents/fix_23.md"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\rea_결과_편집화면_20261019_212751\\plugin_entry.c",
+      "sha256": "3187ada4baab46cf51f306a0a222877c9d29636f7b48953732b699cee5b7986f",
+      "evidence_path": "documents/plugin_entry.c"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\rea_결과_편집화면_20261019_212751\\plugin_edit_path.c",
+      "sha256": "69e1d3616c9d119b17e7b24438a6d7f02950ed54e18ced2e4053f9784a0c18f4",
+      "evidence_path": "documents/plugin_edit_path.c"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\rea_결과_편집화면_20261019_212751\\eqapp_measure_refs.c",
+      "sha256": "b266a98a88d7fdbaa0304c587551e52f0642c0f022083ef2cd71a90c07f42ad4",
+      "evidence_path": "documents/eqapp_measure_refs.c"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\rea_결과_편집화면_20261019_212751\\draw_extent_corrections.c",
+      "sha256": "c3c9b6cbd6b7afc0ddd5d28d95f8d97698222e3f91d86e0fd461e5553e49725a",
+      "evidence_path": "documents/draw_extent_corrections.c"
+    },
+    {
+      "path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\rea\\rea_결과_편집화면_20261019_212751\\추가3_폰트상태_보정.md",
+      "sha256": "1575cb48d78bfa13746667cc8d9f54f81a1295e96386954a437d419c509a3a34",
+      "evidence_path": "documents/추가3_폰트상태_보정.md"
+    }
+  ],
+  "function_index": [
+    {
+      "function_va": "0x10005610",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        3414,
+        3438
+      ],
+      "c_file": "c/10005610.c",
+      "asm_file": "asm/10005610.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100057c0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        3522,
+        3625
+      ],
+      "c_file": "c/100057c0.c",
+      "asm_file": "asm/100057c0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1005e970",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        80700,
+        81014
+      ],
+      "c_file": "c/1005e970.c",
+      "asm_file": "asm/1005e970.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100844d0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        112741,
+        112773
+      ],
+      "c_file": "c/100844d0.c",
+      "asm_file": "asm/100844d0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10084560",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        112773,
+        112802
+      ],
+      "c_file": "c/10084560.c",
+      "asm_file": "asm/10084560.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100845e0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        112802,
+        112818
+      ],
+      "c_file": "c/100845e0.c",
+      "asm_file": "asm/100845e0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10084610",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        112818,
+        112865
+      ],
+      "c_file": "c/10084610.c",
+      "asm_file": "asm/10084610.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100846d0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        112865,
+        112893
+      ],
+      "c_file": "c/100846d0.c",
+      "asm_file": "asm/100846d0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10084770",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        112893,
+        112918
+      ],
+      "c_file": "c/10084770.c",
+      "asm_file": "asm/10084770.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10084820",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        112918,
+        112989
+      ],
+      "c_file": "c/10084820.c",
+      "asm_file": "asm/10084820.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10084930",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        112989,
+        113133
+      ],
+      "c_file": "c/10084930.c",
+      "asm_file": "asm/10084930.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10084f60",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        113259,
+        113361
+      ],
+      "c_file": "c/10084f60.c",
+      "asm_file": "asm/10084f60.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100852e0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        113432,
+        113493
+      ],
+      "c_file": "c/100852e0.c",
+      "asm_file": "asm/100852e0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10086e10",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        114941,
+        114972
+      ],
+      "c_file": "c/10086e10.c",
+      "asm_file": "asm/10086e10.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10086e90",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        114972,
+        115080
+      ],
+      "c_file": "c/10086e90.c",
+      "asm_file": "asm/10086e90.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100883f0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        116163,
+        116219
+      ],
+      "c_file": "c/100883f0.c",
+      "asm_file": "asm/100883f0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008a470",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        117621,
+        117810
+      ],
+      "c_file": "c/1008a470.c",
+      "asm_file": "asm/1008a470.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008aa20",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        117856,
+        118009
+      ],
+      "c_file": "c/1008aa20.c",
+      "asm_file": "asm/1008aa20.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008afa0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        118164,
+        118372
+      ],
+      "c_file": "c/1008afa0.c",
+      "asm_file": "asm/1008afa0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008b480",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        118372,
+        118457
+      ],
+      "c_file": "c/1008b480.c",
+      "asm_file": "asm/1008b480.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008ba00",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        118665,
+        118789
+      ],
+      "c_file": "c/1008ba00.c",
+      "asm_file": "asm/1008ba00.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008c350",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        119122,
+        119204
+      ],
+      "c_file": "c/1008c350.c",
+      "asm_file": "asm/1008c350.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008c580",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        119204,
+        119303
+      ],
+      "c_file": "c/1008c580.c",
+      "asm_file": "asm/1008c580.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008cab0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        119460,
+        119554
+      ],
+      "c_file": "c/1008cab0.c",
+      "asm_file": "asm/1008cab0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008cd10",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        119554,
+        119612
+      ],
+      "c_file": "c/1008cd10.c",
+      "asm_file": "asm/1008cd10.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008d0b0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        119732,
+        119842
+      ],
+      "c_file": "c/1008d0b0.c",
+      "asm_file": "asm/1008d0b0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008d380",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        119842,
+        119909
+      ],
+      "c_file": "c/1008d380.c",
+      "asm_file": "asm/1008d380.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008d730",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        120029,
+        120124
+      ],
+      "c_file": "c/1008d730.c",
+      "asm_file": "asm/1008d730.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008d980",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        120124,
+        120180
+      ],
+      "c_file": "c/1008d980.c",
+      "asm_file": "asm/1008d980.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008dfd0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        120422,
+        120557
+      ],
+      "c_file": "c/1008dfd0.c",
+      "asm_file": "asm/1008dfd0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008e270",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        120557,
+        120795
+      ],
+      "c_file": "c/1008e270.c",
+      "asm_file": "asm/1008e270.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008eaa0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        121021,
+        121127
+      ],
+      "c_file": "c/1008eaa0.c",
+      "asm_file": "asm/1008eaa0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008ee80",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        121181,
+        121299
+      ],
+      "c_file": "c/1008ee80.c",
+      "asm_file": "asm/1008ee80.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008f2e0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        121434,
+        121500
+      ],
+      "c_file": "c/1008f2e0.c",
+      "asm_file": "asm/1008f2e0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008f440",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        121500,
+        121597
+      ],
+      "c_file": "c/1008f440.c",
+      "asm_file": "asm/1008f440.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008f650",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        121597,
+        121671
+      ],
+      "c_file": "c/1008f650.c",
+      "asm_file": "asm/1008f650.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1008fee0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        121972,
+        122161
+      ],
+      "c_file": "c/1008fee0.c",
+      "asm_file": "asm/1008fee0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10090cc0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        122600,
+        122704
+      ],
+      "c_file": "c/10090cc0.c",
+      "asm_file": "asm/10090cc0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10090ff0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        122704,
+        122792
+      ],
+      "c_file": "c/10090ff0.c",
+      "asm_file": "asm/10090ff0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10091bf0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        123292,
+        123416
+      ],
+      "c_file": "c/10091bf0.c",
+      "asm_file": "asm/10091bf0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100923e0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        123705,
+        123823
+      ],
+      "c_file": "c/100923e0.c",
+      "asm_file": "asm/100923e0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10092910",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        123982,
+        124081
+      ],
+      "c_file": "c/10092910.c",
+      "asm_file": "asm/10092910.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10092b40",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        124081,
+        124145
+      ],
+      "c_file": "c/10092b40.c",
+      "asm_file": "asm/10092b40.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10093d10",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        124943,
+        125108
+      ],
+      "c_file": "c/10093d10.c",
+      "asm_file": "asm/10093d10.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10094430",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        125341,
+        125472
+      ],
+      "c_file": "c/10094430.c",
+      "asm_file": "asm/10094430.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10094720",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        125472,
+        125655
+      ],
+      "c_file": "c/10094720.c",
+      "asm_file": "asm/10094720.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10094ac0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        125655,
+        125703
+      ],
+      "c_file": "c/10094ac0.c",
+      "asm_file": "asm/10094ac0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10094b70",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        125703,
+        125771
+      ],
+      "c_file": "c/10094b70.c",
+      "asm_file": "asm/10094b70.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x10095450",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        126185,
+        126331
+      ],
+      "c_file": "c/10095450.c",
+      "asm_file": "asm/10095450.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100964c0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        127074,
+        127246
+      ],
+      "c_file": "c/100964c0.c",
+      "asm_file": "asm/100964c0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009b3f0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        130890,
+        130957
+      ],
+      "c_file": "c/1009b3f0.c",
+      "asm_file": "asm/1009b3f0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009b580",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        130957,
+        131028
+      ],
+      "c_file": "c/1009b580.c",
+      "asm_file": "asm/1009b580.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009b6d0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        131028,
+        131115
+      ],
+      "c_file": "c/1009b6d0.c",
+      "asm_file": "asm/1009b6d0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009b960",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        131176,
+        131243
+      ],
+      "c_file": "c/1009b960.c",
+      "asm_file": "asm/1009b960.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009baf0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        131243,
+        131318
+      ],
+      "c_file": "c/1009baf0.c",
+      "asm_file": "asm/1009baf0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009bc40",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        131318,
+        131388
+      ],
+      "c_file": "c/1009bc40.c",
+      "asm_file": "asm/1009bc40.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009bed0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        131449,
+        131554
+      ],
+      "c_file": "c/1009bed0.c",
+      "asm_file": "asm/1009bed0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009c230",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        131615,
+        131703
+      ],
+      "c_file": "c/1009c230.c",
+      "asm_file": "asm/1009c230.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009c450",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        131703,
+        131776
+      ],
+      "c_file": "c/1009c450.c",
+      "asm_file": "asm/1009c450.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009c6a0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        131837,
+        131955
+      ],
+      "c_file": "c/1009c6a0.c",
+      "asm_file": "asm/1009c6a0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009c970",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        131955,
+        132033
+      ],
+      "c_file": "c/1009c970.c",
+      "asm_file": "asm/1009c970.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009cbd0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        132094,
+        132199
+      ],
+      "c_file": "c/1009cbd0.c",
+      "asm_file": "asm/1009cbd0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009ce10",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        132199,
+        132270
+      ],
+      "c_file": "c/1009ce10.c",
+      "asm_file": "asm/1009ce10.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009d050",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        132331,
+        132441
+      ],
+      "c_file": "c/1009d050.c",
+      "asm_file": "asm/1009d050.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009d2a0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        132441,
+        132512
+      ],
+      "c_file": "c/1009d2a0.c",
+      "asm_file": "asm/1009d2a0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009d4e0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        132573,
+        132683
+      ],
+      "c_file": "c/1009d4e0.c",
+      "asm_file": "asm/1009d4e0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009d730",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        132683,
+        132754
+      ],
+      "c_file": "c/1009d730.c",
+      "asm_file": "asm/1009d730.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009d970",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        132815,
+        132925
+      ],
+      "c_file": "c/1009d970.c",
+      "asm_file": "asm/1009d970.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009dbc0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        132925,
+        132996
+      ],
+      "c_file": "c/1009dbc0.c",
+      "asm_file": "asm/1009dbc0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009de00",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        133057,
+        133124
+      ],
+      "c_file": "c/1009de00.c",
+      "asm_file": "asm/1009de00.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009df90",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        133124,
+        133195
+      ],
+      "c_file": "c/1009df90.c",
+      "asm_file": "asm/1009df90.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009e0d0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        133195,
+        133271
+      ],
+      "c_file": "c/1009e0d0.c",
+      "asm_file": "asm/1009e0d0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009e340",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        133332,
+        133399
+      ],
+      "c_file": "c/1009e340.c",
+      "asm_file": "asm/1009e340.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009e4d0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        133399,
+        133470
+      ],
+      "c_file": "c/1009e4d0.c",
+      "asm_file": "asm/1009e4d0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009e610",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        133470,
+        133541
+      ],
+      "c_file": "c/1009e610.c",
+      "asm_file": "asm/1009e610.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009e870",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        133602,
+        133669
+      ],
+      "c_file": "c/1009e870.c",
+      "asm_file": "asm/1009e870.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009ea00",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        133669,
+        133740
+      ],
+      "c_file": "c/1009ea00.c",
+      "asm_file": "asm/1009ea00.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009eb50",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        133740,
+        133808
+      ],
+      "c_file": "c/1009eb50.c",
+      "asm_file": "asm/1009eb50.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009edc0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        133869,
+        133936
+      ],
+      "c_file": "c/1009edc0.c",
+      "asm_file": "asm/1009edc0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009ef50",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        133936,
+        134007
+      ],
+      "c_file": "c/1009ef50.c",
+      "asm_file": "asm/1009ef50.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009f0a0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        134007,
+        134078
+      ],
+      "c_file": "c/1009f0a0.c",
+      "asm_file": "asm/1009f0a0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009f310",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        134138,
+        134204
+      ],
+      "c_file": "c/1009f310.c",
+      "asm_file": "asm/1009f310.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009f720",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        134343,
+        134402
+      ],
+      "c_file": "c/1009f720.c",
+      "asm_file": "asm/1009f720.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009f9d0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        134489,
+        134548
+      ],
+      "c_file": "c/1009f9d0.c",
+      "asm_file": "asm/1009f9d0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x1009fda0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        134689,
+        134763
+      ],
+      "c_file": "c/1009fda0.c",
+      "asm_file": "asm/1009fda0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100a03d0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        134979,
+        135060
+      ],
+      "c_file": "c/100a03d0.c",
+      "asm_file": "asm/100a03d0.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100a0590",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        135060,
+        135159
+      ],
+      "c_file": "c/100a0590.c",
+      "asm_file": "asm/100a0590.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100a0790",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        135159,
+        135268
+      ],
+      "c_file": "c/100a0790.c",
+      "asm_file": "asm/100a0790.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100a0d20",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        135397,
+        135487
+      ],
+      "c_file": "c/100a0d20.c",
+      "asm_file": "asm/100a0d20.asm",
+      "explicit_848_reference": false,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100a1100",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        135605,
+        135717
+      ],
+      "c_file": "c/100a1100.c",
+      "asm_file": "asm/100a1100.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100a16a0",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        135824,
+        135905
+      ],
+      "c_file": "c/100a16a0.c",
+      "asm_file": "asm/100a16a0.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    },
+    {
+      "function_va": "0x100a1830",
+      "original_source": "C:\\Users\\K\\tools\\work\\r19\\plug_all.c",
+      "original_lines": [
+        135905,
+        136031
+      ],
+      "c_file": "c/100a1830.c",
+      "asm_file": "asm/100a1830.asm",
+      "explicit_848_reference": true,
+      "selection_note": "Literal displacement/index matches and size-setter callers; matches alone do not prove object identity or executed path."
+    }
+  ],
+  "unconfirmed": [
+    "The exact native node+8/ctx+0x848 snapshot for this script at each base size is not observed; no process reads or Hwp reruns permitted.",
+    "Need resolve parser/node graph and size mutations through rm group and final 9; static inheritance functions alone do not prove target-case values.",
+    "Hnc wrapper SIZE.cy and any language/font height correction/rounding in the native save context remain unresolved; no new TEXTMETRIC/GDI measurements performed.",
+    "Cmap presence does not prove CHncDrawContext::GlyphExist outcome or actual realized fallback face.",
+    "Inspected source excerpts/decompiler output are not a proof of absence of all aliased writes, external side effects, cached/virtual branches.",
+    "HwpPlugin and EqAppModule are different binaries; related EqAppModule evidence is context only, addresses are not interchangeable.",
+    "Older HwpApp document-engine 64% sizing notes refer to a separate path; not substituted for HwpPlugin 68%.",
+    "Native-vs-web size deltas 9/6/2/0/0/5 HU remain unexplained; Python sim/eq8 is not ground truth."
+  ],
+  "recommended_read_order": [
+    "c/1008e270.c",
+    "asm/1008e270.asm",
+    "c/10084560.c",
+    "c/100844d0.c",
+    "c/100883f0.c",
+    "c/1008b480.c",
+    "c/10084f60.c",
+    "c/10084770.c",
+    "c/10084610.c"
+  ],
+  "evidence_zip": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\equation-corpus\\2026-10-23\\script-height-static-evidence.zip"
+}

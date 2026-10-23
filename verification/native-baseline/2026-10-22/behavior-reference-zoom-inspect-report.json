@@ -1,0 +1,3961 @@
+{
+  "phase": "zoom-110",
+  "started": "2026-10-22T21:17:46.616681+09:00",
+  "pid": 31880,
+  "target_hwnd": 985892,
+  "target_pid": 4032,
+  "source": "C:\\Users\\K\\.orca\\coordination\\desktop_control.py",
+  "source_sha256": "4084e572dc5e9fe8e07c2ec4a6784fe0a54f9730344d186af51ff035cb86a882",
+  "collector": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\native-baseline\\2026-10-22\\behavior-reference-zoom-inspect.py",
+  "collector_sha256": "bca9f5e8fe3c271254fee47baefbb54e84726769261feef36e2b97aa391381b8",
+  "events": [
+    {
+      "kind": "before_request",
+      "time": "2026-10-22T21:17:46.640708+09:00",
+      "epoch": 1792671466.6407084,
+      "owner": {
+        "owner": "Astris",
+        "session": "hangul-pc-upper-0051",
+        "job": "upper-0051",
+        "pid": 30616,
+        "since": 1792671421.5599914,
+        "since_iso": "2026-10-22 21:17:01",
+        "heartbeat": 1792671451.5662634,
+        "heartbeat_iso": "2026-10-22 21:17:31",
+        "token": "68b5dd0334a7490eb0a5f08b45e06c07",
+        "heartbeat_age_s": 15.1,
+        "stale_suspect": false
+      },
+      "pending": null,
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "acquired",
+      "time": "2026-10-22T21:17:58.176224+09:00",
+      "epoch": 1792671478.176225,
+      "owner": {
+        "owner": "Web HWP",
+        "session": "user-screen-zoom-2026-10-22",
+        "job": "zoom-110",
+        "pid": 31880,
+        "since": 1792671478.1682208,
+        "since_iso": "2026-10-22 21:17:58",
+        "heartbeat": 1792671478.1682208,
+        "heartbeat_iso": "2026-10-22 21:17:58",
+        "token": "e339d131cc464bf0950beac3430bcc55",
+        "heartbeat_age_s": 0.0,
+        "stale_suspect": false
+      },
+      "heartbeat": true
+    },
+    {
+      "kind": "activate_title_click",
+      "time": "2026-10-22T21:17:58.398466+09:00",
+      "epoch": 1792671478.398466,
+      "screen": [
+        665,
+        52
+      ]
+    },
+    {
+      "kind": "maximize_dedicated_window",
+      "time": "2026-10-22T21:17:58.615684+09:00",
+      "epoch": 1792671478.6156847
+    },
+    {
+      "kind": "click",
+      "time": "2026-10-22T21:17:59.835190+09:00",
+      "epoch": 1792671479.83519,
+      "label": "Edit label for matched baseline",
+      "client": [
+        96,
+        48
+      ],
+      "screen": [
+        98,
+        88
+      ],
+      "window_relative": [
+        96,
+        48
+      ],
+      "hit": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      }
+    },
+    {
+      "kind": "ui_click",
+      "time": "2026-10-22T21:18:03.521736+09:00",
+      "epoch": 1792671483.5217361,
+      "label": "status zoom 100 percent",
+      "screen": [
+        1289,
+        986
+      ],
+      "foreground": 985892
+    },
+    {
+      "kind": "ui_click",
+      "time": "2026-10-22T21:18:07.259920+09:00",
+      "epoch": 1792671487.2599208,
+      "label": "custom zoom radio",
+      "screen": [
+        889,
+        428
+      ],
+      "foreground": 396692450
+    },
+    {
+      "kind": "move_to_owned_dialog_title",
+      "time": "2026-10-22T21:18:09.327074+09:00",
+      "epoch": 1792671489.3270745,
+      "screen": [
+        946,
+        305
+      ],
+      "hwnd": 396692450
+    },
+    {
+      "kind": "key_chord",
+      "time": "2026-10-22T21:18:10.404391+09:00",
+      "epoch": 1792671490.4043915,
+      "keys": [
+        27
+      ],
+      "label": "close own dialog/menu",
+      "foreground": 985892
+    },
+    {
+      "kind": "release_completed",
+      "time": "2026-10-22T21:18:10.718092+09:00",
+      "epoch": 1792671490.718092
+    },
+    {
+      "kind": "own_request_deleted",
+      "time": "2026-10-22T21:18:10.722092+09:00",
+      "epoch": 1792671490.7220924
+    }
+  ],
+  "captures": [
+    {
+      "name": "behavior-reference-zoom-inspect-baseline",
+      "kind": "editor",
+      "time": "2026-10-22T21:18:02.601534+09:00",
+      "raw": "behavior-reference-zoom-inspect-baseline.raw.png",
+      "dialog_raw": null,
+      "window": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      },
+      "window_rect": [
+        2,
+        40,
+        1329,
+        1006
+      ],
+      "client_rect": [
+        0,
+        0,
+        1327,
+        966
+      ],
+      "client_origin_screen": [
+        2,
+        40
+      ],
+      "dpi": 96,
+      "units": "physical pixels; rectangles half-open",
+      "zoom": {
+        "text": "100%",
+        "source": "status bar visual review required",
+        "ribbon_160_percent": "character width ratio; not document zoom"
+      },
+      "foreground": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      },
+      "target": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      },
+      "gui_thread": {
+        "flags": 0,
+        "active": 985892,
+        "focus": 1444636,
+        "menu_owner": null,
+        "capture": null
+      },
+      "native_children": [
+        {
+          "hwnd": 2165522,
+          "pid": 4032,
+          "class": "HwpRulerTabButtonWnd",
+          "name": "",
+          "id": 155592296,
+          "rect_screen": [
+            10,
+            233,
+            38,
+            261
+          ],
+          "rect_client_main": [
+            8,
+            193,
+            36,
+            221
+          ],
+          "rect_window_main": [
+            8,
+            193,
+            36,
+            221
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 985890,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208327152,
+          "rect_screen": [
+            38,
+            233,
+            1306,
+            261
+          ],
+          "rect_client_main": [
+            36,
+            193,
+            1304,
+            221
+          ],
+          "rect_window_main": [
+            36,
+            193,
+            1304,
+            221
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 789302,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208335432,
+          "rect_screen": [
+            10,
+            261,
+            38,
+            944
+          ],
+          "rect_client_main": [
+            8,
+            221,
+            36,
+            904
+          ],
+          "rect_window_main": [
+            8,
+            221,
+            36,
+            904
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1444636,
+          "pid": 4032,
+          "class": "HwpMainEditWnd",
+          "name": "",
+          "id": 12968844,
+          "rect_screen": [
+            38,
+            261,
+            1306,
+            944
+          ],
+          "rect_client_main": [
+            36,
+            221,
+            1304,
+            904
+          ],
+          "rect_window_main": [
+            36,
+            221,
+            1304,
+            904
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1248016,
+          "pid": 4032,
+          "class": "msctls_progress32",
+          "name": "",
+          "id": 0,
+          "rect_screen": [
+            2,
+            40,
+            402,
+            56
+          ],
+          "rect_client_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "rect_window_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "visible": false,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        }
+      ],
+      "main_native_children": null,
+      "occlusion_samples": [
+        {
+          "screen": [
+            22,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            523
+          ],
+          "hwnd": 789302,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            523
+          ],
+          "hwnd": 1444636,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            523
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        }
+      ],
+      "input_event_count": 5,
+      "status": "pending_visual_review",
+      "uia": {
+        "elements": [
+          {
+            "name": "빈 문서 1 - 한글",
+            "class": "FrameWindowImpl",
+            "automation_id": "",
+            "control_type": "Window",
+            "hwnd": 985892,
+            "rect_screen": [
+              2,
+              40,
+              1329,
+              1006
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "HwpRulerTabButtonWnd",
+            "automation_id": "155592296",
+            "control_type": "Pane",
+            "hwnd": 2165522,
+            "rect_screen": [
+              10,
+              233,
+              38,
+              261
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "HwpRulerWnd",
+            "automation_id": "208327152",
+            "control_type": "Pane",
+            "hwnd": 985890,
+            "rect_screen": [
+              38,
+              233,
+              1306,
+              261
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "HwpRulerWnd",
+            "automation_id": "208335432",
+            "control_type": "Pane",
+            "hwnd": 789302,
+            "rect_screen": [
+              10,
+              261,
+              38,
+              944
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "HwpMainEditWnd",
+            "automation_id": "12968844",
+            "control_type": "Pane",
+            "hwnd": 1444636,
+            "rect_screen": [
+              38,
+              261,
+              1306,
+              944
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "빈 문서 1 - 글",
+            "class": "TitleBarImpl",
+            "automation_id": "",
+            "control_type": "TitleBar",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              48,
+              1321,
+              80
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "MenuBar",
+            "class": "MenuBarImpl",
+            "automation_id": "",
+            "control_type": "Menu",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              80,
+              1321,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "ToolBox",
+            "class": "ToolBoxImpl",
+            "automation_id": "b8403768-121d-4db1-89f7-663872a204df",
+            "control_type": "Custom",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              112,
+              1321,
+              200
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "ToolBar",
+            "class": "ToolBarImpl",
+            "automation_id": "b8ce731d-8baa-4ff3-9464-df1ec9af4c6c",
+            "control_type": "Custom",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              200,
+              1321,
+              232
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "StatusBar",
+            "class": "StatusBarImpl",
+            "automation_id": "",
+            "control_type": "StatusBar",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              973,
+              1321,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "msctls_progress32",
+            "automation_id": "",
+            "control_type": "ProgressBar",
+            "hwnd": 1248016,
+            "rect_screen": [
+              2,
+              40,
+              402,
+              56
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "최소화",
+            "class": "Button",
+            "automation_id": "PART_Min",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1220,
+              48,
+              1252,
+              80
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "파일 F",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              10,
+              84,
+              73,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "편집 E",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              80,
+              84,
+              139,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "보기 U",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              139,
+              84,
+              198,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "입력 D",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              198,
+              84,
+              257,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "서식 J",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              257,
+              84,
+              316,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "쪽 W",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              316,
+              84,
+              364,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "보안 R",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              364,
+              84,
+              423,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "검토 H",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              423,
+              84,
+              482,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "도구 K",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              482,
+              84,
+              541,
+              112
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "도형 X3",
+            "class": "MainMenuItemImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              541,
+              84,
+              573,
+              110
+            ],
+            "visible": true,
+            "enabled": false
+          },
+          {
+            "name": "",
+            "class": "SearchComboImpl",
+            "automation_id": "PART_QuickSearch",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              1093,
+              84,
+              1253,
+              108
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "오려 두기 : ALT+T",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              24,
+              118,
+              62,
+              194
+            ],
+            "visible": true,
+            "enabled": false
+          },
+          {
+            "name": "복사하기 : ALT+C",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              62,
+              118,
+              118,
+              194
+            ],
+            "visible": true,
+            "enabled": false
+          },
+          {
+            "name": "붙이기 : ALT+P",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              118,
+              118,
+              163,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "모양 복사 : ALT+A",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              163,
+              118,
+              201,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "조판 부호 지우기 : ALT+Y",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              201,
+              118,
+              260,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "글자 모양 : ALT+L",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              273,
+              118,
+              311,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "문단 모양 : ALT+M",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              311,
+              118,
+              349,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "스타일 : ALT+S",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              349,
+              118,
+              394,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "세로 : ALT+G",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              407,
+              118,
+              445,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "가로 : ALT+D",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              445,
+              118,
+              483,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "쪽 여백 : ALT+J",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              483,
+              118,
+              537,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "바탕쪽 : ALT+E",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              537,
+              118,
+              582,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "단 : ALT+U",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              582,
+              118,
+              620,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "도형 : ALT+H",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              633,
+              118,
+              671,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "그림 : ALT+I",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              671,
+              118,
+              709,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "표 : ALT+B",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              709,
+              118,
+              747,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "차트 : ALT+R",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              747,
+              118,
+              785,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "개체 선택 : ALT+V",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              798,
+              118,
+              852,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "개체 보호 : ALT+K",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              852,
+              118,
+              906,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "찾기 : ALT+F",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              919,
+              118,
+              957,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "글자 바꾸기 : ALT+N",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              957,
+              118,
+              1022,
+              194
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "정렬 : ALT+O",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1022,
+              118,
+              1060,
+              194
+            ],
+            "visible": true,
+            "enabled": false
+          },
+          {
+            "name": "새 문서 : ALT+N",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              27,
+              204,
+              67,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "불러오기 : ALT+O",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              69,
+              204,
+              109,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "저장하기 : ALT+S",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              111,
+              204,
+              151,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "인쇄 : ALT+P",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              168,
+              204,
+              192,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "미리 보기 : ALT+V",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              194,
+              204,
+              218,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "되돌리기 : ALT+8",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              235,
+              204,
+              275,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "다시 실행 : ALT+9",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              277,
+              204,
+              317,
+              228
+            ],
+            "visible": true,
+            "enabled": false
+          },
+          {
+            "name": "스타일 : ALT+Y",
+            "class": "ComboImpl",
+            "automation_id": "",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              336,
+              204,
+              442,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "언어 : ALT+Q",
+            "class": "ComboImpl",
+            "automation_id": "",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              448,
+              204,
+              539,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "함초롬바탕",
+            "class": "FontNameComboImpl",
+            "automation_id": "",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              545,
+              204,
+              663,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "글자 크기 : 10.0 pt ALT+M",
+            "class": "SpinComboImpl",
+            "automation_id": "",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              669,
+              204,
+              775,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "진하게 : ALT+B",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              794,
+              204,
+              818,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "기울임 : ALT+I",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              820,
+              204,
+              844,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "밑줄 : ALT+L",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              846,
+              204,
+              886,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "취소선 : ALT+T",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              888,
+              204,
+              928,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "글자 색 : ALT+C",
+            "class": "ColorButtonImpl",
+            "automation_id": "",
+            "control_type": "MenuItem",
+            "hwnd": null,
+            "rect_screen": [
+              930,
+              204,
+              970,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "양쪽 정렬 : ALT+1",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              987,
+              204,
+              1011,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "왼쪽 정렬 : ALT+2",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1013,
+              204,
+              1037,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "가운데 정렬 : ALT+3",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1039,
+              204,
+              1063,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "오른쪽 정렬 : ALT+4",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1065,
+              204,
+              1089,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "배분 정렬 : ALT+5",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1091,
+              204,
+              1115,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "나눔 정렬 : ALT+6",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1117,
+              204,
+              1141,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "줄 간격 : 160 % ALT+7",
+            "class": "SpinComboImpl",
+            "automation_id": "",
+            "control_type": "ComboBox",
+            "hwnd": null,
+            "rect_screen": [
+              1160,
+              204,
+              1263,
+              228
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "1/1쪽",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              20,
+              974,
+              68,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "1단",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              68,
+              974,
+              104,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "1줄",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              104,
+              974,
+              140,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "1칸",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              140,
+              974,
+              176,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "0글자",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              176,
+              974,
+              223,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "문자 입력",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              223,
+              974,
+              288,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "1/1 구역",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              288,
+              974,
+              350,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "삽입",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              350,
+              974,
+              390,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "변경 내용 [기록 중지]",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              390,
+              974,
+              515,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "타수 : 0타",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              515,
+              974,
+              583,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "Label",
+            "automation_id": "",
+            "control_type": "Text",
+            "hwnd": null,
+            "rect_screen": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "Label",
+            "automation_id": "",
+            "control_type": "Text",
+            "hwnd": null,
+            "rect_screen": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "쪽 윤곽",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              991,
+              974,
+              1023,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "폭 맞춤",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1023,
+              974,
+              1055,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "쪽 맞춤",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1055,
+              974,
+              1087,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "축소",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1095,
+              974,
+              1127,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "확대/축소 슬라이더 : 255 ",
+            "class": "SliderImpl",
+            "automation_id": "",
+            "control_type": "Slider",
+            "hwnd": null,
+            "rect_screen": [
+              1132,
+              974,
+              1220,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "확대",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1225,
+              974,
+              1257,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "100%",
+            "class": "ButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1257,
+              974,
+              1321,
+              998
+            ],
+            "visible": true,
+            "enabled": true
+          }
+        ],
+        "truncated": false,
+        "method": "UIA read-only; native dialog editing COM not used"
+      }
+    },
+    {
+      "name": "behavior-reference-zoom-custom-dialog",
+      "kind": "dialog",
+      "time": "2026-10-22T21:18:10.381978+09:00",
+      "raw": "behavior-reference-zoom-custom-dialog.raw.png",
+      "dialog_raw": "behavior-reference-zoom-custom-dialog.dialog.png",
+      "window": {
+        "hwnd": 985892,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;443eb8a4-e104-40e6-8f7c-3f3e5a298dd1]",
+        "name": "빈 문서 1 - 한글",
+        "id": 0,
+        "rect_screen": [
+          2,
+          40,
+          1329,
+          1006
+        ],
+        "rect_client_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "rect_window_main": [
+          0,
+          0,
+          1327,
+          966
+        ],
+        "visible": true,
+        "enabled": false,
+        "parent": 0,
+        "owner": 0,
+        "root_owner": 985892
+      },
+      "window_rect": [
+        2,
+        40,
+        1329,
+        1006
+      ],
+      "client_rect": [
+        0,
+        0,
+        1327,
+        966
+      ],
+      "client_origin_screen": [
+        2,
+        40
+      ],
+      "dpi": 96,
+      "units": "physical pixels; rectangles half-open",
+      "zoom": {
+        "text": "100%",
+        "source": "status bar visual review required",
+        "ribbon_160_percent": "character width ratio; not document zoom"
+      },
+      "foreground": {
+        "hwnd": 396692450,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;10f2b296-c023-4be8-9fb6-78ccca07cec9]",
+        "name": "확대/축소",
+        "id": 0,
+        "rect_screen": [
+          726,
+          291,
+          1194,
+          750
+        ],
+        "rect_client_main": [
+          724,
+          251,
+          1192,
+          710
+        ],
+        "rect_window_main": [
+          724,
+          251,
+          1192,
+          710
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 396692450
+      },
+      "target": {
+        "hwnd": 396692450,
+        "pid": 4032,
+        "class": "HwndWrapper[hwp.exe;;10f2b296-c023-4be8-9fb6-78ccca07cec9]",
+        "name": "확대/축소",
+        "id": 0,
+        "rect_screen": [
+          726,
+          291,
+          1194,
+          750
+        ],
+        "rect_client_main": [
+          724,
+          251,
+          1192,
+          710
+        ],
+        "rect_window_main": [
+          724,
+          251,
+          1192,
+          710
+        ],
+        "visible": true,
+        "enabled": true,
+        "parent": 0,
+        "owner": 985892,
+        "root_owner": 396692450
+      },
+      "gui_thread": {
+        "flags": 0,
+        "active": 396692450,
+        "focus": 396692450,
+        "menu_owner": null,
+        "capture": null
+      },
+      "native_children": [],
+      "main_native_children": [
+        {
+          "hwnd": 2165522,
+          "pid": 4032,
+          "class": "HwpRulerTabButtonWnd",
+          "name": "",
+          "id": 155592296,
+          "rect_screen": [
+            10,
+            233,
+            38,
+            261
+          ],
+          "rect_client_main": [
+            8,
+            193,
+            36,
+            221
+          ],
+          "rect_window_main": [
+            8,
+            193,
+            36,
+            221
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 985890,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208327152,
+          "rect_screen": [
+            38,
+            233,
+            1306,
+            261
+          ],
+          "rect_client_main": [
+            36,
+            193,
+            1304,
+            221
+          ],
+          "rect_window_main": [
+            36,
+            193,
+            1304,
+            221
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 789302,
+          "pid": 4032,
+          "class": "HwpRulerWnd",
+          "name": "",
+          "id": 208335432,
+          "rect_screen": [
+            10,
+            261,
+            38,
+            944
+          ],
+          "rect_client_main": [
+            8,
+            221,
+            36,
+            904
+          ],
+          "rect_window_main": [
+            8,
+            221,
+            36,
+            904
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1444636,
+          "pid": 4032,
+          "class": "HwpMainEditWnd",
+          "name": "",
+          "id": 12968844,
+          "rect_screen": [
+            38,
+            261,
+            1306,
+            944
+          ],
+          "rect_client_main": [
+            36,
+            221,
+            1304,
+            904
+          ],
+          "rect_window_main": [
+            36,
+            221,
+            1304,
+            904
+          ],
+          "visible": true,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        },
+        {
+          "hwnd": 1248016,
+          "pid": 4032,
+          "class": "msctls_progress32",
+          "name": "",
+          "id": 0,
+          "rect_screen": [
+            2,
+            40,
+            402,
+            56
+          ],
+          "rect_client_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "rect_window_main": [
+            0,
+            0,
+            400,
+            16
+          ],
+          "visible": false,
+          "enabled": true,
+          "parent": 985892,
+          "owner": 0,
+          "root_owner": 985892
+        }
+      ],
+      "occlusion_samples": [
+        {
+          "screen": [
+            22,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            523
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            22,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            523
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            665,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            55
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            140
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            523
+          ],
+          "hwnd": 985892,
+          "related": true
+        },
+        {
+          "screen": [
+            1309,
+            991
+          ],
+          "hwnd": 985892,
+          "related": true
+        }
+      ],
+      "input_event_count": 8,
+      "status": "pending_visual_review",
+      "uia": {
+        "elements": [
+          {
+            "name": "확대/축소",
+            "class": "DialogImpl",
+            "automation_id": "",
+            "control_type": "Window",
+            "hwnd": 396692450,
+            "rect_screen": [
+              726,
+              291,
+              1194,
+              750
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "빠른 도움말",
+            "class": "Button",
+            "automation_id": "PART_ContextHelp",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1091,
+              292,
+              1125,
+              320
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "도움말",
+            "class": "Button",
+            "automation_id": "PART_Help",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1125,
+              292,
+              1159,
+              320
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "",
+            "class": "Button",
+            "automation_id": "PART_Close",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1159,
+              292,
+              1193,
+              320
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "배율",
+            "class": "GroupBoxImpl",
+            "automation_id": "배율",
+            "control_type": "Group",
+            "hwnd": null,
+            "rect_screen": [
+              753,
+              343,
+              1078,
+              512
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "쪽 모양",
+            "class": "GroupBoxImpl",
+            "automation_id": "쪽 모양",
+            "control_type": "Group",
+            "hwnd": null,
+            "rect_screen": [
+              753,
+              512,
+              1078,
+              633
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "쪽 이동",
+            "class": "GroupBoxImpl",
+            "automation_id": "쪽 이동",
+            "control_type": "Group",
+            "hwnd": null,
+            "rect_screen": [
+              753,
+              633,
+              1078,
+              730
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "설정 : ALT+D",
+            "class": "DialogButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1101,
+              333,
+              1181,
+              361
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "취소",
+            "class": "DialogButtonImpl",
+            "automation_id": "",
+            "control_type": "Button",
+            "hwnd": null,
+            "rect_screen": [
+              1101,
+              367,
+              1181,
+              395
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "100% : ALT+1",
+            "class": "RadioButtonImpl",
+            "automation_id": "100%",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              368,
+              827,
+              386
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "125% : ALT+2",
+            "class": "RadioButtonImpl",
+            "automation_id": "125%",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              392,
+              827,
+              410
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "150% : ALT+3",
+            "class": "RadioButtonImpl",
+            "automation_id": "150%",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              416,
+              827,
+              434
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "200% : ALT+4",
+            "class": "RadioButtonImpl",
+            "automation_id": "200%",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              440,
+              827,
+              458
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "300% : ALT+5",
+            "class": "RadioButtonImpl",
+            "automation_id": "300%",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              464,
+              827,
+              482
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "500% : ALT+6",
+            "class": "RadioButtonImpl",
+            "automation_id": "500%",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              488,
+              827,
+              506
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "폭 맞춤 : ALT+W",
+            "class": "RadioButtonImpl",
+            "automation_id": "폭 맞춤",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              847,
+              368,
+              910,
+              386
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "쪽 맞춤 : ALT+P",
+            "class": "RadioButtonImpl",
+            "automation_id": "쪽 맞춤",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              847,
+              392,
+              910,
+              410
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "사용자 정의 : ALT+J",
+            "class": "RadioButtonImpl",
+            "automation_id": "사용자 정의",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              847,
+              416,
+              932,
+              440
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "자동 : ALT+O",
+            "class": "RadioButtonImpl",
+            "automation_id": "자동",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              537,
+              817,
+              555
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "한 쪽 : ALT+S",
+            "class": "RadioButtonImpl",
+            "automation_id": "한 쪽",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              561,
+              820,
+              579
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "두 쪽 : ALT+T",
+            "class": "RadioButtonImpl",
+            "automation_id": "두 쪽",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              585,
+              820,
+              603
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "맞쪽 : ALT+A",
+            "class": "RadioButtonImpl",
+            "automation_id": "맞쪽",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              609,
+              817,
+              627
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "여러 쪽 : ALT+M",
+            "class": "RadioButtonImpl",
+            "automation_id": "여러 쪽",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              840,
+              537,
+              903,
+              555
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "세로 방향 : ALT+V",
+            "class": "RadioButtonImpl",
+            "automation_id": "세로 방향",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              658,
+              842,
+              676
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "name": "가로 방향 : ALT+H",
+            "class": "RadioButtonImpl",
+            "automation_id": "가로 방향",
+            "control_type": "RadioButton",
+            "hwnd": null,
+            "rect_screen": [
+              768,
+              682,
+              842,
+              700
+            ],
+            "visible": true,
+            "enabled": true
+          }
+        ],
+        "truncated": false,
+        "method": "UIA read-only; native dialog editing COM not used"
+      }
+    }
+  ],
+  "inputs_finished": true,
+  "com_used": false,
+  "resident_commands_sent": false,
+  "existing_evidence_hashes": {
+    "ui-reference-artifact-index.json": "da82c63d2e4ebf7f6be6159721cb12f08bcc3aa7ac738e2bd2eaccb341eeec1e",
+    "ui-reference-baseline-1327x966.raw.png": "38486e7bd43919d42bd46caa7d7d5a2557b9f3cf119dee73b731fdb02cdbfad0",
+    "ui-reference-baseline-1916x918.raw.png": "f87d0263f44c08b7de2b00a9f790c3cf12a402ff23378e204d978f45295ad4bf",
+    "ui-reference-collector.py": "a694a4dc5e7dc039f28a74eb3984933a290c0f92343a4d835ab4834b8401ac78",
+    "ui-reference-dialog-equation.dialog.png": "188ffe1ec7c098f07f296968f388ea842bf47a45f8f98449047b7b5d626b190a",
+    "ui-reference-dialog-equation.raw.png": "3272dca709ed7f386d61cc6aa0f660780fa067c11cd6db2dfe4c386b6efa85fa",
+    "ui-reference-dialog-font-recovered.dialog.png": "19f07989848f1c09164d795e48c294e627adca0f49d8a542ed93dd20f2659b16",
+    "ui-reference-dialog-font-recovered.raw.png": "a52d6251eef75184a68f1ee574eaa96d3b57f277e31f20715eec5b10c41508ea",
+    "ui-reference-dialog-page-rendered.dialog.png": "59987d280d808af58c4b3e6c602441b1db622801dbd3bc3653c34af468bee656",
+    "ui-reference-dialog-page-rendered.raw.png": "2d44de951c7de76eb53d2a844f06c410d2bc5933631af895bc7a54c430c215bd",
+    "ui-reference-dialog-page.dialog.png": "bca708d10f9a2b12e37d94822c395622bafa5f25d7bade94dac50827065e4d48",
+    "ui-reference-dialog-page.raw.png": "38486e7bd43919d42bd46caa7d7d5a2557b9f3cf119dee73b731fdb02cdbfad0",
+    "ui-reference-dialog-paragraph-clean.dialog.png": "872ed4ed1a48968fe8750fa6f7fec9acc7a79f0aefc77bfc2ab02f0b5531385b",
+    "ui-reference-dialog-paragraph-clean.raw.png": "c827ae5166c66a3afebacf12e03f72a6e18453e0684e173a1f16fe02fc40ba5e",
+    "ui-reference-dialog-paragraph-rendered.dialog.png": "49b5928b271c18f3b60be71271591544fbf1d19f16aadd751058544c022ba3f1",
+    "ui-reference-dialog-paragraph-rendered.raw.png": "dfadea6a9de3db3d53189297945a34efb50bda1c6230591e87ac45deb978b158",
+    "ui-reference-dialog-paragraph.dialog.png": "5fbf8d794feffeb0d0b104d1d4c189f4552d7c63c2f5909a65cb64201f4873e5",
+    "ui-reference-dialog-paragraph.raw.png": "38486e7bd43919d42bd46caa7d7d5a2557b9f3cf119dee73b731fdb02cdbfad0",
+    "ui-reference-dialog-table.dialog.png": "695c0a270b91c833d4949656d4ed882748d55d523db4cd285b9ff0f23b646ea4",
+    "ui-reference-dialog-table.raw.png": "5a10234a41f8512979cf1e6488bd53c422f22424bcb7e1114cae44add98b2bd5",
+    "ui-reference-dialog-verification-console.log": "8cf40dc62c547cf2ed50c7fdd1b0687f3508c983d2fe592ba2ed1eddffa84e8c",
+    "ui-reference-dialog-verification-report.json": "fc4565529173ef6ccbad993942c2ba9fff8fd7d4b181d91121544dcadad9603b",
+    "ui-reference-dialogs-console.log": "a6227f648ac75406370027fc996c039c0314ff9c66d01516c97a1dc745db5c68",
+    "ui-reference-dialogs-report.json": "20952ba9538d6036a1150e490ae8d05d4ed6d31b7d8d38fadb8adb2c53f4930f",
+    "ui-reference-file-console.log": "5134ca1897dbd2643ba8860af00da3315c91c521f35539a01deff180ba793c12",
+    "ui-reference-file-final-console.log": "7a5704ad4dc12e82d01c90321c12e8472bc7cfca53f0dfdc54e69204372c68c0",
+    "ui-reference-file-final-report.json": "d03652e19a028811072c171646234a6172a101bd1e682fa999140bdd0a17c2a4",
+    "ui-reference-file-report.json": "0bdaf38c003f984f285ad0620480e51267a05fe67428c1a5178f7933fbd7da99",
+    "ui-reference-finalize.py": "5388ff03e19f29b81b95b0917a3e5f45d6f5d91d7c363fa8318b09940703d36b",
+    "ui-reference-manifest.json": "5368433f9fe927ae34d08a9676e4c3175e75833b8f759e50403478ee020b481e",
+    "ui-reference-menu-edit-arrow.raw.png": "9a0e60530557e3ab512bd60499b59b322f3ec54f6765adbba448c375844a3eff",
+    "ui-reference-menu-file-open.raw.png": "f3fb9f7c8a576a9ffe476b332a8c0ff4add22bf1d1f20d6a20b3f6f5c1e0e543",
+    "ui-reference-menu-file.raw.png": "24f45a22dbf502e60c0f49c109a6241b50a3e8f577274519059b35a40b2b9a2f",
+    "ui-reference-menu-format-arrow.raw.png": "9bcec631a145295717acc2cb418c0bc5783227aee64c1a2d807dec673e52b9d5",
+    "ui-reference-menu-input-arrow.raw.png": "50410c5c60d94b4cede4ad48b40ab96c238a22a9027c33395a53738367c93b4b",
+    "ui-reference-menu-page-arrow.raw.png": "4fef03291e11615e2b10750cc07f3fdb491e78135d49dcfc12727d6c2af3308d",
+    "ui-reference-menu-review-arrow.raw.png": "484e5bb503caf735ca2d6b15e05156be98148b05e154b77664c66065f3b87ce6",
+    "ui-reference-menu-security-arrow.raw.png": "12cb6b7ec6538f4956471a0e8a2865cebe438dfa505613fb5876540f0da0b5ca",
+    "ui-reference-menu-tools-arrow.raw.png": "46e2472caa3f0624fe9032ff8c3d7b2a72cadabea357c2fde558aa62b6643846",
+    "ui-reference-menu-view-arrow.raw.png": "01044fa1caf716fd8a69810f96166bd2bb68d646926ada0604cbbfa55fbcff5f",
+    "ui-reference-menus-a-console.log": "88aaa89752c41fd22b08dd9d595ac36d81554e044741593088836f131171a008",
+    "ui-reference-menus-a-report.json": "303335d1b685e3bf3057d2edc5b4ee96146fbfb0832679bd234af9b85346c002",
+    "ui-reference-menus-b-console.log": "86aeb4af18be8f93f50cdee4a2e8d13cc444b418b798181f358a14c07687decc",
+    "ui-reference-menus-b-report.json": "0642a003a5ddaad34c906ec669163a5a216f42521acc8ab0ae445079da0a1606",
+    "ui-reference-menus-c-console.log": "55ae3dbbeee4d6d5671d239f7435f29c2db1922e7bfca9b37061a4ec15db6513",
+    "ui-reference-menus-c-report.json": "e0bf25fcdc8adf5bafd67e1d4739ab112bd0608645dc97b48e22620dfdcb840a",
+    "ui-reference-page-controls-console.log": "8eaaa12d7992510260538d7919dd4aedac47e065cb77c9466c85403cc0f42288",
+    "ui-reference-page-controls-report.json": "5615234405ad9afb1f133799d46a7ba3fbd5d1254c1cf50c7011a5400da0019c",
+    "ui-reference-priority-console.log": "a82c6c1e0cc13d09f48371dfc01091032c443b6e1fddf7146e4379fc8d371ec6",
+    "ui-reference-priority-fix-console.log": "9a2baf7ac23c62e2ac83aafb63b01a7b79fbc56c394bf07f41790667b67bef2b",
+    "ui-reference-priority-fix-report.json": "43c9574f45e423ba4c30298c8909136dc998a8491070962dc4f2ce84e0f63e0e",
+    "ui-reference-priority-recovery-console.log": "5cb97c9649d26097800d20f9c644a251a8375cf671cfe9ccf4c839d664f9b487",
+    "ui-reference-priority-recovery-report.json": "8ad0e263f10391b28ac1c06165033e14257e0be7ff020f003619ef0e5804d55d",
+    "ui-reference-priority-report.json": "dbff26e53e46f92cf74b00f42aef6a747b612b7b76ec19492c80663a7ca6a809",
+    "ui-reference-ribbon-edit-label.raw.png": "e55716d7aae113948f94506a6d8f1f9a8ab450f424c3497a91939c1c464afe1e",
+    "ui-reference-ribbon-format-label.raw.png": "4b5cdd17199c851942671c2c77247737787e5c4b3ded379a5f3e5b36759298bc",
+    "ui-reference-ribbon-format-verified.raw.png": "3687508bed16fbc05f87866b83efb93816c1253c196e0f1c82e3614057c3b039",
+    "ui-reference-ribbon-format.raw.png": "2d316ee6750040bc47653e5881dcaa6fa16668a1462a46d3c8627c0623671477",
+    "ui-reference-ribbon-input-label.raw.png": "f658973f93a13e1f8a8fab63c6c11e0475d828797a7f005845e87b30805549d5",
+    "ui-reference-ribbon-input.raw.png": "f911a5abae81aded7031197e39722f5567c4afc433dfbef05251f8c3f7298e1e",
+    "ui-reference-ribbon-page-complete.raw.png": "d12d77d4ec31a15cbd2e14f2355209cb80a562c081d474a2aa0b5c09cb794b45",
+    "ui-reference-ribbon-page-label.raw.png": "d12d77d4ec31a15cbd2e14f2355209cb80a562c081d474a2aa0b5c09cb794b45",
+    "ui-reference-ribbon-review-label.raw.png": "774dea47967a3cb322e22ba2c470c6500d2f7afabbcc10aaf7b38c02b8a674f8",
+    "ui-reference-ribbon-security-label.raw.png": "22c16b8910f208f4d418718f7693929fa76481c52417ff55e065ff5d98207d29",
+    "ui-reference-ribbon-tools-label.raw.png": "c94953f26c2364f31399e481f48c4d1886c244cb288e2549837c9a75e206b65c",
+    "ui-reference-ribbon-view-label.raw.png": "ea23876a911d3fe445d6048e2f814db419a26e14aa24d49f14fcffbcd861ea56",
+    "ui-reference-verified-artifacts.zip": "bc8b9ede324949d52c1912e3085fe67837640d42134b1fbc2ff40ffb5b51e85c",
+    "user-screen-zoom-100.raw.png": "0f7134a01be124ec8875844cdca83ad8bc15af3d1e5dc16422c9712121d0da75",
+    "user-screen-zoom-collector.py": "13fdd3d9098e3b15a44a1e13fb33355255d8c81228a02c9b54bf186d8dff1771",
+    "user-screen-zoom-console.log": "5de5d75833c09bcf07ab398d5fc001ac2635bd95579ac1ad4766db10060c15cb",
+    "user-screen-zoom-report.json": "2c1023ff9c301f7290e3e057a9621103ef79e9cb12ca6bc504fa6b9f63eed59f"
+  },
+  "request_token": "81722238e5694082881ba21b9c2a9657",
+  "request_created_at": "2026-10-22T21:17:46.647707+09:00",
+  "request_deadline": 1792671586.6417074,
+  "lock_token": "e339d131cc464bf0950beac3430bcc55",
+  "acquired_at": "2026-10-22T21:17:58.170222+09:00",
+  "input_deadline_epoch": 1792671528.1702225,
+  "window_placement": [
+    2,
+    3,
+    [
+      -32000,
+      -32000
+    ],
+    [
+      2,
+      40
+    ],
+    [
+      2,
+      40,
+      1329,
+      1006
+    ]
+  ],
+  "status_zoom_control": {
+    "name": "100%",
+    "class": "ButtonImpl",
+    "automation_id": "",
+    "control_type": "Button",
+    "hwnd": null,
+    "rect_screen": [
+      1257,
+      974,
+      1321,
+      998
+    ],
+    "visible": true,
+    "enabled": true
+  },
+  "zoom_ui_after_open": {
+    "target": {
+      "hwnd": 396692450,
+      "pid": 4032,
+      "class": "HwndWrapper[hwp.exe;;10f2b296-c023-4be8-9fb6-78ccca07cec9]",
+      "name": "확대/축소",
+      "id": 0,
+      "rect_screen": [
+        726,
+        291,
+        1194,
+        750
+      ],
+      "rect_client_main": [
+        724,
+        251,
+        1192,
+        710
+      ],
+      "rect_window_main": [
+        724,
+        251,
+        1192,
+        710
+      ],
+      "visible": true,
+      "enabled": true,
+      "parent": 0,
+      "owner": 985892,
+      "root_owner": 396692450
+    },
+    "uia": {
+      "elements": [
+        {
+          "name": "확대/축소",
+          "class": "DialogImpl",
+          "automation_id": "",
+          "control_type": "Window",
+          "hwnd": 396692450,
+          "rect_screen": [
+            726,
+            291,
+            1194,
+            750
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "빠른 도움말",
+          "class": "Button",
+          "automation_id": "PART_ContextHelp",
+          "control_type": "Button",
+          "hwnd": null,
+          "rect_screen": [
+            1091,
+            292,
+            1125,
+            320
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "도움말",
+          "class": "Button",
+          "automation_id": "PART_Help",
+          "control_type": "Button",
+          "hwnd": null,
+          "rect_screen": [
+            1125,
+            292,
+            1159,
+            320
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "",
+          "class": "Button",
+          "automation_id": "PART_Close",
+          "control_type": "Button",
+          "hwnd": null,
+          "rect_screen": [
+            1159,
+            292,
+            1193,
+            320
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "배율",
+          "class": "GroupBoxImpl",
+          "automation_id": "배율",
+          "control_type": "Group",
+          "hwnd": null,
+          "rect_screen": [
+            753,
+            343,
+            1078,
+            512
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "쪽 모양",
+          "class": "GroupBoxImpl",
+          "automation_id": "쪽 모양",
+          "control_type": "Group",
+          "hwnd": null,
+          "rect_screen": [
+            753,
+            512,
+            1078,
+            633
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "쪽 이동",
+          "class": "GroupBoxImpl",
+          "automation_id": "쪽 이동",
+          "control_type": "Group",
+          "hwnd": null,
+          "rect_screen": [
+            753,
+            633,
+            1078,
+            730
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "설정 : ALT+D",
+          "class": "DialogButtonImpl",
+          "automation_id": "",
+          "control_type": "Button",
+          "hwnd": null,
+          "rect_screen": [
+            1101,
+            333,
+            1181,
+            361
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "취소",
+          "class": "DialogButtonImpl",
+          "automation_id": "",
+          "control_type": "Button",
+          "hwnd": null,
+          "rect_screen": [
+            1101,
+            367,
+            1181,
+            395
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "100% : ALT+1",
+          "class": "RadioButtonImpl",
+          "automation_id": "100%",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            368,
+            827,
+            386
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "125% : ALT+2",
+          "class": "RadioButtonImpl",
+          "automation_id": "125%",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            392,
+            827,
+            410
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "150% : ALT+3",
+          "class": "RadioButtonImpl",
+          "automation_id": "150%",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            416,
+            827,
+            434
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "200% : ALT+4",
+          "class": "RadioButtonImpl",
+          "automation_id": "200%",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            440,
+            827,
+            458
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "300% : ALT+5",
+          "class": "RadioButtonImpl",
+          "automation_id": "300%",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            464,
+            827,
+            482
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "500% : ALT+6",
+          "class": "RadioButtonImpl",
+          "automation_id": "500%",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            488,
+            827,
+            506
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "폭 맞춤 : ALT+W",
+          "class": "RadioButtonImpl",
+          "automation_id": "폭 맞춤",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            847,
+            368,
+            910,
+            386
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "쪽 맞춤 : ALT+P",
+          "class": "RadioButtonImpl",
+          "automation_id": "쪽 맞춤",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            847,
+            392,
+            910,
+            410
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "사용자 정의 : ALT+J",
+          "class": "RadioButtonImpl",
+          "automation_id": "사용자 정의",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            847,
+            416,
+            932,
+            440
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "자동 : ALT+O",
+          "class": "RadioButtonImpl",
+          "automation_id": "자동",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            537,
+            817,
+            555
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "한 쪽 : ALT+S",
+          "class": "RadioButtonImpl",
+          "automation_id": "한 쪽",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            561,
+            820,
+            579
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "두 쪽 : ALT+T",
+          "class": "RadioButtonImpl",
+          "automation_id": "두 쪽",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            585,
+            820,
+            603
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "맞쪽 : ALT+A",
+          "class": "RadioButtonImpl",
+          "automation_id": "맞쪽",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            609,
+            817,
+            627
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "여러 쪽 : ALT+M",
+          "class": "RadioButtonImpl",
+          "automation_id": "여러 쪽",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            840,
+            537,
+            903,
+            555
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "세로 방향 : ALT+V",
+          "class": "RadioButtonImpl",
+          "automation_id": "세로 방향",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            658,
+            842,
+            676
+          ],
+          "visible": true,
+          "enabled": true
+        },
+        {
+          "name": "가로 방향 : ALT+H",
+          "class": "RadioButtonImpl",
+          "automation_id": "가로 방향",
+          "control_type": "RadioButton",
+          "hwnd": null,
+          "rect_screen": [
+            768,
+            682,
+            842,
+            700
+          ],
+          "visible": true,
+          "enabled": true
+        }
+      ],
+      "truncated": false,
+      "method": "UIA read-only; native dialog editing COM not used"
+    }
+  },
+  "zoom_dialog_ready_uia": {
+    "elements": [
+      {
+        "name": "확대/축소",
+        "class": "DialogImpl",
+        "automation_id": "",
+        "control_type": "Window",
+        "hwnd": 396692450,
+        "rect_screen": [
+          726,
+          291,
+          1194,
+          750
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "빠른 도움말",
+        "class": "Button",
+        "automation_id": "PART_ContextHelp",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          1091,
+          292,
+          1125,
+          320
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "도움말",
+        "class": "Button",
+        "automation_id": "PART_Help",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          1125,
+          292,
+          1159,
+          320
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "",
+        "class": "Button",
+        "automation_id": "PART_Close",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          1159,
+          292,
+          1193,
+          320
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "배율",
+        "class": "GroupBoxImpl",
+        "automation_id": "배율",
+        "control_type": "Group",
+        "hwnd": null,
+        "rect_screen": [
+          753,
+          343,
+          1078,
+          512
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "쪽 모양",
+        "class": "GroupBoxImpl",
+        "automation_id": "쪽 모양",
+        "control_type": "Group",
+        "hwnd": null,
+        "rect_screen": [
+          753,
+          512,
+          1078,
+          633
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "쪽 이동",
+        "class": "GroupBoxImpl",
+        "automation_id": "쪽 이동",
+        "control_type": "Group",
+        "hwnd": null,
+        "rect_screen": [
+          753,
+          633,
+          1078,
+          730
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "설정 : ALT+D",
+        "class": "DialogButtonImpl",
+        "automation_id": "",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          1101,
+          333,
+          1181,
+          361
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "취소",
+        "class": "DialogButtonImpl",
+        "automation_id": "",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          1101,
+          367,
+          1181,
+          395
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "100% : ALT+1",
+        "class": "RadioButtonImpl",
+        "automation_id": "100%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          368,
+          827,
+          386
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "125% : ALT+2",
+        "class": "RadioButtonImpl",
+        "automation_id": "125%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          392,
+          827,
+          410
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "150% : ALT+3",
+        "class": "RadioButtonImpl",
+        "automation_id": "150%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          416,
+          827,
+          434
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "200% : ALT+4",
+        "class": "RadioButtonImpl",
+        "automation_id": "200%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          440,
+          827,
+          458
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "300% : ALT+5",
+        "class": "RadioButtonImpl",
+        "automation_id": "300%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          464,
+          827,
+          482
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "500% : ALT+6",
+        "class": "RadioButtonImpl",
+        "automation_id": "500%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          488,
+          827,
+          506
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "폭 맞춤 : ALT+W",
+        "class": "RadioButtonImpl",
+        "automation_id": "폭 맞춤",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          847,
+          368,
+          910,
+          386
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "쪽 맞춤 : ALT+P",
+        "class": "RadioButtonImpl",
+        "automation_id": "쪽 맞춤",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          847,
+          392,
+          910,
+          410
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "사용자 정의 : ALT+J",
+        "class": "RadioButtonImpl",
+        "automation_id": "사용자 정의",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          847,
+          416,
+          932,
+          440
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "자동 : ALT+O",
+        "class": "RadioButtonImpl",
+        "automation_id": "자동",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          537,
+          817,
+          555
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "한 쪽 : ALT+S",
+        "class": "RadioButtonImpl",
+        "automation_id": "한 쪽",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          561,
+          820,
+          579
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "두 쪽 : ALT+T",
+        "class": "RadioButtonImpl",
+        "automation_id": "두 쪽",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          585,
+          820,
+          603
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "맞쪽 : ALT+A",
+        "class": "RadioButtonImpl",
+        "automation_id": "맞쪽",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          609,
+          817,
+          627
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "여러 쪽 : ALT+M",
+        "class": "RadioButtonImpl",
+        "automation_id": "여러 쪽",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          840,
+          537,
+          903,
+          555
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "세로 방향 : ALT+V",
+        "class": "RadioButtonImpl",
+        "automation_id": "세로 방향",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          658,
+          842,
+          676
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "가로 방향 : ALT+H",
+        "class": "RadioButtonImpl",
+        "automation_id": "가로 방향",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          682,
+          842,
+          700
+        ],
+        "visible": true,
+        "enabled": true
+      }
+    ],
+    "truncated": false,
+    "method": "UIA read-only; native dialog editing COM not used"
+  },
+  "zoom_custom_ready_uia": {
+    "elements": [
+      {
+        "name": "확대/축소",
+        "class": "DialogImpl",
+        "automation_id": "",
+        "control_type": "Window",
+        "hwnd": 396692450,
+        "rect_screen": [
+          726,
+          291,
+          1194,
+          750
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "빠른 도움말",
+        "class": "Button",
+        "automation_id": "PART_ContextHelp",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          1091,
+          292,
+          1125,
+          320
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "도움말",
+        "class": "Button",
+        "automation_id": "PART_Help",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          1125,
+          292,
+          1159,
+          320
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "",
+        "class": "Button",
+        "automation_id": "PART_Close",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          1159,
+          292,
+          1193,
+          320
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "배율",
+        "class": "GroupBoxImpl",
+        "automation_id": "배율",
+        "control_type": "Group",
+        "hwnd": null,
+        "rect_screen": [
+          753,
+          343,
+          1078,
+          512
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "쪽 모양",
+        "class": "GroupBoxImpl",
+        "automation_id": "쪽 모양",
+        "control_type": "Group",
+        "hwnd": null,
+        "rect_screen": [
+          753,
+          512,
+          1078,
+          633
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "쪽 이동",
+        "class": "GroupBoxImpl",
+        "automation_id": "쪽 이동",
+        "control_type": "Group",
+        "hwnd": null,
+        "rect_screen": [
+          753,
+          633,
+          1078,
+          730
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "설정 : ALT+D",
+        "class": "DialogButtonImpl",
+        "automation_id": "",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          1101,
+          333,
+          1181,
+          361
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "취소",
+        "class": "DialogButtonImpl",
+        "automation_id": "",
+        "control_type": "Button",
+        "hwnd": null,
+        "rect_screen": [
+          1101,
+          367,
+          1181,
+          395
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "100% : ALT+1",
+        "class": "RadioButtonImpl",
+        "automation_id": "100%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          368,
+          827,
+          386
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "125% : ALT+2",
+        "class": "RadioButtonImpl",
+        "automation_id": "125%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          392,
+          827,
+          410
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "150% : ALT+3",
+        "class": "RadioButtonImpl",
+        "automation_id": "150%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          416,
+          827,
+          434
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "200% : ALT+4",
+        "class": "RadioButtonImpl",
+        "automation_id": "200%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          440,
+          827,
+          458
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "300% : ALT+5",
+        "class": "RadioButtonImpl",
+        "automation_id": "300%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          464,
+          827,
+          482
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "500% : ALT+6",
+        "class": "RadioButtonImpl",
+        "automation_id": "500%",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          488,
+          827,
+          506
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "폭 맞춤 : ALT+W",
+        "class": "RadioButtonImpl",
+        "automation_id": "폭 맞춤",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          847,
+          368,
+          910,
+          386
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "쪽 맞춤 : ALT+P",
+        "class": "RadioButtonImpl",
+        "automation_id": "쪽 맞춤",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          847,
+          392,
+          910,
+          410
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "사용자 정의 : ALT+J",
+        "class": "RadioButtonImpl",
+        "automation_id": "사용자 정의",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          847,
+          416,
+          932,
+          440
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "자동 : ALT+O",
+        "class": "RadioButtonImpl",
+        "automation_id": "자동",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          537,
+          817,
+          555
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "한 쪽 : ALT+S",
+        "class": "RadioButtonImpl",
+        "automation_id": "한 쪽",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          561,
+          820,
+          579
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "두 쪽 : ALT+T",
+        "class": "RadioButtonImpl",
+        "automation_id": "두 쪽",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          585,
+          820,
+          603
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "맞쪽 : ALT+A",
+        "class": "RadioButtonImpl",
+        "automation_id": "맞쪽",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          609,
+          817,
+          627
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "여러 쪽 : ALT+M",
+        "class": "RadioButtonImpl",
+        "automation_id": "여러 쪽",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          840,
+          537,
+          903,
+          555
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "세로 방향 : ALT+V",
+        "class": "RadioButtonImpl",
+        "automation_id": "세로 방향",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          658,
+          842,
+          676
+        ],
+        "visible": true,
+        "enabled": true
+      },
+      {
+        "name": "가로 방향 : ALT+H",
+        "class": "RadioButtonImpl",
+        "automation_id": "가로 방향",
+        "control_type": "RadioButton",
+        "hwnd": null,
+        "rect_screen": [
+          768,
+          682,
+          842,
+          700
+        ],
+        "visible": true,
+        "enabled": true
+      }
+    ],
+    "truncated": false,
+    "method": "UIA read-only; native dialog editing COM not used"
+  },
+  "status": "zoom_custom_dialog_inspected_no_value_input",
+  "cleanup_verified": true,
+  "input_finished_at": "2026-10-22T21:18:10.712539+09:00",
+  "down_remaining": false,
+  "keys_remaining": [],
+  "released_at": "2026-10-22T21:18:10.718092+09:00",
+  "request_deleted_at": "2026-10-22T21:18:10.722092+09:00",
+  "owner_after_return": {
+    "owner": "Astris",
+    "session": "hangul-pc-upper-0051",
+    "job": "upper-0051",
+    "pid": 30616,
+    "since": 1792671491.0669122,
+    "since_iso": "2026-10-22 21:18:11",
+    "heartbeat": 1792671491.0669122,
+    "heartbeat_iso": "2026-10-22 21:18:11",
+    "token": "b6f12a8b331d48a1badfd427f626d7bf",
+    "heartbeat_age_s": 0.2,
+    "stale_suspect": false
+  },
+  "astris_reacquired_at": "2026-10-22T21:18:11.231911+09:00",
+  "finished": "2026-10-22T21:18:11.231911+09:00"
+}

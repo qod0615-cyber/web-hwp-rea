@@ -1,0 +1,85 @@
+{
+  "status": "partial_native_fixture_and_source_reference_delivered_new_generation_stopped",
+  "output_directory": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22",
+  "updated_at": "2026-10-22T22:07:04.747685+09:00",
+  "private_validation_only": true,
+  "fixture": {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\existing-native-generated-job-0043.hwpx",
+    "source": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0043_20261019_051145\\결과_2.hwpx",
+    "bytes": 34835,
+    "sha256": "395c5b17fb160bce439f55bb3a6c8db055476a8a056d9d14adf36d13ae5e6ca6",
+    "provenance": "Existing native HWP automation validation output under generated job directory; copied read-only without UI/COM",
+    "generation_tool": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\도구_한글자동시험\\build_doc.py",
+    "generation_tool_sha256": "e8472d074d6152b2daab6bf57c90848e0045ace0132d00da0aa6348ba9c62737",
+    "signature": "504b0304",
+    "entries": [
+      "mimetype",
+      "version.xml",
+      "Contents/header.xml",
+      "Contents/section0.xml",
+      "Preview/PrvText.txt",
+      "Scripts/headerScripts.js",
+      "Scripts/sourceScripts.js",
+      "settings.xml",
+      "Preview/PrvImage.png",
+      "META-INF/container.rdf",
+      "Contents/content.hpf",
+      "META-INF/container.xml",
+      "META-INF/manifest.xml"
+    ],
+    "native_reopen_this_session": "not_yet_performed"
+  },
+  "provenance_files": [
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0043_20261019_051145\\build_meta.json",
+      "sha256": "6f12c2975d1304ce9cad89efecd219d457ad8dd14095e5d7caa6c6eb8a5c1d37",
+      "copied_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\rea-source-reference\\native-sample-job0043\\build_meta.json"
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0043_20261019_051145\\build_doc.py",
+      "sha256": "12f8dd89553e136499c6f5cb38afc8f79e6ee1c2e508425d1a2645b96f8c0fc0",
+      "copied_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\rea-source-reference\\native-sample-job0043\\build_doc.py"
+    },
+    {
+      "original_path": "C:\\Users\\K\\Desktop\\Claude\\한글 REA\\results\\한글자동시험\\한글자동시험_결과_job-0043_20261019_051145\\수식목록.json",
+      "sha256": "b8ade14a92a264f1cfe29a0b545414c32597e1e0d28ffb341fe0c3f2c21b39e0",
+      "copied_path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\rea-source-reference\\native-sample-job0043\\수식목록.json"
+    }
+  ],
+  "requested_new_fixtures": {
+    "native-blank.hwpx": "not_created; user stopped fresh COM save route",
+    "native-text.hwpx": "not_created; user stopped fresh COM save route",
+    "native-equation.hwpx": "not_created; user stopped fresh COM save route",
+    "native-table.hwpx": "not_created; user stopped fresh COM save route"
+  },
+  "native_reopen_this_session": false,
+  "preserved_failure_reports": [
+    "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\native-blank-report-2.json",
+    "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\native-blank-report-3.json",
+    "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\native-blank-report-4.json",
+    "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\native-blank-report.json"
+  ],
+  "source_archive": {
+    "path": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\rea-source-reference.zip",
+    "sha256": "cb78e97036dd1418e5f5e7538a19fc71ddd39e5aa11fecc3a93887782f0bddfc",
+    "url": "http://100.105.111.56:18977/rea-source-reference.zip"
+  },
+  "diagnosis": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\save-path-static-diagnosis.json",
+  "eq8_static_audit": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\eq8-readonly-audit.json",
+  "corrected_complete_imports_manifest": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\rea-source-reference\\manifest.json",
+  "validation_boundary": "Python source/reference only; not a TS parity claim. Linux reports 6/24 exact w/h/baseline. No new fixture roundtrip claimed.",
+  "safe_return": {
+    "new_COM_creation_stopped": true,
+    "Astris_processes_or_settings_modified": false,
+    "shared_module_modified": false,
+    "registry_modified": false,
+    "UI_after_cleanup": false,
+    "cleanup_report": "C:\\Users\\K\\Desktop\\Claude\\Web HWP REA\\verification\\hwpx-roundtrip\\2026-10-22\\native-owned-popup-cleanup-report-2.json",
+    "released_at": "2026-10-22T22:04:34.337322+09:00",
+    "request_deleted_at": "2026-10-22T22:04:34.338322+09:00",
+    "Astris_reacquired_at": "2026-10-22T22:04:35.346787+09:00"
+  },
+  "application_source_modified": false,
+  "deployed": false,
+  "manual_PC_steps_required": false
+}

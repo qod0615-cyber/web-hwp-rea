@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import crypto from 'crypto';
 
 const htmlPath = path.resolve('dist/index.html');
 let html = fs.readFileSync(htmlPath, 'utf-8');
@@ -14,7 +15,7 @@ function imgToB64(filename) {
 }
 
 html = html.replace(/"\/(hwp_[^"]+\.png|pwa-[^"]+\.png)"/g, (m, file) => `"${imgToB64(file)}"`);
-html = html.replace(/url\(\s*["']?\/(hwp_[^)'"]+\.png)["']?\s*\)/g, (m, file) => `url(${imgToB64(file)})`);
+html = html.replace(/url\(\s*["']?(?:\.\/|\/)(hwp_[^)'"]+\.png)["']?\s*\)/g, (m, file) => `url(${imgToB64(file)})`);
 
 // file:// 프로토콜에서 에러를 유발하는 PWA / ServiceWorker 외부 스크립트 태그 제거
 html = html.replace(/<link rel="manifest"[^>]*>/g, '');
@@ -34,11 +35,33 @@ if (scriptMatch) {
 }
 
 // 폰트 파일 인라인 변환 (fonts/HYHWPEQ.TTF)
-const fontPath = path.resolve('public/fonts/HYHWPEQ.TTF');
+const fontPath = path.resolve('public/fonts/HYHWPEQ.web.ttf');
 if (fs.existsSync(fontPath)) {
   const fontB64 = fs.readFileSync(fontPath).toString('base64');
-  html = html.replace(/url\(['"]?fonts\/HYHWPEQ\.TTF['"]?\)/g, () => `url('data:font/truetype;charset=utf-8;base64,${fontB64}')`);
+  html = html.replace(/url\(['"]?\/?fonts\/HYHWPEQ\.web\.ttf['"]?\)/g, () => `url('data:font/truetype;charset=utf-8;base64,${fontB64}')`);
 }
+
+// The PWA worker must version the FINAL offline HTML. The Vite-generated worker
+// used revision:null for index.html, keeping an older installed UI indefinitely.
+const buildId = crypto.createHash('sha256').update(html).digest('hex').slice(0, 16);
+html = html.replace('</head>', `<meta name="web-hwp-build" content="${buildId}"></head>`);
+html = html.replace('</body>', `<script>
+if (location.protocol === 'http:' || location.protocol === 'https:') {
+  const manifest = document.createElement('link');
+  manifest.rel = 'manifest'; manifest.href = '/manifest.webmanifest'; document.head.appendChild(manifest);
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' }).then(registration => {
+      registration.update().catch(() => {});
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') registration.update().catch(() => {});
+      });
+    }).catch(() => {});
+  }
+}
+</script></body>`);
+const worker = fs.readFileSync(path.resolve('scripts/service_worker.js'), 'utf8').replace('__BUILD_ID__', buildId);
+fs.writeFileSync(path.resolve('dist/sw.js'), worker);
+fs.writeFileSync(path.resolve('dist/release.json'), JSON.stringify({ build: buildId }) + '\n');
 
 fs.writeFileSync(htmlPath, html, 'utf-8');
 
