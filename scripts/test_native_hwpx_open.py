@@ -95,7 +95,9 @@ def main():
     
     target_files = [
         ROOT / "verification/release-2026-10-23/live-saved.hwpx",
-        ROOT / "verification/hwpx-roundtrip/browser-workflows/rich-document.hwpx",
+        ROOT / "verification/hwpx-roundtrip/browser-workflows/new-rich-equation-table.hwpx",
+        ROOT / "verification/hwpx-roundtrip/browser-workflows/after-reload.hwpx",
+        ROOT / "verification/hwpx-roundtrip/browser-workflows/native-314-edited.hwpx",
     ]
     
     results = []
