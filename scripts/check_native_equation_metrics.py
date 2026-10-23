@@ -59,7 +59,7 @@ process.stdout.write(JSON.stringify(rows.map(r=>{try {
     report = {'validation': 'Native HWPX stored dimensions versus bundled TypeScript engine; glyph pixels not checked',
               'sources': sources, 'native_document_equations': len(rows), 'all_metrics_matched': matched, 'rows': rows}
     args.report.parent.mkdir(parents=True, exist_ok=True)
-    args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
+    args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'{matched}/{len(rows)} exact width/height/baseline; report: {args.report}')
     for row in rows:
         if not row['matched']:

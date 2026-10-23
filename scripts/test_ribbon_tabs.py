@@ -9,7 +9,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'verification/native-baseline/2026-10-22/ui-reference-manifest.json'
-NATIVE=json.loads(SOURCE.read_text())
+NATIVE=json.loads(SOURCE.read_text(encoding='utf-8'))
 OUT=ROOT/'verification/ribbon-tabs'
 LABELS=['보기','쪽','보안','검토','도구']
 
@@ -87,7 +87,7 @@ class RibbonTabs(unittest.TestCase):
                 checked+=1
             commands=self.page.locator(f'[data-native-control^="{label}:"]').evaluate_all('nodes=>nodes.map(e=>({name:e.title,status:e.dataset.commandStatus}))')
             evidence.append({'tab':label,'native_control_rectangles':checked,'different_pixels':0,'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'commands':commands})
-        (OUT/'pixel-and-geometry.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2)+'\n')
+        (OUT/'pixel-and-geometry.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
 
     def test_view_commands_change_document_view(self):
         self.tab('보기')

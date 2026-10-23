@@ -60,7 +60,7 @@ class PwaUpgrade(unittest.TestCase):
                 page.evaluate("localStorage.setItem('web_hwp_current_html','<p>업데이트 전 작성한 문서</p>')")
                 state['new'] = True
                 page.evaluate('()=>{navigator.serviceWorker.getRegistration().then(r=>r.update()).catch(()=>{});}')
-                build = json.loads((ROOT / 'dist/release.json').read_text())['build']
+                build = json.loads((ROOT / 'dist/release.json').read_text(encoding='utf-8'))['build']
                 page.wait_for_function('(id)=>document.querySelector(\'meta[name="web-hwp-build"]\')?.content===id', arg=build, timeout=15000)
                 self.assertEqual(page.locator('#old-ui').count(), 0)
                 self.assertEqual(page.locator('[contenteditable="true"]').first.inner_text(), '업데이트 전 작성한 문서')

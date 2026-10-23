@@ -211,7 +211,7 @@ class EditorWorkflows(unittest.TestCase):
         self.assertEqual(dialog.count(), 0)
 
     def test_equation_templates_match_native_copied_scripts(self):
-        contract = json.loads((ROOT / 'verification/equation-behavior-contract.json').read_text())
+        contract = json.loads((ROOT / 'verification/equation-behavior-contract.json').read_text(encoding='utf-8'))
         self.open_equation()
         visual = self.page.get_by_role('textbox', name='수식 시각 편집', exact=True)
         command = self.page.get_by_role('textbox', name='수식 명령어', exact=True)

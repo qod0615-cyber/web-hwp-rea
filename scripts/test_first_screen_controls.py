@@ -12,7 +12,7 @@ SOURCE = ROOT / 'verification/native-baseline/2026-10-22/ui-reference-manifest.j
 
 
 def native_controls():
-    source = json.loads(SOURCE.read_text())
+    source = json.loads(SOURCE.read_text(encoding='utf-8'))
     edit = source['menus'][0]
     result = []
     for menu in source['menus']:
@@ -81,7 +81,7 @@ class FirstScreenControls(unittest.TestCase):
                     self.assertEqual(actual,marker,(width,marker,dx,dy,actual))
                 checked += 1
             evidence.append({'viewport':[width,height],'visible_native_rectangles_checked':checked})
-        (OUT/'native-hit-regions.json').write_text(json.dumps({'source':str(SOURCE),'checks':evidence,'scope':'Geometry and hit ownership only; not a native color or behavior equivalence claim.'},ensure_ascii=False,indent=2)+'\n')
+        (OUT/'native-hit-regions.json').write_text(json.dumps({'source':str(SOURCE),'checks':evidence,'scope':'Geometry and hit ownership only; not a native color or behavior equivalence claim.'},ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
 
     def test_print_hover_is_confined_to_native_bounds_and_click_prints(self):
         self.page.evaluate('()=>{window.print=()=>{window.printCalls=(window.printCalls||0)+1}}')
